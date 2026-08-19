@@ -8,7 +8,7 @@ import { Screen } from '../components/Screen';
 import { useGame } from '../game/GameContext';
 import type { Round } from '../game/types';
 import { localized, useI18n } from '../i18n';
-import { colors, MODE_ACCENT, spacing, type } from '../theme/tokens';
+import { colors, MODE_ACCENT, spacing, stroke, type } from '../theme/tokens';
 
 /**
  * The single pass-and-play loop every mode goes through. It owns the player
@@ -99,9 +99,11 @@ function Secret({ round, playerId }: { round: Round; playerId: string }) {
       if (isImpostor) {
         return (
           <View style={styles.secretBody}>
-            <Text style={styles.impostorTitle} adjustsFontSizeToFit numberOfLines={2}>
-              {t('secret.impostor')}
-            </Text>
+            <View style={styles.impostorPlate}>
+              <Text style={styles.impostorTitle} adjustsFontSizeToFit numberOfLines={2}>
+                {t('secret.impostor')}
+              </Text>
+            </View>
             <Text style={styles.secretValue} adjustsFontSizeToFit numberOfLines={2}>
               {t('secret.targetRange', {
                 min: (round.rangeMinMs / 1000).toFixed(0),
@@ -144,9 +146,11 @@ function ImpostorSecret({ hint }: { hint: string }) {
   const { t } = useI18n();
   return (
     <View style={styles.secretBody}>
-      <Text style={styles.impostorTitle} adjustsFontSizeToFit numberOfLines={2}>
-        {t('secret.impostor')}
-      </Text>
+      <View style={styles.impostorPlate}>
+        <Text style={styles.impostorTitle} adjustsFontSizeToFit numberOfLines={2}>
+          {t('secret.impostor')}
+        </Text>
+      </View>
       <View style={styles.hintBox}>
         <Text style={styles.hintLabel}>{t('secret.hint')}</Text>
         <Text style={styles.hintValue} adjustsFontSizeToFit numberOfLines={2}>
@@ -160,38 +164,34 @@ function ImpostorSecret({ hint }: { hint: string }) {
 const styles = StyleSheet.create({
   progress: {
     ...type.caption,
-    color: colors.textFaint,
+    color: colors.inkSoft,
     textAlign: 'center',
     textTransform: 'uppercase',
-    letterSpacing: 1.2,
     marginBottom: spacing.sm,
   },
   holdArea: { flex: 1, marginBottom: spacing.md },
   secretBody: { alignItems: 'center', justifyContent: 'center', gap: spacing.sm, width: '100%' },
-  secretLabel: {
-    ...type.caption,
-    color: colors.textFaint,
-    textTransform: 'uppercase',
-    letterSpacing: 1.2,
+  secretLabel: { ...type.caption, color: colors.inkSoft, textTransform: 'uppercase' },
+  secretValue: { ...type.hero, color: colors.ink, textAlign: 'center' },
+  secretMeta: { ...type.caption, color: colors.inkSoft, textAlign: 'center' },
+  // "You are the impostor" is inverted rather than red — the screen has no red.
+  impostorPlate: {
+    backgroundColor: colors.ink,
+    paddingVertical: spacing.sm,
+    paddingHorizontal: spacing.md,
+    alignSelf: 'stretch',
   },
-  secretValue: { ...type.hero, color: colors.text, textAlign: 'center' },
-  secretMeta: { ...type.body, color: colors.textMuted, textAlign: 'center' },
-  impostorTitle: { ...type.title, color: colors.rose, textAlign: 'center', letterSpacing: 0.5 },
+  impostorTitle: { ...type.title, color: colors.onInk, textAlign: 'center', textTransform: 'uppercase' },
   hintBox: {
     marginTop: spacing.md,
     paddingVertical: spacing.md,
     paddingHorizontal: spacing.lg,
-    borderRadius: 14,
+    borderWidth: stroke.hair,
+    borderColor: colors.ink,
     backgroundColor: colors.surface,
     alignItems: 'center',
     width: '100%',
   },
-  hintLabel: {
-    ...type.caption,
-    color: colors.textFaint,
-    textTransform: 'uppercase',
-    letterSpacing: 1.1,
-    marginBottom: spacing.xs,
-  },
-  hintValue: { ...type.heading, color: colors.amber, textAlign: 'center' },
+  hintLabel: { ...type.caption, color: colors.inkSoft, marginBottom: spacing.xs, textTransform: 'uppercase' },
+  hintValue: { ...type.heading, color: colors.ink, textAlign: 'center' },
 });

@@ -2,12 +2,14 @@ import React from 'react';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 
 import { Button } from '../../components/Button';
+import { PixelArt, PIXEL_STAR } from '../../components/PixelArt';
 import { PlayerChip } from '../../components/PlayerChip';
 import { Screen } from '../../components/Screen';
+import { SectionLabel } from '../../components/SectionLabel';
 import { useGame } from '../../game/GameContext';
 import type { WordRound } from '../../game/types';
 import { useI18n } from '../../i18n';
-import { colors, MODE_ACCENT, radii, spacing, type } from '../../theme/tokens';
+import { colors, MODE_ACCENT, MODE_GLYPH, spacing, stroke, type } from '../../theme/tokens';
 
 export function WordPlayScreen({ round }: { round: WordRound }) {
   const { t } = useI18n();
@@ -20,19 +22,28 @@ export function WordPlayScreen({ round }: { round: WordRound }) {
 
   return (
     <Screen>
-      <Text style={styles.title}>{t('word.play.title')}</Text>
+      <View style={styles.titleRow}>
+        <Text style={styles.glyph}>{MODE_GLYPH.word}</Text>
+        <Text style={styles.title}>{t('word.play.title')}</Text>
+      </View>
       <Text style={styles.instruction}>{t('word.play.instruction')}</Text>
 
       <View style={[styles.spotlight, { borderColor: accent }]}>
         <Text style={styles.spotlightLabel}>
           {done ? t('word.play.roundDone') : t('word.play.nowSpeaking')}
         </Text>
-        <Text style={styles.spotlightName} adjustsFontSizeToFit numberOfLines={1}>
-          {done ? '🎉' : current?.name}
-        </Text>
+        {done ? (
+          <View style={styles.spotlightArt}>
+            <PixelArt rows={PIXEL_STAR} size={48} color={colors.onInk} />
+          </View>
+        ) : (
+          <Text style={styles.spotlightName} adjustsFontSizeToFit numberOfLines={1}>
+            {current?.name}
+          </Text>
+        )}
       </View>
 
-      <Text style={styles.section}>{t('word.play.turnOrder')}</Text>
+      <SectionLabel label={t('word.play.turnOrder')} style={styles.section} />
       <ScrollView style={styles.list} showsVerticalScrollIndicator={false}>
         {round.order.map((id, i) => (
           <PlayerChip
@@ -68,37 +79,30 @@ export function WordPlayScreen({ round }: { round: WordRound }) {
 }
 
 const styles = StyleSheet.create({
-  title: { ...type.title, color: colors.text, textAlign: 'center' },
+  titleRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: spacing.sm },
+  title: { ...type.title, color: colors.ink, textAlign: 'center', textTransform: 'uppercase' },
+  glyph: { ...type.title, color: colors.inkSoft },
   instruction: {
     ...type.caption,
-    color: colors.textMuted,
+    color: colors.inkSoft,
     textAlign: 'center',
     marginTop: spacing.xs,
     marginBottom: spacing.md,
   },
+  // The spotlight is the one inverted block on the screen, so the eye lands
+  // on whoever is speaking without needing a second colour.
   spotlight: {
-    borderWidth: 2,
-    borderRadius: radii.lg,
-    backgroundColor: colors.surface,
+    borderWidth: stroke.thick,
+    backgroundColor: colors.ink,
     paddingVertical: spacing.lg,
     paddingHorizontal: spacing.md,
     alignItems: 'center',
     marginBottom: spacing.md,
   },
-  spotlightLabel: {
-    ...type.caption,
-    color: colors.textFaint,
-    textTransform: 'uppercase',
-    letterSpacing: 1.2,
-  },
-  spotlightName: { ...type.hero, color: colors.text, marginTop: spacing.xs },
-  section: {
-    ...type.caption,
-    color: colors.textFaint,
-    textTransform: 'uppercase',
-    letterSpacing: 1.2,
-    marginBottom: spacing.sm,
-  },
+  spotlightLabel: { ...type.caption, color: colors.onInk, textTransform: 'uppercase' },
+  spotlightName: { ...type.hero, color: colors.onInk, marginTop: spacing.xs },
+  spotlightArt: { marginTop: spacing.sm },
+  section: { marginTop: 0 },
   list: { flex: 1 },
   action: { marginTop: spacing.sm },
 });

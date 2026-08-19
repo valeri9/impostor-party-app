@@ -1,15 +1,16 @@
 import React, { useRef, useState } from 'react';
-import { Pressable, StyleSheet, Text } from 'react-native';
+import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { useKeepAwake } from 'expo-keep-awake';
 
 import { Button } from '../../components/Button';
+import { PixelArt, PIXEL_CHECK, PIXEL_CLOCK } from '../../components/PixelArt';
 import { Screen } from '../../components/Screen';
 import { useGame } from '../../game/GameContext';
 import type { TimerRound } from '../../game/types';
 import { useI18n } from '../../i18n';
 import { haptics } from '../../native/haptics';
 import { playSound } from '../../native/sound';
-import { colors, MODE_ACCENT, spacing, type } from '../../theme/tokens';
+import { colors, MODE_ACCENT, SHELL, spacing, stroke, type } from '../../theme/tokens';
 
 type Stage = 'ready' | 'running' | 'recorded';
 
@@ -51,8 +52,10 @@ export function TimerPlayScreen({ round }: { round: TimerRound }) {
   if (stage === 'recorded') {
     return (
       <Screen center>
-        <Text style={styles.doneGlyph}>✅</Text>
-        <Text style={[styles.headline, { color: colors.emerald }]}>{t('timer.play.recorded')}</Text>
+        <View style={styles.doneArt}>
+          <PixelArt rows={PIXEL_CHECK} size={64} />
+        </View>
+        <Text style={styles.headline}>{t('timer.play.recorded')}</Text>
         {nextName ? (
           <Text style={styles.passLine} adjustsFontSizeToFit numberOfLines={2}>
             {t('timer.play.passTo', { name: nextName })}
@@ -72,7 +75,9 @@ export function TimerPlayScreen({ round }: { round: TimerRound }) {
   if (allDone) {
     return (
       <Screen center>
-        <Text style={styles.doneGlyph}>⏱️</Text>
+        <View style={styles.doneArt}>
+          <PixelArt rows={PIXEL_CLOCK} size={64} />
+        </View>
         <Text style={styles.headline}>{t('timer.play.allDone')}</Text>
         <Button
           label={t('results.showImpostorTime')}
@@ -99,10 +104,10 @@ export function TimerPlayScreen({ round }: { round: TimerRound }) {
           onPress={stop}
           style={({ pressed }) => [
             styles.stopButton,
-            { backgroundColor: pressed ? colors.roseDark : colors.rose },
+            { backgroundColor: pressed ? SHELL.buttonDeep : SHELL.button },
           ]}
         >
-          <Text style={styles.stopLabel}>{t('timer.play.stop')}</Text>
+          <Text style={styles.bigLabel}>{t('timer.play.stop')}</Text>
         </Pressable>
       </Screen>
     );
@@ -124,10 +129,10 @@ export function TimerPlayScreen({ round }: { round: TimerRound }) {
         onPress={start}
         style={({ pressed }) => [
           styles.startButton,
-          { backgroundColor: pressed ? colors.emeraldDark : colors.emerald },
+          { backgroundColor: pressed ? SHELL.buttonDeep : SHELL.button },
         ]}
       >
-        <Text style={styles.startLabel}>{t('timer.play.start')}</Text>
+        <Text style={styles.bigLabel}>{t('timer.play.start')}</Text>
       </Pressable>
     </Screen>
   );
@@ -136,45 +141,43 @@ export function TimerPlayScreen({ round }: { round: TimerRound }) {
 const CIRCLE = 220;
 
 const styles = StyleSheet.create({
-  progress: {
-    ...type.caption,
-    color: colors.textFaint,
-    textTransform: 'uppercase',
-    letterSpacing: 1.2,
-    marginBottom: spacing.sm,
-  },
-  headline: { ...type.title, color: colors.text, textAlign: 'center' },
-  passLine: { ...type.heading, color: colors.text, textAlign: 'center', marginBottom: spacing.sm },
+  progress: { ...type.caption, color: colors.inkSoft, textTransform: 'uppercase', marginBottom: spacing.sm },
+  headline: { ...type.title, color: colors.ink, textAlign: 'center', textTransform: 'uppercase' },
+  passLine: { ...type.heading, color: colors.ink, textAlign: 'center', marginBottom: spacing.sm },
   instruction: {
-    ...type.body,
-    color: colors.textMuted,
+    ...type.caption,
+    color: colors.inkSoft,
     textAlign: 'center',
     marginBottom: spacing.xl,
     paddingHorizontal: spacing.md,
   },
   runningHint: {
-    ...type.body,
-    color: colors.textMuted,
+    ...type.caption,
+    color: colors.inkSoft,
     textAlign: 'center',
     marginBottom: spacing.xl,
     paddingHorizontal: spacing.lg,
   },
+  // The one place a circle belongs, so these are moulded as the A/B buttons.
   startButton: {
     width: CIRCLE,
     height: CIRCLE,
     borderRadius: CIRCLE / 2,
+    borderWidth: stroke.thick,
+    borderColor: SHELL.buttonDeep,
     alignItems: 'center',
     justifyContent: 'center',
   },
-  startLabel: { ...type.hero, color: colors.onAccent, letterSpacing: 2 },
   stopButton: {
     width: CIRCLE + 40,
     height: CIRCLE + 40,
     borderRadius: (CIRCLE + 40) / 2,
+    borderWidth: stroke.thick,
+    borderColor: SHELL.buttonDeep,
     alignItems: 'center',
     justifyContent: 'center',
   },
-  stopLabel: { ...type.hero, color: colors.onAccent, letterSpacing: 2 },
-  doneGlyph: { fontSize: 56, marginBottom: spacing.md },
+  bigLabel: { ...type.hero, color: SHELL.onButton, textTransform: 'uppercase' },
+  doneArt: { marginBottom: spacing.md },
   wideAction: { alignSelf: 'stretch', marginTop: spacing.xl },
 });

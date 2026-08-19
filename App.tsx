@@ -6,12 +6,12 @@ import { View, StyleSheet } from 'react-native';
 import { GameProvider } from './src/game/GameContext';
 import { I18nProvider, useI18n } from './src/i18n';
 import { GameRoot } from './src/screens/GameRoot';
-import { colors } from './src/theme/tokens';
+import { SHELL } from './src/theme/tokens';
 
 export default function App() {
   return (
     <SafeAreaProvider>
-      <StatusBar style="light" />
+      <StatusBar style="dark" />
       <I18nProvider>
         <GameProvider>
           <LocaleGate />
@@ -21,8 +21,8 @@ export default function App() {
   );
 }
 
-/** Holds the dark background until the stored language resolves, so the app
- *  never flashes English before switching to the player's locale. */
+/** Holds the console's plastic colour until the stored language resolves, so
+ *  the app never flashes English before switching to the player's locale. */
 function LocaleGate() {
   const { ready } = useI18n();
   if (!ready) return <View style={styles.splash} />;
@@ -30,5 +30,5 @@ function LocaleGate() {
 }
 
 const styles = StyleSheet.create({
-  splash: { flex: 1, backgroundColor: colors.bg },
+  splash: { flex: 1, backgroundColor: SHELL.body },
 });

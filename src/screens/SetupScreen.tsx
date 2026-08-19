@@ -3,13 +3,14 @@ import { Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
 
 import { Button } from '../components/Button';
 import { Screen } from '../components/Screen';
+import { SectionLabel } from '../components/SectionLabel';
 import { Stepper, ToggleRow } from '../components/Stepper';
 import { civiliansFor, clampMafiaConfig, maxMafiaFor } from '../game/assign';
 import { useGame } from '../game/GameContext';
 import { GAME_MODES, GameMode, MAX_PLAYERS, MIN_PLAYERS } from '../game/types';
-import { LANGUAGE_FLAGS, LANGUAGE_NAMES, LOCALES, useI18n } from '../i18n';
+import { LANGUAGE_NAMES, LOCALES, useI18n } from '../i18n';
 import { haptics } from '../native/haptics';
-import { colors, MODE_ACCENT, radii, spacing, type } from '../theme/tokens';
+import { colors, MODE_GLYPH, spacing, stroke, type } from '../theme/tokens';
 
 export function SetupScreen() {
   const { t, locale, setLocale } = useI18n();
@@ -33,10 +34,15 @@ export function SetupScreen() {
 
   return (
     <Screen scroll>
-      <Text style={styles.title}>{t('app.title')}</Text>
+      {/* A cartridge boot screen: the title framed, the tagline underneath. */}
+      <View style={styles.titlePlate}>
+        <Text style={styles.title} adjustsFontSizeToFit numberOfLines={1}>
+          {t('app.title')}
+        </Text>
+      </View>
       <Text style={styles.tagline}>{t('app.tagline')}</Text>
 
-      <Section label={t('setup.language')} />
+      <SectionLabel label={t('setup.language')} />
       <View style={styles.langRow}>
         {LOCALES.map((code) => {
           const active = code === locale;
@@ -51,14 +57,14 @@ export function SetupScreen() {
               }}
               style={[styles.langPill, active && styles.langPillActive]}
             >
-              <Text style={styles.langFlag}>{LANGUAGE_FLAGS[code]}</Text>
-              <Text style={[styles.langName, active && styles.langNameActive]}>{LANGUAGE_NAMES[code]}</Text>
+              <Text style={[styles.langCode, active && styles.langTextActive]}>{code}</Text>
+              <Text style={[styles.langName, active && styles.langTextActive]}>{LANGUAGE_NAMES[code]}</Text>
             </Pressable>
           );
         })}
       </View>
 
-      <Section label={`${t('setup.players')}  (${players.length})`} />
+      <SectionLabel label={`${t('setup.players')}  (${players.length})`} />
       {players.map((player, i) => (
         <View key={player.id} style={styles.playerRow}>
           <View style={styles.playerIndex}>
@@ -69,7 +75,7 @@ export function SetupScreen() {
             value={player.name}
             onChangeText={(name) => dispatch({ type: 'SET_PLAYER_NAME', id: player.id, name })}
             placeholder={t('setup.playerPlaceholder', { n: i + 1 })}
-            placeholderTextColor={colors.textFaint}
+            placeholderTextColor={colors.inkSoft}
             maxLength={16}
             autoCorrect={false}
             returnKeyType="done"
@@ -99,14 +105,14 @@ export function SetupScreen() {
         {players.length >= MAX_PLAYERS ? t('setup.maxPlayers') : t('setup.minPlayers')}
       </Text>
 
-      <Section label={t('setup.chooseMode')} />
+      <SectionLabel label={t('setup.chooseMode')} />
       {GAME_MODES.map((m) => (
         <ModeCard key={m} mode={m} selected={m === mode} onSelect={() => dispatch({ type: 'SET_MODE', mode: m })} />
       ))}
 
       {mode === 'mafia' ? (
         <View style={styles.mafiaPanel}>
-          <Section label={t('mafia.setup.title')} />
+          <SectionLabel label={t('mafia.setup.title')} />
           <Stepper
             label={t('mafia.mafiaCount')}
             value={clampedMafia.mafiaCount}
@@ -145,10 +151,6 @@ export function SetupScreen() {
   );
 }
 
-function Section({ label }: { label: string }) {
-  return <Text style={styles.section}>{label}</Text>;
-}
-
 function ModeCard({
   mode,
   selected,
@@ -159,7 +161,7 @@ function ModeCard({
   onSelect: () => void;
 }) {
   const { t } = useI18n();
-  const accent = MODE_ACCENT[mode];
+  const fg = selected ? colors.onInk : colors.ink;
   return (
     <Pressable
       accessibilityRole="button"
@@ -168,90 +170,97 @@ function ModeCard({
         haptics.selection();
         onSelect();
       }}
-      style={[styles.modeCard, selected && { borderColor: accent, backgroundColor: colors.surfaceAlt }]}
+      style={[styles.modeCard, selected && styles.modeCardSelected]}
     >
-      <View style={[styles.modeDot, { backgroundColor: selected ? accent : colors.border }]} />
+      <Text style={[styles.modeGlyph, { color: fg }]}>{selected ? '▸' : ' '}</Text>
+      <Text style={[styles.modeGlyph, { color: fg }]}>{MODE_GLYPH[mode]}</Text>
       <View style={styles.modeText}>
-        <Text style={[styles.modeName, selected && { color: colors.text }]}>{t(`mode.${mode}.name`)}</Text>
-        <Text style={styles.modeDesc}>{t(`mode.${mode}.desc`)}</Text>
+        <Text style={[styles.modeName, { color: fg }]}>{t(`mode.${mode}.name`)}</Text>
+        <Text style={[styles.modeDesc, { color: fg }]}>{t(`mode.${mode}.desc`)}</Text>
       </View>
     </Pressable>
   );
 }
 
 const styles = StyleSheet.create({
-  title: { ...type.hero, color: colors.text, textAlign: 'center' },
-  tagline: { ...type.body, color: colors.textMuted, textAlign: 'center', marginTop: spacing.xs },
-  section: {
+  titlePlate: {
+    borderWidth: stroke.thick,
+    borderColor: colors.ink,
+    backgroundColor: colors.ink,
+    paddingVertical: spacing.md,
+    paddingHorizontal: spacing.sm,
+  },
+  title: { ...type.hero, color: colors.onInk, textAlign: 'center', textTransform: 'uppercase' },
+  tagline: {
     ...type.caption,
-    color: colors.textFaint,
+    color: colors.inkSoft,
+    textAlign: 'center',
+    marginTop: spacing.sm,
     textTransform: 'uppercase',
-    letterSpacing: 1.2,
-    marginTop: spacing.lg,
-    marginBottom: spacing.sm,
   },
   langRow: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.sm },
   langPill: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: spacing.xs,
-    paddingHorizontal: spacing.md,
-    minHeight: 46,
-    borderRadius: radii.pill,
+    paddingHorizontal: spacing.sm,
+    minHeight: 44,
     backgroundColor: colors.surface,
-    borderWidth: 2,
-    borderColor: 'transparent',
+    borderWidth: stroke.hair,
+    borderColor: colors.ink,
   },
-  langPillActive: { borderColor: colors.indigo, backgroundColor: colors.surfaceAlt },
-  langFlag: { fontSize: 18 },
-  langName: { ...type.caption, color: colors.textMuted },
-  langNameActive: { color: colors.text },
+  langPillActive: { backgroundColor: colors.ink },
+  langCode: { ...type.caption, color: colors.ink, textTransform: 'uppercase' },
+  langName: { ...type.caption, color: colors.inkSoft },
+  langTextActive: { color: colors.onInk },
   playerRow: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm, marginBottom: spacing.sm },
   playerIndex: {
     width: 32,
     height: 32,
-    borderRadius: radii.pill,
-    backgroundColor: colors.surfaceAlt,
+    borderWidth: stroke.hair,
+    borderColor: colors.ink,
     alignItems: 'center',
     justifyContent: 'center',
   },
-  playerIndexText: { ...type.caption, color: colors.textMuted },
+  playerIndexText: { ...type.caption, color: colors.ink },
   input: {
     flex: 1,
     minHeight: 52,
-    borderRadius: radii.md,
     backgroundColor: colors.surface,
+    borderWidth: stroke.hair,
+    borderColor: colors.ink,
     paddingHorizontal: spacing.md,
-    color: colors.text,
+    color: colors.ink,
     ...type.body,
   },
   removeButton: {
     width: 44,
     height: 44,
-    borderRadius: radii.sm,
+    borderWidth: stroke.hair,
+    borderColor: colors.ink,
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: colors.surface,
   },
   removeDisabled: { opacity: 0.3 },
-  removeGlyph: { fontSize: 24, color: colors.rose, lineHeight: 26 },
+  removeGlyph: { ...type.heading, color: colors.ink, lineHeight: 22 },
   addButton: { marginTop: spacing.xs },
-  hint: { ...type.caption, color: colors.textFaint, textAlign: 'center', marginTop: spacing.sm },
+  hint: { ...type.caption, color: colors.inkSoft, textAlign: 'center', marginTop: spacing.sm },
   modeCard: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: spacing.md,
+    gap: spacing.sm,
     padding: spacing.md,
-    borderRadius: radii.md,
     backgroundColor: colors.surface,
-    borderWidth: 2,
-    borderColor: 'transparent',
+    borderWidth: stroke.hair,
+    borderColor: colors.ink,
     marginBottom: spacing.sm,
   },
-  modeDot: { width: 14, height: 14, borderRadius: radii.pill },
+  modeCardSelected: { backgroundColor: colors.ink, borderWidth: stroke.thin },
+  modeGlyph: { ...type.heading },
   modeText: { flex: 1 },
-  modeName: { ...type.label, color: colors.textMuted },
-  modeDesc: { ...type.caption, color: colors.textFaint, marginTop: 2 },
+  modeName: { ...type.label, textTransform: 'uppercase' },
+  modeDesc: { ...type.caption, marginTop: 3, letterSpacing: 0 },
   mafiaPanel: { marginTop: spacing.xs },
   civilianRow: {
     flexDirection: 'row',
@@ -259,9 +268,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     minHeight: 48,
     paddingHorizontal: spacing.md,
+    borderWidth: stroke.hair,
+    borderColor: colors.ink,
   },
-  civilianLabel: { ...type.label, color: colors.textMuted },
-  civilianValue: { ...type.heading, color: colors.emerald },
+  civilianLabel: { ...type.label, color: colors.ink, textTransform: 'uppercase' },
+  civilianValue: { ...type.heading, color: colors.ink },
   startButton: { marginTop: spacing.lg },
-  warning: { ...type.caption, color: colors.rose, textAlign: 'center', marginTop: spacing.sm },
+  warning: { ...type.caption, color: colors.ink, textAlign: 'center', marginTop: spacing.sm },
 });

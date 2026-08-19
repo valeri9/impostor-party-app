@@ -3,7 +3,8 @@ import { AppState, Pressable, StyleSheet, Text, View } from 'react-native';
 
 import { useI18n } from '../i18n';
 import { haptics } from '../native/haptics';
-import { colors, radii, spacing, type } from '../theme/tokens';
+import { colors, spacing, stroke, type } from '../theme/tokens';
+import { PIXEL_LOCK, PixelArt } from './PixelArt';
 
 /** Continuous hold required before the pass-along button unlocks. */
 const UNLOCK_MS = 600;
@@ -12,7 +13,7 @@ type Props = {
   playerName: string;
   /** The secret. Rendered ONLY while the finger is down. */
   children: React.ReactNode;
-  /** Optional accent used for the shield glow, so modes feel distinct. */
+  /** Optional accent used for the shield frame, so modes feel distinct. */
   accent?: string;
   onHoldStart?: () => void;
   /** Fires the first time the player completes a real hold. */
@@ -28,7 +29,7 @@ type Props = {
  *   2. Losing the touch for any reason (release, cancel, app backgrounded)
  *      hides it immediately.
  */
-export function HoldToReveal({ playerName, children, accent = colors.indigo, onHoldStart, onUnlocked }: Props) {
+export function HoldToReveal({ playerName, children, accent = colors.ink, onHoldStart, onUnlocked }: Props) {
   const { t } = useI18n();
   const [held, setHeld] = useState(false);
   const [unlocked, setUnlocked] = useState(false);
@@ -102,8 +103,8 @@ function Shield({ playerName, accent }: { playerName: string; accent: string }) 
   const { t } = useI18n();
   return (
     <View testID="shield" style={[styles.shield, { borderColor: accent }]}>
-      <View style={[styles.lockBadge, { backgroundColor: accent }]}>
-        <Text style={styles.lockGlyph}>🔒</Text>
+      <View style={styles.lockBadge}>
+        <PixelArt rows={PIXEL_LOCK} size={64} color={colors.onInk} />
       </View>
       <Text style={styles.shieldName} numberOfLines={2} adjustsFontSizeToFit>
         {t('reveal.shield', { name: playerName })}
@@ -118,8 +119,7 @@ const styles = StyleSheet.create({
   pressable: { flex: 1, width: '100%' },
   shield: {
     flex: 1,
-    borderWidth: 2,
-    borderRadius: radii.lg,
+    borderWidth: stroke.thick,
     backgroundColor: colors.surface,
     alignItems: 'center',
     justifyContent: 'center',
@@ -127,20 +127,15 @@ const styles = StyleSheet.create({
     gap: spacing.md,
   },
   lockBadge: {
-    width: 84,
-    height: 84,
-    borderRadius: radii.pill,
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: colors.ink,
+    padding: spacing.md,
     marginBottom: spacing.sm,
   },
-  lockGlyph: { fontSize: 38 },
-  shieldName: { ...type.title, color: colors.text, textAlign: 'center' },
-  shieldHint: { ...type.body, color: colors.textMuted, textAlign: 'center' },
+  shieldName: { ...type.title, color: colors.ink, textAlign: 'center' },
+  shieldHint: { ...type.caption, color: colors.inkSoft, textAlign: 'center', textTransform: 'uppercase' },
   secret: {
     flex: 1,
-    borderWidth: 2,
-    borderRadius: radii.lg,
+    borderWidth: stroke.thick,
     backgroundColor: colors.bgDeep,
     alignItems: 'center',
     justifyContent: 'center',
@@ -148,7 +143,7 @@ const styles = StyleSheet.create({
   },
   footHint: {
     ...type.caption,
-    color: colors.textFaint,
+    color: colors.inkSoft,
     textAlign: 'center',
     marginTop: spacing.sm,
     minHeight: 18,

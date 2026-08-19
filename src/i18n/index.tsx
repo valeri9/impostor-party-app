@@ -18,15 +18,6 @@ export const LANGUAGE_NAMES: Record<Locale, string> = {
   ro: 'Română',
 };
 
-export const LANGUAGE_FLAGS: Record<Locale, string> = {
-  en: '🇬🇧',
-  bg: '🇧🇬',
-  es: '🇪🇸',
-  el: '🇬🇷',
-  de: '🇩🇪',
-  ro: '🇷🇴',
-};
-
 type UiStrings = Record<string, string>;
 const UI = dictionary.ui as Record<string, UiStrings>;
 

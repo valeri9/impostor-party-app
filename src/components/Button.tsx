@@ -2,7 +2,7 @@ import React from 'react';
 import { Pressable, StyleSheet, Text, View, ViewStyle } from 'react-native';
 
 import { haptics } from '../native/haptics';
-import { colors, HIT_SIZE, radii, spacing, type } from '../theme/tokens';
+import { HIT_SIZE, SHELL, spacing, stroke, type } from '../theme/tokens';
 
 export type ButtonVariant = 'primary' | 'success' | 'danger' | 'ghost';
 
@@ -17,15 +17,64 @@ type Props = {
   testID?: string;
 };
 
-const FILLS: Record<ButtonVariant, { bg: string; pressed: string; text: string; border?: string }> = {
-  primary: { bg: colors.indigo, pressed: colors.indigoDark, text: colors.onAccent },
-  success: { bg: colors.emerald, pressed: colors.emeraldDark, text: colors.onAccent },
-  danger: { bg: colors.rose, pressed: colors.roseDark, text: colors.onAccent },
-  ghost: { bg: 'transparent', pressed: colors.surfaceAlt, text: colors.textMuted, border: colors.border },
+/**
+ * Buttons are hardware, not screen content, so they are moulded in the
+ * console's own colours: the crimson of the A/B buttons for the affirmative
+ * actions, the navy of the printed labels for the ones that end a round.
+ */
+const VARIANTS: Record<
+  ButtonVariant,
+  {
+    fill: string;
+    pressedFill: string;
+    border: string;
+    label: string;
+    pressedLabel: string;
+    /** A second inner line, for the loudest actions on a screen. */
+    doubleFrame: boolean;
+    width: number;
+  }
+> = {
+  primary: {
+    fill: SHELL.button,
+    pressedFill: SHELL.buttonDeep,
+    border: SHELL.buttonDeep,
+    label: SHELL.onButton,
+    pressedLabel: SHELL.onButton,
+    doubleFrame: false,
+    width: stroke.thin,
+  },
+  success: {
+    fill: SHELL.button,
+    pressedFill: SHELL.buttonDeep,
+    border: SHELL.buttonDeep,
+    label: SHELL.onButton,
+    pressedLabel: SHELL.onButton,
+    doubleFrame: true,
+    width: stroke.thick,
+  },
+  danger: {
+    fill: SHELL.print,
+    pressedFill: SHELL.printDeep,
+    border: SHELL.printDeep,
+    label: SHELL.onButton,
+    pressedLabel: SHELL.onButton,
+    doubleFrame: true,
+    width: stroke.thick,
+  },
+  ghost: {
+    fill: 'transparent',
+    pressedFill: SHELL.print,
+    border: SHELL.print,
+    label: SHELL.print,
+    pressedLabel: SHELL.onButton,
+    doubleFrame: false,
+    width: stroke.hair,
+  },
 };
 
 export function Button({ label, onPress, variant = 'primary', disabled, large, style, testID }: Props) {
-  const fill = FILLS[variant];
+  const spec = VARIANTS[variant];
 
   return (
     <Pressable
@@ -41,19 +90,31 @@ export function Button({ label, onPress, variant = 'primary', disabled, large, s
         styles.base,
         large && styles.large,
         {
-          backgroundColor: pressed ? fill.pressed : fill.bg,
-          borderColor: fill.border ?? 'transparent',
-          borderWidth: fill.border ? 2 : 0,
+          backgroundColor: pressed ? spec.pressedFill : spec.fill,
+          borderWidth: spec.width,
+          borderColor: spec.border,
         },
         disabled && styles.disabled,
         style,
       ]}
     >
-      <View pointerEvents="none">
-        <Text style={[styles.label, large && styles.labelLarge, { color: fill.text }]} numberOfLines={2}>
-          {label}
-        </Text>
-      </View>
+      {({ pressed }) => {
+        const fg = pressed ? spec.pressedLabel : spec.label;
+        return (
+          <View
+            pointerEvents="none"
+            style={[
+              styles.inner,
+              large && styles.innerLarge,
+              spec.doubleFrame && { borderWidth: stroke.hair, borderColor: fg },
+            ]}
+          >
+            <Text style={[styles.label, large && styles.labelLarge, { color: fg }]} numberOfLines={2}>
+              {label}
+            </Text>
+          </View>
+        );
+      }}
     </Pressable>
   );
 }
@@ -61,14 +122,21 @@ export function Button({ label, onPress, variant = 'primary', disabled, large, s
 const styles = StyleSheet.create({
   base: {
     minHeight: HIT_SIZE,
-    borderRadius: radii.md,
-    paddingHorizontal: spacing.lg,
-    paddingVertical: spacing.md,
+    alignItems: 'stretch',
+    justifyContent: 'center',
+  },
+  large: { minHeight: 68 },
+  disabled: { opacity: 0.35 },
+  inner: {
+    flex: 1,
+    minHeight: HIT_SIZE - stroke.thick * 2,
+    paddingHorizontal: spacing.md,
+    paddingVertical: spacing.sm,
+    margin: stroke.hair,
     alignItems: 'center',
     justifyContent: 'center',
   },
-  large: { minHeight: 68, borderRadius: radii.lg },
-  disabled: { opacity: 0.4 },
-  label: { ...type.label, textAlign: 'center' },
-  labelLarge: { ...type.heading, textAlign: 'center', letterSpacing: 0.5 },
+  innerLarge: { minHeight: 68 - stroke.thick * 2 },
+  label: { ...type.label, textAlign: 'center', textTransform: 'uppercase' },
+  labelLarge: { ...type.heading, textAlign: 'center', textTransform: 'uppercase' },
 });

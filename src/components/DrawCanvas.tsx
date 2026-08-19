@@ -4,7 +4,7 @@ import Svg, { Path, Rect } from 'react-native-svg';
 
 import type { Stroke } from '../game/types';
 import { haptics } from '../native/haptics';
-import { colors, radii } from '../theme/tokens';
+import { colors, stroke as line } from '../theme/tokens';
 
 /** Ignore sub-pixel jitter so a single stroke stays a manageable path string. */
 const MIN_STEP = 2;
@@ -94,8 +94,8 @@ export function DrawCanvas({ strokes, color, enabled, onStrokeStart, onStrokeCom
               d={stroke.d}
               stroke={stroke.color}
               strokeWidth={6}
-              strokeLinecap="round"
-              strokeLinejoin="round"
+              strokeLinecap="square"
+              strokeLinejoin="miter"
               fill="none"
             />
           ))}
@@ -104,8 +104,8 @@ export function DrawCanvas({ strokes, color, enabled, onStrokeStart, onStrokeCom
               d={livePath}
               stroke={color}
               strokeWidth={6}
-              strokeLinecap="round"
-              strokeLinejoin="round"
+              strokeLinecap="square"
+              strokeLinejoin="miter"
               fill="none"
             />
           ) : null}
@@ -139,8 +139,8 @@ export function DrawingPreview({
             d={stroke.d}
             stroke={stroke.color}
             strokeWidth={6}
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            strokeLinecap="square"
+            strokeLinejoin="miter"
             fill="none"
           />
         ))}
@@ -153,16 +153,14 @@ const styles = StyleSheet.create({
   canvas: {
     flex: 1,
     width: '100%',
-    borderRadius: radii.md,
-    borderWidth: 2,
-    borderColor: colors.border,
+    borderWidth: line.thick,
+    borderColor: colors.ink,
     overflow: 'hidden',
     backgroundColor: colors.bgDeep,
   },
   preview: {
-    borderRadius: radii.md,
-    borderWidth: 2,
-    borderColor: colors.border,
+    borderWidth: line.thick,
+    borderColor: colors.ink,
     overflow: 'hidden',
     alignSelf: 'center',
   },

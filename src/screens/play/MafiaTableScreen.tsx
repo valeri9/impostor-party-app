@@ -10,7 +10,7 @@ import type { MafiaRound } from '../../game/types';
 import { useI18n } from '../../i18n';
 import { haptics } from '../../native/haptics';
 import { playSound } from '../../native/sound';
-import { colors, MODE_ACCENT, radii, spacing, type } from '../../theme/tokens';
+import { colors, MODE_ACCENT, MODE_GLYPH, spacing, stroke, type } from '../../theme/tokens';
 
 function formatClock(ms: number): string {
   const totalSeconds = Math.max(0, Math.ceil(ms / 1000));
@@ -54,16 +54,20 @@ export function MafiaTableScreen({ round }: { round: MafiaRound }) {
 
   return (
     <Screen>
-      <Text style={styles.title}>{t('mafia.table.title')}</Text>
+      <View style={styles.titleRow}>
+        <Text style={styles.glyph}>{MODE_GLYPH.mafia}</Text>
+        <Text style={styles.title}>{t('mafia.table.title')}</Text>
+      </View>
       <Text style={styles.instruction}>{t('mafia.table.instruction')}</Text>
 
       <View style={styles.clockWrap}>
-        <View style={[styles.clock, { borderColor: expired ? colors.rose : accent }]}>
-          <Text testID="mafia-clock" style={[styles.clockText, expired && { color: colors.rose }]}>
+        {/* Time up inverts the whole panel — the 1-bit way of flashing red. */}
+        <View style={[styles.clock, { borderColor: accent }, expired && styles.clockExpired]}>
+          <Text testID="mafia-clock" style={[styles.clockText, expired && styles.clockTextExpired]}>
             {formatClock(remainingMs)}
           </Text>
-          <Text style={styles.playerCount}>
-            {round.order.length} {t('setup.players').toLowerCase()}
+          <Text style={[styles.playerCount, expired && styles.clockTextExpired]}>
+            {round.order.length} {t('setup.players')}
           </Text>
         </View>
       </View>
@@ -116,10 +120,12 @@ export function MafiaTableScreen({ round }: { round: MafiaRound }) {
 }
 
 const styles = StyleSheet.create({
-  title: { ...type.title, color: colors.text, textAlign: 'center' },
+  titleRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: spacing.sm },
+  title: { ...type.title, color: colors.ink, textAlign: 'center', textTransform: 'uppercase' },
+  glyph: { ...type.title, color: colors.inkSoft },
   instruction: {
     ...type.caption,
-    color: colors.textMuted,
+    color: colors.inkSoft,
     textAlign: 'center',
     marginTop: spacing.xs,
     marginBottom: spacing.lg,
@@ -128,14 +134,27 @@ const styles = StyleSheet.create({
   clock: {
     width: 260,
     height: 180,
-    borderRadius: radii.lg,
-    borderWidth: 3,
+    borderWidth: stroke.thick,
     backgroundColor: colors.surface,
     alignItems: 'center',
     justifyContent: 'center',
   },
-  clockText: { fontSize: 68, fontWeight: '800', color: colors.text, fontVariant: ['tabular-nums'] },
-  playerCount: { ...type.caption, color: colors.textFaint, marginTop: spacing.xs },
+  clockExpired: { backgroundColor: colors.ink },
+  clockText: {
+    fontFamily: type.hero.fontFamily,
+    fontSize: 60,
+    fontWeight: '700',
+    letterSpacing: 2,
+    color: colors.ink,
+    fontVariant: ['tabular-nums'],
+  },
+  clockTextExpired: { color: colors.onInk },
+  playerCount: {
+    ...type.caption,
+    color: colors.inkSoft,
+    marginTop: spacing.xs,
+    textTransform: 'uppercase',
+  },
   controls: { flexDirection: 'row', gap: spacing.sm, marginTop: spacing.sm },
   control: { flex: 1 },
   spacer: { flex: 1 },
