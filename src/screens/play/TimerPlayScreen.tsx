@@ -10,7 +10,7 @@ import type { TimerRound } from '../../game/types';
 import { useI18n } from '../../i18n';
 import { haptics } from '../../native/haptics';
 import { playSound } from '../../native/sound';
-import { colors, MODE_ACCENT, spacing, stroke, type } from '../../theme/tokens';
+import { colors, MODE_ACCENT, SHELL, spacing, stroke, type } from '../../theme/tokens';
 
 type Stage = 'ready' | 'running' | 'recorded';
 
@@ -104,14 +104,10 @@ export function TimerPlayScreen({ round }: { round: TimerRound }) {
           onPress={stop}
           style={({ pressed }) => [
             styles.stopButton,
-            { backgroundColor: pressed ? colors.bg : colors.ink },
+            { backgroundColor: pressed ? SHELL.buttonDeep : SHELL.button },
           ]}
         >
-          {({ pressed }) => (
-            <Text style={[styles.bigLabel, pressed && { color: colors.ink }]}>
-              {t('timer.play.stop')}
-            </Text>
-          )}
+          <Text style={styles.bigLabel}>{t('timer.play.stop')}</Text>
         </Pressable>
       </Screen>
     );
@@ -133,14 +129,10 @@ export function TimerPlayScreen({ round }: { round: TimerRound }) {
         onPress={start}
         style={({ pressed }) => [
           styles.startButton,
-          { backgroundColor: pressed ? colors.bg : colors.ink },
+          { backgroundColor: pressed ? SHELL.buttonDeep : SHELL.button },
         ]}
       >
-        {({ pressed }) => (
-          <Text style={[styles.bigLabel, pressed && { color: colors.ink }]}>
-            {t('timer.play.start')}
-          </Text>
-        )}
+        <Text style={styles.bigLabel}>{t('timer.play.start')}</Text>
       </Pressable>
     </Screen>
   );
@@ -166,13 +158,13 @@ const styles = StyleSheet.create({
     marginBottom: spacing.xl,
     paddingHorizontal: spacing.lg,
   },
-  // The one place a circle belongs: these read as the handheld's A/B buttons.
+  // The one place a circle belongs, so these are moulded as the A/B buttons.
   startButton: {
     width: CIRCLE,
     height: CIRCLE,
     borderRadius: CIRCLE / 2,
     borderWidth: stroke.thick,
-    borderColor: colors.ink,
+    borderColor: SHELL.buttonDeep,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -181,11 +173,11 @@ const styles = StyleSheet.create({
     height: CIRCLE + 40,
     borderRadius: (CIRCLE + 40) / 2,
     borderWidth: stroke.thick,
-    borderColor: colors.ink,
+    borderColor: SHELL.buttonDeep,
     alignItems: 'center',
     justifyContent: 'center',
   },
-  bigLabel: { ...type.hero, color: colors.onInk, textTransform: 'uppercase' },
+  bigLabel: { ...type.hero, color: SHELL.onButton, textTransform: 'uppercase' },
   doneArt: { marginBottom: spacing.md },
   wideAction: { alignSelf: 'stretch', marginTop: spacing.xl },
 });

@@ -1,12 +1,17 @@
 import { Platform } from 'react-native';
 
 /**
- * Design tokens — Nintendo Game Boy (DMG-01) dot-matrix aesthetic.
+ * Design tokens — Nintendo Game Boy (DMG-01) aesthetic, in two halves.
  *
- * The original hardware could display exactly four shades of one olive green,
- * so that is the entire palette: no hues, no gradients, no soft shadows. Depth
- * comes from hard 1-bit borders and from *inverting* a block (ink fill, light
- * text) the way an 8-bit game highlighted a selected menu row.
+ * Inside the screen it is still 1-bit: the LCD could display exactly four
+ * shades of one olive green, so game content uses no hues, no gradients and no
+ * soft shadows — depth comes from hard borders and from *inverting* a block
+ * (ink fill, light text) the way an 8-bit game highlighted a menu row.
+ *
+ * The console around it is where the colour lives: grey plastic, the purple
+ * screen bezel with its magenta and navy pinstripes, the navy print, and the
+ * crimson A/B buttons. The rule is simply where a thing belongs — content is
+ * on the screen, controls are on the shell.
  */
 
 /** The four shades the DMG's LCD could actually show, darkest to lightest. */
@@ -15,6 +20,29 @@ export const LCD = {
   dark: '#306230',
   light: '#8bac0f',
   lightest: '#9bbc0f',
+} as const;
+
+/** The plastic, print and buttons of the console itself. */
+export const SHELL = {
+  body: '#c9cbc4',
+  bodyEdge: '#a9aba3',
+  /** The dark panel the screen is set into. */
+  bezel: '#5c5670',
+  bezelEdge: '#443f54',
+  /** The grey caption printed across the bezel. */
+  caption: '#a9a5b5',
+  /** The pinstripes either side of that caption. */
+  stripeMagenta: '#a5195c',
+  stripeNavy: '#252b6b',
+  /** The navy the wordmark and button labels are printed in. */
+  print: '#2b3087',
+  printDeep: '#1c2066',
+  /** The A and B buttons. */
+  button: '#b5185a',
+  buttonDeep: '#8b1145',
+  onButton: '#f4f1ea',
+  /** The battery indicator beside the screen. */
+  led: '#7d1f1f',
 } as const;
 
 export const colors = {
@@ -29,11 +57,6 @@ export const colors = {
   inkSoft: LCD.dark,
   /** Text drawn on top of an ink-filled block. */
   onInk: LCD.lightest,
-
-  // The plastic around the screen, and the maroon wordmark printed on it.
-  shell: '#2f3128',
-  shellEdge: '#15160f',
-  shellText: '#8c3d5b',
 
   // Drawing pens: all four shades. The one matching the canvas doubles as an
   // eraser, exactly as in the Game Boy Camera's paint tool.

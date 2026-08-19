@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
- * Generates every app icon from a pixel grid, so the launcher artwork is the
- * same dot-matrix design as the game and no binary is hand-edited.
+ * Generates every app icon from pixel grids, so the launcher artwork is the
+ * same dot-matrix design as the game and no binary is ever hand-edited.
  *
  *   node scripts/gen-icons.js
  */
@@ -9,44 +9,78 @@ const fs = require('fs');
 const path = require('path');
 const zlib = require('zlib');
 
-const LCD_LIGHTEST = [0x9b, 0xbc, 0x0f];
-const INK = [0x0f, 0x38, 0x0f];
-const WHITE = [0xff, 0xff, 0xff];
+/** Kept in step with SHELL and LCD in src/theme/tokens.ts. */
+const PALETTE = {
+  '.': '#c9cbc4', // shell plastic
+  B: '#5c5670', // screen bezel
+  G: '#9bbc0f', // the lit LCD
+  '#': '#0f380f', // ink on the LCD
+  N: '#2b3087', // printed navy
+  M: '#b5185a', // A/B button crimson
+  D: '#2b2b2b', // the d-pad
+  W: '#ffffff', // monochrome layer
+  ' ': null, // transparent
+};
 
-/** 16x16 source art: a framed question mark — the secret nobody may see yet. */
-const ICON = [
-  '################',
-  '#..............#',
-  '#..............#',
-  '#...########...#',
-  '#...##....##...#',
-  '#...##....##...#',
-  '#.........##...#',
-  '#........##....#',
-  '#.......##.....#',
-  '#......##......#',
-  '#......##......#',
-  '#..............#',
-  '#......##......#',
-  '#......##......#',
-  '#..............#',
-  '################',
+/** The question mark on the screen: the secret nobody may see yet. */
+const MARK = [
+  '.####.',
+  '##..##',
+  '....##',
+  '...##.',
+  '..##..',
+  '..##..',
+  '......',
+  '..##..',
+  '..##..',
 ];
 
-/**
- * Drops the empty margin around a grid so it can be centred. Only the outside
- * is trimmed — the blank row above the question mark's dot has to survive.
- */
-function trim(rows) {
-  const litRows = rows.map((row, y) => (row.includes('#') ? y : -1)).filter((y) => y >= 0);
-  const litCols = [...Array(rows[0].length).keys()].filter((x) => rows.some((row) => row[x] === '#'));
-  return rows
-    .slice(Math.min(...litRows), Math.max(...litRows) + 1)
-    .map((row) => row.slice(Math.min(...litCols), Math.max(...litCols) + 1));
+function grid(width, height, fill) {
+  return Array.from({ length: height }, () => fill.repeat(width).split(''));
 }
 
-/** The same mark without its frame, for the adaptive icon's foreground layer. */
-const GLYPH = trim(ICON.map((row) => row.slice(1, -1)).slice(1, -1));
+function rect(g, x0, y0, x1, y1, ch) {
+  for (let y = y0; y <= y1; y++) for (let x = x0; x <= x1; x++) g[y][x] = ch;
+}
+
+/** Stamps a pattern, treating '.' in the pattern as "leave what is there". */
+function stamp(g, x0, y0, rows, ch) {
+  rows.forEach((row, y) =>
+    row.split('').forEach((cell, x) => {
+      if (cell === '#') g[y0 + y][x0 + x] = ch;
+    }),
+  );
+}
+
+/** The whole handheld: grey body, bezel, lit screen, wordmark, two buttons. */
+function handheld() {
+  const g = grid(24, 24, '.');
+  rect(g, 2, 2, 21, 16, 'B');
+  rect(g, 3, 3, 8, 3, 'M');
+  rect(g, 15, 3, 20, 3, 'M');
+  rect(g, 3, 4, 8, 4, 'N');
+  rect(g, 15, 4, 20, 4, 'N');
+  rect(g, 4, 6, 19, 15, 'G');
+  stamp(g, 9, 7, MARK, '#');
+  rect(g, 7, 18, 16, 19, 'N');
+  // The d-pad on the left, the two buttons on the right.
+  rect(g, 4, 20, 4, 22, 'D');
+  rect(g, 3, 21, 5, 21, 'D');
+  rect(g, 14, 21, 16, 22, 'M');
+  rect(g, 18, 21, 20, 22, 'M');
+  return g.map((row) => row.join(''));
+}
+
+/** Just the screen module, which survives Android's circular icon crop. */
+function screenModule() {
+  const g = grid(18, 14, 'B');
+  rect(g, 1, 2, 16, 12, 'G');
+  stamp(g, 6, 3, MARK, '#');
+  return g.map((row) => row.join(''));
+}
+
+/** The bare mark, for the monochrome layer Android tints itself. */
+const SILHOUETTE = MARK.map((row) => row.replace(/#/g, 'W'));
 
 const CRC_TABLE = (() => {
   const table = new Int32Array(256);
@@ -98,22 +132,28 @@ function writePng(file, width, height, pixels) {
   console.log(`wrote ${path.relative(process.cwd(), file)} (${width}x${height})`);
 }
 
+function rgb(hex) {
+  return [1, 3, 5].map((i) => parseInt(hex.slice(i, i + 2), 16));
+}
+
 /**
- * Renders a pixel grid at `size`, nearest-neighbour so the pixels stay hard.
- * `inset` is the fraction of the canvas left empty around the art.
+ * Renders a character grid at `size`. One square cell per source pixel, so a
+ * non-square grid is never stretched. `inset` is the fraction of the canvas
+ * left empty around the art; `bleed` fills the whole canvas with one colour
+ * first, for icons that are not meant to be transparent.
  */
-function render(file, size, rows, { on, off, inset = 0 }) {
+function render(file, size, rows, { inset = 0, bleed = null } = {}) {
   const cols = rows[0].length;
   const pixels = Buffer.alloc(size * size * 4);
-  if (off) {
+  if (bleed) {
+    const [r, g, b] = rgb(bleed);
     for (let i = 0; i < size * size; i++) {
-      pixels[i * 4] = off[0];
-      pixels[i * 4 + 1] = off[1];
-      pixels[i * 4 + 2] = off[2];
+      pixels[i * 4] = r;
+      pixels[i * 4 + 1] = g;
+      pixels[i * 4 + 2] = b;
       pixels[i * 4 + 3] = 255;
     }
   }
-  // One square cell per source pixel, so a non-square grid is never stretched.
   const box = Math.round(size * (1 - inset * 2));
   const cell = Math.floor(box / Math.max(cols, rows.length));
   const artW = cell * cols;
@@ -122,14 +162,15 @@ function render(file, size, rows, { on, off, inset = 0 }) {
   const originY = Math.round((size - artH) / 2);
 
   for (let y = 0; y < artH; y++) {
-    const gy = Math.floor(y / cell);
+    const row = rows[Math.floor(y / cell)];
     for (let x = 0; x < artW; x++) {
-      const gx = Math.floor(x / cell);
-      if (rows[gy][gx] !== '#') continue;
+      const hex = PALETTE[row[Math.floor(x / cell)]];
+      if (!hex) continue;
+      const [r, g, b] = rgb(hex);
       const i = ((originY + y) * size + originX + x) * 4;
-      pixels[i] = on[0];
-      pixels[i + 1] = on[1];
-      pixels[i + 2] = on[2];
+      pixels[i] = r;
+      pixels[i + 1] = g;
+      pixels[i + 2] = b;
       pixels[i + 3] = 255;
     }
   }
@@ -137,10 +178,14 @@ function render(file, size, rows, { on, off, inset = 0 }) {
 }
 
 const assets = path.join(__dirname, '..', 'assets');
-render(path.join(assets, 'icon.png'), 1024, ICON, { on: INK, off: LCD_LIGHTEST });
-render(path.join(assets, 'splash-icon.png'), 512, ICON, { on: INK, off: LCD_LIGHTEST });
-render(path.join(assets, 'favicon.png'), 64, ICON, { on: INK, off: LCD_LIGHTEST });
-render(path.join(assets, 'android-icon-background.png'), 1024, ['#'], { on: LCD_LIGHTEST });
-// Adaptive foreground and monochrome layers keep Android's safe zone clear.
-render(path.join(assets, 'android-icon-foreground.png'), 1024, GLYPH, { on: INK, inset: 0.18 });
-render(path.join(assets, 'android-icon-monochrome.png'), 1024, GLYPH, { on: WHITE, inset: 0.18 });
+const HANDHELD = handheld();
+const SCREEN = screenModule();
+
+render(path.join(assets, 'icon.png'), 1024, HANDHELD, { bleed: PALETTE['.'] });
+render(path.join(assets, 'splash-icon.png'), 512, HANDHELD, { bleed: PALETTE['.'] });
+render(path.join(assets, 'favicon.png'), 64, HANDHELD, { bleed: PALETTE['.'] });
+render(path.join(assets, 'android-icon-background.png'), 1024, ['.'], { bleed: PALETTE['.'] });
+// Android crops the adaptive icon, so its foreground is the screen module
+// alone, kept well inside the safe zone.
+render(path.join(assets, 'android-icon-foreground.png'), 1024, SCREEN, { inset: 0.2 });
+render(path.join(assets, 'android-icon-monochrome.png'), 1024, SILHOUETTE, { inset: 0.28 });

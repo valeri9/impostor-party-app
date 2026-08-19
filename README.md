@@ -30,31 +30,43 @@ npm run gen:icons  # regenerate the pixel-art app icons
 
 ## Design: a Game Boy in your hand
 
-Every screen is drawn as the handheld itself — a dark plastic shell with the
-printed caption below it, and a dot-matrix LCD panel recessed into the front.
+Every screen is drawn as the handheld itself — grey plastic, the purple bezel
+with its magenta-over-navy pinstripes and printed caption, the dot-matrix LCD
+recessed into the front, and the wordmark below it.
 
-`src/theme/tokens.ts` is the whole design system, and it is deliberately
-constrained to what a **DMG-01 could actually display: four shades of one olive
-green** (`#0f380f`, `#306230`, `#8bac0f`, `#9bbc0f`). Everything else follows
+`src/theme/tokens.ts` holds the whole design system, split the way the hardware
+is. **Where a thing belongs decides how it is coloured: content is on the
+screen, controls are on the shell.**
+
+**`LCD` — inside the screen.** Strictly the four shades a DMG-01 could display
+(`#0f380f`, `#306230`, `#8bac0f`, `#9bbc0f`). Everything drawn there follows
 from that:
 
-- **No hues.** Modes used to carry an accent colour each; a four-shade screen has
-  none to spare, so they stay apart by name, emblem and layout instead.
+- **No hues.** Modes used to carry an accent colour each; four shades leave none
+  to spare, so they stay apart by name, emblem and layout instead.
 - **No rounded corners, no blur, no gradients.** Square pixels only. There is no
   `radii` scale — just `stroke` weights for 1-bit borders.
-- **Emphasis is inversion.** The speaking player, the selected mode, the impostor
-  banner and a pressed button all flip to an ink fill with light text, the way an
-  8-bit menu marked its cursor.
+- **Emphasis is inversion.** The speaking player, the selected mode and the
+  impostor banner flip to an ink fill with light text, the way an 8-bit menu
+  marked its cursor.
 - **Illustrations are pixel grids.** `src/components/PixelArt.tsx` renders a
   string grid as square pixels — the padlock, the checkmark, the star and the
   clock are all defined that way, and `scripts/gen-icons.js` renders the same
   kind of grid into every launcher icon.
-- **Type is a blocky monospace** (`Menlo` / `monospace`), uppercased through
-  `textTransform` in styles rather than in the strings, so the dictionary text
-  stays exactly what the translator wrote.
 
-Playing cards are drawn in the same four shades: red suits print in the mid
-green, black suits in ink.
+**`SHELL` — the console around it.** This is where the colour lives: the grey
+body, the purple bezel and its pinstripes, the navy print, the crimson A/B
+buttons and the battery LED. Buttons are hardware, so they are moulded in those
+colours — crimson for the affirmative actions, navy for the ones that end a
+round — and the blind timer's big round Start/Stop targets are the A and B
+buttons themselves.
+
+Type throughout is a blocky monospace (`Menlo` / `monospace`), uppercased via
+`textTransform` in styles rather than in the strings, so the dictionary text
+stays exactly what the translator wrote.
+
+Playing cards stay on the screen side, printed in the four greens: red suits in
+the mid green, black suits in ink.
 
 ---
 

@@ -3,7 +3,7 @@ import { ScrollView, StyleSheet, Text, View, ViewStyle } from 'react-native';
 import Svg, { Defs, Pattern, Rect } from 'react-native-svg';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { BEZEL_CAPTION, colors, LCD, spacing, stroke, type } from '../theme/tokens';
+import { BEZEL_CAPTION, colors, LCD, PIXEL_FONT, SHELL, spacing, stroke, type } from '../theme/tokens';
 
 type Props = {
   children: React.ReactNode;
@@ -17,8 +17,9 @@ type Props = {
 };
 
 /**
- * Every screen is drawn as the handheld itself: a dark plastic shell with the
- * printed caption below, and a dot-matrix LCD panel recessed into it.
+ * Every screen is drawn as the handheld itself: grey plastic, the purple bezel
+ * with its pinstripes and printed caption, the dot-matrix LCD recessed into it,
+ * and the wordmark below. Only the LCD is 1-bit green; the console is not.
  */
 export function Screen({ children, scroll = false, center = false, style, background, testID }: Props) {
   const insets = useSafeAreaInsets();
@@ -32,23 +33,47 @@ export function Screen({ children, scroll = false, center = false, style, backgr
 
   return (
     <View testID={testID} style={[styles.shell, shellPadding]}>
-      <View style={[styles.panel, panelTint]}>
-        <DotMatrix />
-        {scroll ? (
-          <ScrollView
-            contentContainerStyle={[styles.content, center && styles.center, style]}
-            keyboardShouldPersistTaps="handled"
-            showsVerticalScrollIndicator={false}
-          >
-            {children}
-          </ScrollView>
-        ) : (
-          <View style={[styles.content, styles.fill, center && styles.center, style]}>{children}</View>
-        )}
+      <View style={styles.bezel}>
+        <View style={styles.bezelTop}>
+          <View style={styles.led} />
+          <Pinstripes />
+          <Text style={styles.caption} numberOfLines={1} adjustsFontSizeToFit>
+            {BEZEL_CAPTION}
+          </Text>
+          <Pinstripes />
+        </View>
+
+        <View style={[styles.lcd, panelTint]}>
+          <DotMatrix />
+          {scroll ? (
+            <ScrollView
+              contentContainerStyle={[styles.content, center && styles.center, style]}
+              keyboardShouldPersistTaps="handled"
+              showsVerticalScrollIndicator={false}
+            >
+              {children}
+            </ScrollView>
+          ) : (
+            <View style={[styles.content, styles.fill, center && styles.center, style]}>{children}</View>
+          )}
+        </View>
       </View>
-      <Text style={styles.caption} numberOfLines={1}>
-        {BEZEL_CAPTION}
-      </Text>
+
+      {/* The wordmark printed under the screen, set like the console's own. */}
+      <View style={styles.wordmark}>
+        <Text style={styles.wordmarkSmall}>Impostor</Text>
+        <Text style={styles.wordmarkLarge}>PARTY</Text>
+      </View>
+    </View>
+  );
+}
+
+/** The magenta-over-navy pair printed either side of the bezel caption. */
+function Pinstripes() {
+  return (
+    <View style={styles.stripes}>
+      <View style={[styles.stripe, { backgroundColor: SHELL.stripeMagenta }]} />
+      <View style={[styles.stripe, { backgroundColor: SHELL.stripeNavy }]} />
     </View>
   );
 }
@@ -75,23 +100,55 @@ function DotMatrix() {
 }
 
 const styles = StyleSheet.create({
-  shell: { flex: 1, backgroundColor: colors.shell },
-  panel: {
+  shell: { flex: 1, backgroundColor: SHELL.body },
+  bezel: {
+    flex: 1,
+    backgroundColor: SHELL.bezel,
+    paddingHorizontal: spacing.sm,
+    paddingBottom: spacing.sm,
+    // The one curve on the whole console, and it is on the plastic.
+    borderBottomRightRadius: 34,
+  },
+  bezelTop: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: spacing.sm,
+    height: 26,
+  },
+  led: { width: 8, height: 8, borderRadius: 4, backgroundColor: SHELL.led },
+  stripes: { flex: 1, gap: 3 },
+  stripe: { height: 3 },
+  caption: {
+    fontFamily: PIXEL_FONT,
+    fontSize: 8,
+    fontWeight: '700',
+    letterSpacing: 1.2,
+    color: SHELL.caption,
+    flexShrink: 0,
+  },
+  lcd: {
     flex: 1,
     backgroundColor: colors.bg,
-    borderWidth: stroke.thin,
-    borderColor: colors.shellEdge,
+    borderWidth: stroke.hair,
+    borderColor: SHELL.bezelEdge,
     overflow: 'hidden',
   },
   content: { paddingHorizontal: spacing.md, paddingVertical: spacing.md },
   fill: { flex: 1 },
   center: { flexGrow: 1, justifyContent: 'center', alignItems: 'center' },
-  caption: {
-    ...type.caption,
-    fontSize: 9,
-    letterSpacing: 2,
-    color: colors.shellText,
-    textAlign: 'center',
+  wordmark: {
+    flexDirection: 'row',
+    alignItems: 'baseline',
+    justifyContent: 'center',
+    gap: spacing.xs,
     paddingTop: spacing.xs,
+  },
+  wordmarkSmall: { ...type.caption, fontSize: 11, color: SHELL.print, letterSpacing: 0 },
+  wordmarkLarge: {
+    ...type.caption,
+    fontSize: 15,
+    color: SHELL.print,
+    fontStyle: 'italic',
+    letterSpacing: 1,
   },
 });
