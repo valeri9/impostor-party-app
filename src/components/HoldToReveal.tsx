@@ -1,0 +1,156 @@
+import React, { useCallback, useEffect, useRef, useState } from 'react';
+import { AppState, Pressable, StyleSheet, Text, View } from 'react-native';
+
+import { useI18n } from '../i18n';
+import { haptics } from '../native/haptics';
+import { colors, radii, spacing, type } from '../theme/tokens';
+
+/** Continuous hold required before the pass-along button unlocks. */
+const UNLOCK_MS = 600;
+
+type Props = {
+  playerName: string;
+  /** The secret. Rendered ONLY while the finger is down. */
+  children: React.ReactNode;
+  /** Optional accent used for the shield glow, so modes feel distinct. */
+  accent?: string;
+  onHoldStart?: () => void;
+  /** Fires the first time the player completes a real hold. */
+  onUnlocked?: () => void;
+};
+
+/**
+ * The universal pass-and-play privacy gate.
+ *
+ * Two rules drive the implementation:
+ *   1. The secret is *conditionally rendered*, never merely covered or faded —
+ *      releasing the finger cannot leave a readable frame behind.
+ *   2. Losing the touch for any reason (release, cancel, app backgrounded)
+ *      hides it immediately.
+ */
+export function HoldToReveal({ playerName, children, accent = colors.indigo, onHoldStart, onUnlocked }: Props) {
+  const { t } = useI18n();
+  const [held, setHeld] = useState(false);
+  const [unlocked, setUnlocked] = useState(false);
+  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const clearTimer = useCallback(() => {
+    if (timerRef.current) {
+      clearTimeout(timerRef.current);
+      timerRef.current = null;
+    }
+  }, []);
+
+  const hide = useCallback(() => {
+    clearTimer();
+    setHeld((wasHeld) => {
+      if (wasHeld) haptics.light();
+      return false;
+    });
+  }, [clearTimer]);
+
+  // Backgrounding the app (app switcher, screenshot, notification pull-down)
+  // must not leave the secret on a snapshot of the screen.
+  useEffect(() => {
+    const sub = AppState.addEventListener('change', (next) => {
+      if (next !== 'active') hide();
+    });
+    return () => sub.remove();
+  }, [hide]);
+
+  useEffect(() => clearTimer, [clearTimer]);
+
+  const handlePressIn = useCallback(() => {
+    haptics.medium();
+    setHeld(true);
+    onHoldStart?.();
+    clearTimer();
+    timerRef.current = setTimeout(() => {
+      setUnlocked(true);
+      onUnlocked?.();
+    }, UNLOCK_MS);
+  }, [clearTimer, onHoldStart, onUnlocked]);
+
+  return (
+    <View style={styles.wrap}>
+      <Pressable
+        testID="hold-target"
+        style={styles.pressable}
+        onPressIn={handlePressIn}
+        onPressOut={hide}
+        onTouchCancel={hide}
+        delayLongPress={UNLOCK_MS}
+        accessibilityRole="button"
+        accessibilityLabel={`${t('reveal.shield', { name: playerName })}. ${t('reveal.holdHint')}`}
+      >
+        {held ? (
+          <View testID="secret-content" style={[styles.secret, { borderColor: accent }]}>{children}</View>
+        ) : (
+          <Shield playerName={playerName} accent={accent} />
+        )}
+      </Pressable>
+
+      <Text style={styles.footHint}>
+        {held ? t('reveal.holding') : unlocked ? t('reveal.holdHint') : t('reveal.nextLocked')}
+      </Text>
+    </View>
+  );
+}
+
+/** The only thing a bystander can ever see: a name and an instruction. */
+function Shield({ playerName, accent }: { playerName: string; accent: string }) {
+  const { t } = useI18n();
+  return (
+    <View testID="shield" style={[styles.shield, { borderColor: accent }]}>
+      <View style={[styles.lockBadge, { backgroundColor: accent }]}>
+        <Text style={styles.lockGlyph}>🔒</Text>
+      </View>
+      <Text style={styles.shieldName} numberOfLines={2} adjustsFontSizeToFit>
+        {t('reveal.shield', { name: playerName })}
+      </Text>
+      <Text style={styles.shieldHint}>{t('reveal.holdHint')}</Text>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  wrap: { flex: 1, width: '100%' },
+  pressable: { flex: 1, width: '100%' },
+  shield: {
+    flex: 1,
+    borderWidth: 2,
+    borderRadius: radii.lg,
+    backgroundColor: colors.surface,
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: spacing.lg,
+    gap: spacing.md,
+  },
+  lockBadge: {
+    width: 84,
+    height: 84,
+    borderRadius: radii.pill,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginBottom: spacing.sm,
+  },
+  lockGlyph: { fontSize: 38 },
+  shieldName: { ...type.title, color: colors.text, textAlign: 'center' },
+  shieldHint: { ...type.body, color: colors.textMuted, textAlign: 'center' },
+  secret: {
+    flex: 1,
+    borderWidth: 2,
+    borderRadius: radii.lg,
+    backgroundColor: colors.bgDeep,
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: spacing.lg,
+  },
+  footHint: {
+    ...type.caption,
+    color: colors.textFaint,
+    textAlign: 'center',
+    marginTop: spacing.sm,
+    minHeight: 18,
+  },
+});
