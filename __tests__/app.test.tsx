@@ -206,6 +206,28 @@ describe('digital mafia', () => {
     expect(screen.getByText(translate('en', 'results.allRoles'))).toBeTruthy();
     DEFAULT_NAMES.forEach((name) => expect(screen.getAllByText(name).length).toBeGreaterThan(0));
   });
+
+  it('keeps the round clock where it is when paused', async () => {
+    await startGame('mafia');
+    await completeRevealLoop(4);
+
+    expect(screen.getByTestId('mafia-clock')).toHaveTextContent('3:00');
+
+    await fireEvent.press(screen.getByTestId('mafia-toggle'));
+    await waitFor(() => expect(screen.getByTestId('mafia-clock')).not.toHaveTextContent('3:00'), {
+      timeout: 2000,
+    });
+
+    // Pausing must not re-arm the clock to the full round length.
+    const paused = screen.getByTestId('mafia-clock').props.children;
+    await fireEvent.press(screen.getByTestId('mafia-toggle'));
+    expect(screen.getByTestId('mafia-clock')).toHaveTextContent(String(paused));
+    expect(screen.getByTestId('mafia-clock')).not.toHaveTextContent('3:00');
+
+    // Reset does re-arm it.
+    await fireEvent.press(screen.getByTestId('mafia-reset'));
+    expect(screen.getByTestId('mafia-clock')).toHaveTextContent('3:00');
+  });
 });
 
 describe('one-stroke canvas', () => {

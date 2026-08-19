@@ -31,11 +31,6 @@ export function MafiaTableScreen({ round }: { round: MafiaRound }) {
   const [running, setRunning] = useState(false);
   const deadlineRef = useRef(0);
 
-  // Changing the round length while paused re-arms the clock.
-  useEffect(() => {
-    if (!running) setRemainingMs(minutes * 60_000);
-  }, [minutes, running]);
-
   useEffect(() => {
     if (!running) return;
     deadlineRef.current = Date.now() + remainingMs;
@@ -64,7 +59,7 @@ export function MafiaTableScreen({ round }: { round: MafiaRound }) {
 
       <View style={styles.clockWrap}>
         <View style={[styles.clock, { borderColor: expired ? colors.rose : accent }]}>
-          <Text style={[styles.clockText, expired && { color: colors.rose }]}>
+          <Text testID="mafia-clock" style={[styles.clockText, expired && { color: colors.rose }]}>
             {formatClock(remainingMs)}
           </Text>
           <Text style={styles.playerCount}>
@@ -79,13 +74,16 @@ export function MafiaTableScreen({ round }: { round: MafiaRound }) {
         min={1}
         max={15}
         onChange={(next) => {
+          // Changing the round length stops and re-arms the clock.
           setRunning(false);
           setMinutes(next);
+          setRemainingMs(next * 60_000);
         }}
       />
 
       <View style={styles.controls}>
         <Button
+          testID="mafia-toggle"
           label={running ? t('mafia.table.pause') : t('mafia.table.start')}
           variant={running ? 'primary' : 'success'}
           disabled={expired && !running}
@@ -93,6 +91,7 @@ export function MafiaTableScreen({ round }: { round: MafiaRound }) {
           style={styles.control}
         />
         <Button
+          testID="mafia-reset"
           label={t('mafia.table.reset')}
           variant="ghost"
           onPress={() => {
