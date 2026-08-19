@@ -77,6 +77,52 @@ function chime() {
   return samples;
 }
 
+/** Sharp, low double-tap — the moulded plastic clack of an A/B press. */
+function click() {
+  const duration = 0.055;
+  const total = Math.floor(SAMPLE_RATE * duration);
+  const samples = new Array(total);
+  for (let i = 0; i < total; i++) {
+    const t = i / SAMPLE_RATE;
+    const decay = Math.exp(-90 * t);
+    samples[i] = square(t, 1400) * 0.3 * decay * edgeFade(i, total, 40);
+  }
+  return samples;
+}
+
+/** A thin, higher blip — the D-pad moving one notch (steppers, toggles, chips). */
+function tick() {
+  const duration = 0.035;
+  const total = Math.floor(SAMPLE_RATE * duration);
+  const samples = new Array(total);
+  for (let i = 0; i < total; i++) {
+    const t = i / SAMPLE_RATE;
+    const decay = Math.exp(-140 * t);
+    samples[i] = square(t, 2200) * 0.22 * decay * edgeFade(i, total, 30);
+  }
+  return samples;
+}
+
+/** Short rising arpeggio — the hold has cleared, the secret is confirmed. */
+function pop() {
+  const duration = 0.16;
+  const total = Math.floor(SAMPLE_RATE * duration);
+  const samples = new Array(total);
+  const notes = [660, 990, 1320];
+  const noteLen = duration / notes.length;
+  for (let i = 0; i < total; i++) {
+    const t = i / SAMPLE_RATE;
+    const note = Math.min(notes.length - 1, Math.floor(t / noteLen));
+    const localT = t - note * noteLen;
+    const decay = Math.exp(-14 * localT);
+    samples[i] = sine(t, notes[note]) * 0.32 * decay * edgeFade(i, total, 150);
+  }
+  return samples;
+}
+
 fs.mkdirSync(OUT_DIR, { recursive: true });
 writeWav('buzzer.wav', buzzer());
 writeWav('chime.wav', chime());
+writeWav('click.wav', click());
+writeWav('tick.wav', tick());
+writeWav('pop.wav', pop());

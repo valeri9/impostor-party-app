@@ -1,8 +1,10 @@
 import React from 'react';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { Animated, Pressable, StyleSheet, Text, View } from 'react-native';
 
 import { haptics } from '../native/haptics';
+import { playSound } from '../native/sound';
 import { colors, spacing, stroke, type } from '../theme/tokens';
+import { usePressScale } from './pressAnim';
 
 type StepperProps = {
   label: string;
@@ -17,6 +19,7 @@ export function Stepper({ label, value, min, max, onChange }: StepperProps) {
     const next = Math.min(max, Math.max(min, value + delta));
     if (next === value) return;
     haptics.selection();
+    playSound('tick');
     onChange(next);
   };
 
@@ -33,21 +36,26 @@ export function Stepper({ label, value, min, max, onChange }: StepperProps) {
 }
 
 function StepButton({ glyph, onPress, disabled }: { glyph: string; onPress: () => void; disabled: boolean }) {
+  const { scale, onPressIn, onPressOut } = usePressScale();
   return (
-    <Pressable
-      accessibilityRole="button"
-      onPress={onPress}
-      disabled={disabled}
-      style={({ pressed }) => [
-        styles.stepButton,
-        pressed && !disabled && { backgroundColor: colors.ink },
-        disabled && styles.stepDisabled,
-      ]}
-    >
-      {({ pressed }) => (
-        <Text style={[styles.stepGlyph, pressed && !disabled && { color: colors.onInk }]}>{glyph}</Text>
-      )}
-    </Pressable>
+    <Animated.View style={{ transform: [{ scale }] }}>
+      <Pressable
+        accessibilityRole="button"
+        onPress={onPress}
+        onPressIn={disabled ? undefined : onPressIn}
+        onPressOut={onPressOut}
+        disabled={disabled}
+        style={({ pressed }) => [
+          styles.stepButton,
+          pressed && !disabled && { backgroundColor: colors.ink },
+          disabled && styles.stepDisabled,
+        ]}
+      >
+        {({ pressed }) => (
+          <Text style={[styles.stepGlyph, pressed && !disabled && { color: colors.onInk }]}>{glyph}</Text>
+        )}
+      </Pressable>
+    </Animated.View>
   );
 }
 
@@ -66,27 +74,33 @@ export function ToggleRow({
   onChange: (value: boolean) => void;
   disabled?: boolean;
 }) {
+  const { scale, onPressIn, onPressOut } = usePressScale(0.96);
   return (
     <View style={[styles.row, disabled && styles.rowDisabled]}>
       <Text style={styles.label}>{label}</Text>
-      <Pressable
-        accessibilityRole="switch"
-        accessibilityState={{ checked: value, disabled: !!disabled }}
-        accessibilityLabel={label}
-        disabled={disabled}
-        onPress={() => {
-          haptics.selection();
-          onChange(!value);
-        }}
-        style={styles.toggle}
-      >
-        <View style={[styles.toggleHalf, value && styles.toggleHalfOn]}>
-          <Text style={[styles.toggleText, value && styles.toggleTextOn]}>ON</Text>
-        </View>
-        <View style={[styles.toggleHalf, !value && styles.toggleHalfOn]}>
-          <Text style={[styles.toggleText, !value && styles.toggleTextOn]}>OFF</Text>
-        </View>
-      </Pressable>
+      <Animated.View style={{ transform: [{ scale }] }}>
+        <Pressable
+          accessibilityRole="switch"
+          accessibilityState={{ checked: value, disabled: !!disabled }}
+          accessibilityLabel={label}
+          disabled={disabled}
+          onPressIn={disabled ? undefined : onPressIn}
+          onPressOut={onPressOut}
+          onPress={() => {
+            haptics.selection();
+            playSound('tick');
+            onChange(!value);
+          }}
+          style={styles.toggle}
+        >
+          <View style={[styles.toggleHalf, value && styles.toggleHalfOn]}>
+            <Text style={[styles.toggleText, value && styles.toggleTextOn]}>ON</Text>
+          </View>
+          <View style={[styles.toggleHalf, !value && styles.toggleHalfOn]}>
+            <Text style={[styles.toggleText, !value && styles.toggleTextOn]}>OFF</Text>
+          </View>
+        </Pressable>
+      </Animated.View>
     </View>
   );
 }

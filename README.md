@@ -81,11 +81,35 @@ It enforces three rules:
 2. **Any loss of touch hides it** — release, gesture cancel, or the app being
    backgrounded (an `AppState` listener guards against app-switcher snapshots).
 3. **Next Player lock.** The pass-along button stays disabled until a sustained
-   600 ms hold, so the phone is never handed over with a secret on screen.
+   200 ms hold, so the phone is never handed over with a secret on screen.
 
 `RevealScreen` owns the player cursor and is keyed per player, so no hold state
 can carry from one player to the next. Modes only supply what the secret *looks*
 like — none of them implement revealing themselves.
+
+---
+
+## Feel: sound, haptics, motion
+
+Every tappable surface answers immediately, the way real plastic would:
+
+- **Press = squash.** Buttons, D-pad steppers, the toggle switch, language
+  chips, mode cards and colour swatches all shrink slightly under the finger
+  and spring back on release (`src/components/pressAnim.ts`), instead of only
+  swapping a background colour.
+- **Every action has a matching sound**, synthesized deterministically by
+  `scripts/gen-audio.js` — no binary assets committed. `click` for buttons,
+  `tick` for steppers/toggles/chips/the pencil touching the canvas, `chime`
+  for a locked-in stroke or a stopped timer, `buzzer` for the Mafia clock
+  running out, and `pop` for the two payoff moments: a hold clearing and the
+  impostor's name landing on the results screen.
+- **The secret unfolds, it doesn't just appear.** `HoldToReveal` springs the
+  revealed content in on press, and the impostor banner on the results screen
+  pops in with a haptic and a `pop` — the one moment in the game worth a
+  little fanfare.
+- **Haptics accompany all of the above** (`src/native/haptics.ts`), Light for
+  a tick, Medium for a press, Heavy for a big commit, Success for a payoff —
+  with a `navigator.vibrate` fallback on web.
 
 ---
 

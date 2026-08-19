@@ -1,9 +1,10 @@
 import React, { useRef, useState } from 'react';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { Animated, Pressable, StyleSheet, Text, View } from 'react-native';
 import { useKeepAwake } from 'expo-keep-awake';
 
 import { Button } from '../../components/Button';
 import { PixelArt, PIXEL_CHECK, PIXEL_CLOCK } from '../../components/PixelArt';
+import { usePressScale } from '../../components/pressAnim';
 import { Screen } from '../../components/Screen';
 import { useGame } from '../../game/GameContext';
 import type { TimerRound } from '../../game/types';
@@ -26,6 +27,8 @@ export function TimerPlayScreen({ round }: { round: TimerRound }) {
 
   const [stage, setStage] = useState<Stage>('ready');
   const startedAtRef = useRef(0);
+  const startPress = usePressScale(0.92);
+  const stopPress = usePressScale(0.92);
 
   const turn = round.order.filter((id) => id in round.times).length;
   const allDone = turn >= round.order.length;
@@ -35,6 +38,7 @@ export function TimerPlayScreen({ round }: { round: TimerRound }) {
 
   const start = () => {
     haptics.heavy();
+    playSound('click');
     startedAtRef.current = Date.now();
     setStage('running');
   };
@@ -97,18 +101,22 @@ export function TimerPlayScreen({ round }: { round: TimerRound }) {
     return (
       <Screen center testID="timer-running">
         <Text style={styles.runningHint}>{t('timer.play.running')}</Text>
-        <Pressable
-          testID="timer-stop"
-          accessibilityRole="button"
-          accessibilityLabel={t('timer.play.stop')}
-          onPress={stop}
-          style={({ pressed }) => [
-            styles.stopButton,
-            { backgroundColor: pressed ? SHELL.buttonDeep : SHELL.button },
-          ]}
-        >
-          <Text style={styles.bigLabel}>{t('timer.play.stop')}</Text>
-        </Pressable>
+        <Animated.View style={{ transform: [{ scale: stopPress.scale }] }}>
+          <Pressable
+            testID="timer-stop"
+            accessibilityRole="button"
+            accessibilityLabel={t('timer.play.stop')}
+            onPressIn={stopPress.onPressIn}
+            onPressOut={stopPress.onPressOut}
+            onPress={stop}
+            style={({ pressed }) => [
+              styles.stopButton,
+              { backgroundColor: pressed ? SHELL.buttonDeep : SHELL.button },
+            ]}
+          >
+            <Text style={styles.bigLabel}>{t('timer.play.stop')}</Text>
+          </Pressable>
+        </Animated.View>
       </Screen>
     );
   }
@@ -122,18 +130,22 @@ export function TimerPlayScreen({ round }: { round: TimerRound }) {
         {t('timer.play.passTo', { name: current?.name ?? '' })}
       </Text>
       <Text style={styles.instruction}>{t('timer.play.ready')}</Text>
-      <Pressable
-        testID="timer-start"
-        accessibilityRole="button"
-        accessibilityLabel={t('timer.play.start')}
-        onPress={start}
-        style={({ pressed }) => [
-          styles.startButton,
-          { backgroundColor: pressed ? SHELL.buttonDeep : SHELL.button },
-        ]}
-      >
-        <Text style={styles.bigLabel}>{t('timer.play.start')}</Text>
-      </Pressable>
+      <Animated.View style={{ transform: [{ scale: startPress.scale }] }}>
+        <Pressable
+          testID="timer-start"
+          accessibilityRole="button"
+          accessibilityLabel={t('timer.play.start')}
+          onPressIn={startPress.onPressIn}
+          onPressOut={startPress.onPressOut}
+          onPress={start}
+          style={({ pressed }) => [
+            styles.startButton,
+            { backgroundColor: pressed ? SHELL.buttonDeep : SHELL.button },
+          ]}
+        >
+          <Text style={styles.bigLabel}>{t('timer.play.start')}</Text>
+        </Pressable>
+      </Animated.View>
     </Screen>
   );
 }

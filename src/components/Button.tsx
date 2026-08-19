@@ -1,8 +1,10 @@
 import React from 'react';
-import { Pressable, StyleSheet, Text, View, ViewStyle } from 'react-native';
+import { Animated, Pressable, StyleSheet, Text, View, ViewStyle } from 'react-native';
 
 import { haptics } from '../native/haptics';
+import { playSound } from '../native/sound';
 import { HIT_SIZE, SHELL, spacing, stroke, type } from '../theme/tokens';
+import { usePressScale } from './pressAnim';
 
 export type ButtonVariant = 'primary' | 'success' | 'danger' | 'ghost';
 
@@ -75,47 +77,57 @@ const VARIANTS: Record<
 
 export function Button({ label, onPress, variant = 'primary', disabled, large, style, testID }: Props) {
   const spec = VARIANTS[variant];
+  const { scale, onPressIn, onPressOut } = usePressScale();
 
   return (
-    <Pressable
-      testID={testID}
-      accessibilityRole="button"
-      accessibilityState={{ disabled: !!disabled }}
-      disabled={disabled}
-      onPress={() => {
-        haptics.medium();
-        onPress();
-      }}
-      style={({ pressed }) => [
-        styles.base,
-        large && styles.large,
-        {
-          backgroundColor: pressed ? spec.pressedFill : spec.fill,
-          borderWidth: spec.width,
-          borderColor: spec.border,
-        },
-        disabled && styles.disabled,
-        style,
-      ]}
-    >
-      {({ pressed }) => {
-        const fg = pressed ? spec.pressedLabel : spec.label;
-        return (
-          <View
-            pointerEvents="none"
-            style={[
-              styles.inner,
-              large && styles.innerLarge,
-              spec.doubleFrame && { borderWidth: stroke.hair, borderColor: fg },
-            ]}
-          >
-            <Text style={[styles.label, large && styles.labelLarge, { color: fg }]} numberOfLines={2}>
-              {label}
-            </Text>
-          </View>
-        );
-      }}
-    </Pressable>
+    <Animated.View style={{ transform: [{ scale }] }}>
+      <Pressable
+        testID={testID}
+        accessibilityRole="button"
+        accessibilityState={{ disabled: !!disabled }}
+        disabled={disabled}
+        onPressIn={() => {
+          if (disabled) return;
+          playSound('click');
+          haptics.light();
+          onPressIn();
+        }}
+        onPressOut={onPressOut}
+        onPress={() => {
+          haptics.medium();
+          onPress();
+        }}
+        style={({ pressed }) => [
+          styles.base,
+          large && styles.large,
+          {
+            backgroundColor: pressed ? spec.pressedFill : spec.fill,
+            borderWidth: spec.width,
+            borderColor: spec.border,
+          },
+          disabled && styles.disabled,
+          style,
+        ]}
+      >
+        {({ pressed }) => {
+          const fg = pressed ? spec.pressedLabel : spec.label;
+          return (
+            <View
+              pointerEvents="none"
+              style={[
+                styles.inner,
+                large && styles.innerLarge,
+                spec.doubleFrame && { borderWidth: stroke.hair, borderColor: fg },
+              ]}
+            >
+              <Text style={[styles.label, large && styles.labelLarge, { color: fg }]} numberOfLines={2}>
+                {label}
+              </Text>
+            </View>
+          );
+        }}
+      </Pressable>
+    </Animated.View>
   );
 }
 
