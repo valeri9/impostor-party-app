@@ -6,8 +6,12 @@ import { haptics } from '../native/haptics';
 import { colors, spacing, stroke, type } from '../theme/tokens';
 import { PIXEL_LOCK, PixelArt } from './PixelArt';
 
-/** Continuous hold required before the pass-along button unlocks. */
-const UNLOCK_MS = 600;
+/**
+ * Continuous hold required before the pass-along button unlocks. Short enough
+ * that a genuine glance at the secret clears it without waiting, long enough
+ * that brushing the screen while handing the phone over does not.
+ */
+const UNLOCK_MS = 200;
 
 type Props = {
   playerName: string;
