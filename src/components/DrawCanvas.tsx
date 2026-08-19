@@ -84,7 +84,7 @@ export function DrawCanvas({ strokes, color, enabled, onStrokeStart, onStrokeCom
   };
 
   return (
-    <View style={styles.canvas} onLayout={onLayout} {...responder.panHandlers}>
+    <View testID="draw-canvas" style={styles.canvas} onLayout={onLayout} {...responder.panHandlers}>
       {size.width > 0 ? (
         <Svg width={size.width} height={size.height}>
           <Rect x={0} y={0} width={size.width} height={size.height} fill={colors.bgDeep} />

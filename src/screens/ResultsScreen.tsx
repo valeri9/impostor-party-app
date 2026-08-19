@@ -89,11 +89,16 @@ function CanvasResults({ round }: { round: CanvasRound }) {
     <View>
       <Text style={styles.section}>{t('canvas.artwork')}</Text>
       <DrawingPreview strokes={round.strokes} canvas={round.canvas} width={width - spacing.lg * 2} />
+      {/* Strokes share whatever colour was chosen, so list the draw order
+          instead of a colour key. The same order repeats each round. */}
+      <Text style={styles.section}>
+        {t('word.play.turnOrder')} · {t('canvas.play.round', { current: round.rounds, total: round.rounds })}
+      </Text>
       <View style={styles.legend}>
-        {round.strokes.map((stroke) => (
-          <View key={stroke.playerId} style={styles.legendItem}>
-            <View style={[styles.legendDot, { backgroundColor: stroke.color }]} />
-            <Text style={styles.legendName}>{playerById(stroke.playerId).name}</Text>
+        {round.order.map((id, i) => (
+          <View key={id} style={styles.legendItem}>
+            <Text style={styles.legendIndex}>{i + 1}</Text>
+            <Text style={styles.legendName}>{playerById(id).name}</Text>
           </View>
         ))}
       </View>
@@ -230,7 +235,12 @@ const styles = StyleSheet.create({
   factValue: { ...type.heading, color: colors.text, marginTop: spacing.xs, textAlign: 'center' },
   legend: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.md, marginTop: spacing.sm, justifyContent: 'center' },
   legendItem: { flexDirection: 'row', alignItems: 'center', gap: spacing.xs },
-  legendDot: { width: 12, height: 12, borderRadius: radii.pill },
+  legendIndex: {
+    ...type.caption,
+    color: colors.textFaint,
+    minWidth: 18,
+    textAlign: 'right',
+  },
   legendName: { ...type.caption, color: colors.textMuted },
   timeRow: {
     flexDirection: 'row',

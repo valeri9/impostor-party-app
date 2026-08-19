@@ -6,6 +6,75 @@ import { LOCALES, translate } from '../src/i18n';
 
 const DEFAULT_NAMES = ['Ana', 'Bo', 'Cid', 'Dee'];
 
+/** Flattened backgroundColor of a swatch button. */
+function colorOf(node: { props: Record<string, unknown> }): string | undefined {
+  const style = node.props.style as
+    | Record<string, unknown>
+    | Array<Record<string, unknown> | undefined>
+    | undefined;
+  const flat = Array.isArray(style) ? Object.assign({}, ...style.filter(Boolean)) : style;
+  return flat?.backgroundColor as string | undefined;
+}
+
+/** The colour of whichever swatch is currently marked selected. */
+function selectedSwatchColor(): string | undefined {
+  const selected = screen
+    .getAllByRole('button')
+    .find((b) => b.props.accessibilityState?.selected === true);
+  return selected ? colorOf(selected) : undefined;
+}
+
+/** Draws a single continuous stroke on the canvas and releases. */
+async function drawOneStroke() {
+  const canvas = screen.getByTestId('draw-canvas');
+  await fireEvent(canvas, 'responderGrant', touch(10, 10));
+  await fireEvent(canvas, 'responderMove', touch(60, 80));
+  await fireEvent(canvas, 'responderMove', touch(120, 40));
+  await fireEvent(canvas, 'responderRelease', touch(120, 40, false));
+}
+
+let touchClock = 1000;
+
+/**
+ * PanResponder derives its gesture state from `event.touchHistory`, so a bare
+ * nativeEvent is not enough to drive the canvas — this builds the shape
+ * `TouchHistoryMath` expects alongside the coordinates the canvas itself reads.
+ */
+function touch(locationX: number, locationY: number, active = true) {
+  const timeStamp = (touchClock += 16);
+  const record = {
+    touchActive: active,
+    startPageX: locationX,
+    startPageY: locationY,
+    startTimeStamp: timeStamp,
+    currentPageX: locationX,
+    currentPageY: locationY,
+    currentTimeStamp: timeStamp,
+    previousPageX: locationX,
+    previousPageY: locationY,
+    previousTimeStamp: timeStamp,
+  };
+  return {
+    nativeEvent: {
+      locationX,
+      locationY,
+      pageX: locationX,
+      pageY: locationY,
+      identifier: 1,
+      timestamp: timeStamp,
+      touches: active ? [{ locationX, locationY, identifier: 1 }] : [],
+      changedTouches: [],
+    },
+    touchHistory: {
+      touchBank: [undefined, record],
+      numberActiveTouches: active ? 1 : 0,
+      indexOfSingleActiveTouch: 1,
+      mostRecentTimeStamp: timeStamp,
+    },
+  };
+}
+
+
 /** Completes the setup form and enters the chosen mode. */
 async function startGame(mode: 'word' | 'canvas' | 'timer' | 'mafia', names = DEFAULT_NAMES) {
   await render(<App />);
@@ -235,13 +304,48 @@ describe('one-stroke canvas', () => {
     await startGame('canvas');
     await completeRevealLoop(4);
 
-    expect(screen.getByText(translate('en', 'canvas.play.title'))).toBeTruthy();
     expect(screen.getByText(translate('en', 'canvas.play.pickColor'))).toBeTruthy();
     // Turn order is shuffled, so just assert one of the players is prompted.
     const prompted = DEFAULT_NAMES.filter(
       (n) => screen.queryByText(translate('en', 'canvas.play.yourTurn', { name: n })) !== null,
     );
     expect(prompted).toHaveLength(1);
+  });
+
+  it('runs two rounds of one stroke each and keeps the chosen colour', async () => {
+    await startGame('canvas');
+    await completeRevealLoop(4);
+
+    expect(screen.getByText(/Round 1 of 2/)).toBeTruthy();
+
+    // Pick a colour that is not the default, then confirm it survives the pass.
+    const swatches = screen.getAllByRole('button').filter((b) => b.props.accessibilityState?.selected !== undefined);
+    expect(swatches.length).toBeGreaterThan(1);
+    const chosen = swatches[3];
+    await fireEvent.press(chosen);
+    const chosenColor = colorOf(chosen);
+
+    // Eight turns in total: four players, twice around the table.
+    for (let turn = 0; turn < 8; turn++) {
+      const expectedRound = turn < 4 ? 1 : 2;
+      expect(screen.getByText(new RegExp(`Round ${expectedRound} of 2`))).toBeTruthy();
+
+      // Whoever holds the phone sees the colour the last player left selected.
+      expect(selectedSwatchColor()).toBe(chosenColor);
+
+      await drawOneStroke();
+
+      if (turn < 7) {
+        await fireEvent.press(screen.getByTestId('canvas-pass'));
+      }
+    }
+
+    // After the eighth stroke the drawing is done, not passed on again.
+    expect(screen.queryByTestId('canvas-pass')).toBeNull();
+    expect(screen.getByTestId('show-results')).toBeTruthy();
+
+    await fireEvent.press(screen.getByTestId('show-results'));
+    expect(screen.getByText(translate('en', 'canvas.artwork'))).toBeTruthy();
   });
 });
 

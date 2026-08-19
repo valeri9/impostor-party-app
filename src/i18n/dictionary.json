@@ -49,6 +49,7 @@
       "word.play.nextSpeaker": "Next Speaker",
       "word.play.roundDone": "Round complete",
       "canvas.play.title": "One Stroke Each",
+      "canvas.play.round": "Round {current} of {total}",
       "canvas.play.yourTurn": "{name} — draw one line",
       "canvas.play.instruction": "Draw a single continuous line. Lifting your finger ends your turn.",
       "canvas.play.pickColor": "Pick your color",
@@ -148,6 +149,7 @@
       "word.play.nextSpeaker": "Следващ говорещ",
       "word.play.roundDone": "Рундът приключи",
       "canvas.play.title": "По една линия",
+      "canvas.play.round": "Рунд {current} от {total}",
       "canvas.play.yourTurn": "{name} — начертай една линия",
       "canvas.play.instruction": "Начертай една непрекъсната линия. Вдигането на пръста завършва хода ти.",
       "canvas.play.pickColor": "Избери цвят",
@@ -247,6 +249,7 @@
       "word.play.nextSpeaker": "Siguiente en hablar",
       "word.play.roundDone": "Ronda completada",
       "canvas.play.title": "Un trazo cada uno",
+      "canvas.play.round": "Ronda {current} de {total}",
       "canvas.play.yourTurn": "{name} — dibuja una línea",
       "canvas.play.instruction": "Dibuja una línea continua. Al levantar el dedo termina tu turno.",
       "canvas.play.pickColor": "Elige tu color",
@@ -346,6 +349,7 @@
       "word.play.nextSpeaker": "Επόμενος ομιλητής",
       "word.play.roundDone": "Ο γύρος ολοκληρώθηκε",
       "canvas.play.title": "Μία γραμμή ο καθένας",
+      "canvas.play.round": "Γύρος {current} από {total}",
       "canvas.play.yourTurn": "{name} — τράβα μία γραμμή",
       "canvas.play.instruction": "Σχεδίασε μία συνεχή γραμμή. Σηκώνοντας το δάχτυλο τελειώνει η σειρά σου.",
       "canvas.play.pickColor": "Διάλεξε χρώμα",
@@ -445,6 +449,7 @@
       "word.play.nextSpeaker": "Nächster Sprecher",
       "word.play.roundDone": "Runde beendet",
       "canvas.play.title": "Ein Strich pro Person",
+      "canvas.play.round": "Runde {current} von {total}",
       "canvas.play.yourTurn": "{name} — zeichne eine Linie",
       "canvas.play.instruction": "Zeichne eine durchgehende Linie. Das Abheben des Fingers beendet deinen Zug.",
       "canvas.play.pickColor": "Farbe wählen",
@@ -544,6 +549,7 @@
       "word.play.nextSpeaker": "Următorul vorbitor",
       "word.play.roundDone": "Runda s-a încheiat",
       "canvas.play.title": "O linie fiecare",
+      "canvas.play.round": "Runda {current} din {total}",
       "canvas.play.yourTurn": "{name} — trasează o linie",
       "canvas.play.instruction": "Trasează o singură linie continuă. Ridicarea degetului îți încheie tura.",
       "canvas.play.pickColor": "Alege culoarea",
@@ -599,128 +605,506 @@
     "words": [
       {
         "category": "food",
-        "exact": { "en": "Coffee", "bg": "Кафе", "es": "Café", "el": "Καφές", "de": "Kaffee", "ro": "Cafea" },
-        "hint": { "en": "Hot drink", "bg": "Топла напитка", "es": "Bebida caliente", "el": "Ζεστό ρόφημα", "de": "Heißgetränk", "ro": "Băutură caldă" }
+        "exact": {
+          "en": "Coffee",
+          "bg": "Кафе",
+          "es": "Café",
+          "el": "Καφές",
+          "de": "Kaffee",
+          "ro": "Cafea"
+        },
+        "hint": {
+          "en": "Hot drink",
+          "bg": "Топла напитка",
+          "es": "Bebida caliente",
+          "el": "Ζεστό ρόφημα",
+          "de": "Heißgetränk",
+          "ro": "Băutură caldă"
+        }
       },
       {
         "category": "food",
-        "exact": { "en": "Pizza", "bg": "Пица", "es": "Pizza", "el": "Πίτσα", "de": "Pizza", "ro": "Pizza" },
-        "hint": { "en": "Fast food", "bg": "Бърза храна", "es": "Comida rápida", "el": "Φαστ φουντ", "de": "Fast Food", "ro": "Mâncare rapidă" }
+        "exact": {
+          "en": "Pizza",
+          "bg": "Пица",
+          "es": "Pizza",
+          "el": "Πίτσα",
+          "de": "Pizza",
+          "ro": "Pizza"
+        },
+        "hint": {
+          "en": "Fast food",
+          "bg": "Бърза храна",
+          "es": "Comida rápida",
+          "el": "Φαστ φουντ",
+          "de": "Fast Food",
+          "ro": "Mâncare rapidă"
+        }
       },
       {
         "category": "food",
-        "exact": { "en": "Chocolate", "bg": "Шоколад", "es": "Chocolate", "el": "Σοκολάτα", "de": "Schokolade", "ro": "Ciocolată" },
-        "hint": { "en": "Sweet treat", "bg": "Сладко изкушение", "es": "Dulce", "el": "Γλυκό", "de": "Süßigkeit", "ro": "Dulce" }
+        "exact": {
+          "en": "Chocolate",
+          "bg": "Шоколад",
+          "es": "Chocolate",
+          "el": "Σοκολάτα",
+          "de": "Schokolade",
+          "ro": "Ciocolată"
+        },
+        "hint": {
+          "en": "Sweet treat",
+          "bg": "Сладко изкушение",
+          "es": "Dulce",
+          "el": "Γλυκό",
+          "de": "Süßigkeit",
+          "ro": "Dulce"
+        }
       },
       {
         "category": "places",
-        "exact": { "en": "Beach", "bg": "Плаж", "es": "Playa", "el": "Παραλία", "de": "Strand", "ro": "Plajă" },
-        "hint": { "en": "Holiday spot", "bg": "Място за почивка", "es": "Lugar de vacaciones", "el": "Τόπος διακοπών", "de": "Urlaubsort", "ro": "Loc de vacanță" }
+        "exact": {
+          "en": "Beach",
+          "bg": "Плаж",
+          "es": "Playa",
+          "el": "Παραλία",
+          "de": "Strand",
+          "ro": "Plajă"
+        },
+        "hint": {
+          "en": "Holiday spot",
+          "bg": "Място за почивка",
+          "es": "Lugar de vacaciones",
+          "el": "Τόπος διακοπών",
+          "de": "Urlaubsort",
+          "ro": "Loc de vacanță"
+        }
       },
       {
         "category": "places",
-        "exact": { "en": "Airport", "bg": "Летище", "es": "Aeropuerto", "el": "Αεροδρόμιο", "de": "Flughafen", "ro": "Aeroport" },
-        "hint": { "en": "Travel hub", "bg": "Транспортен възел", "es": "Punto de viaje", "el": "Κόμβος ταξιδιού", "de": "Verkehrsknoten", "ro": "Nod de călătorie" }
+        "exact": {
+          "en": "Airport",
+          "bg": "Летище",
+          "es": "Aeropuerto",
+          "el": "Αεροδρόμιο",
+          "de": "Flughafen",
+          "ro": "Aeroport"
+        },
+        "hint": {
+          "en": "Travel hub",
+          "bg": "Транспортен възел",
+          "es": "Punto de viaje",
+          "el": "Κόμβος ταξιδιού",
+          "de": "Verkehrsknoten",
+          "ro": "Nod de călătorie"
+        }
       },
       {
         "category": "places",
-        "exact": { "en": "Hospital", "bg": "Болница", "es": "Hospital", "el": "Νοσοκομείο", "de": "Krankenhaus", "ro": "Spital" },
-        "hint": { "en": "Public building", "bg": "Обществена сграда", "es": "Edificio público", "el": "Δημόσιο κτίριο", "de": "Öffentliches Gebäude", "ro": "Clădire publică" }
+        "exact": {
+          "en": "Hospital",
+          "bg": "Болница",
+          "es": "Hospital",
+          "el": "Νοσοκομείο",
+          "de": "Krankenhaus",
+          "ro": "Spital"
+        },
+        "hint": {
+          "en": "Public building",
+          "bg": "Обществена сграда",
+          "es": "Edificio público",
+          "el": "Δημόσιο κτίριο",
+          "de": "Öffentliches Gebäude",
+          "ro": "Clădire publică"
+        }
       },
       {
         "category": "animals",
-        "exact": { "en": "Elephant", "bg": "Слон", "es": "Elefante", "el": "Ελέφαντας", "de": "Elefant", "ro": "Elefant" },
-        "hint": { "en": "Big animal", "bg": "Голямо животно", "es": "Animal grande", "el": "Μεγάλο ζώο", "de": "Großes Tier", "ro": "Animal mare" }
+        "exact": {
+          "en": "Elephant",
+          "bg": "Слон",
+          "es": "Elefante",
+          "el": "Ελέφαντας",
+          "de": "Elefant",
+          "ro": "Elefant"
+        },
+        "hint": {
+          "en": "Big animal",
+          "bg": "Голямо животно",
+          "es": "Animal grande",
+          "el": "Μεγάλο ζώο",
+          "de": "Großes Tier",
+          "ro": "Animal mare"
+        }
       },
       {
         "category": "animals",
-        "exact": { "en": "Penguin", "bg": "Пингвин", "es": "Pingüino", "el": "Πιγκουίνος", "de": "Pinguin", "ro": "Pinguin" },
-        "hint": { "en": "Bird from cold places", "bg": "Птица от студените места", "es": "Ave de zonas frías", "el": "Πουλί από κρύα μέρη", "de": "Vogel aus kalten Regionen", "ro": "Pasăre din zone reci" }
+        "exact": {
+          "en": "Penguin",
+          "bg": "Пингвин",
+          "es": "Pingüino",
+          "el": "Πιγκουίνος",
+          "de": "Pinguin",
+          "ro": "Pinguin"
+        },
+        "hint": {
+          "en": "Bird from cold places",
+          "bg": "Птица от студените места",
+          "es": "Ave de zonas frías",
+          "el": "Πουλί από κρύα μέρη",
+          "de": "Vogel aus kalten Regionen",
+          "ro": "Pasăre din zone reci"
+        }
       },
       {
         "category": "animals",
-        "exact": { "en": "Spider", "bg": "Паяк", "es": "Araña", "el": "Αράχνη", "de": "Spinne", "ro": "Păianjen" },
-        "hint": { "en": "Small creature", "bg": "Малко създание", "es": "Criatura pequeña", "el": "Μικρό πλάσμα", "de": "Kleines Tier", "ro": "Creatură mică" }
+        "exact": {
+          "en": "Spider",
+          "bg": "Паяк",
+          "es": "Araña",
+          "el": "Αράχνη",
+          "de": "Spinne",
+          "ro": "Păianjen"
+        },
+        "hint": {
+          "en": "Small creature",
+          "bg": "Малко създание",
+          "es": "Criatura pequeña",
+          "el": "Μικρό πλάσμα",
+          "de": "Kleines Tier",
+          "ro": "Creatură mică"
+        }
       },
       {
         "category": "objects",
-        "exact": { "en": "Umbrella", "bg": "Чадър", "es": "Paraguas", "el": "Ομπρέλα", "de": "Regenschirm", "ro": "Umbrelă" },
-        "hint": { "en": "Rainy day item", "bg": "Вещ за дъждовен ден", "es": "Objeto para la lluvia", "el": "Αντικείμενο για τη βροχή", "de": "Sache für Regentage", "ro": "Obiect pentru zile ploioase" }
+        "exact": {
+          "en": "Umbrella",
+          "bg": "Чадър",
+          "es": "Paraguas",
+          "el": "Ομπρέλα",
+          "de": "Regenschirm",
+          "ro": "Umbrelă"
+        },
+        "hint": {
+          "en": "Rainy day item",
+          "bg": "Вещ за дъждовен ден",
+          "es": "Objeto para la lluvia",
+          "el": "Αντικείμενο για τη βροχή",
+          "de": "Sache für Regentage",
+          "ro": "Obiect pentru zile ploioase"
+        }
       },
       {
         "category": "objects",
-        "exact": { "en": "Guitar", "bg": "Китара", "es": "Guitarra", "el": "Κιθάρα", "de": "Gitarre", "ro": "Chitară" },
-        "hint": { "en": "Musical instrument", "bg": "Музикален инструмент", "es": "Instrumento musical", "el": "Μουσικό όργανο", "de": "Musikinstrument", "ro": "Instrument muzical" }
+        "exact": {
+          "en": "Guitar",
+          "bg": "Китара",
+          "es": "Guitarra",
+          "el": "Κιθάρα",
+          "de": "Gitarre",
+          "ro": "Chitară"
+        },
+        "hint": {
+          "en": "Musical instrument",
+          "bg": "Музикален инструмент",
+          "es": "Instrumento musical",
+          "el": "Μουσικό όργανο",
+          "de": "Musikinstrument",
+          "ro": "Instrument muzical"
+        }
       },
       {
         "category": "objects",
-        "exact": { "en": "Mirror", "bg": "Огледало", "es": "Espejo", "el": "Καθρέφτης", "de": "Spiegel", "ro": "Oglindă" },
-        "hint": { "en": "Household object", "bg": "Домакински предмет", "es": "Objeto del hogar", "el": "Οικιακό αντικείμενο", "de": "Haushaltsgegenstand", "ro": "Obiect de uz casnic" }
+        "exact": {
+          "en": "Mirror",
+          "bg": "Огледало",
+          "es": "Espejo",
+          "el": "Καθρέφτης",
+          "de": "Spiegel",
+          "ro": "Oglindă"
+        },
+        "hint": {
+          "en": "Household object",
+          "bg": "Домакински предмет",
+          "es": "Objeto del hogar",
+          "el": "Οικιακό αντικείμενο",
+          "de": "Haushaltsgegenstand",
+          "ro": "Obiect de uz casnic"
+        }
       },
       {
         "category": "activities",
-        "exact": { "en": "Wedding", "bg": "Сватба", "es": "Boda", "el": "Γάμος", "de": "Hochzeit", "ro": "Nuntă" },
-        "hint": { "en": "Big celebration", "bg": "Голямо тържество", "es": "Gran celebración", "el": "Μεγάλη γιορτή", "de": "Große Feier", "ro": "Sărbătoare mare" }
+        "exact": {
+          "en": "Wedding",
+          "bg": "Сватба",
+          "es": "Boda",
+          "el": "Γάμος",
+          "de": "Hochzeit",
+          "ro": "Nuntă"
+        },
+        "hint": {
+          "en": "Big celebration",
+          "bg": "Голямо тържество",
+          "es": "Gran celebración",
+          "el": "Μεγάλη γιορτή",
+          "de": "Große Feier",
+          "ro": "Sărbătoare mare"
+        }
       },
       {
         "category": "activities",
-        "exact": { "en": "Football", "bg": "Футбол", "es": "Fútbol", "el": "Ποδόσφαιρο", "de": "Fußball", "ro": "Fotbal" },
-        "hint": { "en": "Team sport", "bg": "Отборен спорт", "es": "Deporte de equipo", "el": "Ομαδικό άθλημα", "de": "Mannschaftssport", "ro": "Sport de echipă" }
+        "exact": {
+          "en": "Football",
+          "bg": "Футбол",
+          "es": "Fútbol",
+          "el": "Ποδόσφαιρο",
+          "de": "Fußball",
+          "ro": "Fotbal"
+        },
+        "hint": {
+          "en": "Team sport",
+          "bg": "Отборен спорт",
+          "es": "Deporte de equipo",
+          "el": "Ομαδικό άθλημα",
+          "de": "Mannschaftssport",
+          "ro": "Sport de echipă"
+        }
       },
       {
         "category": "activities",
-        "exact": { "en": "Camping", "bg": "Къмпинг", "es": "Acampada", "el": "Κάμπινγκ", "de": "Camping", "ro": "Camping" },
-        "hint": { "en": "Outdoor trip", "bg": "Излет сред природата", "es": "Salida al aire libre", "el": "Εκδρομή στη φύση", "de": "Ausflug ins Freie", "ro": "Ieșire în natură" }
+        "exact": {
+          "en": "Camping",
+          "bg": "Къмпинг",
+          "es": "Acampada",
+          "el": "Κάμπινγκ",
+          "de": "Camping",
+          "ro": "Camping"
+        },
+        "hint": {
+          "en": "Outdoor trip",
+          "bg": "Излет сред природата",
+          "es": "Salida al aire libre",
+          "el": "Εκδρομή στη φύση",
+          "de": "Ausflug ins Freie",
+          "ro": "Ieșire în natură"
+        }
       }
     ],
     "drawings": [
       {
-        "exact": { "en": "Eiffel Tower", "bg": "Айфеловата кула", "es": "Torre Eiffel", "el": "Πύργος του Άιφελ", "de": "Eiffelturm", "ro": "Turnul Eiffel" },
-        "hint": { "en": "Tall tower", "bg": "Висока кула", "es": "Torre alta", "el": "Ψηλός πύργος", "de": "Hoher Turm", "ro": "Turn înalt" }
+        "exact": {
+          "en": "Eiffel Tower",
+          "bg": "Айфеловата кула",
+          "es": "Torre Eiffel",
+          "el": "Πύργος του Άιφελ",
+          "de": "Eiffelturm",
+          "ro": "Turnul Eiffel"
+        },
+        "hint": {
+          "en": "Tall tower",
+          "bg": "Висока кула",
+          "es": "Torre alta",
+          "el": "Ψηλός πύργος",
+          "de": "Hoher Turm",
+          "ro": "Turn înalt"
+        }
       },
       {
-        "exact": { "en": "Cat", "bg": "Котка", "es": "Gato", "el": "Γάτα", "de": "Katze", "ro": "Pisică" },
-        "hint": { "en": "Pet animal", "bg": "Домашен любимец", "es": "Animal doméstico", "el": "Κατοικίδιο", "de": "Haustier", "ro": "Animal de companie" }
+        "exact": {
+          "en": "Cat",
+          "bg": "Котка",
+          "es": "Gato",
+          "el": "Γάτα",
+          "de": "Katze",
+          "ro": "Pisică"
+        },
+        "hint": {
+          "en": "Pet animal",
+          "bg": "Домашен любимец",
+          "es": "Animal doméstico",
+          "el": "Κατοικίδιο",
+          "de": "Haustier",
+          "ro": "Animal de companie"
+        }
       },
       {
-        "exact": { "en": "Bicycle", "bg": "Велосипед", "es": "Bicicleta", "el": "Ποδήλατο", "de": "Fahrrad", "ro": "Bicicletă" },
-        "hint": { "en": "Vehicle with wheels", "bg": "Превозно средство с колела", "es": "Vehículo con ruedas", "el": "Όχημα με ρόδες", "de": "Fahrzeug mit Rädern", "ro": "Vehicul cu roți" }
+        "exact": {
+          "en": "Bicycle",
+          "bg": "Велосипед",
+          "es": "Bicicleta",
+          "el": "Ποδήλατο",
+          "de": "Fahrrad",
+          "ro": "Bicicletă"
+        },
+        "hint": {
+          "en": "Vehicle with wheels",
+          "bg": "Превозно средство с колела",
+          "es": "Vehículo con ruedas",
+          "el": "Όχημα με ρόδες",
+          "de": "Fahrzeug mit Rädern",
+          "ro": "Vehicul cu roți"
+        }
       },
       {
-        "exact": { "en": "Pineapple", "bg": "Ананас", "es": "Piña", "el": "Ανανάς", "de": "Ananas", "ro": "Ananas" },
-        "hint": { "en": "Tropical fruit", "bg": "Тропически плод", "es": "Fruta tropical", "el": "Τροπικό φρούτο", "de": "Tropische Frucht", "ro": "Fruct tropical" }
+        "exact": {
+          "en": "Pineapple",
+          "bg": "Ананас",
+          "es": "Piña",
+          "el": "Ανανάς",
+          "de": "Ananas",
+          "ro": "Ananas"
+        },
+        "hint": {
+          "en": "Tropical fruit",
+          "bg": "Тропически плод",
+          "es": "Fruta tropical",
+          "el": "Τροπικό φρούτο",
+          "de": "Tropische Frucht",
+          "ro": "Fruct tropical"
+        }
       },
       {
-        "exact": { "en": "Rocket", "bg": "Ракета", "es": "Cohete", "el": "Πύραυλος", "de": "Rakete", "ro": "Rachetă" },
-        "hint": { "en": "Flying machine", "bg": "Летяща машина", "es": "Máquina voladora", "el": "Ιπτάμενη μηχανή", "de": "Fluggerät", "ro": "Mașinărie zburătoare" }
+        "exact": {
+          "en": "Rocket",
+          "bg": "Ракета",
+          "es": "Cohete",
+          "el": "Πύραυλος",
+          "de": "Rakete",
+          "ro": "Rachetă"
+        },
+        "hint": {
+          "en": "Flying machine",
+          "bg": "Летяща машина",
+          "es": "Máquina voladora",
+          "el": "Ιπτάμενη μηχανή",
+          "de": "Fluggerät",
+          "ro": "Mașinărie zburătoare"
+        }
       },
       {
-        "exact": { "en": "Snowman", "bg": "Снежен човек", "es": "Muñeco de nieve", "el": "Χιονάνθρωπος", "de": "Schneemann", "ro": "Om de zăpadă" },
-        "hint": { "en": "Winter figure", "bg": "Зимна фигура", "es": "Figura de invierno", "el": "Χειμωνιάτικη φιγούρα", "de": "Winterfigur", "ro": "Figură de iarnă" }
+        "exact": {
+          "en": "Snowman",
+          "bg": "Снежен човек",
+          "es": "Muñeco de nieve",
+          "el": "Χιονάνθρωπος",
+          "de": "Schneemann",
+          "ro": "Om de zăpadă"
+        },
+        "hint": {
+          "en": "Winter figure",
+          "bg": "Зимна фигура",
+          "es": "Figura de invierno",
+          "el": "Χειμωνιάτικη φιγούρα",
+          "de": "Winterfigur",
+          "ro": "Figură de iarnă"
+        }
       },
       {
-        "exact": { "en": "Lighthouse", "bg": "Фар", "es": "Faro", "el": "Φάρος", "de": "Leuchtturm", "ro": "Far" },
-        "hint": { "en": "Tall building by the sea", "bg": "Висока сграда край морето", "es": "Edificio alto junto al mar", "el": "Ψηλό κτίριο δίπλα στη θάλασσα", "de": "Hohes Gebäude am Meer", "ro": "Clădire înaltă lângă mare" }
+        "exact": {
+          "en": "Lighthouse",
+          "bg": "Фар",
+          "es": "Faro",
+          "el": "Φάρος",
+          "de": "Leuchtturm",
+          "ro": "Far"
+        },
+        "hint": {
+          "en": "Tall building by the sea",
+          "bg": "Висока сграда край морето",
+          "es": "Edificio alto junto al mar",
+          "el": "Ψηλό κτίριο δίπλα στη θάλασσα",
+          "de": "Hohes Gebäude am Meer",
+          "ro": "Clădire înaltă lângă mare"
+        }
       },
       {
-        "exact": { "en": "Octopus", "bg": "Октопод", "es": "Pulpo", "el": "Χταπόδι", "de": "Krake", "ro": "Caracatiță" },
-        "hint": { "en": "Sea creature", "bg": "Морско създание", "es": "Criatura marina", "el": "Θαλάσσιο πλάσμα", "de": "Meerestier", "ro": "Creatură marină" }
+        "exact": {
+          "en": "Octopus",
+          "bg": "Октопод",
+          "es": "Pulpo",
+          "el": "Χταπόδι",
+          "de": "Krake",
+          "ro": "Caracatiță"
+        },
+        "hint": {
+          "en": "Sea creature",
+          "bg": "Морско създание",
+          "es": "Criatura marina",
+          "el": "Θαλάσσιο πλάσμα",
+          "de": "Meerestier",
+          "ro": "Creatură marină"
+        }
       },
       {
-        "exact": { "en": "Sunflower", "bg": "Слънчоглед", "es": "Girasol", "el": "Ηλίανθος", "de": "Sonnenblume", "ro": "Floarea-soarelui" },
-        "hint": { "en": "Flower", "bg": "Цвете", "es": "Flor", "el": "Λουλούδι", "de": "Blume", "ro": "Floare" }
+        "exact": {
+          "en": "Sunflower",
+          "bg": "Слънчоглед",
+          "es": "Girasol",
+          "el": "Ηλίανθος",
+          "de": "Sonnenblume",
+          "ro": "Floarea-soarelui"
+        },
+        "hint": {
+          "en": "Flower",
+          "bg": "Цвете",
+          "es": "Flor",
+          "el": "Λουλούδι",
+          "de": "Blume",
+          "ro": "Floare"
+        }
       },
       {
-        "exact": { "en": "Guitar", "bg": "Китара", "es": "Guitarra", "el": "Κιθάρα", "de": "Gitarre", "ro": "Chitară" },
-        "hint": { "en": "Musical instrument", "bg": "Музикален инструмент", "es": "Instrumento musical", "el": "Μουσικό όργανο", "de": "Musikinstrument", "ro": "Instrument muzical" }
+        "exact": {
+          "en": "Guitar",
+          "bg": "Китара",
+          "es": "Guitarra",
+          "el": "Κιθάρα",
+          "de": "Gitarre",
+          "ro": "Chitară"
+        },
+        "hint": {
+          "en": "Musical instrument",
+          "bg": "Музикален инструмент",
+          "es": "Instrumento musical",
+          "el": "Μουσικό όργανο",
+          "de": "Musikinstrument",
+          "ro": "Instrument muzical"
+        }
       },
       {
-        "exact": { "en": "Castle", "bg": "Замък", "es": "Castillo", "el": "Κάστρο", "de": "Schloss", "ro": "Castel" },
-        "hint": { "en": "Old big building", "bg": "Стара голяма сграда", "es": "Edificio antiguo y grande", "el": "Παλιό μεγάλο κτίριο", "de": "Altes großes Gebäude", "ro": "Clădire veche și mare" }
+        "exact": {
+          "en": "Castle",
+          "bg": "Замък",
+          "es": "Castillo",
+          "el": "Κάστρο",
+          "de": "Schloss",
+          "ro": "Castel"
+        },
+        "hint": {
+          "en": "Old big building",
+          "bg": "Стара голяма сграда",
+          "es": "Edificio antiguo y grande",
+          "el": "Παλιό μεγάλο κτίριο",
+          "de": "Altes großes Gebäude",
+          "ro": "Clădire veche și mare"
+        }
       },
       {
-        "exact": { "en": "Hot air balloon", "bg": "Балон с горещ въздух", "es": "Globo aerostático", "el": "Αερόστατο", "de": "Heißluftballon", "ro": "Balon cu aer cald" },
-        "hint": { "en": "Thing that floats in the sky", "bg": "Нещо, което се носи в небето", "es": "Algo que flota en el cielo", "el": "Κάτι που επιπλέει στον ουρανό", "de": "Etwas, das am Himmel schwebt", "ro": "Ceva ce plutește pe cer" }
+        "exact": {
+          "en": "Hot air balloon",
+          "bg": "Балон с горещ въздух",
+          "es": "Globo aerostático",
+          "el": "Αερόστατο",
+          "de": "Heißluftballon",
+          "ro": "Balon cu aer cald"
+        },
+        "hint": {
+          "en": "Thing that floats in the sky",
+          "bg": "Нещо, което се носи в небето",
+          "es": "Algo que flota en el cielo",
+          "el": "Κάτι που επιπλέει στον ουρανό",
+          "de": "Etwas, das am Himmel schwebt",
+          "ro": "Ceva ce plutește pe cer"
+        }
       }
     ]
   }

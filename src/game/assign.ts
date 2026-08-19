@@ -1,5 +1,6 @@
 import { DRAWING_PROMPTS, WORD_PROMPTS } from '../i18n/prompts';
 import {
+  CANVAS_ROUNDS,
   Card,
   CanvasRound,
   GameMode,
@@ -47,7 +48,15 @@ export function buildWordRound(players: Player[]): WordRound {
 
 export function buildCanvasRound(players: Player[]): CanvasRound {
   const { order, impostorId } = baseRound(players);
-  return { mode: 'canvas', prompt: pick(DRAWING_PROMPTS), impostorId, order, strokes: [], canvas: null };
+  return {
+    mode: 'canvas',
+    prompt: pick(DRAWING_PROMPTS),
+    impostorId,
+    order,
+    strokes: [],
+    rounds: CANVAS_ROUNDS,
+    canvas: null,
+  };
 }
 
 // ---------------------------------------------------------------- Timer

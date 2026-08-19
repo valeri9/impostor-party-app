@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
 import { Button } from '../../components/Button';
@@ -14,28 +14,31 @@ export function CanvasPlayScreen({ round }: { round: CanvasRound }) {
   const { dispatch, playerById } = useGame();
   const accent = MODE_ACCENT.canvas;
 
-  // One stroke per player, so the stroke count *is* the turn cursor.
+  // One stroke per player per round, so the stroke count is the turn cursor and
+  // the phone goes round the table `round.rounds` times.
+  const players = round.order.length;
+  const totalTurns = players * round.rounds;
   const turn = round.strokes.length;
-  const finished = turn >= round.order.length;
-  const currentId = finished ? null : round.order[turn];
+  const finished = turn >= totalTurns;
+  const currentId = finished ? null : round.order[turn % players];
   const current = currentId ? playerById(currentId) : null;
+  const currentRound = Math.min(Math.floor(turn / players) + 1, round.rounds);
 
+  // The pencil colour is the player's choice and stays put when the phone is
+  // passed — it only changes when someone taps a different swatch.
   const [color, setColor] = useState<string>(colors.swatches[0]);
   // True between a locked stroke and the next player taking the phone.
   const [awaitingPass, setAwaitingPass] = useState(false);
 
-  // Give each player a different default colour, but let them override it.
-  useEffect(() => {
-    setColor(colors.swatches[turn % colors.swatches.length]);
-  }, [turn]);
-
-  const nextName = !finished && turn + 1 < round.order.length
-    ? playerById(round.order[turn + 1]).name
-    : null;
+  const nextName =
+    !finished && turn + 1 < totalTurns ? playerById(round.order[(turn + 1) % players]).name : null;
 
   return (
     <Screen>
-      <Text style={styles.title}>{t('canvas.play.title')}</Text>
+      <Text style={styles.title}>
+        {t('canvas.play.title')}
+        {!finished ? `  ·  ${t('canvas.play.round', { current: currentRound, total: round.rounds })}` : ''}
+      </Text>
 
       {finished ? (
         <Text style={styles.headline}>{t('canvas.artwork')}</Text>
@@ -87,6 +90,7 @@ export function CanvasPlayScreen({ round }: { round: CanvasRound }) {
       {awaitingPass && !finished ? (
         <Button
           label={nextName ? t('canvas.play.passTo', { name: nextName }) : t('canvas.play.finish')}
+          testID="canvas-pass"
           variant="primary"
           large
           onPress={() => setAwaitingPass(false)}

@@ -4,6 +4,9 @@ export const MIN_PLAYERS = 3;
 export const MAX_PLAYERS = 10;
 export const DEFAULT_PLAYERS = 4;
 
+/** Passes around the table in One-Stroke Drawing mode. */
+export const CANVAS_ROUNDS = 2;
+
 export type GameMode = 'word' | 'canvas' | 'timer' | 'mafia';
 export const GAME_MODES: GameMode[] = ['word', 'canvas', 'timer', 'mafia'];
 
@@ -35,6 +38,8 @@ export type CanvasRound = {
   impostorId: string;
   order: string[];
   strokes: Stroke[];
+  /** How many times the phone goes round the table; one stroke per player per round. */
+  rounds: number;
   /** Pixel size of the drawing surface, so the result can be replayed undistorted. */
   canvas: { width: number; height: number } | null;
 };
