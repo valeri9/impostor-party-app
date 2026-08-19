@@ -1,11 +1,11 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-import { colors, radii, spacing, type } from '../theme/tokens';
+import { colors, spacing, stroke, type } from '../theme/tokens';
 
 type Props = {
   name: string;
-  /** Ordinal shown in the leading circle. */
+  /** Ordinal shown in the leading badge. */
   index?: number;
   accent?: string;
   /** Dims players who have already had their turn. */
@@ -14,22 +14,26 @@ type Props = {
   trailing?: React.ReactNode;
 };
 
-export function PlayerChip({ name, index, accent = colors.indigo, done, active, trailing }: Props) {
+/** The active row inverts to ink, the way an 8-bit menu marked its cursor. */
+export function PlayerChip({ name, index, accent = colors.ink, done, active, trailing }: Props) {
+  const fg = active ? colors.onInk : colors.ink;
+
   return (
     <View
       style={[
         styles.chip,
-        active && { borderColor: accent, backgroundColor: colors.surfaceAlt },
+        { borderColor: accent },
+        active && { backgroundColor: colors.ink },
         done && styles.done,
       ]}
     >
       {index !== undefined ? (
-        <View style={[styles.badge, { backgroundColor: active ? accent : colors.surfaceAlt }]}>
-          <Text style={styles.badgeText}>{index}</Text>
+        <View style={[styles.badge, { borderColor: fg }]}>
+          <Text style={[styles.badgeText, { color: fg }]}>{index}</Text>
         </View>
       ) : null}
-      <Text style={[styles.name, active && { color: colors.text }]} numberOfLines={1}>
-        {name}
+      <Text style={[styles.name, { color: fg }]} numberOfLines={1}>
+        {active ? `▸ ${name}` : name}
       </Text>
       {trailing}
     </View>
@@ -43,14 +47,18 @@ const styles = StyleSheet.create({
     gap: spacing.sm,
     minHeight: 52,
     paddingHorizontal: spacing.md,
-    borderRadius: radii.md,
-    borderWidth: 2,
-    borderColor: 'transparent',
+    borderWidth: stroke.hair,
     backgroundColor: colors.surface,
     marginBottom: spacing.sm,
   },
   done: { opacity: 0.45 },
-  badge: { width: 30, height: 30, borderRadius: radii.pill, alignItems: 'center', justifyContent: 'center' },
-  badgeText: { ...type.caption, color: colors.text },
-  name: { ...type.body, color: colors.textMuted, flex: 1 },
+  badge: {
+    width: 28,
+    height: 28,
+    borderWidth: stroke.hair,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  badgeText: { ...type.caption },
+  name: { ...type.body, flex: 1 },
 });

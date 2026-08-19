@@ -20,10 +20,41 @@ Every dependency is Expo Go compatible, so the whole game is playable on a
 physical device without building a dev client.
 
 ```bash
-npm test           # 12 integration tests covering all four modes
+npm test           # 14 integration tests covering all four modes
 npm run typecheck  # tsc --noEmit
 npm run gen:audio  # regenerate assets/audio/*.wav
+npm run gen:icons  # regenerate the pixel-art app icons
 ```
+
+---
+
+## Design: a Game Boy in your hand
+
+Every screen is drawn as the handheld itself — a dark plastic shell with the
+printed caption below it, and a dot-matrix LCD panel recessed into the front.
+
+`src/theme/tokens.ts` is the whole design system, and it is deliberately
+constrained to what a **DMG-01 could actually display: four shades of one olive
+green** (`#0f380f`, `#306230`, `#8bac0f`, `#9bbc0f`). Everything else follows
+from that:
+
+- **No hues.** Modes used to carry an accent colour each; a four-shade screen has
+  none to spare, so they stay apart by name, emblem and layout instead.
+- **No rounded corners, no blur, no gradients.** Square pixels only. There is no
+  `radii` scale — just `stroke` weights for 1-bit borders.
+- **Emphasis is inversion.** The speaking player, the selected mode, the impostor
+  banner and a pressed button all flip to an ink fill with light text, the way an
+  8-bit menu marked its cursor.
+- **Illustrations are pixel grids.** `src/components/PixelArt.tsx` renders a
+  string grid as square pixels — the padlock, the checkmark, the star and the
+  clock are all defined that way, and `scripts/gen-icons.js` renders the same
+  kind of grid into every launcher icon.
+- **Type is a blocky monospace** (`Menlo` / `monospace`), uppercased through
+  `textTransform` in styles rather than in the strings, so the dictionary text
+  stays exactly what the translator wrote.
+
+Playing cards are drawn in the same four shades: red suits print in the mid
+green, black suits in ink.
 
 ---
 

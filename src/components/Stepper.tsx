@@ -1,8 +1,8 @@
 import React from 'react';
-import { Pressable, StyleSheet, Switch, Text, View } from 'react-native';
+import { Pressable, StyleSheet, Text, View } from 'react-native';
 
 import { haptics } from '../native/haptics';
-import { colors, radii, spacing, type } from '../theme/tokens';
+import { colors, spacing, stroke, type } from '../theme/tokens';
 
 type StepperProps = {
   label: string;
@@ -40,15 +40,21 @@ function StepButton({ glyph, onPress, disabled }: { glyph: string; onPress: () =
       disabled={disabled}
       style={({ pressed }) => [
         styles.stepButton,
-        pressed && !disabled && { backgroundColor: colors.indigo },
+        pressed && !disabled && { backgroundColor: colors.ink },
         disabled && styles.stepDisabled,
       ]}
     >
-      <Text style={styles.stepGlyph}>{glyph}</Text>
+      {({ pressed }) => (
+        <Text style={[styles.stepGlyph, pressed && !disabled && { color: colors.onInk }]}>{glyph}</Text>
+      )}
     </Pressable>
   );
 }
 
+/**
+ * A 1-bit switch: the hardware had no toggles, so this reads as an on-screen
+ * option box with the chosen half inverted.
+ */
 export function ToggleRow({
   label,
   value,
@@ -63,16 +69,24 @@ export function ToggleRow({
   return (
     <View style={[styles.row, disabled && styles.rowDisabled]}>
       <Text style={styles.label}>{label}</Text>
-      <Switch
-        value={value}
+      <Pressable
+        accessibilityRole="switch"
+        accessibilityState={{ checked: value, disabled: !!disabled }}
+        accessibilityLabel={label}
         disabled={disabled}
-        onValueChange={(next) => {
+        onPress={() => {
           haptics.selection();
-          onChange(next);
+          onChange(!value);
         }}
-        trackColor={{ false: colors.surfaceAlt, true: colors.emeraldDark }}
-        thumbColor={value ? colors.emerald : colors.textFaint}
-      />
+        style={styles.toggle}
+      >
+        <View style={[styles.toggleHalf, value && styles.toggleHalfOn]}>
+          <Text style={[styles.toggleText, value && styles.toggleTextOn]}>ON</Text>
+        </View>
+        <View style={[styles.toggleHalf, !value && styles.toggleHalfOn]}>
+          <Text style={[styles.toggleText, !value && styles.toggleTextOn]}>OFF</Text>
+        </View>
+      </Pressable>
     </View>
   );
 }
@@ -82,24 +96,37 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
+    gap: spacing.sm,
     minHeight: 56,
     paddingHorizontal: spacing.md,
     backgroundColor: colors.surface,
-    borderRadius: radii.md,
+    borderWidth: stroke.hair,
+    borderColor: colors.ink,
     marginBottom: spacing.sm,
   },
-  rowDisabled: { opacity: 0.45 },
-  label: { ...type.label, color: colors.text, flexShrink: 1 },
+  rowDisabled: { opacity: 0.4 },
+  label: { ...type.label, color: colors.ink, flexShrink: 1, textTransform: 'uppercase' },
   stepper: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm },
   stepButton: {
     width: 44,
     height: 44,
-    borderRadius: radii.sm,
-    backgroundColor: colors.surfaceAlt,
+    borderWidth: stroke.hair,
+    borderColor: colors.ink,
     alignItems: 'center',
     justifyContent: 'center',
   },
-  stepDisabled: { opacity: 0.35 },
-  stepGlyph: { ...type.heading, color: colors.text, lineHeight: 26 },
-  value: { ...type.heading, color: colors.text, minWidth: 32, textAlign: 'center' },
+  stepDisabled: { opacity: 0.3 },
+  stepGlyph: { ...type.heading, color: colors.ink, lineHeight: 24 },
+  value: { ...type.heading, color: colors.ink, minWidth: 32, textAlign: 'center' },
+  toggle: { flexDirection: 'row', borderWidth: stroke.hair, borderColor: colors.ink },
+  toggleHalf: {
+    minWidth: 46,
+    minHeight: 40,
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingHorizontal: spacing.xs,
+  },
+  toggleHalfOn: { backgroundColor: colors.ink },
+  toggleText: { ...type.caption, color: colors.ink },
+  toggleTextOn: { color: colors.onInk },
 });

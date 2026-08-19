@@ -35,7 +35,8 @@
     "web": "expo start --web",
     "test": "jest",
     "typecheck": "tsc --noEmit",
-    "gen:audio": "node scripts/gen-audio.js"
+    "gen:audio": "node scripts/gen-audio.js",
+    "gen:icons": "node scripts/gen-icons.js"
   },
   "private": true,
   "jest": {

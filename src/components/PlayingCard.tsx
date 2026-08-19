@@ -11,7 +11,7 @@ import Svg, {
 } from 'react-native-svg';
 
 import type { Suit } from '../game/types';
-import { colors } from '../theme/tokens';
+import { colors, LCD, PIXEL_FONT } from '../theme/tokens';
 
 const ASPECT = 0.7; // width / height, close to a real 63×88 mm poker card
 const VB_W = 250;
@@ -78,7 +78,7 @@ export function PlayingCard({ rank, suit, width, faceUp, roleLabel, backColor = 
         {faceUp ? (
           <CardFace rank={rank} suit={suit} roleLabel={roleLabel} />
         ) : (
-          <CardBack color={backColor === 'red' ? colors.cardBackRed : colors.cardBackBlue} />
+          <CardBack color={colors.cardBack} />
         )}
       </Svg>
     </View>
@@ -91,19 +91,27 @@ function CardBack({ color }: { color: string }) {
       <Defs>
         <Pattern id="lattice" width={26} height={26} patternUnits="userSpaceOnUse">
           <Rect width={26} height={26} fill={color} />
-          <Path d="M13 2 L24 13 L13 24 L2 13 Z" fill="none" stroke="rgba(255,255,255,0.55)" strokeWidth={2} />
-          <Path d="M13 8 L18 13 L13 18 L8 13 Z" fill="rgba(255,255,255,0.28)" />
+          <Path d="M13 2 L24 13 L13 24 L2 13 Z" fill="none" stroke={colors.cardFace} strokeWidth={2} />
+          <Path d="M13 8 L18 13 L13 18 L8 13 Z" fill={LCD.light} />
         </Pattern>
       </Defs>
-      <Rect x={0} y={0} width={VB_W} height={VB_H} rx={18} fill={colors.cardFace} />
-      <Rect x={10} y={10} width={VB_W - 20} height={VB_H - 20} rx={12} fill={color} />
-      <Rect x={18} y={18} width={VB_W - 36} height={VB_H - 36} rx={8} fill="url(#lattice)" />
+      <Rect x={0} y={0} width={VB_W} height={VB_H} fill={colors.cardFace} />
+      <Rect
+        x={3}
+        y={3}
+        width={VB_W - 6}
+        height={VB_H - 6}
+        fill="none"
+        stroke={colors.cardBlack}
+        strokeWidth={6}
+      />
+      <Rect x={12} y={12} width={VB_W - 24} height={VB_H - 24} fill={color} />
+      <Rect x={18} y={18} width={VB_W - 36} height={VB_H - 36} fill="url(#lattice)" />
       <Rect
         x={18}
         y={18}
         width={VB_W - 36}
         height={VB_H - 36}
-        rx={8}
         fill="none"
         stroke={colors.cardFace}
         strokeWidth={4}
@@ -123,16 +131,15 @@ function CardFace({ rank, suit, roleLabel }: { rank: string; suit: Suit; roleLab
 
   return (
     <G>
-      <Rect x={0} y={0} width={VB_W} height={VB_H} rx={18} fill={colors.cardFace} />
+      <Rect x={0} y={0} width={VB_W} height={VB_H} fill={colors.cardFace} />
       <Rect
-        x={4}
-        y={4}
-        width={VB_W - 8}
-        height={VB_H - 8}
-        rx={15}
+        x={3}
+        y={3}
+        width={VB_W - 6}
+        height={VB_H - 6}
         fill="none"
-        stroke="rgba(0,0,0,0.12)"
-        strokeWidth={2}
+        stroke={colors.cardBlack}
+        strokeWidth={6}
       />
 
       <CornerIndex rank={rank} glyph={glyph} color={color} />
@@ -164,16 +171,15 @@ function CardFace({ rank, suit, roleLabel }: { rank: string; suit: Suit; roleLab
             y={VB_H * 0.82}
             width={VB_W - 32}
             height={VB_H * 0.11}
-            rx={9}
             fill={color}
-            opacity={0.1}
           />
           <SvgText
             x={VB_W / 2}
             y={VB_H * 0.876}
             fontSize={22}
+            fontFamily={PIXEL_FONT}
             fontWeight="bold"
-            fill={color}
+            fill={colors.cardFace}
             textAnchor="middle"
             alignmentBaseline="central"
           >
@@ -194,6 +200,7 @@ function CornerIndex({ rank, glyph, color }: { rank: string; glyph: string; colo
         y={40}
         fontSize={rank === '10' ? 32 : 38}
         fontWeight="bold"
+        fontFamily={PIXEL_FONT}
         fill={color}
         textAnchor="middle"
       >
@@ -270,8 +277,8 @@ function CourtPanel({
 
   return (
     <G>
-      <Rect x={x} y={top} width={w} height={h} rx={10} fill="none" stroke={color} strokeWidth={3} />
-      <Rect x={x + 6} y={top + 6} width={w - 12} height={h - 12} rx={7} fill={color} opacity={0.08} />
+      <Rect x={x} y={top} width={w} height={h} fill="none" stroke={color} strokeWidth={3} />
+      <Rect x={x + 6} y={top + 6} width={w - 12} height={h - 12} fill="none" stroke={color} strokeWidth={1} />
       <Line x1={x} y1={midY} x2={x + w} y2={midY} stroke={color} strokeWidth={3} />
 
       <G>
@@ -280,6 +287,7 @@ function CourtPanel({
           y={top + h * 0.27}
           fontSize={62}
           fontWeight="bold"
+          fontFamily={PIXEL_FONT}
           fill={color}
           textAnchor="middle"
           alignmentBaseline="central"
@@ -304,6 +312,7 @@ function CourtPanel({
           y={top + h * 0.27}
           fontSize={62}
           fontWeight="bold"
+          fontFamily={PIXEL_FONT}
           fill={color}
           textAnchor="middle"
           alignmentBaseline="central"
@@ -326,11 +335,7 @@ function CourtPanel({
 }
 
 const styles = StyleSheet.create({
-  shadow: {
-    shadowColor: '#000',
-    shadowOpacity: 0.5,
-    shadowRadius: 14,
-    shadowOffset: { width: 0, height: 8 },
-    elevation: 10,
-  },
+  // No blur: a dot-matrix screen can only draw an outline, and it is drawn
+  // inside the SVG so it never eats into the card's measured box.
+  shadow: { backgroundColor: colors.cardFace },
 });

@@ -21,7 +21,7 @@ export default function App() {
   );
 }
 
-/** Holds the dark background until the stored language resolves, so the app
+/** Holds the shell colour until the stored language resolves, so the app
  *  never flashes English before switching to the player's locale. */
 function LocaleGate() {
   const { ready } = useI18n();
@@ -30,5 +30,5 @@ function LocaleGate() {
 }
 
 const styles = StyleSheet.create({
-  splash: { flex: 1, backgroundColor: colors.bg },
+  splash: { flex: 1, backgroundColor: colors.shell },
 });

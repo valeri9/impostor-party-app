@@ -5,10 +5,11 @@ import { Button } from '../components/Button';
 import { DrawingPreview } from '../components/DrawCanvas';
 import { PlayingCard } from '../components/PlayingCard';
 import { Screen } from '../components/Screen';
+import { SectionLabel } from '../components/SectionLabel';
 import { useGame } from '../game/GameContext';
 import type { CanvasRound, MafiaRound, Round, TimerRound, WordRound } from '../game/types';
 import { localized, useI18n } from '../i18n';
-import { colors, MODE_ACCENT, radii, spacing, type } from '../theme/tokens';
+import { colors, MODE_ACCENT, spacing, stroke, type } from '../theme/tokens';
 
 export function ResultsScreen() {
   const { t } = useI18n();
@@ -57,11 +58,11 @@ function ImpostorBanner({ name, accent }: { name: string; accent: string }) {
   );
 }
 
-function Fact({ label, value, accent }: { label: string; value: string; accent?: string }) {
+function Fact({ label, value }: { label: string; value: string }) {
   return (
     <View style={styles.fact}>
       <Text style={styles.factLabel}>{label}</Text>
-      <Text style={[styles.factValue, accent ? { color: accent } : null]} adjustsFontSizeToFit numberOfLines={2}>
+      <Text style={styles.factValue} adjustsFontSizeToFit numberOfLines={2}>
         {value}
       </Text>
     </View>
@@ -74,8 +75,8 @@ function WordResults({ round }: { round: WordRound }) {
   return (
     <View>
       <ImpostorBanner name={playerById(round.impostorId).name} accent={MODE_ACCENT.word} />
-      <Fact label={t('results.secretWord')} value={localized(round.prompt.exact, locale)} accent={colors.emerald} />
-      <Fact label={t('secret.hint')} value={localized(round.prompt.hint, locale)} accent={colors.amber} />
+      <Fact label={t('results.secretWord')} value={localized(round.prompt.exact, locale)} />
+      <Fact label={t('secret.hint')} value={localized(round.prompt.hint, locale)} />
     </View>
   );
 }
@@ -87,13 +88,16 @@ function CanvasResults({ round }: { round: CanvasRound }) {
 
   return (
     <View>
-      <Text style={styles.section}>{t('canvas.artwork')}</Text>
+      <SectionLabel label={t('canvas.artwork')} />
       <DrawingPreview strokes={round.strokes} canvas={round.canvas} width={width - spacing.lg * 2} />
       {/* Strokes share whatever colour was chosen, so list the draw order
           instead of a colour key. The same order repeats each round. */}
-      <Text style={styles.section}>
-        {t('word.play.turnOrder')} · {t('canvas.play.round', { current: round.rounds, total: round.rounds })}
-      </Text>
+      <SectionLabel
+        label={`${t('word.play.turnOrder')} · ${t('canvas.play.round', {
+          current: round.rounds,
+          total: round.rounds,
+        })}`}
+      />
       <View style={styles.legend}>
         {round.order.map((id, i) => (
           <View key={id} style={styles.legendItem}>
@@ -103,8 +107,8 @@ function CanvasResults({ round }: { round: CanvasRound }) {
         ))}
       </View>
       <ImpostorBanner name={playerById(round.impostorId).name} accent={MODE_ACCENT.canvas} />
-      <Fact label={t('results.secretObject')} value={localized(round.prompt.exact, locale)} accent={colors.emerald} />
-      <Fact label={t('secret.hint')} value={localized(round.prompt.hint, locale)} accent={colors.amber} />
+      <Fact label={t('results.secretObject')} value={localized(round.prompt.exact, locale)} />
+      <Fact label={t('secret.hint')} value={localized(round.prompt.hint, locale)} />
     </View>
   );
 }
@@ -126,31 +130,30 @@ function TimerResults({ round }: { round: TimerRound }) {
       <Fact
         label={t('results.target')}
         value={`${(round.targetMs / 1000).toFixed(1)}${t('common.seconds')}`}
-        accent={colors.emerald}
       />
 
-      <Text style={styles.section}>{t('results.yourTimes')}</Text>
+      <SectionLabel label={t('results.yourTimes')} />
       {rows.map((row, i) => {
         const isImpostor = row.id === round.impostorId;
         const late = row.ms > round.targetMs;
+        const fg = isImpostor ? colors.onInk : colors.ink;
         return (
-          <View
-            key={row.id}
-            style={[styles.timeRow, isImpostor && { borderColor: colors.rose, backgroundColor: colors.surfaceAlt }]}
-          >
-            <Text style={styles.timeRank}>{i === 0 ? '🏆' : `${i + 1}`}</Text>
+          <View key={row.id} style={[styles.timeRow, isImpostor && styles.timeRowImpostor]}>
+            <Text style={[styles.timeRank, { color: fg }]}>{i === 0 ? '★' : `${i + 1}`}</Text>
             <View style={styles.timeName}>
-              <Text style={styles.timeNameText} numberOfLines={1}>
+              <Text style={[styles.timeNameText, { color: fg }]} numberOfLines={1}>
                 {playerById(row.id).name}
               </Text>
-              {isImpostor ? <Text style={styles.timeTag}>{t('role.impostor')}</Text> : null}
+              {isImpostor ? (
+                <Text style={[styles.timeTag, { color: fg }]}>{t('role.impostor')}</Text>
+              ) : null}
             </View>
             <View style={styles.timeValues}>
-              <Text style={styles.timeMain}>
+              <Text style={[styles.timeMain, { color: fg }]}>
                 {(row.ms / 1000).toFixed(1)}
                 {t('common.seconds')}
               </Text>
-              <Text style={[styles.timeDelta, { color: i === 0 ? colors.emerald : colors.textFaint }]}>
+              <Text style={[styles.timeDelta, { color: fg }]}>
                 {late ? '+' : '−'}
                 {(row.delta / 1000).toFixed(1)} {t('results.off')}
               </Text>
@@ -170,7 +173,7 @@ function MafiaResults({ round }: { round: MafiaRound }) {
 
   return (
     <View>
-      <Text style={styles.section}>{t('results.allRoles')}</Text>
+      <SectionLabel label={t('results.allRoles')} />
       <View style={styles.cardGrid}>
         {round.order.map((id) => {
           const assignment = round.deal[id];
@@ -195,73 +198,57 @@ function MafiaResults({ round }: { round: MafiaRound }) {
 }
 
 const styles = StyleSheet.create({
-  title: { ...type.title, color: colors.text, textAlign: 'center', marginBottom: spacing.md },
-  section: {
-    ...type.caption,
-    color: colors.textFaint,
+  title: {
+    ...type.title,
+    color: colors.ink,
+    textAlign: 'center',
     textTransform: 'uppercase',
-    letterSpacing: 1.2,
-    marginTop: spacing.lg,
-    marginBottom: spacing.sm,
+    marginBottom: spacing.md,
   },
+  // The whole point of the screen, so it gets the heaviest treatment available.
   banner: {
-    borderWidth: 2,
-    borderRadius: radii.lg,
-    backgroundColor: colors.surface,
+    borderWidth: stroke.thick,
+    backgroundColor: colors.ink,
     paddingVertical: spacing.lg,
     alignItems: 'center',
     marginTop: spacing.md,
   },
-  bannerLabel: {
-    ...type.caption,
-    color: colors.textFaint,
-    textTransform: 'uppercase',
-    letterSpacing: 1.2,
-  },
-  bannerName: { ...type.hero, color: colors.rose, marginTop: spacing.xs },
+  bannerLabel: { ...type.caption, color: colors.onInk, textTransform: 'uppercase' },
+  bannerName: { ...type.hero, color: colors.onInk, marginTop: spacing.xs },
   fact: {
     backgroundColor: colors.surface,
-    borderRadius: radii.md,
+    borderWidth: stroke.hair,
+    borderColor: colors.ink,
     padding: spacing.md,
     marginTop: spacing.sm,
     alignItems: 'center',
   },
-  factLabel: {
-    ...type.caption,
-    color: colors.textFaint,
-    textTransform: 'uppercase',
-    letterSpacing: 1.1,
-  },
-  factValue: { ...type.heading, color: colors.text, marginTop: spacing.xs, textAlign: 'center' },
+  factLabel: { ...type.caption, color: colors.inkSoft, textTransform: 'uppercase' },
+  factValue: { ...type.heading, color: colors.ink, marginTop: spacing.xs, textAlign: 'center' },
   legend: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.md, marginTop: spacing.sm, justifyContent: 'center' },
   legendItem: { flexDirection: 'row', alignItems: 'center', gap: spacing.xs },
-  legendIndex: {
-    ...type.caption,
-    color: colors.textFaint,
-    minWidth: 18,
-    textAlign: 'right',
-  },
-  legendName: { ...type.caption, color: colors.textMuted },
+  legendIndex: { ...type.caption, color: colors.inkSoft, minWidth: 18, textAlign: 'right' },
+  legendName: { ...type.caption, color: colors.ink },
   timeRow: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: spacing.sm,
     backgroundColor: colors.surface,
-    borderRadius: radii.md,
-    borderWidth: 2,
-    borderColor: 'transparent',
+    borderWidth: stroke.hair,
+    borderColor: colors.ink,
     padding: spacing.md,
     marginBottom: spacing.sm,
   },
-  timeRank: { ...type.label, color: colors.textFaint, width: 28, textAlign: 'center' },
+  timeRowImpostor: { backgroundColor: colors.ink, borderWidth: stroke.thick },
+  timeRank: { ...type.label, width: 28, textAlign: 'center' },
   timeName: { flex: 1 },
-  timeNameText: { ...type.body, color: colors.text },
-  timeTag: { ...type.caption, color: colors.rose, marginTop: 2 },
+  timeNameText: { ...type.body },
+  timeTag: { ...type.caption, marginTop: 2, textTransform: 'uppercase' },
   timeValues: { alignItems: 'flex-end' },
-  timeMain: { ...type.heading, color: colors.text, fontVariant: ['tabular-nums'] },
+  timeMain: { ...type.heading, fontVariant: ['tabular-nums'] },
   timeDelta: { ...type.caption },
   cardGrid: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.md, justifyContent: 'center' },
   cardCell: { alignItems: 'center', gap: spacing.xs },
-  cardName: { ...type.caption, color: colors.text, maxWidth: 110, textAlign: 'center' },
+  cardName: { ...type.caption, color: colors.ink, maxWidth: 110, textAlign: 'center' },
   action: { marginTop: spacing.md },
 });

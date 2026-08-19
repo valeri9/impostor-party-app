@@ -7,7 +7,7 @@ import { Screen } from '../../components/Screen';
 import { useGame } from '../../game/GameContext';
 import type { CanvasRound } from '../../game/types';
 import { useI18n } from '../../i18n';
-import { colors, MODE_ACCENT, radii, spacing, type } from '../../theme/tokens';
+import { colors, MODE_ACCENT, MODE_GLYPH, spacing, stroke, type } from '../../theme/tokens';
 
 export function CanvasPlayScreen({ round }: { round: CanvasRound }) {
   const { t } = useI18n();
@@ -36,6 +36,7 @@ export function CanvasPlayScreen({ round }: { round: CanvasRound }) {
   return (
     <Screen>
       <Text style={styles.title}>
+        <Text style={styles.glyph}>{MODE_GLYPH.canvas} </Text>
         {t('canvas.play.title')}
         {!finished ? `  ·  ${t('canvas.play.round', { current: currentRound, total: round.rounds })}` : ''}
       </Text>
@@ -113,17 +114,12 @@ export function CanvasPlayScreen({ round }: { round: CanvasRound }) {
 }
 
 const styles = StyleSheet.create({
-  title: {
-    ...type.caption,
-    color: colors.textFaint,
-    textAlign: 'center',
-    textTransform: 'uppercase',
-    letterSpacing: 1.2,
-  },
-  headline: { ...type.title, color: colors.text, textAlign: 'center', marginTop: spacing.xs },
+  title: { ...type.caption, color: colors.ink, textAlign: 'center', textTransform: 'uppercase' },
+  glyph: { color: colors.inkSoft },
+  headline: { ...type.title, color: colors.ink, textAlign: 'center', marginTop: spacing.xs },
   instruction: {
     ...type.caption,
-    color: colors.textMuted,
+    color: colors.inkSoft,
     textAlign: 'center',
     marginTop: spacing.xs,
     marginBottom: spacing.md,
@@ -131,18 +127,15 @@ const styles = StyleSheet.create({
   paletteWrap: { marginTop: spacing.md },
   paletteLabel: {
     ...type.caption,
-    color: colors.textFaint,
+    color: colors.inkSoft,
     textAlign: 'center',
+    textTransform: 'uppercase',
     marginBottom: spacing.sm,
   },
   palette: { flexDirection: 'row', justifyContent: 'center', gap: spacing.md },
-  swatch: {
-    width: 48,
-    height: 48,
-    borderRadius: radii.pill,
-    borderWidth: 3,
-    borderColor: 'transparent',
-  },
-  swatchActive: { borderColor: colors.text, transform: [{ scale: 1.12 }] },
+  // Four square chips, one per shade the screen can draw. The selected one is
+  // marked by a heavier frame, since there is no highlight colour to give it.
+  swatch: { width: 48, height: 48, borderWidth: stroke.hair, borderColor: colors.ink },
+  swatchActive: { borderWidth: stroke.thick },
   action: { marginTop: spacing.md },
 });

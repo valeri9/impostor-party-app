@@ -2,7 +2,7 @@ import React from 'react';
 import { Pressable, StyleSheet, Text, View, ViewStyle } from 'react-native';
 
 import { haptics } from '../native/haptics';
-import { colors, HIT_SIZE, radii, spacing, type } from '../theme/tokens';
+import { colors, HIT_SIZE, spacing, stroke, type } from '../theme/tokens';
 
 export type ButtonVariant = 'primary' | 'success' | 'danger' | 'ghost';
 
@@ -17,15 +17,20 @@ type Props = {
   testID?: string;
 };
 
-const FILLS: Record<ButtonVariant, { bg: string; pressed: string; text: string; border?: string }> = {
-  primary: { bg: colors.indigo, pressed: colors.indigoDark, text: colors.onAccent },
-  success: { bg: colors.emerald, pressed: colors.emeraldDark, text: colors.onAccent },
-  danger: { bg: colors.rose, pressed: colors.roseDark, text: colors.onAccent },
-  ghost: { bg: 'transparent', pressed: colors.surfaceAlt, text: colors.textMuted, border: colors.border },
+/**
+ * With one ink colour to spend, weight does the work a hue used to: filled vs
+ * hollow, single vs double frame. Pressing inverts the block, which is how an
+ * 8-bit menu acknowledged a press.
+ */
+const VARIANTS: Record<ButtonVariant, { filled: boolean; doubleFrame: boolean; border: number }> = {
+  primary: { filled: true, doubleFrame: false, border: stroke.thin },
+  success: { filled: true, doubleFrame: true, border: stroke.thick },
+  danger: { filled: false, doubleFrame: true, border: stroke.thick },
+  ghost: { filled: false, doubleFrame: false, border: stroke.hair },
 };
 
 export function Button({ label, onPress, variant = 'primary', disabled, large, style, testID }: Props) {
-  const fill = FILLS[variant];
+  const spec = VARIANTS[variant];
 
   return (
     <Pressable
@@ -41,19 +46,34 @@ export function Button({ label, onPress, variant = 'primary', disabled, large, s
         styles.base,
         large && styles.large,
         {
-          backgroundColor: pressed ? fill.pressed : fill.bg,
-          borderColor: fill.border ?? 'transparent',
-          borderWidth: fill.border ? 2 : 0,
+          backgroundColor: spec.filled !== pressed ? colors.ink : colors.bg,
+          borderWidth: spec.border,
+          borderColor: colors.ink,
         },
         disabled && styles.disabled,
         style,
       ]}
     >
-      <View pointerEvents="none">
-        <Text style={[styles.label, large && styles.labelLarge, { color: fill.text }]} numberOfLines={2}>
-          {label}
-        </Text>
-      </View>
+      {({ pressed }) => {
+        // `filled !== pressed` is the inversion: a filled button empties when
+        // pressed, a hollow one fills.
+        const inked = spec.filled !== pressed;
+        const fg = inked ? colors.onInk : colors.ink;
+        return (
+          <View
+            pointerEvents="none"
+            style={[
+              styles.inner,
+              large && styles.innerLarge,
+              spec.doubleFrame && { borderWidth: stroke.hair, borderColor: fg },
+            ]}
+          >
+            <Text style={[styles.label, large && styles.labelLarge, { color: fg }]} numberOfLines={2}>
+              {label}
+            </Text>
+          </View>
+        );
+      }}
     </Pressable>
   );
 }
@@ -61,14 +81,21 @@ export function Button({ label, onPress, variant = 'primary', disabled, large, s
 const styles = StyleSheet.create({
   base: {
     minHeight: HIT_SIZE,
-    borderRadius: radii.md,
-    paddingHorizontal: spacing.lg,
-    paddingVertical: spacing.md,
+    alignItems: 'stretch',
+    justifyContent: 'center',
+  },
+  large: { minHeight: 68 },
+  disabled: { opacity: 0.35 },
+  inner: {
+    flex: 1,
+    minHeight: HIT_SIZE - stroke.thick * 2,
+    paddingHorizontal: spacing.md,
+    paddingVertical: spacing.sm,
+    margin: stroke.hair,
     alignItems: 'center',
     justifyContent: 'center',
   },
-  large: { minHeight: 68, borderRadius: radii.lg },
-  disabled: { opacity: 0.4 },
-  label: { ...type.label, textAlign: 'center' },
-  labelLarge: { ...type.heading, textAlign: 'center', letterSpacing: 0.5 },
+  innerLarge: { minHeight: 68 - stroke.thick * 2 },
+  label: { ...type.label, textAlign: 'center', textTransform: 'uppercase' },
+  labelLarge: { ...type.heading, textAlign: 'center', textTransform: 'uppercase' },
 });
