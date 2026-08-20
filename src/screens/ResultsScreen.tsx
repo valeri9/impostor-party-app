@@ -129,7 +129,7 @@ function TimerResults({ round }: { round: TimerRound }) {
       <ImpostorBanner name={playerById(round.impostorId).name} accent={MODE_ACCENT.timer} />
       <Fact
         label={t('results.target')}
-        value={`${(round.targetMs / 1000).toFixed(2)}${t('common.seconds')}`}
+        value={`${(round.targetMs / 1000).toFixed(1)}${t('common.seconds')}`}
       />
 
       <SectionLabel label={t('results.yourTimes')} />
@@ -150,12 +150,12 @@ function TimerResults({ round }: { round: TimerRound }) {
             </View>
             <View style={styles.timeValues}>
               <Text style={[styles.timeMain, { color: fg }]}>
-                {(row.ms / 1000).toFixed(2)}
+                {(row.ms / 1000).toFixed(1)}
                 {t('common.seconds')}
               </Text>
               <Text style={[styles.timeDelta, { color: fg }]}>
                 {late ? '+' : '−'}
-                {(row.delta / 1000).toFixed(2)} {t('results.off')}
+                {(row.delta / 1000).toFixed(1)} {t('results.off')}
               </Text>
             </View>
           </View>
