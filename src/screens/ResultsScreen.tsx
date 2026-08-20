@@ -1,5 +1,5 @@
-import React from 'react';
-import { StyleSheet, Text, useWindowDimensions, View } from 'react-native';
+import React, { useEffect, useRef } from 'react';
+import { Animated, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
 
 import { Button } from '../components/Button';
 import { DrawingPreview } from '../components/DrawCanvas';
@@ -9,6 +9,8 @@ import { SectionLabel } from '../components/SectionLabel';
 import { useGame } from '../game/GameContext';
 import type { CanvasRound, MafiaRound, Round, TimerRound, WordRound } from '../game/types';
 import { localized, useI18n } from '../i18n';
+import { haptics } from '../native/haptics';
+import { playSound } from '../native/sound';
 import { colors, MODE_ACCENT, spacing, stroke, type } from '../theme/tokens';
 
 export function ResultsScreen() {
@@ -45,16 +47,33 @@ function Body({ round }: { round: Round }) {
   }
 }
 
-/** Shared headline naming the impostor. */
+/** Shared headline naming the impostor — the one moment worth a fanfare. */
 function ImpostorBanner({ name, accent }: { name: string; accent: string }) {
   const { t } = useI18n();
+  const pop = useRef(new Animated.Value(0)).current;
+
+  useEffect(() => {
+    haptics.heavy();
+    playSound('pop');
+    pop.setValue(0);
+    Animated.spring(pop, { toValue: 1, useNativeDriver: true, speed: 16, bounciness: 10 }).start();
+    // Fires once per mount — a fresh reveal per round, keyed by the results screen itself.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
-    <View style={[styles.banner, { borderColor: accent }]}>
+    <Animated.View
+      style={[
+        styles.banner,
+        { borderColor: accent },
+        { opacity: pop, transform: [{ scale: pop.interpolate({ inputRange: [0, 1], outputRange: [0.7, 1] }) }] },
+      ]}
+    >
       <Text style={styles.bannerLabel}>{t('results.theImpostor')}</Text>
       <Text style={styles.bannerName} adjustsFontSizeToFit numberOfLines={1}>
         {name}
       </Text>
-    </View>
+    </Animated.View>
   );
 }
 

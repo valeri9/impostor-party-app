@@ -8,6 +8,9 @@ import { createAudioPlayer, setAudioModeAsync, type AudioPlayer } from 'expo-aud
 const SOURCES = {
   buzzer: require('../../assets/audio/buzzer.wav'),
   chime: require('../../assets/audio/chime.wav'),
+  click: require('../../assets/audio/click.wav'),
+  tick: require('../../assets/audio/tick.wav'),
+  pop: require('../../assets/audio/pop.wav'),
 } as const;
 
 export type SoundName = keyof typeof SOURCES;

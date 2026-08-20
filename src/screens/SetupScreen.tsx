@@ -1,7 +1,8 @@
 import React, { useMemo } from 'react';
-import { Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
+import { Animated, Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
 
 import { Button } from '../components/Button';
+import { usePressScale } from '../components/pressAnim';
 import { Screen } from '../components/Screen';
 import { SectionLabel } from '../components/SectionLabel';
 import { Stepper, ToggleRow } from '../components/Stepper';
@@ -10,6 +11,7 @@ import { useGame } from '../game/GameContext';
 import { GAME_MODES, GameMode, MAX_PLAYERS, MIN_PLAYERS } from '../game/types';
 import { LANGUAGE_NAMES, LOCALES, useI18n } from '../i18n';
 import { haptics } from '../native/haptics';
+import { playSound } from '../native/sound';
 import { colors, MODE_GLYPH, spacing, stroke, type } from '../theme/tokens';
 
 export function SetupScreen() {
@@ -44,24 +46,9 @@ export function SetupScreen() {
 
       <SectionLabel label={t('setup.language')} />
       <View style={styles.langRow}>
-        {LOCALES.map((code) => {
-          const active = code === locale;
-          return (
-            <Pressable
-              key={code}
-              accessibilityRole="button"
-              accessibilityState={{ selected: active }}
-              onPress={() => {
-                haptics.selection();
-                setLocale(code);
-              }}
-              style={[styles.langPill, active && styles.langPillActive]}
-            >
-              <Text style={[styles.langCode, active && styles.langTextActive]}>{code}</Text>
-              <Text style={[styles.langName, active && styles.langTextActive]}>{LANGUAGE_NAMES[code]}</Text>
-            </Pressable>
-          );
-        })}
+        {LOCALES.map((code) => (
+          <LangPill key={code} code={code} active={code === locale} onSelect={() => setLocale(code)} />
+        ))}
       </View>
 
       <SectionLabel label={`${t('setup.players')}  (${players.length})`} />
@@ -80,17 +67,10 @@ export function SetupScreen() {
             autoCorrect={false}
             returnKeyType="done"
           />
-          <Pressable
-            accessibilityRole="button"
-            onPress={() => {
-              haptics.light();
-              dispatch({ type: 'REMOVE_PLAYER', id: player.id });
-            }}
+          <RemoveButton
+            onPress={() => dispatch({ type: 'REMOVE_PLAYER', id: player.id })}
             disabled={players.length <= MIN_PLAYERS}
-            style={[styles.removeButton, players.length <= MIN_PLAYERS && styles.removeDisabled]}
-          >
-            <Text style={styles.removeGlyph}>×</Text>
-          </Pressable>
+          />
         </View>
       ))}
 
@@ -151,6 +131,51 @@ export function SetupScreen() {
   );
 }
 
+function LangPill({ code, active, onSelect }: { code: (typeof LOCALES)[number]; active: boolean; onSelect: () => void }) {
+  const { scale, onPressIn, onPressOut } = usePressScale(0.9);
+  return (
+    <Animated.View style={{ transform: [{ scale }] }}>
+      <Pressable
+        accessibilityRole="button"
+        accessibilityState={{ selected: active }}
+        onPressIn={onPressIn}
+        onPressOut={onPressOut}
+        onPress={() => {
+          haptics.selection();
+          playSound('tick');
+          onSelect();
+        }}
+        style={[styles.langPill, active && styles.langPillActive]}
+      >
+        <Text style={[styles.langCode, active && styles.langTextActive]}>{code}</Text>
+        <Text style={[styles.langName, active && styles.langTextActive]}>{LANGUAGE_NAMES[code]}</Text>
+      </Pressable>
+    </Animated.View>
+  );
+}
+
+function RemoveButton({ onPress, disabled }: { onPress: () => void; disabled: boolean }) {
+  const { scale, onPressIn, onPressOut } = usePressScale(0.85);
+  return (
+    <Animated.View style={{ transform: [{ scale }] }}>
+      <Pressable
+        accessibilityRole="button"
+        onPressIn={disabled ? undefined : onPressIn}
+        onPressOut={onPressOut}
+        onPress={() => {
+          haptics.light();
+          playSound('tick');
+          onPress();
+        }}
+        disabled={disabled}
+        style={[styles.removeButton, disabled && styles.removeDisabled]}
+      >
+        <Text style={styles.removeGlyph}>×</Text>
+      </Pressable>
+    </Animated.View>
+  );
+}
+
 function ModeCard({
   mode,
   selected,
@@ -162,23 +187,29 @@ function ModeCard({
 }) {
   const { t } = useI18n();
   const fg = selected ? colors.onInk : colors.ink;
+  const { scale, onPressIn, onPressOut } = usePressScale(0.97);
   return (
-    <Pressable
-      accessibilityRole="button"
-      accessibilityState={{ selected }}
-      onPress={() => {
-        haptics.selection();
-        onSelect();
-      }}
-      style={[styles.modeCard, selected && styles.modeCardSelected]}
-    >
-      <Text style={[styles.modeGlyph, { color: fg }]}>{selected ? '▸' : ' '}</Text>
-      <Text style={[styles.modeGlyph, { color: fg }]}>{MODE_GLYPH[mode]}</Text>
-      <View style={styles.modeText}>
-        <Text style={[styles.modeName, { color: fg }]}>{t(`mode.${mode}.name`)}</Text>
-        <Text style={[styles.modeDesc, { color: fg }]}>{t(`mode.${mode}.desc`)}</Text>
-      </View>
-    </Pressable>
+    <Animated.View style={{ transform: [{ scale }] }}>
+      <Pressable
+        accessibilityRole="button"
+        accessibilityState={{ selected }}
+        onPressIn={onPressIn}
+        onPressOut={onPressOut}
+        onPress={() => {
+          haptics.selection();
+          playSound('tick');
+          onSelect();
+        }}
+        style={[styles.modeCard, selected && styles.modeCardSelected]}
+      >
+        <Text style={[styles.modeGlyph, { color: fg }]}>{selected ? '▸' : ' '}</Text>
+        <Text style={[styles.modeGlyph, { color: fg }]}>{MODE_GLYPH[mode]}</Text>
+        <View style={styles.modeText}>
+          <Text style={[styles.modeName, { color: fg }]}>{t(`mode.${mode}.name`)}</Text>
+          <Text style={[styles.modeDesc, { color: fg }]}>{t(`mode.${mode}.desc`)}</Text>
+        </View>
+      </Pressable>
+    </Animated.View>
   );
 }
 

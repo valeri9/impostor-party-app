@@ -1,8 +1,9 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
-import { AppState, Pressable, StyleSheet, Text, View } from 'react-native';
+import { Animated, AppState, Pressable, StyleSheet, Text, View } from 'react-native';
 
 import { useI18n } from '../i18n';
 import { haptics } from '../native/haptics';
+import { playSound } from '../native/sound';
 import { colors, spacing, stroke, type } from '../theme/tokens';
 import { PIXEL_LOCK, PixelArt } from './PixelArt';
 
@@ -38,6 +39,9 @@ export function HoldToReveal({ playerName, children, accent = colors.ink, onHold
   const [held, setHeld] = useState(false);
   const [unlocked, setUnlocked] = useState(false);
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  // Drives the secret's entrance — a quick unfold, like a card being flipped
+  // face-up, rather than a flat cut from shield to content.
+  const revealAnim = useRef(new Animated.Value(0)).current;
 
   const clearTimer = useCallback(() => {
     if (timerRef.current) {
@@ -69,12 +73,16 @@ export function HoldToReveal({ playerName, children, accent = colors.ink, onHold
     haptics.medium();
     setHeld(true);
     onHoldStart?.();
+    revealAnim.setValue(0);
+    Animated.spring(revealAnim, { toValue: 1, useNativeDriver: true, speed: 22, bounciness: 6 }).start();
     clearTimer();
     timerRef.current = setTimeout(() => {
       setUnlocked(true);
+      haptics.success();
+      playSound('pop');
       onUnlocked?.();
     }, UNLOCK_MS);
-  }, [clearTimer, onHoldStart, onUnlocked]);
+  }, [clearTimer, onHoldStart, onUnlocked, revealAnim]);
 
   return (
     <View style={styles.wrap}>
@@ -89,7 +97,19 @@ export function HoldToReveal({ playerName, children, accent = colors.ink, onHold
         accessibilityLabel={`${t('reveal.shield', { name: playerName })}. ${t('reveal.holdHint')}`}
       >
         {held ? (
-          <View testID="secret-content" style={[styles.secret, { borderColor: accent }]}>{children}</View>
+          <Animated.View
+            testID="secret-content"
+            style={[
+              styles.secret,
+              { borderColor: accent },
+              {
+                opacity: revealAnim,
+                transform: [{ scaleY: revealAnim.interpolate({ inputRange: [0, 1], outputRange: [0.3, 1] }) }],
+              },
+            ]}
+          >
+            {children}
+          </Animated.View>
         ) : (
           <Shield playerName={playerName} accent={accent} />
         )}
