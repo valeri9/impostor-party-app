@@ -61,16 +61,24 @@ export function buildCanvasRound(players: Player[]): CanvasRound {
 
 // ---------------------------------------------------------------- Timer
 
-const TIMER_MIN_MS = 1_000;
+const TIMER_MIN_MS = 250;
 const TIMER_MAX_MS = 10_000;
+const TIMER_STEP_MS = 250;
 
 export function buildTimerRound(players: Player[]): TimerRound {
   const { order, impostorId } = baseRound(players);
-  // Half-second granularity keeps the spoken target natural ("6.5 seconds").
-  const targetMs = randomInt(TIMER_MIN_MS / 500, TIMER_MAX_MS / 500) * 500;
-  // The impostor gets a deliberately loose window that always contains the target.
-  const rangeMinMs = Math.max(1000, Math.floor((targetMs * 0.6) / 1000) * 1000);
-  const rangeMaxMs = Math.ceil((targetMs * 1.4) / 1000) * 1000;
+  // Quarter-second steps give the target texture (6.25s, 6.75s) instead of
+  // landing on a whole or half second every time.
+  const targetMs = randomInt(TIMER_MIN_MS / TIMER_STEP_MS, TIMER_MAX_MS / TIMER_STEP_MS) * TIMER_STEP_MS;
+  // The impostor gets a deliberately loose window that always contains the
+  // target. Rounded to the same step as the target itself, not whole seconds
+  // — at this floor, rounding to whole seconds could produce a range that
+  // misses the target entirely.
+  const rangeMinMs = Math.max(
+    TIMER_STEP_MS,
+    Math.floor((targetMs * 0.6) / TIMER_STEP_MS) * TIMER_STEP_MS,
+  );
+  const rangeMaxMs = Math.ceil((targetMs * 1.4) / TIMER_STEP_MS) * TIMER_STEP_MS;
   return { mode: 'timer', targetMs, rangeMinMs, rangeMaxMs, impostorId, order, times: {} };
 }
 
