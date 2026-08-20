@@ -61,18 +61,18 @@ export function buildCanvasRound(players: Player[]): CanvasRound {
 
 // ---------------------------------------------------------------- Timer
 
-const TIMER_MIN_MS = 100;
+const TIMER_MIN_MS = 250;
 const TIMER_MAX_MS = 10_000;
-const TIMER_STEP_MS = 100;
+const TIMER_STEP_MS = 250;
 
 export function buildTimerRound(players: Player[]): TimerRound {
   const { order, impostorId } = baseRound(players);
-  // Tenth-second steps give the target texture (6.3s, 6.7s) instead of
+  // Quarter-second steps give the target texture (6.25s, 6.75s) instead of
   // landing on a whole or half second every time.
   const targetMs = randomInt(TIMER_MIN_MS / TIMER_STEP_MS, TIMER_MAX_MS / TIMER_STEP_MS) * TIMER_STEP_MS;
   // The impostor gets a deliberately loose window that always contains the
   // target. Rounded to the same step as the target itself, not whole seconds
-  // — at a 0.1s floor, rounding to whole seconds could produce a range that
+  // — at this floor, rounding to whole seconds could produce a range that
   // misses the target entirely.
   const rangeMinMs = Math.max(
     TIMER_STEP_MS,
