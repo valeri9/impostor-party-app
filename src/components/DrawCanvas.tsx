@@ -4,6 +4,7 @@ import Svg, { Path, Rect } from 'react-native-svg';
 
 import type { Stroke } from '../game/types';
 import { haptics } from '../native/haptics';
+import { playSound } from '../native/sound';
 import { colors, stroke as line } from '../theme/tokens';
 
 /** Ignore sub-pixel jitter so a single stroke stays a manageable path string. */
@@ -44,6 +45,7 @@ export function DrawCanvas({ strokes, color, enabled, onStrokeStart, onStrokeCom
         onPanResponderGrant: (evt) => {
           const { locationX: x, locationY: y } = evt.nativeEvent;
           haptics.light();
+          playSound('tick');
           startRef.current?.();
           pointsRef.current = [`M${x.toFixed(1)} ${y.toFixed(1)}`];
           lastRef.current = { x, y };
@@ -74,6 +76,7 @@ export function DrawCanvas({ strokes, color, enabled, onStrokeStart, onStrokeCom
     // A tap with no movement is not a stroke; let the player try again.
     if (points.length < 2) return;
     haptics.success();
+    playSound('chime');
     completeRef.current(points.join(' '));
   }
 

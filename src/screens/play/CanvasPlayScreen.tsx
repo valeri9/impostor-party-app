@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { Animated, Pressable, StyleSheet, Text, View } from 'react-native';
 
 import { Button } from '../../components/Button';
 import { DrawCanvas } from '../../components/DrawCanvas';
+import { usePressScale } from '../../components/pressAnim';
 import { Screen } from '../../components/Screen';
 import { useGame } from '../../game/GameContext';
 import type { CanvasRound } from '../../game/types';
 import { useI18n } from '../../i18n';
+import { haptics } from '../../native/haptics';
+import { playSound } from '../../native/sound';
 import { colors, MODE_ACCENT, MODE_GLYPH, spacing, stroke, type } from '../../theme/tokens';
 
 export function CanvasPlayScreen({ round }: { round: CanvasRound }) {
@@ -72,16 +75,11 @@ export function CanvasPlayScreen({ round }: { round: CanvasRound }) {
           <Text style={styles.paletteLabel}>{t('canvas.play.pickColor')}</Text>
           <View style={styles.palette}>
             {colors.swatches.map((swatch) => (
-              <Pressable
+              <Swatch
                 key={swatch}
-                accessibilityRole="button"
-                accessibilityState={{ selected: swatch === color }}
-                onPress={() => setColor(swatch)}
-                style={[
-                  styles.swatch,
-                  { backgroundColor: swatch },
-                  swatch === color && styles.swatchActive,
-                ]}
+                color={swatch}
+                active={swatch === color}
+                onSelect={() => setColor(swatch)}
               />
             ))}
           </View>
@@ -110,6 +108,26 @@ export function CanvasPlayScreen({ round }: { round: CanvasRound }) {
         />
       ) : null}
     </Screen>
+  );
+}
+
+function Swatch({ color, active, onSelect }: { color: string; active: boolean; onSelect: () => void }) {
+  const { scale, onPressIn, onPressOut } = usePressScale(0.82);
+  return (
+    <Animated.View style={{ transform: [{ scale }] }}>
+      <Pressable
+        accessibilityRole="button"
+        accessibilityState={{ selected: active }}
+        onPressIn={onPressIn}
+        onPressOut={onPressOut}
+        onPress={() => {
+          haptics.selection();
+          playSound('tick');
+          onSelect();
+        }}
+        style={[styles.swatch, { backgroundColor: color }, active && styles.swatchActive]}
+      />
+    </Animated.View>
   );
 }
 
