@@ -61,12 +61,12 @@ export function buildCanvasRound(players: Player[]): CanvasRound {
 
 // ---------------------------------------------------------------- Timer
 
-const TIMER_MIN_MS = 8_000;
-const TIMER_MAX_MS = 30_000;
+const TIMER_MIN_MS = 1_000;
+const TIMER_MAX_MS = 10_000;
 
 export function buildTimerRound(players: Player[]): TimerRound {
   const { order, impostorId } = baseRound(players);
-  // Half-second granularity keeps the spoken target natural ("18.5 seconds").
+  // Half-second granularity keeps the spoken target natural ("6.5 seconds").
   const targetMs = randomInt(TIMER_MIN_MS / 500, TIMER_MAX_MS / 500) * 500;
   // The impostor gets a deliberately loose window that always contains the target.
   const rangeMinMs = Math.max(1000, Math.floor((targetMs * 0.6) / 1000) * 1000);
