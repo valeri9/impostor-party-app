@@ -20,7 +20,7 @@ Every dependency is Expo Go compatible, so the whole game is playable on a
 physical device without building a dev client.
 
 ```bash
-npm test           # 14 integration tests covering all four modes
+npm test           # integration tests for all four modes + prompt-library checks
 npm run typecheck  # tsc --noEmit
 npm run gen:audio  # regenerate assets/audio/*.wav
 npm run gen:icons  # regenerate the pixel-art app icons
@@ -112,9 +112,26 @@ corner indices top-left and rotated bottom-right, standard pip layouts.
 
 English, Bulgarian, Spanish, Greek, German, Romanian.
 
-`src/i18n/dictionary.json` holds everything in one file: 97 UI keys per locale
-plus 15 word prompts and 12 drawing pairs, each with an `exact`/`hint` pair in
-all six languages side by side. Missing keys fall back to English at runtime.
+Three files, split by what a translator would work on at a time:
+
+| File | Holds |
+|---|---|
+| `src/i18n/dictionary.json` | 103 UI keys per locale |
+| `src/i18n/words.json` | 300 word prompts, 30 in each of 10 categories |
+| `src/i18n/drawings.json` | 300 drawing prompts |
+
+Every prompt carries an `exact`/`hint` pair in all six languages side by side —
+the secret the civilians get, and the broader, adjacent description the impostor
+gets instead. Missing UI keys fall back to English at runtime.
+
+Word categories: food, places, animals, objects, activities, nature, jobs,
+transport, sports, entertainment.
+
+`__tests__/prompts.test.ts` guards the library as a whole — no missing
+translation in any language, no hint that accidentally repeats its own secret,
+no duplicate entries, a label for every category, and an even split across them.
+A play-through test would only ever sample one random prompt, so these run over
+all 600.
 
 The language is detected from the device on first launch and persisted after
 that. `src/i18n/prompts.ts` holds the data with no React dependency, so the game
@@ -127,7 +144,7 @@ logic in `src/game/` is testable in plain Node.
 ```
 App.tsx                     providers + locale gate
 src/game/                   types, reducer (the state machine), role assignment
-src/i18n/                   dictionary.json, runtime t(), prompt data
+src/i18n/                   dictionary.json (UI), words/drawings.json, runtime t()
 src/components/             HoldToReveal, PlayingCard, DrawCanvas, Button, …
 src/screens/                Setup → Reveal → play/* → Results
 src/native/                 haptics + sound wrappers (safe no-ops on failure)

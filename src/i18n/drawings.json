@@ -1,0 +1,5402 @@
+[
+  {
+    "exact": {
+      "en": "Eiffel Tower",
+      "bg": "Айфеловата кула",
+      "es": "Torre Eiffel",
+      "el": "Πύργος του Άιφελ",
+      "de": "Eiffelturm",
+      "ro": "Turnul Eiffel"
+    },
+    "hint": {
+      "en": "Tall tower",
+      "bg": "Висока кула",
+      "es": "Torre alta",
+      "el": "Ψηλός πύργος",
+      "de": "Hoher Turm",
+      "ro": "Turn înalt"
+    }
+  },
+  {
+    "exact": {
+      "en": "Cat",
+      "bg": "Котка",
+      "es": "Gato",
+      "el": "Γάτα",
+      "de": "Katze",
+      "ro": "Pisică"
+    },
+    "hint": {
+      "en": "Pet animal",
+      "bg": "Домашен любимец",
+      "es": "Animal doméstico",
+      "el": "Κατοικίδιο",
+      "de": "Haustier",
+      "ro": "Animal de companie"
+    }
+  },
+  {
+    "exact": {
+      "en": "Bicycle",
+      "bg": "Велосипед",
+      "es": "Bicicleta",
+      "el": "Ποδήλατο",
+      "de": "Fahrrad",
+      "ro": "Bicicletă"
+    },
+    "hint": {
+      "en": "Vehicle with wheels",
+      "bg": "Превозно средство с колела",
+      "es": "Vehículo con ruedas",
+      "el": "Όχημα με ρόδες",
+      "de": "Fahrzeug mit Rädern",
+      "ro": "Vehicul cu roți"
+    }
+  },
+  {
+    "exact": {
+      "en": "Pineapple",
+      "bg": "Ананас",
+      "es": "Piña",
+      "el": "Ανανάς",
+      "de": "Ananas",
+      "ro": "Ananas"
+    },
+    "hint": {
+      "en": "Tropical fruit",
+      "bg": "Тропически плод",
+      "es": "Fruta tropical",
+      "el": "Τροπικό φρούτο",
+      "de": "Tropische Frucht",
+      "ro": "Fruct tropical"
+    }
+  },
+  {
+    "exact": {
+      "en": "Rocket",
+      "bg": "Ракета",
+      "es": "Cohete",
+      "el": "Πύραυλος",
+      "de": "Rakete",
+      "ro": "Rachetă"
+    },
+    "hint": {
+      "en": "Flying machine",
+      "bg": "Летяща машина",
+      "es": "Máquina voladora",
+      "el": "Ιπτάμενη μηχανή",
+      "de": "Fluggerät",
+      "ro": "Mașinărie zburătoare"
+    }
+  },
+  {
+    "exact": {
+      "en": "Snowman",
+      "bg": "Снежен човек",
+      "es": "Muñeco de nieve",
+      "el": "Χιονάνθρωπος",
+      "de": "Schneemann",
+      "ro": "Om de zăpadă"
+    },
+    "hint": {
+      "en": "Winter figure",
+      "bg": "Зимна фигура",
+      "es": "Figura de invierno",
+      "el": "Χειμωνιάτικη φιγούρα",
+      "de": "Winterfigur",
+      "ro": "Figură de iarnă"
+    }
+  },
+  {
+    "exact": {
+      "en": "Lighthouse",
+      "bg": "Фар",
+      "es": "Faro",
+      "el": "Φάρος",
+      "de": "Leuchtturm",
+      "ro": "Far"
+    },
+    "hint": {
+      "en": "Tall building by the sea",
+      "bg": "Висока сграда край морето",
+      "es": "Edificio alto junto al mar",
+      "el": "Ψηλό κτίριο δίπλα στη θάλασσα",
+      "de": "Hohes Gebäude am Meer",
+      "ro": "Clădire înaltă lângă mare"
+    }
+  },
+  {
+    "exact": {
+      "en": "Octopus",
+      "bg": "Октопод",
+      "es": "Pulpo",
+      "el": "Χταπόδι",
+      "de": "Krake",
+      "ro": "Caracatiță"
+    },
+    "hint": {
+      "en": "Sea creature",
+      "bg": "Морско създание",
+      "es": "Criatura marina",
+      "el": "Θαλάσσιο πλάσμα",
+      "de": "Meerestier",
+      "ro": "Creatură marină"
+    }
+  },
+  {
+    "exact": {
+      "en": "Sunflower",
+      "bg": "Слънчоглед",
+      "es": "Girasol",
+      "el": "Ηλίανθος",
+      "de": "Sonnenblume",
+      "ro": "Floarea-soarelui"
+    },
+    "hint": {
+      "en": "Flower",
+      "bg": "Цвете",
+      "es": "Flor",
+      "el": "Λουλούδι",
+      "de": "Blume",
+      "ro": "Floare"
+    }
+  },
+  {
+    "exact": {
+      "en": "Guitar",
+      "bg": "Китара",
+      "es": "Guitarra",
+      "el": "Κιθάρα",
+      "de": "Gitarre",
+      "ro": "Chitară"
+    },
+    "hint": {
+      "en": "Musical instrument",
+      "bg": "Музикален инструмент",
+      "es": "Instrumento musical",
+      "el": "Μουσικό όργανο",
+      "de": "Musikinstrument",
+      "ro": "Instrument muzical"
+    }
+  },
+  {
+    "exact": {
+      "en": "Castle",
+      "bg": "Замък",
+      "es": "Castillo",
+      "el": "Κάστρο",
+      "de": "Schloss",
+      "ro": "Castel"
+    },
+    "hint": {
+      "en": "Old big building",
+      "bg": "Стара голяма сграда",
+      "es": "Edificio antiguo y grande",
+      "el": "Παλιό μεγάλο κτίριο",
+      "de": "Altes großes Gebäude",
+      "ro": "Clădire veche și mare"
+    }
+  },
+  {
+    "exact": {
+      "en": "Hot air balloon",
+      "bg": "Балон с горещ въздух",
+      "es": "Globo aerostático",
+      "el": "Αερόστατο",
+      "de": "Heißluftballon",
+      "ro": "Balon cu aer cald"
+    },
+    "hint": {
+      "en": "Thing that floats in the sky",
+      "bg": "Нещо, което се носи в небето",
+      "es": "Algo que flota en el cielo",
+      "el": "Κάτι που επιπλέει στον ουρανό",
+      "de": "Etwas, das am Himmel schwebt",
+      "ro": "Ceva ce plutește pe cer"
+    }
+  },
+  {
+    "exact": {
+      "en": "Dog",
+      "bg": "Куче",
+      "es": "Perro",
+      "el": "Σκύλος",
+      "de": "Hund",
+      "ro": "Câine"
+    },
+    "hint": {
+      "en": "Loyal pet",
+      "bg": "Вярно домашно животно",
+      "es": "Mascota fiel",
+      "el": "Πιστό κατοικίδιο",
+      "de": "Treues Haustier",
+      "ro": "Animal de casă credincios"
+    }
+  },
+  {
+    "exact": {
+      "en": "Fish",
+      "bg": "Риба",
+      "es": "Pez",
+      "el": "Ψάρι",
+      "de": "Fisch",
+      "ro": "Pește"
+    },
+    "hint": {
+      "en": "Water animal",
+      "bg": "Водно животно",
+      "es": "Animal de agua",
+      "el": "Ζώο του νερού",
+      "de": "Wassertier",
+      "ro": "Animal de apă"
+    }
+  },
+  {
+    "exact": {
+      "en": "Bird",
+      "bg": "Птица",
+      "es": "Pájaro",
+      "el": "Πουλί",
+      "de": "Vogel",
+      "ro": "Pasăre"
+    },
+    "hint": {
+      "en": "Flying animal",
+      "bg": "Летящо животно",
+      "es": "Animal que vuela",
+      "el": "Ζώο που πετά",
+      "de": "Fliegendes Tier",
+      "ro": "Animal care zboară"
+    }
+  },
+  {
+    "exact": {
+      "en": "Elephant",
+      "bg": "Слон",
+      "es": "Elefante",
+      "el": "Ελέφαντας",
+      "de": "Elefant",
+      "ro": "Elefant"
+    },
+    "hint": {
+      "en": "Animal with a trunk",
+      "bg": "Животно с хобот",
+      "es": "Animal con trompa",
+      "el": "Ζώο με προβοσκίδα",
+      "de": "Tier mit Rüssel",
+      "ro": "Animal cu trompă"
+    }
+  },
+  {
+    "exact": {
+      "en": "Giraffe",
+      "bg": "Жираф",
+      "es": "Jirafa",
+      "el": "Καμηλοπάρδαλη",
+      "de": "Giraffe",
+      "ro": "Girafă"
+    },
+    "hint": {
+      "en": "Animal with a long neck",
+      "bg": "Животно с дълъг врат",
+      "es": "Animal de cuello largo",
+      "el": "Ζώο με μακρύ λαιμό",
+      "de": "Tier mit langem Hals",
+      "ro": "Animal cu gât lung"
+    }
+  },
+  {
+    "exact": {
+      "en": "Snake",
+      "bg": "Змия",
+      "es": "Serpiente",
+      "el": "Φίδι",
+      "de": "Schlange",
+      "ro": "Șarpe"
+    },
+    "hint": {
+      "en": "Long crawling animal",
+      "bg": "Дълго пълзящо животно",
+      "es": "Animal largo que repta",
+      "el": "Μακρύ ζώο που έρπει",
+      "de": "Langes kriechendes Tier",
+      "ro": "Animal lung care se târăște"
+    }
+  },
+  {
+    "exact": {
+      "en": "Turtle",
+      "bg": "Костенурка",
+      "es": "Tortuga",
+      "el": "Χελώνα",
+      "de": "Schildkröte",
+      "ro": "Broască țestoasă"
+    },
+    "hint": {
+      "en": "Animal with a shell",
+      "bg": "Животно с черупка",
+      "es": "Animal con caparazón",
+      "el": "Ζώο με καβούκι",
+      "de": "Tier mit Panzer",
+      "ro": "Animal cu carapace"
+    }
+  },
+  {
+    "exact": {
+      "en": "Butterfly",
+      "bg": "Пеперуда",
+      "es": "Mariposa",
+      "el": "Πεταλούδα",
+      "de": "Schmetterling",
+      "ro": "Fluture"
+    },
+    "hint": {
+      "en": "Insect with wings",
+      "bg": "Насекомо с крила",
+      "es": "Insecto con alas",
+      "el": "Έντομο με φτερά",
+      "de": "Insekt mit Flügeln",
+      "ro": "Insectă cu aripi"
+    }
+  },
+  {
+    "exact": {
+      "en": "Bee",
+      "bg": "Пчела",
+      "es": "Abeja",
+      "el": "Μέλισσα",
+      "de": "Biene",
+      "ro": "Albină"
+    },
+    "hint": {
+      "en": "Striped insect",
+      "bg": "Раирано насекомо",
+      "es": "Insecto con rayas",
+      "el": "Ριγέ έντομο",
+      "de": "Gestreiftes Insekt",
+      "ro": "Insectă cu dungi"
+    }
+  },
+  {
+    "exact": {
+      "en": "Spider",
+      "bg": "Паяк",
+      "es": "Araña",
+      "el": "Αράχνη",
+      "de": "Spinne",
+      "ro": "Păianjen"
+    },
+    "hint": {
+      "en": "Animal with eight legs",
+      "bg": "Животно с осем крака",
+      "es": "Animal de ocho patas",
+      "el": "Ζώο με οκτώ πόδια",
+      "de": "Tier mit acht Beinen",
+      "ro": "Animal cu opt picioare"
+    }
+  },
+  {
+    "exact": {
+      "en": "Crab",
+      "bg": "Рак",
+      "es": "Cangrejo",
+      "el": "Καβούρι",
+      "de": "Krabbe",
+      "ro": "Crab"
+    },
+    "hint": {
+      "en": "Animal with claws",
+      "bg": "Животно с щипки",
+      "es": "Animal con pinzas",
+      "el": "Ζώο με δαγκάνες",
+      "de": "Tier mit Scheren",
+      "ro": "Animal cu clești"
+    }
+  },
+  {
+    "exact": {
+      "en": "Whale",
+      "bg": "Кит",
+      "es": "Ballena",
+      "el": "Φάλαινα",
+      "de": "Wal",
+      "ro": "Balenă"
+    },
+    "hint": {
+      "en": "Giant sea animal",
+      "bg": "Гигантско морско животно",
+      "es": "Animal marino gigante",
+      "el": "Γιγάντιο θαλάσσιο ζώο",
+      "de": "Riesiges Meerestier",
+      "ro": "Animal marin gigantic"
+    }
+  },
+  {
+    "exact": {
+      "en": "Penguin",
+      "bg": "Пингвин",
+      "es": "Pingüino",
+      "el": "Πιγκουίνος",
+      "de": "Pinguin",
+      "ro": "Pinguin"
+    },
+    "hint": {
+      "en": "Bird that cannot fly",
+      "bg": "Птица, която не лети",
+      "es": "Ave que no vuela",
+      "el": "Πουλί που δεν πετά",
+      "de": "Vogel, der nicht fliegt",
+      "ro": "Pasăre care nu zboară"
+    }
+  },
+  {
+    "exact": {
+      "en": "Owl",
+      "bg": "Бухал",
+      "es": "Búho",
+      "el": "Κουκουβάγια",
+      "de": "Eule",
+      "ro": "Bufniță"
+    },
+    "hint": {
+      "en": "Bird of the night",
+      "bg": "Птица на нощта",
+      "es": "Ave de la noche",
+      "el": "Πουλί της νύχτας",
+      "de": "Vogel der Nacht",
+      "ro": "Pasăre a nopții"
+    }
+  },
+  {
+    "exact": {
+      "en": "Frog",
+      "bg": "Жаба",
+      "es": "Rana",
+      "el": "Βάτραχος",
+      "de": "Frosch",
+      "ro": "Broască"
+    },
+    "hint": {
+      "en": "Green jumper",
+      "bg": "Зелен скачач",
+      "es": "Saltador verde",
+      "el": "Πράσινο ζώο που πηδά",
+      "de": "Grüner Springer",
+      "ro": "Săritor verde"
+    }
+  },
+  {
+    "exact": {
+      "en": "Horse",
+      "bg": "Кон",
+      "es": "Caballo",
+      "el": "Άλογο",
+      "de": "Pferd",
+      "ro": "Cal"
+    },
+    "hint": {
+      "en": "Animal you can ride",
+      "bg": "Животно, което се язди",
+      "es": "Animal que se monta",
+      "el": "Ζώο που το καβαλάς",
+      "de": "Tier zum Reiten",
+      "ro": "Animal pe care îl călărești"
+    }
+  },
+  {
+    "exact": {
+      "en": "Pig",
+      "bg": "Прасе",
+      "es": "Cerdo",
+      "el": "Γουρούνι",
+      "de": "Schwein",
+      "ro": "Porc"
+    },
+    "hint": {
+      "en": "Pink farm animal",
+      "bg": "Розово селско животно",
+      "es": "Animal rosa de granja",
+      "el": "Ροζ ζώο της φάρμας",
+      "de": "Rosa Bauernhoftier",
+      "ro": "Animal roz de fermă"
+    }
+  },
+  {
+    "exact": {
+      "en": "Cow",
+      "bg": "Крава",
+      "es": "Vaca",
+      "el": "Αγελάδα",
+      "de": "Kuh",
+      "ro": "Vacă"
+    },
+    "hint": {
+      "en": "Animal that gives milk",
+      "bg": "Животно, което дава мляко",
+      "es": "Animal que da leche",
+      "el": "Ζώο που δίνει γάλα",
+      "de": "Tier, das Milch gibt",
+      "ro": "Animal care dă lapte"
+    }
+  },
+  {
+    "exact": {
+      "en": "Duck",
+      "bg": "Патица",
+      "es": "Pato",
+      "el": "Πάπια",
+      "de": "Ente",
+      "ro": "Rață"
+    },
+    "hint": {
+      "en": "Water bird",
+      "bg": "Водна птица",
+      "es": "Ave acuática",
+      "el": "Υδρόβιο πουλί",
+      "de": "Wasservogel",
+      "ro": "Pasăre de apă"
+    }
+  },
+  {
+    "exact": {
+      "en": "Rabbit",
+      "bg": "Заек",
+      "es": "Conejo",
+      "el": "Κουνέλι",
+      "de": "Kaninchen",
+      "ro": "Iepure"
+    },
+    "hint": {
+      "en": "Animal with long ears",
+      "bg": "Животно с дълги уши",
+      "es": "Animal de orejas largas",
+      "el": "Ζώο με μακριά αυτιά",
+      "de": "Tier mit langen Ohren",
+      "ro": "Animal cu urechi lungi"
+    }
+  },
+  {
+    "exact": {
+      "en": "Mouse",
+      "bg": "Мишка",
+      "es": "Ratón",
+      "el": "Ποντίκι",
+      "de": "Maus",
+      "ro": "Șoarece"
+    },
+    "hint": {
+      "en": "Tiny animal with a tail",
+      "bg": "Мъничко животно с опашка",
+      "es": "Animal diminuto con cola",
+      "el": "Μικροσκοπικό ζώο με ουρά",
+      "de": "Winziges Tier mit Schwanz",
+      "ro": "Animal mititel cu coadă"
+    }
+  },
+  {
+    "exact": {
+      "en": "Bat",
+      "bg": "Прилеп",
+      "es": "Murciélago",
+      "el": "Νυχτερίδα",
+      "de": "Fledermaus",
+      "ro": "Liliac"
+    },
+    "hint": {
+      "en": "Animal that flies at night",
+      "bg": "Животно, което лети нощем",
+      "es": "Animal que vuela de noche",
+      "el": "Ζώο που πετά τη νύχτα",
+      "de": "Tier, das nachts fliegt",
+      "ro": "Animal care zboară noaptea"
+    }
+  },
+  {
+    "exact": {
+      "en": "Shark",
+      "bg": "Акула",
+      "es": "Tiburón",
+      "el": "Καρχαρίας",
+      "de": "Hai",
+      "ro": "Rechin"
+    },
+    "hint": {
+      "en": "Sea hunter",
+      "bg": "Морски ловец",
+      "es": "Cazador del mar",
+      "el": "Κυνηγός της θάλασσας",
+      "de": "Jäger des Meeres",
+      "ro": "Vânător al mării"
+    }
+  },
+  {
+    "exact": {
+      "en": "Snail",
+      "bg": "Охлюв",
+      "es": "Caracol",
+      "el": "Σαλιγκάρι",
+      "de": "Schnecke",
+      "ro": "Melc"
+    },
+    "hint": {
+      "en": "Animal that carries its house",
+      "bg": "Животно, което носи дома си",
+      "es": "Animal que lleva su casa",
+      "el": "Ζώο που κουβαλά το σπίτι του",
+      "de": "Tier, das sein Haus trägt",
+      "ro": "Animal care își poartă casa"
+    }
+  },
+  {
+    "exact": {
+      "en": "Ant",
+      "bg": "Мравка",
+      "es": "Hormiga",
+      "el": "Μυρμήγκι",
+      "de": "Ameise",
+      "ro": "Furnică"
+    },
+    "hint": {
+      "en": "Very small insect",
+      "bg": "Много малко насекомо",
+      "es": "Insecto muy pequeño",
+      "el": "Πολύ μικρό έντομο",
+      "de": "Sehr kleines Insekt",
+      "ro": "Insectă foarte mică"
+    }
+  },
+  {
+    "exact": {
+      "en": "Ladybug",
+      "bg": "Калинка",
+      "es": "Mariquita",
+      "el": "Πασχαλίτσα",
+      "de": "Marienkäfer",
+      "ro": "Buburuză"
+    },
+    "hint": {
+      "en": "Spotted insect",
+      "bg": "Насекомо на точки",
+      "es": "Insecto con puntos",
+      "el": "Έντομο με βούλες",
+      "de": "Insekt mit Punkten",
+      "ro": "Insectă cu buline"
+    }
+  },
+  {
+    "exact": {
+      "en": "Dolphin",
+      "bg": "Делфин",
+      "es": "Delfín",
+      "el": "Δελφίνι",
+      "de": "Delfin",
+      "ro": "Delfin"
+    },
+    "hint": {
+      "en": "Playful sea animal",
+      "bg": "Игриво морско животно",
+      "es": "Animal marino juguetón",
+      "el": "Παιχνιδιάρικο θαλάσσιο ζώο",
+      "de": "Verspieltes Meerestier",
+      "ro": "Animal marin jucăuș"
+    }
+  },
+  {
+    "exact": {
+      "en": "Lion",
+      "bg": "Лъв",
+      "es": "León",
+      "el": "Λιοντάρι",
+      "de": "Löwe",
+      "ro": "Leu"
+    },
+    "hint": {
+      "en": "Animal with a mane",
+      "bg": "Животно с грива",
+      "es": "Animal con melena",
+      "el": "Ζώο με χαίτη",
+      "de": "Tier mit Mähne",
+      "ro": "Animal cu coamă"
+    }
+  },
+  {
+    "exact": {
+      "en": "Bear",
+      "bg": "Мечка",
+      "es": "Oso",
+      "el": "Αρκούδα",
+      "de": "Bär",
+      "ro": "Urs"
+    },
+    "hint": {
+      "en": "Large furry animal",
+      "bg": "Голямо космато животно",
+      "es": "Animal grande y peludo",
+      "el": "Μεγάλο τριχωτό ζώο",
+      "de": "Großes pelziges Tier",
+      "ro": "Animal mare și blănos"
+    }
+  },
+  {
+    "exact": {
+      "en": "Monkey",
+      "bg": "Маймуна",
+      "es": "Mono",
+      "el": "Μαϊμού",
+      "de": "Affe",
+      "ro": "Maimuță"
+    },
+    "hint": {
+      "en": "Animal that climbs",
+      "bg": "Животно, което се катери",
+      "es": "Animal que trepa",
+      "el": "Ζώο που σκαρφαλώνει",
+      "de": "Tier, das klettert",
+      "ro": "Animal care se cațără"
+    }
+  },
+  {
+    "exact": {
+      "en": "Kangaroo",
+      "bg": "Кенгуру",
+      "es": "Canguro",
+      "el": "Καγκουρό",
+      "de": "Känguru",
+      "ro": "Cangur"
+    },
+    "hint": {
+      "en": "Animal that hops",
+      "bg": "Животно, което подскача",
+      "es": "Animal que da saltos",
+      "el": "Ζώο που χοροπηδά",
+      "de": "Tier, das hüpft",
+      "ro": "Animal care țopăie"
+    }
+  },
+  {
+    "exact": {
+      "en": "Squirrel",
+      "bg": "Катерица",
+      "es": "Ardilla",
+      "el": "Σκίουρος",
+      "de": "Eichhörnchen",
+      "ro": "Veveriță"
+    },
+    "hint": {
+      "en": "Animal with a bushy tail",
+      "bg": "Животно с пухкава опашка",
+      "es": "Animal de cola peluda",
+      "el": "Ζώο με φουντωτή ουρά",
+      "de": "Tier mit buschigem Schwanz",
+      "ro": "Animal cu coadă stufoasă"
+    }
+  },
+  {
+    "exact": {
+      "en": "Camel",
+      "bg": "Камила",
+      "es": "Camello",
+      "el": "Καμήλα",
+      "de": "Kamel",
+      "ro": "Cămilă"
+    },
+    "hint": {
+      "en": "Animal with humps",
+      "bg": "Животно с гърбици",
+      "es": "Animal con jorobas",
+      "el": "Ζώο με καμπούρες",
+      "de": "Tier mit Höckern",
+      "ro": "Animal cu cocoașe"
+    }
+  },
+  {
+    "exact": {
+      "en": "Rooster",
+      "bg": "Петел",
+      "es": "Gallo",
+      "el": "Κόκορας",
+      "de": "Hahn",
+      "ro": "Cocoș"
+    },
+    "hint": {
+      "en": "Farm bird that crows",
+      "bg": "Селска птица, която кукурига",
+      "es": "Ave de granja que canta",
+      "el": "Πουλί της φάρμας που λαλεί",
+      "de": "Hofvogel, der kräht",
+      "ro": "Pasăre de curte care cântă"
+    }
+  },
+  {
+    "exact": {
+      "en": "Swan",
+      "bg": "Лебед",
+      "es": "Cisne",
+      "el": "Κύκνος",
+      "de": "Schwan",
+      "ro": "Lebădă"
+    },
+    "hint": {
+      "en": "Elegant water bird",
+      "bg": "Изящна водна птица",
+      "es": "Ave acuática elegante",
+      "el": "Κομψό υδρόβιο πουλί",
+      "de": "Eleganter Wasservogel",
+      "ro": "Pasăre de apă elegantă"
+    }
+  },
+  {
+    "exact": {
+      "en": "Seahorse",
+      "bg": "Морско конче",
+      "es": "Caballito de mar",
+      "el": "Ιππόκαμπος",
+      "de": "Seepferdchen",
+      "ro": "Căluț de mare"
+    },
+    "hint": {
+      "en": "Small sea creature",
+      "bg": "Малко морско създание",
+      "es": "Criatura marina pequeña",
+      "el": "Μικρό θαλάσσιο πλάσμα",
+      "de": "Kleines Meerestier",
+      "ro": "Creatură marină mică"
+    }
+  },
+  {
+    "exact": {
+      "en": "Starfish",
+      "bg": "Морска звезда",
+      "es": "Estrella de mar",
+      "el": "Αστερίας",
+      "de": "Seestern",
+      "ro": "Stea de mare"
+    },
+    "hint": {
+      "en": "Sea animal with arms",
+      "bg": "Морско животно с лъчи",
+      "es": "Animal marino con brazos",
+      "el": "Θαλάσσιο ζώο με βραχίονες",
+      "de": "Meerestier mit Armen",
+      "ro": "Animal marin cu brațe"
+    }
+  },
+  {
+    "exact": {
+      "en": "Jellyfish",
+      "bg": "Медуза",
+      "es": "Medusa",
+      "el": "Μέδουσα",
+      "de": "Qualle",
+      "ro": "Meduză"
+    },
+    "hint": {
+      "en": "Soft sea creature",
+      "bg": "Меко морско създание",
+      "es": "Criatura marina blanda",
+      "el": "Μαλακό θαλάσσιο πλάσμα",
+      "de": "Weiches Meerestier",
+      "ro": "Creatură marină moale"
+    }
+  },
+  {
+    "exact": {
+      "en": "Worm",
+      "bg": "Червей",
+      "es": "Gusano",
+      "el": "Σκουλήκι",
+      "de": "Wurm",
+      "ro": "Vierme"
+    },
+    "hint": {
+      "en": "Long soft creature",
+      "bg": "Дълго меко създание",
+      "es": "Criatura larga y blanda",
+      "el": "Μακρύ μαλακό πλάσμα",
+      "de": "Langes weiches Wesen",
+      "ro": "Creatură lungă și moale"
+    }
+  },
+  {
+    "exact": {
+      "en": "Caterpillar",
+      "bg": "Гъсеница",
+      "es": "Oruga",
+      "el": "Κάμπια",
+      "de": "Raupe",
+      "ro": "Omidă"
+    },
+    "hint": {
+      "en": "Insect before it changes",
+      "bg": "Насекомо преди промяната",
+      "es": "Insecto antes de cambiar",
+      "el": "Έντομο πριν αλλάξει",
+      "de": "Insekt vor der Verwandlung",
+      "ro": "Insectă înainte de schimbare"
+    }
+  },
+  {
+    "exact": {
+      "en": "Dragonfly",
+      "bg": "Водно конче",
+      "es": "Libélula",
+      "el": "Λιβελλούλα",
+      "de": "Libelle",
+      "ro": "Libelulă"
+    },
+    "hint": {
+      "en": "Insect near water",
+      "bg": "Насекомо край водата",
+      "es": "Insecto cerca del agua",
+      "el": "Έντομο κοντά στο νερό",
+      "de": "Insekt am Wasser",
+      "ro": "Insectă de lângă apă"
+    }
+  },
+  {
+    "exact": {
+      "en": "Scorpion",
+      "bg": "Скорпион",
+      "es": "Escorpión",
+      "el": "Σκορπιός",
+      "de": "Skorpion",
+      "ro": "Scorpion"
+    },
+    "hint": {
+      "en": "Desert creature with a sting",
+      "bg": "Пустинно създание с жило",
+      "es": "Criatura del desierto con aguijón",
+      "el": "Πλάσμα της ερήμου με κεντρί",
+      "de": "Wüstentier mit Stachel",
+      "ro": "Creatură de deșert cu ac"
+    }
+  },
+  {
+    "exact": {
+      "en": "Flamingo",
+      "bg": "Фламинго",
+      "es": "Flamenco",
+      "el": "Φλαμίνγκο",
+      "de": "Flamingo",
+      "ro": "Flamingo"
+    },
+    "hint": {
+      "en": "Pink bird",
+      "bg": "Розова птица",
+      "es": "Ave rosa",
+      "el": "Ροζ πουλί",
+      "de": "Rosa Vogel",
+      "ro": "Pasăre roz"
+    }
+  },
+  {
+    "exact": {
+      "en": "Peacock",
+      "bg": "Паун",
+      "es": "Pavo real",
+      "el": "Παγώνι",
+      "de": "Pfau",
+      "ro": "Păun"
+    },
+    "hint": {
+      "en": "Bird with a big tail",
+      "bg": "Птица с голяма опашка",
+      "es": "Ave de cola grande",
+      "el": "Πουλί με μεγάλη ουρά",
+      "de": "Vogel mit großem Schwanz",
+      "ro": "Pasăre cu coadă mare"
+    }
+  },
+  {
+    "exact": {
+      "en": "Deer",
+      "bg": "Елен",
+      "es": "Ciervo",
+      "el": "Ελάφι",
+      "de": "Hirsch",
+      "ro": "Cerb"
+    },
+    "hint": {
+      "en": "Forest animal with antlers",
+      "bg": "Горско животно с рога",
+      "es": "Animal del bosque con cuernos",
+      "el": "Ζώο του δάσους με κέρατα",
+      "de": "Waldtier mit Geweih",
+      "ro": "Animal de pădure cu coarne"
+    }
+  },
+  {
+    "exact": {
+      "en": "Fox",
+      "bg": "Лисица",
+      "es": "Zorro",
+      "el": "Αλεπού",
+      "de": "Fuchs",
+      "ro": "Vulpe"
+    },
+    "hint": {
+      "en": "Animal with a red coat",
+      "bg": "Животно с червена козина",
+      "es": "Animal de pelaje rojizo",
+      "el": "Ζώο με κόκκινο τρίχωμα",
+      "de": "Tier mit rotem Fell",
+      "ro": "Animal cu blană roșcată"
+    }
+  },
+  {
+    "exact": {
+      "en": "Hedgehog",
+      "bg": "Таралеж",
+      "es": "Erizo",
+      "el": "Σκαντζόχοιρος",
+      "de": "Igel",
+      "ro": "Arici"
+    },
+    "hint": {
+      "en": "Animal with spines",
+      "bg": "Животно с бодли",
+      "es": "Animal con púas",
+      "el": "Ζώο με αγκάθια",
+      "de": "Tier mit Stacheln",
+      "ro": "Animal cu țepi"
+    }
+  },
+  {
+    "exact": {
+      "en": "Chicken",
+      "bg": "Кокошка",
+      "es": "Gallina",
+      "el": "Κότα",
+      "de": "Huhn",
+      "ro": "Găină"
+    },
+    "hint": {
+      "en": "Farm bird",
+      "bg": "Селска птица",
+      "es": "Ave de granja",
+      "el": "Πουλί της φάρμας",
+      "de": "Hofvogel",
+      "ro": "Pasăre de curte"
+    }
+  },
+  {
+    "exact": {
+      "en": "Apple",
+      "bg": "Ябълка",
+      "es": "Manzana",
+      "el": "Μήλο",
+      "de": "Apfel",
+      "ro": "Măr"
+    },
+    "hint": {
+      "en": "Round fruit",
+      "bg": "Кръгъл плод",
+      "es": "Fruta redonda",
+      "el": "Στρογγυλό φρούτο",
+      "de": "Runde Frucht",
+      "ro": "Fruct rotund"
+    }
+  },
+  {
+    "exact": {
+      "en": "Banana",
+      "bg": "Банан",
+      "es": "Plátano",
+      "el": "Μπανάνα",
+      "de": "Banane",
+      "ro": "Banană"
+    },
+    "hint": {
+      "en": "Curved fruit",
+      "bg": "Извит плод",
+      "es": "Fruta curvada",
+      "el": "Καμπυλωτό φρούτο",
+      "de": "Gebogene Frucht",
+      "ro": "Fruct curbat"
+    }
+  },
+  {
+    "exact": {
+      "en": "Carrot",
+      "bg": "Морков",
+      "es": "Zanahoria",
+      "el": "Καρότο",
+      "de": "Karotte",
+      "ro": "Morcov"
+    },
+    "hint": {
+      "en": "Orange vegetable",
+      "bg": "Оранжев зеленчук",
+      "es": "Verdura naranja",
+      "el": "Πορτοκαλί λαχανικό",
+      "de": "Orangefarbenes Gemüse",
+      "ro": "Legumă portocalie"
+    }
+  },
+  {
+    "exact": {
+      "en": "Strawberry",
+      "bg": "Ягода",
+      "es": "Fresa",
+      "el": "Φράουλα",
+      "de": "Erdbeere",
+      "ro": "Căpșună"
+    },
+    "hint": {
+      "en": "Small red fruit",
+      "bg": "Малък червен плод",
+      "es": "Fruta roja pequeña",
+      "el": "Μικρό κόκκινο φρούτο",
+      "de": "Kleine rote Frucht",
+      "ro": "Fruct roșu mic"
+    }
+  },
+  {
+    "exact": {
+      "en": "Watermelon",
+      "bg": "Диня",
+      "es": "Sandía",
+      "el": "Καρπούζι",
+      "de": "Wassermelone",
+      "ro": "Pepene verde"
+    },
+    "hint": {
+      "en": "Big summer fruit",
+      "bg": "Голям летен плод",
+      "es": "Fruta grande de verano",
+      "el": "Μεγάλο καλοκαιρινό φρούτο",
+      "de": "Große Sommerfrucht",
+      "ro": "Fruct mare de vară"
+    }
+  },
+  {
+    "exact": {
+      "en": "Grapes",
+      "bg": "Грозде",
+      "es": "Uvas",
+      "el": "Σταφύλια",
+      "de": "Trauben",
+      "ro": "Struguri"
+    },
+    "hint": {
+      "en": "Fruit in a bunch",
+      "bg": "Плод на гроздове",
+      "es": "Fruta en racimo",
+      "el": "Φρούτο σε τσαμπί",
+      "de": "Frucht in Trauben",
+      "ro": "Fruct în ciorchine"
+    }
+  },
+  {
+    "exact": {
+      "en": "Cherry",
+      "bg": "Череша",
+      "es": "Cereza",
+      "el": "Κεράσι",
+      "de": "Kirsche",
+      "ro": "Cireașă"
+    },
+    "hint": {
+      "en": "Fruit on a stem",
+      "bg": "Плод на дръжка",
+      "es": "Fruta con rabito",
+      "el": "Φρούτο με κοτσάνι",
+      "de": "Frucht am Stiel",
+      "ro": "Fruct cu codiță"
+    }
+  },
+  {
+    "exact": {
+      "en": "Pear",
+      "bg": "Круша",
+      "es": "Pera",
+      "el": "Αχλάδι",
+      "de": "Birne",
+      "ro": "Pară"
+    },
+    "hint": {
+      "en": "Fruit with a wide bottom",
+      "bg": "Плод с широка долна част",
+      "es": "Fruta ancha por abajo",
+      "el": "Φρούτο με φαρδιά βάση",
+      "de": "Frucht mit breitem Boden",
+      "ro": "Fruct lat la bază"
+    }
+  },
+  {
+    "exact": {
+      "en": "Lemon",
+      "bg": "Лимон",
+      "es": "Limón",
+      "el": "Λεμόνι",
+      "de": "Zitrone",
+      "ro": "Lămâie"
+    },
+    "hint": {
+      "en": "Sour fruit",
+      "bg": "Кисел плод",
+      "es": "Fruta ácida",
+      "el": "Ξινό φρούτο",
+      "de": "Saure Frucht",
+      "ro": "Fruct acru"
+    }
+  },
+  {
+    "exact": {
+      "en": "Corn",
+      "bg": "Царевица",
+      "es": "Maíz",
+      "el": "Καλαμπόκι",
+      "de": "Mais",
+      "ro": "Porumb"
+    },
+    "hint": {
+      "en": "Vegetable on a cob",
+      "bg": "Зеленчук на кочан",
+      "es": "Verdura en mazorca",
+      "el": "Λαχανικό σε σπάδικα",
+      "de": "Gemüse am Kolben",
+      "ro": "Legumă pe știulete"
+    }
+  },
+  {
+    "exact": {
+      "en": "Mushroom",
+      "bg": "Гъба",
+      "es": "Seta",
+      "el": "Μανιτάρι",
+      "de": "Pilz",
+      "ro": "Ciupercă"
+    },
+    "hint": {
+      "en": "Thing that grows in the forest",
+      "bg": "Нещо, което расте в гората",
+      "es": "Algo que crece en el bosque",
+      "el": "Κάτι που φυτρώνει στο δάσος",
+      "de": "Etwas, das im Wald wächst",
+      "ro": "Ceva ce crește în pădure"
+    }
+  },
+  {
+    "exact": {
+      "en": "Egg",
+      "bg": "Яйце",
+      "es": "Huevo",
+      "el": "Αυγό",
+      "de": "Ei",
+      "ro": "Ou"
+    },
+    "hint": {
+      "en": "Oval food",
+      "bg": "Овална храна",
+      "es": "Alimento ovalado",
+      "el": "Οβάλ τροφή",
+      "de": "Ovales Lebensmittel",
+      "ro": "Aliment oval"
+    }
+  },
+  {
+    "exact": {
+      "en": "Bread",
+      "bg": "Хляб",
+      "es": "Pan",
+      "el": "Ψωμί",
+      "de": "Brot",
+      "ro": "Pâine"
+    },
+    "hint": {
+      "en": "Baked food",
+      "bg": "Печена храна",
+      "es": "Alimento horneado",
+      "el": "Ψημένη τροφή",
+      "de": "Gebackenes Lebensmittel",
+      "ro": "Aliment copt"
+    }
+  },
+  {
+    "exact": {
+      "en": "Cheese",
+      "bg": "Сирене",
+      "es": "Queso",
+      "el": "Τυρί",
+      "de": "Käse",
+      "ro": "Brânză"
+    },
+    "hint": {
+      "en": "Food with holes",
+      "bg": "Храна с дупки",
+      "es": "Alimento con agujeros",
+      "el": "Τροφή με τρύπες",
+      "de": "Lebensmittel mit Löchern",
+      "ro": "Aliment cu găuri"
+    }
+  },
+  {
+    "exact": {
+      "en": "Pizza slice",
+      "bg": "Парче пица",
+      "es": "Trozo de pizza",
+      "el": "Κομμάτι πίτσας",
+      "de": "Pizzastück",
+      "ro": "Felie de pizza"
+    },
+    "hint": {
+      "en": "Piece of fast food",
+      "bg": "Парче бърза храна",
+      "es": "Trozo de comida rápida",
+      "el": "Κομμάτι φαστ φουντ",
+      "de": "Stück Fast Food",
+      "ro": "Bucată de fast-food"
+    }
+  },
+  {
+    "exact": {
+      "en": "Hamburger",
+      "bg": "Хамбургер",
+      "es": "Hamburguesa",
+      "el": "Χάμπουργκερ",
+      "de": "Hamburger",
+      "ro": "Hamburger"
+    },
+    "hint": {
+      "en": "Food in a bun",
+      "bg": "Храна в хлебче",
+      "es": "Comida en un panecillo",
+      "el": "Φαγητό σε ψωμάκι",
+      "de": "Essen im Brötchen",
+      "ro": "Mâncare în chiflă"
+    }
+  },
+  {
+    "exact": {
+      "en": "Hot dog",
+      "bg": "Хот дог",
+      "es": "Perrito caliente",
+      "el": "Χοτ ντογκ",
+      "de": "Hotdog",
+      "ro": "Hot dog"
+    },
+    "hint": {
+      "en": "Sausage in bread",
+      "bg": "Наденица в хляб",
+      "es": "Salchicha en pan",
+      "el": "Λουκάνικο σε ψωμί",
+      "de": "Wurst im Brot",
+      "ro": "Cârnat în pâine"
+    }
+  },
+  {
+    "exact": {
+      "en": "Ice cream cone",
+      "bg": "Сладолед във фунийка",
+      "es": "Cono de helado",
+      "el": "Παγωτό χωνάκι",
+      "de": "Eiswaffel",
+      "ro": "Cornet de înghețată"
+    },
+    "hint": {
+      "en": "Cold sweet treat",
+      "bg": "Студено сладко изкушение",
+      "es": "Dulce frío",
+      "el": "Κρύο γλυκό",
+      "de": "Kalte Süßigkeit",
+      "ro": "Dulce rece"
+    }
+  },
+  {
+    "exact": {
+      "en": "Cupcake",
+      "bg": "Мъфин",
+      "es": "Magdalena",
+      "el": "Κεκάκι",
+      "de": "Cupcake",
+      "ro": "Brioșă"
+    },
+    "hint": {
+      "en": "Small cake",
+      "bg": "Малка торта",
+      "es": "Pastel pequeño",
+      "el": "Μικρό κέικ",
+      "de": "Kleiner Kuchen",
+      "ro": "Prăjitură mică"
+    }
+  },
+  {
+    "exact": {
+      "en": "Donut",
+      "bg": "Донът",
+      "es": "Rosquilla",
+      "el": "Ντόνατ",
+      "de": "Donut",
+      "ro": "Gogoașă"
+    },
+    "hint": {
+      "en": "Sweet with a hole",
+      "bg": "Сладкиш с дупка",
+      "es": "Dulce con agujero",
+      "el": "Γλυκό με τρύπα",
+      "de": "Süßes mit Loch",
+      "ro": "Dulce cu gaură"
+    }
+  },
+  {
+    "exact": {
+      "en": "Cookie",
+      "bg": "Бисквита",
+      "es": "Galleta",
+      "el": "Μπισκότο",
+      "de": "Keks",
+      "ro": "Biscuit"
+    },
+    "hint": {
+      "en": "Small baked sweet",
+      "bg": "Малко печено сладко",
+      "es": "Dulce horneado pequeño",
+      "el": "Μικρό ψημένο γλυκό",
+      "de": "Kleines gebackenes Süßes",
+      "ro": "Dulce copt mic"
+    }
+  },
+  {
+    "exact": {
+      "en": "Lollipop",
+      "bg": "Близалка",
+      "es": "Piruleta",
+      "el": "Γλειφιτζούρι",
+      "de": "Lutscher",
+      "ro": "Acadea"
+    },
+    "hint": {
+      "en": "Sweet on a stick",
+      "bg": "Сладко на пръчка",
+      "es": "Dulce en un palo",
+      "el": "Γλυκό σε ξυλάκι",
+      "de": "Süßes am Stiel",
+      "ro": "Dulce pe băț"
+    }
+  },
+  {
+    "exact": {
+      "en": "Candy cane",
+      "bg": "Захарно бастунче",
+      "es": "Bastón de caramelo",
+      "el": "Ζαχαρωτό μπαστούνι",
+      "de": "Zuckerstange",
+      "ro": "Baston de bomboană"
+    },
+    "hint": {
+      "en": "Striped sweet",
+      "bg": "Раирано бонбонче",
+      "es": "Dulce a rayas",
+      "el": "Ριγέ γλύκισμα",
+      "de": "Gestreifte Süßigkeit",
+      "ro": "Dulce cu dungi"
+    }
+  },
+  {
+    "exact": {
+      "en": "Birthday cake",
+      "bg": "Торта за рожден ден",
+      "es": "Tarta de cumpleaños",
+      "el": "Τούρτα γενεθλίων",
+      "de": "Geburtstagstorte",
+      "ro": "Tort aniversar"
+    },
+    "hint": {
+      "en": "Cake with candles",
+      "bg": "Торта със свещи",
+      "es": "Tarta con velas",
+      "el": "Τούρτα με κεριά",
+      "de": "Torte mit Kerzen",
+      "ro": "Tort cu lumânări"
+    }
+  },
+  {
+    "exact": {
+      "en": "Coffee cup",
+      "bg": "Чаша кафе",
+      "es": "Taza de café",
+      "el": "Φλιτζάνι καφέ",
+      "de": "Kaffeetasse",
+      "ro": "Ceașcă de cafea"
+    },
+    "hint": {
+      "en": "Cup with a handle",
+      "bg": "Чаша с дръжка",
+      "es": "Taza con asa",
+      "el": "Κύπελλο με χερούλι",
+      "de": "Tasse mit Henkel",
+      "ro": "Ceașcă cu toartă"
+    }
+  },
+  {
+    "exact": {
+      "en": "Teapot",
+      "bg": "Чайник",
+      "es": "Tetera",
+      "el": "Τσαγιέρα",
+      "de": "Teekanne",
+      "ro": "Ceainic"
+    },
+    "hint": {
+      "en": "Pot with a spout",
+      "bg": "Съд с чучур",
+      "es": "Recipiente con pico",
+      "el": "Δοχείο με στόμιο",
+      "de": "Kanne mit Ausguss",
+      "ro": "Vas cu cioc"
+    }
+  },
+  {
+    "exact": {
+      "en": "Wine glass",
+      "bg": "Чаша за вино",
+      "es": "Copa de vino",
+      "el": "Ποτήρι κρασιού",
+      "de": "Weinglas",
+      "ro": "Pahar de vin"
+    },
+    "hint": {
+      "en": "Glass with a stem",
+      "bg": "Чаша със столче",
+      "es": "Copa con pie",
+      "el": "Ποτήρι με πόδι",
+      "de": "Glas mit Stiel",
+      "ro": "Pahar cu picior"
+    }
+  },
+  {
+    "exact": {
+      "en": "Milk bottle",
+      "bg": "Бутилка мляко",
+      "es": "Botella de leche",
+      "el": "Μπουκάλι γάλα",
+      "de": "Milchflasche",
+      "ro": "Sticlă de lapte"
+    },
+    "hint": {
+      "en": "Bottle of a white drink",
+      "bg": "Бутилка с бяла напитка",
+      "es": "Botella de bebida blanca",
+      "el": "Μπουκάλι με λευκό ρόφημα",
+      "de": "Flasche mit weißem Getränk",
+      "ro": "Sticlă cu băutură albă"
+    }
+  },
+  {
+    "exact": {
+      "en": "Fried egg",
+      "bg": "Пържено яйце",
+      "es": "Huevo frito",
+      "el": "Αυγό τηγανητό",
+      "de": "Spiegelei",
+      "ro": "Ou ochi"
+    },
+    "hint": {
+      "en": "Breakfast in a pan",
+      "bg": "Закуска в тиган",
+      "es": "Desayuno en la sartén",
+      "el": "Πρωινό στο τηγάνι",
+      "de": "Frühstück in der Pfanne",
+      "ro": "Mic dejun în tigaie"
+    }
+  },
+  {
+    "exact": {
+      "en": "Pretzel",
+      "bg": "Прецел",
+      "es": "Pretzel",
+      "el": "Πρέτσελ",
+      "de": "Brezel",
+      "ro": "Covrig"
+    },
+    "hint": {
+      "en": "Twisted baked snack",
+      "bg": "Усукана печена закуска",
+      "es": "Snack horneado y retorcido",
+      "el": "Στριφτό ψημένο σνακ",
+      "de": "Gedrehtes Gebäck",
+      "ro": "Gustare coaptă răsucită"
+    }
+  },
+  {
+    "exact": {
+      "en": "Croissant",
+      "bg": "Кроасан",
+      "es": "Cruasán",
+      "el": "Κρουασάν",
+      "de": "Croissant",
+      "ro": "Croasant"
+    },
+    "hint": {
+      "en": "Curved pastry",
+      "bg": "Извито тестено изделие",
+      "es": "Bollo curvado",
+      "el": "Καμπυλωτό αρτοσκεύασμα",
+      "de": "Gebogenes Gebäck",
+      "ro": "Produs de patiserie curbat"
+    }
+  },
+  {
+    "exact": {
+      "en": "Popsicle",
+      "bg": "Ледена близалка",
+      "es": "Polo",
+      "el": "Ξυλάκι παγωτό",
+      "de": "Eis am Stiel",
+      "ro": "Înghețată pe băț"
+    },
+    "hint": {
+      "en": "Frozen treat on a stick",
+      "bg": "Замразено лакомство на пръчка",
+      "es": "Helado congelado en un palo",
+      "el": "Παγωμένο γλυκό σε ξυλάκι",
+      "de": "Gefrorene Leckerei am Stiel",
+      "ro": "Delicatesă înghețată pe băț"
+    }
+  },
+  {
+    "exact": {
+      "en": "Chili pepper",
+      "bg": "Люта чушка",
+      "es": "Chile picante",
+      "el": "Καυτερή πιπεριά",
+      "de": "Chilischote",
+      "ro": "Ardei iute"
+    },
+    "hint": {
+      "en": "Hot vegetable",
+      "bg": "Лют зеленчук",
+      "es": "Verdura picante",
+      "el": "Καυτερό λαχανικό",
+      "de": "Scharfes Gemüse",
+      "ro": "Legumă iute"
+    }
+  },
+  {
+    "exact": {
+      "en": "Onion",
+      "bg": "Лук",
+      "es": "Cebolla",
+      "el": "Κρεμμύδι",
+      "de": "Zwiebel",
+      "ro": "Ceapă"
+    },
+    "hint": {
+      "en": "Vegetable in layers",
+      "bg": "Зеленчук на слоеве",
+      "es": "Verdura en capas",
+      "el": "Λαχανικό με στρώσεις",
+      "de": "Gemüse in Schichten",
+      "ro": "Legumă în straturi"
+    }
+  },
+  {
+    "exact": {
+      "en": "Tomato",
+      "bg": "Домат",
+      "es": "Tomate",
+      "el": "Ντομάτα",
+      "de": "Tomate",
+      "ro": "Roșie"
+    },
+    "hint": {
+      "en": "Round red vegetable",
+      "bg": "Кръгъл червен зеленчук",
+      "es": "Verdura roja y redonda",
+      "el": "Στρογγυλό κόκκινο λαχανικό",
+      "de": "Rundes rotes Gemüse",
+      "ro": "Legumă roșie și rotundă"
+    }
+  },
+  {
+    "exact": {
+      "en": "Pumpkin",
+      "bg": "Тиква",
+      "es": "Calabaza",
+      "el": "Κολοκύθα",
+      "de": "Kürbis",
+      "ro": "Dovleac"
+    },
+    "hint": {
+      "en": "Big orange vegetable",
+      "bg": "Голям оранжев зеленчук",
+      "es": "Verdura naranja grande",
+      "el": "Μεγάλο πορτοκαλί λαχανικό",
+      "de": "Großes orangefarbenes Gemüse",
+      "ro": "Legumă portocalie mare"
+    }
+  },
+  {
+    "exact": {
+      "en": "Broccoli",
+      "bg": "Броколи",
+      "es": "Brócoli",
+      "el": "Μπρόκολο",
+      "de": "Brokkoli",
+      "ro": "Broccoli"
+    },
+    "hint": {
+      "en": "Green vegetable like a tree",
+      "bg": "Зелен зеленчук като дърво",
+      "es": "Verdura verde con forma de árbol",
+      "el": "Πράσινο λαχανικό σαν δεντράκι",
+      "de": "Grünes Gemüse wie ein Bäumchen",
+      "ro": "Legumă verde ca un copăcel"
+    }
+  },
+  {
+    "exact": {
+      "en": "Avocado",
+      "bg": "Авокадо",
+      "es": "Aguacate",
+      "el": "Αβοκάντο",
+      "de": "Avocado",
+      "ro": "Avocado"
+    },
+    "hint": {
+      "en": "Fruit with a big seed",
+      "bg": "Плод с голямо семе",
+      "es": "Fruta con una semilla grande",
+      "el": "Φρούτο με μεγάλο κουκούτσι",
+      "de": "Frucht mit großem Kern",
+      "ro": "Fruct cu sâmbure mare"
+    }
+  },
+  {
+    "exact": {
+      "en": "Peanut",
+      "bg": "Фъстък",
+      "es": "Cacahuete",
+      "el": "Φιστίκι",
+      "de": "Erdnuss",
+      "ro": "Alună de pământ"
+    },
+    "hint": {
+      "en": "Small nut in a shell",
+      "bg": "Малък орех в черупка",
+      "es": "Fruto seco pequeño con cáscara",
+      "el": "Μικρός ξηρός καρπός με κέλυφος",
+      "de": "Kleine Nuss in der Schale",
+      "ro": "Nucă mică în coajă"
+    }
+  },
+  {
+    "exact": {
+      "en": "Acorn",
+      "bg": "Жълъд",
+      "es": "Bellota",
+      "el": "Βελανίδι",
+      "de": "Eichel",
+      "ro": "Ghindă"
+    },
+    "hint": {
+      "en": "Seed of a big tree",
+      "bg": "Семе на голямо дърво",
+      "es": "Semilla de un árbol grande",
+      "el": "Σπόρος μεγάλου δέντρου",
+      "de": "Samen eines großen Baums",
+      "ro": "Sămânța unui copac mare"
+    }
+  },
+  {
+    "exact": {
+      "en": "Cactus",
+      "bg": "Кактус",
+      "es": "Cactus",
+      "el": "Κάκτος",
+      "de": "Kaktus",
+      "ro": "Cactus"
+    },
+    "hint": {
+      "en": "Plant with spines",
+      "bg": "Растение с бодли",
+      "es": "Planta con espinas",
+      "el": "Φυτό με αγκάθια",
+      "de": "Pflanze mit Stacheln",
+      "ro": "Plantă cu spini"
+    }
+  },
+  {
+    "exact": {
+      "en": "Palm tree",
+      "bg": "Палма",
+      "es": "Palmera",
+      "el": "Φοίνικας",
+      "de": "Palme",
+      "ro": "Palmier"
+    },
+    "hint": {
+      "en": "Tree of hot places",
+      "bg": "Дърво на топлите места",
+      "es": "Árbol de lugares cálidos",
+      "el": "Δέντρο των ζεστών τόπων",
+      "de": "Baum warmer Gegenden",
+      "ro": "Copac din locuri calde"
+    }
+  },
+  {
+    "exact": {
+      "en": "Christmas tree",
+      "bg": "Коледна елха",
+      "es": "Árbol de Navidad",
+      "el": "Χριστουγεννιάτικο δέντρο",
+      "de": "Weihnachtsbaum",
+      "ro": "Brad de Crăciun"
+    },
+    "hint": {
+      "en": "Tree with decorations",
+      "bg": "Дърво с украса",
+      "es": "Árbol con adornos",
+      "el": "Δέντρο με στολίδια",
+      "de": "Baum mit Schmuck",
+      "ro": "Copac cu podoabe"
+    }
+  },
+  {
+    "exact": {
+      "en": "Rose",
+      "bg": "Роза",
+      "es": "Rosa",
+      "el": "Τριαντάφυλλο",
+      "de": "Rose",
+      "ro": "Trandafir"
+    },
+    "hint": {
+      "en": "Flower with thorns",
+      "bg": "Цвете с бодли",
+      "es": "Flor con espinas",
+      "el": "Λουλούδι με αγκάθια",
+      "de": "Blume mit Dornen",
+      "ro": "Floare cu spini"
+    }
+  },
+  {
+    "exact": {
+      "en": "Tulip",
+      "bg": "Лале",
+      "es": "Tulipán",
+      "el": "Τουλίπα",
+      "de": "Tulpe",
+      "ro": "Lalea"
+    },
+    "hint": {
+      "en": "Cup-shaped flower",
+      "bg": "Цвете като чашка",
+      "es": "Flor en forma de copa",
+      "el": "Λουλούδι σε σχήμα κύπελλου",
+      "de": "Becherförmige Blume",
+      "ro": "Floare în formă de cupă"
+    }
+  },
+  {
+    "exact": {
+      "en": "Daisy",
+      "bg": "Маргаритка",
+      "es": "Margarita",
+      "el": "Μαργαρίτα",
+      "de": "Gänseblümchen",
+      "ro": "Margaretă"
+    },
+    "hint": {
+      "en": "Simple white flower",
+      "bg": "Простичко бяло цвете",
+      "es": "Flor blanca sencilla",
+      "el": "Απλό λευκό λουλούδι",
+      "de": "Einfache weiße Blume",
+      "ro": "Floare albă simplă"
+    }
+  },
+  {
+    "exact": {
+      "en": "Clover",
+      "bg": "Детелина",
+      "es": "Trébol",
+      "el": "Τριφύλλι",
+      "de": "Klee",
+      "ro": "Trifoi"
+    },
+    "hint": {
+      "en": "Small lucky plant",
+      "bg": "Малко растение за късмет",
+      "es": "Planta pequeña de la suerte",
+      "el": "Μικρό φυτό της τύχης",
+      "de": "Kleine Glückspflanze",
+      "ro": "Plantă mică norocoasă"
+    }
+  },
+  {
+    "exact": {
+      "en": "Maple leaf",
+      "bg": "Кленов лист",
+      "es": "Hoja de arce",
+      "el": "Φύλλο σφενδάμου",
+      "de": "Ahornblatt",
+      "ro": "Frunză de arțar"
+    },
+    "hint": {
+      "en": "Leaf with points",
+      "bg": "Лист с върхове",
+      "es": "Hoja con puntas",
+      "el": "Φύλλο με μύτες",
+      "de": "Blatt mit Spitzen",
+      "ro": "Frunză cu vârfuri"
+    }
+  },
+  {
+    "exact": {
+      "en": "Key",
+      "bg": "Ключ",
+      "es": "Llave",
+      "el": "Κλειδί",
+      "de": "Schlüssel",
+      "ro": "Cheie"
+    },
+    "hint": {
+      "en": "Thing that opens a lock",
+      "bg": "Нещо, което отваря ключалка",
+      "es": "Cosa que abre una cerradura",
+      "el": "Κάτι που ανοίγει κλειδαριά",
+      "de": "Ding, das ein Schloss öffnet",
+      "ro": "Lucru care deschide o broască"
+    }
+  },
+  {
+    "exact": {
+      "en": "Clock",
+      "bg": "Часовник",
+      "es": "Reloj",
+      "el": "Ρολόι",
+      "de": "Uhr",
+      "ro": "Ceas"
+    },
+    "hint": {
+      "en": "Thing that shows the time",
+      "bg": "Нещо, което показва времето",
+      "es": "Cosa que muestra la hora",
+      "el": "Κάτι που δείχνει την ώρα",
+      "de": "Ding, das die Zeit zeigt",
+      "ro": "Lucru care arată ora"
+    }
+  },
+  {
+    "exact": {
+      "en": "Umbrella",
+      "bg": "Чадър",
+      "es": "Paraguas",
+      "el": "Ομπρέλα",
+      "de": "Regenschirm",
+      "ro": "Umbrelă"
+    },
+    "hint": {
+      "en": "Thing for the rain",
+      "bg": "Нещо за дъжда",
+      "es": "Cosa para la lluvia",
+      "el": "Κάτι για τη βροχή",
+      "de": "Ding für den Regen",
+      "ro": "Lucru pentru ploaie"
+    }
+  },
+  {
+    "exact": {
+      "en": "Candle",
+      "bg": "Свещ",
+      "es": "Vela",
+      "el": "Κερί",
+      "de": "Kerze",
+      "ro": "Lumânare"
+    },
+    "hint": {
+      "en": "Thing that burns slowly",
+      "bg": "Нещо, което гори бавно",
+      "es": "Cosa que arde despacio",
+      "el": "Κάτι που καίει αργά",
+      "de": "Ding, das langsam brennt",
+      "ro": "Lucru care arde încet"
+    }
+  },
+  {
+    "exact": {
+      "en": "Lamp",
+      "bg": "Лампа",
+      "es": "Lámpara",
+      "el": "Λάμπα",
+      "de": "Lampe",
+      "ro": "Lampă"
+    },
+    "hint": {
+      "en": "Thing that gives light",
+      "bg": "Нещо, което дава светлина",
+      "es": "Cosa que da luz",
+      "el": "Κάτι που δίνει φως",
+      "de": "Ding, das Licht gibt",
+      "ro": "Lucru care dă lumină"
+    }
+  },
+  {
+    "exact": {
+      "en": "Chair",
+      "bg": "Стол",
+      "es": "Silla",
+      "el": "Καρέκλα",
+      "de": "Stuhl",
+      "ro": "Scaun"
+    },
+    "hint": {
+      "en": "Thing you sit on",
+      "bg": "Нещо, на което сядаш",
+      "es": "Cosa donde te sientas",
+      "el": "Κάτι πάνω στο οποίο κάθεσαι",
+      "de": "Ding, auf dem man sitzt",
+      "ro": "Lucru pe care stai"
+    }
+  },
+  {
+    "exact": {
+      "en": "Table",
+      "bg": "Маса",
+      "es": "Mesa",
+      "el": "Τραπέζι",
+      "de": "Tisch",
+      "ro": "Masă"
+    },
+    "hint": {
+      "en": "Flat furniture on legs",
+      "bg": "Плоска мебел на крака",
+      "es": "Mueble plano con patas",
+      "el": "Επίπεδο έπιπλο με πόδια",
+      "de": "Flaches Möbel auf Beinen",
+      "ro": "Mobilă plată pe picioare"
+    }
+  },
+  {
+    "exact": {
+      "en": "Bed",
+      "bg": "Легло",
+      "es": "Cama",
+      "el": "Κρεβάτι",
+      "de": "Bett",
+      "ro": "Pat"
+    },
+    "hint": {
+      "en": "Furniture for sleeping",
+      "bg": "Мебел за спане",
+      "es": "Mueble para dormir",
+      "el": "Έπιπλο για ύπνο",
+      "de": "Möbel zum Schlafen",
+      "ro": "Mobilă pentru dormit"
+    }
+  },
+  {
+    "exact": {
+      "en": "Door",
+      "bg": "Врата",
+      "es": "Puerta",
+      "el": "Πόρτα",
+      "de": "Tür",
+      "ro": "Ușă"
+    },
+    "hint": {
+      "en": "Way into a room",
+      "bg": "Вход към стая",
+      "es": "Entrada a una habitación",
+      "el": "Είσοδος σε δωμάτιο",
+      "de": "Zugang zu einem Raum",
+      "ro": "Intrare într-o cameră"
+    }
+  },
+  {
+    "exact": {
+      "en": "Window",
+      "bg": "Прозорец",
+      "es": "Ventana",
+      "el": "Παράθυρο",
+      "de": "Fenster",
+      "ro": "Fereastră"
+    },
+    "hint": {
+      "en": "Opening in a wall",
+      "bg": "Отвор в стена",
+      "es": "Abertura en una pared",
+      "el": "Άνοιγμα σε τοίχο",
+      "de": "Öffnung in einer Wand",
+      "ro": "Deschidere într-un perete"
+    }
+  },
+  {
+    "exact": {
+      "en": "Ladder",
+      "bg": "Стълба",
+      "es": "Escalera",
+      "el": "Σκάλα",
+      "de": "Leiter",
+      "ro": "Scară"
+    },
+    "hint": {
+      "en": "Thing with steps",
+      "bg": "Нещо със стъпала",
+      "es": "Cosa con peldaños",
+      "el": "Κάτι με σκαλοπάτια",
+      "de": "Ding mit Sprossen",
+      "ro": "Lucru cu trepte"
+    }
+  },
+  {
+    "exact": {
+      "en": "Hammer",
+      "bg": "Чук",
+      "es": "Martillo",
+      "el": "Σφυρί",
+      "de": "Hammer",
+      "ro": "Ciocan"
+    },
+    "hint": {
+      "en": "Tool that hits",
+      "bg": "Инструмент, който удря",
+      "es": "Herramienta que golpea",
+      "el": "Εργαλείο που χτυπά",
+      "de": "Werkzeug, das schlägt",
+      "ro": "Unealtă care lovește"
+    }
+  },
+  {
+    "exact": {
+      "en": "Screwdriver",
+      "bg": "Отвертка",
+      "es": "Destornillador",
+      "el": "Κατσαβίδι",
+      "de": "Schraubenzieher",
+      "ro": "Șurubelniță"
+    },
+    "hint": {
+      "en": "Tool that turns",
+      "bg": "Инструмент, който върти",
+      "es": "Herramienta que gira",
+      "el": "Εργαλείο που γυρίζει",
+      "de": "Werkzeug, das dreht",
+      "ro": "Unealtă care răsucește"
+    }
+  },
+  {
+    "exact": {
+      "en": "Saw",
+      "bg": "Трион",
+      "es": "Sierra",
+      "el": "Πριόνι",
+      "de": "Säge",
+      "ro": "Ferăstrău"
+    },
+    "hint": {
+      "en": "Tool with teeth",
+      "bg": "Инструмент със зъби",
+      "es": "Herramienta con dientes",
+      "el": "Εργαλείο με δόντια",
+      "de": "Werkzeug mit Zähnen",
+      "ro": "Unealtă cu dinți"
+    }
+  },
+  {
+    "exact": {
+      "en": "Scissors",
+      "bg": "Ножица",
+      "es": "Tijeras",
+      "el": "Ψαλίδι",
+      "de": "Schere",
+      "ro": "Foarfecă"
+    },
+    "hint": {
+      "en": "Tool with two blades",
+      "bg": "Инструмент с две остриета",
+      "es": "Herramienta con dos hojas",
+      "el": "Εργαλείο με δύο λεπίδες",
+      "de": "Werkzeug mit zwei Klingen",
+      "ro": "Unealtă cu două lame"
+    }
+  },
+  {
+    "exact": {
+      "en": "Paintbrush",
+      "bg": "Четка за рисуване",
+      "es": "Pincel",
+      "el": "Πινέλο",
+      "de": "Pinsel",
+      "ro": "Pensulă"
+    },
+    "hint": {
+      "en": "Tool with bristles",
+      "bg": "Инструмент с косъмчета",
+      "es": "Herramienta con cerdas",
+      "el": "Εργαλείο με τρίχες",
+      "de": "Werkzeug mit Borsten",
+      "ro": "Unealtă cu peri"
+    }
+  },
+  {
+    "exact": {
+      "en": "Pencil",
+      "bg": "Молив",
+      "es": "Lápiz",
+      "el": "Μολύβι",
+      "de": "Bleistift",
+      "ro": "Creion"
+    },
+    "hint": {
+      "en": "Tool for writing",
+      "bg": "Инструмент за писане",
+      "es": "Herramienta para escribir",
+      "el": "Εργαλείο για γράψιμο",
+      "de": "Werkzeug zum Schreiben",
+      "ro": "Unealtă de scris"
+    }
+  },
+  {
+    "exact": {
+      "en": "Pen",
+      "bg": "Химикалка",
+      "es": "Bolígrafo",
+      "el": "Στυλό",
+      "de": "Kugelschreiber",
+      "ro": "Pix"
+    },
+    "hint": {
+      "en": "Tool with ink",
+      "bg": "Инструмент с мастило",
+      "es": "Herramienta con tinta",
+      "el": "Εργαλείο με μελάνι",
+      "de": "Werkzeug mit Tinte",
+      "ro": "Unealtă cu cerneală"
+    }
+  },
+  {
+    "exact": {
+      "en": "Book",
+      "bg": "Книга",
+      "es": "Libro",
+      "el": "Βιβλίο",
+      "de": "Buch",
+      "ro": "Carte"
+    },
+    "hint": {
+      "en": "Thing with pages",
+      "bg": "Нещо със страници",
+      "es": "Cosa con páginas",
+      "el": "Κάτι με σελίδες",
+      "de": "Ding mit Seiten",
+      "ro": "Lucru cu pagini"
+    }
+  },
+  {
+    "exact": {
+      "en": "Envelope",
+      "bg": "Плик",
+      "es": "Sobre",
+      "el": "Φάκελος",
+      "de": "Umschlag",
+      "ro": "Plic"
+    },
+    "hint": {
+      "en": "Cover for a letter",
+      "bg": "Обвивка за писмо",
+      "es": "Cubierta para una carta",
+      "el": "Κάλυμμα για γράμμα",
+      "de": "Hülle für einen Brief",
+      "ro": "Învelitoare pentru o scrisoare"
+    }
+  },
+  {
+    "exact": {
+      "en": "Stamp",
+      "bg": "Пощенска марка",
+      "es": "Sello",
+      "el": "Γραμματόσημο",
+      "de": "Briefmarke",
+      "ro": "Timbru"
+    },
+    "hint": {
+      "en": "Small paper square",
+      "bg": "Малко хартиено квадратче",
+      "es": "Cuadradito de papel",
+      "el": "Μικρό χάρτινο τετράγωνο",
+      "de": "Kleines Papierquadrat",
+      "ro": "Pătrățel de hârtie"
+    }
+  },
+  {
+    "exact": {
+      "en": "Backpack",
+      "bg": "Раница",
+      "es": "Mochila",
+      "el": "Σακίδιο",
+      "de": "Rucksack",
+      "ro": "Rucsac"
+    },
+    "hint": {
+      "en": "Bag for your back",
+      "bg": "Чанта за гърба",
+      "es": "Bolsa para la espalda",
+      "el": "Τσάντα για την πλάτη",
+      "de": "Tasche für den Rücken",
+      "ro": "Geantă pentru spate"
+    }
+  },
+  {
+    "exact": {
+      "en": "Suitcase",
+      "bg": "Куфар",
+      "es": "Maleta",
+      "el": "Βαλίτσα",
+      "de": "Koffer",
+      "ro": "Valiză"
+    },
+    "hint": {
+      "en": "Box for travelling",
+      "bg": "Кутия за пътуване",
+      "es": "Caja para viajar",
+      "el": "Κουτί για ταξίδι",
+      "de": "Kasten zum Reisen",
+      "ro": "Cutie pentru călătorie"
+    }
+  },
+  {
+    "exact": {
+      "en": "Wallet",
+      "bg": "Портфейл",
+      "es": "Cartera",
+      "el": "Πορτοφόλι",
+      "de": "Geldbörse",
+      "ro": "Portofel"
+    },
+    "hint": {
+      "en": "Small folding holder",
+      "bg": "Малък сгъваем държач",
+      "es": "Funda pequeña que se dobla",
+      "el": "Μικρή θήκη που διπλώνει",
+      "de": "Kleiner klappbarer Halter",
+      "ro": "Suport mic care se pliază"
+    }
+  },
+  {
+    "exact": {
+      "en": "Glasses",
+      "bg": "Очила",
+      "es": "Gafas",
+      "el": "Γυαλιά",
+      "de": "Brille",
+      "ro": "Ochelari"
+    },
+    "hint": {
+      "en": "Thing worn on the nose",
+      "bg": "Нещо, което се носи на носа",
+      "es": "Cosa que se lleva en la nariz",
+      "el": "Κάτι που φοριέται στη μύτη",
+      "de": "Ding, das man auf der Nase trägt",
+      "ro": "Lucru purtat pe nas"
+    }
+  },
+  {
+    "exact": {
+      "en": "Watch",
+      "bg": "Ръчен часовник",
+      "es": "Reloj de pulsera",
+      "el": "Ρολόι χειρός",
+      "de": "Armbanduhr",
+      "ro": "Ceas de mână"
+    },
+    "hint": {
+      "en": "Thing worn on the wrist",
+      "bg": "Нещо, което се носи на китката",
+      "es": "Cosa que se lleva en la muñeca",
+      "el": "Κάτι που φοριέται στον καρπό",
+      "de": "Ding, das man am Handgelenk trägt",
+      "ro": "Lucru purtat la încheietură"
+    }
+  },
+  {
+    "exact": {
+      "en": "Ring",
+      "bg": "Пръстен",
+      "es": "Anillo",
+      "el": "Δαχτυλίδι",
+      "de": "Ring",
+      "ro": "Inel"
+    },
+    "hint": {
+      "en": "Thing worn on a finger",
+      "bg": "Нещо, което се носи на пръст",
+      "es": "Cosa que se lleva en un dedo",
+      "el": "Κάτι που φοριέται στο δάχτυλο",
+      "de": "Ding, das man am Finger trägt",
+      "ro": "Lucru purtat pe deget"
+    }
+  },
+  {
+    "exact": {
+      "en": "Crown",
+      "bg": "Корона",
+      "es": "Corona",
+      "el": "Στέμμα",
+      "de": "Krone",
+      "ro": "Coroană"
+    },
+    "hint": {
+      "en": "Thing worn by a king",
+      "bg": "Нещо, което носи крал",
+      "es": "Cosa que lleva un rey",
+      "el": "Κάτι που φορά ένας βασιλιάς",
+      "de": "Ding, das ein König trägt",
+      "ro": "Lucru purtat de un rege"
+    }
+  },
+  {
+    "exact": {
+      "en": "Hat",
+      "bg": "Шапка",
+      "es": "Sombrero",
+      "el": "Καπέλο",
+      "de": "Hut",
+      "ro": "Pălărie"
+    },
+    "hint": {
+      "en": "Thing worn on the head",
+      "bg": "Нещо, което се носи на главата",
+      "es": "Cosa que se lleva en la cabeza",
+      "el": "Κάτι που φοριέται στο κεφάλι",
+      "de": "Ding, das man auf dem Kopf trägt",
+      "ro": "Lucru purtat pe cap"
+    }
+  },
+  {
+    "exact": {
+      "en": "Boot",
+      "bg": "Ботуш",
+      "es": "Bota",
+      "el": "Μπότα",
+      "de": "Stiefel",
+      "ro": "Cizmă"
+    },
+    "hint": {
+      "en": "Footwear",
+      "bg": "Обувка",
+      "es": "Calzado",
+      "el": "Υπόδημα",
+      "de": "Schuhwerk",
+      "ro": "Încălțăminte"
+    }
+  },
+  {
+    "exact": {
+      "en": "Sock",
+      "bg": "Чорап",
+      "es": "Calcetín",
+      "el": "Κάλτσα",
+      "de": "Socke",
+      "ro": "Șosetă"
+    },
+    "hint": {
+      "en": "Thing worn on the foot",
+      "bg": "Нещо, което се носи на крака",
+      "es": "Cosa que se lleva en el pie",
+      "el": "Κάτι που φοριέται στο πόδι",
+      "de": "Ding, das man am Fuß trägt",
+      "ro": "Lucru purtat pe picior"
+    }
+  },
+  {
+    "exact": {
+      "en": "T-shirt",
+      "bg": "Тениска",
+      "es": "Camiseta",
+      "el": "Μπλουζάκι",
+      "de": "T-Shirt",
+      "ro": "Tricou"
+    },
+    "hint": {
+      "en": "Simple piece of clothing",
+      "bg": "Простичка дреха",
+      "es": "Prenda sencilla",
+      "el": "Απλό ρούχο",
+      "de": "Einfaches Kleidungsstück",
+      "ro": "Haină simplă"
+    }
+  },
+  {
+    "exact": {
+      "en": "Trousers",
+      "bg": "Панталон",
+      "es": "Pantalones",
+      "el": "Παντελόνι",
+      "de": "Hose",
+      "ro": "Pantaloni"
+    },
+    "hint": {
+      "en": "Clothing for the legs",
+      "bg": "Дреха за краката",
+      "es": "Ropa para las piernas",
+      "el": "Ρούχο για τα πόδια",
+      "de": "Kleidung für die Beine",
+      "ro": "Haină pentru picioare"
+    }
+  },
+  {
+    "exact": {
+      "en": "Dress",
+      "bg": "Рокля",
+      "es": "Vestido",
+      "el": "Φόρεμα",
+      "de": "Kleid",
+      "ro": "Rochie"
+    },
+    "hint": {
+      "en": "One-piece clothing",
+      "bg": "Дреха от едно цяло",
+      "es": "Prenda de una pieza",
+      "el": "Ρούχο ενός κομματιού",
+      "de": "Einteiliges Kleidungsstück",
+      "ro": "Haină dintr-o bucată"
+    }
+  },
+  {
+    "exact": {
+      "en": "Glove",
+      "bg": "Ръкавица",
+      "es": "Guante",
+      "el": "Γάντι",
+      "de": "Handschuh",
+      "ro": "Mănușă"
+    },
+    "hint": {
+      "en": "Clothing for the hand",
+      "bg": "Дреха за ръката",
+      "es": "Ropa para la mano",
+      "el": "Ρούχο για το χέρι",
+      "de": "Kleidung für die Hand",
+      "ro": "Haină pentru mână"
+    }
+  },
+  {
+    "exact": {
+      "en": "Scarf",
+      "bg": "Шал",
+      "es": "Bufanda",
+      "el": "Κασκόλ",
+      "de": "Schal",
+      "ro": "Fular"
+    },
+    "hint": {
+      "en": "Clothing for the neck",
+      "bg": "Дреха за врата",
+      "es": "Ropa para el cuello",
+      "el": "Ρούχο για τον λαιμό",
+      "de": "Kleidung für den Hals",
+      "ro": "Haină pentru gât"
+    }
+  },
+  {
+    "exact": {
+      "en": "Tie",
+      "bg": "Вратовръзка",
+      "es": "Corbata",
+      "el": "Γραβάτα",
+      "de": "Krawatte",
+      "ro": "Cravată"
+    },
+    "hint": {
+      "en": "Formal neck item",
+      "bg": "Официален аксесоар за врата",
+      "es": "Accesorio formal para el cuello",
+      "el": "Επίσημο αξεσουάρ λαιμού",
+      "de": "Formelles Halsstück",
+      "ro": "Accesoriu formal pentru gât"
+    }
+  },
+  {
+    "exact": {
+      "en": "Button",
+      "bg": "Копче",
+      "es": "Botón",
+      "el": "Κουμπί",
+      "de": "Knopf",
+      "ro": "Nasture"
+    },
+    "hint": {
+      "en": "Small round fastener",
+      "bg": "Малка кръгла закопчалка",
+      "es": "Cierre pequeño y redondo",
+      "el": "Μικρό στρογγυλό κούμπωμα",
+      "de": "Kleiner runder Verschluss",
+      "ro": "Închizătoare mică și rotundă"
+    }
+  },
+  {
+    "exact": {
+      "en": "Zipper",
+      "bg": "Цип",
+      "es": "Cremallera",
+      "el": "Φερμουάρ",
+      "de": "Reißverschluss",
+      "ro": "Fermoar"
+    },
+    "hint": {
+      "en": "Fastener with teeth",
+      "bg": "Закопчалка със зъбци",
+      "es": "Cierre con dientes",
+      "el": "Κούμπωμα με δόντια",
+      "de": "Verschluss mit Zähnen",
+      "ro": "Închizătoare cu dinți"
+    }
+  },
+  {
+    "exact": {
+      "en": "Mirror",
+      "bg": "Огледало",
+      "es": "Espejo",
+      "el": "Καθρέφτης",
+      "de": "Spiegel",
+      "ro": "Oglindă"
+    },
+    "hint": {
+      "en": "Thing that shows you",
+      "bg": "Нещо, което те показва",
+      "es": "Cosa que te muestra",
+      "el": "Κάτι που σε δείχνει",
+      "de": "Ding, das dich zeigt",
+      "ro": "Lucru care te arată"
+    }
+  },
+  {
+    "exact": {
+      "en": "Comb",
+      "bg": "Гребен",
+      "es": "Peine",
+      "el": "Χτένα",
+      "de": "Kamm",
+      "ro": "Pieptene"
+    },
+    "hint": {
+      "en": "Thing with many teeth",
+      "bg": "Нещо с много зъбци",
+      "es": "Cosa con muchos dientes",
+      "el": "Κάτι με πολλά δόντια",
+      "de": "Ding mit vielen Zähnen",
+      "ro": "Lucru cu mulți dinți"
+    }
+  },
+  {
+    "exact": {
+      "en": "Toothbrush",
+      "bg": "Четка за зъби",
+      "es": "Cepillo de dientes",
+      "el": "Οδοντόβουρτσα",
+      "de": "Zahnbürste",
+      "ro": "Periuță de dinți"
+    },
+    "hint": {
+      "en": "Thing for your teeth",
+      "bg": "Нещо за зъбите",
+      "es": "Cosa para los dientes",
+      "el": "Κάτι για τα δόντια",
+      "de": "Ding für die Zähne",
+      "ro": "Lucru pentru dinți"
+    }
+  },
+  {
+    "exact": {
+      "en": "Soap",
+      "bg": "Сапун",
+      "es": "Jabón",
+      "el": "Σαπούνι",
+      "de": "Seife",
+      "ro": "Săpun"
+    },
+    "hint": {
+      "en": "Thing that makes foam",
+      "bg": "Нещо, което прави пяна",
+      "es": "Cosa que hace espuma",
+      "el": "Κάτι που κάνει αφρό",
+      "de": "Ding, das Schaum macht",
+      "ro": "Lucru care face spumă"
+    }
+  },
+  {
+    "exact": {
+      "en": "Broom",
+      "bg": "Метла",
+      "es": "Escoba",
+      "el": "Σκούπα",
+      "de": "Besen",
+      "ro": "Mătură"
+    },
+    "hint": {
+      "en": "Thing for sweeping",
+      "bg": "Нещо за метене",
+      "es": "Cosa para barrer",
+      "el": "Κάτι για σκούπισμα",
+      "de": "Ding zum Kehren",
+      "ro": "Lucru pentru măturat"
+    }
+  },
+  {
+    "exact": {
+      "en": "Bucket",
+      "bg": "Кофа",
+      "es": "Cubo",
+      "el": "Κουβάς",
+      "de": "Eimer",
+      "ro": "Găleată"
+    },
+    "hint": {
+      "en": "Thing that holds water",
+      "bg": "Нещо, което държи вода",
+      "es": "Cosa que contiene agua",
+      "el": "Κάτι που κρατά νερό",
+      "de": "Ding, das Wasser hält",
+      "ro": "Lucru care ține apă"
+    }
+  },
+  {
+    "exact": {
+      "en": "Spoon",
+      "bg": "Лъжица",
+      "es": "Cuchara",
+      "el": "Κουτάλι",
+      "de": "Löffel",
+      "ro": "Lingură"
+    },
+    "hint": {
+      "en": "Round eating tool",
+      "bg": "Кръгъл прибор за хранене",
+      "es": "Cubierto redondo",
+      "el": "Στρογγυλό σκεύος φαγητού",
+      "de": "Rundes Essbesteck",
+      "ro": "Tacâm rotund"
+    }
+  },
+  {
+    "exact": {
+      "en": "Fork",
+      "bg": "Вилица",
+      "es": "Tenedor",
+      "el": "Πιρούνι",
+      "de": "Gabel",
+      "ro": "Furculiță"
+    },
+    "hint": {
+      "en": "Eating tool with points",
+      "bg": "Прибор с остри зъбци",
+      "es": "Cubierto con puntas",
+      "el": "Σκεύος φαγητού με μύτες",
+      "de": "Essbesteck mit Zinken",
+      "ro": "Tacâm cu dinți"
+    }
+  },
+  {
+    "exact": {
+      "en": "Knife",
+      "bg": "Нож",
+      "es": "Cuchillo",
+      "el": "Μαχαίρι",
+      "de": "Messer",
+      "ro": "Cuțit"
+    },
+    "hint": {
+      "en": "Sharp eating tool",
+      "bg": "Остър прибор за хранене",
+      "es": "Cubierto afilado",
+      "el": "Κοφτερό σκεύος φαγητού",
+      "de": "Scharfes Essbesteck",
+      "ro": "Tacâm ascuțit"
+    }
+  },
+  {
+    "exact": {
+      "en": "House",
+      "bg": "Къща",
+      "es": "Casa",
+      "el": "Σπίτι",
+      "de": "Haus",
+      "ro": "Casă"
+    },
+    "hint": {
+      "en": "Place where people live",
+      "bg": "Място, където живеят хора",
+      "es": "Lugar donde vive la gente",
+      "el": "Μέρος όπου ζουν άνθρωποι",
+      "de": "Ort, wo Menschen wohnen",
+      "ro": "Loc unde locuiesc oameni"
+    }
+  },
+  {
+    "exact": {
+      "en": "Church",
+      "bg": "Църква",
+      "es": "Iglesia",
+      "el": "Εκκλησία",
+      "de": "Kirche",
+      "ro": "Biserică"
+    },
+    "hint": {
+      "en": "Building with a cross",
+      "bg": "Сграда с кръст",
+      "es": "Edificio con una cruz",
+      "el": "Κτίριο με σταυρό",
+      "de": "Gebäude mit einem Kreuz",
+      "ro": "Clădire cu o cruce"
+    }
+  },
+  {
+    "exact": {
+      "en": "Windmill",
+      "bg": "Вятърна мелница",
+      "es": "Molino de viento",
+      "el": "Ανεμόμυλος",
+      "de": "Windmühle",
+      "ro": "Moară de vânt"
+    },
+    "hint": {
+      "en": "Building with blades",
+      "bg": "Сграда с перки",
+      "es": "Edificio con aspas",
+      "el": "Κτίριο με φτερωτή",
+      "de": "Gebäude mit Flügeln",
+      "ro": "Clădire cu palete"
+    }
+  },
+  {
+    "exact": {
+      "en": "Tent",
+      "bg": "Палатка",
+      "es": "Tienda de campaña",
+      "el": "Σκηνή",
+      "de": "Zelt",
+      "ro": "Cort"
+    },
+    "hint": {
+      "en": "Temporary shelter",
+      "bg": "Временен подслон",
+      "es": "Refugio temporal",
+      "el": "Προσωρινό καταφύγιο",
+      "de": "Vorübergehender Unterschlupf",
+      "ro": "Adăpost temporar"
+    }
+  },
+  {
+    "exact": {
+      "en": "Bridge",
+      "bg": "Мост",
+      "es": "Puente",
+      "el": "Γέφυρα",
+      "de": "Brücke",
+      "ro": "Pod"
+    },
+    "hint": {
+      "en": "Thing that crosses water",
+      "bg": "Нещо, което пресича вода",
+      "es": "Cosa que cruza el agua",
+      "el": "Κάτι που διασχίζει νερό",
+      "de": "Ding, das Wasser überquert",
+      "ro": "Lucru care traversează apa"
+    }
+  },
+  {
+    "exact": {
+      "en": "Barn",
+      "bg": "Плевня",
+      "es": "Granero",
+      "el": "Αχυρώνας",
+      "de": "Scheune",
+      "ro": "Hambar"
+    },
+    "hint": {
+      "en": "Farm building",
+      "bg": "Селска постройка",
+      "es": "Edificio de granja",
+      "el": "Κτίριο φάρμας",
+      "de": "Bauernhofgebäude",
+      "ro": "Clădire de fermă"
+    }
+  },
+  {
+    "exact": {
+      "en": "Skyscraper",
+      "bg": "Небостъргач",
+      "es": "Rascacielos",
+      "el": "Ουρανοξύστης",
+      "de": "Wolkenkratzer",
+      "ro": "Zgârie-nori"
+    },
+    "hint": {
+      "en": "Very tall building",
+      "bg": "Много висока сграда",
+      "es": "Edificio muy alto",
+      "el": "Πολύ ψηλό κτίριο",
+      "de": "Sehr hohes Gebäude",
+      "ro": "Clădire foarte înaltă"
+    }
+  },
+  {
+    "exact": {
+      "en": "Igloo",
+      "bg": "Иглу",
+      "es": "Iglú",
+      "el": "Ιγκλού",
+      "de": "Iglu",
+      "ro": "Iglu"
+    },
+    "hint": {
+      "en": "House made of ice",
+      "bg": "Къща от лед",
+      "es": "Casa hecha de hielo",
+      "el": "Σπίτι από πάγο",
+      "de": "Haus aus Eis",
+      "ro": "Casă din gheață"
+    }
+  },
+  {
+    "exact": {
+      "en": "Pyramid",
+      "bg": "Пирамида",
+      "es": "Pirámide",
+      "el": "Πυραμίδα",
+      "de": "Pyramide",
+      "ro": "Piramidă"
+    },
+    "hint": {
+      "en": "Ancient stone building",
+      "bg": "Древна каменна постройка",
+      "es": "Edificio antiguo de piedra",
+      "el": "Αρχαίο πέτρινο κτίσμα",
+      "de": "Antikes Steingebäude",
+      "ro": "Construcție antică din piatră"
+    }
+  },
+  {
+    "exact": {
+      "en": "Statue of Liberty",
+      "bg": "Статуята на свободата",
+      "es": "Estatua de la Libertad",
+      "el": "Άγαλμα της Ελευθερίας",
+      "de": "Freiheitsstatue",
+      "ro": "Statuia Libertății"
+    },
+    "hint": {
+      "en": "Famous statue",
+      "bg": "Известна статуя",
+      "es": "Estatua famosa",
+      "el": "Διάσημο άγαλμα",
+      "de": "Berühmte Statue",
+      "ro": "Statuie faimoasă"
+    }
+  },
+  {
+    "exact": {
+      "en": "Big Ben",
+      "bg": "Биг Бен",
+      "es": "Big Ben",
+      "el": "Μπιγκ Μπεν",
+      "de": "Big Ben",
+      "ro": "Big Ben"
+    },
+    "hint": {
+      "en": "Famous clock tower",
+      "bg": "Известна часовникова кула",
+      "es": "Torre del reloj famosa",
+      "el": "Διάσημος πύργος ρολογιού",
+      "de": "Berühmter Uhrturm",
+      "ro": "Turn cu ceas faimos"
+    }
+  },
+  {
+    "exact": {
+      "en": "Leaning Tower",
+      "bg": "Наклонената кула",
+      "es": "Torre inclinada",
+      "el": "Κεκλιμένος πύργος",
+      "de": "Schiefer Turm",
+      "ro": "Turnul înclinat"
+    },
+    "hint": {
+      "en": "Tower that tilts",
+      "bg": "Кула, която се накланя",
+      "es": "Torre que se inclina",
+      "el": "Πύργος που γέρνει",
+      "de": "Turm, der sich neigt",
+      "ro": "Turn care se apleacă"
+    }
+  },
+  {
+    "exact": {
+      "en": "Great Wall",
+      "bg": "Великата стена",
+      "es": "Gran Muralla",
+      "el": "Σινικό Τείχος",
+      "de": "Große Mauer",
+      "ro": "Marele Zid"
+    },
+    "hint": {
+      "en": "Very long wall",
+      "bg": "Много дълга стена",
+      "es": "Muro muy largo",
+      "el": "Πολύ μακρύ τείχος",
+      "de": "Sehr lange Mauer",
+      "ro": "Zid foarte lung"
+    }
+  },
+  {
+    "exact": {
+      "en": "Stonehenge",
+      "bg": "Стоунхендж",
+      "es": "Stonehenge",
+      "el": "Στόουνχεντζ",
+      "de": "Stonehenge",
+      "ro": "Stonehenge"
+    },
+    "hint": {
+      "en": "Ancient stone circle",
+      "bg": "Древен каменен кръг",
+      "es": "Círculo de piedras antiguo",
+      "el": "Αρχαίος κύκλος από πέτρες",
+      "de": "Antiker Steinkreis",
+      "ro": "Cerc antic de pietre"
+    }
+  },
+  {
+    "exact": {
+      "en": "Ferris wheel",
+      "bg": "Виенско колело",
+      "es": "Noria",
+      "el": "Ρόδα λούνα παρκ",
+      "de": "Riesenrad",
+      "ro": "Roată panoramică"
+    },
+    "hint": {
+      "en": "Big wheel at a fair",
+      "bg": "Голямо колело в лунапарк",
+      "es": "Rueda grande de feria",
+      "el": "Μεγάλη ρόδα στο πανηγύρι",
+      "de": "Großes Rad auf dem Jahrmarkt",
+      "ro": "Roată mare la bâlci"
+    }
+  },
+  {
+    "exact": {
+      "en": "Slide",
+      "bg": "Пързалка",
+      "es": "Tobogán",
+      "el": "Τσουλήθρα",
+      "de": "Rutsche",
+      "ro": "Tobogan"
+    },
+    "hint": {
+      "en": "Playground thing you go down",
+      "bg": "Нещо на площадката, по което се спускаш",
+      "es": "Cosa del parque por la que bajas",
+      "el": "Κάτι στην παιδική χαρά που κατεβαίνεις",
+      "de": "Spielplatzding, das man hinunterrutscht",
+      "ro": "Lucru din parc pe care cobori"
+    }
+  },
+  {
+    "exact": {
+      "en": "Swing",
+      "bg": "Люлка",
+      "es": "Columpio",
+      "el": "Κούνια",
+      "de": "Schaukel",
+      "ro": "Leagăn"
+    },
+    "hint": {
+      "en": "Playground thing that swings",
+      "bg": "Нещо на площадката, което се люлее",
+      "es": "Cosa del parque que se balancea",
+      "el": "Κάτι στην παιδική χαρά που αιωρείται",
+      "de": "Spielplatzding, das schwingt",
+      "ro": "Lucru din parc care se leagănă"
+    }
+  },
+  {
+    "exact": {
+      "en": "Fence",
+      "bg": "Ограда",
+      "es": "Valla",
+      "el": "Φράχτης",
+      "de": "Zaun",
+      "ro": "Gard"
+    },
+    "hint": {
+      "en": "Barrier around a garden",
+      "bg": "Преграда около двор",
+      "es": "Barrera alrededor de un jardín",
+      "el": "Φράγμα γύρω από κήπο",
+      "de": "Absperrung um einen Garten",
+      "ro": "Barieră în jurul unei grădini"
+    }
+  },
+  {
+    "exact": {
+      "en": "Mailbox",
+      "bg": "Пощенска кутия",
+      "es": "Buzón",
+      "el": "Γραμματοκιβώτιο",
+      "de": "Briefkasten",
+      "ro": "Cutie poștală"
+    },
+    "hint": {
+      "en": "Box for letters",
+      "bg": "Кутия за писма",
+      "es": "Caja para cartas",
+      "el": "Κουτί για γράμματα",
+      "de": "Kasten für Briefe",
+      "ro": "Cutie pentru scrisori"
+    }
+  },
+  {
+    "exact": {
+      "en": "Streetlight",
+      "bg": "Улична лампа",
+      "es": "Farola",
+      "el": "Φανοστάτης",
+      "de": "Straßenlaterne",
+      "ro": "Felinar stradal"
+    },
+    "hint": {
+      "en": "Light on a pole",
+      "bg": "Светлина на стълб",
+      "es": "Luz sobre un poste",
+      "el": "Φως πάνω σε στύλο",
+      "de": "Licht auf einem Mast",
+      "ro": "Lumină pe un stâlp"
+    }
+  },
+  {
+    "exact": {
+      "en": "Traffic light",
+      "bg": "Светофар",
+      "es": "Semáforo",
+      "el": "Φανάρι",
+      "de": "Ampel",
+      "ro": "Semafor"
+    },
+    "hint": {
+      "en": "Thing with three lights",
+      "bg": "Нещо с три светлини",
+      "es": "Cosa con tres luces",
+      "el": "Κάτι με τρία φώτα",
+      "de": "Ding mit drei Lichtern",
+      "ro": "Lucru cu trei lumini"
+    }
+  },
+  {
+    "exact": {
+      "en": "Road sign",
+      "bg": "Пътен знак",
+      "es": "Señal de tráfico",
+      "el": "Πινακίδα δρόμου",
+      "de": "Verkehrsschild",
+      "ro": "Indicator rutier"
+    },
+    "hint": {
+      "en": "Sign for drivers",
+      "bg": "Знак за шофьорите",
+      "es": "Señal para conductores",
+      "el": "Πινακίδα για οδηγούς",
+      "de": "Schild für Fahrer",
+      "ro": "Semn pentru șoferi"
+    }
+  },
+  {
+    "exact": {
+      "en": "Fountain",
+      "bg": "Фонтан",
+      "es": "Fuente",
+      "el": "Σιντριβάνι",
+      "de": "Springbrunnen",
+      "ro": "Fântână arteziană"
+    },
+    "hint": {
+      "en": "Structure with water",
+      "bg": "Съоръжение с вода",
+      "es": "Estructura con agua",
+      "el": "Κατασκευή με νερό",
+      "de": "Bauwerk mit Wasser",
+      "ro": "Construcție cu apă"
+    }
+  },
+  {
+    "exact": {
+      "en": "Well",
+      "bg": "Кладенец",
+      "es": "Pozo",
+      "el": "Πηγάδι",
+      "de": "Brunnen",
+      "ro": "Fântână"
+    },
+    "hint": {
+      "en": "Deep hole for water",
+      "bg": "Дълбока дупка за вода",
+      "es": "Agujero profundo para el agua",
+      "el": "Βαθιά τρύπα για νερό",
+      "de": "Tiefes Loch für Wasser",
+      "ro": "Gaură adâncă pentru apă"
+    }
+  },
+  {
+    "exact": {
+      "en": "Car",
+      "bg": "Кола",
+      "es": "Coche",
+      "el": "Αυτοκίνητο",
+      "de": "Auto",
+      "ro": "Mașină"
+    },
+    "hint": {
+      "en": "Vehicle with four wheels",
+      "bg": "Возило с четири колела",
+      "es": "Vehículo de cuatro ruedas",
+      "el": "Όχημα με τέσσερις τροχούς",
+      "de": "Fahrzeug mit vier Rädern",
+      "ro": "Vehicul cu patru roți"
+    }
+  },
+  {
+    "exact": {
+      "en": "Bus",
+      "bg": "Автобус",
+      "es": "Autobús",
+      "el": "Λεωφορείο",
+      "de": "Bus",
+      "ro": "Autobuz"
+    },
+    "hint": {
+      "en": "Long public vehicle",
+      "bg": "Дълго обществено возило",
+      "es": "Vehículo público largo",
+      "el": "Μακρύ δημόσιο όχημα",
+      "de": "Langes öffentliches Fahrzeug",
+      "ro": "Vehicul public lung"
+    }
+  },
+  {
+    "exact": {
+      "en": "Truck",
+      "bg": "Камион",
+      "es": "Camión",
+      "el": "Φορτηγό",
+      "de": "Lastwagen",
+      "ro": "Camion"
+    },
+    "hint": {
+      "en": "Big vehicle for goods",
+      "bg": "Голямо возило за товари",
+      "es": "Vehículo grande para mercancías",
+      "el": "Μεγάλο όχημα για εμπορεύματα",
+      "de": "Großes Fahrzeug für Waren",
+      "ro": "Vehicul mare pentru mărfuri"
+    }
+  },
+  {
+    "exact": {
+      "en": "Train",
+      "bg": "Влак",
+      "es": "Tren",
+      "el": "Τρένο",
+      "de": "Zug",
+      "ro": "Tren"
+    },
+    "hint": {
+      "en": "Vehicle on rails",
+      "bg": "Возило по релси",
+      "es": "Vehículo sobre raíles",
+      "el": "Όχημα πάνω σε ράγες",
+      "de": "Fahrzeug auf Schienen",
+      "ro": "Vehicul pe șine"
+    }
+  },
+  {
+    "exact": {
+      "en": "Airplane",
+      "bg": "Самолет",
+      "es": "Avión",
+      "el": "Αεροπλάνο",
+      "de": "Flugzeug",
+      "ro": "Avion"
+    },
+    "hint": {
+      "en": "Vehicle with wings",
+      "bg": "Возило с криле",
+      "es": "Vehículo con alas",
+      "el": "Όχημα με φτερά",
+      "de": "Fahrzeug mit Flügeln",
+      "ro": "Vehicul cu aripi"
+    }
+  },
+  {
+    "exact": {
+      "en": "Helicopter",
+      "bg": "Хеликоптер",
+      "es": "Helicóptero",
+      "el": "Ελικόπτερο",
+      "de": "Hubschrauber",
+      "ro": "Elicopter"
+    },
+    "hint": {
+      "en": "Vehicle with a spinning top",
+      "bg": "Возило с въртяща се перка",
+      "es": "Vehículo con hélice giratoria",
+      "el": "Όχημα με περιστρεφόμενη έλικα",
+      "de": "Fahrzeug mit drehendem Rotor",
+      "ro": "Vehicul cu elice rotitoare"
+    }
+  },
+  {
+    "exact": {
+      "en": "Boat",
+      "bg": "Лодка",
+      "es": "Barca",
+      "el": "Βάρκα",
+      "de": "Boot",
+      "ro": "Barcă"
+    },
+    "hint": {
+      "en": "Small vessel on water",
+      "bg": "Малък съд по водата",
+      "es": "Embarcación pequeña",
+      "el": "Μικρό σκάφος στο νερό",
+      "de": "Kleines Wasserfahrzeug",
+      "ro": "Ambarcațiune mică"
+    }
+  },
+  {
+    "exact": {
+      "en": "Sailboat",
+      "bg": "Ветроходна лодка",
+      "es": "Velero",
+      "el": "Ιστιοφόρο",
+      "de": "Segelboot",
+      "ro": "Barcă cu pânze"
+    },
+    "hint": {
+      "en": "Boat with a sail",
+      "bg": "Лодка с платно",
+      "es": "Barca con vela",
+      "el": "Βάρκα με πανί",
+      "de": "Boot mit Segel",
+      "ro": "Barcă cu pânză"
+    }
+  },
+  {
+    "exact": {
+      "en": "Submarine",
+      "bg": "Подводница",
+      "es": "Submarino",
+      "el": "Υποβρύχιο",
+      "de": "U-Boot",
+      "ro": "Submarin"
+    },
+    "hint": {
+      "en": "Vessel under water",
+      "bg": "Съд под водата",
+      "es": "Nave bajo el agua",
+      "el": "Σκάφος κάτω από το νερό",
+      "de": "Fahrzeug unter Wasser",
+      "ro": "Navă sub apă"
+    }
+  },
+  {
+    "exact": {
+      "en": "Canoe",
+      "bg": "Кану",
+      "es": "Canoa",
+      "el": "Κανό",
+      "de": "Kanu",
+      "ro": "Canoe"
+    },
+    "hint": {
+      "en": "Narrow boat",
+      "bg": "Тясна лодка",
+      "es": "Barca estrecha",
+      "el": "Στενή βάρκα",
+      "de": "Schmales Boot",
+      "ro": "Barcă îngustă"
+    }
+  },
+  {
+    "exact": {
+      "en": "Motorcycle",
+      "bg": "Мотоциклет",
+      "es": "Motocicleta",
+      "el": "Μοτοσικλέτα",
+      "de": "Motorrad",
+      "ro": "Motocicletă"
+    },
+    "hint": {
+      "en": "Vehicle with two wheels",
+      "bg": "Возило с две колела",
+      "es": "Vehículo de dos ruedas",
+      "el": "Όχημα με δύο τροχούς",
+      "de": "Fahrzeug mit zwei Rädern",
+      "ro": "Vehicul cu două roți"
+    }
+  },
+  {
+    "exact": {
+      "en": "Scooter",
+      "bg": "Тротинетка",
+      "es": "Patinete",
+      "el": "Πατίνι",
+      "de": "Roller",
+      "ro": "Trotinetă"
+    },
+    "hint": {
+      "en": "Small thing you stand on",
+      "bg": "Малко нещо, на което стоиш прав",
+      "es": "Cosa pequeña sobre la que vas de pie",
+      "el": "Μικρό πράγμα πάνω στο οποίο στέκεσαι",
+      "de": "Kleines Ding, auf dem man steht",
+      "ro": "Lucru mic pe care stai în picioare"
+    }
+  },
+  {
+    "exact": {
+      "en": "Skateboard",
+      "bg": "Скейтборд",
+      "es": "Monopatín",
+      "el": "Σκέιτμπορντ",
+      "de": "Skateboard",
+      "ro": "Skateboard"
+    },
+    "hint": {
+      "en": "Board you ride",
+      "bg": "Дъска, с която се движиш",
+      "es": "Tabla sobre la que te mueves",
+      "el": "Σανίδα πάνω στην οποία κινείσαι",
+      "de": "Brett, auf dem man fährt",
+      "ro": "Placă pe care te deplasezi"
+    }
+  },
+  {
+    "exact": {
+      "en": "Tractor",
+      "bg": "Трактор",
+      "es": "Tractor",
+      "el": "Τρακτέρ",
+      "de": "Traktor",
+      "ro": "Tractor"
+    },
+    "hint": {
+      "en": "Vehicle on a farm",
+      "bg": "Возило във ферма",
+      "es": "Vehículo de una granja",
+      "el": "Όχημα σε φάρμα",
+      "de": "Fahrzeug auf einem Bauernhof",
+      "ro": "Vehicul de la fermă"
+    }
+  },
+  {
+    "exact": {
+      "en": "Ambulance",
+      "bg": "Линейка",
+      "es": "Ambulancia",
+      "el": "Ασθενοφόρο",
+      "de": "Krankenwagen",
+      "ro": "Ambulanță"
+    },
+    "hint": {
+      "en": "Vehicle for the sick",
+      "bg": "Возило за болни",
+      "es": "Vehículo para enfermos",
+      "el": "Όχημα για αρρώστους",
+      "de": "Fahrzeug für Kranke",
+      "ro": "Vehicul pentru bolnavi"
+    }
+  },
+  {
+    "exact": {
+      "en": "Fire engine",
+      "bg": "Пожарна кола",
+      "es": "Camión de bomberos",
+      "el": "Πυροσβεστικό όχημα",
+      "de": "Feuerwehrauto",
+      "ro": "Mașină de pompieri"
+    },
+    "hint": {
+      "en": "Red emergency vehicle",
+      "bg": "Червено спешно возило",
+      "es": "Vehículo de emergencia rojo",
+      "el": "Κόκκινο όχημα έκτακτης ανάγκης",
+      "de": "Rotes Einsatzfahrzeug",
+      "ro": "Vehicul roșu de urgență"
+    }
+  },
+  {
+    "exact": {
+      "en": "Taxi",
+      "bg": "Такси",
+      "es": "Taxi",
+      "el": "Ταξί",
+      "de": "Taxi",
+      "ro": "Taxi"
+    },
+    "hint": {
+      "en": "Car you pay to ride",
+      "bg": "Кола, за която плащаш",
+      "es": "Coche por el que pagas",
+      "el": "Αυτοκίνητο που πληρώνεις",
+      "de": "Auto, für das man bezahlt",
+      "ro": "Mașină pentru care plătești"
+    }
+  },
+  {
+    "exact": {
+      "en": "Wheelbarrow",
+      "bg": "Ръчна количка",
+      "es": "Carretilla",
+      "el": "Καρότσι με μία ρόδα",
+      "de": "Schubkarre",
+      "ro": "Roabă"
+    },
+    "hint": {
+      "en": "Cart with one wheel",
+      "bg": "Количка с едно колело",
+      "es": "Carro de una rueda",
+      "el": "Καρότσι με έναν τροχό",
+      "de": "Karren mit einem Rad",
+      "ro": "Cărucior cu o roată"
+    }
+  },
+  {
+    "exact": {
+      "en": "Shopping cart",
+      "bg": "Количка за пазаруване",
+      "es": "Carrito de la compra",
+      "el": "Καρότσι σούπερ μάρκετ",
+      "de": "Einkaufswagen",
+      "ro": "Cărucior de cumpărături"
+    },
+    "hint": {
+      "en": "Cart in a shop",
+      "bg": "Количка в магазин",
+      "es": "Carro de una tienda",
+      "el": "Καρότσι σε κατάστημα",
+      "de": "Wagen im Laden",
+      "ro": "Cărucior din magazin"
+    }
+  },
+  {
+    "exact": {
+      "en": "Wagon",
+      "bg": "Каручка",
+      "es": "Carro",
+      "el": "Κάρο",
+      "de": "Wagen",
+      "ro": "Car"
+    },
+    "hint": {
+      "en": "Cart that is pulled",
+      "bg": "Количка, която се тегли",
+      "es": "Carro que se tira",
+      "el": "Κάρο που το τραβούν",
+      "de": "Karren, der gezogen wird",
+      "ro": "Car care este tras"
+    }
+  },
+  {
+    "exact": {
+      "en": "Anchor",
+      "bg": "Котва",
+      "es": "Ancla",
+      "el": "Άγκυρα",
+      "de": "Anker",
+      "ro": "Ancoră"
+    },
+    "hint": {
+      "en": "Heavy thing on a chain",
+      "bg": "Тежко нещо на верига",
+      "es": "Cosa pesada en una cadena",
+      "el": "Βαρύ πράγμα σε αλυσίδα",
+      "de": "Schweres Ding an einer Kette",
+      "ro": "Lucru greu pe un lanț"
+    }
+  },
+  {
+    "exact": {
+      "en": "Propeller",
+      "bg": "Перка",
+      "es": "Hélice",
+      "el": "Έλικας",
+      "de": "Propeller",
+      "ro": "Elice"
+    },
+    "hint": {
+      "en": "Thing with spinning blades",
+      "bg": "Нещо с въртящи се перки",
+      "es": "Cosa con aspas que giran",
+      "el": "Κάτι με περιστρεφόμενα πτερύγια",
+      "de": "Ding mit drehenden Blättern",
+      "ro": "Lucru cu palete care se rotesc"
+    }
+  },
+  {
+    "exact": {
+      "en": "Wheel",
+      "bg": "Колело",
+      "es": "Rueda",
+      "el": "Τροχός",
+      "de": "Rad",
+      "ro": "Roată"
+    },
+    "hint": {
+      "en": "Round rolling thing",
+      "bg": "Кръгло търкалящо се нещо",
+      "es": "Cosa redonda que rueda",
+      "el": "Στρογγυλό πράγμα που κυλά",
+      "de": "Rundes rollendes Ding",
+      "ro": "Lucru rotund care se rostogolește"
+    }
+  },
+  {
+    "exact": {
+      "en": "Parachute",
+      "bg": "Парашут",
+      "es": "Paracaídas",
+      "el": "Αλεξίπτωτο",
+      "de": "Fallschirm",
+      "ro": "Parașută"
+    },
+    "hint": {
+      "en": "Thing that slows a fall",
+      "bg": "Нещо, което забавя падане",
+      "es": "Cosa que frena una caída",
+      "el": "Κάτι που επιβραδύνει την πτώση",
+      "de": "Ding, das einen Fall bremst",
+      "ro": "Lucru care încetinește o cădere"
+    }
+  },
+  {
+    "exact": {
+      "en": "Sun",
+      "bg": "Слънце",
+      "es": "Sol",
+      "el": "Ήλιος",
+      "de": "Sonne",
+      "ro": "Soare"
+    },
+    "hint": {
+      "en": "Thing that lights the day",
+      "bg": "Нещо, което осветява деня",
+      "es": "Cosa que ilumina el día",
+      "el": "Κάτι που φωτίζει τη μέρα",
+      "de": "Ding, das den Tag erhellt",
+      "ro": "Lucru care luminează ziua"
+    }
+  },
+  {
+    "exact": {
+      "en": "Moon",
+      "bg": "Луна",
+      "es": "Luna",
+      "el": "Φεγγάρι",
+      "de": "Mond",
+      "ro": "Lună"
+    },
+    "hint": {
+      "en": "Thing in the night sky",
+      "bg": "Нещо в нощното небе",
+      "es": "Cosa en el cielo nocturno",
+      "el": "Κάτι στον νυχτερινό ουρανό",
+      "de": "Ding am Nachthimmel",
+      "ro": "Lucru de pe cerul nopții"
+    }
+  },
+  {
+    "exact": {
+      "en": "Star",
+      "bg": "Звезда",
+      "es": "Estrella",
+      "el": "Αστέρι",
+      "de": "Stern",
+      "ro": "Stea"
+    },
+    "hint": {
+      "en": "Small light in the sky",
+      "bg": "Малка светлина в небето",
+      "es": "Luz pequeña en el cielo",
+      "el": "Μικρό φως στον ουρανό",
+      "de": "Kleines Licht am Himmel",
+      "ro": "Lumină mică pe cer"
+    }
+  },
+  {
+    "exact": {
+      "en": "Cloud",
+      "bg": "Облак",
+      "es": "Nube",
+      "el": "Σύννεφο",
+      "de": "Wolke",
+      "ro": "Nor"
+    },
+    "hint": {
+      "en": "White shape in the sky",
+      "bg": "Бяла форма в небето",
+      "es": "Forma blanca en el cielo",
+      "el": "Λευκό σχήμα στον ουρανό",
+      "de": "Weiße Form am Himmel",
+      "ro": "Formă albă pe cer"
+    }
+  },
+  {
+    "exact": {
+      "en": "Rainbow",
+      "bg": "Дъга",
+      "es": "Arcoíris",
+      "el": "Ουράνιο τόξο",
+      "de": "Regenbogen",
+      "ro": "Curcubeu"
+    },
+    "hint": {
+      "en": "Arc of colours",
+      "bg": "Дъга от цветове",
+      "es": "Arco de colores",
+      "el": "Τόξο χρωμάτων",
+      "de": "Bogen aus Farben",
+      "ro": "Arc de culori"
+    }
+  },
+  {
+    "exact": {
+      "en": "Lightning",
+      "bg": "Мълния",
+      "es": "Relámpago",
+      "el": "Αστραπή",
+      "de": "Blitz",
+      "ro": "Fulger"
+    },
+    "hint": {
+      "en": "Flash in a storm",
+      "bg": "Проблясък в буря",
+      "es": "Destello en una tormenta",
+      "el": "Λάμψη σε καταιγίδα",
+      "de": "Blitz im Sturm",
+      "ro": "Sclipire în furtună"
+    }
+  },
+  {
+    "exact": {
+      "en": "Snowflake",
+      "bg": "Снежинка",
+      "es": "Copo de nieve",
+      "el": "Νιφάδα χιονιού",
+      "de": "Schneeflocke",
+      "ro": "Fulg de nea"
+    },
+    "hint": {
+      "en": "Frozen crystal from the sky",
+      "bg": "Замръзнало кристалче от небето",
+      "es": "Cristal helado que cae del cielo",
+      "el": "Παγωμένος κρύσταλλος από τον ουρανό",
+      "de": "Gefrorener Kristall vom Himmel",
+      "ro": "Cristal înghețat din cer"
+    }
+  },
+  {
+    "exact": {
+      "en": "Raindrop",
+      "bg": "Капка дъжд",
+      "es": "Gota de lluvia",
+      "el": "Σταγόνα βροχής",
+      "de": "Regentropfen",
+      "ro": "Picătură de ploaie"
+    },
+    "hint": {
+      "en": "Small drop of water",
+      "bg": "Малка капка вода",
+      "es": "Gotita de agua",
+      "el": "Μικρή σταγόνα νερού",
+      "de": "Kleiner Wassertropfen",
+      "ro": "Picătură mică de apă"
+    }
+  },
+  {
+    "exact": {
+      "en": "Mountain",
+      "bg": "Планина",
+      "es": "Montaña",
+      "el": "Βουνό",
+      "de": "Berg",
+      "ro": "Munte"
+    },
+    "hint": {
+      "en": "Very high ground",
+      "bg": "Много висока земя",
+      "es": "Terreno muy alto",
+      "el": "Πολύ ψηλό έδαφος",
+      "de": "Sehr hohes Gelände",
+      "ro": "Teren foarte înalt"
+    }
+  },
+  {
+    "exact": {
+      "en": "Volcano",
+      "bg": "Вулкан",
+      "es": "Volcán",
+      "el": "Ηφαίστειο",
+      "de": "Vulkan",
+      "ro": "Vulcan"
+    },
+    "hint": {
+      "en": "Mountain that erupts",
+      "bg": "Планина, която изригва",
+      "es": "Montaña que hace erupción",
+      "el": "Βουνό που εκρήγνυται",
+      "de": "Berg, der ausbricht",
+      "ro": "Munte care erupe"
+    }
+  },
+  {
+    "exact": {
+      "en": "Island",
+      "bg": "Остров",
+      "es": "Isla",
+      "el": "Νησί",
+      "de": "Insel",
+      "ro": "Insulă"
+    },
+    "hint": {
+      "en": "Land surrounded by water",
+      "bg": "Земя, заобиколена от вода",
+      "es": "Tierra rodeada de agua",
+      "el": "Στεριά που περιβάλλεται από νερό",
+      "de": "Land, von Wasser umgeben",
+      "ro": "Pământ înconjurat de apă"
+    }
+  },
+  {
+    "exact": {
+      "en": "Waterfall",
+      "bg": "Водопад",
+      "es": "Cascada",
+      "el": "Καταρράκτης",
+      "de": "Wasserfall",
+      "ro": "Cascadă"
+    },
+    "hint": {
+      "en": "Water falling from a height",
+      "bg": "Вода, падаща от високо",
+      "es": "Agua que cae desde lo alto",
+      "el": "Νερό που πέφτει από ψηλά",
+      "de": "Wasser, das aus der Höhe fällt",
+      "ro": "Apă care cade de la înălțime"
+    }
+  },
+  {
+    "exact": {
+      "en": "River",
+      "bg": "Река",
+      "es": "Río",
+      "el": "Ποτάμι",
+      "de": "Fluss",
+      "ro": "Râu"
+    },
+    "hint": {
+      "en": "Long stream of water",
+      "bg": "Дълъг поток вода",
+      "es": "Corriente larga de agua",
+      "el": "Μακρύ ρεύμα νερού",
+      "de": "Langer Wasserlauf",
+      "ro": "Curs lung de apă"
+    }
+  },
+  {
+    "exact": {
+      "en": "Wave",
+      "bg": "Вълна",
+      "es": "Ola",
+      "el": "Κύμα",
+      "de": "Welle",
+      "ro": "Val"
+    },
+    "hint": {
+      "en": "Moving water in the sea",
+      "bg": "Движеща се вода в морето",
+      "es": "Agua que se mueve en el mar",
+      "el": "Νερό που κινείται στη θάλασσα",
+      "de": "Bewegtes Wasser im Meer",
+      "ro": "Apă în mișcare în mare"
+    }
+  },
+  {
+    "exact": {
+      "en": "Tree",
+      "bg": "Дърво",
+      "es": "Árbol",
+      "el": "Δέντρο",
+      "de": "Baum",
+      "ro": "Copac"
+    },
+    "hint": {
+      "en": "Big plant with a trunk",
+      "bg": "Голямо растение със ствол",
+      "es": "Planta grande con tronco",
+      "el": "Μεγάλο φυτό με κορμό",
+      "de": "Große Pflanze mit Stamm",
+      "ro": "Plantă mare cu trunchi"
+    }
+  },
+  {
+    "exact": {
+      "en": "Leaf",
+      "bg": "Листо",
+      "es": "Hoja",
+      "el": "Φύλλο",
+      "de": "Blatt",
+      "ro": "Frunză"
+    },
+    "hint": {
+      "en": "Green part of a plant",
+      "bg": "Зелена част от растение",
+      "es": "Parte verde de una planta",
+      "el": "Πράσινο μέρος φυτού",
+      "de": "Grüner Teil einer Pflanze",
+      "ro": "Parte verde a unei plante"
+    }
+  },
+  {
+    "exact": {
+      "en": "Flower",
+      "bg": "Цвете",
+      "es": "Flor",
+      "el": "Λουλούδι",
+      "de": "Blume",
+      "ro": "Floare"
+    },
+    "hint": {
+      "en": "Colourful part of a plant",
+      "bg": "Цветна част от растение",
+      "es": "Parte colorida de una planta",
+      "el": "Πολύχρωμο μέρος φυτού",
+      "de": "Bunter Teil einer Pflanze",
+      "ro": "Parte colorată a unei plante"
+    }
+  },
+  {
+    "exact": {
+      "en": "Grass",
+      "bg": "Трева",
+      "es": "Hierba",
+      "el": "Γρασίδι",
+      "de": "Gras",
+      "ro": "Iarbă"
+    },
+    "hint": {
+      "en": "Green ground cover",
+      "bg": "Зелена покривка на земята",
+      "es": "Cubierta verde del suelo",
+      "el": "Πράσινο κάλυμμα του εδάφους",
+      "de": "Grüne Bodendecke",
+      "ro": "Covor verde al pământului"
+    }
+  },
+  {
+    "exact": {
+      "en": "Bush",
+      "bg": "Храст",
+      "es": "Arbusto",
+      "el": "Θάμνος",
+      "de": "Busch",
+      "ro": "Tufă"
+    },
+    "hint": {
+      "en": "Small thick plant",
+      "bg": "Малко гъсто растение",
+      "es": "Planta pequeña y espesa",
+      "el": "Μικρό πυκνό φυτό",
+      "de": "Kleine dichte Pflanze",
+      "ro": "Plantă mică și deasă"
+    }
+  },
+  {
+    "exact": {
+      "en": "Log",
+      "bg": "Дънер",
+      "es": "Tronco",
+      "el": "Κούτσουρο",
+      "de": "Baumstamm",
+      "ro": "Buștean"
+    },
+    "hint": {
+      "en": "Piece of a fallen tree",
+      "bg": "Част от паднало дърво",
+      "es": "Trozo de un árbol caído",
+      "el": "Κομμάτι πεσμένου δέντρου",
+      "de": "Stück eines gefallenen Baums",
+      "ro": "Bucată dintr-un copac căzut"
+    }
+  },
+  {
+    "exact": {
+      "en": "Rock",
+      "bg": "Камък",
+      "es": "Roca",
+      "el": "Βράχος",
+      "de": "Fels",
+      "ro": "Stâncă"
+    },
+    "hint": {
+      "en": "Hard piece of ground",
+      "bg": "Твърдо парче земя",
+      "es": "Trozo duro del suelo",
+      "el": "Σκληρό κομμάτι εδάφους",
+      "de": "Hartes Stück Boden",
+      "ro": "Bucată tare de pământ"
+    }
+  },
+  {
+    "exact": {
+      "en": "Feather",
+      "bg": "Перо",
+      "es": "Pluma",
+      "el": "Φτερό",
+      "de": "Feder",
+      "ro": "Pană"
+    },
+    "hint": {
+      "en": "Light thing from a bird",
+      "bg": "Леко нещо от птица",
+      "es": "Cosa ligera de un ave",
+      "el": "Ελαφρύ πράγμα από πουλί",
+      "de": "Leichtes Ding von einem Vogel",
+      "ro": "Lucru ușor de la o pasăre"
+    }
+  },
+  {
+    "exact": {
+      "en": "Shell",
+      "bg": "Мида",
+      "es": "Concha",
+      "el": "Κοχύλι",
+      "de": "Muschel",
+      "ro": "Scoică"
+    },
+    "hint": {
+      "en": "Hard cover from the beach",
+      "bg": "Твърда обвивка от плажа",
+      "es": "Cubierta dura de la playa",
+      "el": "Σκληρό κέλυφος από την παραλία",
+      "de": "Harte Hülle vom Strand",
+      "ro": "Înveliș tare de pe plajă"
+    }
+  },
+  {
+    "exact": {
+      "en": "Coral",
+      "bg": "Корал",
+      "es": "Coral",
+      "el": "Κοράλλι",
+      "de": "Koralle",
+      "ro": "Coral"
+    },
+    "hint": {
+      "en": "Sea growth",
+      "bg": "Морско образувание",
+      "es": "Formación del mar",
+      "el": "Θαλάσσιος σχηματισμός",
+      "de": "Meeresgewächs",
+      "ro": "Formațiune marină"
+    }
+  },
+  {
+    "exact": {
+      "en": "Planet",
+      "bg": "Планета",
+      "es": "Planeta",
+      "el": "Πλανήτης",
+      "de": "Planet",
+      "ro": "Planetă"
+    },
+    "hint": {
+      "en": "Round body in space",
+      "bg": "Кръгло тяло в космоса",
+      "es": "Cuerpo redondo del espacio",
+      "el": "Στρογγυλό σώμα στο διάστημα",
+      "de": "Runder Körper im Weltall",
+      "ro": "Corp rotund din spațiu"
+    }
+  },
+  {
+    "exact": {
+      "en": "Saturn",
+      "bg": "Сатурн",
+      "es": "Saturno",
+      "el": "Κρόνος",
+      "de": "Saturn",
+      "ro": "Saturn"
+    },
+    "hint": {
+      "en": "Planet with rings",
+      "bg": "Планета с пръстени",
+      "es": "Planeta con anillos",
+      "el": "Πλανήτης με δαχτυλίδια",
+      "de": "Planet mit Ringen",
+      "ro": "Planetă cu inele"
+    }
+  },
+  {
+    "exact": {
+      "en": "Comet",
+      "bg": "Комета",
+      "es": "Cometa",
+      "el": "Κομήτης",
+      "de": "Komet",
+      "ro": "Cometă"
+    },
+    "hint": {
+      "en": "Space object with a tail",
+      "bg": "Космически обект с опашка",
+      "es": "Objeto del espacio con cola",
+      "el": "Διαστημικό αντικείμενο με ουρά",
+      "de": "Weltraumobjekt mit Schweif",
+      "ro": "Obiect spațial cu coadă"
+    }
+  },
+  {
+    "exact": {
+      "en": "Galaxy",
+      "bg": "Галактика",
+      "es": "Galaxia",
+      "el": "Γαλαξίας",
+      "de": "Galaxie",
+      "ro": "Galaxie"
+    },
+    "hint": {
+      "en": "Huge group of stars",
+      "bg": "Огромна група звезди",
+      "es": "Grupo enorme de estrellas",
+      "el": "Τεράστια ομάδα αστεριών",
+      "de": "Riesige Gruppe von Sternen",
+      "ro": "Grup uriaș de stele"
+    }
+  },
+  {
+    "exact": {
+      "en": "Telescope",
+      "bg": "Телескоп",
+      "es": "Telescopio",
+      "el": "Τηλεσκόπιο",
+      "de": "Teleskop",
+      "ro": "Telescop"
+    },
+    "hint": {
+      "en": "Tool for looking far",
+      "bg": "Уред за гледане надалеч",
+      "es": "Instrumento para ver lejos",
+      "el": "Όργανο για να βλέπεις μακριά",
+      "de": "Gerät zum Weitsehen",
+      "ro": "Instrument pentru a privi departe"
+    }
+  },
+  {
+    "exact": {
+      "en": "Satellite",
+      "bg": "Спътник",
+      "es": "Satélite",
+      "el": "Δορυφόρος",
+      "de": "Satellit",
+      "ro": "Satelit"
+    },
+    "hint": {
+      "en": "Machine that orbits",
+      "bg": "Машина, която обикаля в орбита",
+      "es": "Máquina que orbita",
+      "el": "Μηχανή που περιφέρεται",
+      "de": "Maschine, die kreist",
+      "ro": "Mașinărie care orbitează"
+    }
+  },
+  {
+    "exact": {
+      "en": "Astronaut",
+      "bg": "Космонавт",
+      "es": "Astronauta",
+      "el": "Αστροναύτης",
+      "de": "Astronaut",
+      "ro": "Astronaut"
+    },
+    "hint": {
+      "en": "Person in space",
+      "bg": "Човек в космоса",
+      "es": "Persona en el espacio",
+      "el": "Άνθρωπος στο διάστημα",
+      "de": "Mensch im Weltall",
+      "ro": "Om în spațiu"
+    }
+  },
+  {
+    "exact": {
+      "en": "Alien",
+      "bg": "Извънземно",
+      "es": "Extraterrestre",
+      "el": "Εξωγήινος",
+      "de": "Außerirdischer",
+      "ro": "Extraterestru"
+    },
+    "hint": {
+      "en": "Creature from another world",
+      "bg": "Създание от друг свят",
+      "es": "Criatura de otro mundo",
+      "el": "Πλάσμα από άλλον κόσμο",
+      "de": "Wesen aus einer anderen Welt",
+      "ro": "Creatură din altă lume"
+    }
+  },
+  {
+    "exact": {
+      "en": "UFO",
+      "bg": "НЛО",
+      "es": "OVNI",
+      "el": "ΑΤΙΑ",
+      "de": "UFO",
+      "ro": "OZN"
+    },
+    "hint": {
+      "en": "Flying saucer",
+      "bg": "Летяща чиния",
+      "es": "Platillo volante",
+      "el": "Ιπτάμενος δίσκος",
+      "de": "Fliegende Untertasse",
+      "ro": "Farfurie zburătoare"
+    }
+  },
+  {
+    "exact": {
+      "en": "Meteor",
+      "bg": "Метеор",
+      "es": "Meteoro",
+      "el": "Μετεωρίτης",
+      "de": "Meteor",
+      "ro": "Meteor"
+    },
+    "hint": {
+      "en": "Rock falling from the sky",
+      "bg": "Камък, падащ от небето",
+      "es": "Roca que cae del cielo",
+      "el": "Πέτρα που πέφτει από τον ουρανό",
+      "de": "Stein, der vom Himmel fällt",
+      "ro": "Rocă ce cade din cer"
+    }
+  },
+  {
+    "exact": {
+      "en": "Eclipse",
+      "bg": "Затъмнение",
+      "es": "Eclipse",
+      "el": "Έκλειψη",
+      "de": "Finsternis",
+      "ro": "Eclipsă"
+    },
+    "hint": {
+      "en": "When one light hides another",
+      "bg": "Когато една светлина скрива друга",
+      "es": "Cuando una luz tapa a otra",
+      "el": "Όταν ένα φως κρύβει ένα άλλο",
+      "de": "Wenn ein Licht ein anderes verdeckt",
+      "ro": "Când o lumină o ascunde pe alta"
+    }
+  },
+  {
+    "exact": {
+      "en": "Iceberg",
+      "bg": "Айсберг",
+      "es": "Iceberg",
+      "el": "Παγόβουνο",
+      "de": "Eisberg",
+      "ro": "Aisberg"
+    },
+    "hint": {
+      "en": "Floating mountain of ice",
+      "bg": "Плаваща планина от лед",
+      "es": "Montaña de hielo que flota",
+      "el": "Πλωτό βουνό από πάγο",
+      "de": "Schwimmender Eisberg",
+      "ro": "Munte de gheață plutitor"
+    }
+  },
+  {
+    "exact": {
+      "en": "Sand dune",
+      "bg": "Пясъчна дюна",
+      "es": "Duna de arena",
+      "el": "Αμμόλοφος",
+      "de": "Sanddüne",
+      "ro": "Dună de nisip"
+    },
+    "hint": {
+      "en": "Hill of sand",
+      "bg": "Хълм от пясък",
+      "es": "Colina de arena",
+      "el": "Λόφος από άμμο",
+      "de": "Hügel aus Sand",
+      "ro": "Deal de nisip"
+    }
+  },
+  {
+    "exact": {
+      "en": "Campfire",
+      "bg": "Лагерен огън",
+      "es": "Fogata",
+      "el": "Φωτιά κατασκήνωσης",
+      "de": "Lagerfeuer",
+      "ro": "Foc de tabără"
+    },
+    "hint": {
+      "en": "Fire outdoors",
+      "bg": "Огън на открито",
+      "es": "Fuego al aire libre",
+      "el": "Φωτιά στο ύπαιθρο",
+      "de": "Feuer im Freien",
+      "ro": "Foc în aer liber"
+    }
+  },
+  {
+    "exact": {
+      "en": "Beehive",
+      "bg": "Кошер",
+      "es": "Colmena",
+      "el": "Κυψέλη",
+      "de": "Bienenstock",
+      "ro": "Stup"
+    },
+    "hint": {
+      "en": "Home of insects",
+      "bg": "Дом на насекоми",
+      "es": "Hogar de insectos",
+      "el": "Σπίτι εντόμων",
+      "de": "Zuhause von Insekten",
+      "ro": "Casa insectelor"
+    }
+  },
+  {
+    "exact": {
+      "en": "Nest",
+      "bg": "Гнездо",
+      "es": "Nido",
+      "el": "Φωλιά",
+      "de": "Nest",
+      "ro": "Cuib"
+    },
+    "hint": {
+      "en": "Home of a bird",
+      "bg": "Дом на птица",
+      "es": "Hogar de un ave",
+      "el": "Σπίτι πουλιού",
+      "de": "Zuhause eines Vogels",
+      "ro": "Casa unei păsări"
+    }
+  },
+  {
+    "exact": {
+      "en": "Spider web",
+      "bg": "Паяжина",
+      "es": "Telaraña",
+      "el": "Ιστός αράχνης",
+      "de": "Spinnennetz",
+      "ro": "Pânză de păianjen"
+    },
+    "hint": {
+      "en": "Sticky net",
+      "bg": "Лепкава мрежа",
+      "es": "Red pegajosa",
+      "el": "Κολλώδες δίχτυ",
+      "de": "Klebriges Netz",
+      "ro": "Plasă lipicioasă"
+    }
+  },
+  {
+    "exact": {
+      "en": "Footprint",
+      "bg": "Отпечатък от стъпка",
+      "es": "Huella",
+      "el": "Πατημασιά",
+      "de": "Fußabdruck",
+      "ro": "Urmă de pas"
+    },
+    "hint": {
+      "en": "Mark left by a foot",
+      "bg": "Следа, оставена от крак",
+      "es": "Marca dejada por un pie",
+      "el": "Σημάδι από πόδι",
+      "de": "Spur, die ein Fuß hinterlässt",
+      "ro": "Semn lăsat de un picior"
+    }
+  },
+  {
+    "exact": {
+      "en": "Fossil",
+      "bg": "Вкаменелост",
+      "es": "Fósil",
+      "el": "Απολίθωμα",
+      "de": "Fossil",
+      "ro": "Fosilă"
+    },
+    "hint": {
+      "en": "Ancient print in stone",
+      "bg": "Древен отпечатък в камък",
+      "es": "Huella antigua en la piedra",
+      "el": "Αρχαίο αποτύπωμα σε πέτρα",
+      "de": "Uralter Abdruck im Stein",
+      "ro": "Amprentă veche în piatră"
+    }
+  },
+  {
+    "exact": {
+      "en": "Sunrise",
+      "bg": "Изгрев",
+      "es": "Amanecer",
+      "el": "Ανατολή",
+      "de": "Sonnenaufgang",
+      "ro": "Răsărit"
+    },
+    "hint": {
+      "en": "Start of the day",
+      "bg": "Начало на деня",
+      "es": "Comienzo del día",
+      "el": "Αρχή της μέρας",
+      "de": "Beginn des Tages",
+      "ro": "Începutul zilei"
+    }
+  },
+  {
+    "exact": {
+      "en": "Tornado",
+      "bg": "Торнадо",
+      "es": "Tornado",
+      "el": "Ανεμοστρόβιλος",
+      "de": "Tornado",
+      "ro": "Tornadă"
+    },
+    "hint": {
+      "en": "Spinning wind",
+      "bg": "Въртящ се вятър",
+      "es": "Viento que gira",
+      "el": "Άνεμος που στροβιλίζεται",
+      "de": "Sich drehender Wind",
+      "ro": "Vânt care se rotește"
+    }
+  },
+  {
+    "exact": {
+      "en": "Whirlpool",
+      "bg": "Водовъртеж",
+      "es": "Remolino",
+      "el": "Δίνη",
+      "de": "Strudel",
+      "ro": "Vârtej de apă"
+    },
+    "hint": {
+      "en": "Spinning water",
+      "bg": "Въртяща се вода",
+      "es": "Agua que gira",
+      "el": "Νερό που στροβιλίζεται",
+      "de": "Sich drehendes Wasser",
+      "ro": "Apă care se învârte"
+    }
+  },
+  {
+    "exact": {
+      "en": "Crystal",
+      "bg": "Кристал",
+      "es": "Cristal",
+      "el": "Κρύσταλλο",
+      "de": "Kristall",
+      "ro": "Cristal"
+    },
+    "hint": {
+      "en": "Clear shiny stone",
+      "bg": "Прозрачен блестящ камък",
+      "es": "Piedra transparente y brillante",
+      "el": "Διάφανη γυαλιστερή πέτρα",
+      "de": "Klarer glänzender Stein",
+      "ro": "Piatră transparentă și strălucitoare"
+    }
+  },
+  {
+    "exact": {
+      "en": "Puddle",
+      "bg": "Локва",
+      "es": "Charco",
+      "el": "Λακκούβα με νερό",
+      "de": "Pfütze",
+      "ro": "Baltă"
+    },
+    "hint": {
+      "en": "Small pool of rain",
+      "bg": "Малка локва от дъжд",
+      "es": "Pequeña charca de lluvia",
+      "el": "Μικρή λιμνούλα από βροχή",
+      "de": "Kleine Regenlache",
+      "ro": "Băltoacă mică de ploaie"
+    }
+  },
+  {
+    "exact": {
+      "en": "Heart",
+      "bg": "Сърце",
+      "es": "Corazón",
+      "el": "Καρδιά",
+      "de": "Herz",
+      "ro": "Inimă"
+    },
+    "hint": {
+      "en": "Symbol of love",
+      "bg": "Символ на любовта",
+      "es": "Símbolo del amor",
+      "el": "Σύμβολο της αγάπης",
+      "de": "Symbol der Liebe",
+      "ro": "Simbol al iubirii"
+    }
+  },
+  {
+    "exact": {
+      "en": "Smiley face",
+      "bg": "Усмихнато лице",
+      "es": "Cara sonriente",
+      "el": "Χαμογελαστό πρόσωπο",
+      "de": "Smiley-Gesicht",
+      "ro": "Față zâmbitoare"
+    },
+    "hint": {
+      "en": "Happy symbol",
+      "bg": "Радостен символ",
+      "es": "Símbolo alegre",
+      "el": "Χαρούμενο σύμβολο",
+      "de": "Fröhliches Symbol",
+      "ro": "Simbol vesel"
+    }
+  },
+  {
+    "exact": {
+      "en": "Skull",
+      "bg": "Череп",
+      "es": "Calavera",
+      "el": "Κρανίο",
+      "de": "Totenkopf",
+      "ro": "Craniu"
+    },
+    "hint": {
+      "en": "Symbol of danger",
+      "bg": "Символ на опасност",
+      "es": "Símbolo de peligro",
+      "el": "Σύμβολο κινδύνου",
+      "de": "Symbol der Gefahr",
+      "ro": "Simbol al pericolului"
+    }
+  },
+  {
+    "exact": {
+      "en": "Ghost",
+      "bg": "Призрак",
+      "es": "Fantasma",
+      "el": "Φάντασμα",
+      "de": "Gespenst",
+      "ro": "Fantomă"
+    },
+    "hint": {
+      "en": "Spooky spirit",
+      "bg": "Страховит дух",
+      "es": "Espíritu que asusta",
+      "el": "Τρομακτικό πνεύμα",
+      "de": "Gruseliger Geist",
+      "ro": "Spirit înfricoșător"
+    }
+  },
+  {
+    "exact": {
+      "en": "Robot",
+      "bg": "Робот",
+      "es": "Robot",
+      "el": "Ρομπότ",
+      "de": "Roboter",
+      "ro": "Robot"
+    },
+    "hint": {
+      "en": "Machine that looks human",
+      "bg": "Машина, която прилича на човек",
+      "es": "Máquina con forma de persona",
+      "el": "Μηχανή που μοιάζει με άνθρωπο",
+      "de": "Maschine, die wie ein Mensch aussieht",
+      "ro": "Mașinărie care seamănă cu un om"
+    }
+  },
+  {
+    "exact": {
+      "en": "Monster",
+      "bg": "Чудовище",
+      "es": "Monstruo",
+      "el": "Τέρας",
+      "de": "Monster",
+      "ro": "Monstru"
+    },
+    "hint": {
+      "en": "Scary creature",
+      "bg": "Страшно създание",
+      "es": "Criatura que da miedo",
+      "el": "Τρομακτικό πλάσμα",
+      "de": "Furchterregendes Wesen",
+      "ro": "Creatură înfricoșătoare"
+    }
+  },
+  {
+    "exact": {
+      "en": "Dragon",
+      "bg": "Дракон",
+      "es": "Dragón",
+      "el": "Δράκος",
+      "de": "Drache",
+      "ro": "Dragon"
+    },
+    "hint": {
+      "en": "Creature that breathes fire",
+      "bg": "Създание, което бълва огън",
+      "es": "Criatura que echa fuego",
+      "el": "Πλάσμα που βγάζει φωτιά",
+      "de": "Wesen, das Feuer speit",
+      "ro": "Creatură care scuipă foc"
+    }
+  },
+  {
+    "exact": {
+      "en": "Unicorn",
+      "bg": "Еднорог",
+      "es": "Unicornio",
+      "el": "Μονόκερος",
+      "de": "Einhorn",
+      "ro": "Unicorn"
+    },
+    "hint": {
+      "en": "Horse with a horn",
+      "bg": "Кон с рог",
+      "es": "Caballo con un cuerno",
+      "el": "Άλογο με κέρατο",
+      "de": "Pferd mit einem Horn",
+      "ro": "Cal cu un corn"
+    }
+  },
+  {
+    "exact": {
+      "en": "Mermaid",
+      "bg": "Русалка",
+      "es": "Sirena",
+      "el": "Γοργόνα",
+      "de": "Meerjungfrau",
+      "ro": "Sirenă"
+    },
+    "hint": {
+      "en": "Half person, half fish",
+      "bg": "Наполовина човек, наполовина риба",
+      "es": "Mitad persona, mitad pez",
+      "el": "Μισή άνθρωπος, μισή ψάρι",
+      "de": "Halb Mensch, halb Fisch",
+      "ro": "Jumătate om, jumătate pește"
+    }
+  },
+  {
+    "exact": {
+      "en": "Wizard",
+      "bg": "Магьосник",
+      "es": "Mago",
+      "el": "Μάγος",
+      "de": "Zauberer",
+      "ro": "Vrăjitor"
+    },
+    "hint": {
+      "en": "Person who does magic",
+      "bg": "Човек, който прави магии",
+      "es": "Persona que hace magia",
+      "el": "Άνθρωπος που κάνει μαγικά",
+      "de": "Mensch, der zaubert",
+      "ro": "Persoană care face magie"
+    }
+  },
+  {
+    "exact": {
+      "en": "Witch hat",
+      "bg": "Вещерска шапка",
+      "es": "Sombrero de bruja",
+      "el": "Καπέλο μάγισσας",
+      "de": "Hexenhut",
+      "ro": "Pălărie de vrăjitoare"
+    },
+    "hint": {
+      "en": "Pointed hat",
+      "bg": "Островърха шапка",
+      "es": "Sombrero puntiagudo",
+      "el": "Μυτερό καπέλο",
+      "de": "Spitzer Hut",
+      "ro": "Pălărie ascuțită"
+    }
+  },
+  {
+    "exact": {
+      "en": "Pirate flag",
+      "bg": "Пиратско знаме",
+      "es": "Bandera pirata",
+      "el": "Πειρατική σημαία",
+      "de": "Piratenflagge",
+      "ro": "Steag de pirat"
+    },
+    "hint": {
+      "en": "Flag with a skull",
+      "bg": "Знаме с череп",
+      "es": "Bandera con una calavera",
+      "el": "Σημαία με κρανίο",
+      "de": "Flagge mit einem Totenkopf",
+      "ro": "Steag cu un craniu"
+    }
+  },
+  {
+    "exact": {
+      "en": "Treasure chest",
+      "bg": "Сандък със съкровище",
+      "es": "Cofre del tesoro",
+      "el": "Σεντούκι θησαυρού",
+      "de": "Schatztruhe",
+      "ro": "Cufăr cu comori"
+    },
+    "hint": {
+      "en": "Box full of gold",
+      "bg": "Кутия, пълна със злато",
+      "es": "Caja llena de oro",
+      "el": "Κουτί γεμάτο χρυσό",
+      "de": "Kiste voller Gold",
+      "ro": "Cutie plină cu aur"
+    }
+  },
+  {
+    "exact": {
+      "en": "Magic wand",
+      "bg": "Вълшебна пръчка",
+      "es": "Varita mágica",
+      "el": "Μαγικό ραβδί",
+      "de": "Zauberstab",
+      "ro": "Baghetă magică"
+    },
+    "hint": {
+      "en": "Stick used for spells",
+      "bg": "Пръчка за заклинания",
+      "es": "Palo para hacer hechizos",
+      "el": "Ραβδί για ξόρκια",
+      "de": "Stab für Zaubersprüche",
+      "ro": "Băț pentru vrăji"
+    }
+  },
+  {
+    "exact": {
+      "en": "Sword",
+      "bg": "Меч",
+      "es": "Espada",
+      "el": "Σπαθί",
+      "de": "Schwert",
+      "ro": "Sabie"
+    },
+    "hint": {
+      "en": "Long sharp weapon",
+      "bg": "Дълго остро оръжие",
+      "es": "Arma larga y afilada",
+      "el": "Μακρύ κοφτερό όπλο",
+      "de": "Lange scharfe Waffe",
+      "ro": "Armă lungă și ascuțită"
+    }
+  },
+  {
+    "exact": {
+      "en": "Shield",
+      "bg": "Щит",
+      "es": "Escudo",
+      "el": "Ασπίδα",
+      "de": "Schild",
+      "ro": "Scut"
+    },
+    "hint": {
+      "en": "Thing that protects you",
+      "bg": "Нещо, което те пази",
+      "es": "Cosa que te protege",
+      "el": "Κάτι που σε προστατεύει",
+      "de": "Ding, das dich schützt",
+      "ro": "Lucru care te apără"
+    }
+  },
+  {
+    "exact": {
+      "en": "Bow and arrow",
+      "bg": "Лък и стрела",
+      "es": "Arco y flecha",
+      "el": "Τόξο και βέλος",
+      "de": "Pfeil und Bogen",
+      "ro": "Arc și săgeată"
+    },
+    "hint": {
+      "en": "Weapon you pull",
+      "bg": "Оръжие, което се опъва",
+      "es": "Arma que se tensa",
+      "el": "Όπλο που το τραβάς",
+      "de": "Waffe, die man spannt",
+      "ro": "Armă pe care o întinzi"
+    }
+  },
+  {
+    "exact": {
+      "en": "Axe",
+      "bg": "Брадва",
+      "es": "Hacha",
+      "el": "Τσεκούρι",
+      "de": "Axt",
+      "ro": "Topor"
+    },
+    "hint": {
+      "en": "Tool for chopping",
+      "bg": "Инструмент за цепене",
+      "es": "Herramienta para cortar leña",
+      "el": "Εργαλείο για κόψιμο ξύλων",
+      "de": "Werkzeug zum Hacken",
+      "ro": "Unealtă pentru tăiat lemne"
+    }
+  },
+  {
+    "exact": {
+      "en": "Trumpet",
+      "bg": "Тромпет",
+      "es": "Trompeta",
+      "el": "Τρομπέτα",
+      "de": "Trompete",
+      "ro": "Trompetă"
+    },
+    "hint": {
+      "en": "Instrument you blow",
+      "bg": "Инструмент, в който се духа",
+      "es": "Instrumento que se sopla",
+      "el": "Όργανο που φυσάς",
+      "de": "Instrument, in das man bläst",
+      "ro": "Instrument în care sufli"
+    }
+  },
+  {
+    "exact": {
+      "en": "Drum",
+      "bg": "Барабан",
+      "es": "Tambor",
+      "el": "Τύμπανο",
+      "de": "Trommel",
+      "ro": "Tobă"
+    },
+    "hint": {
+      "en": "Instrument you hit",
+      "bg": "Инструмент, по който се удря",
+      "es": "Instrumento que se golpea",
+      "el": "Όργανο που χτυπάς",
+      "de": "Instrument, das man schlägt",
+      "ro": "Instrument pe care îl lovești"
+    }
+  },
+  {
+    "exact": {
+      "en": "Piano",
+      "bg": "Пиано",
+      "es": "Piano",
+      "el": "Πιάνο",
+      "de": "Klavier",
+      "ro": "Pian"
+    },
+    "hint": {
+      "en": "Instrument with keys",
+      "bg": "Инструмент с клавиши",
+      "es": "Instrumento con teclas",
+      "el": "Όργανο με πλήκτρα",
+      "de": "Instrument mit Tasten",
+      "ro": "Instrument cu clape"
+    }
+  },
+  {
+    "exact": {
+      "en": "Violin",
+      "bg": "Цигулка",
+      "es": "Violín",
+      "el": "Βιολί",
+      "de": "Geige",
+      "ro": "Vioară"
+    },
+    "hint": {
+      "en": "Instrument with strings",
+      "bg": "Инструмент със струни",
+      "es": "Instrumento con cuerdas",
+      "el": "Όργανο με χορδές",
+      "de": "Instrument mit Saiten",
+      "ro": "Instrument cu corzi"
+    }
+  },
+  {
+    "exact": {
+      "en": "Saxophone",
+      "bg": "Саксофон",
+      "es": "Saxofón",
+      "el": "Σαξόφωνο",
+      "de": "Saxofon",
+      "ro": "Saxofon"
+    },
+    "hint": {
+      "en": "Curved brass instrument",
+      "bg": "Извит меден инструмент",
+      "es": "Instrumento de metal curvado",
+      "el": "Καμπυλωτό χάλκινο όργανο",
+      "de": "Gebogenes Blasinstrument",
+      "ro": "Instrument de alamă curbat"
+    }
+  },
+  {
+    "exact": {
+      "en": "Flute",
+      "bg": "Флейта",
+      "es": "Flauta",
+      "el": "Φλάουτο",
+      "de": "Flöte",
+      "ro": "Flaut"
+    },
+    "hint": {
+      "en": "Thin instrument you blow",
+      "bg": "Тънък инструмент за духане",
+      "es": "Instrumento fino que se sopla",
+      "el": "Λεπτό όργανο που φυσάς",
+      "de": "Dünnes Blasinstrument",
+      "ro": "Instrument subțire în care sufli"
+    }
+  },
+  {
+    "exact": {
+      "en": "Harp",
+      "bg": "Арфа",
+      "es": "Arpa",
+      "el": "Άρπα",
+      "de": "Harfe",
+      "ro": "Harpă"
+    },
+    "hint": {
+      "en": "Big instrument with many strings",
+      "bg": "Голям инструмент с много струни",
+      "es": "Instrumento grande con muchas cuerdas",
+      "el": "Μεγάλο όργανο με πολλές χορδές",
+      "de": "Großes Instrument mit vielen Saiten",
+      "ro": "Instrument mare cu multe corzi"
+    }
+  },
+  {
+    "exact": {
+      "en": "Microphone",
+      "bg": "Микрофон",
+      "es": "Micrófono",
+      "el": "Μικρόφωνο",
+      "de": "Mikrofon",
+      "ro": "Microfon"
+    },
+    "hint": {
+      "en": "Thing you sing into",
+      "bg": "Нещо, в което се пее",
+      "es": "Cosa en la que se canta",
+      "el": "Κάτι μέσα στο οποίο τραγουδάς",
+      "de": "Ding, in das man singt",
+      "ro": "Lucru în care cânți"
+    }
+  },
+  {
+    "exact": {
+      "en": "Headphones",
+      "bg": "Слушалки",
+      "es": "Auriculares",
+      "el": "Ακουστικά",
+      "de": "Kopfhörer",
+      "ro": "Căști"
+    },
+    "hint": {
+      "en": "Thing worn on the ears",
+      "bg": "Нещо, което се носи на ушите",
+      "es": "Cosa que se lleva en las orejas",
+      "el": "Κάτι που φοριέται στα αυτιά",
+      "de": "Ding, das man auf den Ohren trägt",
+      "ro": "Lucru purtat pe urechi"
+    }
+  },
+  {
+    "exact": {
+      "en": "Music note",
+      "bg": "Музикална нота",
+      "es": "Nota musical",
+      "el": "Μουσική νότα",
+      "de": "Musiknote",
+      "ro": "Notă muzicală"
+    },
+    "hint": {
+      "en": "Symbol of a sound",
+      "bg": "Символ на звук",
+      "es": "Símbolo de un sonido",
+      "el": "Σύμβολο ενός ήχου",
+      "de": "Symbol eines Klangs",
+      "ro": "Simbol al unui sunet"
+    }
+  },
+  {
+    "exact": {
+      "en": "Television",
+      "bg": "Телевизор",
+      "es": "Televisión",
+      "el": "Τηλεόραση",
+      "de": "Fernseher",
+      "ro": "Televizor"
+    },
+    "hint": {
+      "en": "Box with moving pictures",
+      "bg": "Кутия с движещи се картини",
+      "es": "Caja con imágenes en movimiento",
+      "el": "Κουτί με κινούμενες εικόνες",
+      "de": "Kasten mit bewegten Bildern",
+      "ro": "Cutie cu imagini în mișcare"
+    }
+  },
+  {
+    "exact": {
+      "en": "Computer",
+      "bg": "Компютър",
+      "es": "Ordenador",
+      "el": "Υπολογιστής",
+      "de": "Computer",
+      "ro": "Calculator"
+    },
+    "hint": {
+      "en": "Machine with a screen",
+      "bg": "Машина с екран",
+      "es": "Máquina con pantalla",
+      "el": "Μηχάνημα με οθόνη",
+      "de": "Maschine mit Bildschirm",
+      "ro": "Mașinărie cu ecran"
+    }
+  },
+  {
+    "exact": {
+      "en": "Phone",
+      "bg": "Телефон",
+      "es": "Teléfono",
+      "el": "Τηλέφωνο",
+      "de": "Telefon",
+      "ro": "Telefon"
+    },
+    "hint": {
+      "en": "Thing you call with",
+      "bg": "Нещо, с което се обаждаш",
+      "es": "Cosa con la que llamas",
+      "el": "Κάτι με το οποίο τηλεφωνείς",
+      "de": "Ding, mit dem man anruft",
+      "ro": "Lucru cu care suni"
+    }
+  },
+  {
+    "exact": {
+      "en": "Camera",
+      "bg": "Фотоапарат",
+      "es": "Cámara",
+      "el": "Φωτογραφική μηχανή",
+      "de": "Kamera",
+      "ro": "Aparat foto"
+    },
+    "hint": {
+      "en": "Thing that takes pictures",
+      "bg": "Нещо, което прави снимки",
+      "es": "Cosa que hace fotos",
+      "el": "Κάτι που βγάζει φωτογραφίες",
+      "de": "Ding, das Fotos macht",
+      "ro": "Lucru care face poze"
+    }
+  },
+  {
+    "exact": {
+      "en": "Light bulb",
+      "bg": "Крушка",
+      "es": "Bombilla",
+      "el": "Λάμπα φωτισμού",
+      "de": "Glühbirne",
+      "ro": "Bec"
+    },
+    "hint": {
+      "en": "Glass thing that glows",
+      "bg": "Стъклено нещо, което свети",
+      "es": "Cosa de vidrio que brilla",
+      "el": "Γυάλινο πράγμα που φωτίζει",
+      "de": "Glasding, das leuchtet",
+      "ro": "Lucru din sticlă care luminează"
+    }
+  },
+  {
+    "exact": {
+      "en": "Battery",
+      "bg": "Батерия",
+      "es": "Pila",
+      "el": "Μπαταρία",
+      "de": "Batterie",
+      "ro": "Baterie"
+    },
+    "hint": {
+      "en": "Thing that stores power",
+      "bg": "Нещо, което пази ток",
+      "es": "Cosa que guarda energía",
+      "el": "Κάτι που αποθηκεύει ενέργεια",
+      "de": "Ding, das Strom speichert",
+      "ro": "Lucru care stochează energie"
+    }
+  },
+  {
+    "exact": {
+      "en": "Magnet",
+      "bg": "Магнит",
+      "es": "Imán",
+      "el": "Μαγνήτης",
+      "de": "Magnet",
+      "ro": "Magnet"
+    },
+    "hint": {
+      "en": "Thing that pulls metal",
+      "bg": "Нещо, което привлича метал",
+      "es": "Cosa que atrae el metal",
+      "el": "Κάτι που τραβά το μέταλλο",
+      "de": "Ding, das Metall anzieht",
+      "ro": "Lucru care atrage metalul"
+    }
+  },
+  {
+    "exact": {
+      "en": "Compass",
+      "bg": "Компас",
+      "es": "Brújula",
+      "el": "Πυξίδα",
+      "de": "Kompass",
+      "ro": "Busolă"
+    },
+    "hint": {
+      "en": "Thing that shows direction",
+      "bg": "Нещо, което показва посоката",
+      "es": "Cosa que indica la dirección",
+      "el": "Κάτι που δείχνει την κατεύθυνση",
+      "de": "Ding, das die Richtung zeigt",
+      "ro": "Lucru care arată direcția"
+    }
+  },
+  {
+    "exact": {
+      "en": "Hourglass",
+      "bg": "Пясъчен часовник",
+      "es": "Reloj de arena",
+      "el": "Κλεψύδρα",
+      "de": "Sanduhr",
+      "ro": "Clepsidră"
+    },
+    "hint": {
+      "en": "Thing with falling sand",
+      "bg": "Нещо с падащ пясък",
+      "es": "Cosa con arena que cae",
+      "el": "Κάτι με άμμο που πέφτει",
+      "de": "Ding mit fallendem Sand",
+      "ro": "Lucru cu nisip care curge"
+    }
+  },
+  {
+    "exact": {
+      "en": "Balloon",
+      "bg": "Балон",
+      "es": "Globo",
+      "el": "Μπαλόνι",
+      "de": "Luftballon",
+      "ro": "Balon"
+    },
+    "hint": {
+      "en": "Thing filled with air",
+      "bg": "Нещо, пълно с въздух",
+      "es": "Cosa llena de aire",
+      "el": "Κάτι γεμάτο αέρα",
+      "de": "Ding voller Luft",
+      "ro": "Lucru plin cu aer"
+    }
+  },
+  {
+    "exact": {
+      "en": "Kite",
+      "bg": "Хвърчило",
+      "es": "Cometa de papel",
+      "el": "Χαρταετός",
+      "de": "Drachen",
+      "ro": "Zmeu"
+    },
+    "hint": {
+      "en": "Thing that flies on a string",
+      "bg": "Нещо, което лети на връв",
+      "es": "Cosa que vuela atada a un hilo",
+      "el": "Κάτι που πετά δεμένο με σπάγκο",
+      "de": "Ding, das an einer Schnur fliegt",
+      "ro": "Lucru care zboară legat cu o sfoară"
+    }
+  },
+  {
+    "exact": {
+      "en": "Gift box",
+      "bg": "Подаръчна кутия",
+      "es": "Caja de regalo",
+      "el": "Κουτί δώρου",
+      "de": "Geschenkkarton",
+      "ro": "Cutie de cadou"
+    },
+    "hint": {
+      "en": "Box with a ribbon",
+      "bg": "Кутия с панделка",
+      "es": "Caja con un lazo",
+      "el": "Κουτί με κορδέλα",
+      "de": "Kasten mit einer Schleife",
+      "ro": "Cutie cu o panglică"
+    }
+  },
+  {
+    "exact": {
+      "en": "Bell",
+      "bg": "Камбана",
+      "es": "Campana",
+      "el": "Καμπάνα",
+      "de": "Glocke",
+      "ro": "Clopot"
+    },
+    "hint": {
+      "en": "Thing that rings",
+      "bg": "Нещо, което звъни",
+      "es": "Cosa que suena",
+      "el": "Κάτι που χτυπά",
+      "de": "Ding, das läutet",
+      "ro": "Lucru care sună"
+    }
+  },
+  {
+    "exact": {
+      "en": "Trophy",
+      "bg": "Купа",
+      "es": "Trofeo",
+      "el": "Τρόπαιο",
+      "de": "Pokal",
+      "ro": "Trofeu"
+    },
+    "hint": {
+      "en": "Prize for winning",
+      "bg": "Награда за победа",
+      "es": "Premio por ganar",
+      "el": "Έπαθλο για τη νίκη",
+      "de": "Preis für den Sieg",
+      "ro": "Premiu pentru victorie"
+    }
+  },
+  {
+    "exact": {
+      "en": "Medal",
+      "bg": "Медал",
+      "es": "Medalla",
+      "el": "Μετάλλιο",
+      "de": "Medaille",
+      "ro": "Medalie"
+    },
+    "hint": {
+      "en": "Award on a ribbon",
+      "bg": "Отличие на лента",
+      "es": "Galardón con cinta",
+      "el": "Βραβείο σε κορδέλα",
+      "de": "Auszeichnung an einem Band",
+      "ro": "Distincție pe o panglică"
+    }
+  },
+  {
+    "exact": {
+      "en": "Dice",
+      "bg": "Зар",
+      "es": "Dado",
+      "el": "Ζάρι",
+      "de": "Würfel",
+      "ro": "Zar"
+    },
+    "hint": {
+      "en": "Cube with dots",
+      "bg": "Кубче с точки",
+      "es": "Cubo con puntos",
+      "el": "Κύβος με τελείες",
+      "de": "Würfel mit Punkten",
+      "ro": "Cub cu puncte"
+    }
+  },
+  {
+    "exact": {
+      "en": "Playing card",
+      "bg": "Карта за игра",
+      "es": "Carta de baraja",
+      "el": "Τραπουλόχαρτο",
+      "de": "Spielkarte",
+      "ro": "Carte de joc"
+    },
+    "hint": {
+      "en": "Card from a deck",
+      "bg": "Карта от тесте",
+      "es": "Carta de una baraja",
+      "el": "Χαρτί από τράπουλα",
+      "de": "Karte aus einem Deck",
+      "ro": "Carte dintr-un pachet"
+    }
+  },
+  {
+    "exact": {
+      "en": "Chess piece",
+      "bg": "Шахматна фигура",
+      "es": "Pieza de ajedrez",
+      "el": "Πιόνι σκακιού",
+      "de": "Schachfigur",
+      "ro": "Piesă de șah"
+    },
+    "hint": {
+      "en": "Figure on a board",
+      "bg": "Фигура върху дъска",
+      "es": "Figura sobre un tablero",
+      "el": "Φιγούρα πάνω σε ταμπλό",
+      "de": "Figur auf einem Brett",
+      "ro": "Figură pe o tablă"
+    }
+  },
+  {
+    "exact": {
+      "en": "Puzzle piece",
+      "bg": "Парче от пъзел",
+      "es": "Pieza de rompecabezas",
+      "el": "Κομμάτι παζλ",
+      "de": "Puzzleteil",
+      "ro": "Piesă de puzzle"
+    },
+    "hint": {
+      "en": "Part of a picture",
+      "bg": "Част от картина",
+      "es": "Parte de una imagen",
+      "el": "Μέρος μιας εικόνας",
+      "de": "Teil eines Bildes",
+      "ro": "Parte dintr-o imagine"
+    }
+  },
+  {
+    "exact": {
+      "en": "Fishing rod",
+      "bg": "Въдица",
+      "es": "Caña de pescar",
+      "el": "Καλάμι ψαρέματος",
+      "de": "Angelrute",
+      "ro": "Undiță"
+    },
+    "hint": {
+      "en": "Stick with a line",
+      "bg": "Пръчка с влакно",
+      "es": "Palo con un hilo",
+      "el": "Ραβδί με πετονιά",
+      "de": "Stock mit einer Schnur",
+      "ro": "Băț cu o ață"
+    }
+  }
+]
