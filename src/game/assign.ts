@@ -66,8 +66,9 @@ const TIMER_MAX_MS = 10_000;
 
 export function buildTimerRound(players: Player[]): TimerRound {
   const { order, impostorId } = baseRound(players);
-  // Half-second granularity keeps the spoken target natural ("6.5 seconds").
-  const targetMs = randomInt(TIMER_MIN_MS / 500, TIMER_MAX_MS / 500) * 500;
+  // Quarter-second steps give the target some texture (6.25s, 6.75s) instead
+  // of landing on a whole or half second every time.
+  const targetMs = randomInt(TIMER_MIN_MS / 250, TIMER_MAX_MS / 250) * 250;
   // The impostor gets a deliberately loose window that always contains the target.
   const rangeMinMs = Math.max(1000, Math.floor((targetMs * 0.6) / 1000) * 1000);
   const rangeMaxMs = Math.ceil((targetMs * 1.4) / 1000) * 1000;
