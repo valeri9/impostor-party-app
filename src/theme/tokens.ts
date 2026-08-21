@@ -87,13 +87,19 @@ export const PIXEL_FONT = Platform.select({
   default: 'Menlo, Consolas, "Courier New", monospace',
 }) as string;
 
+/**
+ * None of these set a lineHeight tighter than its fontSize needs — without
+ * one, Android in particular boxes each line to the font's raw ascent, which
+ * clips descenders (the tail of a "y", the bottom of a "p") right off, worst
+ * of all on numberOfLines={1} + adjustsFontSizeToFit text like the title.
+ */
 export const type = {
-  hero: { fontFamily: PIXEL_FONT, fontSize: 32, fontWeight: '700', letterSpacing: 1.5 },
-  title: { fontFamily: PIXEL_FONT, fontSize: 23, fontWeight: '700', letterSpacing: 1.2 },
-  heading: { fontFamily: PIXEL_FONT, fontSize: 18, fontWeight: '700', letterSpacing: 0.8 },
-  body: { fontFamily: PIXEL_FONT, fontSize: 15, fontWeight: '600', letterSpacing: 0.4 },
-  label: { fontFamily: PIXEL_FONT, fontSize: 14, fontWeight: '700', letterSpacing: 0.8 },
-  caption: { fontFamily: PIXEL_FONT, fontSize: 12, fontWeight: '700', letterSpacing: 1 },
+  hero: { fontFamily: PIXEL_FONT, fontSize: 32, lineHeight: 40, fontWeight: '700', letterSpacing: 1.5 },
+  title: { fontFamily: PIXEL_FONT, fontSize: 23, lineHeight: 29, fontWeight: '700', letterSpacing: 1.2 },
+  heading: { fontFamily: PIXEL_FONT, fontSize: 18, lineHeight: 23, fontWeight: '700', letterSpacing: 0.8 },
+  body: { fontFamily: PIXEL_FONT, fontSize: 15, lineHeight: 19, fontWeight: '600', letterSpacing: 0.4 },
+  label: { fontFamily: PIXEL_FONT, fontSize: 14, lineHeight: 18, fontWeight: '700', letterSpacing: 0.8 },
+  caption: { fontFamily: PIXEL_FONT, fontSize: 12, lineHeight: 16, fontWeight: '700', letterSpacing: 1 },
 } as const;
 
 /** Minimum touch target per Material / HIG guidance. */
