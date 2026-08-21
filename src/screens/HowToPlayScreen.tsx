@@ -36,12 +36,12 @@ export function HowToPlayScreen({ onDismiss }: { onDismiss: () => void }) {
 
       <SectionLabel label={t('howto.modesTitle')} />
       {GAME_MODES.map((m) => (
-        <View key={m} style={styles.modeRow}>
-          <Text style={styles.modeGlyph}>{MODE_GLYPH[m]}</Text>
-          <View style={styles.modeText}>
+        <View key={m} style={styles.modeCard}>
+          <View style={styles.modeHeader}>
+            <Text style={styles.modeGlyph}>{MODE_GLYPH[m]}</Text>
             <Text style={styles.modeName}>{t(`mode.${m}.name`)}</Text>
-            <Text style={styles.modeDesc}>{t(`mode.${m}.desc`)}</Text>
           </View>
+          <Text style={styles.modeRules}>{t(`mode.${m}.rules`)}</Text>
         </View>
       ))}
 
@@ -78,20 +78,17 @@ function createStyles(colors: ReturnType<typeof useSkinTokens>['colors']) {
     },
     lockBadge: { backgroundColor: colors.ink, padding: spacing.sm },
     holdBody: { ...type.body, color: colors.ink, flex: 1 },
-    modeRow: {
-      flexDirection: 'row',
-      alignItems: 'center',
-      gap: spacing.sm,
+    modeCard: {
       padding: spacing.md,
       backgroundColor: colors.surface,
       borderWidth: stroke.hair,
       borderColor: colors.ink,
       marginBottom: spacing.sm,
     },
+    modeHeader: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm, marginBottom: spacing.sm },
     modeGlyph: { ...type.heading, color: colors.ink },
-    modeText: { flex: 1 },
-    modeName: { ...type.label, color: colors.ink, textTransform: 'uppercase' },
-    modeDesc: { ...type.caption, color: colors.inkSoft, marginTop: 3, letterSpacing: 0 },
+    modeName: { ...type.label, color: colors.ink, textTransform: 'uppercase', flex: 1 },
+    modeRules: { ...type.body, color: colors.ink },
     doneButton: { marginTop: spacing.lg },
   });
 }
