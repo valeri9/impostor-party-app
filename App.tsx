@@ -6,17 +6,20 @@ import { View, StyleSheet } from 'react-native';
 import { GameProvider } from './src/game/GameContext';
 import { I18nProvider, useI18n } from './src/i18n';
 import { GameRoot } from './src/screens/GameRoot';
+import { SkinProvider } from './src/theme/SkinContext';
 import { SHELL } from './src/theme/tokens';
 
 export default function App() {
   return (
     <SafeAreaProvider>
       <StatusBar style="dark" />
-      <I18nProvider>
-        <GameProvider>
-          <LocaleGate />
-        </GameProvider>
-      </I18nProvider>
+      <SkinProvider>
+        <I18nProvider>
+          <GameProvider>
+            <LocaleGate />
+          </GameProvider>
+        </I18nProvider>
+      </SkinProvider>
     </SafeAreaProvider>
   );
 }

@@ -110,7 +110,8 @@
       "howto.holdBody": "When it is your turn, hold your thumb on the screen to see your secret. Let go and it vanishes — check no one else can see first.",
       "howto.modesTitle": "Pick a Mode",
       "howto.done": "Got it, let's play!",
-      "howto.open": "How to Play"
+      "howto.open": "How to Play",
+      "skin.dmgClassic.name": "Dot Matrix"
     },
     "bg": {
       "app.title": "Impostor Party",
@@ -222,7 +223,8 @@
       "howto.holdBody": "Когато е твой ред, задръж пръст на екрана, за да видиш тайната си. Пусни и тя изчезва — увери се, че никой друг не гледа.",
       "howto.modesTitle": "Избери режим",
       "howto.done": "Разбрах, да играем!",
-      "howto.open": "Как се играе"
+      "howto.open": "Как се играе",
+      "skin.dmgClassic.name": "Точкова матрица"
     },
     "es": {
       "app.title": "Impostor Party",
@@ -334,7 +336,8 @@
       "howto.holdBody": "Cuando sea tu turno, mantén el pulgar en la pantalla para ver tu secreto. Suéltalo y desaparece al instante — asegúrate antes de que nadie más pueda verlo.",
       "howto.modesTitle": "Elige un Modo",
       "howto.done": "¡Entendido, a jugar!",
-      "howto.open": "Cómo Jugar"
+      "howto.open": "Cómo Jugar",
+      "skin.dmgClassic.name": "Matriz de puntos"
     },
     "el": {
       "app.title": "Impostor Party",
@@ -446,7 +449,8 @@
       "howto.holdBody": "Όταν είναι η σειρά σου, κράτα το δάχτυλό σου στην οθόνη για να δεις το μυστικό σου. Άσε το και εξαφανίζεται αμέσως — βεβαιώσου πρώτα ότι κανείς άλλος δεν βλέπει.",
       "howto.modesTitle": "Επίλεξε Λειτουργία",
       "howto.done": "Κατάλαβα, ας παίξουμε!",
-      "howto.open": "Πώς Παίζεται"
+      "howto.open": "Πώς Παίζεται",
+      "skin.dmgClassic.name": "Μήτρα κουκκίδων"
     },
     "de": {
       "app.title": "Impostor Party",
@@ -558,7 +562,8 @@
       "howto.holdBody": "Wenn du dran bist, halte deinen Daumen auf den Bildschirm, um dein Geheimnis zu sehen. Loslassen lässt es sofort verschwinden — stell vorher sicher, dass niemand sonst mitliest.",
       "howto.modesTitle": "Modus Wählen",
       "howto.done": "Verstanden, los geht's!",
-      "howto.open": "Spielanleitung"
+      "howto.open": "Spielanleitung",
+      "skin.dmgClassic.name": "Punktmatrix"
     },
     "ro": {
       "app.title": "Impostor Party",
@@ -670,7 +675,8 @@
       "howto.holdBody": "Când e rândul tău, ține degetul pe ecran ca să-ți vezi secretul. Eliberează și dispare instant — asigură-te întâi că nu te vede nimeni altcineva.",
       "howto.modesTitle": "Alege un Mod",
       "howto.done": "Am înțeles, să jucăm!",
-      "howto.open": "Cum se Joacă"
+      "howto.open": "Cum se Joacă",
+      "skin.dmgClassic.name": "Matrice de puncte"
     }
   }
 }
