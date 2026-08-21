@@ -47,5 +47,8 @@ jest.mock('react-native-safe-area-context', () => {
 beforeEach(() => {
   const storage = require('@react-native-async-storage/async-storage');
   const mock = storage.default ?? storage;
-  mock.__INTERNAL_MOCK_STORAGE__ = {};
+  const { HOWTO_SEEN_KEY } = require('./src/native/storageKeys');
+  // Tests exercise gameplay, not first-launch onboarding, so the how-to-play
+  // screen starts pre-dismissed. The onboarding suite clears this key itself.
+  mock.__INTERNAL_MOCK_STORAGE__ = { [HOWTO_SEEN_KEY]: '1' };
 });

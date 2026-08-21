@@ -14,7 +14,7 @@ import { haptics } from '../native/haptics';
 import { playSound } from '../native/sound';
 import { colors, MODE_GLYPH, spacing, stroke, type } from '../theme/tokens';
 
-export function SetupScreen() {
+export function SetupScreen({ onHowToPlay }: { onHowToPlay: () => void }) {
   const { t, locale, setLocale } = useI18n();
   const { state, dispatch, startGame } = useGame();
   const { players, mode, mafiaConfig } = state;
@@ -41,6 +41,7 @@ export function SetupScreen() {
         <Text style={styles.title} adjustsFontSizeToFit numberOfLines={1}>
           {t('app.title')}
         </Text>
+        <HowToPlayButton onPress={onHowToPlay} />
       </View>
       <Text style={styles.tagline}>{t('app.tagline')}</Text>
 
@@ -128,6 +129,31 @@ export function SetupScreen() {
       />
       {!allNamed ? <Text style={styles.warning}>{t('setup.nameRequired')}</Text> : null}
     </Screen>
+  );
+}
+
+/** The corner badge on the boot screen — reopens onboarding any time. */
+function HowToPlayButton({ onPress }: { onPress: () => void }) {
+  const { t } = useI18n();
+  const { scale, onPressIn, onPressOut } = usePressScale(0.85);
+  return (
+    <Animated.View style={[styles.howToPlayWrap, { transform: [{ scale }] }]}>
+      <Pressable
+        testID="how-to-play"
+        accessibilityRole="button"
+        accessibilityLabel={t('howto.open')}
+        onPressIn={onPressIn}
+        onPressOut={onPressOut}
+        onPress={() => {
+          haptics.selection();
+          playSound('tick');
+          onPress();
+        }}
+        style={styles.howToPlayButton}
+      >
+        <Text style={styles.howToPlayGlyph}>?</Text>
+      </Pressable>
+    </Animated.View>
   );
 }
 
@@ -220,7 +246,18 @@ const styles = StyleSheet.create({
     backgroundColor: colors.ink,
     paddingVertical: spacing.md,
     paddingHorizontal: spacing.sm,
+    position: 'relative',
   },
+  howToPlayWrap: { position: 'absolute', top: spacing.xs, right: spacing.xs },
+  howToPlayButton: {
+    width: 32,
+    height: 32,
+    borderWidth: stroke.hair,
+    borderColor: colors.onInk,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  howToPlayGlyph: { ...type.heading, color: colors.onInk, lineHeight: 22 },
   title: { ...type.hero, color: colors.onInk, textAlign: 'center', textTransform: 'uppercase' },
   tagline: {
     ...type.caption,
