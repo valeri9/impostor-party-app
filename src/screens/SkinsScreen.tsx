@@ -537,7 +537,11 @@ const previewStyles = StyleSheet.create({
   // fontSize 12) — at fontSize 15 that 16px line box was too tight for the
   // italic's rightward slant and clipped the last glyph outright.
   wmSmall: { ...type.caption, fontSize: 11, lineHeight: 15, letterSpacing: 0 },
-  wmLarge: { ...type.caption, fontSize: 15, lineHeight: 20, fontStyle: 'italic', letterSpacing: 1 },
+  // No fontStyle: 'italic' — same fix as Screen.tsx's wordmarkLarge, see
+  // there for why: Android fakes italic on this font by shearing glyphs but
+  // still clips paint to the upright measured width, cutting the last
+  // letter's slanted overhang clean off. A skew transform avoids that.
+  wmLarge: { ...type.caption, fontSize: 15, lineHeight: 20, letterSpacing: 1, transform: [{ skewX: '-12deg' }], paddingRight: 4 },
   sectionRow: { flexDirection: 'row', alignItems: 'center', gap: spacing.xs, marginTop: spacing.md, marginBottom: spacing.xs },
   sectionMark: { ...type.caption, fontSize: 10 },
   sectionLabel: { ...type.caption, fontSize: 10, textTransform: 'uppercase' },
