@@ -132,6 +132,10 @@ const styles = StyleSheet.create({
     borderWidth: stroke.hair,
     borderColor: SHELL.bezelEdge,
     overflow: 'hidden',
+    // Matches the bezel's own curve (radius, less the bezel's own padding
+    // inset) — without it, this square corner pokes a dark wedge through
+    // the rounded bezel right where the two corners don't line up.
+    borderBottomRightRadius: 26,
   },
   content: { paddingHorizontal: spacing.md, paddingVertical: spacing.md },
   fill: { flex: 1 },
@@ -143,10 +147,14 @@ const styles = StyleSheet.create({
     gap: spacing.xs,
     paddingTop: spacing.xs,
   },
-  wordmarkSmall: { ...type.caption, fontSize: 11, color: SHELL.print, letterSpacing: 0 },
+  // Explicit lineHeight here, not inherited from type.caption's (tuned for
+  // fontSize 12) — at fontSize 15 that 16px line box was too tight for the
+  // italic's rightward slant and clipped the last glyph outright.
+  wordmarkSmall: { ...type.caption, fontSize: 11, lineHeight: 15, color: SHELL.print, letterSpacing: 0 },
   wordmarkLarge: {
     ...type.caption,
     fontSize: 15,
+    lineHeight: 20,
     color: SHELL.print,
     fontStyle: 'italic',
     letterSpacing: 1,

@@ -124,5 +124,9 @@ export const MODE_GLYPH = {
   mafia: '♠',
 } as const;
 
-/** Printed under the screen on a real DMG. */
-export const BEZEL_CAPTION = 'DOT MATRIX WITH STEREO SOUND';
+/**
+ * The bezel caption — an original in-universe brand line, not the real
+ * DMG's printed wording (lifting that exact text would be a much closer
+ * copy than any shape or colour choice elsewhere in this skin).
+ */
+export const BEZEL_CAPTION = 'PASS & PLAY PARTY SYSTEM';
