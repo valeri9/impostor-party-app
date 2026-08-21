@@ -8,7 +8,7 @@ import { SectionLabel } from '../components/SectionLabel';
 import { Stepper, ToggleRow } from '../components/Stepper';
 import { civiliansFor, clampMafiaConfig, maxMafiaFor } from '../game/assign';
 import { useGame } from '../game/GameContext';
-import { GAME_MODES, GameMode, MAX_PLAYERS, MIN_PLAYERS } from '../game/types';
+import { GAME_MODES, GameMode, MAX_PLAYERS, MAX_ROUNDS, MIN_PLAYERS, MIN_ROUNDS } from '../game/types';
 import { LANGUAGE_NAMES, LOCALES, useI18n } from '../i18n';
 import { haptics } from '../native/haptics';
 import { playSound } from '../native/sound';
@@ -26,10 +26,10 @@ export function SetupScreen({
   const { state, dispatch, startGame } = useGame();
   const { colors } = useSkinTokens();
   const styles = useMemo(() => createStyles(colors), [colors]);
-  const { players, mode, mafiaConfig } = state;
+  const { players, mode, mafiaConfig, roundsConfig } = state;
 
   const allNamed = players.every((p) => p.name.trim().length > 0);
-  const canStart = allNamed && players.length >= MIN_PLAYERS;
+  const canStart = allNamed && players.length >= MIN_PLAYERS && mode !== null;
 
   const clampedMafia = useMemo(
     () => clampMafiaConfig(mafiaConfig, players.length),
@@ -127,6 +127,16 @@ export function SetupScreen({
             <Text style={styles.civilianLabel}>{t('mafia.civilians')}</Text>
             <Text style={styles.civilianValue}>{civilians}</Text>
           </View>
+        </View>
+      ) : mode ? (
+        <View style={styles.mafiaPanel}>
+          <Stepper
+            label={t('setup.rounds')}
+            value={roundsConfig[mode]}
+            min={MIN_ROUNDS}
+            max={MAX_ROUNDS}
+            onChange={(rounds) => dispatch({ type: 'SET_ROUNDS', mode, rounds })}
+          />
         </View>
       ) : null}
 

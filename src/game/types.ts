@@ -1,11 +1,15 @@
 import type { DrawingPrompt, WordPrompt } from '../i18n/prompts';
 
 export const MIN_PLAYERS = 3;
-export const MAX_PLAYERS = 10;
+export const MAX_PLAYERS = 15;
 export const DEFAULT_PLAYERS = 4;
 
-/** Passes around the table in One-Stroke Drawing mode. */
-export const CANVAS_ROUNDS = 2;
+/** Modes whose play screen repeats a pass round the table a configurable number of times. */
+export type RoundedMode = 'word' | 'canvas' | 'timer';
+export const MIN_ROUNDS = 1;
+export const MAX_ROUNDS = 5;
+export const DEFAULT_ROUNDS: Record<RoundedMode, number> = { word: 1, canvas: 2, timer: 1 };
+export type RoundsConfig = Record<RoundedMode, number>;
 
 export type GameMode = 'word' | 'canvas' | 'timer' | 'mafia';
 export const GAME_MODES: GameMode[] = ['word', 'canvas', 'timer', 'mafia'];
@@ -29,7 +33,10 @@ export type WordRound = {
   prompt: WordPrompt;
   impostorId: string;
   order: string[];
+  /** Counts up across every lap; the current speaker is order[speakerIndex % order.length]. */
   speakerIndex: number;
+  /** How many times the phone goes round the table before results. */
+  rounds: number;
 };
 
 export type CanvasRound = {
@@ -51,8 +58,12 @@ export type TimerRound = {
   rangeMaxMs: number;
   impostorId: string;
   order: string[];
-  /** playerId -> recorded milliseconds. Never surfaced before the results screen. */
+  /** playerId -> most recently recorded milliseconds. Never surfaced before results. */
   times: Record<string, number>;
+  /** How many times the phone goes round the table; only the last attempt per player counts. */
+  rounds: number;
+  /** Total RECORD_TIME calls so far — the turn cursor, since `times` overwrites per player. */
+  attempts: number;
 };
 
 export type MafiaRound = {
@@ -65,9 +76,11 @@ export type Round = WordRound | CanvasRound | TimerRound | MafiaRound;
 
 export type GameState = {
   phase: Phase;
-  mode: GameMode;
+  /** null until the player picks one on the setup screen — nothing is preselected at launch. */
+  mode: GameMode | null;
   players: Player[];
   mafiaConfig: MafiaConfig;
+  roundsConfig: RoundsConfig;
   round: Round | null;
   /** Index into round.order for the universal reveal loop. */
   revealIndex: number;
@@ -79,6 +92,7 @@ export type Action =
   | { type: 'ADD_PLAYER' }
   | { type: 'REMOVE_PLAYER'; id: string }
   | { type: 'SET_MAFIA_CONFIG'; config: MafiaConfig }
+  | { type: 'SET_ROUNDS'; mode: RoundedMode; rounds: number }
   | { type: 'START_GAME'; round: Round }
   | { type: 'NEXT_REVEAL' }
   | { type: 'ADD_STROKE'; stroke: Stroke }
