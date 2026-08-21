@@ -120,7 +120,10 @@
       "skins.active": "Active",
       "skins.done": "Done",
       "skins.open": "Skins",
-      "skin.neonNebula.name": "Neon Nebula"
+      "skin.neonNebula.name": "Neon Nebula",
+      "skins.select": "Use This Skin",
+      "skins.back": "Back",
+      "skins.preview": "Preview this skin"
     },
     "bg": {
       "app.title": "Impostor Party",
@@ -242,7 +245,10 @@
       "skins.active": "Активна",
       "skins.done": "Готово",
       "skins.open": "Облицовки",
-      "skin.neonNebula.name": "Неонова мъглявина"
+      "skin.neonNebula.name": "Неонова мъглявина",
+      "skins.select": "Избери тази облицовка",
+      "skins.back": "Назад",
+      "skins.preview": "Преглед на облицовката"
     },
     "es": {
       "app.title": "Impostor Party",
@@ -364,7 +370,10 @@
       "skins.active": "Activo",
       "skins.done": "Listo",
       "skins.open": "Aspectos",
-      "skin.neonNebula.name": "Nebulosa Neón"
+      "skin.neonNebula.name": "Nebulosa Neón",
+      "skins.select": "Usar este aspecto",
+      "skins.back": "Atrás",
+      "skins.preview": "Vista previa de este aspecto"
     },
     "el": {
       "app.title": "Impostor Party",
@@ -486,7 +495,10 @@
       "skins.active": "Ενεργό",
       "skins.done": "Έτοιμο",
       "skins.open": "Θέματα",
-      "skin.neonNebula.name": "Νέον Νεφέλωμα"
+      "skin.neonNebula.name": "Νέον Νεφέλωμα",
+      "skins.select": "Χρήση αυτού του θέματος",
+      "skins.back": "Πίσω",
+      "skins.preview": "Προεπισκόπηση θέματος"
     },
     "de": {
       "app.title": "Impostor Party",
@@ -608,7 +620,10 @@
       "skins.active": "Aktiv",
       "skins.done": "Fertig",
       "skins.open": "Skins",
-      "skin.neonNebula.name": "Neon-Nebel"
+      "skin.neonNebula.name": "Neon-Nebel",
+      "skins.select": "Diesen Skin verwenden",
+      "skins.back": "Zurück",
+      "skins.preview": "Skin-Vorschau"
     },
     "ro": {
       "app.title": "Impostor Party",
@@ -730,7 +745,10 @@
       "skins.active": "Activ",
       "skins.done": "Gata",
       "skins.open": "Skinuri",
-      "skin.neonNebula.name": "Nebuloasă Neon"
+      "skin.neonNebula.name": "Nebuloasă Neon",
+      "skins.select": "Folosește acest skin",
+      "skins.back": "Înapoi",
+      "skins.preview": "Previzualizare skin"
     }
   }
 }

@@ -414,4 +414,34 @@ describe('skins', () => {
     expect(screen.getByText('€1.99')).toBeTruthy();
     expect(screen.queryByTestId('skin-neon-nebula')).toBeNull();
   });
+
+  it('opens a full preview of a locked skin instead of buying it blind', async () => {
+    await render(<App />);
+    await waitFor(() => expect(screen.getByText(translate('en', 'app.tagline'))).toBeTruthy());
+
+    await fireEvent.press(screen.getByTestId('open-skins'));
+    await waitFor(() => expect(screen.getByTestId('skin-preview-neon-nebula')).toBeTruthy());
+
+    await fireEvent.press(screen.getByTestId('skin-preview-neon-nebula'));
+    await waitFor(() => expect(screen.getByText(translate('en', 'skin.neonNebula.name'))).toBeTruthy());
+    // The mocked-up console itself, not just a name and a price.
+    expect(screen.getAllByText(translate('en', 'app.title')).length).toBeGreaterThan(0);
+    expect(screen.getByTestId('skin-preview-locked')).toBeTruthy();
+
+    await fireEvent.press(screen.getByTestId('skin-preview-back'));
+    await waitFor(() => expect(screen.getByTestId('skins-done')).toBeTruthy());
+  });
+
+  it('previews an owned skin from its thumbnail without reselecting it', async () => {
+    await render(<App />);
+    await waitFor(() => expect(screen.getByText(translate('en', 'app.tagline'))).toBeTruthy());
+
+    await fireEvent.press(screen.getByTestId('open-skins'));
+    await waitFor(() => expect(screen.getByTestId('skin-preview-dmg-classic')).toBeTruthy());
+
+    await fireEvent.press(screen.getByTestId('skin-preview-dmg-classic'));
+    await waitFor(() => expect(screen.getByTestId('skin-preview-select')).toBeTruthy());
+    // Already active, so the select button reflects that rather than offering to reselect.
+    expect(screen.getByTestId('skin-preview-select').props.accessibilityState.disabled).toBe(true);
+  });
 });
