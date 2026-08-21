@@ -111,7 +111,15 @@
       "howto.modesTitle": "Pick a Mode",
       "howto.done": "Got it, let's play!",
       "howto.open": "How to Play",
-      "skin.dmgClassic.name": "Dot Matrix"
+      "skin.dmgClassic.name": "Dot Matrix",
+      "skins.title": "Skins",
+      "skins.intro": "Change how the console looks. New looks unlock here as they arrive.",
+      "skins.available": "Available",
+      "skins.free": "Free",
+      "skins.owned": "Owned",
+      "skins.active": "Active",
+      "skins.done": "Done",
+      "skins.open": "Skins"
     },
     "bg": {
       "app.title": "Impostor Party",
@@ -224,7 +232,15 @@
       "howto.modesTitle": "Избери режим",
       "howto.done": "Разбрах, да играем!",
       "howto.open": "Как се играе",
-      "skin.dmgClassic.name": "Точкова матрица"
+      "skin.dmgClassic.name": "Точкова матрица",
+      "skins.title": "Облицовки",
+      "skins.intro": "Промени как изглежда конзолата. Нови облицовки ще се появяват тук.",
+      "skins.available": "Налични",
+      "skins.free": "Безплатно",
+      "skins.owned": "Притежаваш",
+      "skins.active": "Активна",
+      "skins.done": "Готово",
+      "skins.open": "Облицовки"
     },
     "es": {
       "app.title": "Impostor Party",
@@ -337,7 +353,15 @@
       "howto.modesTitle": "Elige un Modo",
       "howto.done": "¡Entendido, a jugar!",
       "howto.open": "Cómo Jugar",
-      "skin.dmgClassic.name": "Matriz de puntos"
+      "skin.dmgClassic.name": "Matriz de puntos",
+      "skins.title": "Aspectos",
+      "skins.intro": "Cambia el aspecto de la consola. Aquí aparecerán nuevos aspectos.",
+      "skins.available": "Disponibles",
+      "skins.free": "Gratis",
+      "skins.owned": "Comprado",
+      "skins.active": "Activo",
+      "skins.done": "Listo",
+      "skins.open": "Aspectos"
     },
     "el": {
       "app.title": "Impostor Party",
@@ -450,7 +474,15 @@
       "howto.modesTitle": "Επίλεξε Λειτουργία",
       "howto.done": "Κατάλαβα, ας παίξουμε!",
       "howto.open": "Πώς Παίζεται",
-      "skin.dmgClassic.name": "Μήτρα κουκκίδων"
+      "skin.dmgClassic.name": "Μήτρα κουκκίδων",
+      "skins.title": "Θέματα",
+      "skins.intro": "Άλλαξε την εμφάνιση της κονσόλας. Νέα θέματα θα εμφανίζονται εδώ.",
+      "skins.available": "Διαθέσιμα",
+      "skins.free": "Δωρεάν",
+      "skins.owned": "Κατέχεται",
+      "skins.active": "Ενεργό",
+      "skins.done": "Έτοιμο",
+      "skins.open": "Θέματα"
     },
     "de": {
       "app.title": "Impostor Party",
@@ -563,7 +595,15 @@
       "howto.modesTitle": "Modus Wählen",
       "howto.done": "Verstanden, los geht's!",
       "howto.open": "Spielanleitung",
-      "skin.dmgClassic.name": "Punktmatrix"
+      "skin.dmgClassic.name": "Punktmatrix",
+      "skins.title": "Skins",
+      "skins.intro": "Ändere das Aussehen der Konsole. Neue Skins erscheinen hier, sobald sie verfügbar sind.",
+      "skins.available": "Verfügbar",
+      "skins.free": "Kostenlos",
+      "skins.owned": "Im Besitz",
+      "skins.active": "Aktiv",
+      "skins.done": "Fertig",
+      "skins.open": "Skins"
     },
     "ro": {
       "app.title": "Impostor Party",
@@ -676,7 +716,15 @@
       "howto.modesTitle": "Alege un Mod",
       "howto.done": "Am înțeles, să jucăm!",
       "howto.open": "Cum se Joacă",
-      "skin.dmgClassic.name": "Matrice de puncte"
+      "skin.dmgClassic.name": "Matrice de puncte",
+      "skins.title": "Skinuri",
+      "skins.intro": "Schimbă aspectul consolei. Noile skinuri vor apărea aici.",
+      "skins.available": "Disponibile",
+      "skins.free": "Gratuit",
+      "skins.owned": "Deținut",
+      "skins.active": "Activ",
+      "skins.done": "Gata",
+      "skins.open": "Skinuri"
     }
   }
 }
