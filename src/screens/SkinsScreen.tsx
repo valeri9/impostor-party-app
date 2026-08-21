@@ -69,7 +69,8 @@ function SkinCard({
   if (!owned) {
     return (
       <View style={[styles.card, styles.cardLocked]}>
-        <PixelArt rows={PIXEL_LOCK} size={22} color={colors.inkSoft} />
+        <SkinPreview skin={skin} />
+        <PixelArt rows={PIXEL_LOCK} size={18} color={colors.inkSoft} />
         <View style={styles.cardText}>
           <Text style={styles.cardName}>{t(skin.nameKey)}</Text>
         </View>
@@ -94,6 +95,7 @@ function SkinCard({
         }}
         style={[styles.card, active && styles.cardActive]}
       >
+        <SkinPreview skin={skin} />
         <Text style={[styles.cardGlyph, { color: fg }]}>{active ? '▸' : ' '}</Text>
         <View style={styles.cardText}>
           <Text style={[styles.cardName, { color: fg }]}>{t(skin.nameKey)}</Text>
@@ -101,6 +103,23 @@ function SkinCard({
         <Text style={[styles.cardBadge, { color: fg }]}>{badge}</Text>
       </Pressable>
     </Animated.View>
+  );
+}
+
+/**
+ * A miniature rendering of the console in this skin's actual colours — the
+ * screen's ink bar and one console button — so a locked skin shows what it
+ * looks like, not just its name and price. Built from the skin's own token
+ * values, so any future catalogue entry gets a showcase for free.
+ */
+function SkinPreview({ skin }: { skin: Skin }) {
+  return (
+    <View style={[styles.preview, { backgroundColor: skin.shell.bezel }]}>
+      <View style={[styles.previewScreen, { backgroundColor: skin.lcd.lightest }]}>
+        <View style={[styles.previewInk, { backgroundColor: skin.lcd.darkest }]} />
+      </View>
+      <View style={[styles.previewButton, { backgroundColor: skin.shell.button, borderColor: skin.shell.buttonDeep }]} />
+    </View>
   );
 }
 
@@ -129,5 +148,20 @@ const styles = StyleSheet.create({
   cardText: { flex: 1 },
   cardName: { ...type.label, textTransform: 'uppercase' },
   cardBadge: { ...type.caption, letterSpacing: 0 },
+  preview: {
+    width: 46,
+    height: 38,
+    padding: 4,
+  },
+  previewScreen: { flex: 1, justifyContent: 'center', padding: 3 },
+  previewInk: { height: 7 },
+  previewButton: {
+    position: 'absolute',
+    bottom: 3,
+    right: 3,
+    width: 9,
+    height: 9,
+    borderWidth: 1,
+  },
   doneButton: { marginTop: spacing.lg },
 });
