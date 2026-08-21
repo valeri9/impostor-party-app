@@ -47,10 +47,10 @@ export function SetupScreen({
         <Text style={styles.title} adjustsFontSizeToFit numberOfLines={1}>
           {t('app.title')}
         </Text>
-        <View style={styles.titleButtonRow}>
-          <SkinsButton onPress={onSkins} />
-          <HowToPlayButton onPress={onHowToPlay} />
-        </View>
+      </View>
+      <View style={styles.titleButtonRow}>
+        <SkinsButton onPress={onSkins} />
+        <HowToPlayButton onPress={onHowToPlay} />
       </View>
       <Text style={styles.tagline}>{t('app.tagline')}</Text>
 
