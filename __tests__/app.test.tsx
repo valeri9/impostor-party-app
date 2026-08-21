@@ -391,3 +391,17 @@ describe('how to play', () => {
     await waitFor(() => expect(screen.getByText(translate('en', 'app.tagline'))).toBeTruthy());
   });
 });
+
+describe('skins', () => {
+  it('opens the catalogue from setup, showing the default skin owned and active', async () => {
+    await render(<App />);
+    await waitFor(() => expect(screen.getByText(translate('en', 'app.tagline'))).toBeTruthy());
+
+    await fireEvent.press(screen.getByTestId('open-skins'));
+    await waitFor(() => expect(screen.getByTestId('skins-done')).toBeTruthy());
+    expect(screen.getByText(translate('en', 'skins.active'))).toBeTruthy();
+
+    await fireEvent.press(screen.getByTestId('skins-done'));
+    await waitFor(() => expect(screen.getByText(translate('en', 'app.tagline'))).toBeTruthy());
+  });
+});

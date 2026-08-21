@@ -9,6 +9,7 @@ import { HowToPlayScreen } from './HowToPlayScreen';
 import { ResultsScreen } from './ResultsScreen';
 import { RevealScreen } from './RevealScreen';
 import { SetupScreen } from './SetupScreen';
+import { SkinsScreen } from './SkinsScreen';
 import { CanvasPlayScreen } from './play/CanvasPlayScreen';
 import { MafiaTableScreen } from './play/MafiaTableScreen';
 import { TimerPlayScreen } from './play/TimerPlayScreen';
@@ -48,19 +49,24 @@ export function GameRoot() {
 
   const openHowTo = useCallback(() => setShowHowTo(true), []);
 
+  const [showSkins, setShowSkins] = useState(false);
+  const openSkins = useCallback(() => setShowSkins(true), []);
+  const closeSkins = useCallback(() => setShowSkins(false), []);
+
   if (showHowTo === null) return <View style={styles.splash} />;
   if (showHowTo) return <HowToPlayScreen onDismiss={dismissHowTo} />;
+  if (showSkins) return <SkinsScreen onDismiss={closeSkins} />;
 
   switch (state.phase) {
     case 'setup':
-      return <SetupScreen onHowToPlay={openHowTo} />;
+      return <SetupScreen onHowToPlay={openHowTo} onSkins={openSkins} />;
 
     case 'reveal':
       return <RevealScreen />;
 
     case 'play': {
       const round = state.round;
-      if (!round) return <SetupScreen onHowToPlay={openHowTo} />;
+      if (!round) return <SetupScreen onHowToPlay={openHowTo} onSkins={openSkins} />;
       switch (round.mode) {
         case 'word':
           return <WordPlayScreen round={round} />;

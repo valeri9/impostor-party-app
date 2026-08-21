@@ -14,7 +14,13 @@ import { haptics } from '../native/haptics';
 import { playSound } from '../native/sound';
 import { colors, MODE_GLYPH, SHELL, spacing, stroke, type } from '../theme/tokens';
 
-export function SetupScreen({ onHowToPlay }: { onHowToPlay: () => void }) {
+export function SetupScreen({
+  onHowToPlay,
+  onSkins,
+}: {
+  onHowToPlay: () => void;
+  onSkins: () => void;
+}) {
   const { t, locale, setLocale } = useI18n();
   const { state, dispatch, startGame } = useGame();
   const { players, mode, mafiaConfig } = state;
@@ -41,6 +47,7 @@ export function SetupScreen({ onHowToPlay }: { onHowToPlay: () => void }) {
         <Text style={styles.title} adjustsFontSizeToFit numberOfLines={1}>
           {t('app.title')}
         </Text>
+        <SkinsButton onPress={onSkins} />
         <HowToPlayButton onPress={onHowToPlay} />
       </View>
       <Text style={styles.tagline}>{t('app.tagline')}</Text>
@@ -160,6 +167,34 @@ function HowToPlayButton({ onPress }: { onPress: () => void }) {
   );
 }
 
+/** The corner badge on the boot screen — opens the skin catalogue. */
+function SkinsButton({ onPress }: { onPress: () => void }) {
+  const { t } = useI18n();
+  const { scale, onPressIn, onPressOut } = usePressScale(0.85);
+  return (
+    <Animated.View style={[styles.skinsWrap, { transform: [{ scale }] }]}>
+      <Pressable
+        testID="open-skins"
+        accessibilityRole="button"
+        accessibilityLabel={t('skins.open')}
+        onPressIn={onPressIn}
+        onPressOut={onPressOut}
+        onPress={() => {
+          haptics.selection();
+          playSound('tick');
+          onPress();
+        }}
+        style={({ pressed }) => [
+          styles.skinsButton,
+          { backgroundColor: pressed ? SHELL.buttonDeep : SHELL.button },
+        ]}
+      >
+        <Text style={styles.skinsGlyph}>◨</Text>
+      </Pressable>
+    </Animated.View>
+  );
+}
+
 function LangPill({ code, active, onSelect }: { code: (typeof LOCALES)[number]; active: boolean; onSelect: () => void }) {
   const { scale, onPressIn, onPressOut } = usePressScale(0.9);
   return (
@@ -261,6 +296,16 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   howToPlayGlyph: { ...type.title, color: SHELL.onButton, lineHeight: 26 },
+  skinsWrap: { position: 'absolute', top: spacing.xs, left: spacing.xs },
+  skinsButton: {
+    width: 38,
+    height: 38,
+    borderWidth: stroke.thin,
+    borderColor: SHELL.buttonDeep,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  skinsGlyph: { ...type.title, color: SHELL.onButton, lineHeight: 26 },
   title: { ...type.hero, color: colors.onInk, textAlign: 'center', textTransform: 'uppercase' },
   tagline: {
     ...type.caption,
