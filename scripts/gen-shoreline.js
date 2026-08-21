@@ -104,12 +104,18 @@ function sea(s, baseY) {
   }
 }
 
+// The dry-sand fill used by most of the beach — exported below so anything
+// that needs to blend with the scene's edge (a "cover" sizing fallback, a
+// loading placeholder) can match it exactly instead of guessing a nearby
+// tan and creating a visible seam.
+const SAND_COLOR = '#f2dca0';
+
 function sandAndFoam(s, baseY) {
   for (let x = 0; x < s.COLS; x++) {
     const sY = Math.round(shoreY(x, baseY));
     for (let y = sY; y < sY + 2; y++) s.set(x, y, '#c9a86a');
     for (let y = sY + 2; y < s.ROWS; y++) {
-      s.set(x, y, ((x * 13 + y * 7) % 11) === 0 ? '#e6c68a' : '#f2dca0');
+      s.set(x, y, ((x * 13 + y * 7) % 11) === 0 ? '#e6c68a' : SAND_COLOR);
     }
     s.set(x, sY - 1, '#ffffff');
     if (((x * 7) % 5) === 0) s.set(x, sY - 2, '#ffffff');
@@ -218,6 +224,11 @@ const ts = `/**
  */
 
 export const SCENE_ASPECT_RATIO = 400 / 320;
+
+/** The dry-sand fill most of the beach is painted in — for anything that
+ *  needs to blend seamlessly with the scene's edge rather than guess a
+ *  nearby tan. */
+export const SAND_COLOR = '${SAND_COLOR}';
 
 /** Static base: sky gradient. Never animates. */
 export const SKY_SVG = \`${esc(skySurface.toSVGString())}\`;

@@ -5,6 +5,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { BeachScene } from './BeachScene';
 import { useSkin, useSkinTokens } from '../theme/SkinContext';
+import { SAND_COLOR } from '../theme/scenes/shoreline';
 import { BEZEL_CAPTION, PIXEL_FONT, spacing, stroke, type } from '../theme/tokens';
 
 type Props = {
@@ -53,8 +54,13 @@ export function Screen({ children, scroll = false, center = false, style, backgr
             // A fixed backdrop, not scrollable content: it sits behind the
             // ScrollView as a sibling rather than inside it, so it stays put
             // — the same way DotMatrix always has — while everything else
-            // scrolls over it, on every screen that uses Screen at all.
-            <View style={[StyleSheet.absoluteFill, { backgroundColor: SHELL.body }]} pointerEvents="none">
+            // scrolls over it, on every screen that uses Screen at all. The
+            // fallback fill is the scene's own sand tone (not SHELL.body,
+            // the console's plastic color) so it reads as more beach rather
+            // than a mismatched block wherever the cover-scaled image
+            // doesn't quite reach — before layout measures, or at an
+            // extreme aspect ratio.
+            <View style={[StyleSheet.absoluteFill, { backgroundColor: SAND_COLOR }]} pointerEvents="none">
               <BeachScene />
             </View>
           ) : (
