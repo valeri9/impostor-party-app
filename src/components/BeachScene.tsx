@@ -59,46 +59,32 @@ export function BeachScene() {
     setSize({ width, height });
   };
 
-  // "Cover" sizing, the same idea as CSS background-size: cover — scale the
-  // scene up until it fills the container in both dimensions (never just
-  // one), then anchor it to the bottom. Whatever screen shape it lands on,
-  // the sand always reaches the floor; it's the sky that gets cropped off
-  // the top on tall/narrow screens, never a bare gap below the shoreline.
-  const cover =
-    size && size.width > 0 && size.height > 0
-      ? (() => {
-          const width = Math.max(size.width, size.height * SCENE_ASPECT_RATIO);
-          const height = width / SCENE_ASPECT_RATIO;
-          return { width, height, left: (size.width - width) / 2 };
-        })()
-      : null;
-
   return (
     <View style={styles.container} onLayout={onLayout} pointerEvents="none">
-      {cover ? (
-        <View style={[styles.scene, { width: cover.width, height: cover.height, left: cover.left }]}>
-          <SvgXml xml={SKY_SVG} width="100%" height="100%" style={StyleSheet.absoluteFillObject} />
-          <CloudLayer width={cover.width} height={cover.height} reduceMotion={reduceMotion} />
-          <TideLayer reduceMotion={reduceMotion} />
-          <PalmLayer
-            xml={PALM_LEFT_SVG}
-            pivot={PALM_PIVOTS[0]}
-            size={cover}
-            duration={2200}
-            fromDeg={-2.2}
-            toDeg={2}
-            reduceMotion={reduceMotion}
-          />
-          <PalmLayer
-            xml={PALM_RIGHT_SVG}
-            pivot={PALM_PIVOTS[1]}
-            size={cover}
-            duration={2600}
-            fromDeg={1.8}
-            toDeg={-2.4}
-            reduceMotion={reduceMotion}
-          />
-        </View>
+      <SvgXml xml={SKY_SVG} width="100%" height="100%" style={StyleSheet.absoluteFillObject} />
+      {size ? <CloudLayer width={size.width} height={size.height} reduceMotion={reduceMotion} /> : null}
+      <TideLayer reduceMotion={reduceMotion} />
+      {size ? (
+        <PalmLayer
+          xml={PALM_LEFT_SVG}
+          pivot={PALM_PIVOTS[0]}
+          size={size}
+          duration={2200}
+          fromDeg={-2.2}
+          toDeg={2}
+          reduceMotion={reduceMotion}
+        />
+      ) : null}
+      {size ? (
+        <PalmLayer
+          xml={PALM_RIGHT_SVG}
+          pivot={PALM_PIVOTS[1]}
+          size={size}
+          duration={2600}
+          fromDeg={1.8}
+          toDeg={-2.4}
+          reduceMotion={reduceMotion}
+        />
       ) : null}
     </View>
   );
@@ -236,12 +222,9 @@ function PalmLayer({
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    width: '100%',
+    aspectRatio: SCENE_ASPECT_RATIO,
     overflow: 'hidden',
-  },
-  scene: {
-    position: 'absolute',
-    bottom: 0,
   },
   clip: { overflow: 'hidden' },
 });
