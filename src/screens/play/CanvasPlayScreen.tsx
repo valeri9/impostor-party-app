@@ -6,6 +6,7 @@ import { DrawCanvas } from '../../components/DrawCanvas';
 import { usePressScale } from '../../components/pressAnim';
 import { Screen } from '../../components/Screen';
 import { useGame } from '../../game/GameContext';
+import { roundProgress } from '../../game/rounds';
 import type { CanvasRound } from '../../game/types';
 import { useI18n } from '../../i18n';
 import { haptics } from '../../native/haptics';
@@ -23,12 +24,10 @@ export function CanvasPlayScreen({ round }: { round: CanvasRound }) {
   // One stroke per player per round, so the stroke count is the turn cursor and
   // the phone goes round the table `round.rounds` times.
   const players = round.order.length;
-  const totalTurns = players * round.rounds;
   const turn = round.strokes.length;
-  const finished = turn >= totalTurns;
-  const currentId = finished ? null : round.order[turn % players];
+  const { done: finished, currentIndex, currentRound } = roundProgress(turn, players, round.rounds);
+  const currentId = finished ? null : round.order[currentIndex];
   const current = currentId ? playerById(currentId) : null;
-  const currentRound = Math.min(Math.floor(turn / players) + 1, round.rounds);
 
   // The pencil colour is the player's choice and stays put when the phone is
   // passed — it only changes when someone taps a different swatch.
@@ -36,8 +35,8 @@ export function CanvasPlayScreen({ round }: { round: CanvasRound }) {
   // True between a locked stroke and the next player taking the phone.
   const [awaitingPass, setAwaitingPass] = useState(false);
 
-  const nextName =
-    !finished && turn + 1 < totalTurns ? playerById(round.order[(turn + 1) % players]).name : null;
+  const next = roundProgress(turn + 1, players, round.rounds);
+  const nextName = !finished && !next.done ? playerById(round.order[next.currentIndex]).name : null;
 
   return (
     <Screen>

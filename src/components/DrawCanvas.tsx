@@ -27,7 +27,11 @@ export function DrawCanvas({ strokes, color, enabled, onStrokeStart, onStrokeCom
   const styles = useMemo(() => createStyles(colors), [colors]);
   const [size, setSize] = useState({ width: 0, height: 0 });
   const [livePath, setLivePath] = useState('');
-  const pointsRef = useRef<string[]>([]);
+  // Built incrementally (append one segment per event) rather than re-joining
+  // every accumulated point each move — a long stroke can be a few hundred
+  // points, and re-joining the whole array on every touch-move is O(n^2).
+  const pathRef = useRef('');
+  const pointCountRef = useRef(0);
   const lastRef = useRef<{ x: number; y: number } | null>(null);
 
   // Held in refs so the responder closure always sees current values.
@@ -50,9 +54,10 @@ export function DrawCanvas({ strokes, color, enabled, onStrokeStart, onStrokeCom
           haptics.light();
           playSound('tick');
           startRef.current?.();
-          pointsRef.current = [`M${x.toFixed(1)} ${y.toFixed(1)}`];
+          pathRef.current = `M${x.toFixed(1)} ${y.toFixed(1)}`;
+          pointCountRef.current = 1;
           lastRef.current = { x, y };
-          setLivePath(pointsRef.current.join(' '));
+          setLivePath(pathRef.current);
         },
 
         onPanResponderMove: (evt) => {
@@ -60,8 +65,9 @@ export function DrawCanvas({ strokes, color, enabled, onStrokeStart, onStrokeCom
           const last = lastRef.current;
           if (last && Math.hypot(x - last.x, y - last.y) < MIN_STEP) return;
           lastRef.current = { x, y };
-          pointsRef.current.push(`L${x.toFixed(1)} ${y.toFixed(1)}`);
-          setLivePath(pointsRef.current.join(' '));
+          pathRef.current += ` L${x.toFixed(1)} ${y.toFixed(1)}`;
+          pointCountRef.current += 1;
+          setLivePath(pathRef.current);
         },
 
         // Release — or any interruption — ends the turn. That is the whole game.
@@ -72,15 +78,17 @@ export function DrawCanvas({ strokes, color, enabled, onStrokeStart, onStrokeCom
   );
 
   function finish() {
-    const points = pointsRef.current;
-    pointsRef.current = [];
+    const d = pathRef.current;
+    const count = pointCountRef.current;
+    pathRef.current = '';
+    pointCountRef.current = 0;
     lastRef.current = null;
     setLivePath('');
     // A tap with no movement is not a stroke; let the player try again.
-    if (points.length < 2) return;
+    if (count < 2) return;
     haptics.success();
     playSound('chime');
-    completeRef.current(points.join(' '));
+    completeRef.current(d);
   }
 
   const onLayout = (e: LayoutChangeEvent) => {
