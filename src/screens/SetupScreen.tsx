@@ -1,7 +1,6 @@
 import React, { useMemo } from 'react';
 import { Animated, Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
 
-import { BeachScene } from '../components/BeachScene';
 import { Button } from '../components/Button';
 import { usePressScale } from '../components/pressAnim';
 import { Screen } from '../components/Screen';
@@ -13,7 +12,7 @@ import { GAME_MODES, GameMode, MAX_PLAYERS, MIN_PLAYERS } from '../game/types';
 import { LANGUAGE_NAMES, LOCALES, useI18n } from '../i18n';
 import { haptics } from '../native/haptics';
 import { playSound } from '../native/sound';
-import { useSkin, useSkinTokens } from '../theme/SkinContext';
+import { useSkinTokens } from '../theme/SkinContext';
 import { MODE_GLYPH, spacing, stroke, type } from '../theme/tokens';
 
 export function SetupScreen({
@@ -25,7 +24,6 @@ export function SetupScreen({
 }) {
   const { t, locale, setLocale } = useI18n();
   const { state, dispatch, startGame } = useGame();
-  const { activeSkin } = useSkin();
   const { colors } = useSkinTokens();
   const styles = useMemo(() => createStyles(colors), [colors]);
   const { players, mode, mafiaConfig } = state;
@@ -58,7 +56,6 @@ export function SetupScreen({
         <Text style={styles.tagline}>{t('app.tagline')}</Text>
         <HowToPlayButton onPress={onHowToPlay} />
       </View>
-      {activeSkin.sceneId === 'shoreline' ? <BeachScene /> : null}
 
       <SectionLabel label={t('setup.language')} />
       <View style={styles.langRow}>
@@ -355,6 +352,7 @@ function createStyles(colors: ReturnType<typeof useSkinTokens>['colors']) {
       height: 32,
       borderWidth: stroke.hair,
       borderColor: colors.ink,
+      backgroundColor: colors.surface,
       alignItems: 'center',
       justifyContent: 'center',
     },

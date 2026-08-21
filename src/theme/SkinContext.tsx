@@ -22,11 +22,21 @@ type SkinValue = {
 
 const SkinContext = createContext<SkinValue | null>(null);
 
+/** Every skin, so local dev builds always have the full catalogue to try
+ *  without a purchase flow. Gated on __DEV__ (never ships — a production
+ *  build falls back to just the free default) *and* excludes NODE_ENV ===
+ *  'test': __DEV__ is also true under Jest, and the ownership-gating tests
+ *  need paid skins to actually start locked. */
+function baseOwnedIds(): string[] {
+  const devUnlockAll = __DEV__ && process.env.NODE_ENV !== 'test';
+  return devUnlockAll ? SKINS.map((s) => s.id) : [DEFAULT_SKIN_ID];
+}
+
 export function SkinProvider({ children }: { children: React.ReactNode }) {
   const [ready, setReady] = useState(false);
   const [activeSkinId, setActiveSkinId] = useState(DEFAULT_SKIN_ID);
   // The free skin is always owned, even before storage has loaded.
-  const [ownedSkinIds, setOwnedSkinIds] = useState<string[]>([DEFAULT_SKIN_ID]);
+  const [ownedSkinIds, setOwnedSkinIds] = useState<string[]>(baseOwnedIds);
 
   useEffect(() => {
     let cancelled = false;
@@ -43,13 +53,13 @@ export function SkinProvider({ children }: { children: React.ReactNode }) {
       }
       if (cancelled) return;
 
-      let owned: string[] = [DEFAULT_SKIN_ID];
+      let owned: string[] = baseOwnedIds();
       if (storedOwned) {
         try {
           const parsed = JSON.parse(storedOwned);
-          if (Array.isArray(parsed)) owned = Array.from(new Set([DEFAULT_SKIN_ID, ...parsed]));
+          if (Array.isArray(parsed)) owned = Array.from(new Set([...baseOwnedIds(), ...parsed]));
         } catch {
-          // Corrupt entry — fall back to just the free skin.
+          // Corrupt entry — fall back to the base set.
         }
       }
       setOwnedSkinIds(owned);

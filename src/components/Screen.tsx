@@ -3,7 +3,8 @@ import { ScrollView, StyleSheet, Text, View, ViewStyle } from 'react-native';
 import Svg, { Defs, Pattern, Rect } from 'react-native-svg';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { useSkinTokens } from '../theme/SkinContext';
+import { BeachScene } from './BeachScene';
+import { useSkin, useSkinTokens } from '../theme/SkinContext';
 import { BEZEL_CAPTION, PIXEL_FONT, spacing, stroke, type } from '../theme/tokens';
 
 type Props = {
@@ -24,6 +25,7 @@ type Props = {
  */
 export function Screen({ children, scroll = false, center = false, style, background, testID }: Props) {
   const insets = useSafeAreaInsets();
+  const { activeSkin } = useSkin();
   const { colors, SHELL } = useSkinTokens();
   const styles = useMemo(() => createStyles(colors, SHELL), [colors, SHELL]);
   const shellPadding = {
@@ -47,7 +49,17 @@ export function Screen({ children, scroll = false, center = false, style, backgr
         </View>
 
         <View style={[styles.lcd, panelTint]}>
-          <DotMatrix />
+          {activeSkin.sceneId === 'shoreline' ? (
+            // A fixed backdrop, not scrollable content: it sits behind the
+            // ScrollView as a sibling rather than inside it, so it stays put
+            // — the same way DotMatrix always has — while everything else
+            // scrolls over it, on every screen that uses Screen at all.
+            <View style={[StyleSheet.absoluteFill, { backgroundColor: SHELL.body }]} pointerEvents="none">
+              <BeachScene />
+            </View>
+          ) : (
+            <DotMatrix />
+          )}
           {scroll ? (
             <ScrollView
               contentContainerStyle={[styles.content, center && styles.center, style]}
