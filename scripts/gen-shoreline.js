@@ -190,6 +190,23 @@ const PALMS = [
   { x: 70, y: 58, h: 25, lean: 1 },
 ];
 
+// A seamlessly-tileable swatch of the same dry-sand speckle sandAndFoam
+// paints, for anything that needs sand behind/beyond the scene itself (a
+// "cover" sizing shortfall, a loading placeholder) to match exactly rather
+// than fall back to a flat, visibly-seamed color. It tiles with zero seam
+// because 11 — the formula's own modulus — evenly divides both of its
+// strides (13*11 and 7*11), so the pattern repeats exactly every 11 cells
+// in x and in y.
+const SAND_FLECK_COLOR = '#e6c68a';
+const SAND_TILE_CELLS = 11;
+const SAND_TILE_SIZE = SAND_TILE_CELLS * PX;
+const SAND_FLECK_RECTS = [];
+for (let y = 0; y < SAND_TILE_CELLS; y++) {
+  for (let x = 0; x < SAND_TILE_CELLS; x++) {
+    if (((x * 13 + y * 7) % 11) === 0) SAND_FLECK_RECTS.push({ x: x * PX, y: y * PX, size: PX });
+  }
+}
+
 const skySurface = createSurface(COLS, ROWS);
 sky(skySurface);
 
@@ -229,6 +246,14 @@ export const SCENE_ASPECT_RATIO = 400 / 320;
  *  needs to blend seamlessly with the scene's edge rather than guess a
  *  nearby tan. */
 export const SAND_COLOR = '${SAND_COLOR}';
+
+/** A seamlessly-tileable sand swatch: fleck positions (in px, within one
+ *  \`SAND_TILE_SIZE\` square) using the exact rule sandAndFoam paints the
+ *  beach's own dry sand with, so a tiled fill of these matches the scene's
+ *  texture exactly rather than reading as a different, flatter patch. */
+export const SAND_TILE_SIZE = ${SAND_TILE_SIZE};
+export const SAND_FLECK_COLOR = '${SAND_FLECK_COLOR}';
+export const SAND_FLECK_RECTS: { x: number; y: number; size: number }[] = ${JSON.stringify(SAND_FLECK_RECTS)};
 
 /** Static base: sky gradient. Never animates. */
 export const SKY_SVG = \`${esc(skySurface.toSVGString())}\`;

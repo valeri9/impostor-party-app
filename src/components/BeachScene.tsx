@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Animated, Easing, LayoutChangeEvent, StyleSheet, View } from 'react-native';
-import { SvgXml } from 'react-native-svg';
+import Svg, { Defs, Pattern, Rect, SvgXml } from 'react-native-svg';
 
 import { usePrefersReducedMotion } from '../native/reduceMotion';
 import {
@@ -8,10 +8,40 @@ import {
   PALM_LEFT_SVG,
   PALM_PIVOTS,
   PALM_RIGHT_SVG,
+  SAND_COLOR,
+  SAND_FLECK_COLOR,
+  SAND_FLECK_RECTS,
+  SAND_TILE_SIZE,
   SCENE_ASPECT_RATIO,
   SKY_SVG,
   TIDE_FRAMES,
 } from '../theme/scenes/shoreline';
+
+/**
+ * An infinitely-tileable patch of the beach's own dry sand, using the exact
+ * fleck rule sandAndFoam paints the scene's sand with (see gen-shoreline.js)
+ * — not a flat color guess. Sits behind the cover-scaled hero scene as the
+ * permanent floor, so however tall the container turns out to be (a "cover"
+ * sizing shortfall, a slow layout measurement), what shows through is more
+ * real, matching sand texture rather than a seamed, flatter patch.
+ */
+export function SandFill() {
+  return (
+    <View style={StyleSheet.absoluteFill} pointerEvents="none">
+      <Svg width="100%" height="100%">
+        <Defs>
+          <Pattern id="sandFill" width={SAND_TILE_SIZE} height={SAND_TILE_SIZE} patternUnits="userSpaceOnUse">
+            <Rect x={0} y={0} width={SAND_TILE_SIZE} height={SAND_TILE_SIZE} fill={SAND_COLOR} />
+            {SAND_FLECK_RECTS.map((r) => (
+              <Rect key={`${r.x}-${r.y}`} x={r.x} y={r.y} width={r.size} height={r.size} fill={SAND_FLECK_COLOR} />
+            ))}
+          </Pattern>
+        </Defs>
+        <Rect x={0} y={0} width="100%" height="100%" fill="url(#sandFill)" />
+      </Svg>
+    </View>
+  );
+}
 
 /**
  * The Shoreline skin's animated beach banner. Five independently-animated

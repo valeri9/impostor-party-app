@@ -3,9 +3,8 @@ import { ScrollView, StyleSheet, Text, View, ViewStyle } from 'react-native';
 import Svg, { Defs, Pattern, Rect } from 'react-native-svg';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { BeachScene } from './BeachScene';
+import { BeachScene, SandFill } from './BeachScene';
 import { useSkin, useSkinTokens } from '../theme/SkinContext';
-import { SAND_COLOR } from '../theme/scenes/shoreline';
 import { BEZEL_CAPTION, PIXEL_FONT, spacing, stroke, type } from '../theme/tokens';
 
 type Props = {
@@ -54,13 +53,13 @@ export function Screen({ children, scroll = false, center = false, style, backgr
             // A fixed backdrop, not scrollable content: it sits behind the
             // ScrollView as a sibling rather than inside it, so it stays put
             // — the same way DotMatrix always has — while everything else
-            // scrolls over it, on every screen that uses Screen at all. The
-            // fallback fill is the scene's own sand tone (not SHELL.body,
-            // the console's plastic color) so it reads as more beach rather
-            // than a mismatched block wherever the cover-scaled image
-            // doesn't quite reach — before layout measures, or at an
-            // extreme aspect ratio.
-            <View style={[StyleSheet.absoluteFill, { backgroundColor: SAND_COLOR }]} pointerEvents="none">
+            // scrolls over it, on every screen that uses Screen at all.
+            // SandFill is the permanent floor (real tiled sand texture, not
+            // a flat color guess) so wherever the cover-scaled hero scene
+            // on top of it doesn't quite reach, what shows through still
+            // reads as more beach, not a seamed, mismatched patch.
+            <View style={StyleSheet.absoluteFill} pointerEvents="none">
+              <SandFill />
               <BeachScene />
             </View>
           ) : (
