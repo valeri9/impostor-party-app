@@ -1,7 +1,7 @@
 import React from 'react';
 import Svg, { Rect } from 'react-native-svg';
 
-import { colors } from '../theme/tokens';
+import { useSkinTokens } from '../theme/SkinContext';
 
 /**
  * Renders a string grid as square pixels — the only kind of illustration a
@@ -11,13 +11,16 @@ import { colors } from '../theme/tokens';
 export function PixelArt({
   rows,
   size,
-  color = colors.ink,
+  color,
 }: {
   rows: readonly string[];
   /** Total width in points; pixel size is derived from the grid. */
   size: number;
+  /** Defaults to the active skin's ink colour. */
   color?: string;
 }) {
+  const { colors } = useSkinTokens();
+  const fill = color ?? colors.ink;
   const cols = Math.max(...rows.map((r) => r.length));
   const px = size / cols;
   const height = px * rows.length;
@@ -27,7 +30,7 @@ export function PixelArt({
       {rows.flatMap((row, y) =>
         row.split('').map((cell, x) =>
           cell === ' ' || cell === '.' ? null : (
-            <Rect key={`${x}-${y}`} x={x * px} y={y * px} width={px} height={px} fill={color} />
+            <Rect key={`${x}-${y}`} x={x * px} y={y * px} width={px} height={px} fill={fill} />
           ),
         ),
       )}

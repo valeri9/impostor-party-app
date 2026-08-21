@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { Animated, Pressable, StyleSheet, Text, View, ViewStyle } from 'react-native';
 
 import { haptics } from '../native/haptics';
 import { playSound } from '../native/sound';
-import { HIT_SIZE, SHELL, spacing, stroke, type } from '../theme/tokens';
+import { useSkinTokens } from '../theme/SkinContext';
+import { HIT_SIZE, spacing, stroke, type } from '../theme/tokens';
 import { usePressScale } from './pressAnim';
 
 export type ButtonVariant = 'primary' | 'success' | 'danger' | 'ghost';
@@ -24,59 +25,62 @@ type Props = {
  * console's own colours: the crimson of the A/B buttons for the affirmative
  * actions, the navy of the printed labels for the ones that end a round.
  */
-const VARIANTS: Record<
-  ButtonVariant,
-  {
-    fill: string;
-    pressedFill: string;
-    border: string;
-    label: string;
-    pressedLabel: string;
-    /** A second inner line, for the loudest actions on a screen. */
-    doubleFrame: boolean;
-    width: number;
-  }
-> = {
-  primary: {
-    fill: SHELL.button,
-    pressedFill: SHELL.buttonDeep,
-    border: SHELL.buttonDeep,
-    label: SHELL.onButton,
-    pressedLabel: SHELL.onButton,
-    doubleFrame: false,
-    width: stroke.thin,
-  },
-  success: {
-    fill: SHELL.button,
-    pressedFill: SHELL.buttonDeep,
-    border: SHELL.buttonDeep,
-    label: SHELL.onButton,
-    pressedLabel: SHELL.onButton,
-    doubleFrame: true,
-    width: stroke.thick,
-  },
-  danger: {
-    fill: SHELL.print,
-    pressedFill: SHELL.printDeep,
-    border: SHELL.printDeep,
-    label: SHELL.onButton,
-    pressedLabel: SHELL.onButton,
-    doubleFrame: true,
-    width: stroke.thick,
-  },
-  ghost: {
-    fill: 'transparent',
-    pressedFill: SHELL.print,
-    border: SHELL.print,
-    label: SHELL.print,
-    pressedLabel: SHELL.onButton,
-    doubleFrame: false,
-    width: stroke.hair,
-  },
+type VariantSpec = {
+  fill: string;
+  pressedFill: string;
+  border: string;
+  label: string;
+  pressedLabel: string;
+  /** A second inner line, for the loudest actions on a screen. */
+  doubleFrame: boolean;
+  width: number;
 };
 
+function getVariants(SHELL: ReturnType<typeof useSkinTokens>['SHELL']): Record<ButtonVariant, VariantSpec> {
+  return {
+    primary: {
+      fill: SHELL.button,
+      pressedFill: SHELL.buttonDeep,
+      border: SHELL.buttonDeep,
+      label: SHELL.onButton,
+      pressedLabel: SHELL.onButton,
+      doubleFrame: false,
+      width: stroke.thin,
+    },
+    success: {
+      fill: SHELL.button,
+      pressedFill: SHELL.buttonDeep,
+      border: SHELL.buttonDeep,
+      label: SHELL.onButton,
+      pressedLabel: SHELL.onButton,
+      doubleFrame: true,
+      width: stroke.thick,
+    },
+    danger: {
+      fill: SHELL.print,
+      pressedFill: SHELL.printDeep,
+      border: SHELL.printDeep,
+      label: SHELL.onButton,
+      pressedLabel: SHELL.onButton,
+      doubleFrame: true,
+      width: stroke.thick,
+    },
+    ghost: {
+      fill: 'transparent',
+      pressedFill: SHELL.print,
+      border: SHELL.print,
+      label: SHELL.print,
+      pressedLabel: SHELL.onButton,
+      doubleFrame: false,
+      width: stroke.hair,
+    },
+  };
+}
+
 export function Button({ label, onPress, variant = 'primary', disabled, large, style, testID }: Props) {
-  const spec = VARIANTS[variant];
+  const { SHELL } = useSkinTokens();
+  const variants = useMemo(() => getVariants(SHELL), [SHELL]);
+  const spec = variants[variant];
   const { scale, onPressIn, onPressOut } = usePressScale();
 
   return (

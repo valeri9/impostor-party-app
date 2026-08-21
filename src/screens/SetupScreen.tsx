@@ -1,6 +1,7 @@
 import React, { useMemo } from 'react';
 import { Animated, Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
 
+import { BeachScene } from '../components/BeachScene';
 import { Button } from '../components/Button';
 import { usePressScale } from '../components/pressAnim';
 import { Screen } from '../components/Screen';
@@ -12,7 +13,8 @@ import { GAME_MODES, GameMode, MAX_PLAYERS, MIN_PLAYERS } from '../game/types';
 import { LANGUAGE_NAMES, LOCALES, useI18n } from '../i18n';
 import { haptics } from '../native/haptics';
 import { playSound } from '../native/sound';
-import { colors, MODE_GLYPH, SHELL, spacing, stroke, type } from '../theme/tokens';
+import { useSkin, useSkinTokens } from '../theme/SkinContext';
+import { MODE_GLYPH, spacing, stroke, type } from '../theme/tokens';
 
 export function SetupScreen({
   onHowToPlay,
@@ -23,6 +25,9 @@ export function SetupScreen({
 }) {
   const { t, locale, setLocale } = useI18n();
   const { state, dispatch, startGame } = useGame();
+  const { activeSkin } = useSkin();
+  const { colors } = useSkinTokens();
+  const styles = useMemo(() => createStyles(colors), [colors]);
   const { players, mode, mafiaConfig } = state;
 
   const allNamed = players.every((p) => p.name.trim().length > 0);
@@ -53,6 +58,7 @@ export function SetupScreen({
         <Text style={styles.tagline}>{t('app.tagline')}</Text>
         <HowToPlayButton onPress={onHowToPlay} />
       </View>
+      {activeSkin.sceneId === 'shoreline' ? <BeachScene /> : null}
 
       <SectionLabel label={t('setup.language')} />
       <View style={styles.langRow}>
@@ -144,6 +150,8 @@ export function SetupScreen({
 /** The corner badge on the boot screen — reopens onboarding any time. */
 function HowToPlayButton({ onPress }: { onPress: () => void }) {
   const { t } = useI18n();
+  const { colors, SHELL } = useSkinTokens();
+  const styles = useMemo(() => createStyles(colors), [colors]);
   const { scale, onPressIn, onPressOut } = usePressScale(0.85);
   return (
     <Animated.View style={{ transform: [{ scale }] }}>
@@ -160,10 +168,10 @@ function HowToPlayButton({ onPress }: { onPress: () => void }) {
         }}
         style={({ pressed }) => [
           styles.howToPlayButton,
-          { backgroundColor: pressed ? SHELL.buttonDeep : SHELL.button },
+          { borderColor: SHELL.buttonDeep, backgroundColor: pressed ? SHELL.buttonDeep : SHELL.button },
         ]}
       >
-        <Text style={styles.howToPlayGlyph}>?</Text>
+        <Text style={[styles.howToPlayGlyph, { color: SHELL.onButton }]}>?</Text>
       </Pressable>
     </Animated.View>
   );
@@ -172,6 +180,8 @@ function HowToPlayButton({ onPress }: { onPress: () => void }) {
 /** The corner badge on the boot screen — opens the skin catalogue. */
 function SkinsButton({ onPress }: { onPress: () => void }) {
   const { t } = useI18n();
+  const { colors, SHELL } = useSkinTokens();
+  const styles = useMemo(() => createStyles(colors), [colors]);
   const { scale, onPressIn, onPressOut } = usePressScale(0.85);
   return (
     <Animated.View style={{ transform: [{ scale }] }}>
@@ -188,16 +198,18 @@ function SkinsButton({ onPress }: { onPress: () => void }) {
         }}
         style={({ pressed }) => [
           styles.skinsButton,
-          { backgroundColor: pressed ? SHELL.buttonDeep : SHELL.button },
+          { borderColor: SHELL.buttonDeep, backgroundColor: pressed ? SHELL.buttonDeep : SHELL.button },
         ]}
       >
-        <Text style={styles.skinsGlyph}>◨</Text>
+        <Text style={[styles.skinsGlyph, { color: SHELL.onButton }]}>◨</Text>
       </Pressable>
     </Animated.View>
   );
 }
 
 function LangPill({ code, active, onSelect }: { code: (typeof LOCALES)[number]; active: boolean; onSelect: () => void }) {
+  const { colors } = useSkinTokens();
+  const styles = useMemo(() => createStyles(colors), [colors]);
   const { scale, onPressIn, onPressOut } = usePressScale(0.9);
   return (
     <Animated.View style={{ transform: [{ scale }] }}>
@@ -221,6 +233,8 @@ function LangPill({ code, active, onSelect }: { code: (typeof LOCALES)[number]; 
 }
 
 function RemoveButton({ onPress, disabled }: { onPress: () => void; disabled: boolean }) {
+  const { colors } = useSkinTokens();
+  const styles = useMemo(() => createStyles(colors), [colors]);
   const { scale, onPressIn, onPressOut } = usePressScale(0.85);
   return (
     <Animated.View style={{ transform: [{ scale }] }}>
@@ -252,6 +266,8 @@ function ModeCard({
   onSelect: () => void;
 }) {
   const { t } = useI18n();
+  const { colors } = useSkinTokens();
+  const styles = useMemo(() => createStyles(colors), [colors]);
   const fg = selected ? colors.onInk : colors.ink;
   const { scale, onPressIn, onPressOut } = usePressScale(0.97);
   return (
@@ -279,121 +295,121 @@ function ModeCard({
   );
 }
 
-const styles = StyleSheet.create({
-  titlePlate: {
-    borderWidth: stroke.thick,
-    borderColor: colors.ink,
-    backgroundColor: colors.ink,
-    paddingVertical: spacing.md,
-    paddingHorizontal: spacing.sm,
-  },
-  titleButtonRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: spacing.sm,
-    marginTop: spacing.sm,
-  },
-  howToPlayButton: {
-    width: 38,
-    height: 38,
-    borderWidth: stroke.thin,
-    borderColor: SHELL.buttonDeep,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  howToPlayGlyph: { ...type.title, color: SHELL.onButton, lineHeight: 26 },
-  skinsButton: {
-    width: 38,
-    height: 38,
-    borderWidth: stroke.thin,
-    borderColor: SHELL.buttonDeep,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  skinsGlyph: { ...type.title, color: SHELL.onButton, lineHeight: 26 },
-  title: { ...type.hero, color: colors.onInk, textAlign: 'center', textTransform: 'uppercase' },
-  tagline: {
-    ...type.caption,
-    flex: 1,
-    color: colors.inkSoft,
-    textAlign: 'center',
-    textTransform: 'uppercase',
-  },
-  langRow: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.sm },
-  langPill: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: spacing.xs,
-    paddingHorizontal: spacing.sm,
-    minHeight: 44,
-    backgroundColor: colors.surface,
-    borderWidth: stroke.hair,
-    borderColor: colors.ink,
-  },
-  langPillActive: { backgroundColor: colors.ink },
-  langCode: { ...type.caption, color: colors.ink, textTransform: 'uppercase' },
-  langName: { ...type.caption, color: colors.inkSoft },
-  langTextActive: { color: colors.onInk },
-  playerRow: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm, marginBottom: spacing.sm },
-  playerIndex: {
-    width: 32,
-    height: 32,
-    borderWidth: stroke.hair,
-    borderColor: colors.ink,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  playerIndexText: { ...type.caption, color: colors.ink },
-  input: {
-    flex: 1,
-    minHeight: 52,
-    backgroundColor: colors.surface,
-    borderWidth: stroke.hair,
-    borderColor: colors.ink,
-    paddingHorizontal: spacing.md,
-    color: colors.ink,
-    ...type.body,
-  },
-  removeButton: {
-    width: 44,
-    height: 44,
-    borderWidth: stroke.hair,
-    borderColor: colors.ink,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: colors.surface,
-  },
-  removeDisabled: { opacity: 0.3 },
-  removeGlyph: { ...type.heading, color: colors.ink, lineHeight: 22 },
-  addButton: { marginTop: spacing.xs },
-  hint: { ...type.caption, color: colors.inkSoft, textAlign: 'center', marginTop: spacing.sm },
-  modeCard: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: spacing.sm,
-    padding: spacing.md,
-    backgroundColor: colors.surface,
-    borderWidth: stroke.hair,
-    borderColor: colors.ink,
-    marginBottom: spacing.sm,
-  },
-  modeCardSelected: { backgroundColor: colors.ink, borderWidth: stroke.thin },
-  modeGlyph: { ...type.heading },
-  modeText: { flex: 1 },
-  modeName: { ...type.label, textTransform: 'uppercase' },
-  modeDesc: { ...type.caption, marginTop: 3, letterSpacing: 0 },
-  mafiaPanel: { marginTop: spacing.xs },
-  civilianRow: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    minHeight: 48,
-    paddingHorizontal: spacing.md,
-    borderWidth: stroke.hair,
-    borderColor: colors.ink,
-  },
-  civilianLabel: { ...type.label, color: colors.ink, textTransform: 'uppercase' },
-  civilianValue: { ...type.heading, color: colors.ink },
-  startButton: { marginTop: spacing.lg },
-  warning: { ...type.caption, color: colors.ink, textAlign: 'center', marginTop: spacing.sm },
-});
+function createStyles(colors: ReturnType<typeof useSkinTokens>['colors']) {
+  return StyleSheet.create({
+    titlePlate: {
+      borderWidth: stroke.thick,
+      borderColor: colors.ink,
+      backgroundColor: colors.ink,
+      paddingVertical: spacing.md,
+      paddingHorizontal: spacing.sm,
+    },
+    titleButtonRow: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      gap: spacing.sm,
+      marginTop: spacing.sm,
+    },
+    howToPlayButton: {
+      width: 38,
+      height: 38,
+      borderWidth: stroke.thin,
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    howToPlayGlyph: { ...type.title, lineHeight: 26 },
+    skinsButton: {
+      width: 38,
+      height: 38,
+      borderWidth: stroke.thin,
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    skinsGlyph: { ...type.title, lineHeight: 26 },
+    title: { ...type.hero, color: colors.onInk, textAlign: 'center', textTransform: 'uppercase' },
+    tagline: {
+      ...type.caption,
+      flex: 1,
+      color: colors.inkSoft,
+      textAlign: 'center',
+      textTransform: 'uppercase',
+    },
+    langRow: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.sm },
+    langPill: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      gap: spacing.xs,
+      paddingHorizontal: spacing.sm,
+      minHeight: 44,
+      backgroundColor: colors.surface,
+      borderWidth: stroke.hair,
+      borderColor: colors.ink,
+    },
+    langPillActive: { backgroundColor: colors.ink },
+    langCode: { ...type.caption, color: colors.ink, textTransform: 'uppercase' },
+    langName: { ...type.caption, color: colors.inkSoft },
+    langTextActive: { color: colors.onInk },
+    playerRow: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm, marginBottom: spacing.sm },
+    playerIndex: {
+      width: 32,
+      height: 32,
+      borderWidth: stroke.hair,
+      borderColor: colors.ink,
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    playerIndexText: { ...type.caption, color: colors.ink },
+    input: {
+      flex: 1,
+      minHeight: 52,
+      backgroundColor: colors.surface,
+      borderWidth: stroke.hair,
+      borderColor: colors.ink,
+      paddingHorizontal: spacing.md,
+      color: colors.ink,
+      ...type.body,
+    },
+    removeButton: {
+      width: 44,
+      height: 44,
+      borderWidth: stroke.hair,
+      borderColor: colors.ink,
+      alignItems: 'center',
+      justifyContent: 'center',
+      backgroundColor: colors.surface,
+    },
+    removeDisabled: { opacity: 0.3 },
+    removeGlyph: { ...type.heading, color: colors.ink, lineHeight: 22 },
+    addButton: { marginTop: spacing.xs },
+    hint: { ...type.caption, color: colors.inkSoft, textAlign: 'center', marginTop: spacing.sm },
+    modeCard: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      gap: spacing.sm,
+      padding: spacing.md,
+      backgroundColor: colors.surface,
+      borderWidth: stroke.hair,
+      borderColor: colors.ink,
+      marginBottom: spacing.sm,
+    },
+    modeCardSelected: { backgroundColor: colors.ink, borderWidth: stroke.thin },
+    modeGlyph: { ...type.heading },
+    modeText: { flex: 1 },
+    modeName: { ...type.label, textTransform: 'uppercase' },
+    modeDesc: { ...type.caption, marginTop: 3, letterSpacing: 0 },
+    mafiaPanel: { marginTop: spacing.xs },
+    civilianRow: {
+      flexDirection: 'row',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      minHeight: 48,
+      paddingHorizontal: spacing.md,
+      borderWidth: stroke.hair,
+      borderColor: colors.ink,
+    },
+    civilianLabel: { ...type.label, color: colors.ink, textTransform: 'uppercase' },
+    civilianValue: { ...type.heading, color: colors.ink },
+    startButton: { marginTop: spacing.lg },
+    warning: { ...type.caption, color: colors.ink, textAlign: 'center', marginTop: spacing.sm },
+  });
+}

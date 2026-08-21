@@ -37,7 +37,8 @@
     "test": "jest",
     "typecheck": "tsc --noEmit",
     "gen:audio": "node scripts/gen-audio.js",
-    "gen:icons": "node scripts/gen-icons.js"
+    "gen:icons": "node scripts/gen-icons.js",
+    "gen:shoreline": "node scripts/gen-shoreline.js"
   },
   "private": true,
   "jest": {

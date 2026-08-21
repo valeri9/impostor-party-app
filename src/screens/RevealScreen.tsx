@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { StyleSheet, Text, useWindowDimensions, View } from 'react-native';
 
 import { Button } from '../components/Button';
@@ -8,7 +8,8 @@ import { Screen } from '../components/Screen';
 import { useGame } from '../game/GameContext';
 import type { Round } from '../game/types';
 import { localized, useI18n } from '../i18n';
-import { colors, MODE_ACCENT, spacing, stroke, type } from '../theme/tokens';
+import { useSkinTokens } from '../theme/SkinContext';
+import { spacing, stroke, type } from '../theme/tokens';
 
 /**
  * The single pass-and-play loop every mode goes through. It owns the player
@@ -17,6 +18,8 @@ import { colors, MODE_ACCENT, spacing, stroke, type } from '../theme/tokens';
 export function RevealScreen() {
   const { t } = useI18n();
   const { state, dispatch, playerById } = useGame();
+  const { colors } = useSkinTokens();
+  const styles = useMemo(() => createStyles(colors), [colors]);
   const round = state.round;
   const [unlocked, setUnlocked] = useState(false);
 
@@ -27,7 +30,7 @@ export function RevealScreen() {
 
   const playerId = round.order[state.revealIndex];
   const player = playerById(playerId);
-  const accent = MODE_ACCENT[round.mode];
+  const accent = colors.ink;
 
   return (
     <Screen>
@@ -63,6 +66,8 @@ export function RevealScreen() {
 function Secret({ round, playerId }: { round: Round; playerId: string }) {
   const { t, locale } = useI18n();
   const { width } = useWindowDimensions();
+  const { colors } = useSkinTokens();
+  const styles = useMemo(() => createStyles(colors), [colors]);
 
   switch (round.mode) {
     case 'word': {
@@ -144,6 +149,8 @@ function Secret({ round, playerId }: { round: Round; playerId: string }) {
 
 function ImpostorSecret({ hint }: { hint: string }) {
   const { t } = useI18n();
+  const { colors } = useSkinTokens();
+  const styles = useMemo(() => createStyles(colors), [colors]);
   return (
     <View style={styles.secretBody}>
       <View style={styles.impostorPlate}>
@@ -161,37 +168,39 @@ function ImpostorSecret({ hint }: { hint: string }) {
   );
 }
 
-const styles = StyleSheet.create({
-  progress: {
-    ...type.caption,
-    color: colors.inkSoft,
-    textAlign: 'center',
-    textTransform: 'uppercase',
-    marginBottom: spacing.sm,
-  },
-  holdArea: { flex: 1, marginBottom: spacing.md },
-  secretBody: { alignItems: 'center', justifyContent: 'center', gap: spacing.sm, width: '100%' },
-  secretLabel: { ...type.caption, color: colors.inkSoft, textTransform: 'uppercase' },
-  secretValue: { ...type.hero, color: colors.ink, textAlign: 'center' },
-  secretMeta: { ...type.caption, color: colors.inkSoft, textAlign: 'center' },
-  // "You are the impostor" is inverted rather than red — the screen has no red.
-  impostorPlate: {
-    backgroundColor: colors.ink,
-    paddingVertical: spacing.sm,
-    paddingHorizontal: spacing.md,
-    alignSelf: 'stretch',
-  },
-  impostorTitle: { ...type.title, color: colors.onInk, textAlign: 'center', textTransform: 'uppercase' },
-  hintBox: {
-    marginTop: spacing.md,
-    paddingVertical: spacing.md,
-    paddingHorizontal: spacing.lg,
-    borderWidth: stroke.hair,
-    borderColor: colors.ink,
-    backgroundColor: colors.surface,
-    alignItems: 'center',
-    width: '100%',
-  },
-  hintLabel: { ...type.caption, color: colors.inkSoft, marginBottom: spacing.xs, textTransform: 'uppercase' },
-  hintValue: { ...type.heading, color: colors.ink, textAlign: 'center' },
-});
+function createStyles(colors: ReturnType<typeof useSkinTokens>['colors']) {
+  return StyleSheet.create({
+    progress: {
+      ...type.caption,
+      color: colors.inkSoft,
+      textAlign: 'center',
+      textTransform: 'uppercase',
+      marginBottom: spacing.sm,
+    },
+    holdArea: { flex: 1, marginBottom: spacing.md },
+    secretBody: { alignItems: 'center', justifyContent: 'center', gap: spacing.sm, width: '100%' },
+    secretLabel: { ...type.caption, color: colors.inkSoft, textTransform: 'uppercase' },
+    secretValue: { ...type.hero, color: colors.ink, textAlign: 'center' },
+    secretMeta: { ...type.caption, color: colors.inkSoft, textAlign: 'center' },
+    // "You are the impostor" is inverted rather than red — the screen has no red.
+    impostorPlate: {
+      backgroundColor: colors.ink,
+      paddingVertical: spacing.sm,
+      paddingHorizontal: spacing.md,
+      alignSelf: 'stretch',
+    },
+    impostorTitle: { ...type.title, color: colors.onInk, textAlign: 'center', textTransform: 'uppercase' },
+    hintBox: {
+      marginTop: spacing.md,
+      paddingVertical: spacing.md,
+      paddingHorizontal: spacing.lg,
+      borderWidth: stroke.hair,
+      borderColor: colors.ink,
+      backgroundColor: colors.surface,
+      alignItems: 'center',
+      width: '100%',
+    },
+    hintLabel: { ...type.caption, color: colors.inkSoft, marginBottom: spacing.xs, textTransform: 'uppercase' },
+    hintValue: { ...type.heading, color: colors.ink, textAlign: 'center' },
+  });
+}

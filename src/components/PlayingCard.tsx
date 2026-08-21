@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { StyleSheet, View } from 'react-native';
 import Svg, {
   Defs,
@@ -11,7 +11,8 @@ import Svg, {
 } from 'react-native-svg';
 
 import type { Suit } from '../game/types';
-import { colors, LCD, PIXEL_FONT } from '../theme/tokens';
+import { useSkinTokens } from '../theme/SkinContext';
+import { PIXEL_FONT } from '../theme/tokens';
 
 const ASPECT = 0.7; // width / height, close to a real 63×88 mm poker card
 const VB_W = 250;
@@ -24,7 +25,7 @@ const SUIT_GLYPH: Record<Suit, string> = {
   clubs: '♣',
 };
 
-function suitColor(suit: Suit): string {
+function suitColor(suit: Suit, colors: ReturnType<typeof useSkinTokens>['colors']): string {
   return suit === 'hearts' || suit === 'diamonds' ? colors.cardRed : colors.cardBlack;
 }
 
@@ -71,6 +72,8 @@ type Props = {
 };
 
 export function PlayingCard({ rank, suit, width, faceUp, roleLabel, backColor = 'red' }: Props) {
+  const { colors } = useSkinTokens();
+  const styles = useMemo(() => createStyles(colors), [colors]);
   const height = width / ASPECT;
   return (
     <View style={[styles.shadow, { width, height }]}>
@@ -86,6 +89,7 @@ export function PlayingCard({ rank, suit, width, faceUp, roleLabel, backColor = 
 }
 
 function CardBack({ color }: { color: string }) {
+  const { colors, LCD } = useSkinTokens();
   return (
     <G>
       <Defs>
@@ -121,7 +125,8 @@ function CardBack({ color }: { color: string }) {
 }
 
 function CardFace({ rank, suit, roleLabel }: { rank: string; suit: Suit; roleLabel?: string }) {
-  const color = suitColor(suit);
+  const { colors } = useSkinTokens();
+  const color = suitColor(suit, colors);
   const glyph = SUIT_GLYPH[suit];
   const isCourt = rank === 'J' || rank === 'Q' || rank === 'K';
   const isAce = rank === 'A';
@@ -334,8 +339,10 @@ function CourtPanel({
   );
 }
 
-const styles = StyleSheet.create({
-  // No blur: a dot-matrix screen can only draw an outline, and it is drawn
-  // inside the SVG so it never eats into the card's measured box.
-  shadow: { backgroundColor: colors.cardFace },
-});
+function createStyles(colors: ReturnType<typeof useSkinTokens>['colors']) {
+  return StyleSheet.create({
+    // No blur: a dot-matrix screen can only draw an outline, and it is drawn
+    // inside the SVG so it never eats into the card's measured box.
+    shadow: { backgroundColor: colors.cardFace },
+  });
+}

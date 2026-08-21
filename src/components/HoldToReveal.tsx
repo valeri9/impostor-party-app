@@ -1,10 +1,11 @@
-import React, { useCallback, useEffect, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Animated, AppState, Pressable, StyleSheet, Text, View } from 'react-native';
 
 import { useI18n } from '../i18n';
 import { haptics } from '../native/haptics';
 import { playSound } from '../native/sound';
-import { colors, spacing, stroke, type } from '../theme/tokens';
+import { useSkinTokens } from '../theme/SkinContext';
+import { spacing, stroke, type } from '../theme/tokens';
 import { PIXEL_LOCK, PixelArt } from './PixelArt';
 
 /**
@@ -34,8 +35,11 @@ type Props = {
  *   2. Losing the touch for any reason (release, cancel, app backgrounded)
  *      hides it immediately.
  */
-export function HoldToReveal({ playerName, children, accent = colors.ink, onHoldStart, onUnlocked }: Props) {
+export function HoldToReveal({ playerName, children, accent, onHoldStart, onUnlocked }: Props) {
   const { t } = useI18n();
+  const { colors } = useSkinTokens();
+  const styles = useMemo(() => createStyles(colors), [colors]);
+  const accentColor = accent ?? colors.ink;
   const [held, setHeld] = useState(false);
   const [unlocked, setUnlocked] = useState(false);
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -101,7 +105,7 @@ export function HoldToReveal({ playerName, children, accent = colors.ink, onHold
             testID="secret-content"
             style={[
               styles.secret,
-              { borderColor: accent },
+              { borderColor: accentColor },
               {
                 opacity: revealAnim,
                 transform: [{ scaleY: revealAnim.interpolate({ inputRange: [0, 1], outputRange: [0.3, 1] }) }],
@@ -111,7 +115,7 @@ export function HoldToReveal({ playerName, children, accent = colors.ink, onHold
             {children}
           </Animated.View>
         ) : (
-          <Shield playerName={playerName} accent={accent} />
+          <Shield playerName={playerName} accent={accentColor} />
         )}
       </Pressable>
 
@@ -125,6 +129,8 @@ export function HoldToReveal({ playerName, children, accent = colors.ink, onHold
 /** The only thing a bystander can ever see: a name and an instruction. */
 function Shield({ playerName, accent }: { playerName: string; accent: string }) {
   const { t } = useI18n();
+  const { colors } = useSkinTokens();
+  const styles = useMemo(() => createStyles(colors), [colors]);
   return (
     <View testID="shield" style={[styles.shield, { borderColor: accent }]}>
       <View style={styles.lockBadge}>
@@ -138,38 +144,40 @@ function Shield({ playerName, accent }: { playerName: string; accent: string }) 
   );
 }
 
-const styles = StyleSheet.create({
-  wrap: { flex: 1, width: '100%' },
-  pressable: { flex: 1, width: '100%' },
-  shield: {
-    flex: 1,
-    borderWidth: stroke.thick,
-    backgroundColor: colors.surface,
-    alignItems: 'center',
-    justifyContent: 'center',
-    padding: spacing.lg,
-    gap: spacing.md,
-  },
-  lockBadge: {
-    backgroundColor: colors.ink,
-    padding: spacing.md,
-    marginBottom: spacing.sm,
-  },
-  shieldName: { ...type.title, color: colors.ink, textAlign: 'center' },
-  shieldHint: { ...type.caption, color: colors.inkSoft, textAlign: 'center', textTransform: 'uppercase' },
-  secret: {
-    flex: 1,
-    borderWidth: stroke.thick,
-    backgroundColor: colors.bgDeep,
-    alignItems: 'center',
-    justifyContent: 'center',
-    padding: spacing.lg,
-  },
-  footHint: {
-    ...type.caption,
-    color: colors.inkSoft,
-    textAlign: 'center',
-    marginTop: spacing.sm,
-    minHeight: 18,
-  },
-});
+function createStyles(colors: ReturnType<typeof useSkinTokens>['colors']) {
+  return StyleSheet.create({
+    wrap: { flex: 1, width: '100%' },
+    pressable: { flex: 1, width: '100%' },
+    shield: {
+      flex: 1,
+      borderWidth: stroke.thick,
+      backgroundColor: colors.surface,
+      alignItems: 'center',
+      justifyContent: 'center',
+      padding: spacing.lg,
+      gap: spacing.md,
+    },
+    lockBadge: {
+      backgroundColor: colors.ink,
+      padding: spacing.md,
+      marginBottom: spacing.sm,
+    },
+    shieldName: { ...type.title, color: colors.ink, textAlign: 'center' },
+    shieldHint: { ...type.caption, color: colors.inkSoft, textAlign: 'center', textTransform: 'uppercase' },
+    secret: {
+      flex: 1,
+      borderWidth: stroke.thick,
+      backgroundColor: colors.bgDeep,
+      alignItems: 'center',
+      justifyContent: 'center',
+      padding: spacing.lg,
+    },
+    footHint: {
+      ...type.caption,
+      color: colors.inkSoft,
+      textAlign: 'center',
+      marginTop: spacing.sm,
+      minHeight: 18,
+    },
+  });
+}

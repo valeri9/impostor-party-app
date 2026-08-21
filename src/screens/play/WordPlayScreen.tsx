@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 
 import { Button } from '../../components/Button';
@@ -9,12 +9,15 @@ import { SectionLabel } from '../../components/SectionLabel';
 import { useGame } from '../../game/GameContext';
 import type { WordRound } from '../../game/types';
 import { useI18n } from '../../i18n';
-import { colors, MODE_ACCENT, MODE_GLYPH, spacing, stroke, type } from '../../theme/tokens';
+import { useSkinTokens } from '../../theme/SkinContext';
+import { MODE_GLYPH, spacing, stroke, type } from '../../theme/tokens';
 
 export function WordPlayScreen({ round }: { round: WordRound }) {
   const { t } = useI18n();
   const { dispatch, playerById } = useGame();
-  const accent = MODE_ACCENT.word;
+  const { colors } = useSkinTokens();
+  const styles = useMemo(() => createStyles(colors), [colors]);
+  const accent = colors.ink;
 
   const total = round.order.length;
   const done = round.speakerIndex >= total;
@@ -78,31 +81,33 @@ export function WordPlayScreen({ round }: { round: WordRound }) {
   );
 }
 
-const styles = StyleSheet.create({
-  titleRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: spacing.sm },
-  title: { ...type.title, color: colors.ink, textAlign: 'center', textTransform: 'uppercase' },
-  glyph: { ...type.title, color: colors.inkSoft },
-  instruction: {
-    ...type.caption,
-    color: colors.inkSoft,
-    textAlign: 'center',
-    marginTop: spacing.xs,
-    marginBottom: spacing.md,
-  },
-  // The spotlight is the one inverted block on the screen, so the eye lands
-  // on whoever is speaking without needing a second colour.
-  spotlight: {
-    borderWidth: stroke.thick,
-    backgroundColor: colors.ink,
-    paddingVertical: spacing.lg,
-    paddingHorizontal: spacing.md,
-    alignItems: 'center',
-    marginBottom: spacing.md,
-  },
-  spotlightLabel: { ...type.caption, color: colors.onInk, textTransform: 'uppercase' },
-  spotlightName: { ...type.hero, color: colors.onInk, marginTop: spacing.xs },
-  spotlightArt: { marginTop: spacing.sm },
-  section: { marginTop: 0 },
-  list: { flex: 1 },
-  action: { marginTop: spacing.sm },
-});
+function createStyles(colors: ReturnType<typeof useSkinTokens>['colors']) {
+  return StyleSheet.create({
+    titleRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: spacing.sm },
+    title: { ...type.title, color: colors.ink, textAlign: 'center', textTransform: 'uppercase' },
+    glyph: { ...type.title, color: colors.inkSoft },
+    instruction: {
+      ...type.caption,
+      color: colors.inkSoft,
+      textAlign: 'center',
+      marginTop: spacing.xs,
+      marginBottom: spacing.md,
+    },
+    // The spotlight is the one inverted block on the screen, so the eye lands
+    // on whoever is speaking without needing a second colour.
+    spotlight: {
+      borderWidth: stroke.thick,
+      backgroundColor: colors.ink,
+      paddingVertical: spacing.lg,
+      paddingHorizontal: spacing.md,
+      alignItems: 'center',
+      marginBottom: spacing.md,
+    },
+    spotlightLabel: { ...type.caption, color: colors.onInk, textTransform: 'uppercase' },
+    spotlightName: { ...type.hero, color: colors.onInk, marginTop: spacing.xs },
+    spotlightArt: { marginTop: spacing.sm },
+    section: { marginTop: 0 },
+    list: { flex: 1 },
+    action: { marginTop: spacing.sm },
+  });
+}
