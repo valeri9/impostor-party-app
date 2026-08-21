@@ -154,16 +154,16 @@ describe('setup', () => {
     expect(screen.queryByText(translate('en', 'setup.nameRequired'))).toBeNull();
   });
 
-  it('caps the roster at ten players', async () => {
+  it('caps the roster at fifteen players', async () => {
     await render(<App />);
     await waitFor(() => expect(screen.getByText(translate('en', 'app.tagline'))).toBeTruthy());
 
     expect(screen.getAllByPlaceholderText(/Player/)).toHaveLength(4);
 
-    for (let i = 0; i < 8; i++) {
+    for (let i = 0; i < 13; i++) {
       await fireEvent.press(screen.getByText(translate('en', 'setup.addPlayer')));
     }
-    expect(screen.getAllByPlaceholderText(/Player/)).toHaveLength(10);
+    expect(screen.getAllByPlaceholderText(/Player/)).toHaveLength(15);
     expect(screen.getByText(translate('en', 'setup.maxPlayers'))).toBeTruthy();
   });
 

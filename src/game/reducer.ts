@@ -2,9 +2,12 @@ import { createPlayer } from './assign';
 import {
   Action,
   DEFAULT_PLAYERS,
+  DEFAULT_ROUNDS,
   GameState,
   MAX_PLAYERS,
+  MAX_ROUNDS,
   MIN_PLAYERS,
+  MIN_ROUNDS,
   Player,
 } from './types';
 
@@ -18,6 +21,7 @@ export function initialState(): GameState {
     mode: 'word',
     players: initialPlayers(),
     mafiaConfig: { mafiaCount: 1, detective: true, doctor: false },
+    roundsConfig: { ...DEFAULT_ROUNDS },
     round: null,
     revealIndex: 0,
   };
@@ -44,6 +48,11 @@ export function reducer(state: GameState, action: Action): GameState {
 
     case 'SET_MAFIA_CONFIG':
       return { ...state, mafiaConfig: action.config };
+
+    case 'SET_ROUNDS': {
+      const rounds = Math.min(MAX_ROUNDS, Math.max(MIN_ROUNDS, action.rounds));
+      return { ...state, roundsConfig: { ...state.roundsConfig, [action.mode]: rounds } };
+    }
 
     case 'START_GAME':
     case 'NEW_GAME':
@@ -74,13 +83,18 @@ export function reducer(state: GameState, action: Action): GameState {
       if (state.round?.mode !== 'timer') return state;
       return {
         ...state,
-        round: { ...state.round, times: { ...state.round.times, [action.playerId]: action.ms } },
+        round: {
+          ...state.round,
+          times: { ...state.round.times, [action.playerId]: action.ms },
+          attempts: state.round.attempts + 1,
+        },
       };
     }
 
     case 'NEXT_SPEAKER': {
       if (state.round?.mode !== 'word') return state;
-      const speakerIndex = Math.min(state.round.speakerIndex + 1, state.round.order.length);
+      const total = state.round.order.length * state.round.rounds;
+      const speakerIndex = Math.min(state.round.speakerIndex + 1, total);
       return { ...state, round: { ...state.round, speakerIndex } };
     }
 

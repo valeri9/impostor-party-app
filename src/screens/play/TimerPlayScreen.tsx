@@ -33,11 +33,14 @@ export function TimerPlayScreen({ round }: { round: TimerRound }) {
   const startPress = usePressScale(0.92);
   const stopPress = usePressScale(0.92);
 
-  const turn = round.order.filter((id) => id in round.times).length;
-  const allDone = turn >= round.order.length;
-  const currentId = allDone ? null : round.order[turn];
+  const players = round.order.length;
+  const total = players * round.rounds;
+  const turn = round.attempts;
+  const allDone = turn >= total;
+  const currentId = allDone ? null : round.order[turn % players];
   const current = currentId ? playerById(currentId) : null;
-  const nextName = turn + 1 < round.order.length ? playerById(round.order[turn + 1]).name : null;
+  const nextName = turn + 1 < total ? playerById(round.order[(turn + 1) % players]).name : null;
+  const currentRound = Math.min(Math.floor(turn / players) + 1, round.rounds);
 
   const start = () => {
     haptics.heavy();
@@ -127,7 +130,8 @@ export function TimerPlayScreen({ round }: { round: TimerRound }) {
   return (
     <Screen center>
       <Text style={styles.progress}>
-        {t('reveal.progress', { current: turn + 1, total: round.order.length })}
+        {t('reveal.progress', { current: turn + 1, total })}
+        {round.rounds > 1 ? `  ·  ${t('canvas.play.round', { current: currentRound, total: round.rounds })}` : ''}
       </Text>
       <Text style={[styles.passLine, { color: accent }]} adjustsFontSizeToFit numberOfLines={2}>
         {t('timer.play.passTo', { name: current?.name ?? '' })}

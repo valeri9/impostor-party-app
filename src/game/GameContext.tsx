@@ -24,7 +24,10 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
     // Rounds are built here rather than in the reducer so the randomness stays
     // outside a function React may invoke more than once per dispatch.
     const deal = (type: 'START_GAME' | 'NEW_GAME') =>
-      dispatch({ type, round: buildRound(state.mode, state.players, state.mafiaConfig) } as Action);
+      dispatch({
+        type,
+        round: buildRound(state.mode, state.players, state.mafiaConfig, state.roundsConfig),
+      } as Action);
 
     return {
       state,

@@ -19,15 +19,20 @@ export function WordPlayScreen({ round }: { round: WordRound }) {
   const styles = useMemo(() => createStyles(colors), [colors]);
   const accent = colors.ink;
 
-  const total = round.order.length;
+  const players = round.order.length;
+  const total = players * round.rounds;
   const done = round.speakerIndex >= total;
-  const current = done ? null : playerById(round.order[round.speakerIndex]);
+  const current = done ? null : playerById(round.order[round.speakerIndex % players]);
+  const currentRound = Math.min(Math.floor(round.speakerIndex / players) + 1, round.rounds);
 
   return (
     <Screen>
       <View style={styles.titleRow}>
         <Text style={styles.glyph}>{MODE_GLYPH.word}</Text>
-        <Text style={styles.title}>{t('word.play.title')}</Text>
+        <Text style={styles.title}>
+          {t('word.play.title')}
+          {!done && round.rounds > 1 ? `  ·  ${t('canvas.play.round', { current: currentRound, total: round.rounds })}` : ''}
+        </Text>
       </View>
       <Text style={styles.instruction}>{t('word.play.instruction')}</Text>
 
@@ -54,8 +59,8 @@ export function WordPlayScreen({ round }: { round: WordRound }) {
             index={i + 1}
             name={playerById(id).name}
             accent={accent}
-            active={i === round.speakerIndex}
-            done={i < round.speakerIndex}
+            active={!done && i === round.speakerIndex % players}
+            done={done || i < round.speakerIndex % players}
           />
         ))}
       </ScrollView>

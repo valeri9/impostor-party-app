@@ -1,6 +1,5 @@
 import { DRAWING_PROMPTS, WORD_PROMPTS } from '../i18n/prompts';
 import {
-  CANVAS_ROUNDS,
   Card,
   CanvasRound,
   GameMode,
@@ -9,6 +8,8 @@ import {
   MafiaRound,
   Player,
   Round,
+  RoundsConfig,
+  Suit,
   TimerRound,
   WordRound,
 } from './types';
@@ -41,12 +42,12 @@ function baseRound(players: Player[]) {
   return { order, impostorId: pick(order) };
 }
 
-export function buildWordRound(players: Player[]): WordRound {
+export function buildWordRound(players: Player[], rounds: number): WordRound {
   const { order, impostorId } = baseRound(players);
-  return { mode: 'word', prompt: pick(WORD_PROMPTS), impostorId, order, speakerIndex: 0 };
+  return { mode: 'word', prompt: pick(WORD_PROMPTS), impostorId, order, speakerIndex: 0, rounds };
 }
 
-export function buildCanvasRound(players: Player[]): CanvasRound {
+export function buildCanvasRound(players: Player[], rounds: number): CanvasRound {
   const { order, impostorId } = baseRound(players);
   return {
     mode: 'canvas',
@@ -54,7 +55,7 @@ export function buildCanvasRound(players: Player[]): CanvasRound {
     impostorId,
     order,
     strokes: [],
-    rounds: CANVAS_ROUNDS,
+    rounds,
     canvas: null,
   };
 }
@@ -65,7 +66,7 @@ const TIMER_MIN_MS = 250;
 const TIMER_MAX_MS = 10_000;
 const TIMER_STEP_MS = 250;
 
-export function buildTimerRound(players: Player[]): TimerRound {
+export function buildTimerRound(players: Player[], rounds: number): TimerRound {
   const { order, impostorId } = baseRound(players);
   // Quarter-second steps give the target texture (6.25s, 6.75s) instead of
   // landing on a whole or half second every time.
@@ -79,25 +80,32 @@ export function buildTimerRound(players: Player[]): TimerRound {
     Math.floor((targetMs * 0.6) / TIMER_STEP_MS) * TIMER_STEP_MS,
   );
   const rangeMaxMs = Math.ceil((targetMs * 1.4) / TIMER_STEP_MS) * TIMER_STEP_MS;
-  return { mode: 'timer', targetMs, rangeMinMs, rangeMaxMs, impostorId, order, times: {} };
+  return { mode: 'timer', targetMs, rangeMinMs, rangeMaxMs, impostorId, order, times: {}, rounds, attempts: 0 };
 }
 
 // ---------------------------------------------------------------- Mafia
 
-/** Jacks for the mafia, one suit each so multiple mafiosi still hold distinct cards. */
+/** Jacks for the mafia, one suit each — capped at 3 so the killers always stay a minority clique. */
 const MAFIA_CARDS: Card[] = [
   { rank: 'J', suit: 'spades' },
   { rank: 'J', suit: 'clubs' },
   { rank: 'J', suit: 'hearts' },
-  { rank: 'J', suit: 'diamonds' },
 ];
 const DETECTIVE_CARD: Card = { rank: 'A', suit: 'hearts' };
 const DOCTOR_CARD: Card = { rank: 'K', suit: 'diamonds' };
-/** Nine distinct number cards — enough for the largest possible civilian pool. */
-const CIVILIAN_CARDS: Card[] = ['2', '3', '4', '5', '6', '7', '8', '9', '10'].map((rank) => ({
-  rank,
-  suit: 'clubs' as const,
-}));
+/**
+ * Every standard rank/suit combo except the ones already claimed above, so up
+ * to MAX_PLAYERS - 1 civilians (the largest possible pool, at 1 mafia and no
+ * specials) each still get a distinct card. Clubs lead the order to keep the
+ * usual small-table look, spilling into the other suits' number cards only
+ * once a table is big enough to need them.
+ */
+const RESERVED_CARDS = [...MAFIA_CARDS, DETECTIVE_CARD, DOCTOR_CARD];
+const ALL_RANKS = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A'];
+const ALL_SUITS: Suit[] = ['clubs', 'spades', 'hearts', 'diamonds'];
+const CIVILIAN_CARDS: Card[] = ALL_SUITS.flatMap((suit) => ALL_RANKS.map((rank) => ({ rank, suit }))).filter(
+  (c) => !RESERVED_CARDS.some((r) => r.rank === c.rank && r.suit === c.suit),
+);
 
 export const MAX_MAFIA = MAFIA_CARDS.length;
 
@@ -108,7 +116,7 @@ export function maxMafiaFor(playerCount: number): number {
 
 export function defaultMafiaConfig(playerCount: number): MafiaConfig {
   const config: MafiaConfig = {
-    mafiaCount: playerCount <= 6 ? 1 : 2,
+    mafiaCount: playerCount <= 6 ? 1 : playerCount <= 10 ? 2 : 3,
     detective: playerCount >= 4,
     doctor: playerCount >= 5,
   };
@@ -156,14 +164,19 @@ export function buildMafiaRound(players: Player[], rawConfig: MafiaConfig): Mafi
 
 // ---------------------------------------------------------------- Entry point
 
-export function buildRound(mode: GameMode, players: Player[], mafiaConfig: MafiaConfig): Round {
+export function buildRound(
+  mode: GameMode,
+  players: Player[],
+  mafiaConfig: MafiaConfig,
+  roundsConfig: RoundsConfig,
+): Round {
   switch (mode) {
     case 'word':
-      return buildWordRound(players);
+      return buildWordRound(players, roundsConfig.word);
     case 'canvas':
-      return buildCanvasRound(players);
+      return buildCanvasRound(players, roundsConfig.canvas);
     case 'timer':
-      return buildTimerRound(players);
+      return buildTimerRound(players, roundsConfig.timer);
     case 'mafia':
       return buildMafiaRound(players, mafiaConfig);
   }
