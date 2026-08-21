@@ -495,6 +495,10 @@ const previewStyles = StyleSheet.create({
     flex: 1,
     borderWidth: stroke.hair,
     overflow: 'hidden',
+    // Matches the bezel's own curve, same fix as Screen.tsx's lcd — a
+    // square-cornered bordered child inside a rounded parent otherwise
+    // pokes a dark wedge through right at the curve.
+    borderBottomRightRadius: 20,
   },
   lcdContent: { padding: spacing.sm },
   titlePlate: {

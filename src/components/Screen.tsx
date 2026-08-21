@@ -132,6 +132,10 @@ const styles = StyleSheet.create({
     borderWidth: stroke.hair,
     borderColor: SHELL.bezelEdge,
     overflow: 'hidden',
+    // Matches the bezel's own curve (radius, less the bezel's own padding
+    // inset) — without it, this square corner pokes a dark wedge through
+    // the rounded bezel right where the two corners don't line up.
+    borderBottomRightRadius: 26,
   },
   content: { paddingHorizontal: spacing.md, paddingVertical: spacing.md },
   fill: { flex: 1 },
