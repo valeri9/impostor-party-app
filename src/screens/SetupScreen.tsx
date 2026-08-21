@@ -47,10 +47,12 @@ export function SetupScreen({
         <Text style={styles.title} adjustsFontSizeToFit numberOfLines={1}>
           {t('app.title')}
         </Text>
+      </View>
+      <View style={styles.titleButtonRow}>
         <SkinsButton onPress={onSkins} />
+        <Text style={styles.tagline}>{t('app.tagline')}</Text>
         <HowToPlayButton onPress={onHowToPlay} />
       </View>
-      <Text style={styles.tagline}>{t('app.tagline')}</Text>
 
       <SectionLabel label={t('setup.language')} />
       <View style={styles.langRow}>
@@ -144,7 +146,7 @@ function HowToPlayButton({ onPress }: { onPress: () => void }) {
   const { t } = useI18n();
   const { scale, onPressIn, onPressOut } = usePressScale(0.85);
   return (
-    <Animated.View style={[styles.howToPlayWrap, { transform: [{ scale }] }]}>
+    <Animated.View style={{ transform: [{ scale }] }}>
       <Pressable
         testID="how-to-play"
         accessibilityRole="button"
@@ -172,7 +174,7 @@ function SkinsButton({ onPress }: { onPress: () => void }) {
   const { t } = useI18n();
   const { scale, onPressIn, onPressOut } = usePressScale(0.85);
   return (
-    <Animated.View style={[styles.skinsWrap, { transform: [{ scale }] }]}>
+    <Animated.View style={{ transform: [{ scale }] }}>
       <Pressable
         testID="open-skins"
         accessibilityRole="button"
@@ -284,9 +286,13 @@ const styles = StyleSheet.create({
     backgroundColor: colors.ink,
     paddingVertical: spacing.md,
     paddingHorizontal: spacing.sm,
-    position: 'relative',
   },
-  howToPlayWrap: { position: 'absolute', top: spacing.xs, right: spacing.xs },
+  titleButtonRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: spacing.sm,
+    marginTop: spacing.sm,
+  },
   howToPlayButton: {
     width: 38,
     height: 38,
@@ -296,7 +302,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   howToPlayGlyph: { ...type.title, color: SHELL.onButton, lineHeight: 26 },
-  skinsWrap: { position: 'absolute', top: spacing.xs, left: spacing.xs },
   skinsButton: {
     width: 38,
     height: 38,
@@ -309,9 +314,9 @@ const styles = StyleSheet.create({
   title: { ...type.hero, color: colors.onInk, textAlign: 'center', textTransform: 'uppercase' },
   tagline: {
     ...type.caption,
+    flex: 1,
     color: colors.inkSoft,
     textAlign: 'center',
-    marginTop: spacing.sm,
     textTransform: 'uppercase',
   },
   langRow: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.sm },
