@@ -1,5 +1,7 @@
 import { Platform } from 'react-native';
 
+import { DEFAULT_SKIN_ID, findSkin, type LcdPalette } from './skins';
+
 /**
  * Design tokens — Nintendo Game Boy (DMG-01) aesthetic, in two halves.
  *
@@ -12,62 +14,49 @@ import { Platform } from 'react-native';
  * screen bezel with its magenta and navy pinstripes, the navy print, and the
  * crimson A/B buttons. The rule is simply where a thing belongs — content is
  * on the screen, controls are on the shell.
+ *
+ * The actual palette values live in ./skins.ts — this file's LCD/SHELL/colors
+ * exports are the default skin, kept as static exports because most of the
+ * app still reads them directly. useSkinTokens() in ./SkinContext resolves
+ * the *active* skin the same way, for the parts of the app that skin-switch.
  */
 
+const DEFAULT_SKIN = findSkin(DEFAULT_SKIN_ID);
+
 /** The four shades the DMG's LCD could actually show, darkest to lightest. */
-export const LCD = {
-  darkest: '#0f380f',
-  dark: '#306230',
-  light: '#8bac0f',
-  lightest: '#9bbc0f',
-} as const;
+export const LCD = DEFAULT_SKIN.lcd;
 
 /** The plastic, print and buttons of the console itself. */
-export const SHELL = {
-  body: '#c9cbc4',
-  bodyEdge: '#a9aba3',
-  /** The dark panel the screen is set into. */
-  bezel: '#5c5670',
-  bezelEdge: '#443f54',
-  /** The grey caption printed across the bezel. */
-  caption: '#a9a5b5',
-  /** The pinstripes either side of that caption. */
-  stripeMagenta: '#a5195c',
-  stripeNavy: '#252b6b',
-  /** The navy the wordmark and button labels are printed in. */
-  print: '#2b3087',
-  printDeep: '#1c2066',
-  /** The A and B buttons. */
-  button: '#b5185a',
-  buttonDeep: '#8b1145',
-  onButton: '#f4f1ea',
-  /** The battery indicator beside the screen. */
-  led: '#7d1f1f',
-} as const;
+export const SHELL = DEFAULT_SKIN.shell;
 
-export const colors = {
-  // Surfaces — the lit screen, and the one-shade-darker wells cut into it.
-  bg: LCD.lightest,
-  bgDeep: LCD.light,
-  surface: LCD.light,
+/** Derives the screen-content colour set from a skin's four LCD shades. */
+export function deriveColors(lcd: LcdPalette) {
+  return {
+    // Surfaces — the lit screen, and the one-shade-darker wells cut into it.
+    bg: lcd.lightest,
+    bgDeep: lcd.light,
+    surface: lcd.light,
 
-  // Text. Only two shades read cleanly on the screen green, so hierarchy is
-  // carried by size, casing and letter-spacing rather than by more colours.
-  ink: LCD.darkest,
-  inkSoft: LCD.dark,
-  /** Text drawn on top of an ink-filled block. */
-  onInk: LCD.lightest,
+    // Text. Only two shades read cleanly on the screen green, so hierarchy is
+    // carried by size, casing and letter-spacing rather than by more colours.
+    ink: lcd.darkest,
+    inkSoft: lcd.dark,
+    /** Text drawn on top of an ink-filled block. */
+    onInk: lcd.lightest,
 
-  // Drawing pens: all four shades. The one matching the canvas doubles as an
-  // eraser, exactly as in the Game Boy Camera's paint tool.
-  swatches: [LCD.darkest, LCD.light, LCD.dark, LCD.lightest],
+    // Drawing pens: all four shades. The one matching the canvas doubles as an
+    // eraser, exactly as in the Game Boy Camera's paint tool.
+    swatches: [lcd.darkest, lcd.light, lcd.dark, lcd.lightest],
 
-  // Playing cards, printed in the same four shades.
-  cardFace: LCD.lightest,
-  cardRed: LCD.dark,
-  cardBlack: LCD.darkest,
-  cardBack: LCD.dark,
-} as const;
+    // Playing cards, printed in the same four shades.
+    cardFace: lcd.lightest,
+    cardRed: lcd.dark,
+    cardBlack: lcd.darkest,
+    cardBack: lcd.dark,
+  } as const;
+}
+
+export const colors = deriveColors(LCD);
 
 export const spacing = {
   xs: 4,
