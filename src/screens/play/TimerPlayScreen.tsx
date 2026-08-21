@@ -7,6 +7,7 @@ import { PixelArt, PIXEL_CHECK, PIXEL_CLOCK } from '../../components/PixelArt';
 import { usePressScale } from '../../components/pressAnim';
 import { Screen } from '../../components/Screen';
 import { useGame } from '../../game/GameContext';
+import { roundProgress } from '../../game/rounds';
 import type { TimerRound } from '../../game/types';
 import { useI18n } from '../../i18n';
 import { haptics } from '../../native/haptics';
@@ -34,13 +35,12 @@ export function TimerPlayScreen({ round }: { round: TimerRound }) {
   const stopPress = usePressScale(0.92);
 
   const players = round.order.length;
-  const total = players * round.rounds;
   const turn = round.attempts;
-  const allDone = turn >= total;
-  const currentId = allDone ? null : round.order[turn % players];
+  const { total, done: allDone, currentIndex, currentRound } = roundProgress(turn, players, round.rounds);
+  const currentId = allDone ? null : round.order[currentIndex];
   const current = currentId ? playerById(currentId) : null;
-  const nextName = turn + 1 < total ? playerById(round.order[(turn + 1) % players]).name : null;
-  const currentRound = Math.min(Math.floor(turn / players) + 1, round.rounds);
+  const next = roundProgress(turn + 1, players, round.rounds);
+  const nextName = next.done ? null : playerById(round.order[next.currentIndex]).name;
 
   const start = () => {
     haptics.heavy();

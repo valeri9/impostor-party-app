@@ -7,6 +7,7 @@ import { PlayerChip } from '../../components/PlayerChip';
 import { Screen } from '../../components/Screen';
 import { SectionLabel } from '../../components/SectionLabel';
 import { useGame } from '../../game/GameContext';
+import { roundProgress } from '../../game/rounds';
 import type { WordRound } from '../../game/types';
 import { useI18n } from '../../i18n';
 import { useSkinTokens } from '../../theme/SkinContext';
@@ -20,10 +21,8 @@ export function WordPlayScreen({ round }: { round: WordRound }) {
   const accent = colors.ink;
 
   const players = round.order.length;
-  const total = players * round.rounds;
-  const done = round.speakerIndex >= total;
-  const current = done ? null : playerById(round.order[round.speakerIndex % players]);
-  const currentRound = Math.min(Math.floor(round.speakerIndex / players) + 1, round.rounds);
+  const { done, currentIndex, currentRound } = roundProgress(round.speakerIndex, players, round.rounds);
+  const current = done ? null : playerById(round.order[currentIndex]);
 
   return (
     <Screen>
@@ -59,8 +58,8 @@ export function WordPlayScreen({ round }: { round: WordRound }) {
             index={i + 1}
             name={playerById(id).name}
             accent={accent}
-            active={!done && i === round.speakerIndex % players}
-            done={done || i < round.speakerIndex % players}
+            active={!done && i === currentIndex}
+            done={done || i < currentIndex}
           />
         ))}
       </ScrollView>
