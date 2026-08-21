@@ -67,6 +67,32 @@ export const SKINS: Skin[] = [
       led: '#7d1f1f',
     },
   },
+  {
+    id: 'neon-nebula',
+    nameKey: 'skin.neonNebula.name',
+    priceCents: 199,
+    lcd: {
+      darkest: '#1c0e33',
+      dark: '#4b1f7a',
+      light: '#a855e0',
+      lightest: '#cfa3f7',
+    },
+    shell: {
+      body: '#241b33',
+      bodyEdge: '#150f1f',
+      bezel: '#120a1e',
+      bezelEdge: '#05030a',
+      caption: '#a897c9',
+      stripeMagenta: '#ff2e88',
+      stripeNavy: '#00e5ff',
+      print: '#00e5ff',
+      printDeep: '#0899ab',
+      button: '#ff2e88',
+      buttonDeep: '#c4106a',
+      onButton: '#fdf1ff',
+      led: '#ff3b5c',
+    },
+  },
 ];
 
 export function findSkin(id: string): Skin {

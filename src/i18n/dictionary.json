@@ -119,7 +119,8 @@
       "skins.owned": "Owned",
       "skins.active": "Active",
       "skins.done": "Done",
-      "skins.open": "Skins"
+      "skins.open": "Skins",
+      "skin.neonNebula.name": "Neon Nebula"
     },
     "bg": {
       "app.title": "Impostor Party",
@@ -240,7 +241,8 @@
       "skins.owned": "Притежаваш",
       "skins.active": "Активна",
       "skins.done": "Готово",
-      "skins.open": "Облицовки"
+      "skins.open": "Облицовки",
+      "skin.neonNebula.name": "Неонова мъглявина"
     },
     "es": {
       "app.title": "Impostor Party",
@@ -361,7 +363,8 @@
       "skins.owned": "Comprado",
       "skins.active": "Activo",
       "skins.done": "Listo",
-      "skins.open": "Aspectos"
+      "skins.open": "Aspectos",
+      "skin.neonNebula.name": "Nebulosa Neón"
     },
     "el": {
       "app.title": "Impostor Party",
@@ -482,7 +485,8 @@
       "skins.owned": "Κατέχεται",
       "skins.active": "Ενεργό",
       "skins.done": "Έτοιμο",
-      "skins.open": "Θέματα"
+      "skins.open": "Θέματα",
+      "skin.neonNebula.name": "Νέον Νεφέλωμα"
     },
     "de": {
       "app.title": "Impostor Party",
@@ -603,7 +607,8 @@
       "skins.owned": "Im Besitz",
       "skins.active": "Aktiv",
       "skins.done": "Fertig",
-      "skins.open": "Skins"
+      "skins.open": "Skins",
+      "skin.neonNebula.name": "Neon-Nebel"
     },
     "ro": {
       "app.title": "Impostor Party",
@@ -724,7 +729,8 @@
       "skins.owned": "Deținut",
       "skins.active": "Activ",
       "skins.done": "Gata",
-      "skins.open": "Skinuri"
+      "skins.open": "Skinuri",
+      "skin.neonNebula.name": "Nebuloasă Neon"
     }
   }
 }

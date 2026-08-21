@@ -404,4 +404,14 @@ describe('skins', () => {
     await fireEvent.press(screen.getByTestId('skins-done'));
     await waitFor(() => expect(screen.getByText(translate('en', 'app.tagline'))).toBeTruthy());
   });
+
+  it('lists a locked paid skin with its price, not selectable yet', async () => {
+    await render(<App />);
+    await waitFor(() => expect(screen.getByText(translate('en', 'app.tagline'))).toBeTruthy());
+
+    await fireEvent.press(screen.getByTestId('open-skins'));
+    await waitFor(() => expect(screen.getByText(translate('en', 'skin.neonNebula.name'))).toBeTruthy());
+    expect(screen.getByText('€1.99')).toBeTruthy();
+    expect(screen.queryByTestId('skin-neon-nebula')).toBeNull();
+  });
 });
