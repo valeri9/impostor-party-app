@@ -39,8 +39,6 @@ export function TimerPlayScreen({ round }: { round: TimerRound }) {
   const { total, done: allDone, currentIndex, currentRound } = roundProgress(turn, players, round.rounds);
   const currentId = allDone ? null : round.order[currentIndex];
   const current = currentId ? playerById(currentId) : null;
-  const next = roundProgress(turn + 1, players, round.rounds);
-  const nextName = next.done ? null : playerById(round.order[next.currentIndex]).name;
 
   const start = () => {
     haptics.heavy();
@@ -66,9 +64,9 @@ export function TimerPlayScreen({ round }: { round: TimerRound }) {
           <PixelArt rows={PIXEL_CHECK} size={64} />
         </View>
         <Text style={styles.headline}>{t('timer.play.recorded')}</Text>
-        {nextName ? (
+        {current ? (
           <Text style={styles.passLine} adjustsFontSizeToFit numberOfLines={2}>
-            {t('timer.play.passTo', { name: nextName })}
+            {t('timer.play.passTo', { name: current.name })}
           </Text>
         ) : null}
         <Button
