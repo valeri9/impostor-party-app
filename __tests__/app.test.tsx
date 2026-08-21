@@ -1,8 +1,10 @@
 import React from 'react';
 import { fireEvent, render, screen, waitFor } from '@testing-library/react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 import App from '../App';
 import { LOCALES, translate } from '../src/i18n';
+import { HOWTO_SEEN_KEY } from '../src/native/storageKeys';
 
 const DEFAULT_NAMES = ['Ana', 'Bo', 'Cid', 'Dee'];
 
@@ -361,5 +363,31 @@ describe('new game', () => {
     expect(screen.getByTestId('shield')).toBeTruthy();
     expect(screen.queryByTestId('secret-content')).toBeNull();
     expect(screen.getByText(translate('en', 'reveal.progress', { current: 1, total: 4 }))).toBeTruthy();
+  });
+});
+
+describe('how to play', () => {
+  it('shows automatically before setup on a fresh install, then never again', async () => {
+    await AsyncStorage.removeItem(HOWTO_SEEN_KEY);
+
+    await render(<App />);
+    await waitFor(() => expect(screen.getByTestId('howto-done')).toBeTruthy());
+    // Setup has not mounted underneath it.
+    expect(screen.queryByText(translate('en', 'app.tagline'))).toBeNull();
+
+    await fireEvent.press(screen.getByTestId('howto-done'));
+    await waitFor(() => expect(screen.getByText(translate('en', 'app.tagline'))).toBeTruthy());
+    expect(await AsyncStorage.getItem(HOWTO_SEEN_KEY)).toBeTruthy();
+  });
+
+  it('is reachable again from the setup screen at any time', async () => {
+    await render(<App />);
+    await waitFor(() => expect(screen.getByText(translate('en', 'app.tagline'))).toBeTruthy());
+
+    await fireEvent.press(screen.getByTestId('how-to-play'));
+    await waitFor(() => expect(screen.getByTestId('howto-done')).toBeTruthy());
+
+    await fireEvent.press(screen.getByTestId('howto-done'));
+    await waitFor(() => expect(screen.getByText(translate('en', 'app.tagline'))).toBeTruthy());
   });
 });

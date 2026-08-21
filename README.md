@@ -89,6 +89,18 @@ like — none of them implement revealing themselves.
 
 ---
 
+## First launch: how to play
+
+`src/screens/HowToPlayScreen.tsx` explains the pass-and-play concept, the hold-to-reveal
+rule, and previews the four modes. `GameRoot` shows it automatically before setup
+the first time the app opens (an AsyncStorage flag, `HOWTO_SEEN_KEY` in
+`src/native/storageKeys.ts`, remembers it's been seen), and it stays reachable
+any time after from the `?` badge on the setup screen's title plate. It's
+intentionally outside the game's reducer/state machine — it isn't game state,
+just a gate in front of it.
+
+---
+
 ## Feel: sound, haptics, motion
 
 Every tappable surface answers immediately, the way real plastic would:

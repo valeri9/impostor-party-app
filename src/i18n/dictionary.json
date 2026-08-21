@@ -103,7 +103,14 @@
       "category.sports": "Sports",
       "category.entertainment": "Entertainment",
       "common.back": "Back",
-      "common.seconds": "s"
+      "common.seconds": "s",
+      "howto.title": "How to Play",
+      "howto.intro": "One phone, passed around the table. Before each round, one player is secretly the impostor — everyone else shares a real secret, and the impostor has to fake it.",
+      "howto.holdTitle": "Hold to Reveal",
+      "howto.holdBody": "When it is your turn, hold your thumb on the screen to see your secret. Let go and it vanishes — check no one else can see first.",
+      "howto.modesTitle": "Pick a Mode",
+      "howto.done": "Got it, let's play!",
+      "howto.open": "How to Play"
     },
     "bg": {
       "app.title": "Impostor Party",
@@ -208,7 +215,14 @@
       "category.sports": "Спорт",
       "category.entertainment": "Забавление",
       "common.back": "Назад",
-      "common.seconds": "с"
+      "common.seconds": "с",
+      "howto.title": "Как се играе",
+      "howto.intro": "Един телефон обикаля масата. Преди всеки рунд един играч тайно е измамникът — останалите знаят истинската тайна, а той трябва да я познае.",
+      "howto.holdTitle": "Задръж, за да разкриеш",
+      "howto.holdBody": "Когато е твой ред, задръж пръст на екрана, за да видиш тайната си. Пусни и тя изчезва — увери се, че никой друг не гледа.",
+      "howto.modesTitle": "Избери режим",
+      "howto.done": "Разбрах, да играем!",
+      "howto.open": "Как се играе"
     },
     "es": {
       "app.title": "Impostor Party",
@@ -313,7 +327,14 @@
       "category.sports": "Deportes",
       "category.entertainment": "Entretenimiento",
       "common.back": "Atrás",
-      "common.seconds": "s"
+      "common.seconds": "s",
+      "howto.title": "Cómo Jugar",
+      "howto.intro": "Un móvil que pasa de mano en mano. Antes de cada ronda, un jugador es en secreto el impostor — el resto comparte un secreto real, y el impostor debe fingir que lo sabe.",
+      "howto.holdTitle": "Mantén Pulsado para Revelar",
+      "howto.holdBody": "Cuando sea tu turno, mantén el pulgar en la pantalla para ver tu secreto. Suéltalo y desaparece al instante — asegúrate antes de que nadie más pueda verlo.",
+      "howto.modesTitle": "Elige un Modo",
+      "howto.done": "¡Entendido, a jugar!",
+      "howto.open": "Cómo Jugar"
     },
     "el": {
       "app.title": "Impostor Party",
@@ -418,7 +439,14 @@
       "category.sports": "Αθλήματα",
       "category.entertainment": "Ψυχαγωγία",
       "common.back": "Πίσω",
-      "common.seconds": "δ"
+      "common.seconds": "δ",
+      "howto.title": "Πώς Παίζεται",
+      "howto.intro": "Ένα κινητό περνά γύρω από το τραπέζι. Πριν από κάθε γύρο, ένας παίκτης είναι κρυφά ο απατεώνας — οι υπόλοιποι μοιράζονται ένα αληθινό μυστικό, και ο απατεώνας πρέπει να το προσποιηθεί.",
+      "howto.holdTitle": "Πάτα Παρατεταμένα για Αποκάλυψη",
+      "howto.holdBody": "Όταν είναι η σειρά σου, κράτα το δάχτυλό σου στην οθόνη για να δεις το μυστικό σου. Άσε το και εξαφανίζεται αμέσως — βεβαιώσου πρώτα ότι κανείς άλλος δεν βλέπει.",
+      "howto.modesTitle": "Επίλεξε Λειτουργία",
+      "howto.done": "Κατάλαβα, ας παίξουμε!",
+      "howto.open": "Πώς Παίζεται"
     },
     "de": {
       "app.title": "Impostor Party",
@@ -523,7 +551,14 @@
       "category.sports": "Sport",
       "category.entertainment": "Unterhaltung",
       "common.back": "Zurück",
-      "common.seconds": "s"
+      "common.seconds": "s",
+      "howto.title": "Spielanleitung",
+      "howto.intro": "Ein Handy geht reihum am Tisch. Vor jeder Runde ist heimlich ein Spieler der Betrüger — die anderen teilen ein echtes Geheimnis, und der Betrüger muss es vortäuschen.",
+      "howto.holdTitle": "Gedrückt Halten zum Aufdecken",
+      "howto.holdBody": "Wenn du dran bist, halte deinen Daumen auf den Bildschirm, um dein Geheimnis zu sehen. Loslassen lässt es sofort verschwinden — stell vorher sicher, dass niemand sonst mitliest.",
+      "howto.modesTitle": "Modus Wählen",
+      "howto.done": "Verstanden, los geht's!",
+      "howto.open": "Spielanleitung"
     },
     "ro": {
       "app.title": "Impostor Party",
@@ -628,7 +663,14 @@
       "category.sports": "Sporturi",
       "category.entertainment": "Divertisment",
       "common.back": "Înapoi",
-      "common.seconds": "s"
+      "common.seconds": "s",
+      "howto.title": "Cum se Joacă",
+      "howto.intro": "Un telefon trece din mână în mână. Înainte de fiecare rundă, un jucător este pe ascuns impostorul — ceilalți știu un secret real, iar impostorul trebuie să se prefacă.",
+      "howto.holdTitle": "Ține Apăsat pentru a Dezvălui",
+      "howto.holdBody": "Când e rândul tău, ține degetul pe ecran ca să-ți vezi secretul. Eliberează și dispare instant — asigură-te întâi că nu te vede nimeni altcineva.",
+      "howto.modesTitle": "Alege un Mod",
+      "howto.done": "Am înțeles, să jucăm!",
+      "howto.open": "Cum se Joacă"
     }
   }
 }
