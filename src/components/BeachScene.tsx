@@ -8,6 +8,7 @@ import {
   PALM_LEFT_SVG,
   PALM_PIVOTS,
   PALM_RIGHT_SVG,
+  PROPS_SVG,
   SAND_COLOR,
   SAND_FLECK_COLOR,
   SAND_FLECK_RECTS,
@@ -20,10 +21,10 @@ import {
 /**
  * An infinitely-tileable patch of the beach's own dry sand, using the exact
  * fleck rule sandAndFoam paints the scene's sand with (see gen-shoreline.js)
- * — not a flat color guess. Sits behind the cover-scaled hero scene as the
- * permanent floor, so however tall the container turns out to be (a "cover"
- * sizing shortfall, a slow layout measurement), what shows through is more
- * real, matching sand texture rather than a seamed, flatter patch.
+ * — not a flat color guess. Sits behind the hero scene as the permanent
+ * floor, so whatever's below the scene's own aspect-locked box (the rest of
+ * a tall screen) still reads as real, matching sand texture rather than a
+ * seamed, flatter patch.
  */
 export function SandFill() {
   return (
@@ -44,11 +45,11 @@ export function SandFill() {
 }
 
 /**
- * The Shoreline skin's animated beach banner. Five independently-animated
- * layers stacked in one 400x320 coordinate space (see shoreline.ts): a
- * static sky, a cloud strip drifting sideways on a seamless loop, three sea
- * frames cross-fading for the tide, and two palms swaying around their own
- * base. Nothing here is interactive — it's a look, not a control.
+ * The Shoreline skin's animated beach banner, stacked in one 400x320
+ * coordinate space (see shoreline.ts): a static sky, a cloud strip drifting
+ * sideways on a seamless loop, three sea frames cross-fading for the tide,
+ * static umbrellas/towels on the sand, and two palms swaying around their
+ * own base. Nothing here is interactive — it's a look, not a control.
  */
 export function BeachScene() {
   const [size, setSize] = useState<{ width: number; height: number } | null>(null);
@@ -64,6 +65,7 @@ export function BeachScene() {
       <SvgXml xml={SKY_SVG} width="100%" height="100%" style={StyleSheet.absoluteFillObject} />
       {size ? <CloudLayer width={size.width} height={size.height} reduceMotion={reduceMotion} /> : null}
       <TideLayer reduceMotion={reduceMotion} />
+      <SvgXml xml={PROPS_SVG} width="100%" height="100%" style={StyleSheet.absoluteFillObject} />
       {size ? (
         <PalmLayer
           xml={PALM_LEFT_SVG}

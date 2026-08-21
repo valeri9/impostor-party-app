@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 /**
- * Generates the "Shoreline" skin's animated beach banner — seven pixel-art
- * layers (sky, a tiling cloud strip, three tide frames, two palms) composed
- * from small procedural functions rather than hand-placed pixels, so the
- * two tide frames are just the same shoreline function called with a
- * different baseline.
+ * Generates the "Shoreline" skin's animated beach banner — pixel-art layers
+ * (sky, a tiling cloud strip, three tide frames, two palms, and a static
+ * layer of umbrellas/towels on the sand) composed from small procedural
+ * functions rather than hand-placed pixels, so the three tide frames are
+ * just the same shoreline function called with a different baseline.
  *
  *   node scripts/gen-shoreline.js
  *
@@ -180,14 +180,54 @@ function palm(s, baseX, baseY, h, lean) {
   s.set(crownX + 1, crownY + 2, '#6b4426');
 }
 
+// A striped beach umbrella: half-dome canopy, scalloped rim, pole, and a
+// grounding shadow — dropped straight onto the sand.
+function umbrella(s, cx, cy, r, colorA, colorB, poleColor) {
+  for (let y = -r; y <= 0; y++) {
+    const w = Math.sqrt(Math.max(0, 1 - (y * y) / (r * r))) * r;
+    const x0 = Math.round(-w), x1 = Math.round(w);
+    const span = x1 - x0 || 1;
+    for (let x = x0; x <= x1; x++) {
+      const band = Math.floor(((x - x0) / span) * 6);
+      s.set(cx + x, cy + y, band % 2 === 0 ? colorA : colorB);
+    }
+  }
+  for (let x = -Math.round(r); x <= Math.round(r); x += 2) s.set(cx + x, cy + 1, colorA);
+  for (let i = 1; i <= r + 3; i++) s.set(cx, cy + i, poleColor);
+  const shR = Math.max(2, Math.round(r * 0.5));
+  for (let x = -shR; x <= shR; x++) s.set(cx + x, cy + Math.round(r) + 3, '#d9b87a');
+}
+
+// A folded beach towel lying flat on the sand, striped like the umbrellas.
+function towel(s, cx, cy, w, h, colorA, colorB) {
+  const x0 = Math.round(cx - w / 2), y0 = Math.round(cy - h / 2);
+  for (let y = 0; y < h; y++) {
+    const color = y % 2 === 0 ? colorA : colorB;
+    for (let x = 0; x < w; x++) s.set(x0 + x, y0 + y, color);
+  }
+}
+
 // ---- compose the seven layers --------------------------------------------
 
 const COLS = 80, ROWS = 64;
 const CLOUD_POSITIONS = [[16, 9, 1.1], [50, 8, 0.9], [67, 11, 0.65]];
-const TIDE_BASE_Y = [46, 44.3, 42.6];
+// Shoreline sits higher up (was [46, 44.3, 42.6]) so more of the canvas is
+// dry sand — more of a wide beach, less a close-up crop of the shoreline —
+// and there's real room for umbrellas and towels between the tide line and
+// the players' hands.
+const TIDE_BASE_Y = [40, 38.3, 36.6];
+// Smaller than before (was h:20/25) to read as further away, not a close-up.
 const PALMS = [
-  { x: 6, y: 60, h: 20, lean: -1 },
-  { x: 70, y: 58, h: 25, lean: 1 },
+  { x: 6, y: 60, h: 15, lean: -1 },
+  { x: 70, y: 58, h: 18, lean: 1 },
+];
+const UMBRELLAS = [
+  { x: 24, y: 50, r: 5, colorA: '#ff6b4a', colorB: '#fff5e6', pole: '#6b4426' },
+  { x: 58, y: 52, r: 4.5, colorA: '#2a9d8f', colorB: '#eaf6fb', pole: '#6b4426' },
+];
+const TOWELS = [
+  { x: 33, y: 60, w: 10, h: 3, colorA: '#ff7a5c', colorB: '#eaf6fb' },
+  { x: 49, y: 61, w: 9, h: 3, colorA: '#2a9d8f', colorB: '#fff5e6' },
 ];
 
 // A seamlessly-tileable swatch of the same dry-sand speckle sandAndFoam
@@ -227,6 +267,10 @@ const palmSurfaces = PALMS.map((p) => {
   return s;
 });
 
+const propsSurface = createSurface(COLS, ROWS);
+UMBRELLAS.forEach((u) => umbrella(propsSurface, u.x, u.y, u.r, u.colorA, u.colorB, u.pole));
+TOWELS.forEach((t) => towel(propsSurface, t.x, t.y, t.w, t.h, t.colorA, t.colorB));
+
 const esc = (svg) => svg.replace(/`/g, '\\`');
 
 const ts = `/**
@@ -235,7 +279,7 @@ const ts = `/**
  * BeachScene.tsx can render them via SvgXml without doing any of this work
  * at runtime. Regenerate with \`node scripts/gen-shoreline.js\`.
  *
- * All seven layers share one 400x320 coordinate space (viewBox), so they
+ * All layers share one 400x320 coordinate space (viewBox), so they
  * composite directly on top of one another with no offset math needed.
  * SCENE_ASPECT_RATIO is that space's width/height, for sizing the container.
  */
@@ -266,6 +310,9 @@ export const CLOUDS_SVG = \`${esc(cloudSurface.toSVGString())}\`;
 export const TIDE_FRAMES: string[] = [
 ${tideSurfaces.map((s) => `  \`${esc(s.toSVGString())}\`,`).join('\n')}
 ];
+
+/** Umbrellas and towels on the sand — static, drawn once above the tide. */
+export const PROPS_SVG = \`${esc(propsSurface.toSVGString())}\`;
 
 /** Each palm on its own full-scene transparent canvas, so it can be swayed
  *  by rotating around its own base without touching anything else. */
