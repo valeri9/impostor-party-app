@@ -47,8 +47,10 @@ export function SetupScreen({
         <Text style={styles.title} adjustsFontSizeToFit numberOfLines={1}>
           {t('app.title')}
         </Text>
-        <SkinsButton onPress={onSkins} />
-        <HowToPlayButton onPress={onHowToPlay} />
+        <View style={styles.titleButtonRow}>
+          <SkinsButton onPress={onSkins} />
+          <HowToPlayButton onPress={onHowToPlay} />
+        </View>
       </View>
       <Text style={styles.tagline}>{t('app.tagline')}</Text>
 
@@ -144,7 +146,7 @@ function HowToPlayButton({ onPress }: { onPress: () => void }) {
   const { t } = useI18n();
   const { scale, onPressIn, onPressOut } = usePressScale(0.85);
   return (
-    <Animated.View style={[styles.howToPlayWrap, { transform: [{ scale }] }]}>
+    <Animated.View style={{ transform: [{ scale }] }}>
       <Pressable
         testID="how-to-play"
         accessibilityRole="button"
@@ -172,7 +174,7 @@ function SkinsButton({ onPress }: { onPress: () => void }) {
   const { t } = useI18n();
   const { scale, onPressIn, onPressOut } = usePressScale(0.85);
   return (
-    <Animated.View style={[styles.skinsWrap, { transform: [{ scale }] }]}>
+    <Animated.View style={{ transform: [{ scale }] }}>
       <Pressable
         testID="open-skins"
         accessibilityRole="button"
@@ -284,9 +286,12 @@ const styles = StyleSheet.create({
     backgroundColor: colors.ink,
     paddingVertical: spacing.md,
     paddingHorizontal: spacing.sm,
-    position: 'relative',
   },
-  howToPlayWrap: { position: 'absolute', top: spacing.xs, right: spacing.xs },
+  titleButtonRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginTop: spacing.sm,
+  },
   howToPlayButton: {
     width: 38,
     height: 38,
@@ -296,7 +301,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   howToPlayGlyph: { ...type.title, color: SHELL.onButton, lineHeight: 26 },
-  skinsWrap: { position: 'absolute', top: spacing.xs, left: spacing.xs },
   skinsButton: {
     width: 38,
     height: 38,
