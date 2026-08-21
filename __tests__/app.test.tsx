@@ -424,8 +424,10 @@ describe('skins', () => {
 
     await fireEvent.press(screen.getByTestId('skin-preview-neon-nebula'));
     await waitFor(() => expect(screen.getByText(translate('en', 'skin.neonNebula.name'))).toBeTruthy());
-    // The mocked-up console itself, not just a name and a price.
+    // The whole home page mocked up in the new colours, not just the title.
     expect(screen.getAllByText(translate('en', 'app.title')).length).toBeGreaterThan(0);
+    expect(screen.getByText(translate('en', 'mode.word.name'))).toBeTruthy();
+    expect(screen.getByText(translate('en', 'setup.start'))).toBeTruthy();
     expect(screen.getByTestId('skin-preview-locked')).toBeTruthy();
 
     await fireEvent.press(screen.getByTestId('skin-preview-back'));

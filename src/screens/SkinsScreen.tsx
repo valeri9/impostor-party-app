@@ -6,12 +6,14 @@ import { PIXEL_LOCK, PixelArt } from '../components/PixelArt';
 import { usePressScale } from '../components/pressAnim';
 import { Screen } from '../components/Screen';
 import { SectionLabel } from '../components/SectionLabel';
-import { useI18n } from '../i18n';
+import { useGame } from '../game/GameContext';
+import { GAME_MODES } from '../game/types';
+import { LOCALES, useI18n } from '../i18n';
 import { haptics } from '../native/haptics';
 import { playSound } from '../native/sound';
 import { useSkin } from '../theme/SkinContext';
 import type { Skin } from '../theme/skins';
-import { BEZEL_CAPTION, colors, spacing, stroke, type } from '../theme/tokens';
+import { BEZEL_CAPTION, colors, deriveColors, MODE_GLYPH, spacing, stroke, type } from '../theme/tokens';
 
 function formatPrice(priceCents: number, freeLabel: string): string {
   if (priceCents === 0) return freeLabel;
@@ -174,13 +176,21 @@ function SkinPreview({ skin }: { skin: Skin }) {
 }
 
 /**
- * A full-size, legible mockup of the actual boot screen in a given skin's
- * colours — the same chrome Screen.tsx and SetupScreen's title area draw,
- * rebuilt here so it can be parameterised per-skin without switching the
- * whole app's active skin just to look at one.
+ * A full-size, legible mockup of the *entire* home screen in a given skin's
+ * colours — not just the title plate, the real setup content too: language
+ * row, current player list, mode cards, start button. It mirrors what
+ * SetupScreen actually draws, using the live game/locale state so it's not a
+ * placeholder page, but every piece here is inert (plain View/Text, nothing
+ * a Pressable) so tapping it can never mutate real game state — this is a
+ * look, not a second copy of the setup screen to interact with. It's built
+ * standalone, parameterised per-skin, rather than by reusing SetupScreen
+ * directly, so previewing a skin never touches the app's real active skin.
  */
 function ConsolePreview({ skin }: { skin: Skin }) {
-  const { t } = useI18n();
+  const { t, locale } = useI18n();
+  const { state } = useGame();
+  const c = deriveColors(skin.lcd);
+
   return (
     <View style={[previewStyles.shell, { backgroundColor: skin.shell.body }]}>
       <View style={[previewStyles.bezel, { backgroundColor: skin.shell.bezel }]}>
@@ -197,13 +207,9 @@ function ConsolePreview({ skin }: { skin: Skin }) {
           <PinstripePair skin={skin} />
         </View>
 
-        <View style={[previewStyles.lcd, { backgroundColor: skin.lcd.lightest, borderColor: skin.shell.bezelEdge }]}>
-          <View style={[previewStyles.titlePlate, { backgroundColor: skin.lcd.darkest }]}>
-            <Text
-              style={[previewStyles.titleText, { color: skin.lcd.lightest }]}
-              numberOfLines={1}
-              adjustsFontSizeToFit
-            >
+        <View style={[previewStyles.lcd, { backgroundColor: c.bg, borderColor: skin.shell.bezelEdge }]}>
+          <View style={[previewStyles.titlePlate, { backgroundColor: c.ink }]}>
+            <Text style={[previewStyles.titleText, { color: c.onInk }]} numberOfLines={1} adjustsFontSizeToFit>
               {t('app.title')}
             </Text>
           </View>
@@ -211,12 +217,63 @@ function ConsolePreview({ skin }: { skin: Skin }) {
             <View style={[previewStyles.chip, { backgroundColor: skin.shell.button, borderColor: skin.shell.buttonDeep }]}>
               <Text style={[previewStyles.chipGlyph, { color: skin.shell.onButton }]}>◨</Text>
             </View>
-            <Text style={[previewStyles.tagline, { color: skin.lcd.dark }]} numberOfLines={2}>
+            <Text style={[previewStyles.tagline, { color: c.inkSoft }]} numberOfLines={2}>
               {t('app.tagline')}
             </Text>
             <View style={[previewStyles.chip, { backgroundColor: skin.shell.button, borderColor: skin.shell.buttonDeep }]}>
               <Text style={[previewStyles.chipGlyph, { color: skin.shell.onButton }]}>?</Text>
             </View>
+          </View>
+
+          <MiniSectionLabel label={t('setup.language')} color={c.ink} />
+          <View style={previewStyles.langRow}>
+            {LOCALES.map((code) => {
+              const active = code === locale;
+              return (
+                <View
+                  key={code}
+                  style={[
+                    previewStyles.langPill,
+                    { borderColor: c.ink, backgroundColor: active ? c.ink : c.surface },
+                  ]}
+                >
+                  <Text style={[previewStyles.langCode, { color: active ? c.onInk : c.ink }]}>{code}</Text>
+                </View>
+              );
+            })}
+          </View>
+
+          <MiniSectionLabel label={`${t('setup.players')}  (${state.players.length})`} color={c.ink} />
+          {state.players.map((p, i) => (
+            <View key={p.id} style={previewStyles.playerRow}>
+              <View style={[previewStyles.playerIndex, { borderColor: c.ink }]}>
+                <Text style={[previewStyles.playerIndexText, { color: c.ink }]}>{i + 1}</Text>
+              </View>
+              <View style={[previewStyles.playerInput, { borderColor: c.ink, backgroundColor: c.surface }]}>
+                <Text style={[previewStyles.playerName, { color: c.ink }]} numberOfLines={1}>
+                  {p.name || t('setup.playerPlaceholder', { n: i + 1 })}
+                </Text>
+              </View>
+            </View>
+          ))}
+
+          <MiniSectionLabel label={t('setup.chooseMode')} color={c.ink} />
+          {GAME_MODES.map((m) => {
+            const selected = m === state.mode;
+            const fg = selected ? c.onInk : c.ink;
+            return (
+              <View
+                key={m}
+                style={[previewStyles.modeCard, { borderColor: c.ink, backgroundColor: selected ? c.ink : c.surface }]}
+              >
+                <Text style={[previewStyles.modeGlyph, { color: fg }]}>{MODE_GLYPH[m]}</Text>
+                <Text style={[previewStyles.modeName, { color: fg }]}>{t(`mode.${m}.name`)}</Text>
+              </View>
+            );
+          })}
+
+          <View style={[previewStyles.startButton, { backgroundColor: skin.shell.button, borderColor: skin.shell.buttonDeep }]}>
+            <Text style={[previewStyles.startLabel, { color: skin.shell.onButton }]}>{t('setup.start')}</Text>
           </View>
         </View>
       </View>
@@ -225,6 +282,15 @@ function ConsolePreview({ skin }: { skin: Skin }) {
         <Text style={[previewStyles.wmSmall, { color: skin.shell.print }]}>Impostor</Text>
         <Text style={[previewStyles.wmLarge, { color: skin.shell.print }]}>PARTY</Text>
       </View>
+    </View>
+  );
+}
+
+function MiniSectionLabel({ label, color }: { label: string; color: string }) {
+  return (
+    <View style={previewStyles.sectionRow}>
+      <Text style={[previewStyles.sectionMark, { color }]}>█</Text>
+      <Text style={[previewStyles.sectionLabel, { color }]}>{label}</Text>
     </View>
   );
 }
@@ -401,4 +467,49 @@ const previewStyles = StyleSheet.create({
   },
   wmSmall: { ...type.caption, fontSize: 11, letterSpacing: 0 },
   wmLarge: { ...type.caption, fontSize: 15, fontStyle: 'italic', letterSpacing: 1 },
+  sectionRow: { flexDirection: 'row', alignItems: 'center', gap: spacing.xs, marginTop: spacing.md, marginBottom: spacing.xs },
+  sectionMark: { ...type.caption, fontSize: 10 },
+  sectionLabel: { ...type.caption, fontSize: 10, textTransform: 'uppercase' },
+  langRow: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.xs },
+  langPill: {
+    paddingHorizontal: spacing.xs,
+    paddingVertical: 3,
+    borderWidth: stroke.hair,
+  },
+  langCode: { ...type.caption, fontSize: 9, textTransform: 'uppercase' },
+  playerRow: { flexDirection: 'row', alignItems: 'center', gap: spacing.xs, marginBottom: spacing.xs },
+  playerIndex: {
+    width: 20,
+    height: 20,
+    borderWidth: stroke.hair,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  playerIndexText: { ...type.caption, fontSize: 9 },
+  playerInput: {
+    flex: 1,
+    minHeight: 24,
+    justifyContent: 'center',
+    borderWidth: stroke.hair,
+    paddingHorizontal: spacing.xs,
+  },
+  playerName: { ...type.caption, fontSize: 10, letterSpacing: 0 },
+  modeCard: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: spacing.xs,
+    padding: spacing.xs,
+    borderWidth: stroke.hair,
+    marginBottom: spacing.xs,
+  },
+  modeGlyph: { ...type.caption, fontSize: 12 },
+  modeName: { ...type.caption, fontSize: 10, textTransform: 'uppercase' },
+  startButton: {
+    marginTop: spacing.sm,
+    minHeight: 32,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderWidth: stroke.thin,
+  },
+  startLabel: { ...type.label, fontSize: 12, textTransform: 'uppercase' },
 });
