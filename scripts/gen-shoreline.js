@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 /**
- * Generates the "Shoreline" skin's animated beach banner — seven pixel-art
- * layers (sky, a tiling cloud strip, three tide frames, two palms) composed
- * from small procedural functions rather than hand-placed pixels, so the
- * two tide frames are just the same shoreline function called with a
- * different baseline.
+ * Generates the "Shoreline" skin's animated beach banner — pixel-art layers
+ * (sky, a tiling cloud strip, three tide frames, two palms, and a static
+ * layer of umbrellas/towels on the sand) composed from small procedural
+ * functions rather than hand-placed pixels, so the three tide frames are
+ * just the same shoreline function called with a different baseline.
  *
  *   node scripts/gen-shoreline.js
  *
@@ -68,13 +68,19 @@ function createSurface(cols, rows) {
 
 // ---- scene pieces --------------------------------------------------------
 
+// Where the sky ends and the sea begins — shared with sea() below so the
+// two always meet with no gap or overlap. The sky's own size is untouched;
+// the sea is made taller by pushing the shoreline (TIDE_BASE_Y) further
+// down instead, which takes the extra height from the sand, not the sky.
+const SEA_TOP = 34;
+
 // Flat bands with a short dithered seam between them: reads as the same
 // soft gradient as dithering the whole sky, at a fraction of the rect count.
 function sky(s) {
   s.rect(0, 0, s.COLS, 21, '#4fa8dd');
   s.ditherBand(0, s.COLS, 21, 25, '#4fa8dd', '#7fc6ec');
   s.rect(0, 25, s.COLS, 30, '#7fc6ec');
-  s.ditherBand(0, s.COLS, 30, 34, '#7fc6ec', '#bfe4f4');
+  s.ditherBand(0, s.COLS, 30, SEA_TOP, '#7fc6ec', '#bfe4f4');
 }
 
 function cloud(s, cx, cy, sc, color = '#ffffff', shade = '#dff0fa') {
@@ -95,21 +101,27 @@ function shoreY(x, baseY, amp = 1.6) {
 function sea(s, baseY) {
   for (let x = 0; x < s.COLS; x++) {
     const sY = shoreY(x, baseY);
-    for (let y = 34; y < s.ROWS; y++) {
+    for (let y = SEA_TOP; y < s.ROWS; y++) {
       if (y >= sY) continue;
-      const depth = (sY - y) / (sY - 34);
+      const depth = (sY - y) / (sY - SEA_TOP);
       const c = depth > 0.75 ? '#0f5f86' : depth > 0.45 ? '#1c7fa8' : depth > 0.18 ? '#3aa8c4' : '#5ec6cf';
       s.set(x, y, c);
     }
   }
 }
 
+// The dry-sand fill used by most of the beach — exported below so anything
+// that needs to blend with the scene's edge (a "cover" sizing fallback, a
+// loading placeholder) can match it exactly instead of guessing a nearby
+// tan and creating a visible seam.
+const SAND_COLOR = '#f2dca0';
+
 function sandAndFoam(s, baseY) {
   for (let x = 0; x < s.COLS; x++) {
     const sY = Math.round(shoreY(x, baseY));
     for (let y = sY; y < sY + 2; y++) s.set(x, y, '#c9a86a');
     for (let y = sY + 2; y < s.ROWS; y++) {
-      s.set(x, y, ((x * 13 + y * 7) % 11) === 0 ? '#e6c68a' : '#f2dca0');
+      s.set(x, y, ((x * 13 + y * 7) % 11) === 0 ? '#e6c68a' : SAND_COLOR);
     }
     s.set(x, sY - 1, '#ffffff');
     if (((x * 7) % 5) === 0) s.set(x, sY - 2, '#ffffff');
@@ -174,15 +186,92 @@ function palm(s, baseX, baseY, h, lean) {
   s.set(crownX + 1, crownY + 2, '#6b4426');
 }
 
+// A striped beach umbrella: half-dome canopy, scalloped rim, pole, and a
+// grounding shadow — dropped straight onto the sand.
+function umbrella(s, cx, cy, r, colorA, colorB, poleColor) {
+  for (let y = -r; y <= 0; y++) {
+    const w = Math.sqrt(Math.max(0, 1 - (y * y) / (r * r))) * r;
+    const x0 = Math.round(-w), x1 = Math.round(w);
+    const span = x1 - x0 || 1;
+    for (let x = x0; x <= x1; x++) {
+      const band = Math.floor(((x - x0) / span) * 6);
+      s.set(cx + x, cy + y, band % 2 === 0 ? colorA : colorB);
+    }
+  }
+  for (let x = -Math.round(r); x <= Math.round(r); x += 2) s.set(cx + x, cy + 1, colorA);
+  for (let i = 1; i <= r + 3; i++) s.set(cx, cy + i, poleColor);
+  const shR = Math.max(2, Math.round(r * 0.5));
+  for (let x = -shR; x <= shR; x++) s.set(cx + x, cy + Math.round(r) + 3, '#d9b87a');
+}
+
+// A folded beach towel lying flat on the sand, striped like the umbrellas.
+function towel(s, cx, cy, w, h, colorA, colorB) {
+  const x0 = Math.round(cx - w / 2), y0 = Math.round(cy - h / 2);
+  for (let y = 0; y < h; y++) {
+    const color = y % 2 === 0 ? colorA : colorB;
+    for (let x = 0; x < w; x++) s.set(x0 + x, y0 + y, color);
+  }
+}
+
 // ---- compose the seven layers --------------------------------------------
 
-const COLS = 80, ROWS = 64;
+// ROWS grew from 64 to 110 (COLS held at 80, so the scene got taller/less
+// wide — sky and sea keep their own fixed row boundaries below, so all the
+// extra rows become new dry sand) — real foreground room for a second row
+// of beach props instead of leaving it to the infinite SandFill tile beyond
+// the scene's own box. Kept well above the near-row props' lowest reach:
+// each umbrella's pole and drop shadow extend below its own y by r+3 (see
+// umbrella()), and a prop placed too close to ROWS gets that tail silently
+// bounds-clipped by set() — which is exactly what cut the bottom-left
+// umbrella's stick off before. This leaves real slack below the lowest one.
+const COLS = 80, ROWS = 110;
 const CLOUD_POSITIONS = [[16, 9, 1.1], [50, 8, 0.9], [67, 11, 0.65]];
-const TIDE_BASE_Y = [46, 44.3, 42.6];
+// Pushed well down from [40, 38.3, 36.6] — the sea was only SEA_TOP(34) to
+// ~38 tall, a sliver next to a much bigger sand area. Taking that height
+// from the sand (not the sky, which keeps its own rows untouched) gives a
+// proper-sized sea and a smaller, tighter beach.
+const TIDE_BASE_Y = [64, 62, 60];
+// Repositioned toward the new bottom edge so the palms keep framing the
+// very front of the scene, not the mid-beach.
 const PALMS = [
-  { x: 6, y: 60, h: 20, lean: -1 },
-  { x: 70, y: 58, h: 25, lean: 1 },
+  { x: 6, y: 107, h: 16, lean: -1 },
+  { x: 70, y: 105, h: 19, lean: 1 },
 ];
+// Two rows packed into the now-tighter sand band (TIDE_BASE_Y maxes out at
+// 64, so everything here stays safely below that) — a smaller, further-back
+// pair near the tide line, and a bigger, closer pair nearer the bottom
+// edge. The near-row pair is staggered (left lower than right) — each kept
+// far enough from ROWS(100) that its pole and shadow (which extend below
+// its own y by r+3, see umbrella()) land fully on the canvas.
+const UMBRELLAS = [
+  { x: 20, y: 71, r: 4.5, colorA: '#ff6b4a', colorB: '#fff5e6', pole: '#6b4426' },
+  { x: 56, y: 72, r: 4, colorA: '#2a9d8f', colorB: '#eaf6fb', pole: '#6b4426' },
+  { x: 16, y: 91, r: 5.5, colorA: '#2a9d8f', colorB: '#fff5e6', pole: '#6b4426' },
+  { x: 60, y: 84, r: 5, colorA: '#ff6b4a', colorB: '#eaf6fb', pole: '#6b4426' },
+];
+const TOWELS = [
+  { x: 31, y: 76, w: 9, h: 3, colorA: '#ff7a5c', colorB: '#eaf6fb' },
+  { x: 46, y: 77, w: 8, h: 3, colorA: '#2a9d8f', colorB: '#fff5e6' },
+  { x: 29, y: 94, w: 12, h: 3, colorA: '#ff7a5c', colorB: '#fff5e6' },
+  { x: 50, y: 88, w: 10, h: 3, colorA: '#2a9d8f', colorB: '#eaf6fb' },
+];
+
+// A seamlessly-tileable swatch of the same dry-sand speckle sandAndFoam
+// paints, for anything that needs sand behind/beyond the scene itself (a
+// "cover" sizing shortfall, a loading placeholder) to match exactly rather
+// than fall back to a flat, visibly-seamed color. It tiles with zero seam
+// because 11 — the formula's own modulus — evenly divides both of its
+// strides (13*11 and 7*11), so the pattern repeats exactly every 11 cells
+// in x and in y.
+const SAND_FLECK_COLOR = '#e6c68a';
+const SAND_TILE_CELLS = 11;
+const SAND_TILE_SIZE = SAND_TILE_CELLS * PX;
+const SAND_FLECK_RECTS = [];
+for (let y = 0; y < SAND_TILE_CELLS; y++) {
+  for (let x = 0; x < SAND_TILE_CELLS; x++) {
+    if (((x * 13 + y * 7) % 11) === 0) SAND_FLECK_RECTS.push({ x: x * PX, y: y * PX, size: PX });
+  }
+}
 
 const skySurface = createSurface(COLS, ROWS);
 sky(skySurface);
@@ -204,6 +293,10 @@ const palmSurfaces = PALMS.map((p) => {
   return s;
 });
 
+const propsSurface = createSurface(COLS, ROWS);
+UMBRELLAS.forEach((u) => umbrella(propsSurface, u.x, u.y, u.r, u.colorA, u.colorB, u.pole));
+TOWELS.forEach((t) => towel(propsSurface, t.x, t.y, t.w, t.h, t.colorA, t.colorB));
+
 const esc = (svg) => svg.replace(/`/g, '\\`');
 
 const ts = `/**
@@ -212,12 +305,25 @@ const ts = `/**
  * BeachScene.tsx can render them via SvgXml without doing any of this work
  * at runtime. Regenerate with \`node scripts/gen-shoreline.js\`.
  *
- * All seven layers share one 400x320 coordinate space (viewBox), so they
+ * All layers share one 400x320 coordinate space (viewBox), so they
  * composite directly on top of one another with no offset math needed.
  * SCENE_ASPECT_RATIO is that space's width/height, for sizing the container.
  */
 
-export const SCENE_ASPECT_RATIO = 400 / 320;
+export const SCENE_ASPECT_RATIO = ${COLS} / ${ROWS};
+
+/** The dry-sand fill most of the beach is painted in — for anything that
+ *  needs to blend seamlessly with the scene's edge rather than guess a
+ *  nearby tan. */
+export const SAND_COLOR = '${SAND_COLOR}';
+
+/** A seamlessly-tileable sand swatch: fleck positions (in px, within one
+ *  \`SAND_TILE_SIZE\` square) using the exact rule sandAndFoam paints the
+ *  beach's own dry sand with, so a tiled fill of these matches the scene's
+ *  texture exactly rather than reading as a different, flatter patch. */
+export const SAND_TILE_SIZE = ${SAND_TILE_SIZE};
+export const SAND_FLECK_COLOR = '${SAND_FLECK_COLOR}';
+export const SAND_FLECK_RECTS: { x: number; y: number; size: number }[] = ${JSON.stringify(SAND_FLECK_RECTS)};
 
 /** Static base: sky gradient. Never animates. */
 export const SKY_SVG = \`${esc(skySurface.toSVGString())}\`;
@@ -230,6 +336,9 @@ export const CLOUDS_SVG = \`${esc(cloudSurface.toSVGString())}\`;
 export const TIDE_FRAMES: string[] = [
 ${tideSurfaces.map((s) => `  \`${esc(s.toSVGString())}\`,`).join('\n')}
 ];
+
+/** Umbrellas and towels on the sand — static, drawn once above the tide. */
+export const PROPS_SVG = \`${esc(propsSurface.toSVGString())}\`;
 
 /** Each palm on its own full-scene transparent canvas, so it can be swayed
  *  by rotating around its own base without touching anything else. */

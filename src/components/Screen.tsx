@@ -3,7 +3,7 @@ import { ScrollView, StyleSheet, Text, View, ViewStyle } from 'react-native';
 import Svg, { Defs, Pattern, Rect } from 'react-native-svg';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { BeachScene } from './BeachScene';
+import { BeachScene, SandFill } from './BeachScene';
 import { useSkin, useSkinTokens } from '../theme/SkinContext';
 import { BEZEL_CAPTION, PIXEL_FONT, spacing, stroke, type } from '../theme/tokens';
 
@@ -54,7 +54,12 @@ export function Screen({ children, scroll = false, center = false, style, backgr
             // ScrollView as a sibling rather than inside it, so it stays put
             // — the same way DotMatrix always has — while everything else
             // scrolls over it, on every screen that uses Screen at all.
-            <View style={[StyleSheet.absoluteFill, { backgroundColor: SHELL.body }]} pointerEvents="none">
+            // SandFill is the permanent floor (real tiled sand texture, not
+            // a flat color guess) so wherever the cover-scaled hero scene
+            // on top of it doesn't quite reach, what shows through still
+            // reads as more beach, not a seamed, mismatched patch.
+            <View style={StyleSheet.absoluteFill} pointerEvents="none">
+              <SandFill />
               <BeachScene />
             </View>
           ) : (
