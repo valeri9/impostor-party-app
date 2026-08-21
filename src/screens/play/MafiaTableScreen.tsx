@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { useKeepAwake } from 'expo-keep-awake';
 
@@ -10,7 +10,8 @@ import type { MafiaRound } from '../../game/types';
 import { useI18n } from '../../i18n';
 import { haptics } from '../../native/haptics';
 import { playSound } from '../../native/sound';
-import { colors, MODE_ACCENT, MODE_GLYPH, spacing, stroke, type } from '../../theme/tokens';
+import { useSkinTokens } from '../../theme/SkinContext';
+import { MODE_GLYPH, spacing, stroke, type } from '../../theme/tokens';
 
 function formatClock(ms: number): string {
   const totalSeconds = Math.max(0, Math.ceil(ms / 1000));
@@ -23,7 +24,9 @@ function formatClock(ms: number): string {
 export function MafiaTableScreen({ round }: { round: MafiaRound }) {
   const { t } = useI18n();
   const { dispatch } = useGame();
-  const accent = MODE_ACCENT.mafia;
+  const { colors } = useSkinTokens();
+  const styles = useMemo(() => createStyles(colors), [colors]);
+  const accent = colors.ink;
   useKeepAwake();
 
   const [minutes, setMinutes] = useState(3);
@@ -119,43 +122,45 @@ export function MafiaTableScreen({ round }: { round: MafiaRound }) {
   );
 }
 
-const styles = StyleSheet.create({
-  titleRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: spacing.sm },
-  title: { ...type.title, color: colors.ink, textAlign: 'center', textTransform: 'uppercase' },
-  glyph: { ...type.title, color: colors.inkSoft },
-  instruction: {
-    ...type.caption,
-    color: colors.inkSoft,
-    textAlign: 'center',
-    marginTop: spacing.xs,
-    marginBottom: spacing.lg,
-  },
-  clockWrap: { alignItems: 'center', marginBottom: spacing.lg },
-  clock: {
-    width: 260,
-    height: 180,
-    borderWidth: stroke.thick,
-    backgroundColor: colors.surface,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  clockExpired: { backgroundColor: colors.ink },
-  clockText: {
-    fontFamily: type.hero.fontFamily,
-    fontSize: 60,
-    fontWeight: '700',
-    letterSpacing: 2,
-    color: colors.ink,
-    fontVariant: ['tabular-nums'],
-  },
-  clockTextExpired: { color: colors.onInk },
-  playerCount: {
-    ...type.caption,
-    color: colors.inkSoft,
-    marginTop: spacing.xs,
-    textTransform: 'uppercase',
-  },
-  controls: { flexDirection: 'row', gap: spacing.sm, marginTop: spacing.sm },
-  control: { flex: 1 },
-  spacer: { flex: 1 },
-});
+function createStyles(colors: ReturnType<typeof useSkinTokens>['colors']) {
+  return StyleSheet.create({
+    titleRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: spacing.sm },
+    title: { ...type.title, color: colors.ink, textAlign: 'center', textTransform: 'uppercase' },
+    glyph: { ...type.title, color: colors.inkSoft },
+    instruction: {
+      ...type.caption,
+      color: colors.inkSoft,
+      textAlign: 'center',
+      marginTop: spacing.xs,
+      marginBottom: spacing.lg,
+    },
+    clockWrap: { alignItems: 'center', marginBottom: spacing.lg },
+    clock: {
+      width: 260,
+      height: 180,
+      borderWidth: stroke.thick,
+      backgroundColor: colors.surface,
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    clockExpired: { backgroundColor: colors.ink },
+    clockText: {
+      fontFamily: type.hero.fontFamily,
+      fontSize: 60,
+      fontWeight: '700',
+      letterSpacing: 2,
+      color: colors.ink,
+      fontVariant: ['tabular-nums'],
+    },
+    clockTextExpired: { color: colors.onInk },
+    playerCount: {
+      ...type.caption,
+      color: colors.inkSoft,
+      marginTop: spacing.xs,
+      textTransform: 'uppercase',
+    },
+    controls: { flexDirection: 'row', gap: spacing.sm, marginTop: spacing.sm },
+    control: { flex: 1 },
+    spacer: { flex: 1 },
+  });
+}

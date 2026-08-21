@@ -35,6 +35,11 @@ export type Skin = {
   priceCents: number;
   lcd: LcdPalette;
   shell: ShellPalette;
+  /** An animated banner this skin shows above the title on setup, in place
+   *  of the plain title plate. Only one exists today (BeachScene, for
+   *  'shoreline') — an id rather than a boolean so more can be added later
+   *  without every skin needing an opinion on it. */
+  sceneId?: 'shoreline';
 };
 
 /** The original palette, unlocked for everyone and always active by default. */
@@ -91,6 +96,33 @@ export const SKINS: Skin[] = [
       buttonDeep: '#c4106a',
       onButton: '#fdf1ff',
       led: '#ff3b5c',
+    },
+  },
+  {
+    id: 'shoreline',
+    nameKey: 'skin.shoreline.name',
+    priceCents: 249,
+    sceneId: 'shoreline',
+    lcd: {
+      darkest: '#0b3654',
+      dark: '#1c6e8c',
+      light: '#5cc8d1',
+      lightest: '#cdf2ea',
+    },
+    shell: {
+      body: '#f2dfb8',
+      bodyEdge: '#d8bd85',
+      bezel: '#2f7a9e',
+      bezelEdge: '#1f5a76',
+      caption: '#eaf6fb',
+      stripeMagenta: '#ff7a5c',
+      stripeNavy: '#2a9d8f',
+      print: '#ff8c42',
+      printDeep: '#cc6a28',
+      button: '#ff6b4a',
+      buttonDeep: '#cc4f32',
+      onButton: '#fff5e6',
+      led: '#ff5252',
     },
   },
 ];

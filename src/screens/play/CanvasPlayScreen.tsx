@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import { Animated, Pressable, StyleSheet, Text, View } from 'react-native';
 
 import { Button } from '../../components/Button';
@@ -10,12 +10,15 @@ import type { CanvasRound } from '../../game/types';
 import { useI18n } from '../../i18n';
 import { haptics } from '../../native/haptics';
 import { playSound } from '../../native/sound';
-import { colors, MODE_ACCENT, MODE_GLYPH, spacing, stroke, type } from '../../theme/tokens';
+import { useSkinTokens } from '../../theme/SkinContext';
+import { MODE_GLYPH, spacing, stroke, type } from '../../theme/tokens';
 
 export function CanvasPlayScreen({ round }: { round: CanvasRound }) {
   const { t } = useI18n();
   const { dispatch, playerById } = useGame();
-  const accent = MODE_ACCENT.canvas;
+  const { colors } = useSkinTokens();
+  const styles = useMemo(() => createStyles(colors), [colors]);
+  const accent = colors.ink;
 
   // One stroke per player per round, so the stroke count is the turn cursor and
   // the phone goes round the table `round.rounds` times.
@@ -112,6 +115,8 @@ export function CanvasPlayScreen({ round }: { round: CanvasRound }) {
 }
 
 function Swatch({ color, active, onSelect }: { color: string; active: boolean; onSelect: () => void }) {
+  const { colors } = useSkinTokens();
+  const styles = useMemo(() => createStyles(colors), [colors]);
   const { scale, onPressIn, onPressOut } = usePressScale(0.82);
   return (
     <Animated.View style={{ transform: [{ scale }] }}>
@@ -131,29 +136,31 @@ function Swatch({ color, active, onSelect }: { color: string; active: boolean; o
   );
 }
 
-const styles = StyleSheet.create({
-  title: { ...type.caption, color: colors.ink, textAlign: 'center', textTransform: 'uppercase' },
-  glyph: { color: colors.inkSoft },
-  headline: { ...type.title, color: colors.ink, textAlign: 'center', marginTop: spacing.xs },
-  instruction: {
-    ...type.caption,
-    color: colors.inkSoft,
-    textAlign: 'center',
-    marginTop: spacing.xs,
-    marginBottom: spacing.md,
-  },
-  paletteWrap: { marginTop: spacing.md },
-  paletteLabel: {
-    ...type.caption,
-    color: colors.inkSoft,
-    textAlign: 'center',
-    textTransform: 'uppercase',
-    marginBottom: spacing.sm,
-  },
-  palette: { flexDirection: 'row', justifyContent: 'center', gap: spacing.md },
-  // Four square chips, one per shade the screen can draw. The selected one is
-  // marked by a heavier frame, since there is no highlight colour to give it.
-  swatch: { width: 48, height: 48, borderWidth: stroke.hair, borderColor: colors.ink },
-  swatchActive: { borderWidth: stroke.thick },
-  action: { marginTop: spacing.md },
-});
+function createStyles(colors: ReturnType<typeof useSkinTokens>['colors']) {
+  return StyleSheet.create({
+    title: { ...type.caption, color: colors.ink, textAlign: 'center', textTransform: 'uppercase' },
+    glyph: { color: colors.inkSoft },
+    headline: { ...type.title, color: colors.ink, textAlign: 'center', marginTop: spacing.xs },
+    instruction: {
+      ...type.caption,
+      color: colors.inkSoft,
+      textAlign: 'center',
+      marginTop: spacing.xs,
+      marginBottom: spacing.md,
+    },
+    paletteWrap: { marginTop: spacing.md },
+    paletteLabel: {
+      ...type.caption,
+      color: colors.inkSoft,
+      textAlign: 'center',
+      textTransform: 'uppercase',
+      marginBottom: spacing.sm,
+    },
+    palette: { flexDirection: 'row', justifyContent: 'center', gap: spacing.md },
+    // Four square chips, one per shade the screen can draw. The selected one is
+    // marked by a heavier frame, since there is no highlight colour to give it.
+    swatch: { width: 48, height: 48, borderWidth: stroke.hair, borderColor: colors.ink },
+    swatchActive: { borderWidth: stroke.thick },
+    action: { marginTop: spacing.md },
+  });
+}

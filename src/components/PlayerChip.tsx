@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-import { colors, spacing, stroke, type } from '../theme/tokens';
+import { useSkinTokens } from '../theme/SkinContext';
+import { spacing, stroke, type } from '../theme/tokens';
 
 type Props = {
   name: string;
@@ -15,14 +16,17 @@ type Props = {
 };
 
 /** The active row inverts to ink, the way an 8-bit menu marked its cursor. */
-export function PlayerChip({ name, index, accent = colors.ink, done, active, trailing }: Props) {
+export function PlayerChip({ name, index, accent, done, active, trailing }: Props) {
+  const { colors } = useSkinTokens();
+  const styles = useMemo(() => createStyles(colors), [colors]);
+  const accentColor = accent ?? colors.ink;
   const fg = active ? colors.onInk : colors.ink;
 
   return (
     <View
       style={[
         styles.chip,
-        { borderColor: accent },
+        { borderColor: accentColor },
         active && { backgroundColor: colors.ink },
         done && styles.done,
       ]}
@@ -40,25 +44,27 @@ export function PlayerChip({ name, index, accent = colors.ink, done, active, tra
   );
 }
 
-const styles = StyleSheet.create({
-  chip: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: spacing.sm,
-    minHeight: 52,
-    paddingHorizontal: spacing.md,
-    borderWidth: stroke.hair,
-    backgroundColor: colors.surface,
-    marginBottom: spacing.sm,
-  },
-  done: { opacity: 0.45 },
-  badge: {
-    width: 28,
-    height: 28,
-    borderWidth: stroke.hair,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  badgeText: { ...type.caption },
-  name: { ...type.body, flex: 1 },
-});
+function createStyles(colors: ReturnType<typeof useSkinTokens>['colors']) {
+  return StyleSheet.create({
+    chip: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      gap: spacing.sm,
+      minHeight: 52,
+      paddingHorizontal: spacing.md,
+      borderWidth: stroke.hair,
+      backgroundColor: colors.surface,
+      marginBottom: spacing.sm,
+    },
+    done: { opacity: 0.45 },
+    badge: {
+      width: 28,
+      height: 28,
+      borderWidth: stroke.hair,
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    badgeText: { ...type.caption },
+    name: { ...type.body, flex: 1 },
+  });
+}

@@ -105,18 +105,10 @@ export const type = {
 /** Minimum touch target per Material / HIG guidance. */
 export const HIT_SIZE = 52;
 
-/**
- * Modes used to carry a hue each. A four-shade screen has none to spare, so
- * they all draw in ink and stay apart by name, glyph and layout instead.
- */
-export const MODE_ACCENT = {
-  word: colors.ink,
-  canvas: colors.ink,
-  timer: colors.ink,
-  mafia: colors.ink,
-} as const;
-
-/** A tiny emblem per mode, in place of the colour coding. */
+/** A tiny emblem per mode, in place of the colour coding a four-shade
+ *  screen has no hue left to spare for — modes stay apart by name, glyph
+ *  and layout instead. Every mode's accent is just the active skin's own
+ *  ink colour (via useSkinTokens), so there is no separate per-mode token. */
 export const MODE_GLYPH = {
   word: '■',
   canvas: '✎',

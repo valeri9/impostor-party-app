@@ -4,7 +4,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 import App from '../App';
 import { LOCALES, translate } from '../src/i18n';
-import { HOWTO_SEEN_KEY } from '../src/native/storageKeys';
+import { ACTIVE_SKIN_KEY, HOWTO_SEEN_KEY, OWNED_SKINS_KEY } from '../src/native/storageKeys';
 
 const DEFAULT_NAMES = ['Ana', 'Bo', 'Cid', 'Dee'];
 
@@ -393,6 +393,29 @@ describe('how to play', () => {
 });
 
 describe('skins', () => {
+  it('actually re-colours the real setup screen when the active skin changes, not just the shop preview', async () => {
+    await AsyncStorage.setItem(OWNED_SKINS_KEY, JSON.stringify(['neon-nebula']));
+    await AsyncStorage.setItem(ACTIVE_SKIN_KEY, 'neon-nebula');
+
+    await render(<App />);
+    await waitFor(() => expect(screen.getByText(translate('en', 'app.tagline'))).toBeTruthy());
+
+    // Neon Nebula's SHELL.button is a hot pink, nothing like the default's crimson.
+    expect(colorOf(screen.getByTestId('how-to-play'))).toBe('#ff2e88');
+  });
+
+  it('renders the Shoreline skin, animated beach banner included, without crashing', async () => {
+    await AsyncStorage.setItem(OWNED_SKINS_KEY, JSON.stringify(['shoreline']));
+    await AsyncStorage.setItem(ACTIVE_SKIN_KEY, 'shoreline');
+
+    await render(<App />);
+    await waitFor(() => expect(screen.getByText(translate('en', 'app.tagline'))).toBeTruthy());
+
+    // Shoreline's SHELL.button is coral — proves the real screen picked up
+    // the skin, not just that the app happened not to crash.
+    expect(colorOf(screen.getByTestId('how-to-play'))).toBe('#ff6b4a');
+  });
+
   it('opens the catalogue from setup, showing the default skin owned and active', async () => {
     await render(<App />);
     await waitFor(() => expect(screen.getByText(translate('en', 'app.tagline'))).toBeTruthy());

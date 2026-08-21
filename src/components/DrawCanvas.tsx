@@ -5,7 +5,8 @@ import Svg, { Path, Rect } from 'react-native-svg';
 import type { Stroke } from '../game/types';
 import { haptics } from '../native/haptics';
 import { playSound } from '../native/sound';
-import { colors, stroke as line } from '../theme/tokens';
+import { useSkinTokens } from '../theme/SkinContext';
+import { stroke as line } from '../theme/tokens';
 
 /** Ignore sub-pixel jitter so a single stroke stays a manageable path string. */
 const MIN_STEP = 2;
@@ -22,6 +23,8 @@ type Props = {
 };
 
 export function DrawCanvas({ strokes, color, enabled, onStrokeStart, onStrokeComplete, onMeasure }: Props) {
+  const { colors } = useSkinTokens();
+  const styles = useMemo(() => createStyles(colors), [colors]);
   const [size, setSize] = useState({ width: 0, height: 0 });
   const [livePath, setLivePath] = useState('');
   const pointsRef = useRef<string[]>([]);
@@ -128,6 +131,8 @@ export function DrawingPreview({
   canvas: { width: number; height: number } | null;
   width: number;
 }) {
+  const { colors } = useSkinTokens();
+  const styles = useMemo(() => createStyles(colors), [colors]);
   // Fall back to a square if the drawing phase never reported its layout.
   const source = canvas ?? { width: 1, height: 1 };
   const height = (width * source.height) / source.width;
@@ -152,19 +157,21 @@ export function DrawingPreview({
   );
 }
 
-const styles = StyleSheet.create({
-  canvas: {
-    flex: 1,
-    width: '100%',
-    borderWidth: line.thick,
-    borderColor: colors.ink,
-    overflow: 'hidden',
-    backgroundColor: colors.bgDeep,
-  },
-  preview: {
-    borderWidth: line.thick,
-    borderColor: colors.ink,
-    overflow: 'hidden',
-    alignSelf: 'center',
-  },
-});
+function createStyles(colors: ReturnType<typeof useSkinTokens>['colors']) {
+  return StyleSheet.create({
+    canvas: {
+      flex: 1,
+      width: '100%',
+      borderWidth: line.thick,
+      borderColor: colors.ink,
+      overflow: 'hidden',
+      backgroundColor: colors.bgDeep,
+    },
+    preview: {
+      borderWidth: line.thick,
+      borderColor: colors.ink,
+      overflow: 'hidden',
+      alignSelf: 'center',
+    },
+  });
+}

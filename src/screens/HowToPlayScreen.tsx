@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 import { Button } from '../components/Button';
@@ -7,7 +7,8 @@ import { Screen } from '../components/Screen';
 import { SectionLabel } from '../components/SectionLabel';
 import { GAME_MODES } from '../game/types';
 import { useI18n } from '../i18n';
-import { colors, MODE_GLYPH, spacing, stroke, type } from '../theme/tokens';
+import { useSkinTokens } from '../theme/SkinContext';
+import { MODE_GLYPH, spacing, stroke, type } from '../theme/tokens';
 
 /**
  * Shown automatically the first time the app is opened, and reachable any
@@ -17,6 +18,8 @@ import { colors, MODE_GLYPH, spacing, stroke, type } from '../theme/tokens';
  */
 export function HowToPlayScreen({ onDismiss }: { onDismiss: () => void }) {
   const { t } = useI18n();
+  const { colors } = useSkinTokens();
+  const styles = useMemo(() => createStyles(colors), [colors]);
 
   return (
     <Screen scroll>
@@ -54,39 +57,41 @@ export function HowToPlayScreen({ onDismiss }: { onDismiss: () => void }) {
   );
 }
 
-const styles = StyleSheet.create({
-  title: {
-    ...type.title,
-    color: colors.ink,
-    textAlign: 'center',
-    textTransform: 'uppercase',
-    marginBottom: spacing.sm,
-  },
-  intro: { ...type.body, color: colors.ink, textAlign: 'center' },
-  holdRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: spacing.md,
-    backgroundColor: colors.surface,
-    borderWidth: stroke.hair,
-    borderColor: colors.ink,
-    padding: spacing.md,
-  },
-  lockBadge: { backgroundColor: colors.ink, padding: spacing.sm },
-  holdBody: { ...type.body, color: colors.ink, flex: 1 },
-  modeRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: spacing.sm,
-    padding: spacing.md,
-    backgroundColor: colors.surface,
-    borderWidth: stroke.hair,
-    borderColor: colors.ink,
-    marginBottom: spacing.sm,
-  },
-  modeGlyph: { ...type.heading, color: colors.ink },
-  modeText: { flex: 1 },
-  modeName: { ...type.label, color: colors.ink, textTransform: 'uppercase' },
-  modeDesc: { ...type.caption, color: colors.inkSoft, marginTop: 3, letterSpacing: 0 },
-  doneButton: { marginTop: spacing.lg },
-});
+function createStyles(colors: ReturnType<typeof useSkinTokens>['colors']) {
+  return StyleSheet.create({
+    title: {
+      ...type.title,
+      color: colors.ink,
+      textAlign: 'center',
+      textTransform: 'uppercase',
+      marginBottom: spacing.sm,
+    },
+    intro: { ...type.body, color: colors.ink, textAlign: 'center' },
+    holdRow: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      gap: spacing.md,
+      backgroundColor: colors.surface,
+      borderWidth: stroke.hair,
+      borderColor: colors.ink,
+      padding: spacing.md,
+    },
+    lockBadge: { backgroundColor: colors.ink, padding: spacing.sm },
+    holdBody: { ...type.body, color: colors.ink, flex: 1 },
+    modeRow: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      gap: spacing.sm,
+      padding: spacing.md,
+      backgroundColor: colors.surface,
+      borderWidth: stroke.hair,
+      borderColor: colors.ink,
+      marginBottom: spacing.sm,
+    },
+    modeGlyph: { ...type.heading, color: colors.ink },
+    modeText: { flex: 1 },
+    modeName: { ...type.label, color: colors.ink, textTransform: 'uppercase' },
+    modeDesc: { ...type.caption, color: colors.inkSoft, marginTop: 3, letterSpacing: 0 },
+    doneButton: { marginTop: spacing.lg },
+  });
+}

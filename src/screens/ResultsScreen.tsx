@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useMemo, useRef } from 'react';
 import { Animated, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
 
 import { Button } from '../components/Button';
@@ -11,11 +11,14 @@ import type { CanvasRound, MafiaRound, Round, TimerRound, WordRound } from '../g
 import { localized, useI18n } from '../i18n';
 import { haptics } from '../native/haptics';
 import { playSound } from '../native/sound';
-import { colors, MODE_ACCENT, spacing, stroke, type } from '../theme/tokens';
+import { useSkinTokens } from '../theme/SkinContext';
+import { spacing, stroke, type } from '../theme/tokens';
 
 export function ResultsScreen() {
   const { t } = useI18n();
   const { state, newGame, dispatch } = useGame();
+  const { colors } = useSkinTokens();
+  const styles = useMemo(() => createStyles(colors), [colors]);
   const round = state.round;
   if (!round) return null;
 
@@ -50,6 +53,8 @@ function Body({ round }: { round: Round }) {
 /** Shared headline naming the impostor — the one moment worth a fanfare. */
 function ImpostorBanner({ name, accent }: { name: string; accent: string }) {
   const { t } = useI18n();
+  const { colors } = useSkinTokens();
+  const styles = useMemo(() => createStyles(colors), [colors]);
   const pop = useRef(new Animated.Value(0)).current;
 
   useEffect(() => {
@@ -78,6 +83,8 @@ function ImpostorBanner({ name, accent }: { name: string; accent: string }) {
 }
 
 function Fact({ label, value }: { label: string; value: string }) {
+  const { colors } = useSkinTokens();
+  const styles = useMemo(() => createStyles(colors), [colors]);
   return (
     <View style={styles.fact}>
       <Text style={styles.factLabel}>{label}</Text>
@@ -91,9 +98,10 @@ function Fact({ label, value }: { label: string; value: string }) {
 function WordResults({ round }: { round: WordRound }) {
   const { t, locale } = useI18n();
   const { playerById } = useGame();
+  const { colors } = useSkinTokens();
   return (
     <View>
-      <ImpostorBanner name={playerById(round.impostorId).name} accent={MODE_ACCENT.word} />
+      <ImpostorBanner name={playerById(round.impostorId).name} accent={colors.ink} />
       <Fact label={t('results.secretWord')} value={localized(round.prompt.exact, locale)} />
       <Fact label={t('secret.hint')} value={localized(round.prompt.hint, locale)} />
     </View>
@@ -104,6 +112,8 @@ function CanvasResults({ round }: { round: CanvasRound }) {
   const { t, locale } = useI18n();
   const { playerById } = useGame();
   const { width } = useWindowDimensions();
+  const { colors } = useSkinTokens();
+  const styles = useMemo(() => createStyles(colors), [colors]);
 
   return (
     <View>
@@ -125,7 +135,7 @@ function CanvasResults({ round }: { round: CanvasRound }) {
           </View>
         ))}
       </View>
-      <ImpostorBanner name={playerById(round.impostorId).name} accent={MODE_ACCENT.canvas} />
+      <ImpostorBanner name={playerById(round.impostorId).name} accent={colors.ink} />
       <Fact label={t('results.secretObject')} value={localized(round.prompt.exact, locale)} />
       <Fact label={t('secret.hint')} value={localized(round.prompt.hint, locale)} />
     </View>
@@ -135,6 +145,8 @@ function CanvasResults({ round }: { round: CanvasRound }) {
 function TimerResults({ round }: { round: TimerRound }) {
   const { t } = useI18n();
   const { playerById } = useGame();
+  const { colors } = useSkinTokens();
+  const styles = useMemo(() => createStyles(colors), [colors]);
 
   const rows = round.order
     .map((id) => {
@@ -145,7 +157,7 @@ function TimerResults({ round }: { round: TimerRound }) {
 
   return (
     <View>
-      <ImpostorBanner name={playerById(round.impostorId).name} accent={MODE_ACCENT.timer} />
+      <ImpostorBanner name={playerById(round.impostorId).name} accent={colors.ink} />
       <Fact
         label={t('results.target')}
         value={`${(round.targetMs / 1000).toFixed(2)}${t('common.seconds')}`}
@@ -188,6 +200,8 @@ function MafiaResults({ round }: { round: MafiaRound }) {
   const { t } = useI18n();
   const { playerById } = useGame();
   const { width } = useWindowDimensions();
+  const { colors } = useSkinTokens();
+  const styles = useMemo(() => createStyles(colors), [colors]);
   const cardWidth = Math.min((width - spacing.lg * 2 - spacing.md * 2) / 3, 110);
 
   return (
@@ -216,58 +230,60 @@ function MafiaResults({ round }: { round: MafiaRound }) {
   );
 }
 
-const styles = StyleSheet.create({
-  title: {
-    ...type.title,
-    color: colors.ink,
-    textAlign: 'center',
-    textTransform: 'uppercase',
-    marginBottom: spacing.md,
-  },
-  // The whole point of the screen, so it gets the heaviest treatment available.
-  banner: {
-    borderWidth: stroke.thick,
-    backgroundColor: colors.ink,
-    paddingVertical: spacing.lg,
-    alignItems: 'center',
-    marginTop: spacing.md,
-  },
-  bannerLabel: { ...type.caption, color: colors.onInk, textTransform: 'uppercase' },
-  bannerName: { ...type.hero, color: colors.onInk, marginTop: spacing.xs },
-  fact: {
-    backgroundColor: colors.surface,
-    borderWidth: stroke.hair,
-    borderColor: colors.ink,
-    padding: spacing.md,
-    marginTop: spacing.sm,
-    alignItems: 'center',
-  },
-  factLabel: { ...type.caption, color: colors.inkSoft, textTransform: 'uppercase' },
-  factValue: { ...type.heading, color: colors.ink, marginTop: spacing.xs, textAlign: 'center' },
-  legend: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.md, marginTop: spacing.sm, justifyContent: 'center' },
-  legendItem: { flexDirection: 'row', alignItems: 'center', gap: spacing.xs },
-  legendIndex: { ...type.caption, color: colors.inkSoft, minWidth: 18, textAlign: 'right' },
-  legendName: { ...type.caption, color: colors.ink },
-  timeRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: spacing.sm,
-    backgroundColor: colors.surface,
-    borderWidth: stroke.hair,
-    borderColor: colors.ink,
-    padding: spacing.md,
-    marginBottom: spacing.sm,
-  },
-  timeRowImpostor: { backgroundColor: colors.ink, borderWidth: stroke.thick },
-  timeRank: { ...type.label, width: 28, textAlign: 'center' },
-  timeName: { flex: 1 },
-  timeNameText: { ...type.body },
-  timeTag: { ...type.caption, marginTop: 2, textTransform: 'uppercase' },
-  timeValues: { alignItems: 'flex-end' },
-  timeMain: { ...type.heading, fontVariant: ['tabular-nums'] },
-  timeDelta: { ...type.caption },
-  cardGrid: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.md, justifyContent: 'center' },
-  cardCell: { alignItems: 'center', gap: spacing.xs },
-  cardName: { ...type.caption, color: colors.ink, maxWidth: 110, textAlign: 'center' },
-  action: { marginTop: spacing.md },
-});
+function createStyles(colors: ReturnType<typeof useSkinTokens>['colors']) {
+  return StyleSheet.create({
+    title: {
+      ...type.title,
+      color: colors.ink,
+      textAlign: 'center',
+      textTransform: 'uppercase',
+      marginBottom: spacing.md,
+    },
+    // The whole point of the screen, so it gets the heaviest treatment available.
+    banner: {
+      borderWidth: stroke.thick,
+      backgroundColor: colors.ink,
+      paddingVertical: spacing.lg,
+      alignItems: 'center',
+      marginTop: spacing.md,
+    },
+    bannerLabel: { ...type.caption, color: colors.onInk, textTransform: 'uppercase' },
+    bannerName: { ...type.hero, color: colors.onInk, marginTop: spacing.xs },
+    fact: {
+      backgroundColor: colors.surface,
+      borderWidth: stroke.hair,
+      borderColor: colors.ink,
+      padding: spacing.md,
+      marginTop: spacing.sm,
+      alignItems: 'center',
+    },
+    factLabel: { ...type.caption, color: colors.inkSoft, textTransform: 'uppercase' },
+    factValue: { ...type.heading, color: colors.ink, marginTop: spacing.xs, textAlign: 'center' },
+    legend: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.md, marginTop: spacing.sm, justifyContent: 'center' },
+    legendItem: { flexDirection: 'row', alignItems: 'center', gap: spacing.xs },
+    legendIndex: { ...type.caption, color: colors.inkSoft, minWidth: 18, textAlign: 'right' },
+    legendName: { ...type.caption, color: colors.ink },
+    timeRow: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      gap: spacing.sm,
+      backgroundColor: colors.surface,
+      borderWidth: stroke.hair,
+      borderColor: colors.ink,
+      padding: spacing.md,
+      marginBottom: spacing.sm,
+    },
+    timeRowImpostor: { backgroundColor: colors.ink, borderWidth: stroke.thick },
+    timeRank: { ...type.label, width: 28, textAlign: 'center' },
+    timeName: { flex: 1 },
+    timeNameText: { ...type.body },
+    timeTag: { ...type.caption, marginTop: 2, textTransform: 'uppercase' },
+    timeValues: { alignItems: 'flex-end' },
+    timeMain: { ...type.heading, fontVariant: ['tabular-nums'] },
+    timeDelta: { ...type.caption },
+    cardGrid: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.md, justifyContent: 'center' },
+    cardCell: { alignItems: 'center', gap: spacing.xs },
+    cardName: { ...type.caption, color: colors.ink, maxWidth: 110, textAlign: 'center' },
+    action: { marginTop: spacing.md },
+  });
+}

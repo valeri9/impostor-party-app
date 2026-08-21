@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useMemo, useRef, useState } from 'react';
 import { Animated, Pressable, StyleSheet, Text, View } from 'react-native';
 import { useKeepAwake } from 'expo-keep-awake';
 
@@ -11,7 +11,8 @@ import type { TimerRound } from '../../game/types';
 import { useI18n } from '../../i18n';
 import { haptics } from '../../native/haptics';
 import { playSound } from '../../native/sound';
-import { colors, MODE_ACCENT, SHELL, spacing, stroke, type } from '../../theme/tokens';
+import { useSkinTokens } from '../../theme/SkinContext';
+import { spacing, stroke, type } from '../../theme/tokens';
 
 type Stage = 'ready' | 'running' | 'recorded';
 
@@ -22,7 +23,9 @@ type Stage = 'ready' | 'running' | 'recorded';
 export function TimerPlayScreen({ round }: { round: TimerRound }) {
   const { t } = useI18n();
   const { dispatch, playerById } = useGame();
-  const accent = MODE_ACCENT.timer;
+  const { colors, SHELL } = useSkinTokens();
+  const styles = useMemo(() => createStyles(colors, SHELL), [colors, SHELL]);
+  const accent = colors.ink;
   useKeepAwake();
 
   const [stage, setStage] = useState<Stage>('ready');
@@ -152,44 +155,46 @@ export function TimerPlayScreen({ round }: { round: TimerRound }) {
 
 const CIRCLE = 220;
 
-const styles = StyleSheet.create({
-  progress: { ...type.caption, color: colors.inkSoft, textTransform: 'uppercase', marginBottom: spacing.sm },
-  headline: { ...type.title, color: colors.ink, textAlign: 'center', textTransform: 'uppercase' },
-  passLine: { ...type.heading, color: colors.ink, textAlign: 'center', marginBottom: spacing.sm },
-  instruction: {
-    ...type.caption,
-    color: colors.inkSoft,
-    textAlign: 'center',
-    marginBottom: spacing.xl,
-    paddingHorizontal: spacing.md,
-  },
-  runningHint: {
-    ...type.caption,
-    color: colors.inkSoft,
-    textAlign: 'center',
-    marginBottom: spacing.xl,
-    paddingHorizontal: spacing.lg,
-  },
-  // The one place a circle belongs, so these are moulded as the A/B buttons.
-  startButton: {
-    width: CIRCLE,
-    height: CIRCLE,
-    borderRadius: CIRCLE / 2,
-    borderWidth: stroke.thick,
-    borderColor: SHELL.buttonDeep,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  stopButton: {
-    width: CIRCLE + 40,
-    height: CIRCLE + 40,
-    borderRadius: (CIRCLE + 40) / 2,
-    borderWidth: stroke.thick,
-    borderColor: SHELL.buttonDeep,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  bigLabel: { ...type.hero, color: SHELL.onButton, textTransform: 'uppercase' },
-  doneArt: { marginBottom: spacing.md },
-  wideAction: { alignSelf: 'stretch', marginTop: spacing.xl },
-});
+function createStyles(colors: ReturnType<typeof useSkinTokens>['colors'], SHELL: ReturnType<typeof useSkinTokens>['SHELL']) {
+  return StyleSheet.create({
+    progress: { ...type.caption, color: colors.inkSoft, textTransform: 'uppercase', marginBottom: spacing.sm },
+    headline: { ...type.title, color: colors.ink, textAlign: 'center', textTransform: 'uppercase' },
+    passLine: { ...type.heading, color: colors.ink, textAlign: 'center', marginBottom: spacing.sm },
+    instruction: {
+      ...type.caption,
+      color: colors.inkSoft,
+      textAlign: 'center',
+      marginBottom: spacing.xl,
+      paddingHorizontal: spacing.md,
+    },
+    runningHint: {
+      ...type.caption,
+      color: colors.inkSoft,
+      textAlign: 'center',
+      marginBottom: spacing.xl,
+      paddingHorizontal: spacing.lg,
+    },
+    // The one place a circle belongs, so these are moulded as the A/B buttons.
+    startButton: {
+      width: CIRCLE,
+      height: CIRCLE,
+      borderRadius: CIRCLE / 2,
+      borderWidth: stroke.thick,
+      borderColor: SHELL.buttonDeep,
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    stopButton: {
+      width: CIRCLE + 40,
+      height: CIRCLE + 40,
+      borderRadius: (CIRCLE + 40) / 2,
+      borderWidth: stroke.thick,
+      borderColor: SHELL.buttonDeep,
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    bigLabel: { ...type.hero, color: SHELL.onButton, textTransform: 'uppercase' },
+    doneArt: { marginBottom: spacing.md },
+    wideAction: { alignSelf: 'stretch', marginTop: spacing.xl },
+  });
+}
