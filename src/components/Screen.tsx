@@ -143,10 +143,14 @@ const styles = StyleSheet.create({
     gap: spacing.xs,
     paddingTop: spacing.xs,
   },
-  wordmarkSmall: { ...type.caption, fontSize: 11, color: SHELL.print, letterSpacing: 0 },
+  // Explicit lineHeight here, not inherited from type.caption's (tuned for
+  // fontSize 12) — at fontSize 15 that 16px line box was too tight for the
+  // italic's rightward slant and clipped the last glyph outright.
+  wordmarkSmall: { ...type.caption, fontSize: 11, lineHeight: 15, color: SHELL.print, letterSpacing: 0 },
   wordmarkLarge: {
     ...type.caption,
     fontSize: 15,
+    lineHeight: 20,
     color: SHELL.print,
     fontStyle: 'italic',
     letterSpacing: 1,
