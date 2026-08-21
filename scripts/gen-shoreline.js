@@ -215,12 +215,15 @@ function towel(s, cx, cy, w, h, colorA, colorB) {
 
 // ---- compose the seven layers --------------------------------------------
 
-// ROWS grew from 64 to 90 (COLS held at 80, so the scene got taller/less
+// ROWS grew from 64 to 100 (COLS held at 80, so the scene got taller/less
 // wide — sky and sea keep their own fixed row boundaries below, so all the
 // extra rows become new dry sand) — real foreground room for a second row
 // of beach props instead of leaving it to the infinite SandFill tile beyond
-// the scene's own box.
-const COLS = 80, ROWS = 90;
+// the scene's own box. (100, not 90: the near-row umbrellas' poles and drop
+// shadows extend below their own y — a prop placed too close to ROWS gets
+// that tail silently bounds-clipped by set(), which is exactly what cut the
+// bottom-left umbrella's stick off. 100 leaves real margin below it.)
+const COLS = 80, ROWS = 100;
 const CLOUD_POSITIONS = [[16, 9, 1.1], [50, 8, 0.9], [67, 11, 0.65]];
 // Pushed well down from [40, 38.3, 36.6] — the sea was only SEA_TOP(34) to
 // ~38 tall, a sliver next to a much bigger sand area. Taking that height
@@ -230,24 +233,26 @@ const TIDE_BASE_Y = [64, 62, 60];
 // Repositioned toward the new bottom edge so the palms keep framing the
 // very front of the scene, not the mid-beach.
 const PALMS = [
-  { x: 6, y: 87, h: 16, lean: -1 },
-  { x: 70, y: 85, h: 19, lean: 1 },
+  { x: 6, y: 97, h: 16, lean: -1 },
+  { x: 70, y: 95, h: 19, lean: 1 },
 ];
 // Two rows packed into the now-tighter sand band (TIDE_BASE_Y maxes out at
 // 64, so everything here stays safely below that) — a smaller, further-back
 // pair near the tide line, and a bigger, closer pair nearer the bottom
-// edge. The near-row pair is staggered (left lower than right).
+// edge. The near-row pair is staggered (left lower than right) — each kept
+// far enough from ROWS(100) that its pole and shadow (which extend below
+// its own y by r+3, see umbrella()) land fully on the canvas.
 const UMBRELLAS = [
   { x: 20, y: 71, r: 4.5, colorA: '#ff6b4a', colorB: '#fff5e6', pole: '#6b4426' },
   { x: 56, y: 72, r: 4, colorA: '#2a9d8f', colorB: '#eaf6fb', pole: '#6b4426' },
-  { x: 16, y: 87, r: 5.5, colorA: '#2a9d8f', colorB: '#fff5e6', pole: '#6b4426' },
-  { x: 60, y: 82, r: 5, colorA: '#ff6b4a', colorB: '#eaf6fb', pole: '#6b4426' },
+  { x: 16, y: 86, r: 5.5, colorA: '#2a9d8f', colorB: '#fff5e6', pole: '#6b4426' },
+  { x: 60, y: 84, r: 5, colorA: '#ff6b4a', colorB: '#eaf6fb', pole: '#6b4426' },
 ];
 const TOWELS = [
   { x: 31, y: 76, w: 9, h: 3, colorA: '#ff7a5c', colorB: '#eaf6fb' },
   { x: 46, y: 77, w: 8, h: 3, colorA: '#2a9d8f', colorB: '#fff5e6' },
-  { x: 29, y: 88, w: 12, h: 3, colorA: '#ff7a5c', colorB: '#fff5e6' },
-  { x: 50, y: 85, w: 10, h: 3, colorA: '#2a9d8f', colorB: '#eaf6fb' },
+  { x: 29, y: 89, w: 12, h: 3, colorA: '#ff7a5c', colorB: '#fff5e6' },
+  { x: 50, y: 88, w: 10, h: 3, colorA: '#2a9d8f', colorB: '#eaf6fb' },
 ];
 
 // A seamlessly-tileable swatch of the same dry-sand speckle sandAndFoam
