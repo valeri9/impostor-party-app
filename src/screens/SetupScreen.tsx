@@ -12,7 +12,7 @@ import { GAME_MODES, GameMode, MAX_PLAYERS, MIN_PLAYERS } from '../game/types';
 import { LANGUAGE_NAMES, LOCALES, useI18n } from '../i18n';
 import { haptics } from '../native/haptics';
 import { playSound } from '../native/sound';
-import { colors, MODE_GLYPH, spacing, stroke, type } from '../theme/tokens';
+import { colors, MODE_GLYPH, SHELL, spacing, stroke, type } from '../theme/tokens';
 
 export function SetupScreen({ onHowToPlay }: { onHowToPlay: () => void }) {
   const { t, locale, setLocale } = useI18n();
@@ -149,7 +149,10 @@ function HowToPlayButton({ onPress }: { onPress: () => void }) {
           playSound('tick');
           onPress();
         }}
-        style={styles.howToPlayButton}
+        style={({ pressed }) => [
+          styles.howToPlayButton,
+          { backgroundColor: pressed ? SHELL.buttonDeep : SHELL.button },
+        ]}
       >
         <Text style={styles.howToPlayGlyph}>?</Text>
       </Pressable>
@@ -250,14 +253,14 @@ const styles = StyleSheet.create({
   },
   howToPlayWrap: { position: 'absolute', top: spacing.xs, right: spacing.xs },
   howToPlayButton: {
-    width: 32,
-    height: 32,
-    borderWidth: stroke.hair,
-    borderColor: colors.onInk,
+    width: 38,
+    height: 38,
+    borderWidth: stroke.thin,
+    borderColor: SHELL.buttonDeep,
     alignItems: 'center',
     justifyContent: 'center',
   },
-  howToPlayGlyph: { ...type.heading, color: colors.onInk, lineHeight: 22 },
+  howToPlayGlyph: { ...type.title, color: SHELL.onButton, lineHeight: 26 },
   title: { ...type.hero, color: colors.onInk, textAlign: 'center', textTransform: 'uppercase' },
   tagline: {
     ...type.caption,
