@@ -147,16 +147,19 @@ const styles = StyleSheet.create({
     gap: spacing.xs,
     paddingTop: spacing.xs,
   },
-  // Explicit lineHeight here, not inherited from type.caption's (tuned for
-  // fontSize 12) — at fontSize 15 that 16px line box was too tight for the
-  // italic's rightward slant and clipped the last glyph outright.
   wordmarkSmall: { ...type.caption, fontSize: 11, lineHeight: 15, color: SHELL.print, letterSpacing: 0 },
+  // No fontStyle: 'italic' here on purpose: PIXEL_FONT has no real italic
+  // face on Android, so the OS fakes one by shearing each glyph — but it
+  // still measures the *upright* width and clips paint to that box, so the
+  // slanted last letter's overhang gets cut clean off. A skew transform on
+  // the whole word slants it the same way without that per-glyph clipping.
   wordmarkLarge: {
     ...type.caption,
     fontSize: 15,
     lineHeight: 20,
     color: SHELL.print,
-    fontStyle: 'italic',
     letterSpacing: 1,
+    transform: [{ skewX: '-12deg' }],
+    paddingRight: 4,
   },
 });
