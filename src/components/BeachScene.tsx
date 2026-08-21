@@ -105,8 +105,10 @@ function CloudLayer({
 
   useEffect(() => {
     if (reduceMotion) return;
+    // Was 26s — a full drift that slow next to the ~1s tide pulse and the
+    // ~2.5s palm sway read as not animating at all in a quick glance.
     const loop = Animated.loop(
-      Animated.timing(anim, { toValue: 1, duration: 26000, easing: Easing.linear, useNativeDriver: true }),
+      Animated.timing(anim, { toValue: 1, duration: 11000, easing: Easing.linear, useNativeDriver: true }),
     );
     loop.start();
     return () => loop.stop();
@@ -123,9 +125,15 @@ function CloudLayer({
   );
 }
 
-/** Three sea/sand frames cross-fading through a loop — frame 0 sits at the
- *  bottom always fully opaque, so the water never has "nothing" to show
- *  between fades; frames 1 and 2 each pulse in and out at staggered times. */
+/** Three sea/sand frames cross-fading through a loop. TIDE_FRAMES is ordered
+ *  from the wave's furthest reach up the sand (index 0) to its most pulled-
+ *  back resting position (index 2) — see TIDE_BASE_Y in gen-shoreline.js.
+ *  The *resting* frame sits at the bottom always fully opaque, so the base
+ *  state is the water pulled back; frames 1 and 0 each pulse in on top of
+ *  it, at staggered times, so what fades in is the wave surging further up
+ *  the beach — toward the viewer, not the sky — before fading back out to
+ *  the resting frame. (Overlaying the *furthest-reach* frame as the base
+ *  instead would make every fade read as the water retreating upward.) */
 function TideLayer({ reduceMotion }: { reduceMotion: boolean }) {
   const b = useRef(new Animated.Value(0)).current;
   const c = useRef(new Animated.Value(0)).current;
@@ -154,12 +162,12 @@ function TideLayer({ reduceMotion }: { reduceMotion: boolean }) {
 
   return (
     <>
-      <SvgXml xml={TIDE_FRAMES[0]} width="100%" height="100%" style={StyleSheet.absoluteFillObject} />
+      <SvgXml xml={TIDE_FRAMES[2]} width="100%" height="100%" style={StyleSheet.absoluteFillObject} />
       <Animated.View style={[StyleSheet.absoluteFillObject, { opacity: b }]}>
         <SvgXml xml={TIDE_FRAMES[1]} width="100%" height="100%" />
       </Animated.View>
       <Animated.View style={[StyleSheet.absoluteFillObject, { opacity: c }]}>
-        <SvgXml xml={TIDE_FRAMES[2]} width="100%" height="100%" />
+        <SvgXml xml={TIDE_FRAMES[0]} width="100%" height="100%" />
       </Animated.View>
     </>
   );

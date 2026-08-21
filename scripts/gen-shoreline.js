@@ -209,25 +209,39 @@ function towel(s, cx, cy, w, h, colorA, colorB) {
 
 // ---- compose the seven layers --------------------------------------------
 
-const COLS = 80, ROWS = 64;
+// ROWS grew from 64 to 90 (COLS held at 80, so the scene got taller/less
+// wide — sky and sea keep their own fixed row boundaries below, so all the
+// extra rows become new dry sand) — real foreground room for a second row
+// of beach props instead of leaving it to the infinite SandFill tile beyond
+// the scene's own box.
+const COLS = 80, ROWS = 90;
 const CLOUD_POSITIONS = [[16, 9, 1.1], [50, 8, 0.9], [67, 11, 0.65]];
 // Shoreline sits higher up (was [46, 44.3, 42.6]) so more of the canvas is
 // dry sand — more of a wide beach, less a close-up crop of the shoreline —
 // and there's real room for umbrellas and towels between the tide line and
 // the players' hands.
 const TIDE_BASE_Y = [40, 38.3, 36.6];
-// Smaller than before (was h:20/25) to read as further away, not a close-up.
+// Repositioned toward the new bottom edge (was y:60/58 when ROWS was 64) so
+// the palms keep framing the very front of the scene, not the mid-beach.
 const PALMS = [
-  { x: 6, y: 60, h: 15, lean: -1 },
-  { x: 70, y: 58, h: 18, lean: 1 },
+  { x: 6, y: 85, h: 15, lean: -1 },
+  { x: 70, y: 83, h: 18, lean: 1 },
 ];
+// Two rows — a smaller, further-back pair near the tide line, and a
+// bigger, closer pair nearer the bottom edge — so the sand reads as
+// populated all the way down, not just in a thin strip up top. The
+// near-row pair is staggered (left lower than right), not a rigid grid.
 const UMBRELLAS = [
   { x: 24, y: 50, r: 5, colorA: '#ff6b4a', colorB: '#fff5e6', pole: '#6b4426' },
   { x: 58, y: 52, r: 4.5, colorA: '#2a9d8f', colorB: '#eaf6fb', pole: '#6b4426' },
+  { x: 26, y: 78, r: 6.5, colorA: '#2a9d8f', colorB: '#fff5e6', pole: '#6b4426' },
+  { x: 60, y: 73, r: 6, colorA: '#ff6b4a', colorB: '#eaf6fb', pole: '#6b4426' },
 ];
 const TOWELS = [
   { x: 33, y: 60, w: 10, h: 3, colorA: '#ff7a5c', colorB: '#eaf6fb' },
   { x: 49, y: 61, w: 9, h: 3, colorA: '#2a9d8f', colorB: '#fff5e6' },
+  { x: 38, y: 88, w: 13, h: 4, colorA: '#ff7a5c', colorB: '#fff5e6' },
+  { x: 53, y: 82, w: 12, h: 4, colorA: '#2a9d8f', colorB: '#eaf6fb' },
 ];
 
 // A seamlessly-tileable swatch of the same dry-sand speckle sandAndFoam
@@ -284,7 +298,7 @@ const ts = `/**
  * SCENE_ASPECT_RATIO is that space's width/height, for sizing the container.
  */
 
-export const SCENE_ASPECT_RATIO = 400 / 320;
+export const SCENE_ASPECT_RATIO = ${COLS} / ${ROWS};
 
 /** The dry-sand fill most of the beach is painted in — for anything that
  *  needs to blend seamlessly with the scene's edge rather than guess a
