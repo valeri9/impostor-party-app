@@ -50,9 +50,9 @@ export function SetupScreen({
       </View>
       <View style={styles.titleButtonRow}>
         <SkinsButton onPress={onSkins} />
+        <Text style={styles.tagline}>{t('app.tagline')}</Text>
         <HowToPlayButton onPress={onHowToPlay} />
       </View>
-      <Text style={styles.tagline}>{t('app.tagline')}</Text>
 
       <SectionLabel label={t('setup.language')} />
       <View style={styles.langRow}>
@@ -289,7 +289,8 @@ const styles = StyleSheet.create({
   },
   titleButtonRow: {
     flexDirection: 'row',
-    justifyContent: 'space-between',
+    alignItems: 'center',
+    gap: spacing.sm,
     marginTop: spacing.sm,
   },
   howToPlayButton: {
@@ -313,9 +314,9 @@ const styles = StyleSheet.create({
   title: { ...type.hero, color: colors.onInk, textAlign: 'center', textTransform: 'uppercase' },
   tagline: {
     ...type.caption,
+    flex: 1,
     color: colors.inkSoft,
     textAlign: 'center',
-    marginTop: spacing.sm,
     textTransform: 'uppercase',
   },
   langRow: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.sm },
