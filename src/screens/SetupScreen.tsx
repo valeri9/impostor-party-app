@@ -352,6 +352,7 @@ function createStyles(colors: ReturnType<typeof useSkinTokens>['colors']) {
       height: 32,
       borderWidth: stroke.hair,
       borderColor: colors.ink,
+      backgroundColor: colors.surface,
       alignItems: 'center',
       justifyContent: 'center',
     },
