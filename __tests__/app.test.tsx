@@ -150,8 +150,25 @@ describe('setup', () => {
       await fireEvent.changeText(screen.getByPlaceholderText(`Player ${i + 1}`), name);
     }
 
+    // Naming everyone isn't enough on its own — no mode is preselected at launch.
+    expect(screen.getByTestId('start-game')).toBeDisabled();
+
+    await fireEvent.press(screen.getByText(translate('en', 'mode.word.name')));
+
     expect(screen.getByTestId('start-game')).toBeEnabled();
     expect(screen.queryByText(translate('en', 'setup.nameRequired'))).toBeNull();
+  });
+
+  it('leaves every mode deselected at launch', async () => {
+    await render(<App />);
+    await waitFor(() => expect(screen.getByText(translate('en', 'app.tagline'))).toBeTruthy());
+
+    for (const mode of ['word', 'canvas', 'timer', 'mafia']) {
+      const name = screen.getByText(translate('en', `mode.${mode}.name`));
+      const card = name.parent?.parent;
+      expect(card?.props.accessibilityState?.selected).toBeFalsy();
+    }
+    expect(screen.getByTestId('start-game')).toBeDisabled();
   });
 
   it('caps the roster at fifteen players', async () => {

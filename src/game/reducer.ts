@@ -18,7 +18,7 @@ function initialPlayers(): Player[] {
 export function initialState(): GameState {
   return {
     phase: 'setup',
-    mode: 'word',
+    mode: null,
     players: initialPlayers(),
     mafiaConfig: { mafiaCount: 1, detective: true, doctor: false },
     roundsConfig: { ...DEFAULT_ROUNDS },

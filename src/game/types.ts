@@ -76,7 +76,8 @@ export type Round = WordRound | CanvasRound | TimerRound | MafiaRound;
 
 export type GameState = {
   phase: Phase;
-  mode: GameMode;
+  /** null until the player picks one on the setup screen — nothing is preselected at launch. */
+  mode: GameMode | null;
   players: Player[];
   mafiaConfig: MafiaConfig;
   roundsConfig: RoundsConfig;
