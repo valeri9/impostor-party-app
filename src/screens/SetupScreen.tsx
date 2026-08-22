@@ -442,8 +442,15 @@ function createStyles(colors: ReturnType<typeof useSkinTokens>['colors']) {
     civilianValue: { ...type.heading, color: colors.ink },
     startButton: { marginTop: spacing.lg },
     warning: { ...type.caption, color: colors.ink, textAlign: 'center', marginTop: spacing.sm },
-    donateLink: { alignSelf: 'center', marginTop: spacing.lg, padding: spacing.xs },
+    donateLink: {
+      alignSelf: 'center',
+      marginTop: spacing.lg,
+      paddingVertical: spacing.xs,
+      paddingHorizontal: spacing.md,
+      borderWidth: stroke.hair,
+      borderColor: colors.ink,
+    },
     donateLinkPressed: { opacity: 0.5 },
-    donateLinkText: { ...type.caption, color: colors.inkSoft, letterSpacing: 0 },
+    donateLinkText: { ...type.label, color: colors.ink, letterSpacing: 0 },
   });
 }
