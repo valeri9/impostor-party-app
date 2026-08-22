@@ -69,10 +69,13 @@ export const SKINS: Skin[] = [
       caption: '#a9a5b5',
       stripeMagenta: '#a5195c',
       stripeNavy: '#252b6b',
+      // button/buttonDeep deepened from the original #b5185a/#8b1145 — against
+      // the softened screen background above, the original crimson no longer
+      // stood out enough to read as a distinct, tappable control.
       print: '#2b3087',
       printDeep: '#1c2066',
-      button: '#b5185a',
-      buttonDeep: '#8b1145',
+      button: '#9a144d',
+      buttonDeep: '#6f0e37',
       onButton: '#f4f1ea',
       led: '#7d1f1f',
     },
@@ -98,10 +101,13 @@ export const SKINS: Skin[] = [
       caption: '#a897c9',
       stripeMagenta: '#ff2e88',
       stripeNavy: '#00e5ff',
-      print: '#00e5ff',
-      printDeep: '#0899ab',
-      button: '#ff2e88',
-      buttonDeep: '#c4106a',
+      // print/button deepened from the original #00e5ff/#ff2e88 — both were
+      // nearly as light as the screen's own (softened) lavender background,
+      // to the point the "Add Player" ghost button all but vanished into it.
+      print: '#00555e',
+      printDeep: '#001214',
+      button: '#ab004a',
+      buttonDeep: '#520023',
       onButton: '#fdf1ff',
       led: '#ff3b5c',
     },
@@ -125,10 +131,13 @@ export const SKINS: Skin[] = [
       caption: '#eaf6fb',
       stripeMagenta: '#ff7a5c',
       stripeNavy: '#2a9d8f',
-      print: '#ff8c42',
-      printDeep: '#cc6a28',
-      button: '#ff6b4a',
-      buttonDeep: '#cc4f32',
+      // print/button deepened from the original #ff8c42/#ff6b4a — coral and
+      // mint sit at nearly the same lightness even though the hues differ,
+      // so buttons read as barely-there against the beach scene and screen.
+      print: '#a84200',
+      printDeep: '#5b2400',
+      button: '#d62700',
+      buttonDeep: '#8b1900',
       onButton: '#fff5e6',
       led: '#ff5252',
     },

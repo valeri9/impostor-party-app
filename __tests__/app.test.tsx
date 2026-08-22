@@ -417,8 +417,8 @@ describe('skins', () => {
     await render(<App />);
     await waitFor(() => expect(screen.getByText(translate('en', 'app.tagline'))).toBeTruthy());
 
-    // Neon Nebula's SHELL.button is a hot pink, nothing like the default's crimson.
-    expect(colorOf(screen.getByTestId('how-to-play'))).toBe('#ff2e88');
+    // Neon Nebula's SHELL.button is a deep magenta, nothing like the default's crimson.
+    expect(colorOf(screen.getByTestId('how-to-play'))).toBe('#ab004a');
   });
 
   it('renders the Shoreline skin, animated beach banner included, without crashing', async () => {
@@ -428,9 +428,9 @@ describe('skins', () => {
     await render(<App />);
     await waitFor(() => expect(screen.getByText(translate('en', 'app.tagline'))).toBeTruthy());
 
-    // Shoreline's SHELL.button is coral — proves the real screen picked up
-    // the skin, not just that the app happened not to crash.
-    expect(colorOf(screen.getByTestId('how-to-play'))).toBe('#ff6b4a');
+    // Shoreline's SHELL.button is a deep burnt orange — proves the real
+    // screen picked up the skin, not just that the app happened not to crash.
+    expect(colorOf(screen.getByTestId('how-to-play'))).toBe('#d62700');
   });
 
   it('opens the catalogue from setup, showing the default skin owned and active', async () => {
