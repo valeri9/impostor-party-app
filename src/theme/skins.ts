@@ -55,10 +55,13 @@ export const SKINS: Skin[] = [
     // yellow-green filling a bright emissive phone screen is a very different,
     // much harsher thing to stare at than the dim reflective LCD it's quoting.
     // Same hue, same four-shade structure, saturation cut roughly in a third.
+    // dark/light re-spaced afterwards — `light` backs every card and text
+    // input's fill (see deriveColors' `surface`), and evenly-stepped mid
+    // tones left it barely distinguishable from the background it sits on.
     lcd: {
       darkest: '#233b16',
-      dark: '#496a39',
-      light: '#8fb67c',
+      dark: '#3d572f',
+      light: '#648156',
       lightest: '#a5c695',
     },
     shell: {
@@ -87,10 +90,11 @@ export const SKINS: Skin[] = [
     // Same softening as DMG Classic: the background carried real saturation
     // (84%) at a lightness the eye already reads as bright — cut it roughly
     // in half so the screen reads as a calm lavender instead of a vivid one.
+    // dark/light re-spaced for the same reason as DMG Classic, above.
     lcd: {
       darkest: '#1b1230',
-      dark: '#453267',
-      light: '#997fbd',
+      dark: '#3f3553',
+      light: '#766a89',
       lightest: '#d0c1e1',
     },
     shell: {
@@ -117,10 +121,13 @@ export const SKINS: Skin[] = [
     nameKey: 'skin.shoreline.name',
     priceCents: 249,
     sceneId: 'shoreline',
+    // dark/light re-spaced for the same reason as the other two skins —
+    // `light` backs every card and text input's fill, and the original
+    // teal barely read as different from the pale mint background.
     lcd: {
       darkest: '#0b3654',
-      dark: '#1c6e8c',
-      light: '#5cc8d1',
+      dark: '#325c72',
+      light: '#6c949f',
       lightest: '#cdf2ea',
     },
     shell: {
