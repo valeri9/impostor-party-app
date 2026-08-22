@@ -50,11 +50,16 @@ export const SKINS: Skin[] = [
     id: DEFAULT_SKIN_ID,
     nameKey: 'skin.dmgClassic.name',
     priceCents: 0,
+    // The original hardware value (#9bbc0f) was the actual DMG-01's reflective,
+    // non-backlit screen tint — accurate to the console, but a flat 85%-saturated
+    // yellow-green filling a bright emissive phone screen is a very different,
+    // much harsher thing to stare at than the dim reflective LCD it's quoting.
+    // Same hue, same four-shade structure, saturation cut roughly in a third.
     lcd: {
-      darkest: '#0f380f',
-      dark: '#306230',
-      light: '#8bac0f',
-      lightest: '#9bbc0f',
+      darkest: '#233b16',
+      dark: '#496a39',
+      light: '#8fb67c',
+      lightest: '#a5c695',
     },
     shell: {
       body: '#c9cbc4',
@@ -76,11 +81,14 @@ export const SKINS: Skin[] = [
     id: 'neon-nebula',
     nameKey: 'skin.neonNebula.name',
     priceCents: 199,
+    // Same softening as DMG Classic: the background carried real saturation
+    // (84%) at a lightness the eye already reads as bright — cut it roughly
+    // in half so the screen reads as a calm lavender instead of a vivid one.
     lcd: {
-      darkest: '#1c0e33',
-      dark: '#4b1f7a',
-      light: '#a855e0',
-      lightest: '#cfa3f7',
+      darkest: '#1b1230',
+      dark: '#453267',
+      light: '#997fbd',
+      lightest: '#d0c1e1',
     },
     shell: {
       body: '#241b33',
