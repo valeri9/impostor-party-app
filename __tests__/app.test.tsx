@@ -7,6 +7,8 @@ import { LOCALES, translate } from '../src/i18n';
 import { ACTIVE_SKIN_KEY, HOWTO_SEEN_KEY, OWNED_SKINS_KEY } from '../src/native/storageKeys';
 
 const DEFAULT_NAMES = ['Ana', 'Bo', 'Cid', 'Dee'];
+// Mafia needs MAFIA_MIN_PLAYERS (5) — one more than the default roster.
+const MAFIA_NAMES = ['Ana', 'Bo', 'Cid', 'Dee', 'Eli'];
 
 /** Flattened backgroundColor of a swatch button. */
 function colorOf(node: { props: Record<string, unknown> }): string | undefined {
@@ -81,6 +83,12 @@ function touch(locationX: number, locationY: number, active = true) {
 async function startGame(mode: 'word' | 'canvas' | 'timer' | 'mafia', names = DEFAULT_NAMES) {
   await render(<App />);
   await waitFor(() => expect(screen.getByText(translate('en', 'app.tagline'))).toBeTruthy());
+
+  // The roster starts at DEFAULT_PLAYERS (4) rows — add more if this game needs them.
+  const addPlayerLabel = translate('en', 'setup.addPlayer');
+  while (screen.queryAllByPlaceholderText(/^Player \d+$/).length < names.length) {
+    await fireEvent.press(screen.getByText(addPlayerLabel));
+  }
 
   for (const [i, name] of names.entries()) {
     await fireEvent.changeText(screen.getByPlaceholderText(`Player ${i + 1}`), name);
@@ -157,6 +165,26 @@ describe('setup', () => {
 
     expect(screen.getByTestId('start-game')).toBeEnabled();
     expect(screen.queryByText(translate('en', 'setup.nameRequired'))).toBeNull();
+  });
+
+  it('blocks starting mafia below its 5-player minimum', async () => {
+    await render(<App />);
+    await waitFor(() => expect(screen.getByText(translate('en', 'app.tagline'))).toBeTruthy());
+
+    for (const [i, name] of DEFAULT_NAMES.entries()) {
+      await fireEvent.changeText(screen.getByPlaceholderText(`Player ${i + 1}`), name);
+    }
+    await fireEvent.press(screen.getByText(translate('en', 'mode.mafia.name')));
+
+    expect(screen.getByTestId('start-game')).toBeDisabled();
+    // Shown twice: the roster hint up top, and the warning by the Start button.
+    expect(screen.getAllByText(translate('en', 'mafia.setup.minPlayers', { n: 5 })).length).toBe(2);
+
+    await fireEvent.press(screen.getByText(translate('en', 'setup.addPlayer')));
+    await fireEvent.changeText(screen.getByPlaceholderText('Player 5'), 'Eli');
+
+    expect(screen.getByTestId('start-game')).toBeEnabled();
+    expect(screen.queryByText(translate('en', 'mafia.setup.minPlayers', { n: 5 }))).toBeNull();
   });
 
   it('leaves every mode deselected at launch', async () => {
@@ -285,19 +313,19 @@ describe('blind intuition timer', () => {
 
 describe('digital mafia', () => {
   it('deals a card to every player and reveals all roles', async () => {
-    await startGame('mafia');
-    await completeRevealLoop(4);
+    await startGame('mafia', MAFIA_NAMES);
+    await completeRevealLoop(MAFIA_NAMES.length);
 
     expect(screen.getByText(translate('en', 'mafia.table.title'))).toBeTruthy();
 
     await fireEvent.press(screen.getByTestId('show-results'));
     expect(screen.getByText(translate('en', 'results.allRoles'))).toBeTruthy();
-    DEFAULT_NAMES.forEach((name) => expect(screen.getAllByText(name).length).toBeGreaterThan(0));
+    MAFIA_NAMES.forEach((name) => expect(screen.getAllByText(name).length).toBeGreaterThan(0));
   });
 
   it('keeps the round clock where it is when paused', async () => {
-    await startGame('mafia');
-    await completeRevealLoop(4);
+    await startGame('mafia', MAFIA_NAMES);
+    await completeRevealLoop(MAFIA_NAMES.length);
 
     expect(screen.getByTestId('mafia-clock')).toHaveTextContent('3:00');
 
