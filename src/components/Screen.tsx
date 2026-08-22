@@ -3,6 +3,7 @@ import { ScrollView, StyleSheet, Text, View, ViewStyle } from 'react-native';
 import Svg, { Defs, Pattern, Rect } from 'react-native-svg';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
+import { AmbientStreak } from './AmbientStreak';
 import { BeachScene, SandFill } from './BeachScene';
 import { useSkin, useSkinTokens } from '../theme/SkinContext';
 import { BEZEL_CAPTION, PIXEL_FONT, spacing, stroke, type } from '../theme/tokens';
@@ -67,7 +68,13 @@ export function Screen({ children, scroll = false, center = false, style, backgr
               <View style={[StyleSheet.absoluteFill, { backgroundColor: colors.bg, opacity: 0.55 }]} />
             </View>
           ) : (
-            <DotMatrix />
+            <>
+              <DotMatrix />
+              {/* A shade of the screen's own background, drifting through on
+                  a slow loop — the one bit of life the non-scene skins get,
+                  short of a full bespoke scene like Shoreline's. */}
+              <AmbientStreak color={colors.bgDeep} />
+            </>
           )}
           {scroll ? (
             <ScrollView
