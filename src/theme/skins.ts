@@ -50,11 +50,16 @@ export const SKINS: Skin[] = [
     id: DEFAULT_SKIN_ID,
     nameKey: 'skin.dmgClassic.name',
     priceCents: 0,
+    // The original hardware value (#9bbc0f) was the actual DMG-01's reflective,
+    // non-backlit screen tint — accurate to the console, but a flat 85%-saturated
+    // yellow-green filling a bright emissive phone screen is a very different,
+    // much harsher thing to stare at than the dim reflective LCD it's quoting.
+    // Same hue, same four-shade structure, saturation cut roughly in a third.
     lcd: {
-      darkest: '#0f380f',
-      dark: '#306230',
-      light: '#8bac0f',
-      lightest: '#9bbc0f',
+      darkest: '#233b16',
+      dark: '#496a39',
+      light: '#8fb67c',
+      lightest: '#a5c695',
     },
     shell: {
       body: '#c9cbc4',
@@ -64,10 +69,13 @@ export const SKINS: Skin[] = [
       caption: '#a9a5b5',
       stripeMagenta: '#a5195c',
       stripeNavy: '#252b6b',
+      // button/buttonDeep deepened from the original #b5185a/#8b1145 — against
+      // the softened screen background above, the original crimson no longer
+      // stood out enough to read as a distinct, tappable control.
       print: '#2b3087',
       printDeep: '#1c2066',
-      button: '#b5185a',
-      buttonDeep: '#8b1145',
+      button: '#9a144d',
+      buttonDeep: '#6f0e37',
       onButton: '#f4f1ea',
       led: '#7d1f1f',
     },
@@ -76,11 +84,14 @@ export const SKINS: Skin[] = [
     id: 'neon-nebula',
     nameKey: 'skin.neonNebula.name',
     priceCents: 199,
+    // Same softening as DMG Classic: the background carried real saturation
+    // (84%) at a lightness the eye already reads as bright — cut it roughly
+    // in half so the screen reads as a calm lavender instead of a vivid one.
     lcd: {
-      darkest: '#1c0e33',
-      dark: '#4b1f7a',
-      light: '#a855e0',
-      lightest: '#cfa3f7',
+      darkest: '#1b1230',
+      dark: '#453267',
+      light: '#997fbd',
+      lightest: '#d0c1e1',
     },
     shell: {
       body: '#241b33',
@@ -90,10 +101,13 @@ export const SKINS: Skin[] = [
       caption: '#a897c9',
       stripeMagenta: '#ff2e88',
       stripeNavy: '#00e5ff',
-      print: '#00e5ff',
-      printDeep: '#0899ab',
-      button: '#ff2e88',
-      buttonDeep: '#c4106a',
+      // print/button deepened from the original #00e5ff/#ff2e88 — both were
+      // nearly as light as the screen's own (softened) lavender background,
+      // to the point the "Add Player" ghost button all but vanished into it.
+      print: '#00555e',
+      printDeep: '#001214',
+      button: '#ab004a',
+      buttonDeep: '#520023',
       onButton: '#fdf1ff',
       led: '#ff3b5c',
     },
@@ -117,10 +131,13 @@ export const SKINS: Skin[] = [
       caption: '#eaf6fb',
       stripeMagenta: '#ff7a5c',
       stripeNavy: '#2a9d8f',
-      print: '#ff8c42',
-      printDeep: '#cc6a28',
-      button: '#ff6b4a',
-      buttonDeep: '#cc4f32',
+      // print/button deepened from the original #ff8c42/#ff6b4a — coral and
+      // mint sit at nearly the same lightness even though the hues differ,
+      // so buttons read as barely-there against the beach scene and screen.
+      print: '#a84200',
+      printDeep: '#5b2400',
+      button: '#d62700',
+      buttonDeep: '#8b1900',
       onButton: '#fff5e6',
       led: '#ff5252',
     },
