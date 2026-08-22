@@ -52,6 +52,13 @@ export type Skin = {
    *  'shoreline') — an id rather than a boolean so more can be added later
    *  without every skin needing an opinion on it. */
   sceneId?: 'shoreline';
+  /** Overrides `deriveColors`' `surface` (cards/inputs/pills). Defaults to
+   *  `lcd.light` when unset — set this when that well needs to sit deeper
+   *  than one shade below the screen to read as a distinct container. */
+  containerFill?: string;
+  /** Overrides `deriveColors`' `onSurface` (text/border/icon colour drawn on
+   *  `surface`). Defaults to `lcd.darkest` when unset. */
+  onContainer?: string;
 };
 
 /** The original palette, unlocked for everyone and always active by default. */
@@ -67,20 +74,17 @@ export const SKINS: Skin[] = [
     // yellow-green filling a bright emissive phone screen is a very different,
     // much harsher thing to stare at than the dim reflective LCD it's quoting.
     // Same hue, same four-shade structure, saturation cut roughly in a third.
-    // `light` pushed dark a second time below — it backs every card and text
-    // input's fill (see deriveColors' `surface`), and the ink text drawn on
-    // top of it only cleared ~2.8:1 contrast, well under the 4.5:1 a normal
-    // reading pass needs. There isn't room to fix that *and* keep `light`
-    // clearly apart from the screen background in this hue's narrow overall
-    // range (ink-vs-background is only 6.5:1 to begin with) — the border
-    // every surface already carries is what marks its edge, so legible
-    // fill text won by design, not by accident.
     lcd: {
       darkest: '#233b16',
       dark: '#3d572f',
       light: '#87a578',
       lightest: '#a5c695',
     },
+    // Cards/inputs sit on `dark` instead of `light` — darkest-on-light only
+    // cleared ~4.5:1 and read as flat on this hue's narrow, muddy range, so
+    // the well is cut a shade deeper and its text flipped light instead.
+    containerFill: '#3d572f',
+    onContainer: '#a5c695',
     shell: {
       body: '#c9cbc4',
       bodyEdge: '#a9aba3',
@@ -109,13 +113,16 @@ export const SKINS: Skin[] = [
     // Same softening as DMG Classic: the background carried real saturation
     // (84%) at a lightness the eye already reads as bright — cut it roughly
     // in half so the screen reads as a calm lavender instead of a vivid one.
-    // `light` pushed dark a second time below, same reasoning as DMG Classic.
     lcd: {
       darkest: '#1b1230',
       dark: '#3f3553',
       light: '#867b99',
       lightest: '#d0c1e1',
     },
+    // Same reasoning as DMG Classic — cards/inputs sit on `dark`, text flips
+    // light, instead of darkest-on-light barely clearing 4.5:1.
+    containerFill: '#3f3553',
+    onContainer: '#d0c1e1',
     shell: {
       body: '#241b33',
       bodyEdge: '#150f1f',
@@ -153,15 +160,19 @@ export const SKINS: Skin[] = [
     nameKey: 'skin.shoreline.name',
     priceCents: 249,
     sceneId: 'shoreline',
-    // `light` pushed dark a second time below, same reasoning as the other
-    // two skins — it backs every card and text input's fill, and ink text
-    // on it was only clearing ~3.8:1, short of a comfortable reading contrast.
     lcd: {
       darkest: '#0b3654',
       dark: '#325c72',
       light: '#7da0aa',
       lightest: '#cdf2ea',
     },
+    // Container fill stays at `light` — unlike DMG Classic/Neon Nebula, this
+    // hue has room for darkest-on-light to clear 4.5:1 on its own. But navy
+    // text on a teal fill sits in the same hue family as the fill, so it
+    // still reads as flat next to it — flip it to the skin's warm off-white
+    // (the same tone `onButton` already uses for light text on this skin)
+    // for real hue separation from the container.
+    onContainer: '#fff5e6',
     shell: {
       body: '#f2dfb8',
       bodyEdge: '#d8bd85',

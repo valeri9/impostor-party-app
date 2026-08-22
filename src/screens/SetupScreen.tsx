@@ -76,10 +76,10 @@ export function SetupScreen({
             value={player.name}
             onChangeText={(name) => dispatch({ type: 'SET_PLAYER_NAME', id: player.id, name })}
             placeholder={t('setup.playerPlaceholder', { n: i + 1 })}
-            // `ink`, not `inkSoft` — this sits on `colors.surface` (the input's
-            // own fill), not the screen background inkSoft is tuned against,
-            // and was reading at under 2:1 there.
-            placeholderTextColor={colors.ink}
+            // `onSurface`, not `ink`/`inkSoft` — this sits on `colors.surface`
+            // (the input's own fill), not the screen background those are
+            // tuned against.
+            placeholderTextColor={colors.onSurface}
             maxLength={16}
             autoCorrect={false}
             returnKeyType="done"
@@ -93,7 +93,7 @@ export function SetupScreen({
 
       <Button
         label={t('setup.addPlayer')}
-        variant="ghost"
+        variant="primary"
         onPress={() => dispatch({ type: 'ADD_PLAYER' })}
         disabled={players.length >= MAX_PLAYERS}
         style={styles.addButton}
@@ -301,7 +301,7 @@ function ModeCard({
   const { t } = useI18n();
   const { colors } = useSkinTokens();
   const styles = useMemo(() => createStyles(colors), [colors]);
-  const fg = selected ? colors.onInk : colors.ink;
+  const fg = selected ? colors.onInk : colors.onSurface;
   const { scale, onPressIn, onPressOut } = usePressScale(0.97);
   return (
     <Animated.View style={{ transform: [{ scale }] }}>
@@ -376,45 +376,45 @@ function createStyles(colors: ReturnType<typeof useSkinTokens>['colors']) {
       minHeight: 44,
       backgroundColor: colors.surface,
       borderWidth: stroke.hair,
-      borderColor: colors.ink,
+      borderColor: colors.onSurface,
     },
     langPillActive: { backgroundColor: colors.ink },
-    langCode: { ...type.caption, color: colors.ink, textTransform: 'uppercase' },
-    // ink, not inkSoft — same colors.surface fill as the player input above.
-    langName: { ...type.caption, color: colors.ink },
+    langCode: { ...type.caption, color: colors.onSurface, textTransform: 'uppercase' },
+    // onSurface, not ink/inkSoft — same colors.surface fill as the player input above.
+    langName: { ...type.caption, color: colors.onSurface },
     langTextActive: { color: colors.onInk },
     playerRow: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm, marginBottom: spacing.sm },
     playerIndex: {
       width: 32,
       height: 32,
       borderWidth: stroke.hair,
-      borderColor: colors.ink,
+      borderColor: colors.onSurface,
       backgroundColor: colors.surface,
       alignItems: 'center',
       justifyContent: 'center',
     },
-    playerIndexText: { ...type.caption, color: colors.ink },
+    playerIndexText: { ...type.caption, color: colors.onSurface },
     input: {
       flex: 1,
       minHeight: 52,
       backgroundColor: colors.surface,
       borderWidth: stroke.hair,
-      borderColor: colors.ink,
+      borderColor: colors.onSurface,
       paddingHorizontal: spacing.md,
-      color: colors.ink,
+      color: colors.onSurface,
       ...type.body,
     },
     removeButton: {
       width: 44,
       height: 44,
       borderWidth: stroke.hair,
-      borderColor: colors.ink,
+      borderColor: colors.onSurface,
       alignItems: 'center',
       justifyContent: 'center',
       backgroundColor: colors.surface,
     },
     removeDisabled: { opacity: 0.3 },
-    removeGlyph: { ...type.heading, color: colors.ink, lineHeight: 22 },
+    removeGlyph: { ...type.heading, color: colors.onSurface, lineHeight: 22 },
     addButton: { marginTop: spacing.xs },
     hint: { ...type.caption, color: colors.inkSoft, textAlign: 'center', marginTop: spacing.sm },
     modeCard: {
@@ -424,7 +424,7 @@ function createStyles(colors: ReturnType<typeof useSkinTokens>['colors']) {
       padding: spacing.md,
       backgroundColor: colors.surface,
       borderWidth: stroke.hair,
-      borderColor: colors.ink,
+      borderColor: colors.onSurface,
       marginBottom: spacing.sm,
     },
     modeCardSelected: { backgroundColor: colors.ink, borderWidth: stroke.thin },

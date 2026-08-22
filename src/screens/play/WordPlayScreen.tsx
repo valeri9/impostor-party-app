@@ -57,7 +57,7 @@ export function WordPlayScreen({ round }: { round: WordRound }) {
             key={id}
             index={i + 1}
             name={playerById(id).name}
-            accent={accent}
+            accent={colors.onSurface}
             active={!done && i === currentIndex}
             done={done || i < currentIndex}
           />

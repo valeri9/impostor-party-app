@@ -95,7 +95,7 @@ function SkinCard({
 }) {
   const { t } = useI18n();
   const { scale, onPressIn, onPressOut } = usePressScale(0.97);
-  const fg = active ? colors.onInk : colors.ink;
+  const fg = active ? colors.onInk : colors.onSurface;
   const badge = badgeFor(skin, active, owned, t);
 
   if (!owned) {
@@ -112,7 +112,7 @@ function SkinCard({
         style={[styles.card, styles.cardLocked]}
       >
         <SkinPreview skin={skin} />
-        <PixelArt rows={PIXEL_LOCK} size={18} color={colors.inkSoft} />
+        <PixelArt rows={PIXEL_LOCK} size={18} color={colors.onSurface} />
         <View style={styles.cardText}>
           <Text style={styles.cardName}>{t(skin.nameKey)}</Text>
         </View>
@@ -300,7 +300,7 @@ function SkinPreviewScreen({
   const { t, locale } = useI18n();
   const { state } = useGame();
   const insets = useSafeAreaInsets();
-  const c = deriveColors(skin.lcd);
+  const c = deriveColors(skin);
 
   return (
     <View
@@ -362,10 +362,10 @@ function SkinPreviewScreen({
                     key={code}
                     style={[
                       previewStyles.langPill,
-                      { borderColor: c.ink, backgroundColor: localeActive ? c.ink : c.surface },
+                      { borderColor: localeActive ? c.ink : c.onSurface, backgroundColor: localeActive ? c.ink : c.surface },
                     ]}
                   >
-                    <Text style={[previewStyles.langCode, { color: localeActive ? c.onInk : c.ink }]}>{code}</Text>
+                    <Text style={[previewStyles.langCode, { color: localeActive ? c.onInk : c.onSurface }]}>{code}</Text>
                   </View>
                 );
               })}
@@ -374,11 +374,11 @@ function SkinPreviewScreen({
             <MiniSectionLabel label={`${t('setup.players')}  (${state.players.length})`} color={c.ink} />
             {state.players.map((p, i) => (
               <View key={p.id} style={previewStyles.playerRow}>
-                <View style={[previewStyles.playerIndex, { borderColor: c.ink }]}>
-                  <Text style={[previewStyles.playerIndexText, { color: c.ink }]}>{i + 1}</Text>
+                <View style={[previewStyles.playerIndex, { borderColor: c.onSurface }]}>
+                  <Text style={[previewStyles.playerIndexText, { color: c.onSurface }]}>{i + 1}</Text>
                 </View>
-                <View style={[previewStyles.playerInput, { borderColor: c.ink, backgroundColor: c.surface }]}>
-                  <Text style={[previewStyles.playerName, { color: c.ink }]} numberOfLines={1}>
+                <View style={[previewStyles.playerInput, { borderColor: c.onSurface, backgroundColor: c.surface }]}>
+                  <Text style={[previewStyles.playerName, { color: c.onSurface }]} numberOfLines={1}>
                     {p.name || t('setup.playerPlaceholder', { n: i + 1 })}
                   </Text>
                 </View>
@@ -388,11 +388,11 @@ function SkinPreviewScreen({
             <MiniSectionLabel label={t('setup.chooseMode')} color={c.ink} />
             {GAME_MODES.map((m) => {
               const selected = m === state.mode;
-              const fg = selected ? c.onInk : c.ink;
+              const fg = selected ? c.onInk : c.onSurface;
               return (
                 <View
                   key={m}
-                  style={[previewStyles.modeCard, { borderColor: c.ink, backgroundColor: selected ? c.ink : c.surface }]}
+                  style={[previewStyles.modeCard, { borderColor: selected ? c.ink : c.onSurface, backgroundColor: selected ? c.ink : c.surface }]}
                 >
                   <Text style={[previewStyles.modeGlyph, { color: fg }]}>{MODE_GLYPH[m]}</Text>
                   <Text style={[previewStyles.modeName, { color: fg }]}>{t(`mode.${m}.name`)}</Text>
@@ -446,7 +446,7 @@ const styles = StyleSheet.create({
     padding: spacing.md,
     backgroundColor: colors.surface,
     borderWidth: stroke.hair,
-    borderColor: colors.ink,
+    borderColor: colors.onSurface,
     marginBottom: spacing.sm,
   },
   cardActive: { backgroundColor: colors.ink, borderWidth: stroke.thin },

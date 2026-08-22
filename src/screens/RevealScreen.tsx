@@ -195,12 +195,12 @@ function createStyles(colors: ReturnType<typeof useSkinTokens>['colors']) {
       paddingVertical: spacing.md,
       paddingHorizontal: spacing.lg,
       borderWidth: stroke.hair,
-      borderColor: colors.ink,
+      borderColor: colors.onSurface,
       backgroundColor: colors.surface,
       alignItems: 'center',
       width: '100%',
     },
-    hintLabel: { ...type.caption, color: colors.inkSoft, marginBottom: spacing.xs, textTransform: 'uppercase' },
-    hintValue: { ...type.heading, color: colors.ink, textAlign: 'center' },
+    hintLabel: { ...type.caption, color: colors.onSurface, marginBottom: spacing.xs, textTransform: 'uppercase' },
+    hintValue: { ...type.heading, color: colors.onSurface, textAlign: 'center' },
   });
 }

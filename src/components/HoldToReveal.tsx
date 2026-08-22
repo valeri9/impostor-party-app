@@ -19,7 +19,7 @@ type Props = {
   playerName: string;
   /** The secret. Rendered ONLY while the finger is down. */
   children: React.ReactNode;
-  /** Optional accent used for the shield frame, so modes feel distinct. */
+  /** Optional accent for the revealed secret's frame, so modes feel distinct. */
   accent?: string;
   onHoldStart?: () => void;
   /** Fires the first time the player completes a real hold. */
@@ -115,7 +115,7 @@ export function HoldToReveal({ playerName, children, accent, onHoldStart, onUnlo
             {children}
           </Animated.View>
         ) : (
-          <Shield playerName={playerName} accent={accentColor} />
+          <Shield playerName={playerName} />
         )}
       </Pressable>
 
@@ -127,12 +127,16 @@ export function HoldToReveal({ playerName, children, accent, onHoldStart, onUnlo
 }
 
 /** The only thing a bystander can ever see: a name and an instruction. */
-function Shield({ playerName, accent }: { playerName: string; accent: string }) {
+function Shield({ playerName }: { playerName: string }) {
   const { t } = useI18n();
   const { colors } = useSkinTokens();
   const styles = useMemo(() => createStyles(colors), [colors]);
   return (
-    <View testID="shield" style={[styles.shield, { borderColor: accent }]}>
+    // Its own frame colour, not the passed `accent` — this box is filled
+    // with `colors.surface`, the *revealed* secret's frame below sits on
+    // `colors.bgDeep` instead, and those two no longer share one shade on
+    // every skin.
+    <View testID="shield" style={[styles.shield, { borderColor: colors.onSurface }]}>
       <View style={styles.lockBadge}>
         <PixelArt rows={PIXEL_LOCK} size={64} color={colors.onInk} />
       </View>
@@ -162,8 +166,8 @@ function createStyles(colors: ReturnType<typeof useSkinTokens>['colors']) {
       padding: spacing.md,
       marginBottom: spacing.sm,
     },
-    shieldName: { ...type.title, color: colors.ink, textAlign: 'center' },
-    shieldHint: { ...type.caption, color: colors.inkSoft, textAlign: 'center', textTransform: 'uppercase' },
+    shieldName: { ...type.title, color: colors.onSurface, textAlign: 'center' },
+    shieldHint: { ...type.caption, color: colors.onSurface, textAlign: 'center', textTransform: 'uppercase' },
     secret: {
       flex: 1,
       borderWidth: stroke.thick,

@@ -19,8 +19,8 @@ type Props = {
 export function PlayerChip({ name, index, accent, done, active, trailing }: Props) {
   const { colors } = useSkinTokens();
   const styles = useMemo(() => createStyles(colors), [colors]);
-  const accentColor = accent ?? colors.ink;
-  const fg = active ? colors.onInk : colors.ink;
+  const accentColor = accent ?? colors.onSurface;
+  const fg = active ? colors.onInk : colors.onSurface;
 
   return (
     <View
