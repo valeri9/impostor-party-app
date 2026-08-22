@@ -10,6 +10,7 @@ import { civiliansFor, clampMafiaConfig, maxMafiaFor } from '../game/assign';
 import { useGame } from '../game/GameContext';
 import { GAME_MODES, GameMode, MAX_PLAYERS, MAX_ROUNDS, MIN_PLAYERS, MIN_ROUNDS } from '../game/types';
 import { LANGUAGE_NAMES, LOCALES, useI18n } from '../i18n';
+import { openDonateLink } from '../native/donate';
 import { haptics } from '../native/haptics';
 import { playSound } from '../native/sound';
 import { useSkinTokens } from '../theme/SkinContext';
@@ -150,7 +151,29 @@ export function SetupScreen({
         style={styles.startButton}
       />
       {!allNamed ? <Text style={styles.warning}>{t('setup.nameRequired')}</Text> : null}
+
+      <DonateLink />
     </Screen>
+  );
+}
+
+/** A quiet, easy-to-ignore link — never a prompt, never in the way of starting a game. */
+function DonateLink() {
+  const { t } = useI18n();
+  const { colors } = useSkinTokens();
+  const styles = useMemo(() => createStyles(colors), [colors]);
+  return (
+    <Pressable
+      testID="donate-link"
+      accessibilityRole="button"
+      onPress={() => {
+        haptics.selection();
+        openDonateLink();
+      }}
+      style={({ pressed }) => [styles.donateLink, pressed && styles.donateLinkPressed]}
+    >
+      <Text style={styles.donateLinkText}>☕ {t('setup.donate')}</Text>
+    </Pressable>
   );
 }
 
@@ -419,5 +442,15 @@ function createStyles(colors: ReturnType<typeof useSkinTokens>['colors']) {
     civilianValue: { ...type.heading, color: colors.ink },
     startButton: { marginTop: spacing.lg },
     warning: { ...type.caption, color: colors.ink, textAlign: 'center', marginTop: spacing.sm },
+    donateLink: {
+      alignSelf: 'center',
+      marginTop: spacing.lg,
+      paddingVertical: spacing.xs,
+      paddingHorizontal: spacing.md,
+      borderWidth: stroke.hair,
+      borderColor: colors.ink,
+    },
+    donateLinkPressed: { opacity: 0.5 },
+    donateLinkText: { ...type.label, color: colors.ink, letterSpacing: 0 },
   });
 }
