@@ -177,7 +177,8 @@ describe('setup', () => {
     await fireEvent.press(screen.getByText(translate('en', 'mode.mafia.name')));
 
     expect(screen.getByTestId('start-game')).toBeDisabled();
-    expect(screen.getByText(translate('en', 'mafia.setup.minPlayers', { n: 5 }))).toBeTruthy();
+    // Shown twice: the roster hint up top, and the warning by the Start button.
+    expect(screen.getAllByText(translate('en', 'mafia.setup.minPlayers', { n: 5 })).length).toBe(2);
 
     await fireEvent.press(screen.getByText(translate('en', 'setup.addPlayer')));
     await fireEvent.changeText(screen.getByPlaceholderText('Player 5'), 'Eli');

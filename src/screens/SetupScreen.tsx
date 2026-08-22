@@ -100,7 +100,11 @@ export function SetupScreen({
         style={styles.addButton}
       />
       <Text style={styles.hint}>
-        {players.length >= MAX_PLAYERS ? t('setup.maxPlayers') : t('setup.minPlayers')}
+        {players.length >= MAX_PLAYERS
+          ? t('setup.maxPlayers')
+          : notEnoughForMafia
+            ? t('mafia.setup.minPlayers', { n: MAFIA_MIN_PLAYERS })
+            : t('setup.minPlayers')}
       </Text>
 
       <SectionLabel label={t('setup.chooseMode')} />
