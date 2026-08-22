@@ -26,7 +26,7 @@ export function MafiaTableScreen({ round }: { round: MafiaRound }) {
   const { dispatch } = useGame();
   const { colors } = useSkinTokens();
   const styles = useMemo(() => createStyles(colors), [colors]);
-  const accent = colors.ink;
+  const accent = colors.onSurface;
   useKeepAwake();
 
   const [minutes, setMinutes] = useState(3);
@@ -149,13 +149,13 @@ function createStyles(colors: ReturnType<typeof useSkinTokens>['colors']) {
       fontSize: 60,
       fontWeight: '700',
       letterSpacing: 2,
-      color: colors.ink,
+      color: colors.onSurface,
       fontVariant: ['tabular-nums'],
     },
     clockTextExpired: { color: colors.onInk },
     playerCount: {
       ...type.caption,
-      color: colors.inkSoft,
+      color: colors.onSurface,
       marginTop: spacing.xs,
       textTransform: 'uppercase',
     },

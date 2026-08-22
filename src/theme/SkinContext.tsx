@@ -136,7 +136,7 @@ export function useSkinTokens() {
     () => ({
       LCD: activeSkin.lcd,
       SHELL: activeSkin.shell,
-      colors: deriveColors(activeSkin.lcd),
+      colors: deriveColors(activeSkin),
     }),
     [activeSkin],
   );

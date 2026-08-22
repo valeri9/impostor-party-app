@@ -167,7 +167,7 @@ function TimerResults({ round }: { round: TimerRound }) {
       {rows.map((row, i) => {
         const isImpostor = row.id === round.impostorId;
         const late = row.ms > round.targetMs;
-        const fg = isImpostor ? colors.onInk : colors.ink;
+        const fg = isImpostor ? colors.onInk : colors.onSurface;
         return (
           <View key={row.id} style={[styles.timeRow, isImpostor && styles.timeRowImpostor]}>
             <Text style={[styles.timeRank, { color: fg }]}>{i === 0 ? '★' : `${i + 1}`}</Text>
@@ -252,15 +252,15 @@ function createStyles(colors: ReturnType<typeof useSkinTokens>['colors']) {
     fact: {
       backgroundColor: colors.surface,
       borderWidth: stroke.hair,
-      borderColor: colors.ink,
+      borderColor: colors.onSurface,
       padding: spacing.md,
       marginTop: spacing.sm,
       alignItems: 'center',
     },
-    // ink, not inkSoft — `fact` is filled with colors.surface, not the screen
-    // background inkSoft is tuned to read against.
-    factLabel: { ...type.caption, color: colors.ink, textTransform: 'uppercase' },
-    factValue: { ...type.heading, color: colors.ink, marginTop: spacing.xs, textAlign: 'center' },
+    // onSurface, not ink/inkSoft — `fact` is filled with colors.surface, not
+    // the screen background those are tuned to read against.
+    factLabel: { ...type.caption, color: colors.onSurface, textTransform: 'uppercase' },
+    factValue: { ...type.heading, color: colors.onSurface, marginTop: spacing.xs, textAlign: 'center' },
     legend: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.md, marginTop: spacing.sm, justifyContent: 'center' },
     legendItem: { flexDirection: 'row', alignItems: 'center', gap: spacing.xs },
     legendIndex: { ...type.caption, color: colors.inkSoft, minWidth: 18, textAlign: 'right' },
@@ -271,7 +271,7 @@ function createStyles(colors: ReturnType<typeof useSkinTokens>['colors']) {
       gap: spacing.sm,
       backgroundColor: colors.surface,
       borderWidth: stroke.hair,
-      borderColor: colors.ink,
+      borderColor: colors.onSurface,
       padding: spacing.md,
       marginBottom: spacing.sm,
     },

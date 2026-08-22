@@ -1,6 +1,6 @@
 import { Platform } from 'react-native';
 
-import { DEFAULT_SKIN_ID, findSkin, type LcdPalette } from './skins';
+import { DEFAULT_SKIN_ID, findSkin, type Skin } from './skins';
 
 /**
  * Design tokens — Nintendo Game Boy (DMG-01) aesthetic, in two halves.
@@ -29,13 +29,21 @@ export const LCD = DEFAULT_SKIN.lcd;
 /** The plastic, print and buttons of the console itself. */
 export const SHELL = DEFAULT_SKIN.shell;
 
-/** Derives the screen-content colour set from a skin's four LCD shades. */
-export function deriveColors(lcd: LcdPalette) {
+/** Derives the screen-content colour set from a skin. */
+export function deriveColors(skin: Skin) {
+  const { lcd } = skin;
   return {
     // Surfaces — the lit screen, and the one-shade-darker wells cut into it.
     bg: lcd.lightest,
     bgDeep: lcd.light,
-    surface: lcd.light,
+    // Cards/inputs/pills: `containerFill`/`onContainer` let a skin override
+    // this pairing (DMG Classic and Neon Nebula cut the well a shade deeper
+    // than `light` and flip its text light, since darkest-on-light only
+    // just cleared 4.5:1 there and read as flat on a narrow, muddy palette).
+    // Undefined on a skin falls back to the original light-well/dark-ink pair.
+    surface: skin.containerFill ?? lcd.light,
+    /** Text/border/icon colour for content drawn on `surface`. */
+    onSurface: skin.onContainer ?? lcd.darkest,
 
     // Text. Only two shades read cleanly on the screen green, so hierarchy is
     // carried by size, casing and letter-spacing rather than by more colours.
@@ -56,7 +64,7 @@ export function deriveColors(lcd: LcdPalette) {
   } as const;
 }
 
-export const colors = deriveColors(LCD);
+export const colors = deriveColors(DEFAULT_SKIN);
 
 export const spacing = {
   xs: 4,
