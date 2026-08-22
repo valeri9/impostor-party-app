@@ -24,6 +24,18 @@ export type ShellPalette = {
   button: string;
   buttonDeep: string;
   onButton: string;
+  /** Text/icon colour for content drawn on the `print`/`printDeep` fill
+   *  (the danger button, and a ghost button once pressed). Kept apart from
+   *  `onButton` because Neon Nebula's button fill went light while its print
+   *  fill stayed dark — one skin can't share a single "on-fill" colour once
+   *  its two fills sit at opposite ends of the lightness scale. */
+  onPrint: string;
+  /** Text colour for content printed straight onto the shell plastic (the
+   *  wordmark under the screen, the skin-catalogue header) — `body`, not the
+   *  LCD. Kept apart from `print` because `print` also has to read against
+   *  the lit screen, which is the opposite brightness of the shell in a
+   *  dark-bodied skin like Neon Nebula. */
+  onShell: string;
   led: string;
 };
 
@@ -55,13 +67,18 @@ export const SKINS: Skin[] = [
     // yellow-green filling a bright emissive phone screen is a very different,
     // much harsher thing to stare at than the dim reflective LCD it's quoting.
     // Same hue, same four-shade structure, saturation cut roughly in a third.
-    // dark/light re-spaced afterwards — `light` backs every card and text
-    // input's fill (see deriveColors' `surface`), and evenly-stepped mid
-    // tones left it barely distinguishable from the background it sits on.
+    // `light` pushed dark a second time below — it backs every card and text
+    // input's fill (see deriveColors' `surface`), and the ink text drawn on
+    // top of it only cleared ~2.8:1 contrast, well under the 4.5:1 a normal
+    // reading pass needs. There isn't room to fix that *and* keep `light`
+    // clearly apart from the screen background in this hue's narrow overall
+    // range (ink-vs-background is only 6.5:1 to begin with) — the border
+    // every surface already carries is what marks its edge, so legible
+    // fill text won by design, not by accident.
     lcd: {
       darkest: '#233b16',
       dark: '#3d572f',
-      light: '#648156',
+      light: '#87a578',
       lightest: '#a5c695',
     },
     shell: {
@@ -80,6 +97,8 @@ export const SKINS: Skin[] = [
       button: '#9a144d',
       buttonDeep: '#6f0e37',
       onButton: '#f4f1ea',
+      onPrint: '#f4f1ea',
+      onShell: '#2b3087',
       led: '#7d1f1f',
     },
   },
@@ -90,11 +109,11 @@ export const SKINS: Skin[] = [
     // Same softening as DMG Classic: the background carried real saturation
     // (84%) at a lightness the eye already reads as bright — cut it roughly
     // in half so the screen reads as a calm lavender instead of a vivid one.
-    // dark/light re-spaced for the same reason as DMG Classic, above.
+    // `light` pushed dark a second time below, same reasoning as DMG Classic.
     lcd: {
       darkest: '#1b1230',
       dark: '#3f3553',
-      light: '#766a89',
+      light: '#867b99',
       lightest: '#d0c1e1',
     },
     shell: {
@@ -105,14 +124,27 @@ export const SKINS: Skin[] = [
       caption: '#a897c9',
       stripeMagenta: '#ff2e88',
       stripeNavy: '#00e5ff',
-      // print/button deepened from the original #00e5ff/#ff2e88 — both were
-      // nearly as light as the screen's own (softened) lavender background,
-      // to the point the "Add Player" ghost button all but vanished into it.
+      // print unchanged from the previous pass — it still only has to read
+      // against the lit screen (5:1), which it does.
       print: '#00555e',
       printDeep: '#001214',
-      button: '#ab004a',
-      buttonDeep: '#520023',
-      onButton: '#fdf1ff',
+      // button/buttonDeep/onButton flipped to a plain white-on-black pairing:
+      // the deepened magenta from the previous pass fixed its contrast on the
+      // screen but still all but disappeared against this skin's near-black
+      // body and bezel (as low as 1.2:1) — everywhere the console shell shows
+      // through, not just the screen, needed solving at once. Border colour
+      // (buttonDeep) is a mid purple rather than black so a pressed button
+      // still reads as a *pressed* state, not just gone.
+      button: '#f4f0fb',
+      buttonDeep: '#4a3d63',
+      onButton: '#140c1e',
+      // onPrint keeps the previous onButton value — the danger button's fill
+      // is still the dark teal `print`, so its label still wants light text.
+      onPrint: '#fdf1ff',
+      // The wordmark and skin-catalogue header print straight onto `body`/
+      // `bezel`, both near-black here — needs a colour of its own since
+      // `print` (tuned for the light screen) reads at under 2:1 on either.
+      onShell: '#c9baf0',
       led: '#ff3b5c',
     },
   },
@@ -121,13 +153,13 @@ export const SKINS: Skin[] = [
     nameKey: 'skin.shoreline.name',
     priceCents: 249,
     sceneId: 'shoreline',
-    // dark/light re-spaced for the same reason as the other two skins —
-    // `light` backs every card and text input's fill, and the original
-    // teal barely read as different from the pale mint background.
+    // `light` pushed dark a second time below, same reasoning as the other
+    // two skins — it backs every card and text input's fill, and ink text
+    // on it was only clearing ~3.8:1, short of a comfortable reading contrast.
     lcd: {
       darkest: '#0b3654',
       dark: '#325c72',
-      light: '#6c949f',
+      light: '#7da0aa',
       lightest: '#cdf2ea',
     },
     shell: {
@@ -138,14 +170,19 @@ export const SKINS: Skin[] = [
       caption: '#eaf6fb',
       stripeMagenta: '#ff7a5c',
       stripeNavy: '#2a9d8f',
-      // print/button deepened from the original #ff8c42/#ff6b4a — coral and
-      // mint sit at nearly the same lightness even though the hues differ,
-      // so buttons read as barely-there against the beach scene and screen.
-      print: '#a84200',
-      printDeep: '#5b2400',
+      // button unchanged — it already reads fine everywhere it's used.
+      // print/printDeep lightened from #a84200/#5b2400 to a brighter tangerine:
+      // the wordmark and ghost/danger text still needed to clear the mint
+      // screen and the tan shell, so this stops short of a pale "light"
+      // orange, which would have read fine on the dark bezel but vanished
+      // into both of those lighter surfaces instead.
+      print: '#b34e00',
+      printDeep: '#7a3500',
       button: '#d62700',
       buttonDeep: '#8b1900',
       onButton: '#fff5e6',
+      onPrint: '#fff5e6',
+      onShell: '#b34e00',
       led: '#ff5252',
     },
   },

@@ -43,7 +43,11 @@ function getVariants(SHELL: ReturnType<typeof useSkinTokens>['SHELL']): Record<B
       pressedFill: SHELL.buttonDeep,
       border: SHELL.buttonDeep,
       label: SHELL.onButton,
-      pressedLabel: SHELL.onButton,
+      // Pressed state reads against `buttonDeep`, not `button` — for skins
+      // where those two sit far apart in lightness (Neon Nebula's white
+      // button vs. its mid-purple pressed fill), onButton alone can't read
+      // against both. onPrint is tuned for a dark-ish fill in every skin.
+      pressedLabel: SHELL.onPrint,
       doubleFrame: false,
       width: stroke.thin,
     },
@@ -52,7 +56,7 @@ function getVariants(SHELL: ReturnType<typeof useSkinTokens>['SHELL']): Record<B
       pressedFill: SHELL.buttonDeep,
       border: SHELL.buttonDeep,
       label: SHELL.onButton,
-      pressedLabel: SHELL.onButton,
+      pressedLabel: SHELL.onPrint,
       doubleFrame: true,
       width: stroke.thick,
     },
@@ -60,8 +64,11 @@ function getVariants(SHELL: ReturnType<typeof useSkinTokens>['SHELL']): Record<B
       fill: SHELL.print,
       pressedFill: SHELL.printDeep,
       border: SHELL.printDeep,
-      label: SHELL.onButton,
-      pressedLabel: SHELL.onButton,
+      // Always onPrint, not onButton — this variant's fill is `print`, and
+      // in a skin where `button` and `print` sit at opposite ends of the
+      // lightness scale (Neon Nebula), onButton is tuned for the wrong fill.
+      label: SHELL.onPrint,
+      pressedLabel: SHELL.onPrint,
       doubleFrame: true,
       width: stroke.thick,
     },
@@ -70,7 +77,7 @@ function getVariants(SHELL: ReturnType<typeof useSkinTokens>['SHELL']): Record<B
       pressedFill: SHELL.print,
       border: SHELL.print,
       label: SHELL.print,
-      pressedLabel: SHELL.onButton,
+      pressedLabel: SHELL.onPrint,
       doubleFrame: false,
       width: stroke.hair,
     },
