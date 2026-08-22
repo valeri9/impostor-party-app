@@ -246,7 +246,18 @@ function PreviewActionButton({
           <Text
             style={[
               previewStyles.actionLabel,
-              { color: ghost ? (pressed ? skin.shell.onButton : skin.shell.print) : skin.shell.onButton },
+              // Both branches read against a dark-ish fill once pressed
+              // (`print` for ghost, `buttonDeep` for filled) — onPrint is
+              // the colour tuned for that, same as Button.tsx.
+              {
+                color: ghost
+                  ? pressed
+                    ? skin.shell.onPrint
+                    : skin.shell.print
+                  : pressed
+                    ? skin.shell.onPrint
+                    : skin.shell.onButton,
+              },
             ]}
             numberOfLines={1}
           >
@@ -305,10 +316,8 @@ function SkinPreviewScreen({
       ]}
     >
       <View style={previewStyles.header}>
-        <Text style={[previewStyles.headerName, { color: skin.shell.print }]}>{t(skin.nameKey)}</Text>
-        <Text style={[previewStyles.headerBadge, active && { color: skin.shell.print }, { color: active ? skin.shell.print : skin.shell.caption }]}>
-          {badge}
-        </Text>
+        <Text style={[previewStyles.headerName, { color: skin.shell.onShell }]}>{t(skin.nameKey)}</Text>
+        <Text style={[previewStyles.headerBadge, { color: skin.shell.onShell }]}>{badge}</Text>
       </View>
 
       <View style={[previewStyles.bezel, { backgroundColor: skin.shell.bezel }]}>
@@ -399,8 +408,8 @@ function SkinPreviewScreen({
       </View>
 
       <View style={previewStyles.wordmark}>
-        <Text style={[previewStyles.wmSmall, { color: skin.shell.print }]}>Impostor</Text>
-        <Text style={[previewStyles.wmLarge, { color: skin.shell.print }]}>PARTY</Text>
+        <Text style={[previewStyles.wmSmall, { color: skin.shell.onShell }]}>Impostor</Text>
+        <Text style={[previewStyles.wmLarge, { color: skin.shell.onShell }]}>PARTY</Text>
       </View>
 
       <View style={previewStyles.controls}>

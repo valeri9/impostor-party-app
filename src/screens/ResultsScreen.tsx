@@ -257,7 +257,9 @@ function createStyles(colors: ReturnType<typeof useSkinTokens>['colors']) {
       marginTop: spacing.sm,
       alignItems: 'center',
     },
-    factLabel: { ...type.caption, color: colors.inkSoft, textTransform: 'uppercase' },
+    // ink, not inkSoft — `fact` is filled with colors.surface, not the screen
+    // background inkSoft is tuned to read against.
+    factLabel: { ...type.caption, color: colors.ink, textTransform: 'uppercase' },
     factValue: { ...type.heading, color: colors.ink, marginTop: spacing.xs, textAlign: 'center' },
     legend: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.md, marginTop: spacing.sm, justifyContent: 'center' },
     legendItem: { flexDirection: 'row', alignItems: 'center', gap: spacing.xs },

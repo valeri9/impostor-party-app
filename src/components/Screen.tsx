@@ -184,7 +184,7 @@ function createStyles(colors: ReturnType<typeof useSkinTokens>['colors'], SHELL:
       gap: spacing.xs,
       paddingTop: spacing.xs,
     },
-    wordmarkSmall: { ...type.caption, fontSize: 11, lineHeight: 15, color: SHELL.print, letterSpacing: 0 },
+    wordmarkSmall: { ...type.caption, fontSize: 11, lineHeight: 15, color: SHELL.onShell, letterSpacing: 0 },
     // No fontStyle: 'italic' here on purpose: PIXEL_FONT has no real italic
     // face on Android, so the OS fakes one by shearing each glyph — but it
     // still measures the *upright* width and clips paint to that box, so the
@@ -194,7 +194,7 @@ function createStyles(colors: ReturnType<typeof useSkinTokens>['colors'], SHELL:
       ...type.caption,
       fontSize: 15,
       lineHeight: 20,
-      color: SHELL.print,
+      color: SHELL.onShell,
       letterSpacing: 1,
       transform: [{ skewX: '-12deg' }],
       paddingRight: 4,

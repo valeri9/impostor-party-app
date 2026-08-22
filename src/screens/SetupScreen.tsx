@@ -76,7 +76,10 @@ export function SetupScreen({
             value={player.name}
             onChangeText={(name) => dispatch({ type: 'SET_PLAYER_NAME', id: player.id, name })}
             placeholder={t('setup.playerPlaceholder', { n: i + 1 })}
-            placeholderTextColor={colors.inkSoft}
+            // `ink`, not `inkSoft` — this sits on `colors.surface` (the input's
+            // own fill), not the screen background inkSoft is tuned against,
+            // and was reading at under 2:1 there.
+            placeholderTextColor={colors.ink}
             maxLength={16}
             autoCorrect={false}
             returnKeyType="done"
@@ -377,7 +380,8 @@ function createStyles(colors: ReturnType<typeof useSkinTokens>['colors']) {
     },
     langPillActive: { backgroundColor: colors.ink },
     langCode: { ...type.caption, color: colors.ink, textTransform: 'uppercase' },
-    langName: { ...type.caption, color: colors.inkSoft },
+    // ink, not inkSoft — same colors.surface fill as the player input above.
+    langName: { ...type.caption, color: colors.ink },
     langTextActive: { color: colors.onInk },
     playerRow: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm, marginBottom: spacing.sm },
     playerIndex: {
