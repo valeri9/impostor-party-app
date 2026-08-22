@@ -61,6 +61,10 @@ export function Screen({ children, scroll = false, center = false, style, backgr
             <View style={StyleSheet.absoluteFill} pointerEvents="none">
               <SandFill />
               <BeachScene />
+              {/* The backlight wash every LCD has — it keeps the animated
+                  scene from ever washing out the ink text sitting on top,
+                  the same way DotMatrix never fights the other skins' text. */}
+              <View style={[StyleSheet.absoluteFill, { backgroundColor: colors.bg, opacity: 0.55 }]} />
             </View>
           ) : (
             <DotMatrix />
