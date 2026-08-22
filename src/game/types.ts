@@ -3,6 +3,9 @@ import type { DrawingPrompt, WordPrompt } from '../i18n/prompts';
 export const MIN_PLAYERS = 3;
 export const MAX_PLAYERS = 15;
 export const DEFAULT_PLAYERS = 4;
+/** Mafia needs enough of a town for the social deduction to work — 3 is too
+ *  small to hide a Mafia member in. */
+export const MAFIA_MIN_PLAYERS = 5;
 
 /** Modes whose play screen repeats a pass round the table a configurable number of times. */
 export type RoundedMode = 'word' | 'canvas' | 'timer';

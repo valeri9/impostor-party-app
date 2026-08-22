@@ -8,7 +8,7 @@ import { SectionLabel } from '../components/SectionLabel';
 import { Stepper, ToggleRow } from '../components/Stepper';
 import { civiliansFor, clampMafiaConfig, maxMafiaFor } from '../game/assign';
 import { useGame } from '../game/GameContext';
-import { GAME_MODES, GameMode, MAX_PLAYERS, MAX_ROUNDS, MIN_PLAYERS, MIN_ROUNDS } from '../game/types';
+import { GAME_MODES, GameMode, MAFIA_MIN_PLAYERS, MAX_PLAYERS, MAX_ROUNDS, MIN_PLAYERS, MIN_ROUNDS } from '../game/types';
 import { LANGUAGE_NAMES, LOCALES, useI18n } from '../i18n';
 import { openDonateLink } from '../native/donate';
 import { haptics } from '../native/haptics';
@@ -30,7 +30,8 @@ export function SetupScreen({
   const { players, mode, mafiaConfig, roundsConfig } = state;
 
   const allNamed = players.every((p) => p.name.trim().length > 0);
-  const canStart = allNamed && players.length >= MIN_PLAYERS && mode !== null;
+  const notEnoughForMafia = mode === 'mafia' && players.length < MAFIA_MIN_PLAYERS;
+  const canStart = allNamed && !notEnoughForMafia && players.length >= MIN_PLAYERS && mode !== null;
 
   const clampedMafia = useMemo(
     () => clampMafiaConfig(mafiaConfig, players.length),
@@ -153,7 +154,11 @@ export function SetupScreen({
         onPress={startGame}
         style={styles.startButton}
       />
-      {!allNamed ? <Text style={styles.warning}>{t('setup.nameRequired')}</Text> : null}
+      {!allNamed ? (
+        <Text style={styles.warning}>{t('setup.nameRequired')}</Text>
+      ) : notEnoughForMafia ? (
+        <Text style={styles.warning}>{t('mafia.setup.minPlayers', { n: MAFIA_MIN_PLAYERS })}</Text>
+      ) : null}
 
       <DonateLink />
     </Screen>
