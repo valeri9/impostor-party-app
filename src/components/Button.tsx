@@ -84,7 +84,7 @@ export function Button({ label, onPress, variant = 'primary', disabled, large, s
   const { scale, onPressIn, onPressOut } = usePressScale();
 
   return (
-    <Animated.View style={{ transform: [{ scale }] }}>
+    <Animated.View style={[{ transform: [{ scale }] }, style]}>
       <Pressable
         testID={testID}
         accessibilityRole="button"
@@ -110,7 +110,6 @@ export function Button({ label, onPress, variant = 'primary', disabled, large, s
             borderColor: spec.border,
           },
           disabled && styles.disabled,
-          style,
         ]}
       >
         {({ pressed }) => {
