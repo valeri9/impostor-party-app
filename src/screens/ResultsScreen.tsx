@@ -165,10 +165,7 @@ function TimerResults({ round }: { round: TimerRound }) {
         accent={colors.ink}
         outcome={impostorWon ? t('results.impostorWinsTimer') : t('results.impostorLosesTimer')}
       />
-      <Fact
-        label={t('results.target')}
-        value={`${(round.targetMs / 1000).toFixed(2)}${t('common.seconds')}`}
-      />
+      <Fact label={t('results.target')} value={`${round.targetMs / 1000}${t('common.seconds')}`} />
 
       <SectionLabel label={t('results.yourTimes')} />
       {rows.map((row, i) => {

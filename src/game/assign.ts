@@ -62,19 +62,17 @@ export function buildCanvasRound(players: Player[], rounds: number): CanvasRound
 
 // ---------------------------------------------------------------- Timer
 
-const TIMER_MIN_MS = 250;
+const TIMER_MIN_MS = 1_000;
 const TIMER_MAX_MS = 10_000;
-const TIMER_STEP_MS = 250;
+const TIMER_STEP_MS = 1_000;
 
 export function buildTimerRound(players: Player[], rounds: number): TimerRound {
   const { order, impostorId } = baseRound(players);
-  // Quarter-second steps give the target texture (6.25s, 6.75s) instead of
-  // landing on a whole or half second every time.
+  // Whole-second targets only — like a real "stop it at 3 seconds" button
+  // timer, the number everyone's chasing is always a round one.
   const targetMs = randomInt(TIMER_MIN_MS / TIMER_STEP_MS, TIMER_MAX_MS / TIMER_STEP_MS) * TIMER_STEP_MS;
   // The impostor gets a deliberately loose window that always contains the
-  // target. Rounded to the same step as the target itself, not whole seconds
-  // — at this floor, rounding to whole seconds could produce a range that
-  // misses the target entirely.
+  // target, rounded to the same whole-second step as the target itself.
   const rangeMinMs = Math.max(
     TIMER_STEP_MS,
     Math.floor((targetMs * 0.6) / TIMER_STEP_MS) * TIMER_STEP_MS,
@@ -83,15 +81,17 @@ export function buildTimerRound(players: Player[], rounds: number): TimerRound {
   return { mode: 'timer', targetMs, rangeMinMs, rangeMaxMs, impostorId, order, times: {}, rounds, attempts: 0 };
 }
 
-// The Impostor only ever sees the wide range, never the target itself, so
-// landing within one generation step of it is a genuine blind guess rather
-// than a given — same granularity the target was rounded to.
-export const TIMER_WIN_TOLERANCE_MS = TIMER_STEP_MS;
-
+/**
+ * A real "stop the clock" win: like a physical countdown display, the number
+ * only counts once the clock has actually ticked onto it. Landing anywhere
+ * from the target's second up to (not including) the next one wins; arriving
+ * even a hair early (2.9s for a 3s target) does not — there's no tolerance
+ * window, just whichever whole second the press falls in.
+ */
 export function impostorNailedTimer(round: TimerRound): boolean {
   const impostorMs = round.times[round.impostorId];
   if (impostorMs === undefined) return false;
-  return Math.abs(impostorMs - round.targetMs) <= TIMER_WIN_TOLERANCE_MS;
+  return Math.floor(impostorMs / 1000) === Math.floor(round.targetMs / 1000);
 }
 
 // ---------------------------------------------------------------- Mafia
