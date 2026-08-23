@@ -278,7 +278,9 @@ describe('blind intuition timer', () => {
     await startGame('timer');
     await completeRevealLoop(4);
 
-    await fireEvent.press(screen.getByTestId('timer-start'));
+    // Start/Stop fire on press-in, like a real button reacting the instant
+    // it's pushed rather than once released.
+    await fireEvent(screen.getByTestId('timer-start'), 'pressIn');
     expect(screen.getByTestId('timer-running')).toBeTruthy();
 
     // No rendered text anywhere on the blind screen may contain a digit —
@@ -292,8 +294,8 @@ describe('blind intuition timer', () => {
     await completeRevealLoop(4);
 
     for (let i = 0; i < 4; i++) {
-      await fireEvent.press(screen.getByTestId('timer-start'));
-      await fireEvent.press(screen.getByTestId('timer-stop'));
+      await fireEvent(screen.getByTestId('timer-start'), 'pressIn');
+      await fireEvent(screen.getByTestId('timer-stop'), 'pressIn');
 
       // The recorded value is acknowledged but never shown.
       expect(screen.getByText(translate('en', 'timer.play.recorded'))).toBeTruthy();
