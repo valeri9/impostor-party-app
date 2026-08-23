@@ -6,9 +6,23 @@ import App from '../App';
 import { LOCALES, translate } from '../src/i18n';
 import { ACTIVE_SKIN_KEY, HOWTO_SEEN_KEY, OWNED_SKINS_KEY } from '../src/native/storageKeys';
 
+// The point-at-the-impostor countdown (see pointAtImpostor below) runs on
+// real timers for ~2.2s; give those tests headroom over Jest's 5s default.
+jest.setTimeout(15000);
+
 const DEFAULT_NAMES = ['Ana', 'Bo', 'Cid', 'Dee'];
 // Mafia needs MAFIA_MIN_PLAYERS (5) — one more than the default roster.
 const MAFIA_NAMES = ['Ana', 'Bo', 'Cid', 'Dee', 'Eli'];
+
+/**
+ * Word, Canvas, and Timer all end their round the same way: a "3, 2, 1,
+ * point!" beat stands in for an in-app vote before the reveal button shows
+ * up. Mafia votes out loud at the table already, so it skips this.
+ */
+async function pointAtImpostor() {
+  await fireEvent.press(screen.getByTestId('accuse-begin'));
+  await waitFor(() => expect(screen.getByTestId('show-results')).toBeTruthy(), { timeout: 5000 });
+}
 
 /** Flattened backgroundColor of a swatch button. */
 function colorOf(node: { props: Record<string, unknown> }): string | undefined {
@@ -262,6 +276,7 @@ describe('word mode', () => {
     }
     expect(screen.getByText(translate('en', 'word.play.roundDone'))).toBeTruthy();
 
+    await pointAtImpostor();
     await fireEvent.press(screen.getByTestId('show-results'));
 
     expect(screen.getByText(translate('en', 'results.title'))).toBeTruthy();
@@ -303,6 +318,7 @@ describe('blind intuition timer', () => {
     }
 
     expect(screen.getByText(translate('en', 'timer.play.allDone'))).toBeTruthy();
+    await pointAtImpostor();
     await fireEvent.press(screen.getByTestId('show-results'));
 
     expect(screen.getByText(translate('en', 'results.yourTimes'))).toBeTruthy();
@@ -391,8 +407,9 @@ describe('one-stroke canvas', () => {
 
     // After the eighth stroke the drawing is done, not passed on again.
     expect(screen.queryByTestId('canvas-pass')).toBeNull();
-    expect(screen.getByTestId('show-results')).toBeTruthy();
+    expect(screen.getByTestId('accuse-begin')).toBeTruthy();
 
+    await pointAtImpostor();
     await fireEvent.press(screen.getByTestId('show-results'));
     expect(screen.getByText(translate('en', 'canvas.artwork'))).toBeTruthy();
   });
@@ -402,6 +419,7 @@ describe('new game', () => {
   it('restarts with the same roster', async () => {
     await startGame('word');
     await completeRevealLoop(4);
+    await pointAtImpostor();
     await fireEvent.press(screen.getByTestId('show-results'));
 
     await fireEvent.press(screen.getByText(translate('en', 'results.newGame')));

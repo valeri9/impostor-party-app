@@ -1,6 +1,7 @@
 import React, { useMemo, useState } from 'react';
 import { Animated, Pressable, StyleSheet, Text, View } from 'react-native';
 
+import { AccusationCountdown } from '../../components/AccusationCountdown';
 import { Button } from '../../components/Button';
 import { DrawCanvas } from '../../components/DrawCanvas';
 import { usePressScale } from '../../components/pressAnim';
@@ -100,13 +101,10 @@ export function CanvasPlayScreen({ round }: { round: CanvasRound }) {
       ) : null}
 
       {finished ? (
-        <Button
-          label={t('results.showImpostor')}
+        <AccusationCountdown
+          revealLabel={t('results.showImpostor')}
           testID="show-results"
-          variant="danger"
-          large
-          onPress={() => dispatch({ type: 'SHOW_RESULTS' })}
-          style={styles.action}
+          onReveal={() => dispatch({ type: 'SHOW_RESULTS' })}
         />
       ) : null}
     </Screen>
