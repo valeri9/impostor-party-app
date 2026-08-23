@@ -1,4 +1,4 @@
-import { createPlayer } from './assign';
+import { createPlayer, defaultMafiaConfig } from './assign';
 import {
   Action,
   DEFAULT_PLAYERS,
@@ -29,8 +29,15 @@ export function initialState(): GameState {
 
 export function reducer(state: GameState, action: Action): GameState {
   switch (action.type) {
-    case 'SET_MODE':
+    case 'SET_MODE': {
+      // Re-derive sensible mafia defaults for the current roster size on
+      // freshly entering the mode (not on every reselect while already in
+      // it, which would stomp any manual tuning the player just did).
+      if (action.mode === 'mafia' && state.mode !== 'mafia') {
+        return { ...state, mode: action.mode, mafiaConfig: defaultMafiaConfig(state.players.length) };
+      }
       return { ...state, mode: action.mode };
+    }
 
     case 'SET_PLAYER_NAME':
       return {

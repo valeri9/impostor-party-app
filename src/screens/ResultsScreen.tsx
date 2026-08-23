@@ -6,6 +6,7 @@ import { DrawingPreview } from '../components/DrawCanvas';
 import { PlayingCard } from '../components/PlayingCard';
 import { Screen } from '../components/Screen';
 import { SectionLabel } from '../components/SectionLabel';
+import { impostorNailedTimer } from '../game/assign';
 import { useGame } from '../game/GameContext';
 import type { CanvasRound, MafiaRound, Round, TimerRound, WordRound } from '../game/types';
 import { localized, useI18n } from '../i18n';
@@ -51,7 +52,7 @@ function Body({ round }: { round: Round }) {
 }
 
 /** Shared headline naming the impostor — the one moment worth a fanfare. */
-function ImpostorBanner({ name, accent }: { name: string; accent: string }) {
+function ImpostorBanner({ name, accent, outcome }: { name: string; accent: string; outcome?: string }) {
   const { t } = useI18n();
   const { colors } = useSkinTokens();
   const styles = useMemo(() => createStyles(colors), [colors]);
@@ -78,6 +79,7 @@ function ImpostorBanner({ name, accent }: { name: string; accent: string }) {
       <Text style={styles.bannerName} adjustsFontSizeToFit numberOfLines={1}>
         {name}
       </Text>
+      {outcome ? <Text style={styles.bannerOutcome}>{outcome}</Text> : null}
     </Animated.View>
   );
 }
@@ -154,14 +156,16 @@ function TimerResults({ round }: { round: TimerRound }) {
       return { id, ms, delta: Math.abs(ms - round.targetMs) };
     })
     .sort((a, b) => a.delta - b.delta);
+  const impostorWon = impostorNailedTimer(round);
 
   return (
     <View>
-      <ImpostorBanner name={playerById(round.impostorId).name} accent={colors.ink} />
-      <Fact
-        label={t('results.target')}
-        value={`${(round.targetMs / 1000).toFixed(2)}${t('common.seconds')}`}
+      <ImpostorBanner
+        name={playerById(round.impostorId).name}
+        accent={colors.ink}
+        outcome={impostorWon ? t('results.impostorWinsTimer') : t('results.impostorLosesTimer')}
       />
+      <Fact label={t('results.target')} value={`${round.targetMs / 1000}${t('common.seconds')}`} />
 
       <SectionLabel label={t('results.yourTimes')} />
       {rows.map((row, i) => {
@@ -249,6 +253,7 @@ function createStyles(colors: ReturnType<typeof useSkinTokens>['colors']) {
     },
     bannerLabel: { ...type.caption, color: colors.onInk, textTransform: 'uppercase' },
     bannerName: { ...type.hero, color: colors.onInk, marginTop: spacing.xs },
+    bannerOutcome: { ...type.label, color: colors.onInk, marginTop: spacing.xs, textTransform: 'uppercase' },
     fact: {
       backgroundColor: colors.surface,
       borderWidth: stroke.hair,

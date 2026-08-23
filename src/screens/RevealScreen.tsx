@@ -111,8 +111,8 @@ function Secret({ round, playerId }: { round: Round; playerId: string }) {
             </View>
             <Text style={styles.secretValue} adjustsFontSizeToFit numberOfLines={2}>
               {t('secret.targetRange', {
-                min: (round.rangeMinMs / 1000).toFixed(2),
-                max: (round.rangeMaxMs / 1000).toFixed(2),
+                min: String(round.rangeMinMs / 1000),
+                max: String(round.rangeMaxMs / 1000),
               })}
             </Text>
             <Text style={styles.secretMeta}>{t('secret.timerImpostor')}</Text>
@@ -122,7 +122,7 @@ function Secret({ round, playerId }: { round: Round; playerId: string }) {
       return (
         <View style={styles.secretBody}>
           <Text style={styles.secretValue} adjustsFontSizeToFit numberOfLines={2}>
-            {t('secret.targetTime', { seconds: (round.targetMs / 1000).toFixed(2) })}
+            {t('secret.targetTime', { seconds: String(round.targetMs / 1000) })}
           </Text>
           <Text style={styles.secretMeta}>{t('secret.timerCivilian')}</Text>
         </View>
