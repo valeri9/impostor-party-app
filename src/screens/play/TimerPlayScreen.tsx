@@ -40,7 +40,13 @@ export function TimerPlayScreen({ round }: { round: TimerRound }) {
   const currentId = allDone ? null : round.order[currentIndex];
   const current = currentId ? playerById(currentId) : null;
 
+  // A real button reacts the instant it's pushed, not once you let go — so
+  // both the timer's start and the recorded stop fire on press-in, in step
+  // with the same touch that visually squashes the button down. Firing on
+  // release (the old `onPress`) would have added the tap's travel time to
+  // every recorded value, which matters when a win comes down to hundredths.
   const start = () => {
+    startPress.onPressIn();
     haptics.heavy();
     playSound('click');
     startedAtRef.current = Date.now();
@@ -49,6 +55,7 @@ export function TimerPlayScreen({ round }: { round: TimerRound }) {
 
   const stop = () => {
     if (!currentId) return;
+    stopPress.onPressIn();
     const ms = Date.now() - startedAtRef.current;
     haptics.success();
     playSound('chime');
@@ -110,9 +117,8 @@ export function TimerPlayScreen({ round }: { round: TimerRound }) {
             testID="timer-stop"
             accessibilityRole="button"
             accessibilityLabel={t('timer.play.stop')}
-            onPressIn={stopPress.onPressIn}
+            onPressIn={stop}
             onPressOut={stopPress.onPressOut}
-            onPress={stop}
             style={({ pressed }) => [
               styles.stopButton,
               { backgroundColor: pressed ? SHELL.buttonDeep : SHELL.button },
@@ -140,9 +146,8 @@ export function TimerPlayScreen({ round }: { round: TimerRound }) {
           testID="timer-start"
           accessibilityRole="button"
           accessibilityLabel={t('timer.play.start')}
-          onPressIn={startPress.onPressIn}
+          onPressIn={start}
           onPressOut={startPress.onPressOut}
-          onPress={start}
           style={({ pressed }) => [
             styles.startButton,
             { backgroundColor: pressed ? SHELL.buttonDeep : SHELL.button },

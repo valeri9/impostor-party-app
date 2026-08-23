@@ -82,16 +82,18 @@ export function buildTimerRound(players: Player[], rounds: number): TimerRound {
 }
 
 /**
- * A real "stop the clock" win: like a physical countdown display, the number
- * only counts once the clock has actually ticked onto it. Landing anywhere
- * from the target's second up to (not including) the next one wins; arriving
- * even a hair early (2.9s for a 3s target) does not — there's no tolerance
- * window, just whichever whole second the press falls in.
+ * A real "stop the clock" win: hundredth-of-a-second precision, like the
+ * display on a physical reaction-timer button. Landing on the target exactly
+ * (3.00s) or up to one hundredth short of it (2.99s) wins; going over by even
+ * a hundredth (3.01s) never does — once you've passed the number, you've
+ * missed it, no matter how close. There's no leeway on the overshoot side.
  */
+const TIMER_WIN_WINDOW_MS = 10;
+
 export function impostorNailedTimer(round: TimerRound): boolean {
   const impostorMs = round.times[round.impostorId];
   if (impostorMs === undefined) return false;
-  return Math.floor(impostorMs / 1000) === Math.floor(round.targetMs / 1000);
+  return impostorMs <= round.targetMs && impostorMs >= round.targetMs - TIMER_WIN_WINDOW_MS;
 }
 
 // ---------------------------------------------------------------- Mafia

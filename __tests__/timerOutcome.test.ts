@@ -17,23 +17,28 @@ function makeRound(overrides: Partial<TimerRound> = {}): TimerRound {
 }
 
 describe('impostorNailedTimer', () => {
-  it('wins when the impostor stops exactly on the target second', () => {
+  it('wins by stopping exactly on the target (3.00s for a 3s target)', () => {
     const round = makeRound({ times: { impostor: 3000 } });
     expect(impostorNailedTimer(round)).toBe(true);
   });
 
-  it('wins anywhere later in the same whole second, right up to the next tick', () => {
-    const round = makeRound({ times: { impostor: 3999 } });
+  it('wins up to a hundredth of a second short of the target (2.99s)', () => {
+    const round = makeRound({ times: { impostor: 2990 } });
     expect(impostorNailedTimer(round)).toBe(true);
   });
 
-  it('does not win a hair early — the second has not ticked over yet', () => {
-    const round = makeRound({ times: { impostor: 2900 } });
+  it('does not win two hundredths short (2.98s) — outside the window', () => {
+    const round = makeRound({ times: { impostor: 2980 } });
     expect(impostorNailedTimer(round)).toBe(false);
   });
 
-  it('does not win the instant the next second ticks over', () => {
-    const round = makeRound({ times: { impostor: 4000 } });
+  it('does not win by even a hundredth over (3.01s) — overshoot never counts', () => {
+    const round = makeRound({ times: { impostor: 3010 } });
+    expect(impostorNailedTimer(round)).toBe(false);
+  });
+
+  it('does not win far under the target', () => {
+    const round = makeRound({ times: { impostor: 2000 } });
     expect(impostorNailedTimer(round)).toBe(false);
   });
 
