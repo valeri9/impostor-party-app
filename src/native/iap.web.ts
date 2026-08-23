@@ -15,9 +15,7 @@ export function useSkinPurchases(_productIds: string[], _onUnlock: (productId: s
       ready: false,
       pricesByProductId: {},
       purchasingId: null,
-      isRestoring: false,
       purchase: async () => {},
-      restore: async () => {},
     }),
     [],
   );

@@ -570,14 +570,14 @@ describe('skins', () => {
     expect(JSON.parse(stored ?? '[]')).not.toContain('neon-nebula');
   });
 
-  it('restoring purchases unlocks a skin already bought elsewhere', async () => {
+  it('syncs a skin already bought elsewhere as soon as billing connects, with no tap needed', async () => {
     // eslint-disable-next-line @typescript-eslint/no-var-requires
     const { __iapMock } = require('expo-iap');
     __iapMock.restorablePurchases = [
       {
-        id: 'restored-1',
-        productId: 'skin_neon_nebula',
-        purchaseToken: 'restored-token-1',
+        id: 'restored-2',
+        productId: 'skin_shoreline',
+        purchaseToken: 'restored-token-2',
         isAutoRenewing: false,
         purchaseState: 'purchased',
         quantity: 1,
@@ -590,11 +590,9 @@ describe('skins', () => {
     await waitFor(() => expect(screen.getByText(translate('en', 'app.tagline'))).toBeTruthy());
 
     await fireEvent.press(screen.getByTestId('open-skins'));
-    await waitFor(() => expect(screen.getByTestId('skins-restore')).toBeTruthy());
-    await fireEvent.press(screen.getByTestId('skins-restore'));
-
-    await waitFor(() => expect(screen.getByTestId('skin-neon-nebula')).toBeTruthy());
-    expect(screen.queryByTestId('skin-preview-neon-nebula')).toBeNull();
+    // Never touches skins-restore — this is the automatic, connect-time sync.
+    await waitFor(() => expect(screen.getByTestId('skin-shoreline')).toBeTruthy());
+    expect(screen.queryByTestId('skin-preview-shoreline')).toBeNull();
   });
 
   it('applies an owned skin on tap and re-colours the shop list itself immediately', async () => {

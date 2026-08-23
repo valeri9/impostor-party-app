@@ -172,44 +172,37 @@ export function SetupScreen({
   );
 }
 
-/** A quiet, easy-to-ignore link — never a prompt, never in the way of starting a game. */
+/** Same solid style as Add Player, per an explicit ask to match the two —
+ *  but sized to its own label rather than stretched full-width, so it still
+ *  reads as a secondary action next to Start/Add Player. */
 function DonateLink() {
   const { t } = useI18n();
   const { colors } = useSkinTokens();
   const styles = useMemo(() => createStyles(colors), [colors]);
   return (
-    <Pressable
+    <Button
+      label={`☕ ${t('setup.donate')}`}
       testID="donate-link"
-      accessibilityRole="button"
-      onPress={() => {
-        haptics.selection();
-        openDonateLink();
-      }}
-      style={({ pressed }) => [styles.donateLink, pressed && styles.donateLinkPressed]}
-    >
-      <Text style={styles.donateLinkText}>☕ {t('setup.donate')}</Text>
-    </Pressable>
+      variant="primary"
+      onPress={openDonateLink}
+      style={styles.donateButton}
+    />
   );
 }
 
-/** Same quiet treatment as DonateLink, right below it — required to be reachable
- *  before starting a game, not buried in a menu nobody opens. */
+/** Same treatment as DonateLink, right below it and just as compact. */
 function PrivacyLink({ onPress }: { onPress: () => void }) {
   const { t } = useI18n();
   const { colors } = useSkinTokens();
   const styles = useMemo(() => createStyles(colors), [colors]);
   return (
-    <Pressable
+    <Button
+      label={`🔒 ${t('privacy.title')}`}
       testID="privacy-link"
-      accessibilityRole="button"
-      onPress={() => {
-        haptics.selection();
-        onPress();
-      }}
-      style={({ pressed }) => [styles.donateLink, styles.privacyLink, pressed && styles.donateLinkPressed]}
-    >
-      <Text style={styles.donateLinkText}>🔒 {t('privacy.title')}</Text>
-    </Pressable>
+      variant="primary"
+      onPress={onPress}
+      style={styles.privacyButton}
+    />
   );
 }
 
@@ -479,16 +472,7 @@ function createStyles(colors: ReturnType<typeof useSkinTokens>['colors']) {
     civilianValue: { ...type.heading, color: colors.ink },
     startButton: { marginTop: spacing.lg },
     warning: { ...type.caption, color: colors.ink, textAlign: 'center', marginTop: spacing.sm },
-    donateLink: {
-      alignSelf: 'center',
-      marginTop: spacing.lg,
-      paddingVertical: spacing.xs,
-      paddingHorizontal: spacing.md,
-      borderWidth: stroke.hair,
-      borderColor: colors.ink,
-    },
-    donateLinkPressed: { opacity: 0.5 },
-    donateLinkText: { ...type.label, color: colors.ink, letterSpacing: 0 },
-    privacyLink: { marginTop: spacing.sm },
+    donateButton: { alignSelf: 'center', marginTop: spacing.lg },
+    privacyButton: { alignSelf: 'center', marginTop: spacing.sm },
   });
 }

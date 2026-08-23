@@ -10,9 +10,7 @@ export type SkinPurchases = {
   pricesByProductId: Record<string, string>;
   /** The product id currently mid-purchase, or null. */
   purchasingId: string | null;
-  isRestoring: boolean;
   purchase: (productId: string) => Promise<void>;
-  restore: () => Promise<void>;
 };
 
 function purchaseKey(purchase: Purchase): string {
@@ -22,18 +20,21 @@ function purchaseKey(purchase: Purchase): string {
 /**
  * Bridges expo-iap's hook-shaped API into the small surface the Skins screen
  * actually needs. `onUnlock` is called for both a fresh successful purchase
- * and anything found already owned on restore — Google Play is the source of
- * truth for ownership, this just mirrors it into local storage via the
- * caller's existing `unlockSkin`.
+ * and anything found already owned — Google Play is the source of truth for
+ * ownership, this just mirrors it into local storage via the caller's
+ * existing `unlockSkin`.
  *
  * A non-consumable purchase Google hasn't received `finishTransaction` for
  * within 3 days gets auto-refunded, so both paths below call it unconditionally,
  * including for purchases restored from a connection that started after the
  * app was killed mid-purchase.
+ *
+ * Ownership syncs the moment billing connects, with no button needed —
+ * Google Play ties a purchase to the signed-in account, not the device, so a
+ * skin bought on one phone just shows up owned on the next one.
  */
 export function useSkinPurchases(productIds: string[], onUnlock: (productId: string) => void): SkinPurchases {
   const [purchasingId, setPurchasingId] = useState<string | null>(null);
-  const [isRestoring, setIsRestoring] = useState(false);
   const onUnlockRef = useRef(onUnlock);
   onUnlockRef.current = onUnlock;
 
@@ -56,6 +57,15 @@ export function useSkinPurchases(productIds: string[], onUnlock: (productId: str
     fetchProducts({ skus, type: 'in-app' }).catch(() => {});
   }, [connected, skus, fetchProducts]);
 
+  // Runs once per connection, silently — no UI depends on it beyond
+  // whatever it unlocks via the availablePurchases sweep below.
+  const autoRestoredRef = useRef(false);
+  useEffect(() => {
+    if (!connected || autoRestoredRef.current) return;
+    autoRestoredRef.current = true;
+    restorePurchases().catch(() => {});
+  }, [connected, restorePurchases]);
+
   const pricesByProductId = useMemo(() => {
     const map: Record<string, string> = {};
     for (const p of products) {
@@ -76,21 +86,9 @@ export function useSkinPurchases(productIds: string[], onUnlock: (productId: str
     [requestPurchase],
   );
 
-  const restore = useCallback(async () => {
-    setIsRestoring(true);
-    try {
-      await restorePurchases();
-    } catch {
-      // Best-effort — Restore Purchases has no failure state of its own to show.
-    } finally {
-      setIsRestoring(false);
-    }
-  }, [restorePurchases]);
-
   // restorePurchases() only populates availablePurchases; it doesn't unlock
-  // or finish anything on its own. Sweep it for both an explicit Restore tap
-  // and any purchase that was already owned when the store connected (the
-  // stranded-purchase case above).
+  // or finish anything on its own. Sweep it for anything found owned,
+  // including the stranded-purchase case above.
   const processedRef = useRef(new Set<string>());
   useEffect(() => {
     for (const p of availablePurchases) {
@@ -102,5 +100,5 @@ export function useSkinPurchases(productIds: string[], onUnlock: (productId: str
     }
   }, [availablePurchases, finishTransaction]);
 
-  return { ready: connected, pricesByProductId, purchasingId, isRestoring, purchase, restore };
+  return { ready: connected, pricesByProductId, purchasingId, purchase };
 }
