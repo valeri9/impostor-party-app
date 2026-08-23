@@ -83,6 +83,17 @@ export function buildTimerRound(players: Player[], rounds: number): TimerRound {
   return { mode: 'timer', targetMs, rangeMinMs, rangeMaxMs, impostorId, order, times: {}, rounds, attempts: 0 };
 }
 
+// The Impostor only ever sees the wide range, never the target itself, so
+// landing within one generation step of it is a genuine blind guess rather
+// than a given — same granularity the target was rounded to.
+export const TIMER_WIN_TOLERANCE_MS = TIMER_STEP_MS;
+
+export function impostorNailedTimer(round: TimerRound): boolean {
+  const impostorMs = round.times[round.impostorId];
+  if (impostorMs === undefined) return false;
+  return Math.abs(impostorMs - round.targetMs) <= TIMER_WIN_TOLERANCE_MS;
+}
+
 // ---------------------------------------------------------------- Mafia
 
 /** Jacks for the mafia, one suit each — capped at 3 so the killers always stay a minority clique. */

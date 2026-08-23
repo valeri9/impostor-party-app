@@ -79,6 +79,8 @@
       "results.showRoles": "SHOW ALL ROLES",
       "results.title": "Results",
       "results.theImpostor": "The Impostor",
+      "results.impostorWinsTimer": "Nailed it — wins the round!",
+      "results.impostorLosesTimer": "Missed the target.",
       "results.theImpostors": "The Impostors",
       "results.secretWord": "The secret word",
       "results.secretObject": "The object",
@@ -133,7 +135,7 @@
       "setup.rounds": "Rounds",
       "mode.word.rules": "Everyone except the Impostor sees the same secret word. The Impostor only gets a hint from the same category — not the answer.\n\nGoing in turn order, each player says one word connected to the secret without saying it outright. The Impostor has to fake something close enough to blend in.\n\nSet Rounds on the setup screen to go around the table more than once before revealing.\n\nWhen you think you've spotted them, talk it over out loud, then tap Show Impostor & Results to reveal who it really was.",
       "mode.canvas.rules": "Everyone except the Impostor knows the secret object. The Impostor only gets a hint — close, but not the answer.\n\nTake turns adding one unbroken line to the shared drawing. Lifting your finger ends your turn, so plan your line before you touch the screen. The Impostor has to sketch something that could pass for the real thing.\n\nRounds control how many lines each player gets before the picture is finished.\n\nWhen the drawing's done, reveal the Impostor, the object, and the finished artwork.",
-      "mode.timer.rules": "Everyone except the Impostor is shown the same target time. The Impostor instead gets a wide range, with no idea what the real number is.\n\nOne at a time: tap Start, then Stop the instant you think the target has passed. There's no clock or countdown on screen — go entirely by feel.\n\nRounds let each player try more than once; only their last attempt counts.\n\nOnce everyone's gone, every recorded time is revealed next to the target — whoever's furthest off is worth a second look.",
+      "mode.timer.rules": "Everyone except the Impostor is shown the same target time. The Impostor instead gets a wide range, with no idea what the real number is.\n\nOne at a time: tap Start, then Stop the instant you think the target has passed. There's no clock or countdown on screen — go entirely by feel.\n\nRounds let each player try more than once; only their last attempt counts.\n\nOnce everyone's gone, every recorded time is revealed next to the target — whoever's furthest off is worth a second look.\n\nIf the Impostor's time lands close enough to the real target, they've won the round — you'll see it called out right alongside their reveal.",
       "mode.mafia.rules": "Cards are dealt in secret: a handful of Mafia, and — if you switched them on — a Detective and a Doctor. Everyone else is a Civilian. The Mafia know each other; everyone else only knows their own role.\n\nPlay happens around the table, not on the phone. Alternate Night, when the Mafia quietly pick a target and the Detective and Doctor act if they're in play, and Day, when everyone debates out loud and votes someone out.\n\nUse the round timer to pace each phase and the buzzer to call time.\n\nMafia win by outnumbering the town. The town wins by voting out every Mafia member first."
     },
     "bg": {
@@ -215,6 +217,8 @@
       "results.showRoles": "ПОКАЖИ ВСИЧКИ РОЛИ",
       "results.title": "Резултати",
       "results.theImpostor": "Измамникът",
+      "results.impostorWinsTimer": "Позна точно — печели рунда!",
+      "results.impostorLosesTimer": "Не позна времето.",
       "results.theImpostors": "Измамниците",
       "results.secretWord": "Тайната дума",
       "results.secretObject": "Обектът",
@@ -269,7 +273,7 @@
       "setup.rounds": "Рундове",
       "mode.word.rules": "Всички освен Измамника виждат една и съща тайна дума. Измамникът получава само подсказка от същата категория — не отговора.\n\nПо ред всеки играч казва по една дума, свързана с тайната, без да я издава направо. Измамникът трябва да измисли нещо достатъчно близко, за да се слее с останалите.\n\nЗадай Рундове от екрана за настройка, за да минете масата повече от веднъж, преди разкриването.\n\nКогато решите, че сте го разкрили, обсъдете го на глас и после натиснете „Покажи измамника и резултатите“, за да видите истината.",
       "mode.canvas.rules": "Всички освен Измамника знаят тайния предмет. Измамникът получава само подсказка — близка, но не отговорът.\n\nРисувайте на смени по една непрекъсната линия върху общата рисунка. Вдигането на пръста завършва хода ти, затова обмисли линията, преди да докоснеш екрана. Измамникът трябва да нарисува нещо, което да мине за истинския предмет.\n\nРундовете определят колко линии получава всеки играч, преди рисунката да е готова.\n\nКогато рисунката е завършена, разкрийте измамника, предмета и готовата рисунка.",
-      "mode.timer.rules": "Всички освен Измамника виждат едно и също целево време. Измамникът вместо това получава широк диапазон, без представа какво е истинското число.\n\nПо един играч наведнъж: натисни СТАРТ, после СТОП точно когато усетиш, че времето е изтекло. На екрана няма часовник или обратно броене — разчитай изцяло на усета си.\n\nРундовете позволяват на всеки играч да опита повече от веднъж; брои се само последният опит.\n\nКогато всички приключат, всички записани времена се разкриват до целта — който е най-далеч, си заслужава втори поглед.",
+      "mode.timer.rules": "Всички освен Измамника виждат едно и също целево време. Измамникът вместо това получава широк диапазон, без представа какво е истинското число.\n\nПо един играч наведнъж: натисни СТАРТ, после СТОП точно когато усетиш, че времето е изтекло. На екрана няма часовник или обратно броене — разчитай изцяло на усета си.\n\nРундовете позволяват на всеки играч да опита повече от веднъж; брои се само последният опит.\n\nКогато всички приключат, всички записани времена се разкриват до целта — който е най-далеч, си заслужава втори поглед.\n\nАко времето на Измамника попадне достатъчно близо до истинската цел, той печели рунда — това се показва до неговото разкриване.",
       "mode.mafia.rules": "Картите се раздават тайно: няколко от Мафията и — ако си ги включил — Детектив и Доктор. Останалите са Цивилни. Мафията се познава помежду си; всеки друг знае само своята роля.\n\nИграта се играе на масата, не на телефона. Редувайте Нощ, когато Мафията тайно избира жертва, а Детективът и Докторът действат, ако участват, и Ден, когато всички обсъждат на глас и гласуват някого да отпадне.\n\nИзползвай таймера на рундовете, за да темпираш всяка фаза, и звуковия сигнал, за да обявиш края.\n\nМафията печели, като надделее числено над града. Градът печели, като гласува всеки от Мафията да отпадне пръв."
     },
     "es": {
@@ -351,6 +355,8 @@
       "results.showRoles": "MOSTRAR TODOS LOS ROLES",
       "results.title": "Resultados",
       "results.theImpostor": "El impostor",
+      "results.impostorWinsTimer": "¡Acertó de lleno — gana la ronda!",
+      "results.impostorLosesTimer": "Falló el objetivo.",
       "results.theImpostors": "Los impostores",
       "results.secretWord": "La palabra secreta",
       "results.secretObject": "El objeto",
@@ -405,7 +411,7 @@
       "setup.rounds": "Rondas",
       "mode.word.rules": "Todos menos el Impostor ven la misma palabra secreta. El Impostor solo recibe una pista de la misma categoría, no la respuesta.\n\nPor turnos, cada jugador dice una palabra relacionada con el secreto sin decirlo directamente. El Impostor tiene que inventar algo lo bastante parecido para pasar desapercibido.\n\nAjusta Rondas en la pantalla de configuración para dar más de una vuelta a la mesa antes de revelar.\n\nCuando creáis haberlo descubierto, comentadlo en voz alta y pulsad Mostrar impostor y resultados para ver la verdad.",
       "mode.canvas.rules": "Todos menos el Impostor conocen el objeto secreto. El Impostor solo recibe una pista — parecida, pero no la respuesta.\n\nTurnaos para añadir una línea continua al dibujo compartido. Levantar el dedo termina tu turno, así que piensa la línea antes de tocar la pantalla. El Impostor tiene que dibujar algo que pueda pasar por el objeto real.\n\nLas Rondas determinan cuántas líneas hace cada jugador antes de terminar el dibujo.\n\nCuando el dibujo esté listo, revelad al impostor, el objeto y la obra terminada.",
-      "mode.timer.rules": "Todos menos el Impostor ven el mismo tiempo objetivo. El Impostor recibe en cambio un rango amplio, sin saber cuál es el número real.\n\nDe uno en uno: pulsa Iniciar y luego Parar en el instante en que creas que se ha cumplido el tiempo. No hay reloj ni cuenta atrás en pantalla — guíate solo por tu instinto.\n\nLas Rondas dejan que cada jugador lo intente más de una vez; solo cuenta el último intento.\n\nCuando todos hayan terminado, se revelan todos los tiempos junto al objetivo — quien más se aleje merece una segunda mirada.",
+      "mode.timer.rules": "Todos menos el Impostor ven el mismo tiempo objetivo. El Impostor recibe en cambio un rango amplio, sin saber cuál es el número real.\n\nDe uno en uno: pulsa Iniciar y luego Parar en el instante en que creas que se ha cumplido el tiempo. No hay reloj ni cuenta atrás en pantalla — guíate solo por tu instinto.\n\nLas Rondas dejan que cada jugador lo intente más de una vez; solo cuenta el último intento.\n\nCuando todos hayan terminado, se revelan todos los tiempos junto al objetivo — quien más se aleje merece una segunda mirada.\n\nSi el tiempo del Impostor cae lo bastante cerca del objetivo real, gana la ronda — se indica junto a su revelación.",
       "mode.mafia.rules": "Las cartas se reparten en secreto: unos cuantos de la Mafia y, si los activaste, un Detective y un Doctor. El resto son Civiles. La Mafia se conoce entre sí; el resto solo conoce su propio papel.\n\nSe juega en la mesa, no en el teléfono. Alternad Noche, cuando la Mafia elige en secreto un objetivo y el Detective y el Doctor actúan si están en juego, y Día, cuando todos debaten en voz alta y votan para eliminar a alguien.\n\nUsad el cronómetro de ronda para marcar el ritmo de cada fase y la alarma para anunciar el final.\n\nLa Mafia gana si supera en número al pueblo. El pueblo gana si vota fuera a toda la Mafia primero."
     },
     "el": {
@@ -487,6 +493,8 @@
       "results.showRoles": "ΔΕΙΞΕ ΟΛΟΥΣ ΤΟΥΣ ΡΟΛΟΥΣ",
       "results.title": "Αποτελέσματα",
       "results.theImpostor": "Ο απατεώνας",
+      "results.impostorWinsTimer": "Το πέτυχε — κερδίζει τον γύρο!",
+      "results.impostorLosesTimer": "Αστόχησε.",
       "results.theImpostors": "Οι απατεώνες",
       "results.secretWord": "Η μυστική λέξη",
       "results.secretObject": "Το αντικείμενο",
@@ -541,7 +549,7 @@
       "setup.rounds": "Γύροι",
       "mode.word.rules": "Όλοι εκτός από τον Απατεώνα βλέπουν την ίδια μυστική λέξη. Ο Απατεώνας παίρνει μόνο μια υπόδειξη από την ίδια κατηγορία — όχι την απάντηση.\n\nΜε τη σειρά, κάθε παίκτης λέει μία λέξη σχετική με το μυστικό χωρίς να την αποκαλύπτει άμεσα. Ο Απατεώνας πρέπει να σκαρφιστεί κάτι αρκετά κοντινό για να μη φανεί.\n\nΌρισε Γύρους στην οθόνη ρυθμίσεων για να κάνετε πάνω από μία βόλτα στο τραπέζι πριν την αποκάλυψη.\n\nΌταν νομίζετε ότι τον βρήκατε, συζητήστε το φωναχτά και μετά πατήστε «Δείξε απατεώνα & αποτελέσματα» για να μάθετε την αλήθεια.",
       "mode.canvas.rules": "Όλοι εκτός από τον Απατεώνα ξέρουν το μυστικό αντικείμενο. Ο Απατεώνας παίρνει μόνο μια υπόδειξη — κοντινή, αλλά όχι την απάντηση.\n\nΣχεδιάστε με τη σειρά μία συνεχή γραμμή στο κοινό σχέδιο. Σηκώνοντας το δάχτυλο τελειώνει η σειρά σου, οπότε σκέψου τη γραμμή πριν αγγίξεις την οθόνη. Ο Απατεώνας πρέπει να σχεδιάσει κάτι που να περνά για το πραγματικό αντικείμενο.\n\nΟι Γύροι καθορίζουν πόσες γραμμές παίρνει κάθε παίκτης πριν ολοκληρωθεί το σχέδιο.\n\nΌταν το σχέδιο είναι έτοιμο, αποκαλύψτε τον απατεώνα, το αντικείμενο και το τελικό έργο.",
-      "mode.timer.rules": "Όλοι εκτός από τον Απατεώνα βλέπουν τον ίδιο στόχο-χρόνο. Ο Απατεώνας παίρνει αντ' αυτού ένα ευρύ εύρος, χωρίς ιδέα ποιος είναι ο πραγματικός αριθμός.\n\nΈνας-έναν: πάτα Έναρξη και μετά Στοπ τη στιγμή που νομίζεις ότι πέρασε ο στόχος. Δεν υπάρχει ρολόι ή αντίστροφη μέτρηση στην οθόνη — βασίσου αποκλειστικά στο ένστικτό σου.\n\nΟι Γύροι αφήνουν κάθε παίκτη να προσπαθήσει περισσότερες από μία φορές· μετράει μόνο η τελευταία προσπάθεια.\n\nΜόλις τελειώσουν όλοι, αποκαλύπτονται όλοι οι χρόνοι δίπλα στον στόχο — όποιος απέχει περισσότερο αξίζει δεύτερη ματιά.",
+      "mode.timer.rules": "Όλοι εκτός από τον Απατεώνα βλέπουν τον ίδιο στόχο-χρόνο. Ο Απατεώνας παίρνει αντ' αυτού ένα ευρύ εύρος, χωρίς ιδέα ποιος είναι ο πραγματικός αριθμός.\n\nΈνας-έναν: πάτα Έναρξη και μετά Στοπ τη στιγμή που νομίζεις ότι πέρασε ο στόχος. Δεν υπάρχει ρολόι ή αντίστροφη μέτρηση στην οθόνη — βασίσου αποκλειστικά στο ένστικτό σου.\n\nΟι Γύροι αφήνουν κάθε παίκτη να προσπαθήσει περισσότερες από μία φορές· μετράει μόνο η τελευταία προσπάθεια.\n\nΜόλις τελειώσουν όλοι, αποκαλύπτονται όλοι οι χρόνοι δίπλα στον στόχο — όποιος απέχει περισσότερο αξίζει δεύτερη ματιά.\n\nΑν ο χρόνος του Απατεώνα πέσει αρκετά κοντά στον πραγματικό στόχο, κερδίζει τον γύρο — αυτό φαίνεται δίπλα στην αποκάλυψή του.",
       "mode.mafia.rules": "Τα φύλλα μοιράζονται κρυφά: μερικά της Μαφίας και — αν τα ενεργοποίησες — έναν Ντετέκτιβ και έναν Γιατρό. Οι υπόλοιποι είναι Πολίτες. Η Μαφία γνωρίζεται μεταξύ της· οι υπόλοιποι ξέρουν μόνο τον δικό τους ρόλο.\n\nΤο παιχνίδι παίζεται γύρω από το τραπέζι, όχι στο κινητό. Εναλλάξτε Νύχτα, όταν η Μαφία διαλέγει κρυφά έναν στόχο και ο Ντετέκτιβ με τον Γιατρό δρουν αν συμμετέχουν, και Μέρα, όταν όλοι συζητούν φωναχτά και ψηφίζουν κάποιον να αποχωρήσει.\n\nΧρησιμοποίησε το χρονόμετρο γύρου για να ρυθμίσεις κάθε φάση και το κουδούνι για να δηλώσεις τη λήξη.\n\nΗ Μαφία κερδίζει αν ξεπεράσει αριθμητικά την πόλη. Η πόλη κερδίζει αν ψηφίσει έξω όλη τη Μαφία πρώτη."
     },
     "de": {
@@ -623,6 +631,8 @@
       "results.showRoles": "ALLE ROLLEN ZEIGEN",
       "results.title": "Ergebnisse",
       "results.theImpostor": "Der Betrüger",
+      "results.impostorWinsTimer": "Genau getroffen — gewinnt die Runde!",
+      "results.impostorLosesTimer": "Ziel verfehlt.",
       "results.theImpostors": "Die Betrüger",
       "results.secretWord": "Das geheime Wort",
       "results.secretObject": "Das Objekt",
@@ -677,7 +687,7 @@
       "setup.rounds": "Runden",
       "mode.word.rules": "Alle außer dem Betrüger sehen dasselbe Geheimwort. Der Betrüger bekommt nur einen Hinweis aus derselben Kategorie — nicht die Antwort.\n\nReihum sagt jeder Spieler ein Wort, das mit dem Geheimnis zu tun hat, ohne es direkt zu verraten. Der Betrüger muss sich etwas Ähnliches ausdenken, um nicht aufzufallen.\n\nStelle Runden auf dem Einrichtungsbildschirm ein, um mehr als einmal um den Tisch zu gehen, bevor aufgedeckt wird.\n\nWenn ihr glaubt, ihn entdeckt zu haben, diskutiert laut darüber und tippt dann auf „Betrüger & Ergebnisse zeigen“, um die Wahrheit zu sehen.",
       "mode.canvas.rules": "Alle außer dem Betrüger kennen das geheime Objekt. Der Betrüger bekommt nur einen Hinweis — nah dran, aber nicht die Antwort.\n\nZeichnet abwechselnd eine durchgehende Linie in die gemeinsame Zeichnung. Das Abheben des Fingers beendet deinen Zug, also überlege dir die Linie, bevor du den Bildschirm berührst. Der Betrüger muss etwas zeichnen, das als das echte Objekt durchgehen könnte.\n\nRunden bestimmen, wie viele Linien jeder Spieler bekommt, bevor das Bild fertig ist.\n\nWenn die Zeichnung fertig ist, deckt den Betrüger, das Objekt und das fertige Werk auf.",
-      "mode.timer.rules": "Alle außer dem Betrüger sehen dieselbe Zielzeit. Der Betrüger bekommt stattdessen eine weite Spanne, ohne zu wissen, wie die echte Zahl lautet.\n\nEiner nach dem anderen: Tippe auf START und dann auf STOPP, sobald du glaubst, dass die Zielzeit vorbei ist. Es gibt keine Uhr oder einen Countdown auf dem Bildschirm — verlass dich ganz auf dein Gefühl.\n\nRunden lassen jeden Spieler mehr als einmal versuchen; nur der letzte Versuch zählt.\n\nSobald alle dran waren, werden alle gemessenen Zeiten neben der Zielzeit aufgedeckt — wer am weitesten daneben liegt, verdient einen zweiten Blick.",
+      "mode.timer.rules": "Alle außer dem Betrüger sehen dieselbe Zielzeit. Der Betrüger bekommt stattdessen eine weite Spanne, ohne zu wissen, wie die echte Zahl lautet.\n\nEiner nach dem anderen: Tippe auf START und dann auf STOPP, sobald du glaubst, dass die Zielzeit vorbei ist. Es gibt keine Uhr oder einen Countdown auf dem Bildschirm — verlass dich ganz auf dein Gefühl.\n\nRunden lassen jeden Spieler mehr als einmal versuchen; nur der letzte Versuch zählt.\n\nSobald alle dran waren, werden alle gemessenen Zeiten neben der Zielzeit aufgedeckt — wer am weitesten daneben liegt, verdient einen zweiten Blick.\n\nWenn die Zeit des Betrügers nah genug am echten Ziel liegt, gewinnt er die Runde — das wird direkt bei seiner Aufdeckung angezeigt.",
       "mode.mafia.rules": "Die Karten werden heimlich verteilt: ein paar von der Mafia und — falls aktiviert — ein Detektiv und ein Arzt. Alle anderen sind Zivilisten. Die Mafia kennt sich untereinander; alle anderen kennen nur ihre eigene Rolle.\n\nGespielt wird am Tisch, nicht auf dem Handy. Wechselt zwischen Nacht, wenn die Mafia heimlich ein Ziel wählt und Detektiv sowie Arzt handeln, falls im Spiel, und Tag, wenn alle laut diskutieren und jemanden abstimmen.\n\nNutzt den Rundentimer, um jede Phase zu takten, und den Summer, um das Ende anzuzeigen.\n\nDie Mafia gewinnt, wenn sie die Stadt zahlenmäßig überflügelt. Die Stadt gewinnt, wenn sie zuerst die gesamte Mafia abgestimmt hat."
     },
     "ro": {
@@ -759,6 +769,8 @@
       "results.showRoles": "ARATĂ TOATE ROLURILE",
       "results.title": "Rezultate",
       "results.theImpostor": "Impostorul",
+      "results.impostorWinsTimer": "A nimerit exact — câștigă runda!",
+      "results.impostorLosesTimer": "A ratat ținta.",
       "results.theImpostors": "Impostorii",
       "results.secretWord": "Cuvântul secret",
       "results.secretObject": "Obiectul",
@@ -813,7 +825,7 @@
       "setup.rounds": "Runde",
       "mode.word.rules": "Toți în afară de Impostor văd același cuvânt secret. Impostorul primește doar un indiciu din aceeași categorie — nu răspunsul.\n\nPe rând, fiecare jucător spune un cuvânt legat de secret, fără să-l dezvăluie direct. Impostorul trebuie să inventeze ceva suficient de apropiat ca să treacă neobservat.\n\nSetează Runde pe ecranul de configurare pentru a face mai mult de o tură a mesei înainte de dezvăluire.\n\nCând credeți că l-ați descoperit, discutați cu voce tare, apoi apăsați „Arată impostorul și rezultatele” pentru a afla adevărul.",
       "mode.canvas.rules": "Toți în afară de Impostor cunosc obiectul secret. Impostorul primește doar un indiciu — apropiat, dar nu răspunsul.\n\nDesenați pe rând câte o linie continuă pe desenul comun. Ridicarea degetului îți încheie tura, așa că gândește-ți linia înainte să atingi ecranul. Impostorul trebuie să deseneze ceva care ar putea trece drept obiectul real.\n\nRundele stabilesc câte linii primește fiecare jucător înainte ca desenul să fie gata.\n\nCând desenul e finalizat, dezvăluiți impostorul, obiectul și opera terminată.",
-      "mode.timer.rules": "Toți în afară de Impostor văd același timp țintă. Impostorul primește în schimb un interval larg, fără nicio idee despre numărul real.\n\nUnul câte unul: apasă START, apoi STOP exact în clipa în care crezi că timpul țintă a trecut. Nu există ceas sau numărătoare inversă pe ecran — te bazezi complet pe instinct.\n\nRundele permit fiecărui jucător să încerce de mai multe ori; contează doar ultima încercare.\n\nDupă ce toți au terminat, toate timpurile înregistrate sunt dezvăluite lângă țintă — cel mai îndepărtat merită o a doua privire.",
+      "mode.timer.rules": "Toți în afară de Impostor văd același timp țintă. Impostorul primește în schimb un interval larg, fără nicio idee despre numărul real.\n\nUnul câte unul: apasă START, apoi STOP exact în clipa în care crezi că timpul țintă a trecut. Nu există ceas sau numărătoare inversă pe ecran — te bazezi complet pe instinct.\n\nRundele permit fiecărui jucător să încerce de mai multe ori; contează doar ultima încercare.\n\nDupă ce toți au terminat, toate timpurile înregistrate sunt dezvăluite lângă țintă — cel mai îndepărtat merită o a doua privire.\n\nDacă timpul Impostorului cade suficient de aproape de ținta reală, câștigă runda — asta apare chiar lângă dezvăluirea lui.",
       "mode.mafia.rules": "Cărțile sunt împărțite pe ascuns: câțiva din Mafia și — dacă i-ai activat — un Detectiv și un Doctor. Restul sunt Civili. Membrii Mafiei se cunosc între ei; toți ceilalți își știu doar propriul rol.\n\nJocul se desfășoară la masă, nu pe telefon. Alternați Noaptea, când Mafia alege pe ascuns o țintă, iar Detectivul și Doctorul acționează dacă sunt în joc, și Ziua, când toți dezbat cu voce tare și votează pe cineva să iasă din joc.\n\nFolosiți cronometrul rundei pentru a ritma fiecare fază și soneria pentru a anunța finalul.\n\nMafia câștigă dacă depășește numeric orașul. Orașul câștigă dacă votează afară toată Mafia mai întâi."
     }
   }
