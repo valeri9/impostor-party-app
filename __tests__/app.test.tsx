@@ -502,16 +502,25 @@ describe('skins', () => {
     await waitFor(() => expect(screen.getByTestId('skins-done')).toBeTruthy());
   });
 
-  it('previews an owned skin from its thumbnail without reselecting it', async () => {
+  it('applies an owned skin on tap and re-colours the shop list itself immediately', async () => {
+    await AsyncStorage.setItem(OWNED_SKINS_KEY, JSON.stringify(['neon-nebula']));
+
     await render(<App />);
     await waitFor(() => expect(screen.getByText(translate('en', 'app.tagline'))).toBeTruthy());
 
     await fireEvent.press(screen.getByTestId('open-skins'));
-    await waitFor(() => expect(screen.getByTestId('skin-preview-dmg-classic')).toBeTruthy());
+    await waitFor(() => expect(screen.getByTestId('skin-neon-nebula')).toBeTruthy());
 
-    await fireEvent.press(screen.getByTestId('skin-preview-dmg-classic'));
-    await waitFor(() => expect(screen.getByTestId('skin-preview-select')).toBeTruthy());
-    // Already active, so the select button reflects that rather than offering to reselect.
-    expect(screen.getByTestId('skin-preview-select').props.accessibilityState.disabled).toBe(true);
+    // No separate preview window for an owned skin — tapping the whole card
+    // applies it directly.
+    await fireEvent.press(screen.getByTestId('skin-neon-nebula'));
+    await waitFor(() =>
+      expect(screen.getByTestId('skin-neon-nebula').props.accessibilityState.selected).toBe(true),
+    );
+
+    // Neon Nebula's ink (#1b1230) is nothing like DMG Classic's (#233b16) —
+    // proves the shop list re-themed live, right here, not just the console
+    // chrome around it or the real setup screen after leaving.
+    expect(colorOf(screen.getByTestId('skin-neon-nebula'))).toBe('#1b1230');
   });
 });
