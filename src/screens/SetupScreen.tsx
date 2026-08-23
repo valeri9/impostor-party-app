@@ -19,9 +19,11 @@ import { MODE_GLYPH, spacing, stroke, type } from '../theme/tokens';
 export function SetupScreen({
   onHowToPlay,
   onSkins,
+  onPrivacy,
 }: {
   onHowToPlay: () => void;
   onSkins: () => void;
+  onPrivacy: () => void;
 }) {
   const { t, locale, setLocale } = useI18n();
   const { state, dispatch, startGame } = useGame();
@@ -165,6 +167,7 @@ export function SetupScreen({
       ) : null}
 
       <DonateLink />
+      <PrivacyLink onPress={onPrivacy} />
     </Screen>
   );
 }
@@ -185,6 +188,27 @@ function DonateLink() {
       style={({ pressed }) => [styles.donateLink, pressed && styles.donateLinkPressed]}
     >
       <Text style={styles.donateLinkText}>☕ {t('setup.donate')}</Text>
+    </Pressable>
+  );
+}
+
+/** Same quiet treatment as DonateLink, right below it — required to be reachable
+ *  before starting a game, not buried in a menu nobody opens. */
+function PrivacyLink({ onPress }: { onPress: () => void }) {
+  const { t } = useI18n();
+  const { colors } = useSkinTokens();
+  const styles = useMemo(() => createStyles(colors), [colors]);
+  return (
+    <Pressable
+      testID="privacy-link"
+      accessibilityRole="button"
+      onPress={() => {
+        haptics.selection();
+        onPress();
+      }}
+      style={({ pressed }) => [styles.donateLink, styles.privacyLink, pressed && styles.donateLinkPressed]}
+    >
+      <Text style={styles.donateLinkText}>🔒 {t('privacy.title')}</Text>
     </Pressable>
   );
 }
@@ -465,5 +489,6 @@ function createStyles(colors: ReturnType<typeof useSkinTokens>['colors']) {
     },
     donateLinkPressed: { opacity: 0.5 },
     donateLinkText: { ...type.label, color: colors.ink, letterSpacing: 0 },
+    privacyLink: { marginTop: spacing.sm },
   });
 }

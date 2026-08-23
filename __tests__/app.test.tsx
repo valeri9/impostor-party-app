@@ -493,6 +493,18 @@ describe('skins', () => {
     await waitFor(() => expect(screen.getByText(translate('en', 'app.tagline'))).toBeTruthy());
   });
 
+  it('opens the privacy policy from setup and returns to setup on done', async () => {
+    await render(<App />);
+    await waitFor(() => expect(screen.getByText(translate('en', 'app.tagline'))).toBeTruthy());
+
+    await fireEvent.press(screen.getByTestId('privacy-link'));
+    await waitFor(() => expect(screen.getByTestId('privacy-done')).toBeTruthy());
+    expect(screen.getByText(translate('en', 'privacy.title'))).toBeTruthy();
+
+    await fireEvent.press(screen.getByTestId('privacy-done'));
+    await waitFor(() => expect(screen.getByText(translate('en', 'app.tagline'))).toBeTruthy());
+  });
+
   it('lists a locked paid skin with its price, not selectable yet', async () => {
     await render(<App />);
     await waitFor(() => expect(screen.getByText(translate('en', 'app.tagline'))).toBeTruthy());
