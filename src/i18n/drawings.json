@@ -9,7 +9,7 @@
       "ro": "Turnul Eiffel"
     },
     "hint": {
-      "en": "Tall tower",
+      "en": "You'd need a whole day in Paris to see it properly",
       "bg": "Висока кула",
       "es": "Torre alta",
       "el": "Ψηλός πύργος",
@@ -27,7 +27,7 @@
       "ro": "Pisică"
     },
     "hint": {
-      "en": "Pet animal",
+      "en": "Ignores you until it wants food",
       "bg": "Домашен любимец",
       "es": "Animal doméstico",
       "el": "Κατοικίδιο",
@@ -45,7 +45,7 @@
       "ro": "Bicicletă"
     },
     "hint": {
-      "en": "Vehicle with wheels",
+      "en": "You need to keep moving or you'll tip over",
       "bg": "Превозно средство с колела",
       "es": "Vehículo con ruedas",
       "el": "Όχημα με ρόδες",
@@ -63,7 +63,7 @@
       "ro": "Ananas"
     },
     "hint": {
-      "en": "Tropical fruit",
+      "en": "Spiky on the outside, sweet inside",
       "bg": "Тропически плод",
       "es": "Fruta tropical",
       "el": "Τροπικό φρούτο",
@@ -81,7 +81,7 @@
       "ro": "Rachetă"
     },
     "hint": {
-      "en": "Flying machine",
+      "en": "Counts down before it goes",
       "bg": "Летяща машина",
       "es": "Máquina voladora",
       "el": "Ιπτάμενη μηχανή",
@@ -99,7 +99,7 @@
       "ro": "Om de zăpadă"
     },
     "hint": {
-      "en": "Winter figure",
+      "en": "Melts by the afternoon",
       "bg": "Зимна фигура",
       "es": "Figura de invierno",
       "el": "Χειμωνιάτικη φιγούρα",
@@ -117,7 +117,7 @@
       "ro": "Far"
     },
     "hint": {
-      "en": "Tall building by the sea",
+      "en": "Warns ships away from the rocks",
       "bg": "Висока сграда край морето",
       "es": "Edificio alto junto al mar",
       "el": "Ψηλό κτίριο δίπλα στη θάλασσα",
@@ -135,7 +135,7 @@
       "ro": "Caracatiță"
     },
     "hint": {
-      "en": "Sea creature",
+      "en": "Escapes through the tiniest gap",
       "bg": "Морско създание",
       "es": "Criatura marina",
       "el": "Θαλάσσιο πλάσμα",
@@ -153,7 +153,7 @@
       "ro": "Floarea-soarelui"
     },
     "hint": {
-      "en": "Flower",
+      "en": "Turns to follow the light",
       "bg": "Цвете",
       "es": "Flor",
       "el": "Λουλούδι",
@@ -171,7 +171,7 @@
       "ro": "Chitară"
     },
     "hint": {
-      "en": "Musical instrument",
+      "en": "You strum it around a campfire",
       "bg": "Музикален инструмент",
       "es": "Instrumento musical",
       "el": "Μουσικό όργανο",
@@ -189,7 +189,7 @@
       "ro": "Castel"
     },
     "hint": {
-      "en": "Old big building",
+      "en": "Once needed a moat for protection",
       "bg": "Стара голяма сграда",
       "es": "Edificio antiguo y grande",
       "el": "Παλιό μεγάλο κτίριο",
@@ -207,7 +207,7 @@
       "ro": "Balon cu aer cald"
     },
     "hint": {
-      "en": "Thing that floats in the sky",
+      "en": "Rises when the burner fires",
       "bg": "Нещо, което се носи в небето",
       "es": "Algo que flota en el cielo",
       "el": "Κάτι που επιπλέει στον ουρανό",
@@ -225,7 +225,7 @@
       "ro": "Câine"
     },
     "hint": {
-      "en": "Loyal pet",
+      "en": "Waits by the door when you leave",
       "bg": "Вярно домашно животно",
       "es": "Mascota fiel",
       "el": "Πιστό κατοικίδιο",
@@ -243,7 +243,7 @@
       "ro": "Pește"
     },
     "hint": {
-      "en": "Water animal",
+      "en": "Needs water, not air",
       "bg": "Водно животно",
       "es": "Animal de agua",
       "el": "Ζώο του νερού",
@@ -261,7 +261,7 @@
       "ro": "Pasăre"
     },
     "hint": {
-      "en": "Flying animal",
+      "en": "Sings before sunrise",
       "bg": "Летящо животно",
       "es": "Animal que vuela",
       "el": "Ζώο που πετά",
@@ -279,7 +279,7 @@
       "ro": "Elefant"
     },
     "hint": {
-      "en": "Animal with a trunk",
+      "en": "Never forgets, they say",
       "bg": "Животно с хобот",
       "es": "Animal con trompa",
       "el": "Ζώο με προβοσκίδα",
@@ -297,7 +297,7 @@
       "ro": "Girafă"
     },
     "hint": {
-      "en": "Animal with a long neck",
+      "en": "Reaches the highest leaves",
       "bg": "Животно с дълъг врат",
       "es": "Animal de cuello largo",
       "el": "Ζώο με μακρύ λαιμό",
@@ -315,7 +315,7 @@
       "ro": "Șarpe"
     },
     "hint": {
-      "en": "Long crawling animal",
+      "en": "Sheds its skin",
       "bg": "Дълго пълзящо животно",
       "es": "Animal largo que repta",
       "el": "Μακρύ ζώο που έρπει",
@@ -333,7 +333,7 @@
       "ro": "Broască țestoasă"
     },
     "hint": {
-      "en": "Animal with a shell",
+      "en": "Carries its home everywhere",
       "bg": "Животно с черупка",
       "es": "Animal con caparazón",
       "el": "Ζώο με καβούκι",
@@ -351,7 +351,7 @@
       "ro": "Fluture"
     },
     "hint": {
-      "en": "Insect with wings",
+      "en": "Started out as something less colourful",
       "bg": "Насекомо с крила",
       "es": "Insecto con alas",
       "el": "Έντομο με φτερά",
@@ -369,7 +369,7 @@
       "ro": "Albină"
     },
     "hint": {
-      "en": "Striped insect",
+      "en": "Makes something sweet in a hive",
       "bg": "Раирано насекомо",
       "es": "Insecto con rayas",
       "el": "Ριγέ έντομο",
@@ -387,7 +387,7 @@
       "ro": "Păianjen"
     },
     "hint": {
-      "en": "Animal with eight legs",
+      "en": "Makes people jump in the bath",
       "bg": "Животно с осем крака",
       "es": "Animal de ocho patas",
       "el": "Ζώο με οκτώ πόδια",
@@ -405,7 +405,7 @@
       "ro": "Crab"
     },
     "hint": {
-      "en": "Animal with claws",
+      "en": "Walks sideways",
       "bg": "Животно с щипки",
       "es": "Animal con pinzas",
       "el": "Ζώο με δαγκάνες",
@@ -423,7 +423,7 @@
       "ro": "Balenă"
     },
     "hint": {
-      "en": "Giant sea animal",
+      "en": "Breathes through a hole on top",
       "bg": "Гигантско морско животно",
       "es": "Animal marino gigante",
       "el": "Γιγάντιο θαλάσσιο ζώο",
@@ -441,7 +441,7 @@
       "ro": "Pinguin"
     },
     "hint": {
-      "en": "Bird that cannot fly",
+      "en": "Waddles instead of walks",
       "bg": "Птица, която не лети",
       "es": "Ave que no vuela",
       "el": "Πουλί που δεν πετά",
@@ -459,7 +459,7 @@
       "ro": "Bufniță"
     },
     "hint": {
-      "en": "Bird of the night",
+      "en": "Turns its head almost all the way around",
       "bg": "Птица на нощта",
       "es": "Ave de la noche",
       "el": "Πουλί της νύχτας",
@@ -477,7 +477,7 @@
       "ro": "Broască"
     },
     "hint": {
-      "en": "Green jumper",
+      "en": "Catches its dinner with its tongue",
       "bg": "Зелен скачач",
       "es": "Saltador verde",
       "el": "Πράσινο ζώο που πηδά",
@@ -495,7 +495,7 @@
       "ro": "Cal"
     },
     "hint": {
-      "en": "Animal you can ride",
+      "en": "Wears shoes made of metal",
       "bg": "Животно, което се язди",
       "es": "Animal que se monta",
       "el": "Ζώο που το καβαλάς",
@@ -513,7 +513,7 @@
       "ro": "Porc"
     },
     "hint": {
-      "en": "Pink farm animal",
+      "en": "Rolls in the mud to cool off",
       "bg": "Розово селско животно",
       "es": "Animal rosa de granja",
       "el": "Ροζ ζώο της φάρμας",
@@ -531,7 +531,7 @@
       "ro": "Vacă"
     },
     "hint": {
-      "en": "Animal that gives milk",
+      "en": "Chews the same bite twice",
       "bg": "Животно, което дава мляко",
       "es": "Animal que da leche",
       "el": "Ζώο που δίνει γάλα",
@@ -549,7 +549,7 @@
       "ro": "Rață"
     },
     "hint": {
-      "en": "Water bird",
+      "en": "Water rolls right off its back",
       "bg": "Водна птица",
       "es": "Ave acuática",
       "el": "Υδρόβιο πουλί",
@@ -567,7 +567,7 @@
       "ro": "Iepure"
     },
     "hint": {
-      "en": "Animal with long ears",
+      "en": "Thumps its foot when nervous",
       "bg": "Животно с дълги уши",
       "es": "Animal de orejas largas",
       "el": "Ζώο με μακριά αυτιά",
@@ -585,7 +585,7 @@
       "ro": "Șoarece"
     },
     "hint": {
-      "en": "Tiny animal with a tail",
+      "en": "Terrifies people much bigger than it",
       "bg": "Мъничко животно с опашка",
       "es": "Animal diminuto con cola",
       "el": "Μικροσκοπικό ζώο με ουρά",
@@ -603,7 +603,7 @@
       "ro": "Liliac"
     },
     "hint": {
-      "en": "Animal that flies at night",
+      "en": "Sleeps upside down",
       "bg": "Животно, което лети нощем",
       "es": "Animal que vuela de noche",
       "el": "Ζώο που πετά τη νύχτα",
@@ -621,7 +621,7 @@
       "ro": "Rechin"
     },
     "hint": {
-      "en": "Sea hunter",
+      "en": "Never stops swimming, even asleep",
       "bg": "Морски ловец",
       "es": "Cazador del mar",
       "el": "Κυνηγός της θάλασσας",
@@ -639,7 +639,7 @@
       "ro": "Melc"
     },
     "hint": {
-      "en": "Animal that carries its house",
+      "en": "Leaves a shiny trail behind",
       "bg": "Животно, което носи дома си",
       "es": "Animal que lleva su casa",
       "el": "Ζώο που κουβαλά το σπίτι του",
@@ -657,7 +657,7 @@
       "ro": "Furnică"
     },
     "hint": {
-      "en": "Very small insect",
+      "en": "Can carry many times its own weight",
       "bg": "Много малко насекомо",
       "es": "Insecto muy pequeño",
       "el": "Πολύ μικρό έντομο",
@@ -675,7 +675,7 @@
       "ro": "Buburuză"
     },
     "hint": {
-      "en": "Spotted insect",
+      "en": "Considered good luck if it lands on you",
       "bg": "Насекомо на точки",
       "es": "Insecto con puntos",
       "el": "Έντομο με βούλες",
@@ -693,7 +693,7 @@
       "ro": "Delfin"
     },
     "hint": {
-      "en": "Playful sea animal",
+      "en": "Sleeps with one eye open",
       "bg": "Игриво морско животно",
       "es": "Animal marino juguetón",
       "el": "Παιχνιδιάρικο θαλάσσιο ζώο",
@@ -711,7 +711,7 @@
       "ro": "Leu"
     },
     "hint": {
-      "en": "Animal with a mane",
+      "en": "The rest of its family does most of the hunting",
       "bg": "Животно с грива",
       "es": "Animal con melena",
       "el": "Ζώο με χαίτη",
@@ -729,7 +729,7 @@
       "ro": "Urs"
     },
     "hint": {
-      "en": "Large furry animal",
+      "en": "Sleeps through most of winter",
       "bg": "Голямо космато животно",
       "es": "Animal grande y peludo",
       "el": "Μεγάλο τριχωτό ζώο",
@@ -747,7 +747,7 @@
       "ro": "Maimuță"
     },
     "hint": {
-      "en": "Animal that climbs",
+      "en": "Great at copying what it sees",
       "bg": "Животно, което се катери",
       "es": "Animal que trepa",
       "el": "Ζώο που σκαρφαλώνει",
@@ -765,7 +765,7 @@
       "ro": "Cangur"
     },
     "hint": {
-      "en": "Animal that hops",
+      "en": "Carries its baby in a pocket",
       "bg": "Животно, което подскача",
       "es": "Animal que da saltos",
       "el": "Ζώο που χοροπηδά",
@@ -783,7 +783,7 @@
       "ro": "Veveriță"
     },
     "hint": {
-      "en": "Animal with a bushy tail",
+      "en": "Forgets where it buried half its food",
       "bg": "Животно с пухкава опашка",
       "es": "Animal de cola peluda",
       "el": "Ζώο με φουντωτή ουρά",
@@ -801,7 +801,7 @@
       "ro": "Cămilă"
     },
     "hint": {
-      "en": "Animal with humps",
+      "en": "Can go a long time without a drink",
       "bg": "Животно с гърбици",
       "es": "Animal con jorobas",
       "el": "Ζώο με καμπούρες",
@@ -819,7 +819,7 @@
       "ro": "Cocoș"
     },
     "hint": {
-      "en": "Farm bird that crows",
+      "en": "Wakes the farm up whether you like it or not",
       "bg": "Селска птица, която кукурига",
       "es": "Ave de granja que canta",
       "el": "Πουλί της φάρμας που λαλεί",
@@ -837,7 +837,7 @@
       "ro": "Lebădă"
     },
     "hint": {
-      "en": "Elegant water bird",
+      "en": "Mates for life",
       "bg": "Изящна водна птица",
       "es": "Ave acuática elegante",
       "el": "Κομψό υδρόβιο πουλί",
@@ -855,7 +855,7 @@
       "ro": "Căluț de mare"
     },
     "hint": {
-      "en": "Small sea creature",
+      "en": "The dad carries the babies",
       "bg": "Малко морско създание",
       "es": "Criatura marina pequeña",
       "el": "Μικρό θαλάσσιο πλάσμα",
@@ -873,7 +873,7 @@
       "ro": "Stea de mare"
     },
     "hint": {
-      "en": "Sea animal with arms",
+      "en": "Can regrow a lost limb",
       "bg": "Морско животно с лъчи",
       "es": "Animal marino con brazos",
       "el": "Θαλάσσιο ζώο με βραχίονες",
@@ -891,7 +891,7 @@
       "ro": "Meduză"
     },
     "hint": {
-      "en": "Soft sea creature",
+      "en": "Has no brain at all",
       "bg": "Меко морско създание",
       "es": "Criatura marina blanda",
       "el": "Μαλακό θαλάσσιο πλάσμα",
@@ -909,7 +909,7 @@
       "ro": "Vierme"
     },
     "hint": {
-      "en": "Long soft creature",
+      "en": "Comes out after the rain",
       "bg": "Дълго меко създание",
       "es": "Criatura larga y blanda",
       "el": "Μακρύ μαλακό πλάσμα",
@@ -927,7 +927,7 @@
       "ro": "Omidă"
     },
     "hint": {
-      "en": "Insect before it changes",
+      "en": "Builds itself a case before it changes completely",
       "bg": "Насекомо преди промяната",
       "es": "Insecto antes de cambiar",
       "el": "Έντομο πριν αλλάξει",
@@ -945,7 +945,7 @@
       "ro": "Libelulă"
     },
     "hint": {
-      "en": "Insect near water",
+      "en": "Hovers like a tiny helicopter",
       "bg": "Насекомо край водата",
       "es": "Insecto cerca del agua",
       "el": "Έντομο κοντά στο νερό",
@@ -963,7 +963,7 @@
       "ro": "Scorpion"
     },
     "hint": {
-      "en": "Desert creature with a sting",
+      "en": "Glows under a blacklight",
       "bg": "Пустинно създание с жило",
       "es": "Criatura del desierto con aguijón",
       "el": "Πλάσμα της ερήμου με κεντρί",
@@ -981,7 +981,7 @@
       "ro": "Flamingo"
     },
     "hint": {
-      "en": "Pink bird",
+      "en": "Stands on one leg for hours",
       "bg": "Розова птица",
       "es": "Ave rosa",
       "el": "Ροζ πουλί",
@@ -999,7 +999,7 @@
       "ro": "Păun"
     },
     "hint": {
-      "en": "Bird with a big tail",
+      "en": "Shows off to impress a mate",
       "bg": "Птица с голяма опашка",
       "es": "Ave de cola grande",
       "el": "Πουλί με μεγάλη ουρά",
@@ -1017,7 +1017,7 @@
       "ro": "Cerb"
     },
     "hint": {
-      "en": "Forest animal with antlers",
+      "en": "Freezes when caught in headlights",
       "bg": "Горско животно с рога",
       "es": "Animal del bosque con cuernos",
       "el": "Ζώο του δάσους με κέρατα",
@@ -1035,7 +1035,7 @@
       "ro": "Vulpe"
     },
     "hint": {
-      "en": "Animal with a red coat",
+      "en": "Raids the henhouse at night",
       "bg": "Животно с червена козина",
       "es": "Animal de pelaje rojizo",
       "el": "Ζώο με κόκκινο τρίχωμα",
@@ -1053,7 +1053,7 @@
       "ro": "Arici"
     },
     "hint": {
-      "en": "Animal with spines",
+      "en": "Curls into a ball when scared",
       "bg": "Животно с бодли",
       "es": "Animal con púas",
       "el": "Ζώο με αγκάθια",
@@ -1071,7 +1071,7 @@
       "ro": "Găină"
     },
     "hint": {
-      "en": "Farm bird",
+      "en": "Lays something you might eat for breakfast",
       "bg": "Селска птица",
       "es": "Ave de granja",
       "el": "Πουλί της φάρμας",
@@ -1089,7 +1089,7 @@
       "ro": "Măr"
     },
     "hint": {
-      "en": "Round fruit",
+      "en": "Keeps the doctor away, they say",
       "bg": "Кръгъл плод",
       "es": "Fruta redonda",
       "el": "Στρογγυλό φρούτο",
@@ -1107,7 +1107,7 @@
       "ro": "Banană"
     },
     "hint": {
-      "en": "Curved fruit",
+      "en": "Comes in its own wrapper",
       "bg": "Извит плод",
       "es": "Fruta curvada",
       "el": "Καμπυλωτό φρούτο",
@@ -1125,7 +1125,7 @@
       "ro": "Morcov"
     },
     "hint": {
-      "en": "Orange vegetable",
+      "en": "Said to help you see in the dark",
       "bg": "Оранжев зеленчук",
       "es": "Verdura naranja",
       "el": "Πορτοκαλί λαχανικό",
@@ -1143,7 +1143,7 @@
       "ro": "Căpșună"
     },
     "hint": {
-      "en": "Small red fruit",
+      "en": "Its seeds are on the outside",
       "bg": "Малък червен плод",
       "es": "Fruta roja pequeña",
       "el": "Μικρό κόκκινο φρούτο",
@@ -1161,7 +1161,7 @@
       "ro": "Pepene verde"
     },
     "hint": {
-      "en": "Big summer fruit",
+      "en": "Mostly water, hard to finish alone",
       "bg": "Голям летен плод",
       "es": "Fruta grande de verano",
       "el": "Μεγάλο καλοκαιρινό φρούτο",
@@ -1179,7 +1179,7 @@
       "ro": "Struguri"
     },
     "hint": {
-      "en": "Fruit in a bunch",
+      "en": "Comes off the vine in a cluster",
       "bg": "Плод на гроздове",
       "es": "Fruta en racimo",
       "el": "Φρούτο σε τσαμπί",
@@ -1197,7 +1197,7 @@
       "ro": "Cireașă"
     },
     "hint": {
-      "en": "Fruit on a stem",
+      "en": "You spit out the middle",
       "bg": "Плод на дръжка",
       "es": "Fruta con rabito",
       "el": "Φρούτο με κοτσάνι",
@@ -1215,7 +1215,7 @@
       "ro": "Pară"
     },
     "hint": {
-      "en": "Fruit with a wide bottom",
+      "en": "Wider at the bottom than the top",
       "bg": "Плод с широка долна част",
       "es": "Fruta ancha por abajo",
       "el": "Φρούτο με φαρδιά βάση",
@@ -1233,7 +1233,7 @@
       "ro": "Lămâie"
     },
     "hint": {
-      "en": "Sour fruit",
+      "en": "Makes your face scrunch up",
       "bg": "Кисел плод",
       "es": "Fruta ácida",
       "el": "Ξινό φρούτο",
@@ -1251,7 +1251,7 @@
       "ro": "Porumb"
     },
     "hint": {
-      "en": "Vegetable on a cob",
+      "en": "Pops when it gets hot enough",
       "bg": "Зеленчук на кочан",
       "es": "Verdura en mazorca",
       "el": "Λαχανικό σε σπάδικα",
@@ -1269,7 +1269,7 @@
       "ro": "Ciupercă"
     },
     "hint": {
-      "en": "Thing that grows in the forest",
+      "en": "Grows overnight after rain",
       "bg": "Нещо, което расте в гората",
       "es": "Algo que crece en el bosque",
       "el": "Κάτι που φυτρώνει στο δάσος",
@@ -1287,7 +1287,7 @@
       "ro": "Ou"
     },
     "hint": {
-      "en": "Oval food",
+      "en": "Cracks open for breakfast",
       "bg": "Овална храна",
       "es": "Alimento ovalado",
       "el": "Οβάλ τροφή",
@@ -1305,7 +1305,7 @@
       "ro": "Pâine"
     },
     "hint": {
-      "en": "Baked food",
+      "en": "Rises before it's baked",
       "bg": "Печена храна",
       "es": "Alimento horneado",
       "el": "Ψημένη τροφή",
@@ -1323,7 +1323,7 @@
       "ro": "Brânză"
     },
     "hint": {
-      "en": "Food with holes",
+      "en": "Gets better with age",
       "bg": "Храна с дупки",
       "es": "Alimento con agujeros",
       "el": "Τροφή με τρύπες",
@@ -1341,7 +1341,7 @@
       "ro": "Felie de pizza"
     },
     "hint": {
-      "en": "Piece of fast food",
+      "en": "Best eaten with your hands",
       "bg": "Парче бърза храна",
       "es": "Trozo de comida rápida",
       "el": "Κομμάτι φαστ φουντ",
@@ -1359,7 +1359,7 @@
       "ro": "Hamburger"
     },
     "hint": {
-      "en": "Food in a bun",
+      "en": "Falls apart if you're not careful",
       "bg": "Храна в хлебче",
       "es": "Comida en un panecillo",
       "el": "Φαγητό σε ψωμάκι",
@@ -1377,7 +1377,7 @@
       "ro": "Hot dog"
     },
     "hint": {
-      "en": "Sausage in bread",
+      "en": "A classic at a ballgame",
       "bg": "Наденица в хляб",
       "es": "Salchicha en pan",
       "el": "Λουκάνικο σε ψωμί",
@@ -1395,7 +1395,7 @@
       "ro": "Cornet de înghețată"
     },
     "hint": {
-      "en": "Cold sweet treat",
+      "en": "Melts faster than you can eat it",
       "bg": "Студено сладко изкушение",
       "es": "Dulce frío",
       "el": "Κρύο γλυκό",
@@ -1413,7 +1413,7 @@
       "ro": "Brioșă"
     },
     "hint": {
-      "en": "Small cake",
+      "en": "One serving, its own little cake",
       "bg": "Малка торта",
       "es": "Pastel pequeño",
       "el": "Μικρό κέικ",
@@ -1431,7 +1431,7 @@
       "ro": "Gogoașă"
     },
     "hint": {
-      "en": "Sweet with a hole",
+      "en": "You can spin a finger through the middle",
       "bg": "Сладкиш с дупка",
       "es": "Dulce con agujero",
       "el": "Γλυκό με τρύπα",
@@ -1449,7 +1449,7 @@
       "ro": "Biscuit"
     },
     "hint": {
-      "en": "Small baked sweet",
+      "en": "Best dunked in milk",
       "bg": "Малко печено сладко",
       "es": "Dulce horneado pequeño",
       "el": "Μικρό ψημένο γλυκό",
@@ -1467,7 +1467,7 @@
       "ro": "Acadea"
     },
     "hint": {
-      "en": "Sweet on a stick",
+      "en": "Takes forever to finish",
       "bg": "Сладко на пръчка",
       "es": "Dulce en un palo",
       "el": "Γλυκό σε ξυλάκι",
@@ -1485,7 +1485,7 @@
       "ro": "Baston de bomboană"
     },
     "hint": {
-      "en": "Striped sweet",
+      "en": "Hangs on the tree at Christmas",
       "bg": "Раирано бонбонче",
       "es": "Dulce a rayas",
       "el": "Ριγέ γλύκισμα",
@@ -1503,7 +1503,7 @@
       "ro": "Tort aniversar"
     },
     "hint": {
-      "en": "Cake with candles",
+      "en": "Everyone sings before you blow",
       "bg": "Торта със свещи",
       "es": "Tarta con velas",
       "el": "Τούρτα με κεριά",
@@ -1521,7 +1521,7 @@
       "ro": "Ceașcă de cafea"
     },
     "hint": {
-      "en": "Cup with a handle",
+      "en": "You wrap both hands around it in winter",
       "bg": "Чаша с дръжка",
       "es": "Taza con asa",
       "el": "Κύπελλο με χερούλι",
@@ -1539,7 +1539,7 @@
       "ro": "Ceainic"
     },
     "hint": {
-      "en": "Pot with a spout",
+      "en": "Whistles when it's ready",
       "bg": "Съд с чучур",
       "es": "Recipiente con pico",
       "el": "Δοχείο με στόμιο",
@@ -1557,7 +1557,7 @@
       "ro": "Pahar de vin"
     },
     "hint": {
-      "en": "Glass with a stem",
+      "en": "You swirl it before you taste",
       "bg": "Чаша със столче",
       "es": "Copa con pie",
       "el": "Ποτήρι με πόδι",
@@ -1575,7 +1575,7 @@
       "ro": "Sticlă de lapte"
     },
     "hint": {
-      "en": "Bottle of a white drink",
+      "en": "Left on the doorstep in old films",
       "bg": "Бутилка с бяла напитка",
       "es": "Botella de bebida blanca",
       "el": "Μπουκάλι με λευκό ρόφημα",
@@ -1593,7 +1593,7 @@
       "ro": "Ou ochi"
     },
     "hint": {
-      "en": "Breakfast in a pan",
+      "en": "Sizzles the moment it hits the pan",
       "bg": "Закуска в тиган",
       "es": "Desayuno en la sartén",
       "el": "Πρωινό στο τηγάνι",
@@ -1611,7 +1611,7 @@
       "ro": "Covrig"
     },
     "hint": {
-      "en": "Twisted baked snack",
+      "en": "Twisted into a knot before baking",
       "bg": "Усукана печена закуска",
       "es": "Snack horneado y retorcido",
       "el": "Στριφτό ψημένο σνακ",
@@ -1629,7 +1629,7 @@
       "ro": "Croasant"
     },
     "hint": {
-      "en": "Curved pastry",
+      "en": "Flaky enough to leave crumbs everywhere",
       "bg": "Извито тестено изделие",
       "es": "Bollo curvado",
       "el": "Καμπυλωτό αρτοσκεύασμα",
@@ -1647,7 +1647,7 @@
       "ro": "Înghețată pe băț"
     },
     "hint": {
-      "en": "Frozen treat on a stick",
+      "en": "Melts down your hand on a hot day",
       "bg": "Замразено лакомство на пръчка",
       "es": "Helado congelado en un palo",
       "el": "Παγωμένο γλυκό σε ξυλάκι",
@@ -1665,7 +1665,7 @@
       "ro": "Ardei iute"
     },
     "hint": {
-      "en": "Hot vegetable",
+      "en": "Milk helps more than water",
       "bg": "Лют зеленчук",
       "es": "Verdura picante",
       "el": "Καυτερό λαχανικό",
@@ -1683,7 +1683,7 @@
       "ro": "Ceapă"
     },
     "hint": {
-      "en": "Vegetable in layers",
+      "en": "Makes you cry before it hits the pan",
       "bg": "Зеленчук на слоеве",
       "es": "Verdura en capas",
       "el": "Λαχανικό με στρώσεις",
@@ -1701,7 +1701,7 @@
       "ro": "Roșie"
     },
     "hint": {
-      "en": "Round red vegetable",
+      "en": "Technically a fruit, argued about at dinner",
       "bg": "Кръгъл червен зеленчук",
       "es": "Verdura roja y redonda",
       "el": "Στρογγυλό κόκκινο λαχανικό",
@@ -1719,7 +1719,7 @@
       "ro": "Dovleac"
     },
     "hint": {
-      "en": "Big orange vegetable",
+      "en": "Carved every October",
       "bg": "Голям оранжев зеленчук",
       "es": "Verdura naranja grande",
       "el": "Μεγάλο πορτοκαλί λαχανικό",
@@ -1737,7 +1737,7 @@
       "ro": "Broccoli"
     },
     "hint": {
-      "en": "Green vegetable like a tree",
+      "en": "The vegetable kids leave for last",
       "bg": "Зелен зеленчук като дърво",
       "es": "Verdura verde con forma de árbol",
       "el": "Πράσινο λαχανικό σαν δεντράκι",
@@ -1755,7 +1755,7 @@
       "ro": "Avocado"
     },
     "hint": {
-      "en": "Fruit with a big seed",
+      "en": "Turns brown fast once you cut it",
       "bg": "Плод с голямо семе",
       "es": "Fruta con una semilla grande",
       "el": "Φρούτο με μεγάλο κουκούτσι",
@@ -1773,7 +1773,7 @@
       "ro": "Alună de pământ"
     },
     "hint": {
-      "en": "Small nut in a shell",
+      "en": "Not actually a nut, botanically",
       "bg": "Малък орех в черупка",
       "es": "Fruto seco pequeño con cáscara",
       "el": "Μικρός ξηρός καρπός με κέλυφος",
@@ -1791,7 +1791,7 @@
       "ro": "Ghindă"
     },
     "hint": {
-      "en": "Seed of a big tree",
+      "en": "Squirrels bury these for winter",
       "bg": "Семе на голямо дърво",
       "es": "Semilla de un árbol grande",
       "el": "Σπόρος μεγάλου δέντρου",
@@ -1809,7 +1809,7 @@
       "ro": "Cactus"
     },
     "hint": {
-      "en": "Plant with spines",
+      "en": "Survives weeks without watering",
       "bg": "Растение с бодли",
       "es": "Planta con espinas",
       "el": "Φυτό με αγκάθια",
@@ -1827,7 +1827,7 @@
       "ro": "Palmier"
     },
     "hint": {
-      "en": "Tree of hot places",
+      "en": "Sways over a hammock",
       "bg": "Дърво на топлите места",
       "es": "Árbol de lugares cálidos",
       "el": "Δέντρο των ζεστών τόπων",
@@ -1845,7 +1845,7 @@
       "ro": "Brad de Crăciun"
     },
     "hint": {
-      "en": "Tree with decorations",
+      "en": "Loses its needles by January",
       "bg": "Дърво с украса",
       "es": "Árbol con adornos",
       "el": "Δέντρο με στολίδια",
@@ -1863,7 +1863,7 @@
       "ro": "Trandafir"
     },
     "hint": {
-      "en": "Flower with thorns",
+      "en": "Comes with a warning if you're not careful",
       "bg": "Цвете с бодли",
       "es": "Flor con espinas",
       "el": "Λουλούδι με αγκάθια",
@@ -1881,7 +1881,7 @@
       "ro": "Lalea"
     },
     "hint": {
-      "en": "Cup-shaped flower",
+      "en": "Once caused a whole economic craze in Holland",
       "bg": "Цвете като чашка",
       "es": "Flor en forma de copa",
       "el": "Λουλούδι σε σχήμα κύπελλου",
@@ -1899,7 +1899,7 @@
       "ro": "Margaretă"
     },
     "hint": {
-      "en": "Simple white flower",
+      "en": "You pull the petals to find out 'he loves me not'",
       "bg": "Простичко бяло цвете",
       "es": "Flor blanca sencilla",
       "el": "Απλό λευκό λουλούδι",
@@ -1917,7 +1917,7 @@
       "ro": "Trifoi"
     },
     "hint": {
-      "en": "Small lucky plant",
+      "en": "Rare with an extra leaf",
       "bg": "Малко растение за късмет",
       "es": "Planta pequeña de la suerte",
       "el": "Μικρό φυτό της τύχης",
@@ -1935,7 +1935,7 @@
       "ro": "Frunză de arțar"
     },
     "hint": {
-      "en": "Leaf with points",
+      "en": "Turns bright red in autumn",
       "bg": "Лист с върхове",
       "es": "Hoja con puntas",
       "el": "Φύλλο με μύτες",
@@ -1953,7 +1953,7 @@
       "ro": "Cheie"
     },
     "hint": {
-      "en": "Thing that opens a lock",
+      "en": "Lost right when you're in a hurry",
       "bg": "Нещо, което отваря ключалка",
       "es": "Cosa que abre una cerradura",
       "el": "Κάτι που ανοίγει κλειδαριά",
@@ -1971,7 +1971,7 @@
       "ro": "Ceas"
     },
     "hint": {
-      "en": "Thing that shows the time",
+      "en": "You glance at it when you're running late",
       "bg": "Нещо, което показва времето",
       "es": "Cosa que muestra la hora",
       "el": "Κάτι που δείχνει την ώρα",
@@ -1989,7 +1989,7 @@
       "ro": "Umbrelă"
     },
     "hint": {
-      "en": "Thing for the rain",
+      "en": "Useless once the wind turns it inside out",
       "bg": "Нещо за дъжда",
       "es": "Cosa para la lluvia",
       "el": "Κάτι για τη βροχή",
@@ -2007,7 +2007,7 @@
       "ro": "Lumânare"
     },
     "hint": {
-      "en": "Thing that burns slowly",
+      "en": "Makes a wish come true if you blow it out",
       "bg": "Нещо, което гори бавно",
       "es": "Cosa que arde despacio",
       "el": "Κάτι που καίει αργά",
@@ -2025,7 +2025,7 @@
       "ro": "Lampă"
     },
     "hint": {
-      "en": "Thing that gives light",
+      "en": "Switched on when it gets dark",
       "bg": "Нещо, което дава светлина",
       "es": "Cosa que da luz",
       "el": "Κάτι που δίνει φως",
@@ -2043,7 +2043,7 @@
       "ro": "Scaun"
     },
     "hint": {
-      "en": "Thing you sit on",
+      "en": "Pulled out before you sit down",
       "bg": "Нещо, на което сядаш",
       "es": "Cosa donde te sientas",
       "el": "Κάτι πάνω στο οποίο κάθεσαι",
@@ -2061,7 +2061,7 @@
       "ro": "Masă"
     },
     "hint": {
-      "en": "Flat furniture on legs",
+      "en": "Everyone gathers around it for dinner",
       "bg": "Плоска мебел на крака",
       "es": "Mueble plano con patas",
       "el": "Επίπεδο έπιπλο με πόδια",
@@ -2079,7 +2079,7 @@
       "ro": "Pat"
     },
     "hint": {
-      "en": "Furniture for sleeping",
+      "en": "Hardest place to leave in the morning",
       "bg": "Мебел за спане",
       "es": "Mueble para dormir",
       "el": "Έπιπλο για ύπνο",
@@ -2097,7 +2097,7 @@
       "ro": "Ușă"
     },
     "hint": {
-      "en": "Way into a room",
+      "en": "Knocked on before you enter",
       "bg": "Вход към стая",
       "es": "Entrada a una habitación",
       "el": "Είσοδος σε δωμάτιο",
@@ -2115,7 +2115,7 @@
       "ro": "Fereastră"
     },
     "hint": {
-      "en": "Opening in a wall",
+      "en": "Fogs up when it's cold outside",
       "bg": "Отвор в стена",
       "es": "Abertura en una pared",
       "el": "Άνοιγμα σε τοίχο",
@@ -2133,7 +2133,7 @@
       "ro": "Scară"
     },
     "hint": {
-      "en": "Thing with steps",
+      "en": "Best not climbed alone",
       "bg": "Нещо със стъпала",
       "es": "Cosa con peldaños",
       "el": "Κάτι με σκαλοπάτια",
@@ -2151,7 +2151,7 @@
       "ro": "Ciocan"
     },
     "hint": {
-      "en": "Tool that hits",
+      "en": "Missing the nail hurts more than hitting it",
       "bg": "Инструмент, който удря",
       "es": "Herramienta que golpea",
       "el": "Εργαλείο που χτυπά",
@@ -2169,7 +2169,7 @@
       "ro": "Șurubelniță"
     },
     "hint": {
-      "en": "Tool that turns",
+      "en": "Flat or star-shaped tip",
       "bg": "Инструмент, който върти",
       "es": "Herramienta que gira",
       "el": "Εργαλείο που γυρίζει",
@@ -2187,7 +2187,7 @@
       "ro": "Ferăstrău"
     },
     "hint": {
-      "en": "Tool with teeth",
+      "en": "Back and forth until it's through",
       "bg": "Инструмент със зъби",
       "es": "Herramienta con dientes",
       "el": "Εργαλείο με δόντια",
@@ -2205,7 +2205,7 @@
       "ro": "Foarfecă"
     },
     "hint": {
-      "en": "Tool with two blades",
+      "en": "Run holding these and someone will yell",
       "bg": "Инструмент с две остриета",
       "es": "Herramienta con dos hojas",
       "el": "Εργαλείο με δύο λεπίδες",
@@ -2223,7 +2223,7 @@
       "ro": "Pensulă"
     },
     "hint": {
-      "en": "Tool with bristles",
+      "en": "Rinsed in a jar of murky water",
       "bg": "Инструмент с косъмчета",
       "es": "Herramienta con cerdas",
       "el": "Εργαλείο με τρίχες",
@@ -2241,7 +2241,7 @@
       "ro": "Creion"
     },
     "hint": {
-      "en": "Tool for writing",
+      "en": "Sharpened when the point wears down",
       "bg": "Инструмент за писане",
       "es": "Herramienta para escribir",
       "el": "Εργαλείο για γράψιμο",
@@ -2259,7 +2259,7 @@
       "ro": "Pix"
     },
     "hint": {
-      "en": "Tool with ink",
+      "en": "Runs dry at the worst moment",
       "bg": "Инструмент с мастило",
       "es": "Herramienta con tinta",
       "el": "Εργαλείο με μελάνι",
@@ -2277,7 +2277,7 @@
       "ro": "Carte"
     },
     "hint": {
-      "en": "Thing with pages",
+      "en": "Judged by its cover, unfairly",
       "bg": "Нещо със страници",
       "es": "Cosa con páginas",
       "el": "Κάτι με σελίδες",
@@ -2295,7 +2295,7 @@
       "ro": "Plic"
     },
     "hint": {
-      "en": "Cover for a letter",
+      "en": "Sealed with a lick",
       "bg": "Обвивка за писмо",
       "es": "Cubierta para una carta",
       "el": "Κάλυμμα για γράμμα",
@@ -2313,7 +2313,7 @@
       "ro": "Timbru"
     },
     "hint": {
-      "en": "Small paper square",
+      "en": "Collected by hobbyists for decades",
       "bg": "Малко хартиено квадратче",
       "es": "Cuadradito de papel",
       "el": "Μικρό χάρτινο τετράγωνο",
@@ -2331,7 +2331,7 @@
       "ro": "Rucsac"
     },
     "hint": {
-      "en": "Bag for your back",
+      "en": "Both straps or you look silly",
       "bg": "Чанта за гърба",
       "es": "Bolsa para la espalda",
       "el": "Τσάντα για την πλάτη",
@@ -2349,7 +2349,7 @@
       "ro": "Valiză"
     },
     "hint": {
-      "en": "Box for travelling",
+      "en": "Weighed at the airport counter",
       "bg": "Кутия за пътуване",
       "es": "Caja para viajar",
       "el": "Κουτί για ταξίδι",
@@ -2367,7 +2367,7 @@
       "ro": "Portofel"
     },
     "hint": {
-      "en": "Small folding holder",
+      "en": "You pat your pocket to check it's there",
       "bg": "Малък сгъваем държач",
       "es": "Funda pequeña que se dobla",
       "el": "Μικρή θήκη που διπλώνει",
@@ -2385,7 +2385,7 @@
       "ro": "Ochelari"
     },
     "hint": {
-      "en": "Thing worn on the nose",
+      "en": "Fog up when you drink something hot",
       "bg": "Нещо, което се носи на носа",
       "es": "Cosa que se lleva en la nariz",
       "el": "Κάτι που φοριέται στη μύτη",
@@ -2403,7 +2403,7 @@
       "ro": "Ceas de mână"
     },
     "hint": {
-      "en": "Thing worn on the wrist",
+      "en": "Checked constantly during a boring meeting",
       "bg": "Нещо, което се носи на китката",
       "es": "Cosa que se lleva en la muñeca",
       "el": "Κάτι που φοριέται στον καρπό",
@@ -2421,7 +2421,7 @@
       "ro": "Inel"
     },
     "hint": {
-      "en": "Thing worn on a finger",
+      "en": "Slipped on during a proposal",
       "bg": "Нещо, което се носи на пръст",
       "es": "Cosa que se lleva en un dedo",
       "el": "Κάτι που φοριέται στο δάχτυλο",
@@ -2439,7 +2439,7 @@
       "ro": "Coroană"
     },
     "hint": {
-      "en": "Thing worn by a king",
+      "en": "Heavy is the head that wears it",
       "bg": "Нещо, което носи крал",
       "es": "Cosa que lleva un rey",
       "el": "Κάτι που φορά ένας βασιλιάς",
@@ -2457,7 +2457,7 @@
       "ro": "Pălărie"
     },
     "hint": {
-      "en": "Thing worn on the head",
+      "en": "Removed indoors, out of politeness",
       "bg": "Нещо, което се носи на главата",
       "es": "Cosa que se lleva en la cabeza",
       "el": "Κάτι που φοριέται στο κεφάλι",
@@ -2475,7 +2475,7 @@
       "ro": "Cizmă"
     },
     "hint": {
-      "en": "Footwear",
+      "en": "Kicked off at the door, covered in mud",
       "bg": "Обувка",
       "es": "Calzado",
       "el": "Υπόδημα",
@@ -2493,7 +2493,7 @@
       "ro": "Șosetă"
     },
     "hint": {
-      "en": "Thing worn on the foot",
+      "en": "Always loses its pair in the wash",
       "bg": "Нещо, което се носи на крака",
       "es": "Cosa que se lleva en el pie",
       "el": "Κάτι που φοριέται στο πόδι",
@@ -2511,7 +2511,7 @@
       "ro": "Tricou"
     },
     "hint": {
-      "en": "Simple piece of clothing",
+      "en": "Shrinks if you wash it too hot",
       "bg": "Простичка дреха",
       "es": "Prenda sencilla",
       "el": "Απλό ρούχο",
@@ -2529,7 +2529,7 @@
       "ro": "Pantaloni"
     },
     "hint": {
-      "en": "Clothing for the legs",
+      "en": "One leg at a time, like everyone else",
       "bg": "Дреха за краката",
       "es": "Ropa para las piernas",
       "el": "Ρούχο για τα πόδια",
@@ -2547,7 +2547,7 @@
       "ro": "Rochie"
     },
     "hint": {
-      "en": "One-piece clothing",
+      "en": "Twirls when you spin",
       "bg": "Дреха от едно цяло",
       "es": "Prenda de una pieza",
       "el": "Ρούχο ενός κομματιού",
@@ -2565,7 +2565,7 @@
       "ro": "Mănușă"
     },
     "hint": {
-      "en": "Clothing for the hand",
+      "en": "Comes off finger by finger",
       "bg": "Дреха за ръката",
       "es": "Ropa para la mano",
       "el": "Ρούχο για το χέρι",
@@ -2583,7 +2583,7 @@
       "ro": "Fular"
     },
     "hint": {
-      "en": "Clothing for the neck",
+      "en": "Wrapped twice around the neck in winter",
       "bg": "Дреха за врата",
       "es": "Ropa para el cuello",
       "el": "Ρούχο για τον λαιμό",
@@ -2601,7 +2601,7 @@
       "ro": "Cravată"
     },
     "hint": {
-      "en": "Formal neck item",
+      "en": "Knotted before a job interview",
       "bg": "Официален аксесоар за врата",
       "es": "Accesorio formal para el cuello",
       "el": "Επίσημο αξεσουάρ λαιμού",
@@ -2619,7 +2619,7 @@
       "ro": "Nasture"
     },
     "hint": {
-      "en": "Small round fastener",
+      "en": "Pops off at the worst moment",
       "bg": "Малка кръгла закопчалка",
       "es": "Cierre pequeño y redondo",
       "el": "Μικρό στρογγυλό κούμπωμα",
@@ -2637,7 +2637,7 @@
       "ro": "Fermoar"
     },
     "hint": {
-      "en": "Fastener with teeth",
+      "en": "Gets stuck halfway up",
       "bg": "Закопчалка със зъбци",
       "es": "Cierre con dientes",
       "el": "Κούμπωμα με δόντια",
@@ -2655,7 +2655,7 @@
       "ro": "Oglindă"
     },
     "hint": {
-      "en": "Thing that shows you",
+      "en": "Seven years of bad luck if it breaks",
       "bg": "Нещо, което те показва",
       "es": "Cosa que te muestra",
       "el": "Κάτι που σε δείχνει",
@@ -2673,7 +2673,7 @@
       "ro": "Pieptene"
     },
     "hint": {
-      "en": "Thing with many teeth",
+      "en": "Drags through tangles",
       "bg": "Нещо с много зъбци",
       "es": "Cosa con muchos dientes",
       "el": "Κάτι με πολλά δόντια",
@@ -2691,7 +2691,7 @@
       "ro": "Periuță de dinți"
     },
     "hint": {
-      "en": "Thing for your teeth",
+      "en": "Replaced every few months",
       "bg": "Нещо за зъбите",
       "es": "Cosa para los dientes",
       "el": "Κάτι για τα δόντια",
@@ -2709,7 +2709,7 @@
       "ro": "Săpun"
     },
     "hint": {
-      "en": "Thing that makes foam",
+      "en": "Slips out of your hand in the shower",
       "bg": "Нещо, което прави пяна",
       "es": "Cosa que hace espuma",
       "el": "Κάτι που κάνει αφρό",
@@ -2727,7 +2727,7 @@
       "ro": "Mătură"
     },
     "hint": {
-      "en": "Thing for sweeping",
+      "en": "Sweeps dust into a pile, never quite all of it",
       "bg": "Нещо за метене",
       "es": "Cosa para barrer",
       "el": "Κάτι για σκούπισμα",
@@ -2745,7 +2745,7 @@
       "ro": "Găleată"
     },
     "hint": {
-      "en": "Thing that holds water",
+      "en": "Kicked, if a phrase is to be believed",
       "bg": "Нещо, което държи вода",
       "es": "Cosa que contiene agua",
       "el": "Κάτι που κρατά νερό",
@@ -2763,7 +2763,7 @@
       "ro": "Lingură"
     },
     "hint": {
-      "en": "Round eating tool",
+      "en": "Best for soup, useless on steak",
       "bg": "Кръгъл прибор за хранене",
       "es": "Cubierto redondo",
       "el": "Στρογγυλό σκεύος φαγητού",
@@ -2781,7 +2781,7 @@
       "ro": "Furculiță"
     },
     "hint": {
-      "en": "Eating tool with points",
+      "en": "Twirls spaghetti",
       "bg": "Прибор с остри зъбци",
       "es": "Cubierto con puntas",
       "el": "Σκεύος φαγητού με μύτες",
@@ -2799,7 +2799,7 @@
       "ro": "Cuțit"
     },
     "hint": {
-      "en": "Sharp eating tool",
+      "en": "Sharpened before you carve",
       "bg": "Остър прибор за хранене",
       "es": "Cubierto afilado",
       "el": "Κοφτερό σκεύος φαγητού",
@@ -2817,7 +2817,7 @@
       "ro": "Casă"
     },
     "hint": {
-      "en": "Place where people live",
+      "en": "Where the heart is, they say",
       "bg": "Място, където живеят хора",
       "es": "Lugar donde vive la gente",
       "el": "Μέρος όπου ζουν άνθρωποι",
@@ -2835,7 +2835,7 @@
       "ro": "Biserică"
     },
     "hint": {
-      "en": "Building with a cross",
+      "en": "Bells ring from its tower on Sunday",
       "bg": "Сграда с кръст",
       "es": "Edificio con una cruz",
       "el": "Κτίριο με σταυρό",
@@ -2853,7 +2853,7 @@
       "ro": "Moară de vânt"
     },
     "hint": {
-      "en": "Building with blades",
+      "en": "Turns grain into flour using the wind",
       "bg": "Сграда с перки",
       "es": "Edificio con aspas",
       "el": "Κτίριο με φτερωτή",
@@ -2871,7 +2871,7 @@
       "ro": "Cort"
     },
     "hint": {
-      "en": "Temporary shelter",
+      "en": "Zipped shut against the bugs",
       "bg": "Временен подслон",
       "es": "Refugio temporal",
       "el": "Προσωρινό καταφύγιο",
@@ -2889,7 +2889,7 @@
       "ro": "Pod"
     },
     "hint": {
-      "en": "Thing that crosses water",
+      "en": "Crossed to get to the other side",
       "bg": "Нещо, което пресича вода",
       "es": "Cosa que cruza el agua",
       "el": "Κάτι που διασχίζει νερό",
@@ -2907,7 +2907,7 @@
       "ro": "Hambar"
     },
     "hint": {
-      "en": "Farm building",
+      "en": "Where the hay is stored for winter",
       "bg": "Селска постройка",
       "es": "Edificio de granja",
       "el": "Κτίριο φάρμας",
@@ -2925,7 +2925,7 @@
       "ro": "Zgârie-nori"
     },
     "hint": {
-      "en": "Very tall building",
+      "en": "You need an elevator, not stairs",
       "bg": "Много висока сграда",
       "es": "Edificio muy alto",
       "el": "Πολύ ψηλό κτίριο",
@@ -2943,7 +2943,7 @@
       "ro": "Iglu"
     },
     "hint": {
-      "en": "House made of ice",
+      "en": "Surprisingly warm once you're inside",
       "bg": "Къща от лед",
       "es": "Casa hecha de hielo",
       "el": "Σπίτι από πάγο",
@@ -2961,7 +2961,7 @@
       "ro": "Piramidă"
     },
     "hint": {
-      "en": "Ancient stone building",
+      "en": "Took thousands of workers to build",
       "bg": "Древна каменна постройка",
       "es": "Edificio antiguo de piedra",
       "el": "Αρχαίο πέτρινο κτίσμα",
@@ -2979,7 +2979,7 @@
       "ro": "Statuia Libertății"
     },
     "hint": {
-      "en": "Famous statue",
+      "en": "Holds a torch up for arriving ships",
       "bg": "Известна статуя",
       "es": "Estatua famosa",
       "el": "Διάσημο άγαλμα",
@@ -2997,7 +2997,7 @@
       "ro": "Big Ben"
     },
     "hint": {
-      "en": "Famous clock tower",
+      "en": "Chimes on the hour in London",
       "bg": "Известна часовникова кула",
       "es": "Torre del reloj famosa",
       "el": "Διάσημος πύργος ρολογιού",
@@ -3015,7 +3015,7 @@
       "ro": "Turnul înclinat"
     },
     "hint": {
-      "en": "Tower that tilts",
+      "en": "Tourists pose like they're holding it up",
       "bg": "Кула, която се накланя",
       "es": "Torre que se inclina",
       "el": "Πύργος που γέρνει",
@@ -3033,7 +3033,7 @@
       "ro": "Marele Zid"
     },
     "hint": {
-      "en": "Very long wall",
+      "en": "Visible from very high up, some say",
       "bg": "Много дълга стена",
       "es": "Muro muy largo",
       "el": "Πολύ μακρύ τείχος",
@@ -3051,7 +3051,7 @@
       "ro": "Stonehenge"
     },
     "hint": {
-      "en": "Ancient stone circle",
+      "en": "Nobody's fully sure how it got there",
       "bg": "Древен каменен кръг",
       "es": "Círculo de piedras antiguo",
       "el": "Αρχαίος κύκλος από πέτρες",
@@ -3069,7 +3069,7 @@
       "ro": "Roată panoramică"
     },
     "hint": {
-      "en": "Big wheel at a fair",
+      "en": "Best view from the very top",
       "bg": "Голямо колело в лунапарк",
       "es": "Rueda grande de feria",
       "el": "Μεγάλη ρόδα στο πανηγύρι",
@@ -3087,7 +3087,7 @@
       "ro": "Tobogan"
     },
     "hint": {
-      "en": "Playground thing you go down",
+      "en": "You climb up just to go straight back down",
       "bg": "Нещо на площадката, по което се спускаш",
       "es": "Cosa del parque por la que bajas",
       "el": "Κάτι στην παιδική χαρά που κατεβαίνεις",
@@ -3105,7 +3105,7 @@
       "ro": "Leagăn"
     },
     "hint": {
-      "en": "Playground thing that swings",
+      "en": "Higher every time you pump your legs",
       "bg": "Нещо на площадката, което се люлее",
       "es": "Cosa del parque que se balancea",
       "el": "Κάτι στην παιδική χαρά που αιωρείται",
@@ -3123,7 +3123,7 @@
       "ro": "Gard"
     },
     "hint": {
-      "en": "Barrier around a garden",
+      "en": "Neighbours lean over it to chat",
       "bg": "Преграда около двор",
       "es": "Barrera alrededor de un jardín",
       "el": "Φράγμα γύρω από κήπο",
@@ -3141,7 +3141,7 @@
       "ro": "Cutie poștală"
     },
     "hint": {
-      "en": "Box for letters",
+      "en": "Checked hopefully, mostly bills inside",
       "bg": "Кутия за писма",
       "es": "Caja para cartas",
       "el": "Κουτί για γράμματα",
@@ -3159,7 +3159,7 @@
       "ro": "Felinar stradal"
     },
     "hint": {
-      "en": "Light on a pole",
+      "en": "Flickers on right at dusk",
       "bg": "Светлина на стълб",
       "es": "Luz sobre un poste",
       "el": "Φως πάνω σε στύλο",
@@ -3177,7 +3177,7 @@
       "ro": "Semafor"
     },
     "hint": {
-      "en": "Thing with three lights",
+      "en": "You wait even when no one's coming",
       "bg": "Нещо с три светлини",
       "es": "Cosa con tres luces",
       "el": "Κάτι με τρία φώτα",
@@ -3195,7 +3195,7 @@
       "ro": "Indicator rutier"
     },
     "hint": {
-      "en": "Sign for drivers",
+      "en": "Ignored more than it should be",
       "bg": "Знак за шофьорите",
       "es": "Señal para conductores",
       "el": "Πινακίδα για οδηγούς",
@@ -3213,7 +3213,7 @@
       "ro": "Fântână arteziană"
     },
     "hint": {
-      "en": "Structure with water",
+      "en": "You toss a coin in and make a wish",
       "bg": "Съоръжение с вода",
       "es": "Estructura con agua",
       "el": "Κατασκευή με νερό",
@@ -3231,7 +3231,7 @@
       "ro": "Fântână"
     },
     "hint": {
-      "en": "Deep hole for water",
+      "en": "You shout down it just to hear the echo",
       "bg": "Дълбока дупка за вода",
       "es": "Agujero profundo para el agua",
       "el": "Βαθιά τρύπα για νερό",
@@ -3249,7 +3249,7 @@
       "ro": "Mașină"
     },
     "hint": {
-      "en": "Vehicle with four wheels",
+      "en": "Needs fuel or it goes nowhere",
       "bg": "Возило с четири колела",
       "es": "Vehículo de cuatro ruedas",
       "el": "Όχημα με τέσσερις τροχούς",
@@ -3267,7 +3267,7 @@
       "ro": "Autobuz"
     },
     "hint": {
-      "en": "Long public vehicle",
+      "en": "Never comes when you're already late",
       "bg": "Дълго обществено возило",
       "es": "Vehículo público largo",
       "el": "Μακρύ δημόσιο όχημα",
@@ -3285,7 +3285,7 @@
       "ro": "Camion"
     },
     "hint": {
-      "en": "Big vehicle for goods",
+      "en": "Backs up with a beeping sound",
       "bg": "Голямо возило за товари",
       "es": "Vehículo grande para mercancías",
       "el": "Μεγάλο όχημα για εμπορεύματα",
@@ -3303,7 +3303,7 @@
       "ro": "Tren"
     },
     "hint": {
-      "en": "Vehicle on rails",
+      "en": "You wave at it from a level crossing",
       "bg": "Возило по релси",
       "es": "Vehículo sobre raíles",
       "el": "Όχημα πάνω σε ράγες",
@@ -3321,7 +3321,7 @@
       "ro": "Avion"
     },
     "hint": {
-      "en": "Vehicle with wings",
+      "en": "Ears pop when it lands",
       "bg": "Возило с криле",
       "es": "Vehículo con alas",
       "el": "Όχημα με φτερά",
@@ -3339,7 +3339,7 @@
       "ro": "Elicopter"
     },
     "hint": {
-      "en": "Vehicle with a spinning top",
+      "en": "Loud enough to drown out conversation",
       "bg": "Возило с въртяща се перка",
       "es": "Vehículo con hélice giratoria",
       "el": "Όχημα με περιστρεφόμενη έλικα",
@@ -3357,7 +3357,7 @@
       "ro": "Barcă"
     },
     "hint": {
-      "en": "Small vessel on water",
+      "en": "Rocks with every wave",
       "bg": "Малък съд по водата",
       "es": "Embarcación pequeña",
       "el": "Μικρό σκάφος στο νερό",
@@ -3375,7 +3375,7 @@
       "ro": "Barcă cu pânze"
     },
     "hint": {
-      "en": "Boat with a sail",
+      "en": "No engine, just fabric catching a breeze",
       "bg": "Лодка с платно",
       "es": "Barca con vela",
       "el": "Βάρκα με πανί",
@@ -3393,7 +3393,7 @@
       "ro": "Submarin"
     },
     "hint": {
-      "en": "Vessel under water",
+      "en": "Goes where sunlight can't reach",
       "bg": "Съд под водата",
       "es": "Nave bajo el agua",
       "el": "Σκάφος κάτω από το νερό",
@@ -3411,7 +3411,7 @@
       "ro": "Canoe"
     },
     "hint": {
-      "en": "Narrow boat",
+      "en": "Tips over if you lean the wrong way",
       "bg": "Тясна лодка",
       "es": "Barca estrecha",
       "el": "Στενή βάρκα",
@@ -3429,7 +3429,7 @@
       "ro": "Motocicletă"
     },
     "hint": {
-      "en": "Vehicle with two wheels",
+      "en": "You lean into the turn with it",
       "bg": "Возило с две колела",
       "es": "Vehículo de dos ruedas",
       "el": "Όχημα με δύο τροχούς",
@@ -3447,7 +3447,7 @@
       "ro": "Trotinetă"
     },
     "hint": {
-      "en": "Small thing you stand on",
+      "en": "One foot pushes, the other rides",
       "bg": "Малко нещо, на което стоиш прав",
       "es": "Cosa pequeña sobre la que vas de pie",
       "el": "Μικρό πράγμα πάνω στο οποίο στέκεσαι",
@@ -3465,7 +3465,7 @@
       "ro": "Skateboard"
     },
     "hint": {
-      "en": "Board you ride",
+      "en": "No seat, just balance",
       "bg": "Дъска, с която се движиш",
       "es": "Tabla sobre la que te mueves",
       "el": "Σανίδα πάνω στην οποία κινείσαι",
@@ -3483,7 +3483,7 @@
       "ro": "Tractor"
     },
     "hint": {
-      "en": "Vehicle on a farm",
+      "en": "Slows down traffic behind it on a country road",
       "bg": "Возило във ферма",
       "es": "Vehículo de una granja",
       "el": "Όχημα σε φάρμα",
@@ -3501,7 +3501,7 @@
       "ro": "Ambulanță"
     },
     "hint": {
-      "en": "Vehicle for the sick",
+      "en": "Traffic pulls aside when it's coming",
       "bg": "Возило за болни",
       "es": "Vehículo para enfermos",
       "el": "Όχημα για αρρώστους",
@@ -3519,7 +3519,7 @@
       "ro": "Mașină de pompieri"
     },
     "hint": {
-      "en": "Red emergency vehicle",
+      "en": "Everyone waves as it passes",
       "bg": "Червено спешно возило",
       "es": "Vehículo de emergencia rojo",
       "el": "Κόκκινο όχημα έκτακτης ανάγκης",
@@ -3537,7 +3537,7 @@
       "ro": "Taxi"
     },
     "hint": {
-      "en": "Car you pay to ride",
+      "en": "You flag it down from the curb",
       "bg": "Кола, за която плащаш",
       "es": "Coche por el que pagas",
       "el": "Αυτοκίνητο που πληρώνεις",
@@ -3555,7 +3555,7 @@
       "ro": "Roabă"
     },
     "hint": {
-      "en": "Cart with one wheel",
+      "en": "Tips over if you load it unevenly",
       "bg": "Количка с едно колело",
       "es": "Carro de una rueda",
       "el": "Καρότσι με έναν τροχό",
@@ -3573,7 +3573,7 @@
       "ro": "Cărucior de cumpărături"
     },
     "hint": {
-      "en": "Cart in a shop",
+      "en": "Has one wheel that never cooperates",
       "bg": "Количка в магазин",
       "es": "Carro de una tienda",
       "el": "Καρότσι σε κατάστημα",
@@ -3591,7 +3591,7 @@
       "ro": "Car"
     },
     "hint": {
-      "en": "Cart that is pulled",
+      "en": "Pulled along by a small handle",
       "bg": "Количка, която се тегли",
       "es": "Carro que se tira",
       "el": "Κάρο που το τραβούν",
@@ -3609,7 +3609,7 @@
       "ro": "Ancoră"
     },
     "hint": {
-      "en": "Heavy thing on a chain",
+      "en": "Dropped to keep a boat from drifting",
       "bg": "Тежко нещо на верига",
       "es": "Cosa pesada en una cadena",
       "el": "Βαρύ πράγμα σε αλυσίδα",
@@ -3627,7 +3627,7 @@
       "ro": "Elice"
     },
     "hint": {
-      "en": "Thing with spinning blades",
+      "en": "Spins fast enough to blur",
       "bg": "Нещо с въртящи се перки",
       "es": "Cosa con aspas que giran",
       "el": "Κάτι με περιστρεφόμενα πτερύγια",
@@ -3645,7 +3645,7 @@
       "ro": "Roată"
     },
     "hint": {
-      "en": "Round rolling thing",
+      "en": "Reinvented, as the saying goes, far too often",
       "bg": "Кръгло търкалящо се нещо",
       "es": "Cosa redonda que rueda",
       "el": "Στρογγυλό πράγμα που κυλά",
@@ -3663,7 +3663,7 @@
       "ro": "Parașută"
     },
     "hint": {
-      "en": "Thing that slows a fall",
+      "en": "You trust it completely, or you don't jump",
       "bg": "Нещо, което забавя падане",
       "es": "Cosa que frena una caída",
       "el": "Κάτι που επιβραδύνει την πτώση",
@@ -3681,7 +3681,7 @@
       "ro": "Soare"
     },
     "hint": {
-      "en": "Thing that lights the day",
+      "en": "Setting it at anything is a bad idea",
       "bg": "Нещо, което осветява деня",
       "es": "Cosa que ilumina el día",
       "el": "Κάτι που φωτίζει τη μέρα",
@@ -3699,7 +3699,7 @@
       "ro": "Lună"
     },
     "hint": {
-      "en": "Thing in the night sky",
+      "en": "Changes shape through the month",
       "bg": "Нещо в нощното небе",
       "es": "Cosa en el cielo nocturno",
       "el": "Κάτι στον νυχτερινό ουρανό",
@@ -3717,7 +3717,7 @@
       "ro": "Stea"
     },
     "hint": {
-      "en": "Small light in the sky",
+      "en": "Already burned out by the time you see it",
       "bg": "Малка светлина в небето",
       "es": "Luz pequeña en el cielo",
       "el": "Μικρό φως στον ουρανό",
@@ -3735,7 +3735,7 @@
       "ro": "Nor"
     },
     "hint": {
-      "en": "White shape in the sky",
+      "en": "Shaped like something, if you stare long enough",
       "bg": "Бяла форма в небето",
       "es": "Forma blanca en el cielo",
       "el": "Λευκό σχήμα στον ουρανό",
@@ -3753,7 +3753,7 @@
       "ro": "Curcubeu"
     },
     "hint": {
-      "en": "Arc of colours",
+      "en": "Appears after the rain clears",
       "bg": "Дъга от цветове",
       "es": "Arco de colores",
       "el": "Τόξο χρωμάτων",
@@ -3771,7 +3771,7 @@
       "ro": "Fulger"
     },
     "hint": {
-      "en": "Flash in a storm",
+      "en": "Comes right before the thunder",
       "bg": "Проблясък в буря",
       "es": "Destello en una tormenta",
       "el": "Λάμψη σε καταιγίδα",
@@ -3789,7 +3789,7 @@
       "ro": "Fulg de nea"
     },
     "hint": {
-      "en": "Frozen crystal from the sky",
+      "en": "No two are exactly alike, they say",
       "bg": "Замръзнало кристалче от небето",
       "es": "Cristal helado que cae del cielo",
       "el": "Παγωμένος κρύσταλλος από τον ουρανό",
@@ -3807,7 +3807,7 @@
       "ro": "Picătură de ploaie"
     },
     "hint": {
-      "en": "Small drop of water",
+      "en": "Races another one down the window",
       "bg": "Малка капка вода",
       "es": "Gotita de agua",
       "el": "Μικρή σταγόνα νερού",
@@ -3825,7 +3825,7 @@
       "ro": "Munte"
     },
     "hint": {
-      "en": "Very high ground",
+      "en": "You need good boots to reach the top",
       "bg": "Много висока земя",
       "es": "Terreno muy alto",
       "el": "Πολύ ψηλό έδαφος",
@@ -3843,7 +3843,7 @@
       "ro": "Vulcan"
     },
     "hint": {
-      "en": "Mountain that erupts",
+      "en": "Best admired from a safe distance",
       "bg": "Планина, която изригва",
       "es": "Montaña que hace erupción",
       "el": "Βουνό που εκρήγνυται",
@@ -3861,7 +3861,7 @@
       "ro": "Insulă"
     },
     "hint": {
-      "en": "Land surrounded by water",
+      "en": "You need a boat to leave",
       "bg": "Земя, заобиколена от вода",
       "es": "Tierra rodeada de agua",
       "el": "Στεριά που περιβάλλεται από νερό",
@@ -3879,7 +3879,7 @@
       "ro": "Cascadă"
     },
     "hint": {
-      "en": "Water falling from a height",
+      "en": "The sound gets louder as you get closer",
       "bg": "Вода, падаща от високо",
       "es": "Agua que cae desde lo alto",
       "el": "Νερό που πέφτει από ψηλά",
@@ -3897,7 +3897,7 @@
       "ro": "Râu"
     },
     "hint": {
-      "en": "Long stream of water",
+      "en": "Follows a path down to the sea",
       "bg": "Дълъг поток вода",
       "es": "Corriente larga de agua",
       "el": "Μακρύ ρεύμα νερού",
@@ -3915,7 +3915,7 @@
       "ro": "Val"
     },
     "hint": {
-      "en": "Moving water in the sea",
+      "en": "Surfers wait ages for the right one",
       "bg": "Движеща се вода в морето",
       "es": "Agua que se mueve en el mar",
       "el": "Νερό που κινείται στη θάλασσα",
@@ -3933,7 +3933,7 @@
       "ro": "Copac"
     },
     "hint": {
-      "en": "Big plant with a trunk",
+      "en": "Rings inside tell you its age",
       "bg": "Голямо растение със ствол",
       "es": "Planta grande con tronco",
       "el": "Μεγάλο φυτό με κορμό",
@@ -3951,7 +3951,7 @@
       "ro": "Frunză"
     },
     "hint": {
-      "en": "Green part of a plant",
+      "en": "Changes colour before it falls",
       "bg": "Зелена част от растение",
       "es": "Parte verde de una planta",
       "el": "Πράσινο μέρος φυτού",
@@ -3969,7 +3969,7 @@
       "ro": "Floare"
     },
     "hint": {
-      "en": "Colourful part of a plant",
+      "en": "Wilts a few days after it's cut",
       "bg": "Цветна част от растение",
       "es": "Parte colorida de una planta",
       "el": "Πολύχρωμο μέρος φυτού",
@@ -3987,7 +3987,7 @@
       "ro": "Iarbă"
     },
     "hint": {
-      "en": "Green ground cover",
+      "en": "Always seems greener on the other side",
       "bg": "Зелена покривка на земята",
       "es": "Cubierta verde del suelo",
       "el": "Πράσινο κάλυμμα του εδάφους",
@@ -4005,7 +4005,7 @@
       "ro": "Tufă"
     },
     "hint": {
-      "en": "Small thick plant",
+      "en": "Trimmed into shape once a season",
       "bg": "Малко гъсто растение",
       "es": "Planta pequeña y espesa",
       "el": "Μικρό πυκνό φυτό",
@@ -4023,7 +4023,7 @@
       "ro": "Buștean"
     },
     "hint": {
-      "en": "Piece of a fallen tree",
+      "en": "Rolled to cross a stream, if you're brave",
       "bg": "Част от паднало дърво",
       "es": "Trozo de un árbol caído",
       "el": "Κομμάτι πεσμένου δέντρου",
@@ -4041,7 +4041,7 @@
       "ro": "Stâncă"
     },
     "hint": {
-      "en": "Hard piece of ground",
+      "en": "Skipped across still water",
       "bg": "Твърдо парче земя",
       "es": "Trozo duro del suelo",
       "el": "Σκληρό κομμάτι εδάφους",
@@ -4059,7 +4059,7 @@
       "ro": "Pană"
     },
     "hint": {
-      "en": "Light thing from a bird",
+      "en": "Light enough to float down slowly",
       "bg": "Леко нещо от птица",
       "es": "Cosa ligera de un ave",
       "el": "Ελαφρύ πράγμα από πουλί",
@@ -4077,7 +4077,7 @@
       "ro": "Scoică"
     },
     "hint": {
-      "en": "Hard cover from the beach",
+      "en": "You hold it up to hear the ocean",
       "bg": "Твърда обвивка от плажа",
       "es": "Cubierta dura de la playa",
       "el": "Σκληρό κέλυφος από την παραλία",
@@ -4095,7 +4095,7 @@
       "ro": "Coral"
     },
     "hint": {
-      "en": "Sea growth",
+      "en": "Bleaches white when the water gets too warm",
       "bg": "Морско образувание",
       "es": "Formación del mar",
       "el": "Θαλάσσιος σχηματισμός",
@@ -4113,7 +4113,7 @@
       "ro": "Planetă"
     },
     "hint": {
-      "en": "Round body in space",
+      "en": "Orbits something much bigger",
       "bg": "Кръгло тяло в космоса",
       "es": "Cuerpo redondo del espacio",
       "el": "Στρογγυλό σώμα στο διάστημα",
@@ -4131,7 +4131,7 @@
       "ro": "Saturn"
     },
     "hint": {
-      "en": "Planet with rings",
+      "en": "The rings are the giveaway",
       "bg": "Планета с пръстени",
       "es": "Planeta con anillos",
       "el": "Πλανήτης με δαχτυλίδια",
@@ -4149,7 +4149,7 @@
       "ro": "Cometă"
     },
     "hint": {
-      "en": "Space object with a tail",
+      "en": "Only swings by once every so often",
       "bg": "Космически обект с опашка",
       "es": "Objeto del espacio con cola",
       "el": "Διαστημικό αντικείμενο με ουρά",
@@ -4167,7 +4167,7 @@
       "ro": "Galaxie"
     },
     "hint": {
-      "en": "Huge group of stars",
+      "en": "Our own has a name too",
       "bg": "Огромна група звезди",
       "es": "Grupo enorme de estrellas",
       "el": "Τεράστια ομάδα αστεριών",
@@ -4185,7 +4185,7 @@
       "ro": "Telescop"
     },
     "hint": {
-      "en": "Tool for looking far",
+      "en": "You squint through the eyepiece",
       "bg": "Уред за гледане надалеч",
       "es": "Instrumento para ver lejos",
       "el": "Όργανο για να βλέπεις μακριά",
@@ -4203,7 +4203,7 @@
       "ro": "Satelit"
     },
     "hint": {
-      "en": "Machine that orbits",
+      "en": "Silently circles far above us",
       "bg": "Машина, която обикаля в орбита",
       "es": "Máquina que orbita",
       "el": "Μηχανή που περιφέρεται",
@@ -4221,7 +4221,7 @@
       "ro": "Astronaut"
     },
     "hint": {
-      "en": "Person in space",
+      "en": "Floats at work",
       "bg": "Човек в космоса",
       "es": "Persona en el espacio",
       "el": "Άνθρωπος στο διάστημα",
@@ -4239,7 +4239,7 @@
       "ro": "Extraterestru"
     },
     "hint": {
-      "en": "Creature from another world",
+      "en": "Blamed for anything unexplained in the sky",
       "bg": "Създание от друг свят",
       "es": "Criatura de otro mundo",
       "el": "Πλάσμα από άλλον κόσμο",
@@ -4257,7 +4257,7 @@
       "ro": "OZN"
     },
     "hint": {
-      "en": "Flying saucer",
+      "en": "Blurry in every photo ever taken of one",
       "bg": "Летяща чиния",
       "es": "Platillo volante",
       "el": "Ιπτάμενος δίσκος",
@@ -4275,7 +4275,7 @@
       "ro": "Meteor"
     },
     "hint": {
-      "en": "Rock falling from the sky",
+      "en": "Make a wish before it disappears",
       "bg": "Камък, падащ от небето",
       "es": "Roca que cae del cielo",
       "el": "Πέτρα που πέφτει από τον ουρανό",
@@ -4293,7 +4293,7 @@
       "ro": "Eclipsă"
     },
     "hint": {
-      "en": "When one light hides another",
+      "en": "You're told never to look straight at it",
       "bg": "Когато една светлина скрива друга",
       "es": "Cuando una luz tapa a otra",
       "el": "Όταν ένα φως κρύβει ένα άλλο",
@@ -4311,7 +4311,7 @@
       "ro": "Aisberg"
     },
     "hint": {
-      "en": "Floating mountain of ice",
+      "en": "Most of it hides beneath the surface",
       "bg": "Плаваща планина от лед",
       "es": "Montaña de hielo que flota",
       "el": "Πλωτό βουνό από πάγο",
@@ -4329,7 +4329,7 @@
       "ro": "Dună de nisip"
     },
     "hint": {
-      "en": "Hill of sand",
+      "en": "Shifts shape a little more each day",
       "bg": "Хълм от пясък",
       "es": "Colina de arena",
       "el": "Λόφος από άμμο",
@@ -4347,7 +4347,7 @@
       "ro": "Foc de tabără"
     },
     "hint": {
-      "en": "Fire outdoors",
+      "en": "Stories get scarier the longer it burns",
       "bg": "Огън на открито",
       "es": "Fuego al aire libre",
       "el": "Φωτιά στο ύπαιθρο",
@@ -4365,7 +4365,7 @@
       "ro": "Stup"
     },
     "hint": {
-      "en": "Home of insects",
+      "en": "Buzzing gets louder the closer you get",
       "bg": "Дом на насекоми",
       "es": "Hogar de insectos",
       "el": "Σπίτι εντόμων",
@@ -4383,7 +4383,7 @@
       "ro": "Cuib"
     },
     "hint": {
-      "en": "Home of a bird",
+      "en": "Built twig by twig",
       "bg": "Дом на птица",
       "es": "Hogar de un ave",
       "el": "Σπίτι πουλιού",
@@ -4401,7 +4401,7 @@
       "ro": "Pânză de păianjen"
     },
     "hint": {
-      "en": "Sticky net",
+      "en": "Sparkles when it's covered in morning dew",
       "bg": "Лепкава мрежа",
       "es": "Red pegajosa",
       "el": "Κολλώδες δίχτυ",
@@ -4419,7 +4419,7 @@
       "ro": "Urmă de pas"
     },
     "hint": {
-      "en": "Mark left by a foot",
+      "en": "Left behind in wet sand",
       "bg": "Следа, оставена от крак",
       "es": "Marca dejada por un pie",
       "el": "Σημάδι από πόδι",
@@ -4437,7 +4437,7 @@
       "ro": "Fosilă"
     },
     "hint": {
-      "en": "Ancient print in stone",
+      "en": "Took millions of years to form",
       "bg": "Древен отпечатък в камък",
       "es": "Huella antigua en la piedra",
       "el": "Αρχαίο αποτύπωμα σε πέτρα",
@@ -4455,7 +4455,7 @@
       "ro": "Răsărit"
     },
     "hint": {
-      "en": "Start of the day",
+      "en": "Worth waking up early for, once in a while",
       "bg": "Начало на деня",
       "es": "Comienzo del día",
       "el": "Αρχή της μέρας",
@@ -4473,7 +4473,7 @@
       "ro": "Tornadă"
     },
     "hint": {
-      "en": "Spinning wind",
+      "en": "Chased by people who really shouldn't",
       "bg": "Въртящ се вятър",
       "es": "Viento que gira",
       "el": "Άνεμος που στροβιλίζεται",
@@ -4491,7 +4491,7 @@
       "ro": "Vârtej de apă"
     },
     "hint": {
-      "en": "Spinning water",
+      "en": "Pulls anything nearby toward its centre",
       "bg": "Въртяща се вода",
       "es": "Agua que gira",
       "el": "Νερό που στροβιλίζεται",
@@ -4509,7 +4509,7 @@
       "ro": "Cristal"
     },
     "hint": {
-      "en": "Clear shiny stone",
+      "en": "Grows in perfect geometric shapes",
       "bg": "Прозрачен блестящ камък",
       "es": "Piedra transparente y brillante",
       "el": "Διάφανη γυαλιστερή πέτρα",
@@ -4527,7 +4527,7 @@
       "ro": "Baltă"
     },
     "hint": {
-      "en": "Small pool of rain",
+      "en": "Kids can't resist jumping in it",
       "bg": "Малка локва от дъжд",
       "es": "Pequeña charca de lluvia",
       "el": "Μικρή λιμνούλα από βροχή",
@@ -4545,7 +4545,7 @@
       "ro": "Inimă"
     },
     "hint": {
-      "en": "Symbol of love",
+      "en": "Skips a beat, they say, when you're nervous",
       "bg": "Символ на любовта",
       "es": "Símbolo del amor",
       "el": "Σύμβολο της αγάπης",
@@ -4563,7 +4563,7 @@
       "ro": "Față zâmbitoare"
     },
     "hint": {
-      "en": "Happy symbol",
+      "en": "Drawn with two dots and a curve",
       "bg": "Радостен символ",
       "es": "Símbolo alegre",
       "el": "Χαρούμενο σύμβολο",
@@ -4581,7 +4581,7 @@
       "ro": "Craniu"
     },
     "hint": {
-      "en": "Symbol of danger",
+      "en": "Marked on a bottle to mean danger",
       "bg": "Символ на опасност",
       "es": "Símbolo de peligro",
       "el": "Σύμβολο κινδύνου",
@@ -4599,7 +4599,7 @@
       "ro": "Fantomă"
     },
     "hint": {
-      "en": "Spooky spirit",
+      "en": "Said to rattle chains at midnight",
       "bg": "Страховит дух",
       "es": "Espíritu que asusta",
       "el": "Τρομακτικό πνεύμα",
@@ -4617,7 +4617,7 @@
       "ro": "Robot"
     },
     "hint": {
-      "en": "Machine that looks human",
+      "en": "Follows instructions exactly, nothing more",
       "bg": "Машина, която прилича на човек",
       "es": "Máquina con forma de persona",
       "el": "Μηχανή που μοιάζει με άνθρωπο",
@@ -4635,7 +4635,7 @@
       "ro": "Monstru"
     },
     "hint": {
-      "en": "Scary creature",
+      "en": "Checked for under the bed at night",
       "bg": "Страшно създание",
       "es": "Criatura que da miedo",
       "el": "Τρομακτικό πλάσμα",
@@ -4653,7 +4653,7 @@
       "ro": "Dragon"
     },
     "hint": {
-      "en": "Creature that breathes fire",
+      "en": "Guards a pile of treasure in every story",
       "bg": "Създание, което бълва огън",
       "es": "Criatura que echa fuego",
       "el": "Πλάσμα που βγάζει φωτιά",
@@ -4671,7 +4671,7 @@
       "ro": "Unicorn"
     },
     "hint": {
-      "en": "Horse with a horn",
+      "en": "Only appears in stories, sadly",
       "bg": "Кон с рог",
       "es": "Caballo con un cuerno",
       "el": "Άλογο με κέρατο",
@@ -4689,7 +4689,7 @@
       "ro": "Sirenă"
     },
     "hint": {
-      "en": "Half person, half fish",
+      "en": "Sailors used to swear they'd seen one",
       "bg": "Наполовина човек, наполовина риба",
       "es": "Mitad persona, mitad pez",
       "el": "Μισή άνθρωπος, μισή ψάρι",
@@ -4707,7 +4707,7 @@
       "ro": "Vrăjitor"
     },
     "hint": {
-      "en": "Person who does magic",
+      "en": "Waves a stick and mutters some words",
       "bg": "Човек, който прави магии",
       "es": "Persona que hace magia",
       "el": "Άνθρωπος που κάνει μαγικά",
@@ -4725,7 +4725,7 @@
       "ro": "Pălărie de vrăjitoare"
     },
     "hint": {
-      "en": "Pointed hat",
+      "en": "Worn with a broom every October",
       "bg": "Островърха шапка",
       "es": "Sombrero puntiagudo",
       "el": "Μυτερό καπέλο",
@@ -4743,7 +4743,7 @@
       "ro": "Steag de pirat"
     },
     "hint": {
-      "en": "Flag with a skull",
+      "en": "Raised to make other ships turn away",
       "bg": "Знаме с череп",
       "es": "Bandera con una calavera",
       "el": "Σημαία με κρανίο",
@@ -4761,7 +4761,7 @@
       "ro": "Cufăr cu comori"
     },
     "hint": {
-      "en": "Box full of gold",
+      "en": "Marked with an X on old maps",
       "bg": "Кутия, пълна със злато",
       "es": "Caja llena de oro",
       "el": "Κουτί γεμάτο χρυσό",
@@ -4779,7 +4779,7 @@
       "ro": "Baghetă magică"
     },
     "hint": {
-      "en": "Stick used for spells",
+      "en": "Waved with a flick of the wrist",
       "bg": "Пръчка за заклинания",
       "es": "Palo para hacer hechizos",
       "el": "Ραβδί για ξόρκια",
@@ -4797,7 +4797,7 @@
       "ro": "Sabie"
     },
     "hint": {
-      "en": "Long sharp weapon",
+      "en": "Drawn from its sheath before a duel",
       "bg": "Дълго остро оръжие",
       "es": "Arma larga y afilada",
       "el": "Μακρύ κοφτερό όπλο",
@@ -4815,7 +4815,7 @@
       "ro": "Scut"
     },
     "hint": {
-      "en": "Thing that protects you",
+      "en": "Raised just in time to block a blow",
       "bg": "Нещо, което те пази",
       "es": "Cosa que te protege",
       "el": "Κάτι που σε προστατεύει",
@@ -4833,7 +4833,7 @@
       "ro": "Arc și săgeată"
     },
     "hint": {
-      "en": "Weapon you pull",
+      "en": "Pulled back before it's released",
       "bg": "Оръжие, което се опъва",
       "es": "Arma que se tensa",
       "el": "Όπλο που το τραβάς",
@@ -4851,7 +4851,7 @@
       "ro": "Topor"
     },
     "hint": {
-      "en": "Tool for chopping",
+      "en": "Split the log in one clean swing",
       "bg": "Инструмент за цепене",
       "es": "Herramienta para cortar leña",
       "el": "Εργαλείο για κόψιμο ξύλων",
@@ -4869,7 +4869,7 @@
       "ro": "Trompetă"
     },
     "hint": {
-      "en": "Instrument you blow",
+      "en": "Blares loud enough to lead a parade",
       "bg": "Инструмент, в който се духа",
       "es": "Instrumento que se sopla",
       "el": "Όργανο που φυσάς",
@@ -4887,7 +4887,7 @@
       "ro": "Tobă"
     },
     "hint": {
-      "en": "Instrument you hit",
+      "en": "Keeps the beat for everyone else",
       "bg": "Инструмент, по който се удря",
       "es": "Instrumento que se golpea",
       "el": "Όργανο που χτυπάς",
@@ -4905,7 +4905,7 @@
       "ro": "Pian"
     },
     "hint": {
-      "en": "Instrument with keys",
+      "en": "88 keys, black and white",
       "bg": "Инструмент с клавиши",
       "es": "Instrumento con teclas",
       "el": "Όργανο με πλήκτρα",
@@ -4923,7 +4923,7 @@
       "ro": "Vioară"
     },
     "hint": {
-      "en": "Instrument with strings",
+      "en": "Tucked under the chin to play",
       "bg": "Инструмент със струни",
       "es": "Instrumento con cuerdas",
       "el": "Όργανο με χορδές",
@@ -4941,7 +4941,7 @@
       "ro": "Saxofon"
     },
     "hint": {
-      "en": "Curved brass instrument",
+      "en": "Sounds moody in a jazz club",
       "bg": "Извит меден инструмент",
       "es": "Instrumento de metal curvado",
       "el": "Καμπυλωτό χάλκινο όργανο",
@@ -4959,7 +4959,7 @@
       "ro": "Flaut"
     },
     "hint": {
-      "en": "Thin instrument you blow",
+      "en": "Held sideways to play",
       "bg": "Тънък инструмент за духане",
       "es": "Instrumento fino que se sopla",
       "el": "Λεπτό όργανο που φυσάς",
@@ -4977,7 +4977,7 @@
       "ro": "Harpă"
     },
     "hint": {
-      "en": "Big instrument with many strings",
+      "en": "Plucked, not strummed",
       "bg": "Голям инструмент с много струни",
       "es": "Instrumento grande con muchas cuerdas",
       "el": "Μεγάλο όργανο με πολλές χορδές",
@@ -4995,7 +4995,7 @@
       "ro": "Microfon"
     },
     "hint": {
-      "en": "Thing you sing into",
+      "en": "Feedback screeches if you get too close to the speaker",
       "bg": "Нещо, в което се пее",
       "es": "Cosa en la que se canta",
       "el": "Κάτι μέσα στο οποίο τραγουδάς",
@@ -5013,7 +5013,7 @@
       "ro": "Căști"
     },
     "hint": {
-      "en": "Thing worn on the ears",
+      "en": "Tangled the moment you pull them from a pocket",
       "bg": "Нещо, което се носи на ушите",
       "es": "Cosa que se lleva en las orejas",
       "el": "Κάτι που φοριέται στα αυτιά",
@@ -5031,7 +5031,7 @@
       "ro": "Notă muzicală"
     },
     "hint": {
-      "en": "Symbol of a sound",
+      "en": "Doodled in the margin of a school notebook",
       "bg": "Символ на звук",
       "es": "Símbolo de un sonido",
       "el": "Σύμβολο ενός ήχου",
@@ -5049,7 +5049,7 @@
       "ro": "Televizor"
     },
     "hint": {
-      "en": "Box with moving pictures",
+      "en": "You fight over the remote for it",
       "bg": "Кутия с движещи се картини",
       "es": "Caja con imágenes en movimiento",
       "el": "Κουτί με κινούμενες εικόνες",
@@ -5067,7 +5067,7 @@
       "ro": "Calculator"
     },
     "hint": {
-      "en": "Machine with a screen",
+      "en": "Restarted first, before anything else is tried",
       "bg": "Машина с екран",
       "es": "Máquina con pantalla",
       "el": "Μηχάνημα με οθόνη",
@@ -5085,7 +5085,7 @@
       "ro": "Telefon"
     },
     "hint": {
-      "en": "Thing you call with",
+      "en": "Face-down so notifications don't distract you",
       "bg": "Нещо, с което се обаждаш",
       "es": "Cosa con la que llamas",
       "el": "Κάτι με το οποίο τηλεφωνείς",
@@ -5103,7 +5103,7 @@
       "ro": "Aparat foto"
     },
     "hint": {
-      "en": "Thing that takes pictures",
+      "en": "You smile right before it clicks",
       "bg": "Нещо, което прави снимки",
       "es": "Cosa que hace fotos",
       "el": "Κάτι που βγάζει φωτογραφίες",
@@ -5121,7 +5121,7 @@
       "ro": "Bec"
     },
     "hint": {
-      "en": "Glass thing that glows",
+      "en": "Above someone's head means a good idea",
       "bg": "Стъклено нещо, което свети",
       "es": "Cosa de vidrio que brilla",
       "el": "Γυάλινο πράγμα που φωτίζει",
@@ -5139,7 +5139,7 @@
       "ro": "Baterie"
     },
     "hint": {
-      "en": "Thing that stores power",
+      "en": "Dies at the worst possible moment",
       "bg": "Нещо, което пази ток",
       "es": "Cosa que guarda energía",
       "el": "Κάτι που αποθηκεύει ενέργεια",
@@ -5157,7 +5157,7 @@
       "ro": "Magnet"
     },
     "hint": {
-      "en": "Thing that pulls metal",
+      "en": "Sticks to the fridge with a photo underneath",
       "bg": "Нещо, което привлича метал",
       "es": "Cosa que atrae el metal",
       "el": "Κάτι που τραβά το μέταλλο",
@@ -5175,7 +5175,7 @@
       "ro": "Busolă"
     },
     "hint": {
-      "en": "Thing that shows direction",
+      "en": "Always points the same direction, no matter which way you turn",
       "bg": "Нещо, което показва посоката",
       "es": "Cosa que indica la dirección",
       "el": "Κάτι που δείχνει την κατεύθυνση",
@@ -5193,7 +5193,7 @@
       "ro": "Clepsidră"
     },
     "hint": {
-      "en": "Thing with falling sand",
+      "en": "Flipped when time runs out",
       "bg": "Нещо с падащ пясък",
       "es": "Cosa con arena que cae",
       "el": "Κάτι με άμμο που πέφτει",
@@ -5211,7 +5211,7 @@
       "ro": "Balon"
     },
     "hint": {
-      "en": "Thing filled with air",
+      "en": "Squeaks when you rub it",
       "bg": "Нещо, пълно с въздух",
       "es": "Cosa llena de aire",
       "el": "Κάτι γεμάτο αέρα",
@@ -5229,7 +5229,7 @@
       "ro": "Zmeu"
     },
     "hint": {
-      "en": "Thing that flies on a string",
+      "en": "Needs a good gust to stay up",
       "bg": "Нещо, което лети на връв",
       "es": "Cosa que vuela atada a un hilo",
       "el": "Κάτι που πετά δεμένο με σπάγκο",
@@ -5247,7 +5247,7 @@
       "ro": "Cutie de cadou"
     },
     "hint": {
-      "en": "Box with a ribbon",
+      "en": "Shaken gently to guess what's inside",
       "bg": "Кутия с панделка",
       "es": "Caja con un lazo",
       "el": "Κουτί με κορδέλα",
@@ -5265,7 +5265,7 @@
       "ro": "Clopot"
     },
     "hint": {
-      "en": "Thing that rings",
+      "en": "Rung to call everyone to dinner",
       "bg": "Нещо, което звъни",
       "es": "Cosa que suena",
       "el": "Κάτι που χτυπά",
@@ -5283,7 +5283,7 @@
       "ro": "Trofeu"
     },
     "hint": {
-      "en": "Prize for winning",
+      "en": "Polished and put on a shelf",
       "bg": "Награда за победа",
       "es": "Premio por ganar",
       "el": "Έπαθλο για τη νίκη",
@@ -5301,7 +5301,7 @@
       "ro": "Medalie"
     },
     "hint": {
-      "en": "Award on a ribbon",
+      "en": "Hung around the neck on the podium",
       "bg": "Отличие на лента",
       "es": "Galardón con cinta",
       "el": "Βραβείο σε κορδέλα",
@@ -5319,7 +5319,7 @@
       "ro": "Zar"
     },
     "hint": {
-      "en": "Cube with dots",
+      "en": "Rolled and hoped for a six",
       "bg": "Кубче с точки",
       "es": "Cubo con puntos",
       "el": "Κύβος με τελείες",
@@ -5337,7 +5337,7 @@
       "ro": "Carte de joc"
     },
     "hint": {
-      "en": "Card from a deck",
+      "en": "Fanned out and hidden from the others",
       "bg": "Карта от тесте",
       "es": "Carta de una baraja",
       "el": "Χαρτί από τράπουλα",
@@ -5355,7 +5355,7 @@
       "ro": "Piesă de șah"
     },
     "hint": {
-      "en": "Figure on a board",
+      "en": "Moved in a very specific pattern",
       "bg": "Фигура върху дъска",
       "es": "Figura sobre un tablero",
       "el": "Φιγούρα πάνω σε ταμπλό",
@@ -5373,7 +5373,7 @@
       "ro": "Piesă de puzzle"
     },
     "hint": {
-      "en": "Part of a picture",
+      "en": "Turned every which way until it clicks into place",
       "bg": "Част от картина",
       "es": "Parte de una imagen",
       "el": "Μέρος μιας εικόνας",
@@ -5391,7 +5391,7 @@
       "ro": "Undiță"
     },
     "hint": {
-      "en": "Stick with a line",
+      "en": "You wait far longer than you catch",
       "bg": "Пръчка с влакно",
       "es": "Palo con un hilo",
       "el": "Ραβδί με πετονιά",

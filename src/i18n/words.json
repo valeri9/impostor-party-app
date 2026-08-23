@@ -922,7 +922,7 @@
       "ro": "Restaurant"
     },
     "hint": {
-      "en": "Place to eat",
+      "en": "Where you leave a tip",
       "bg": "Място за ядене",
       "es": "Lugar para comer",
       "el": "Μέρος για φαγητό",
@@ -1074,7 +1074,7 @@
       "ro": "Hotel"
     },
     "hint": {
-      "en": "Place to sleep",
+      "en": "Somewhere you check in for the night",
       "bg": "Място за спане",
       "es": "Lugar para dormir",
       "el": "Μέρος για ύπνο",
@@ -1150,7 +1150,7 @@
       "ro": "Brutărie"
     },
     "hint": {
-      "en": "Shop with bread",
+      "en": "Smells like fresh dough",
       "bg": "Магазин с хляб",
       "es": "Tienda con pan",
       "el": "Κατάστημα με ψωμί",
@@ -1188,7 +1188,7 @@
       "ro": "Frizerie"
     },
     "hint": {
-      "en": "Place for haircuts",
+      "en": "Where hair ends up on the floor",
       "bg": "Място за подстригване",
       "es": "Lugar para cortarse el pelo",
       "el": "Μέρος για κούρεμα",
@@ -1226,7 +1226,7 @@
       "ro": "Poștă"
     },
     "hint": {
-      "en": "Place for letters",
+      "en": "Where a parcel starts its journey",
       "bg": "Място за писма",
       "es": "Lugar para cartas",
       "el": "Χώρος για γράμματα",
@@ -1245,7 +1245,7 @@
       "ro": "Benzinărie"
     },
     "hint": {
-      "en": "Place for fuel",
+      "en": "Quick stop before a long drive",
       "bg": "Място за гориво",
       "es": "Lugar para combustible",
       "el": "Χώρος για καύσιμα",
@@ -1834,7 +1834,7 @@
       "ro": "Ceas"
     },
     "hint": {
-      "en": "Time device",
+      "en": "Something you glance at when running late",
       "bg": "Уред за време",
       "es": "Aparato del tiempo",
       "el": "Συσκευή χρόνου",
@@ -1872,7 +1872,7 @@
       "ro": "Lumânare"
     },
     "hint": {
-      "en": "Wax light",
+      "en": "Flickers when the power goes out",
       "bg": "Восъчна светлина",
       "es": "Luz de cera",
       "el": "Κέρινο φως",
@@ -2024,7 +2024,7 @@
       "ro": "Telefon"
     },
     "hint": {
-      "en": "Talking device",
+      "en": "Rings when someone wants to talk",
       "bg": "Устройство за разговор",
       "es": "Aparato para hablar",
       "el": "Συσκευή ομιλίας",
@@ -2043,7 +2043,7 @@
       "ro": "Aparat foto"
     },
     "hint": {
-      "en": "Picture device",
+      "en": "You smile right before it clicks",
       "bg": "Устройство за снимки",
       "es": "Aparato de fotos",
       "el": "Συσκευή για φωτογραφίες",
@@ -2062,7 +2062,7 @@
       "ro": "Portofel"
     },
     "hint": {
-      "en": "Money holder",
+      "en": "You pat your pocket to check it's there",
       "bg": "Държач за пари",
       "es": "Guarda dinero",
       "el": "Θήκη για χρήματα",
@@ -2081,7 +2081,7 @@
       "ro": "Ochelari de soare"
     },
     "hint": {
-      "en": "Eye wear",
+      "en": "Worn on a bright day out",
       "bg": "Средство за очите",
       "es": "Accesorio para los ojos",
       "el": "Είδος για τα μάτια",
@@ -2138,7 +2138,7 @@
       "ro": "Scaun"
     },
     "hint": {
-      "en": "Seating furniture",
+      "en": "You pull it out before sitting down",
       "bg": "Мебел за сядане",
       "es": "Mueble para sentarse",
       "el": "Έπιπλο για κάθισμα",
@@ -2157,7 +2157,7 @@
       "ro": "Frigider"
     },
     "hint": {
-      "en": "Cooling appliance",
+      "en": "Hums quietly in the kitchen corner",
       "bg": "Охлаждащ уред",
       "es": "Aparato de frío",
       "el": "Ψυκτική συσκευή",
@@ -2176,7 +2176,7 @@
       "ro": "Lampă"
     },
     "hint": {
-      "en": "Light source",
+      "en": "Switched on when it gets dark",
       "bg": "Източник на светлина",
       "es": "Fuente de luz",
       "el": "Πηγή φωτός",
@@ -2252,7 +2252,7 @@
       "ro": "Baterie"
     },
     "hint": {
-      "en": "Power source",
+      "en": "Dies at the worst possible moment",
       "bg": "Източник на ток",
       "es": "Fuente de energía",
       "el": "Πηγή ενέργειας",
@@ -2309,7 +2309,7 @@
       "ro": "Ventilator"
     },
     "hint": {
-      "en": "Air device",
+      "en": "Spins to cool you down",
       "bg": "Уред за въздух",
       "es": "Aparato de aire",
       "el": "Συσκευή αέρα",
@@ -2461,7 +2461,7 @@
       "ro": "Cumpărături"
     },
     "hint": {
-      "en": "Buying trip",
+      "en": "Comes home with too many bags",
       "bg": "Излизане за покупки",
       "es": "Salida para comprar",
       "el": "Έξοδος για αγορές",
@@ -2556,7 +2556,7 @@
       "ro": "Somn"
     },
     "hint": {
-      "en": "Night rest",
+      "en": "What you do least of before a trip",
       "bg": "Нощна почивка",
       "es": "Descanso nocturno",
       "el": "Νυχτερινή ξεκούραση",
@@ -2651,7 +2651,7 @@
       "ro": "Concert"
     },
     "hint": {
-      "en": "Live music event",
+      "en": "You lose your voice cheering",
       "bg": "Събитие с жива музика",
       "es": "Evento de música en vivo",
       "el": "Εκδήλωση ζωντανής μουσικής",
@@ -2860,7 +2860,7 @@
       "ro": "Munte"
     },
     "hint": {
-      "en": "High landform",
+      "en": "You need good boots to reach the top",
       "bg": "Висока форма на релефа",
       "es": "Relieve alto",
       "el": "Ψηλό ανάγλυφο",
@@ -2879,7 +2879,7 @@
       "ro": "Râu"
     },
     "hint": {
-      "en": "Flowing water",
+      "en": "Follows a path down to the sea",
       "bg": "Течаща вода",
       "es": "Agua que corre",
       "el": "Νερό που ρέει",
@@ -2898,7 +2898,7 @@
       "ro": "Curcubeu"
     },
     "hint": {
-      "en": "Sky colours",
+      "en": "Appears after the rain clears",
       "bg": "Цветове в небето",
       "es": "Colores en el cielo",
       "el": "Χρώματα στον ουρανό",
@@ -2917,7 +2917,7 @@
       "ro": "Vulcan"
     },
     "hint": {
-      "en": "Fire mountain",
+      "en": "Best admired from a safe distance",
       "bg": "Огнена планина",
       "es": "Montaña de fuego",
       "el": "Βουνό με φωτιά",
@@ -2936,7 +2936,7 @@
       "ro": "Deșert"
     },
     "hint": {
-      "en": "Dry land",
+      "en": "You'd need a lot of water to cross it",
       "bg": "Суха земя",
       "es": "Tierra seca",
       "el": "Ξηρή γη",
@@ -2955,7 +2955,7 @@
       "ro": "Pădure"
     },
     "hint": {
-      "en": "Many trees",
+      "en": "Easy to get lost in",
       "bg": "Много дървета",
       "es": "Muchos árboles",
       "el": "Πολλά δέντρα",
@@ -2974,7 +2974,7 @@
       "ro": "Cascadă"
     },
     "hint": {
-      "en": "Falling water",
+      "en": "The sound gets louder as you get closer",
       "bg": "Падаща вода",
       "es": "Agua que cae",
       "el": "Νερό που πέφτει",
@@ -3031,7 +3031,7 @@
       "ro": "Insulă"
     },
     "hint": {
-      "en": "Land in the sea",
+      "en": "You need a boat to leave",
       "bg": "Земя в морето",
       "es": "Tierra en el mar",
       "el": "Στεριά στη θάλασσα",
@@ -3050,7 +3050,7 @@
       "ro": "Peșteră"
     },
     "hint": {
-      "en": "Dark hole in rock",
+      "en": "Bats might be watching you",
       "bg": "Тъмна дупка в скала",
       "es": "Hueco oscuro en la roca",
       "el": "Σκοτεινή τρύπα στον βράχο",
@@ -3069,7 +3069,7 @@
       "ro": "Ocean"
     },
     "hint": {
-      "en": "Huge water",
+      "en": "Covers most of the map",
       "bg": "Огромна вода",
       "es": "Agua inmensa",
       "el": "Τεράστιο νερό",
@@ -3164,7 +3164,7 @@
       "ro": "Vânt"
     },
     "hint": {
-      "en": "Moving air",
+      "en": "You can't see it, only feel it",
       "bg": "Движещ се въздух",
       "es": "Aire en movimiento",
       "el": "Αέρας που κινείται",
@@ -3183,7 +3183,7 @@
       "ro": "Ceață"
     },
     "hint": {
-      "en": "Thick air",
+      "en": "Makes the road disappear ahead of you",
       "bg": "Плътен въздух",
       "es": "Aire espeso",
       "el": "Πυκνός αέρας",
@@ -3202,7 +3202,7 @@
       "ro": "Cutremur"
     },
     "hint": {
-      "en": "Ground shaking",
+      "en": "Furniture rattles for no reason",
       "bg": "Треперене на земята",
       "es": "Temblor del suelo",
       "el": "Τράνταγμα του εδάφους",
@@ -3240,7 +3240,7 @@
       "ro": "Ghețar"
     },
     "hint": {
-      "en": "Slow ice",
+      "en": "Moves so slowly you'd never notice",
       "bg": "Бавен лед",
       "es": "Hielo lento",
       "el": "Αργός πάγος",
@@ -3278,7 +3278,7 @@
       "ro": "Fulger"
     },
     "hint": {
-      "en": "Sky flash",
+      "en": "Comes right before the thunder",
       "bg": "Проблясък в небето",
       "es": "Destello en el cielo",
       "el": "Λάμψη στον ουρανό",
@@ -3411,7 +3411,7 @@
       "ro": "Meteor"
     },
     "hint": {
-      "en": "Falling space rock",
+      "en": "Make a wish before it disappears",
       "bg": "Падащ космически камък",
       "es": "Roca del espacio que cae",
       "el": "Πέτρα του διαστήματος που πέφτει",
@@ -3620,7 +3620,7 @@
       "ro": "Electrician"
     },
     "hint": {
-      "en": "Wiring job",
+      "en": "Called when the lights won't turn on",
       "bg": "Професия с кабели",
       "es": "Profesión de cables",
       "el": "Επάγγελμα με καλώδια",
@@ -3639,7 +3639,7 @@
       "ro": "Instalator"
     },
     "hint": {
-      "en": "Water pipes job",
+      "en": "Called when the sink won't drain",
       "bg": "Професия с тръби",
       "es": "Profesión de tuberías",
       "el": "Επάγγελμα με σωλήνες",
@@ -3658,7 +3658,7 @@
       "ro": "Tâmplar"
     },
     "hint": {
-      "en": "Wood job",
+      "en": "Smells like sawdust by the end of the day",
       "bg": "Професия с дърво",
       "es": "Profesión de la madera",
       "el": "Επάγγελμα με ξύλο",
@@ -3677,7 +3677,7 @@
       "ro": "Dentist"
     },
     "hint": {
-      "en": "Teeth job",
+      "en": "Makes you nervous just booking the appointment",
       "bg": "Професия със зъби",
       "es": "Profesión de los dientes",
       "el": "Επάγγελμα με τα δόντια",
@@ -3715,7 +3715,7 @@
       "ro": "Frizer"
     },
     "hint": {
-      "en": "Hair job",
+      "en": "Talks to you through a mirror",
       "bg": "Професия с коса",
       "es": "Profesión del cabello",
       "el": "Επάγγελμα με τα μαλλιά",
@@ -3734,7 +3734,7 @@
       "ro": "Fotograf"
     },
     "hint": {
-      "en": "Camera job",
+      "en": "Says 'say cheese' for a living",
       "bg": "Професия с камера",
       "es": "Profesión con cámara",
       "el": "Επάγγελμα με φωτογραφική",
@@ -3810,7 +3810,7 @@
       "ro": "Muzician"
     },
     "hint": {
-      "en": "Music job",
+      "en": "Practices the same part over and over",
       "bg": "Професия с музика",
       "es": "Profesión de música",
       "el": "Επάγγελμα με μουσική",
@@ -3829,7 +3829,7 @@
       "ro": "Soldat"
     },
     "hint": {
-      "en": "Army job",
+      "en": "Follows orders in uniform",
       "bg": "Професия в армията",
       "es": "Profesión del ejército",
       "el": "Επάγγελμα στον στρατό",
@@ -3886,7 +3886,7 @@
       "ro": "Îngrijitor"
     },
     "hint": {
-      "en": "Tidying job",
+      "en": "Leaves a room smelling different than they found it",
       "bg": "Професия с почистване",
       "es": "Profesión de limpieza",
       "el": "Επάγγελμα καθαριότητας",
@@ -3943,7 +3943,7 @@
       "ro": "Astronaut"
     },
     "hint": {
-      "en": "Space job",
+      "en": "Floats at work",
       "bg": "Професия в космоса",
       "es": "Profesión en el espacio",
       "el": "Επάγγελμα στο διάστημα",
@@ -3981,7 +3981,7 @@
       "ro": "Brutar"
     },
     "hint": {
-      "en": "Job with dough",
+      "en": "Starts work before sunrise",
       "bg": "Професия с тесто",
       "es": "Profesión con masa",
       "el": "Επάγγελμα με ζύμη",
@@ -4114,7 +4114,7 @@
       "ro": "Elicopter"
     },
     "hint": {
-      "en": "Vehicle with rotors",
+      "en": "Loud enough to drown out conversation",
       "bg": "Средство с витла",
       "es": "Vehículo con hélices",
       "el": "Όχημα με έλικες",
@@ -4133,7 +4133,7 @@
       "ro": "Submarin"
     },
     "hint": {
-      "en": "Underwater vehicle",
+      "en": "Goes where sunlight can't reach",
       "bg": "Подводно превозно средство",
       "es": "Vehículo submarino",
       "el": "Υποβρύχιο όχημα",
@@ -4247,7 +4247,7 @@
       "ro": "Skateboard"
     },
     "hint": {
-      "en": "Board with wheels",
+      "en": "You need good balance, no seat included",
       "bg": "Дъска с колела",
       "es": "Tabla con ruedas",
       "el": "Σανίδα με ρόδες",
@@ -4342,7 +4342,7 @@
       "ro": "Metrou"
     },
     "hint": {
-      "en": "Underground train",
+      "en": "You go down stairs to catch it",
       "bg": "Подземен влак",
       "es": "Tren subterráneo",
       "el": "Υπόγειο τρένο",
@@ -4380,7 +4380,7 @@
       "ro": "Bicicletă"
     },
     "hint": {
-      "en": "Pedal vehicle",
+      "en": "You need to keep moving or you'll tip over",
       "bg": "Возило с педали",
       "es": "Vehículo de pedales",
       "el": "Όχημα με πετάλια",
@@ -4418,7 +4418,7 @@
       "ro": "Telecabină"
     },
     "hint": {
-      "en": "Hanging vehicle",
+      "en": "Great view, no wheels underneath",
       "bg": "Висящо превозно средство",
       "es": "Vehículo colgante",
       "el": "Κρεμαστό όχημα",
@@ -4437,7 +4437,7 @@
       "ro": "Navetă spațială"
     },
     "hint": {
-      "en": "Vehicle for space",
+      "en": "Leaves the ground for good",
       "bg": "Средство за космоса",
       "es": "Vehículo para el espacio",
       "el": "Όχημα για το διάστημα",
@@ -4494,7 +4494,7 @@
       "ro": "Lift"
     },
     "hint": {
-      "en": "Vertical ride",
+      "en": "You wait for the doors to open",
       "bg": "Вертикално возене",
       "es": "Viaje vertical",
       "el": "Κάθετη διαδρομή",
@@ -4513,7 +4513,7 @@
       "ro": "Scară rulantă"
     },
     "hint": {
-      "en": "Moving stairs",
+      "en": "You can stand still and still get there",
       "bg": "Движещи се стъпала",
       "es": "Escaleras que se mueven",
       "el": "Σκαλιά που κινούνται",
@@ -4551,7 +4551,7 @@
       "ro": "Barcă cu pânze"
     },
     "hint": {
-      "en": "Boat moved by wind",
+      "en": "No engine, just fabric catching a breeze",
       "bg": "Лодка, движена от вятър",
       "es": "Barco movido por el viento",
       "el": "Σκάφος που κινείται με τον άνεμο",
@@ -4760,7 +4760,7 @@
       "ro": "Hochei pe gheață"
     },
     "hint": {
-      "en": "Sport on ice",
+      "en": "Fast sport, cold rink",
       "bg": "Спорт на лед",
       "es": "Deporte sobre hielo",
       "el": "Άθλημα στον πάγο",
@@ -4798,7 +4798,7 @@
       "ro": "Ciclism"
     },
     "hint": {
-      "en": "Bike race",
+      "en": "Legs do all the work here",
       "bg": "Състезание с колела",
       "es": "Carrera de bicicletas",
       "el": "Αγώνας ποδηλάτων",
@@ -4988,7 +4988,7 @@
       "ro": "Sărituri în apă"
     },
     "hint": {
-      "en": "Sport from a board",
+      "en": "You hold your breath right before",
       "bg": "Спорт от трамплин",
       "es": "Deporte desde el trampolín",
       "el": "Άθλημα από σανίδα",
@@ -5007,7 +5007,7 @@
       "ro": "Badminton"
     },
     "hint": {
-      "en": "Shuttlecock sport",
+      "en": "Quiet racket sport, no bounce",
       "bg": "Спорт с перце",
       "es": "Deporte de volante",
       "el": "Άθλημα με φτερό",
@@ -5026,7 +5026,7 @@
       "ro": "Tenis de masă"
     },
     "hint": {
-      "en": "Small table sport",
+      "en": "Paddle sport with a tiny bouncing ball",
       "bg": "Спорт на малка маса",
       "es": "Deporte sobre una mesa pequeña",
       "el": "Άθλημα σε μικρό τραπέζι",
@@ -5045,7 +5045,7 @@
       "ro": "Curse de mașini"
     },
     "hint": {
-      "en": "Motor sport",
+      "en": "Speed sport, no pedaling involved",
       "bg": "Моторен спорт",
       "es": "Deporte de motor",
       "el": "Μηχανοκίνητο άθλημα",
@@ -5064,7 +5064,7 @@
       "ro": "Snowboard"
     },
     "hint": {
-      "en": "Board sport on snow",
+      "en": "Sideways stance, one board, lots of powder",
       "bg": "Спорт с дъска на сняг",
       "es": "Deporte de tabla en la nieve",
       "el": "Άθλημα με σανίδα στο χιόνι",
@@ -5083,7 +5083,7 @@
       "ro": "Scrimă"
     },
     "hint": {
-      "en": "Sword sport",
+      "en": "Sport in a mask, decided by a touch",
       "bg": "Спорт с меч",
       "es": "Deporte de espada",
       "el": "Άθλημα με σπαθί",
@@ -5102,7 +5102,7 @@
       "ro": "Triatlon"
     },
     "hint": {
-      "en": "Three-part race",
+      "en": "One race, three disciplines back to back",
       "bg": "Състезание от три части",
       "es": "Carrera de tres partes",
       "el": "Αγώνας τριών μερών",
@@ -5140,7 +5140,7 @@
       "ro": "Film"
     },
     "hint": {
-      "en": "Screen story",
+      "en": "You buy popcorn before it starts",
       "bg": "История на екран",
       "es": "Historia en pantalla",
       "el": "Ιστορία στην οθόνη",
@@ -5159,7 +5159,7 @@
       "ro": "Joc video"
     },
     "hint": {
-      "en": "Digital play",
+      "en": "You mash buttons trying to win",
       "bg": "Дигитална игра",
       "es": "Juego digital",
       "el": "Ψηφιακό παιχνίδι",
@@ -5178,7 +5178,7 @@
       "ro": "Bandă desenată"
     },
     "hint": {
-      "en": "Drawn story",
+      "en": "Speech bubbles instead of paragraphs",
       "bg": "Нарисувана история",
       "es": "Historia dibujada",
       "el": "Ζωγραφισμένη ιστορία",
@@ -5216,7 +5216,7 @@
       "ro": "Teatru"
     },
     "hint": {
-      "en": "Live stage art",
+      "en": "You clap when the curtain falls",
       "bg": "Живо сценично изкуство",
       "es": "Arte escénico en vivo",
       "el": "Ζωντανή σκηνική τέχνη",
@@ -5235,7 +5235,7 @@
       "ro": "Truc de magie"
     },
     "hint": {
-      "en": "Illusion",
+      "en": "You're not supposed to know how it's done",
       "bg": "Илюзия",
       "es": "Ilusión",
       "el": "Ψευδαίσθηση",
@@ -5254,7 +5254,7 @@
       "ro": "Podcast"
     },
     "hint": {
-      "en": "Audio show",
+      "en": "Something you listen to on a commute",
       "bg": "Аудио предаване",
       "es": "Programa de audio",
       "el": "Ηχητική εκπομπή",
@@ -5273,7 +5273,7 @@
       "ro": "Joc de societate"
     },
     "hint": {
-      "en": "Table game",
+      "en": "You roll dice or move a little piece around",
       "bg": "Игра на маса",
       "es": "Juego sobre la mesa",
       "el": "Παιχνίδι στο τραπέζι",
@@ -5292,7 +5292,7 @@
       "ro": "Teatru de păpuși"
     },
     "hint": {
-      "en": "Show with dolls",
+      "en": "A hand brings a character to life",
       "bg": "Шоу с кукли",
       "es": "Espectáculo con muñecos",
       "el": "Θέαμα με κούκλες",
@@ -5311,7 +5311,7 @@
       "ro": "Artificii"
     },
     "hint": {
-      "en": "Night sky show",
+      "en": "Loud, bright, over in seconds",
       "bg": "Шоу в нощното небе",
       "es": "Espectáculo en el cielo nocturno",
       "el": "Θέαμα στον νυχτερινό ουρανό",
@@ -5330,7 +5330,7 @@
       "ro": "Operă"
     },
     "hint": {
-      "en": "Sung drama",
+      "en": "Nobody just talks, they sing every line",
       "bg": "Изпята драма",
       "es": "Drama cantado",
       "el": "Τραγουδισμένο δράμα",
@@ -5349,7 +5349,7 @@
       "ro": "Stand-up comedy"
     },
     "hint": {
-      "en": "Funny show",
+      "en": "One person, a microphone, and a room hoping to laugh",
       "bg": "Смешно шоу",
       "es": "Espectáculo divertido",
       "el": "Αστείο σόου",
@@ -5368,7 +5368,7 @@
       "ro": "Balet"
     },
     "hint": {
-      "en": "Dance art",
+      "en": "Performed on tiptoes",
       "bg": "Танцово изкуство",
       "es": "Arte de la danza",
       "el": "Τέχνη του χορού",
@@ -5387,7 +5387,7 @@
       "ro": "Emisiune-concurs"
     },
     "hint": {
-      "en": "Question game",
+      "en": "Buzz in before you say the answer",
       "bg": "Игра с въпроси",
       "es": "Juego de preguntas",
       "el": "Παιχνίδι με ερωτήσεις",
@@ -5406,7 +5406,7 @@
       "ro": "Desen animat"
     },
     "hint": {
-      "en": "Animated show",
+      "en": "Drawn characters that never seem to age",
       "bg": "Анимирано предаване",
       "es": "Programa animado",
       "el": "Εκπομπή με κινούμενα σχέδια",
@@ -5444,7 +5444,7 @@
       "ro": "Puzzle"
     },
     "hint": {
-      "en": "Piece game",
+      "en": "Pieces spread across the table until it clicks",
       "bg": "Игра с парченца",
       "es": "Juego de piezas",
       "el": "Παιχνίδι με κομμάτια",
@@ -5463,7 +5463,7 @@
       "ro": "Radio"
     },
     "hint": {
-      "en": "Sound broadcast",
+      "en": "Playing in the background of a car ride",
       "bg": "Звуково излъчване",
       "es": "Emisión de sonido",
       "el": "Ηχητική μετάδοση",
@@ -5482,7 +5482,7 @@
       "ro": "Musical"
     },
     "hint": {
-      "en": "Show with songs",
+      "en": "A story told between songs",
       "bg": "Шоу с песни",
       "es": "Espectáculo con canciones",
       "el": "Παράσταση με τραγούδια",
@@ -5520,7 +5520,7 @@
       "ro": "Concurs de talente"
     },
     "hint": {
-      "en": "Contest of skills",
+      "en": "Judges press a buzzer if they don't like it",
       "bg": "Състезание с умения",
       "es": "Competición de habilidades",
       "el": "Διαγωνισμός δεξιοτήτων",
@@ -5539,7 +5539,7 @@
       "ro": "Documentar"
     },
     "hint": {
-      "en": "Real-life film",
+      "en": "A narrator explains what's happening on screen",
       "bg": "Филм за реалността",
       "es": "Película de la vida real",
       "el": "Ταινία με πραγματικά γεγονότα",
@@ -5558,7 +5558,7 @@
       "ro": "Joc de cărți"
     },
     "hint": {
-      "en": "Game with a deck",
+      "en": "You shuffle before you start",
       "bg": "Игра с тесте",
       "es": "Juego con baraja",
       "el": "Παιχνίδι με τράπουλα",
@@ -5577,7 +5577,7 @@
       "ro": "Film de groază"
     },
     "hint": {
-      "en": "Scary movie",
+      "en": "You watch through your fingers",
       "bg": "Страшен филм",
       "es": "Película que da miedo",
       "el": "Τρομακτική ταινία",
@@ -5596,7 +5596,7 @@
       "ro": "Telenovelă"
     },
     "hint": {
-      "en": "Long TV series",
+      "en": "Overacted drama that airs every weekday",
       "bg": "Дълъг сериал",
       "es": "Serie de televisión larga",
       "el": "Μεγάλη τηλεοπτική σειρά",
@@ -5615,7 +5615,7 @@
       "ro": "Bingo"
     },
     "hint": {
-      "en": "Number game",
+      "en": "You shout out when your card fills up",
       "bg": "Игра с числа",
       "es": "Juego de números",
       "el": "Παιχνίδι με αριθμούς",
@@ -5634,7 +5634,7 @@
       "ro": "Paradă"
     },
     "hint": {
-      "en": "Street procession",
+      "en": "Marching bands and floats down the main street",
       "bg": "Шествие по улицата",
       "es": "Procesión por la calle",
       "el": "Πομπή στον δρόμο",
@@ -5653,7 +5653,7 @@
       "ro": "Cameră de evadare"
     },
     "hint": {
-      "en": "Puzzle room",
+      "en": "You're locked in until you solve your way out",
       "bg": "Стая със загадки",
       "es": "Habitación de acertijos",
       "el": "Δωμάτιο με γρίφους",
@@ -5691,7 +5691,7 @@
       "ro": "Jonglerie"
     },
     "hint": {
-      "en": "Skill with balls",
+      "en": "Whatever you do, don't drop one",
       "bg": "Умение с топки",
       "es": "Habilidad con pelotas",
       "el": "Δεξιότητα με μπάλες",
