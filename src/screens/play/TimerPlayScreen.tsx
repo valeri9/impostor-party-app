@@ -49,7 +49,7 @@ export function TimerPlayScreen({ round }: { round: TimerRound }) {
   const start = () => {
     startPress.onPressIn();
     haptics.heavy();
-    playSound('click');
+    playSound('slam');
     startedAtRef.current = Date.now();
     setStage('running');
   };
@@ -59,6 +59,7 @@ export function TimerPlayScreen({ round }: { round: TimerRound }) {
     stopPress.onPressIn();
     const ms = Date.now() - startedAtRef.current;
     haptics.success();
+    playSound('slam');
     playSound('chime');
     dispatch({ type: 'RECORD_TIME', playerId: currentId, ms });
     setStage('recorded');
@@ -106,9 +107,22 @@ export function TimerPlayScreen({ round }: { round: TimerRound }) {
 
   if (stage === 'running') {
     // Deliberately featureless: no digits, no progress bar, no animation that
-    // could be counted. Only a huge stop target.
+    // could be counted. Same footprint as Start so the button doesn't jump in
+    // size the instant it's pressed. The progress/pass-to lines are rendered
+    // again here, invisibly — same text, same wrapping — purely to reserve the
+    // exact height they took up on the Ready screen, so the centered content
+    // block doesn't shrink and pull the button upward when they disappear.
     return (
       <Screen center testID="timer-running">
+        <View style={styles.reserveTop} accessibilityElementsHidden importantForAccessibility="no-hide-descendants">
+          <Text style={styles.progress}>
+            {t('reveal.progress', { current: turn + 1, total })}
+            {round.rounds > 1 ? `  ·  ${t('canvas.play.round', { current: currentRound, total: round.rounds })}` : ''}
+          </Text>
+          <Text style={styles.passLine} adjustsFontSizeToFit numberOfLines={2}>
+            {t('timer.play.passTo', { name: current?.name ?? '' })}
+          </Text>
+        </View>
         <Text style={styles.runningHint}>{t('timer.play.running')}</Text>
         <Animated.View style={{ transform: [{ scale: stopPress.scale }] }}>
           <Pressable
@@ -172,6 +186,7 @@ function createStyles(colors: ReturnType<typeof useSkinTokens>['colors'], SHELL:
       marginBottom: spacing.xl,
       paddingHorizontal: spacing.md,
     },
+    reserveTop: { opacity: 0 },
     runningHint: {
       ...type.caption,
       color: colors.inkSoft,
@@ -190,9 +205,9 @@ function createStyles(colors: ReturnType<typeof useSkinTokens>['colors'], SHELL:
       justifyContent: 'center',
     },
     stopButton: {
-      width: CIRCLE + 40,
-      height: CIRCLE + 40,
-      borderRadius: (CIRCLE + 40) / 2,
+      width: CIRCLE,
+      height: CIRCLE,
+      borderRadius: CIRCLE / 2,
       borderWidth: stroke.thick,
       borderColor: SHELL.buttonDeep,
       alignItems: 'center',
