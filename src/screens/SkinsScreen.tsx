@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import React, { useCallback, useMemo, useState } from 'react';
 import { Animated, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
@@ -12,20 +12,30 @@ import { useGame } from '../game/GameContext';
 import { GAME_MODES } from '../game/types';
 import { LOCALES, useI18n } from '../i18n';
 import { haptics } from '../native/haptics';
+import { useSkinPurchases, type SkinPurchases } from '../native/iap';
 import { playSound } from '../native/sound';
 import { useSkin, useSkinTokens } from '../theme/SkinContext';
 import type { Skin } from '../theme/skins';
 import { BEZEL_CAPTION, deriveColors, HIT_SIZE, MODE_GLYPH, spacing, stroke, type } from '../theme/tokens';
 
-function formatPrice(priceCents: number, freeLabel: string): string {
+/** Display-only fallback for before the real store price loads, and on
+ *  platforms with no store (web) — see `Skin.priceCents`. */
+function fallbackPrice(priceCents: number, freeLabel: string): string {
   if (priceCents === 0) return freeLabel;
   return `€${(priceCents / 100).toFixed(2)}`;
 }
 
-function badgeFor(skin: Skin, active: boolean, owned: boolean, t: (key: string) => string): string {
+/** The real, localized store price once loaded; the fallback until then. */
+function priceFor(skin: Skin, livePrices: Record<string, string>, freeLabel: string): string {
+  if (skin.priceCents === 0) return freeLabel;
+  const live = skin.productId ? livePrices[skin.productId] : undefined;
+  return live ?? fallbackPrice(skin.priceCents, freeLabel);
+}
+
+function badgeFor(skin: Skin, active: boolean, owned: boolean, livePrices: Record<string, string>, t: (key: string) => string): string {
   if (active) return t('skins.active');
   if (owned) return t('skins.owned');
-  return formatPrice(skin.priceCents, t('skins.free'));
+  return priceFor(skin, livePrices, t('skins.free'));
 }
 
 /**
@@ -46,8 +56,21 @@ export function SkinsScreen({ onDismiss }: { onDismiss: () => void }) {
   const { t } = useI18n();
   const { colors } = useSkinTokens();
   const styles = useMemo(() => createStyles(colors), [colors]);
-  const { skins, activeSkin, isOwned, setActiveSkin } = useSkin();
+  const { skins, activeSkin, isOwned, setActiveSkin, unlockSkin } = useSkin();
   const [previewId, setPreviewId] = useState<string | null>(null);
+
+  const productIds = useMemo(() => skins.map((s) => s.productId).filter((id): id is string => !!id), [skins]);
+  // useSkinPurchases only knows Play Billing product ids, not skin ids — the
+  // two are deliberately different strings (see Skin.productId), so unlocking
+  // has to translate one into the other before it reaches unlockSkin.
+  const unlockByProductId = useCallback(
+    (productId: string) => {
+      const skin = skins.find((s) => s.productId === productId);
+      if (skin) unlockSkin(skin.id);
+    },
+    [skins, unlockSkin],
+  );
+  const iap = useSkinPurchases(productIds, unlockByProductId);
 
   const previewSkin = previewId ? skins.find((s) => s.id === previewId) : undefined;
   if (previewSkin) {
@@ -58,7 +81,8 @@ export function SkinsScreen({ onDismiss }: { onDismiss: () => void }) {
         skin={previewSkin}
         owned={owned}
         active={active}
-        badge={badgeFor(previewSkin, active, owned, t)}
+        badge={badgeFor(previewSkin, active, owned, iap.pricesByProductId, t)}
+        iap={iap}
         onBack={() => setPreviewId(null)}
         onSelect={() => {
           setActiveSkin(previewSkin.id);
@@ -80,12 +104,27 @@ export function SkinsScreen({ onDismiss }: { onDismiss: () => void }) {
           skin={skin}
           active={skin.id === activeSkin.id}
           owned={isOwned(skin.id)}
+          livePrices={iap.pricesByProductId}
           onSelect={() => setActiveSkin(skin.id)}
           onPreview={() => setPreviewId(skin.id)}
         />
       ))}
 
       <Button label={t('skins.done')} testID="skins-done" variant="success" large onPress={onDismiss} style={styles.doneButton} />
+      {productIds.length > 0 ? (
+        <Pressable
+          testID="skins-restore"
+          accessibilityRole="button"
+          disabled={!iap.ready || iap.isRestoring}
+          onPress={() => {
+            haptics.selection();
+            iap.restore();
+          }}
+          style={({ pressed }) => [styles.restoreLink, pressed && styles.restoreLinkPressed, !iap.ready && styles.restoreLinkDisabled]}
+        >
+          <Text style={styles.restoreLinkText}>{iap.isRestoring ? t('skins.restoring') : t('skins.restore')}</Text>
+        </Pressable>
+      ) : null}
     </Screen>
   );
 }
@@ -94,12 +133,14 @@ function SkinCard({
   skin,
   active,
   owned,
+  livePrices,
   onSelect,
   onPreview,
 }: {
   skin: Skin;
   active: boolean;
   owned: boolean;
+  livePrices: Record<string, string>;
   onSelect: () => void;
   /** Only ever called for a locked skin — an owned one applies on tap instead. */
   onPreview: () => void;
@@ -109,7 +150,7 @@ function SkinCard({
   const styles = useMemo(() => createStyles(colors), [colors]);
   const { scale, onPressIn, onPressOut } = usePressScale(0.97);
   const fg = active ? colors.onInk : colors.onSurface;
-  const badge = badgeFor(skin, active, owned, t);
+  const badge = badgeFor(skin, active, owned, livePrices, t);
 
   if (!owned) {
     return (
@@ -297,6 +338,29 @@ function PreviewActionButton({
   );
 }
 
+/** The locked-preview's primary action: buy the skin through Play Billing,
+ *  or say plainly why that's not possible right now (still connecting, or —
+ *  on web, where there's no store at all — permanently). */
+function BuySkinButton({ skin, badge, iap }: { skin: Skin; badge: string; iap: SkinPurchases }) {
+  const { t } = useI18n();
+  const productId = skin.productId;
+  const busy = !!productId && iap.purchasingId === productId;
+
+  if (!productId || !iap.ready) {
+    return <PreviewActionButton testID="skin-preview-buy" label={t('skins.purchaseUnavailable')} skin={skin} disabled onPress={() => {}} />;
+  }
+
+  return (
+    <PreviewActionButton
+      testID="skin-preview-buy"
+      label={busy ? t('skins.purchasing') : t('skins.buy', { price: badge })}
+      skin={skin}
+      disabled={busy}
+      onPress={() => iap.purchase(productId)}
+    />
+  );
+}
+
 /**
  * A full-size, standalone preview of the *entire* home screen in a given
  * skin's colours — its own bezel, screen and wordmark, not nested inside the
@@ -315,6 +379,7 @@ function SkinPreviewScreen({
   owned,
   active,
   badge,
+  iap,
   onBack,
   onSelect,
 }: {
@@ -322,6 +387,7 @@ function SkinPreviewScreen({
   owned: boolean;
   active: boolean;
   badge: string;
+  iap: SkinPurchases;
   onBack: () => void;
   onSelect: () => void;
 }) {
@@ -467,7 +533,7 @@ function SkinPreviewScreen({
             onPress={onSelect}
           />
         ) : (
-          <PreviewActionButton testID="skin-preview-locked" label={badge} skin={skin} disabled onPress={() => {}} />
+          <BuySkinButton skin={skin} badge={badge} iap={iap} />
         )}
         <PreviewActionButton testID="skin-preview-back" label={t('skins.back')} skin={skin} ghost onPress={onBack} />
       </View>
@@ -503,6 +569,17 @@ function createStyles(colors: ReturnType<typeof useSkinTokens>['colors']) {
     cardTagline: { ...type.caption, marginTop: 2, letterSpacing: 0 },
     cardBadge: { ...type.caption, letterSpacing: 0 },
     doneButton: { marginTop: spacing.lg },
+    restoreLink: {
+      alignSelf: 'center',
+      marginTop: spacing.sm,
+      paddingVertical: spacing.xs,
+      paddingHorizontal: spacing.md,
+      borderWidth: stroke.hair,
+      borderColor: colors.ink,
+    },
+    restoreLinkPressed: { opacity: 0.5 },
+    restoreLinkDisabled: { opacity: 0.35 },
+    restoreLinkText: { ...type.label, color: colors.ink, letterSpacing: 0 },
   });
 }
 

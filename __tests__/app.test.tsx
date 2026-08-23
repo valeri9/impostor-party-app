@@ -511,7 +511,7 @@ describe('skins', () => {
 
     await fireEvent.press(screen.getByTestId('open-skins'));
     await waitFor(() => expect(screen.getByText(translate('en', 'skin.neonNebula.name'))).toBeTruthy());
-    expect(screen.getByText('€1.99')).toBeTruthy();
+    expect(screen.getByText('€1.00')).toBeTruthy();
     expect(screen.queryByTestId('skin-neon-nebula')).toBeNull();
   });
 
@@ -528,10 +528,73 @@ describe('skins', () => {
     expect(screen.getAllByText(translate('en', 'app.title')).length).toBeGreaterThan(0);
     expect(screen.getByText(translate('en', 'mode.word.name'))).toBeTruthy();
     expect(screen.getByText(translate('en', 'setup.start'))).toBeTruthy();
-    expect(screen.getByTestId('skin-preview-locked')).toBeTruthy();
+    expect(screen.getByTestId('skin-preview-buy')).toBeTruthy();
 
     await fireEvent.press(screen.getByTestId('skin-preview-back'));
     await waitFor(() => expect(screen.getByTestId('skins-done')).toBeTruthy());
+  });
+
+  it('buying a locked skin unlocks and persists it', async () => {
+    await render(<App />);
+    await waitFor(() => expect(screen.getByText(translate('en', 'app.tagline'))).toBeTruthy());
+
+    await fireEvent.press(screen.getByTestId('open-skins'));
+    await fireEvent.press(screen.getByTestId('skin-preview-neon-nebula'));
+    await waitFor(() => expect(screen.getByTestId('skin-preview-buy')).toBeTruthy());
+
+    await fireEvent.press(screen.getByTestId('skin-preview-buy'));
+    await waitFor(() => expect(screen.getByTestId('skin-preview-select')).toBeTruthy());
+    expect(screen.getByText(translate('en', 'skins.select'))).toBeTruthy();
+
+    const stored = await AsyncStorage.getItem(OWNED_SKINS_KEY);
+    expect(JSON.parse(stored ?? '[]')).toContain('neon-nebula');
+  });
+
+  it('a failed purchase leaves the skin locked', async () => {
+    // eslint-disable-next-line @typescript-eslint/no-var-requires
+    const { __iapMock } = require('expo-iap');
+    __iapMock.nextOutcome = 'error';
+
+    await render(<App />);
+    await waitFor(() => expect(screen.getByText(translate('en', 'app.tagline'))).toBeTruthy());
+
+    await fireEvent.press(screen.getByTestId('open-skins'));
+    await fireEvent.press(screen.getByTestId('skin-preview-neon-nebula'));
+    await waitFor(() => expect(screen.getByTestId('skin-preview-buy')).toBeTruthy());
+
+    await fireEvent.press(screen.getByTestId('skin-preview-buy'));
+    await waitFor(() => expect(screen.getByTestId('skin-preview-buy')).toBeTruthy());
+    expect(screen.queryByTestId('skin-preview-select')).toBeNull();
+
+    const stored = await AsyncStorage.getItem(OWNED_SKINS_KEY);
+    expect(JSON.parse(stored ?? '[]')).not.toContain('neon-nebula');
+  });
+
+  it('restoring purchases unlocks a skin already bought elsewhere', async () => {
+    // eslint-disable-next-line @typescript-eslint/no-var-requires
+    const { __iapMock } = require('expo-iap');
+    __iapMock.restorablePurchases = [
+      {
+        id: 'restored-1',
+        productId: 'skin_neon_nebula',
+        purchaseToken: 'restored-token-1',
+        isAutoRenewing: false,
+        purchaseState: 'purchased',
+        quantity: 1,
+        store: 'play',
+        transactionDate: Date.now(),
+      },
+    ];
+
+    await render(<App />);
+    await waitFor(() => expect(screen.getByText(translate('en', 'app.tagline'))).toBeTruthy());
+
+    await fireEvent.press(screen.getByTestId('open-skins'));
+    await waitFor(() => expect(screen.getByTestId('skins-restore')).toBeTruthy());
+    await fireEvent.press(screen.getByTestId('skins-restore'));
+
+    await waitFor(() => expect(screen.getByTestId('skin-neon-nebula')).toBeTruthy());
+    expect(screen.queryByTestId('skin-preview-neon-nebula')).toBeNull();
   });
 
   it('applies an owned skin on tap and re-colours the shop list itself immediately', async () => {

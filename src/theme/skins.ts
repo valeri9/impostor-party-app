@@ -47,8 +47,13 @@ export type Skin = {
    *  shown on the catalogue card and the full preview, e.g.
    *  "skin.shoreline.tagline". */
   taglineKey: string;
-  /** Price in euro cents. 0 = free — every player owns it from install. */
+  /** Price in euro cents. 0 = free — every player owns it from install.
+   *  Display-only fallback shown before the real store price loads (and on
+   *  web, where there is no store) — the actual charge is whatever's
+   *  configured in Play Console for `productId`. */
   priceCents: number;
+  /** Google Play in-app product SKU. Required for any skin with priceCents > 0. */
+  productId?: string;
   lcd: LcdPalette;
   shell: ShellPalette;
   /** An animated banner this skin shows above the title on setup, in place
@@ -115,7 +120,8 @@ export const SKINS: Skin[] = [
     id: 'neon-nebula',
     nameKey: 'skin.neonNebula.name',
     taglineKey: 'skin.neonNebula.tagline',
-    priceCents: 199,
+    priceCents: 100,
+    productId: 'skin_neon_nebula',
     // Same softening as DMG Classic: the background carried real saturation
     // (84%) at a lightness the eye already reads as bright — cut it roughly
     // in half so the screen reads as a calm lavender instead of a vivid one.
@@ -165,7 +171,8 @@ export const SKINS: Skin[] = [
     id: 'shoreline',
     nameKey: 'skin.shoreline.name',
     taglineKey: 'skin.shoreline.tagline',
-    priceCents: 249,
+    priceCents: 200,
+    productId: 'skin_shoreline',
     sceneId: 'shoreline',
     lcd: {
       darkest: '#0b3654',
