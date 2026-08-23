@@ -137,7 +137,7 @@ async function completeRevealLoop(playerCount: number) {
 }
 
 describe('setup', () => {
-  it('renders and switches between all six languages', async () => {
+  it('renders and switches between all seven languages', async () => {
     await render(<App />);
     await waitFor(() => expect(screen.getByText(translate('en', 'app.tagline'))).toBeTruthy());
 
@@ -148,6 +148,7 @@ describe('setup', () => {
       el: 'Ελληνικά',
       de: 'Deutsch',
       ro: 'Română',
+      tr: 'Türkçe',
     };
 
     for (const locale of LOCALES) {

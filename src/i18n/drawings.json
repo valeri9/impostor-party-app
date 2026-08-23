@@ -6,7 +6,8 @@
       "es": "Torre Eiffel",
       "el": "Πύργος του Άιφελ",
       "de": "Eiffelturm",
-      "ro": "Turnul Eiffel"
+      "ro": "Turnul Eiffel",
+      "tr": "Eyfel Kulesi"
     },
     "hint": {
       "en": "You'd need a whole day in Paris to see it properly",
@@ -14,7 +15,8 @@
       "es": "Torre alta",
       "el": "Ψηλός πύργος",
       "de": "Hoher Turm",
-      "ro": "Turn înalt"
+      "ro": "Turn înalt",
+      "tr": "Düzgünce görmek için Paris'te koca bir gün gerekir"
     }
   },
   {
@@ -24,7 +26,8 @@
       "es": "Gato",
       "el": "Γάτα",
       "de": "Katze",
-      "ro": "Pisică"
+      "ro": "Pisică",
+      "tr": "Kedi"
     },
     "hint": {
       "en": "Ignores you until it wants food",
@@ -32,7 +35,8 @@
       "es": "Animal doméstico",
       "el": "Κατοικίδιο",
       "de": "Haustier",
-      "ro": "Animal de companie"
+      "ro": "Animal de companie",
+      "tr": "Mama isteyene kadar seni görmezden gelir"
     }
   },
   {
@@ -42,7 +46,8 @@
       "es": "Bicicleta",
       "el": "Ποδήλατο",
       "de": "Fahrrad",
-      "ro": "Bicicletă"
+      "ro": "Bicicletă",
+      "tr": "Bisiklet"
     },
     "hint": {
       "en": "You need to keep moving or you'll tip over",
@@ -50,7 +55,8 @@
       "es": "Vehículo con ruedas",
       "el": "Όχημα με ρόδες",
       "de": "Fahrzeug mit Rädern",
-      "ro": "Vehicul cu roți"
+      "ro": "Vehicul cu roți",
+      "tr": "Hareket etmezsen devrilirsin"
     }
   },
   {
@@ -60,7 +66,8 @@
       "es": "Piña",
       "el": "Ανανάς",
       "de": "Ananas",
-      "ro": "Ananas"
+      "ro": "Ananas",
+      "tr": "Ananas"
     },
     "hint": {
       "en": "Spiky on the outside, sweet inside",
@@ -68,7 +75,8 @@
       "es": "Fruta tropical",
       "el": "Τροπικό φρούτο",
       "de": "Tropische Frucht",
-      "ro": "Fruct tropical"
+      "ro": "Fruct tropical",
+      "tr": "Dışı dikenli, içi tatlı"
     }
   },
   {
@@ -78,7 +86,8 @@
       "es": "Cohete",
       "el": "Πύραυλος",
       "de": "Rakete",
-      "ro": "Rachetă"
+      "ro": "Rachetă",
+      "tr": "Roket"
     },
     "hint": {
       "en": "Counts down before it goes",
@@ -86,7 +95,8 @@
       "es": "Máquina voladora",
       "el": "Ιπτάμενη μηχανή",
       "de": "Fluggerät",
-      "ro": "Mașinărie zburătoare"
+      "ro": "Mașinărie zburătoare",
+      "tr": "Fırlamadan önce geri sayar"
     }
   },
   {
@@ -96,7 +106,8 @@
       "es": "Muñeco de nieve",
       "el": "Χιονάνθρωπος",
       "de": "Schneemann",
-      "ro": "Om de zăpadă"
+      "ro": "Om de zăpadă",
+      "tr": "Kardan adam"
     },
     "hint": {
       "en": "Melts by the afternoon",
@@ -104,7 +115,8 @@
       "es": "Figura de invierno",
       "el": "Χειμωνιάτικη φιγούρα",
       "de": "Winterfigur",
-      "ro": "Figură de iarnă"
+      "ro": "Figură de iarnă",
+      "tr": "Öğleden sonra erir"
     }
   },
   {
@@ -114,7 +126,8 @@
       "es": "Faro",
       "el": "Φάρος",
       "de": "Leuchtturm",
-      "ro": "Far"
+      "ro": "Far",
+      "tr": "Deniz feneri"
     },
     "hint": {
       "en": "Warns ships away from the rocks",
@@ -122,7 +135,8 @@
       "es": "Edificio alto junto al mar",
       "el": "Ψηλό κτίριο δίπλα στη θάλασσα",
       "de": "Hohes Gebäude am Meer",
-      "ro": "Clădire înaltă lângă mare"
+      "ro": "Clădire înaltă lângă mare",
+      "tr": "Gemileri kayalıklardan uzak tutar"
     }
   },
   {
@@ -132,7 +146,8 @@
       "es": "Pulpo",
       "el": "Χταπόδι",
       "de": "Krake",
-      "ro": "Caracatiță"
+      "ro": "Caracatiță",
+      "tr": "Ahtapot"
     },
     "hint": {
       "en": "Escapes through the tiniest gap",
@@ -140,7 +155,8 @@
       "es": "Criatura marina",
       "el": "Θαλάσσιο πλάσμα",
       "de": "Meerestier",
-      "ro": "Creatură marină"
+      "ro": "Creatură marină",
+      "tr": "En küçük aralıktan bile kaçar"
     }
   },
   {
@@ -150,7 +166,8 @@
       "es": "Girasol",
       "el": "Ηλίανθος",
       "de": "Sonnenblume",
-      "ro": "Floarea-soarelui"
+      "ro": "Floarea-soarelui",
+      "tr": "Ayçiçeği"
     },
     "hint": {
       "en": "Turns to follow the light",
@@ -158,7 +175,8 @@
       "es": "Flor",
       "el": "Λουλούδι",
       "de": "Blume",
-      "ro": "Floare"
+      "ro": "Floare",
+      "tr": "Işığı takip etmek için döner"
     }
   },
   {
@@ -168,7 +186,8 @@
       "es": "Guitarra",
       "el": "Κιθάρα",
       "de": "Gitarre",
-      "ro": "Chitară"
+      "ro": "Chitară",
+      "tr": "Gitar"
     },
     "hint": {
       "en": "You strum it around a campfire",
@@ -176,7 +195,8 @@
       "es": "Instrumento musical",
       "el": "Μουσικό όργανο",
       "de": "Musikinstrument",
-      "ro": "Instrument muzical"
+      "ro": "Instrument muzical",
+      "tr": "Kamp ateşinin etrafında tıngırdatılır"
     }
   },
   {
@@ -186,7 +206,8 @@
       "es": "Castillo",
       "el": "Κάστρο",
       "de": "Schloss",
-      "ro": "Castel"
+      "ro": "Castel",
+      "tr": "Kale"
     },
     "hint": {
       "en": "Once needed a moat for protection",
@@ -194,7 +215,8 @@
       "es": "Edificio antiguo y grande",
       "el": "Παλιό μεγάλο κτίριο",
       "de": "Altes großes Gebäude",
-      "ro": "Clădire veche și mare"
+      "ro": "Clădire veche și mare",
+      "tr": "Bir zamanlar korunmak için hendek gerektirirdi"
     }
   },
   {
@@ -204,7 +226,8 @@
       "es": "Globo aerostático",
       "el": "Αερόστατο",
       "de": "Heißluftballon",
-      "ro": "Balon cu aer cald"
+      "ro": "Balon cu aer cald",
+      "tr": "Sıcak hava balonu"
     },
     "hint": {
       "en": "Rises when the burner fires",
@@ -212,7 +235,8 @@
       "es": "Algo que flota en el cielo",
       "el": "Κάτι που επιπλέει στον ουρανό",
       "de": "Etwas, das am Himmel schwebt",
-      "ro": "Ceva ce plutește pe cer"
+      "ro": "Ceva ce plutește pe cer",
+      "tr": "Alev yanınca yükselir"
     }
   },
   {
@@ -222,7 +246,8 @@
       "es": "Perro",
       "el": "Σκύλος",
       "de": "Hund",
-      "ro": "Câine"
+      "ro": "Câine",
+      "tr": "Köpek"
     },
     "hint": {
       "en": "Waits by the door when you leave",
@@ -230,7 +255,8 @@
       "es": "Mascota fiel",
       "el": "Πιστό κατοικίδιο",
       "de": "Treues Haustier",
-      "ro": "Animal de casă credincios"
+      "ro": "Animal de casă credincios",
+      "tr": "Çıktığında kapının önünde bekler"
     }
   },
   {
@@ -240,7 +266,8 @@
       "es": "Pez",
       "el": "Ψάρι",
       "de": "Fisch",
-      "ro": "Pește"
+      "ro": "Pește",
+      "tr": "Balık"
     },
     "hint": {
       "en": "Needs water, not air",
@@ -248,7 +275,8 @@
       "es": "Animal de agua",
       "el": "Ζώο του νερού",
       "de": "Wassertier",
-      "ro": "Animal de apă"
+      "ro": "Animal de apă",
+      "tr": "Havaya değil suya ihtiyaç duyar"
     }
   },
   {
@@ -258,7 +286,8 @@
       "es": "Pájaro",
       "el": "Πουλί",
       "de": "Vogel",
-      "ro": "Pasăre"
+      "ro": "Pasăre",
+      "tr": "Kuş"
     },
     "hint": {
       "en": "Sings before sunrise",
@@ -266,7 +295,8 @@
       "es": "Animal que vuela",
       "el": "Ζώο που πετά",
       "de": "Fliegendes Tier",
-      "ro": "Animal care zboară"
+      "ro": "Animal care zboară",
+      "tr": "Gün doğmadan öter"
     }
   },
   {
@@ -276,7 +306,8 @@
       "es": "Elefante",
       "el": "Ελέφαντας",
       "de": "Elefant",
-      "ro": "Elefant"
+      "ro": "Elefant",
+      "tr": "Fil"
     },
     "hint": {
       "en": "Never forgets, they say",
@@ -284,7 +315,8 @@
       "es": "Animal con trompa",
       "el": "Ζώο με προβοσκίδα",
       "de": "Tier mit Rüssel",
-      "ro": "Animal cu trompă"
+      "ro": "Animal cu trompă",
+      "tr": "Hiç unutmadığı söylenir"
     }
   },
   {
@@ -294,7 +326,8 @@
       "es": "Jirafa",
       "el": "Καμηλοπάρδαλη",
       "de": "Giraffe",
-      "ro": "Girafă"
+      "ro": "Girafă",
+      "tr": "Zürafa"
     },
     "hint": {
       "en": "Reaches the highest leaves",
@@ -302,7 +335,8 @@
       "es": "Animal de cuello largo",
       "el": "Ζώο με μακρύ λαιμό",
       "de": "Tier mit langem Hals",
-      "ro": "Animal cu gât lung"
+      "ro": "Animal cu gât lung",
+      "tr": "En yüksekteki yapraklara ulaşır"
     }
   },
   {
@@ -312,7 +346,8 @@
       "es": "Serpiente",
       "el": "Φίδι",
       "de": "Schlange",
-      "ro": "Șarpe"
+      "ro": "Șarpe",
+      "tr": "Yılan"
     },
     "hint": {
       "en": "Sheds its skin",
@@ -320,7 +355,8 @@
       "es": "Animal largo que repta",
       "el": "Μακρύ ζώο που έρπει",
       "de": "Langes kriechendes Tier",
-      "ro": "Animal lung care se târăște"
+      "ro": "Animal lung care se târăște",
+      "tr": "Derisini değiştirir"
     }
   },
   {
@@ -330,7 +366,8 @@
       "es": "Tortuga",
       "el": "Χελώνα",
       "de": "Schildkröte",
-      "ro": "Broască țestoasă"
+      "ro": "Broască țestoasă",
+      "tr": "Kaplumbağa"
     },
     "hint": {
       "en": "Carries its home everywhere",
@@ -338,7 +375,8 @@
       "es": "Animal con caparazón",
       "el": "Ζώο με καβούκι",
       "de": "Tier mit Panzer",
-      "ro": "Animal cu carapace"
+      "ro": "Animal cu carapace",
+      "tr": "Evini her yere taşır"
     }
   },
   {
@@ -348,7 +386,8 @@
       "es": "Mariposa",
       "el": "Πεταλούδα",
       "de": "Schmetterling",
-      "ro": "Fluture"
+      "ro": "Fluture",
+      "tr": "Kelebek"
     },
     "hint": {
       "en": "Started out as something less colourful",
@@ -356,7 +395,8 @@
       "es": "Insecto con alas",
       "el": "Έντομο με φτερά",
       "de": "Insekt mit Flügeln",
-      "ro": "Insectă cu aripi"
+      "ro": "Insectă cu aripi",
+      "tr": "Başlangıçta daha az renkli bir şeydi"
     }
   },
   {
@@ -366,7 +406,8 @@
       "es": "Abeja",
       "el": "Μέλισσα",
       "de": "Biene",
-      "ro": "Albină"
+      "ro": "Albină",
+      "tr": "Arı"
     },
     "hint": {
       "en": "Makes something sweet in a hive",
@@ -374,7 +415,8 @@
       "es": "Insecto con rayas",
       "el": "Ριγέ έντομο",
       "de": "Gestreiftes Insekt",
-      "ro": "Insectă cu dungi"
+      "ro": "Insectă cu dungi",
+      "tr": "Kovanda tatlı bir şey üretir"
     }
   },
   {
@@ -384,7 +426,8 @@
       "es": "Araña",
       "el": "Αράχνη",
       "de": "Spinne",
-      "ro": "Păianjen"
+      "ro": "Păianjen",
+      "tr": "Örümcek"
     },
     "hint": {
       "en": "Makes people jump in the bath",
@@ -392,7 +435,8 @@
       "es": "Animal de ocho patas",
       "el": "Ζώο με οκτώ πόδια",
       "de": "Tier mit acht Beinen",
-      "ro": "Animal cu opt picioare"
+      "ro": "Animal cu opt picioare",
+      "tr": "İnsanları küvette zıplatır"
     }
   },
   {
@@ -402,7 +446,8 @@
       "es": "Cangrejo",
       "el": "Καβούρι",
       "de": "Krabbe",
-      "ro": "Crab"
+      "ro": "Crab",
+      "tr": "Yengeç"
     },
     "hint": {
       "en": "Walks sideways",
@@ -410,7 +455,8 @@
       "es": "Animal con pinzas",
       "el": "Ζώο με δαγκάνες",
       "de": "Tier mit Scheren",
-      "ro": "Animal cu clești"
+      "ro": "Animal cu clești",
+      "tr": "Yana doğru yürür"
     }
   },
   {
@@ -420,7 +466,8 @@
       "es": "Ballena",
       "el": "Φάλαινα",
       "de": "Wal",
-      "ro": "Balenă"
+      "ro": "Balenă",
+      "tr": "Balina"
     },
     "hint": {
       "en": "Breathes through a hole on top",
@@ -428,7 +475,8 @@
       "es": "Animal marino gigante",
       "el": "Γιγάντιο θαλάσσιο ζώο",
       "de": "Riesiges Meerestier",
-      "ro": "Animal marin gigantic"
+      "ro": "Animal marin gigantic",
+      "tr": "Tepesindeki delikten nefes alır"
     }
   },
   {
@@ -438,7 +486,8 @@
       "es": "Pingüino",
       "el": "Πιγκουίνος",
       "de": "Pinguin",
-      "ro": "Pinguin"
+      "ro": "Pinguin",
+      "tr": "Penguen"
     },
     "hint": {
       "en": "Waddles instead of walks",
@@ -446,7 +495,8 @@
       "es": "Ave que no vuela",
       "el": "Πουλί που δεν πετά",
       "de": "Vogel, der nicht fliegt",
-      "ro": "Pasăre care nu zboară"
+      "ro": "Pasăre care nu zboară",
+      "tr": "Yürümek yerine paytak paytak gider"
     }
   },
   {
@@ -456,7 +506,8 @@
       "es": "Búho",
       "el": "Κουκουβάγια",
       "de": "Eule",
-      "ro": "Bufniță"
+      "ro": "Bufniță",
+      "tr": "Baykuş"
     },
     "hint": {
       "en": "Turns its head almost all the way around",
@@ -464,7 +515,8 @@
       "es": "Ave de la noche",
       "el": "Πουλί της νύχτας",
       "de": "Vogel der Nacht",
-      "ro": "Pasăre a nopții"
+      "ro": "Pasăre a nopții",
+      "tr": "Başını neredeyse tam tur döndürür"
     }
   },
   {
@@ -474,7 +526,8 @@
       "es": "Rana",
       "el": "Βάτραχος",
       "de": "Frosch",
-      "ro": "Broască"
+      "ro": "Broască",
+      "tr": "Kurbağa"
     },
     "hint": {
       "en": "Catches its dinner with its tongue",
@@ -482,7 +535,8 @@
       "es": "Saltador verde",
       "el": "Πράσινο ζώο που πηδά",
       "de": "Grüner Springer",
-      "ro": "Săritor verde"
+      "ro": "Săritor verde",
+      "tr": "Akşam yemeğini diliyle yakalar"
     }
   },
   {
@@ -492,7 +546,8 @@
       "es": "Caballo",
       "el": "Άλογο",
       "de": "Pferd",
-      "ro": "Cal"
+      "ro": "Cal",
+      "tr": "At"
     },
     "hint": {
       "en": "Wears shoes made of metal",
@@ -500,7 +555,8 @@
       "es": "Animal que se monta",
       "el": "Ζώο που το καβαλάς",
       "de": "Tier zum Reiten",
-      "ro": "Animal pe care îl călărești"
+      "ro": "Animal pe care îl călărești",
+      "tr": "Metalden yapılma nal takar"
     }
   },
   {
@@ -510,7 +566,8 @@
       "es": "Cerdo",
       "el": "Γουρούνι",
       "de": "Schwein",
-      "ro": "Porc"
+      "ro": "Porc",
+      "tr": "Domuz"
     },
     "hint": {
       "en": "Rolls in the mud to cool off",
@@ -518,7 +575,8 @@
       "es": "Animal rosa de granja",
       "el": "Ροζ ζώο της φάρμας",
       "de": "Rosa Bauernhoftier",
-      "ro": "Animal roz de fermă"
+      "ro": "Animal roz de fermă",
+      "tr": "Serinlemek için çamurda yuvarlanır"
     }
   },
   {
@@ -528,7 +586,8 @@
       "es": "Vaca",
       "el": "Αγελάδα",
       "de": "Kuh",
-      "ro": "Vacă"
+      "ro": "Vacă",
+      "tr": "İnek"
     },
     "hint": {
       "en": "Chews the same bite twice",
@@ -536,7 +595,8 @@
       "es": "Animal que da leche",
       "el": "Ζώο που δίνει γάλα",
       "de": "Tier, das Milch gibt",
-      "ro": "Animal care dă lapte"
+      "ro": "Animal care dă lapte",
+      "tr": "Aynı lokmayı iki kez çiğner"
     }
   },
   {
@@ -546,7 +606,8 @@
       "es": "Pato",
       "el": "Πάπια",
       "de": "Ente",
-      "ro": "Rață"
+      "ro": "Rață",
+      "tr": "Ördek"
     },
     "hint": {
       "en": "Water rolls right off its back",
@@ -554,7 +615,8 @@
       "es": "Ave acuática",
       "el": "Υδρόβιο πουλί",
       "de": "Wasservogel",
-      "ro": "Pasăre de apă"
+      "ro": "Pasăre de apă",
+      "tr": "Su sırtından kayar geçer"
     }
   },
   {
@@ -564,7 +626,8 @@
       "es": "Conejo",
       "el": "Κουνέλι",
       "de": "Kaninchen",
-      "ro": "Iepure"
+      "ro": "Iepure",
+      "tr": "Tavşan"
     },
     "hint": {
       "en": "Thumps its foot when nervous",
@@ -572,7 +635,8 @@
       "es": "Animal de orejas largas",
       "el": "Ζώο με μακριά αυτιά",
       "de": "Tier mit langen Ohren",
-      "ro": "Animal cu urechi lungi"
+      "ro": "Animal cu urechi lungi",
+      "tr": "Gerginken ayağını yere vurur"
     }
   },
   {
@@ -582,7 +646,8 @@
       "es": "Ratón",
       "el": "Ποντίκι",
       "de": "Maus",
-      "ro": "Șoarece"
+      "ro": "Șoarece",
+      "tr": "Fare"
     },
     "hint": {
       "en": "Terrifies people much bigger than it",
@@ -590,7 +655,8 @@
       "es": "Animal diminuto con cola",
       "el": "Μικροσκοπικό ζώο με ουρά",
       "de": "Winziges Tier mit Schwanz",
-      "ro": "Animal mititel cu coadă"
+      "ro": "Animal mititel cu coadă",
+      "tr": "Kendisinden çok daha büyük insanları korkutur"
     }
   },
   {
@@ -600,7 +666,8 @@
       "es": "Murciélago",
       "el": "Νυχτερίδα",
       "de": "Fledermaus",
-      "ro": "Liliac"
+      "ro": "Liliac",
+      "tr": "Yarasa"
     },
     "hint": {
       "en": "Sleeps upside down",
@@ -608,7 +675,8 @@
       "es": "Animal que vuela de noche",
       "el": "Ζώο που πετά τη νύχτα",
       "de": "Tier, das nachts fliegt",
-      "ro": "Animal care zboară noaptea"
+      "ro": "Animal care zboară noaptea",
+      "tr": "Baş aşağı uyur"
     }
   },
   {
@@ -618,7 +686,8 @@
       "es": "Tiburón",
       "el": "Καρχαρίας",
       "de": "Hai",
-      "ro": "Rechin"
+      "ro": "Rechin",
+      "tr": "Köpekbalığı"
     },
     "hint": {
       "en": "Never stops swimming, even asleep",
@@ -626,7 +695,8 @@
       "es": "Cazador del mar",
       "el": "Κυνηγός της θάλασσας",
       "de": "Jäger des Meeres",
-      "ro": "Vânător al mării"
+      "ro": "Vânător al mării",
+      "tr": "Uyurken bile yüzmeyi bırakmaz"
     }
   },
   {
@@ -636,7 +706,8 @@
       "es": "Caracol",
       "el": "Σαλιγκάρι",
       "de": "Schnecke",
-      "ro": "Melc"
+      "ro": "Melc",
+      "tr": "Salyangoz"
     },
     "hint": {
       "en": "Leaves a shiny trail behind",
@@ -644,7 +715,8 @@
       "es": "Animal que lleva su casa",
       "el": "Ζώο που κουβαλά το σπίτι του",
       "de": "Tier, das sein Haus trägt",
-      "ro": "Animal care își poartă casa"
+      "ro": "Animal care își poartă casa",
+      "tr": "Arkasında parlak bir iz bırakır"
     }
   },
   {
@@ -654,7 +726,8 @@
       "es": "Hormiga",
       "el": "Μυρμήγκι",
       "de": "Ameise",
-      "ro": "Furnică"
+      "ro": "Furnică",
+      "tr": "Karınca"
     },
     "hint": {
       "en": "Can carry many times its own weight",
@@ -662,7 +735,8 @@
       "es": "Insecto muy pequeño",
       "el": "Πολύ μικρό έντομο",
       "de": "Sehr kleines Insekt",
-      "ro": "Insectă foarte mică"
+      "ro": "Insectă foarte mică",
+      "tr": "Kendi ağırlığının kat kat fazlasını taşıyabilir"
     }
   },
   {
@@ -672,7 +746,8 @@
       "es": "Mariquita",
       "el": "Πασχαλίτσα",
       "de": "Marienkäfer",
-      "ro": "Buburuză"
+      "ro": "Buburuză",
+      "tr": "Uğur böceği"
     },
     "hint": {
       "en": "Considered good luck if it lands on you",
@@ -680,7 +755,8 @@
       "es": "Insecto con puntos",
       "el": "Έντομο με βούλες",
       "de": "Insekt mit Punkten",
-      "ro": "Insectă cu buline"
+      "ro": "Insectă cu buline",
+      "tr": "Üzerine konarsa uğur getirdiğine inanılır"
     }
   },
   {
@@ -690,7 +766,8 @@
       "es": "Delfín",
       "el": "Δελφίνι",
       "de": "Delfin",
-      "ro": "Delfin"
+      "ro": "Delfin",
+      "tr": "Yunus"
     },
     "hint": {
       "en": "Sleeps with one eye open",
@@ -698,7 +775,8 @@
       "es": "Animal marino juguetón",
       "el": "Παιχνιδιάρικο θαλάσσιο ζώο",
       "de": "Verspieltes Meerestier",
-      "ro": "Animal marin jucăuș"
+      "ro": "Animal marin jucăuș",
+      "tr": "Bir gözü açık uyur"
     }
   },
   {
@@ -708,7 +786,8 @@
       "es": "León",
       "el": "Λιοντάρι",
       "de": "Löwe",
-      "ro": "Leu"
+      "ro": "Leu",
+      "tr": "Aslan"
     },
     "hint": {
       "en": "The rest of its family does most of the hunting",
@@ -716,7 +795,8 @@
       "es": "Animal con melena",
       "el": "Ζώο με χαίτη",
       "de": "Tier mit Mähne",
-      "ro": "Animal cu coamă"
+      "ro": "Animal cu coamă",
+      "tr": "Avlanmanın çoğunu ailenin geri kalanı yapar"
     }
   },
   {
@@ -726,7 +806,8 @@
       "es": "Oso",
       "el": "Αρκούδα",
       "de": "Bär",
-      "ro": "Urs"
+      "ro": "Urs",
+      "tr": "Ayı"
     },
     "hint": {
       "en": "Sleeps through most of winter",
@@ -734,7 +815,8 @@
       "es": "Animal grande y peludo",
       "el": "Μεγάλο τριχωτό ζώο",
       "de": "Großes pelziges Tier",
-      "ro": "Animal mare și blănos"
+      "ro": "Animal mare și blănos",
+      "tr": "Kışın büyük bölümünü uyuyarak geçirir"
     }
   },
   {
@@ -744,7 +826,8 @@
       "es": "Mono",
       "el": "Μαϊμού",
       "de": "Affe",
-      "ro": "Maimuță"
+      "ro": "Maimuță",
+      "tr": "Maymun"
     },
     "hint": {
       "en": "Great at copying what it sees",
@@ -752,7 +835,8 @@
       "es": "Animal que trepa",
       "el": "Ζώο που σκαρφαλώνει",
       "de": "Tier, das klettert",
-      "ro": "Animal care se cațără"
+      "ro": "Animal care se cațără",
+      "tr": "Gördüğünü taklit etmede ustadır"
     }
   },
   {
@@ -762,7 +846,8 @@
       "es": "Canguro",
       "el": "Καγκουρό",
       "de": "Känguru",
-      "ro": "Cangur"
+      "ro": "Cangur",
+      "tr": "Kanguru"
     },
     "hint": {
       "en": "Carries its baby in a pocket",
@@ -770,7 +855,8 @@
       "es": "Animal que da saltos",
       "el": "Ζώο που χοροπηδά",
       "de": "Tier, das hüpft",
-      "ro": "Animal care țopăie"
+      "ro": "Animal care țopăie",
+      "tr": "Yavrusunu bir cepte taşır"
     }
   },
   {
@@ -780,7 +866,8 @@
       "es": "Ardilla",
       "el": "Σκίουρος",
       "de": "Eichhörnchen",
-      "ro": "Veveriță"
+      "ro": "Veveriță",
+      "tr": "Sincap"
     },
     "hint": {
       "en": "Forgets where it buried half its food",
@@ -788,7 +875,8 @@
       "es": "Animal de cola peluda",
       "el": "Ζώο με φουντωτή ουρά",
       "de": "Tier mit buschigem Schwanz",
-      "ro": "Animal cu coadă stufoasă"
+      "ro": "Animal cu coadă stufoasă",
+      "tr": "Yiyeceğinin yarısını nereye gömdüğünü unutur"
     }
   },
   {
@@ -798,7 +886,8 @@
       "es": "Camello",
       "el": "Καμήλα",
       "de": "Kamel",
-      "ro": "Cămilă"
+      "ro": "Cămilă",
+      "tr": "Deve"
     },
     "hint": {
       "en": "Can go a long time without a drink",
@@ -806,7 +895,8 @@
       "es": "Animal con jorobas",
       "el": "Ζώο με καμπούρες",
       "de": "Tier mit Höckern",
-      "ro": "Animal cu cocoașe"
+      "ro": "Animal cu cocoașe",
+      "tr": "Uzun süre susuz kalabilir"
     }
   },
   {
@@ -816,7 +906,8 @@
       "es": "Gallo",
       "el": "Κόκορας",
       "de": "Hahn",
-      "ro": "Cocoș"
+      "ro": "Cocoș",
+      "tr": "Horoz"
     },
     "hint": {
       "en": "Wakes the farm up whether you like it or not",
@@ -824,7 +915,8 @@
       "es": "Ave de granja que canta",
       "el": "Πουλί της φάρμας που λαλεί",
       "de": "Hofvogel, der kräht",
-      "ro": "Pasăre de curte care cântă"
+      "ro": "Pasăre de curte care cântă",
+      "tr": "İster istemez tüm çiftliği uyandırır"
     }
   },
   {
@@ -834,7 +926,8 @@
       "es": "Cisne",
       "el": "Κύκνος",
       "de": "Schwan",
-      "ro": "Lebădă"
+      "ro": "Lebădă",
+      "tr": "Kuğu"
     },
     "hint": {
       "en": "Mates for life",
@@ -842,7 +935,8 @@
       "es": "Ave acuática elegante",
       "el": "Κομψό υδρόβιο πουλί",
       "de": "Eleganter Wasservogel",
-      "ro": "Pasăre de apă elegantă"
+      "ro": "Pasăre de apă elegantă",
+      "tr": "Ömür boyu tek eşle yaşar"
     }
   },
   {
@@ -852,7 +946,8 @@
       "es": "Caballito de mar",
       "el": "Ιππόκαμπος",
       "de": "Seepferdchen",
-      "ro": "Căluț de mare"
+      "ro": "Căluț de mare",
+      "tr": "Deniz atı"
     },
     "hint": {
       "en": "The dad carries the babies",
@@ -860,7 +955,8 @@
       "es": "Criatura marina pequeña",
       "el": "Μικρό θαλάσσιο πλάσμα",
       "de": "Kleines Meerestier",
-      "ro": "Creatură marină mică"
+      "ro": "Creatură marină mică",
+      "tr": "Yavruları baba taşır"
     }
   },
   {
@@ -870,7 +966,8 @@
       "es": "Estrella de mar",
       "el": "Αστερίας",
       "de": "Seestern",
-      "ro": "Stea de mare"
+      "ro": "Stea de mare",
+      "tr": "Deniz yıldızı"
     },
     "hint": {
       "en": "Can regrow a lost limb",
@@ -878,7 +975,8 @@
       "es": "Animal marino con brazos",
       "el": "Θαλάσσιο ζώο με βραχίονες",
       "de": "Meerestier mit Armen",
-      "ro": "Animal marin cu brațe"
+      "ro": "Animal marin cu brațe",
+      "tr": "Kaybettiği bir kolunu yeniden büyütebilir"
     }
   },
   {
@@ -888,7 +986,8 @@
       "es": "Medusa",
       "el": "Μέδουσα",
       "de": "Qualle",
-      "ro": "Meduză"
+      "ro": "Meduză",
+      "tr": "Denizanası"
     },
     "hint": {
       "en": "Has no brain at all",
@@ -896,7 +995,8 @@
       "es": "Criatura marina blanda",
       "el": "Μαλακό θαλάσσιο πλάσμα",
       "de": "Weiches Meerestier",
-      "ro": "Creatură marină moale"
+      "ro": "Creatură marină moale",
+      "tr": "Hiç beyni yoktur"
     }
   },
   {
@@ -906,7 +1006,8 @@
       "es": "Gusano",
       "el": "Σκουλήκι",
       "de": "Wurm",
-      "ro": "Vierme"
+      "ro": "Vierme",
+      "tr": "Solucan"
     },
     "hint": {
       "en": "Comes out after the rain",
@@ -914,7 +1015,8 @@
       "es": "Criatura larga y blanda",
       "el": "Μακρύ μαλακό πλάσμα",
       "de": "Langes weiches Wesen",
-      "ro": "Creatură lungă și moale"
+      "ro": "Creatură lungă și moale",
+      "tr": "Yağmurdan sonra dışarı çıkar"
     }
   },
   {
@@ -924,7 +1026,8 @@
       "es": "Oruga",
       "el": "Κάμπια",
       "de": "Raupe",
-      "ro": "Omidă"
+      "ro": "Omidă",
+      "tr": "Tırtıl"
     },
     "hint": {
       "en": "Builds itself a case before it changes completely",
@@ -932,7 +1035,8 @@
       "es": "Insecto antes de cambiar",
       "el": "Έντομο πριν αλλάξει",
       "de": "Insekt vor der Verwandlung",
-      "ro": "Insectă înainte de schimbare"
+      "ro": "Insectă înainte de schimbare",
+      "tr": "Tamamen değişmeden önce kendine bir kılıf örer"
     }
   },
   {
@@ -942,7 +1046,8 @@
       "es": "Libélula",
       "el": "Λιβελλούλα",
       "de": "Libelle",
-      "ro": "Libelulă"
+      "ro": "Libelulă",
+      "tr": "Yusufçuk"
     },
     "hint": {
       "en": "Hovers like a tiny helicopter",
@@ -950,7 +1055,8 @@
       "es": "Insecto cerca del agua",
       "el": "Έντομο κοντά στο νερό",
       "de": "Insekt am Wasser",
-      "ro": "Insectă de lângă apă"
+      "ro": "Insectă de lângă apă",
+      "tr": "Minik bir helikopter gibi havada asılı kalır"
     }
   },
   {
@@ -960,7 +1066,8 @@
       "es": "Escorpión",
       "el": "Σκορπιός",
       "de": "Skorpion",
-      "ro": "Scorpion"
+      "ro": "Scorpion",
+      "tr": "Akrep"
     },
     "hint": {
       "en": "Glows under a blacklight",
@@ -968,7 +1075,8 @@
       "es": "Criatura del desierto con aguijón",
       "el": "Πλάσμα της ερήμου με κεντρί",
       "de": "Wüstentier mit Stachel",
-      "ro": "Creatură de deșert cu ac"
+      "ro": "Creatură de deșert cu ac",
+      "tr": "Mor ışık altında parlar"
     }
   },
   {
@@ -978,7 +1086,8 @@
       "es": "Flamenco",
       "el": "Φλαμίνγκο",
       "de": "Flamingo",
-      "ro": "Flamingo"
+      "ro": "Flamingo",
+      "tr": "Flamingo"
     },
     "hint": {
       "en": "Stands on one leg for hours",
@@ -986,7 +1095,8 @@
       "es": "Ave rosa",
       "el": "Ροζ πουλί",
       "de": "Rosa Vogel",
-      "ro": "Pasăre roz"
+      "ro": "Pasăre roz",
+      "tr": "Saatlerce tek ayak üstünde durur"
     }
   },
   {
@@ -996,7 +1106,8 @@
       "es": "Pavo real",
       "el": "Παγώνι",
       "de": "Pfau",
-      "ro": "Păun"
+      "ro": "Păun",
+      "tr": "Tavus kuşu"
     },
     "hint": {
       "en": "Shows off to impress a mate",
@@ -1004,7 +1115,8 @@
       "es": "Ave de cola grande",
       "el": "Πουλί με μεγάλη ουρά",
       "de": "Vogel mit großem Schwanz",
-      "ro": "Pasăre cu coadă mare"
+      "ro": "Pasăre cu coadă mare",
+      "tr": "Eş bulmak için gösteriş yapar"
     }
   },
   {
@@ -1014,7 +1126,8 @@
       "es": "Ciervo",
       "el": "Ελάφι",
       "de": "Hirsch",
-      "ro": "Cerb"
+      "ro": "Cerb",
+      "tr": "Geyik"
     },
     "hint": {
       "en": "Freezes when caught in headlights",
@@ -1022,7 +1135,8 @@
       "es": "Animal del bosque con cuernos",
       "el": "Ζώο του δάσους με κέρατα",
       "de": "Waldtier mit Geweih",
-      "ro": "Animal de pădure cu coarne"
+      "ro": "Animal de pădure cu coarne",
+      "tr": "Farlar üzerine düşünce donup kalır"
     }
   },
   {
@@ -1032,7 +1146,8 @@
       "es": "Zorro",
       "el": "Αλεπού",
       "de": "Fuchs",
-      "ro": "Vulpe"
+      "ro": "Vulpe",
+      "tr": "Tilki"
     },
     "hint": {
       "en": "Raids the henhouse at night",
@@ -1040,7 +1155,8 @@
       "es": "Animal de pelaje rojizo",
       "el": "Ζώο με κόκκινο τρίχωμα",
       "de": "Tier mit rotem Fell",
-      "ro": "Animal cu blană roșcată"
+      "ro": "Animal cu blană roșcată",
+      "tr": "Geceleyin kümesi basar"
     }
   },
   {
@@ -1050,7 +1166,8 @@
       "es": "Erizo",
       "el": "Σκαντζόχοιρος",
       "de": "Igel",
-      "ro": "Arici"
+      "ro": "Arici",
+      "tr": "Kirpi"
     },
     "hint": {
       "en": "Curls into a ball when scared",
@@ -1058,7 +1175,8 @@
       "es": "Animal con púas",
       "el": "Ζώο με αγκάθια",
       "de": "Tier mit Stacheln",
-      "ro": "Animal cu țepi"
+      "ro": "Animal cu țepi",
+      "tr": "Korkunca top gibi kıvrılır"
     }
   },
   {
@@ -1068,7 +1186,8 @@
       "es": "Gallina",
       "el": "Κότα",
       "de": "Huhn",
-      "ro": "Găină"
+      "ro": "Găină",
+      "tr": "Tavuk"
     },
     "hint": {
       "en": "Lays something you might eat for breakfast",
@@ -1076,7 +1195,8 @@
       "es": "Ave de granja",
       "el": "Πουλί της φάρμας",
       "de": "Hofvogel",
-      "ro": "Pasăre de curte"
+      "ro": "Pasăre de curte",
+      "tr": "Kahvaltıda yiyebileceğin bir şey yumurtlar"
     }
   },
   {
@@ -1086,7 +1206,8 @@
       "es": "Manzana",
       "el": "Μήλο",
       "de": "Apfel",
-      "ro": "Măr"
+      "ro": "Măr",
+      "tr": "Elma"
     },
     "hint": {
       "en": "Keeps the doctor away, they say",
@@ -1094,7 +1215,8 @@
       "es": "Fruta redonda",
       "el": "Στρογγυλό φρούτο",
       "de": "Runde Frucht",
-      "ro": "Fruct rotund"
+      "ro": "Fruct rotund",
+      "tr": "Doktoru uzak tuttuğu söylenir"
     }
   },
   {
@@ -1104,7 +1226,8 @@
       "es": "Plátano",
       "el": "Μπανάνα",
       "de": "Banane",
-      "ro": "Banană"
+      "ro": "Banană",
+      "tr": "Muz"
     },
     "hint": {
       "en": "Comes in its own wrapper",
@@ -1112,7 +1235,8 @@
       "es": "Fruta curvada",
       "el": "Καμπυλωτό φρούτο",
       "de": "Gebogene Frucht",
-      "ro": "Fruct curbat"
+      "ro": "Fruct curbat",
+      "tr": "Kendi ambalajıyla gelir"
     }
   },
   {
@@ -1122,7 +1246,8 @@
       "es": "Zanahoria",
       "el": "Καρότο",
       "de": "Karotte",
-      "ro": "Morcov"
+      "ro": "Morcov",
+      "tr": "Havuç"
     },
     "hint": {
       "en": "Said to help you see in the dark",
@@ -1130,7 +1255,8 @@
       "es": "Verdura naranja",
       "el": "Πορτοκαλί λαχανικό",
       "de": "Orangefarbenes Gemüse",
-      "ro": "Legumă portocalie"
+      "ro": "Legumă portocalie",
+      "tr": "Karanlıkta görmene yardım ettiği söylenir"
     }
   },
   {
@@ -1140,7 +1266,8 @@
       "es": "Fresa",
       "el": "Φράουλα",
       "de": "Erdbeere",
-      "ro": "Căpșună"
+      "ro": "Căpșună",
+      "tr": "Çilek"
     },
     "hint": {
       "en": "Its seeds are on the outside",
@@ -1148,7 +1275,8 @@
       "es": "Fruta roja pequeña",
       "el": "Μικρό κόκκινο φρούτο",
       "de": "Kleine rote Frucht",
-      "ro": "Fruct roșu mic"
+      "ro": "Fruct roșu mic",
+      "tr": "Çekirdekleri dışında bulunur"
     }
   },
   {
@@ -1158,7 +1286,8 @@
       "es": "Sandía",
       "el": "Καρπούζι",
       "de": "Wassermelone",
-      "ro": "Pepene verde"
+      "ro": "Pepene verde",
+      "tr": "Karpuz"
     },
     "hint": {
       "en": "Mostly water, hard to finish alone",
@@ -1166,7 +1295,8 @@
       "es": "Fruta grande de verano",
       "el": "Μεγάλο καλοκαιρινό φρούτο",
       "de": "Große Sommerfrucht",
-      "ro": "Fruct mare de vară"
+      "ro": "Fruct mare de vară",
+      "tr": "Çoğunlukla su, tek başına bitirmesi zor"
     }
   },
   {
@@ -1176,7 +1306,8 @@
       "es": "Uvas",
       "el": "Σταφύλια",
       "de": "Trauben",
-      "ro": "Struguri"
+      "ro": "Struguri",
+      "tr": "Üzüm"
     },
     "hint": {
       "en": "Comes off the vine in a cluster",
@@ -1184,7 +1315,8 @@
       "es": "Fruta en racimo",
       "el": "Φρούτο σε τσαμπί",
       "de": "Frucht in Trauben",
-      "ro": "Fruct în ciorchine"
+      "ro": "Fruct în ciorchine",
+      "tr": "Asmadan salkım halinde koparılır"
     }
   },
   {
@@ -1194,7 +1326,8 @@
       "es": "Cereza",
       "el": "Κεράσι",
       "de": "Kirsche",
-      "ro": "Cireașă"
+      "ro": "Cireașă",
+      "tr": "Kiraz"
     },
     "hint": {
       "en": "You spit out the middle",
@@ -1202,7 +1335,8 @@
       "es": "Fruta con rabito",
       "el": "Φρούτο με κοτσάνι",
       "de": "Frucht am Stiel",
-      "ro": "Fruct cu codiță"
+      "ro": "Fruct cu codiță",
+      "tr": "Ortasını tükürürsün"
     }
   },
   {
@@ -1212,7 +1346,8 @@
       "es": "Pera",
       "el": "Αχλάδι",
       "de": "Birne",
-      "ro": "Pară"
+      "ro": "Pară",
+      "tr": "Armut"
     },
     "hint": {
       "en": "Wider at the bottom than the top",
@@ -1220,7 +1355,8 @@
       "es": "Fruta ancha por abajo",
       "el": "Φρούτο με φαρδιά βάση",
       "de": "Frucht mit breitem Boden",
-      "ro": "Fruct lat la bază"
+      "ro": "Fruct lat la bază",
+      "tr": "Altı üstünden daha geniş"
     }
   },
   {
@@ -1230,7 +1366,8 @@
       "es": "Limón",
       "el": "Λεμόνι",
       "de": "Zitrone",
-      "ro": "Lămâie"
+      "ro": "Lămâie",
+      "tr": "Limon"
     },
     "hint": {
       "en": "Makes your face scrunch up",
@@ -1238,7 +1375,8 @@
       "es": "Fruta ácida",
       "el": "Ξινό φρούτο",
       "de": "Saure Frucht",
-      "ro": "Fruct acru"
+      "ro": "Fruct acru",
+      "tr": "Yüzünü buruşturur"
     }
   },
   {
@@ -1248,7 +1386,8 @@
       "es": "Maíz",
       "el": "Καλαμπόκι",
       "de": "Mais",
-      "ro": "Porumb"
+      "ro": "Porumb",
+      "tr": "Mısır"
     },
     "hint": {
       "en": "Pops when it gets hot enough",
@@ -1256,7 +1395,8 @@
       "es": "Verdura en mazorca",
       "el": "Λαχανικό σε σπάδικα",
       "de": "Gemüse am Kolben",
-      "ro": "Legumă pe știulete"
+      "ro": "Legumă pe știulete",
+      "tr": "Yeterince ısınınca patlar"
     }
   },
   {
@@ -1266,7 +1406,8 @@
       "es": "Seta",
       "el": "Μανιτάρι",
       "de": "Pilz",
-      "ro": "Ciupercă"
+      "ro": "Ciupercă",
+      "tr": "Mantar"
     },
     "hint": {
       "en": "Grows overnight after rain",
@@ -1274,7 +1415,8 @@
       "es": "Algo que crece en el bosque",
       "el": "Κάτι που φυτρώνει στο δάσος",
       "de": "Etwas, das im Wald wächst",
-      "ro": "Ceva ce crește în pădure"
+      "ro": "Ceva ce crește în pădure",
+      "tr": "Yağmurdan sonra bir gecede biter"
     }
   },
   {
@@ -1284,7 +1426,8 @@
       "es": "Huevo",
       "el": "Αυγό",
       "de": "Ei",
-      "ro": "Ou"
+      "ro": "Ou",
+      "tr": "Yumurta"
     },
     "hint": {
       "en": "Cracks open for breakfast",
@@ -1292,7 +1435,8 @@
       "es": "Alimento ovalado",
       "el": "Οβάλ τροφή",
       "de": "Ovales Lebensmittel",
-      "ro": "Aliment oval"
+      "ro": "Aliment oval",
+      "tr": "Kahvaltı için kırılır"
     }
   },
   {
@@ -1302,7 +1446,8 @@
       "es": "Pan",
       "el": "Ψωμί",
       "de": "Brot",
-      "ro": "Pâine"
+      "ro": "Pâine",
+      "tr": "Ekmek"
     },
     "hint": {
       "en": "Rises before it's baked",
@@ -1310,7 +1455,8 @@
       "es": "Alimento horneado",
       "el": "Ψημένη τροφή",
       "de": "Gebackenes Lebensmittel",
-      "ro": "Aliment copt"
+      "ro": "Aliment copt",
+      "tr": "Pişmeden önce kabarır"
     }
   },
   {
@@ -1320,7 +1466,8 @@
       "es": "Queso",
       "el": "Τυρί",
       "de": "Käse",
-      "ro": "Brânză"
+      "ro": "Brânză",
+      "tr": "Peynir"
     },
     "hint": {
       "en": "Gets better with age",
@@ -1328,7 +1475,8 @@
       "es": "Alimento con agujeros",
       "el": "Τροφή με τρύπες",
       "de": "Lebensmittel mit Löchern",
-      "ro": "Aliment cu găuri"
+      "ro": "Aliment cu găuri",
+      "tr": "Yaşlandıkça lezzetlenir"
     }
   },
   {
@@ -1338,7 +1486,8 @@
       "es": "Trozo de pizza",
       "el": "Κομμάτι πίτσας",
       "de": "Pizzastück",
-      "ro": "Felie de pizza"
+      "ro": "Felie de pizza",
+      "tr": "Pizza dilimi"
     },
     "hint": {
       "en": "Best eaten with your hands",
@@ -1346,7 +1495,8 @@
       "es": "Trozo de comida rápida",
       "el": "Κομμάτι φαστ φουντ",
       "de": "Stück Fast Food",
-      "ro": "Bucată de fast-food"
+      "ro": "Bucată de fast-food",
+      "tr": "Elle yemesi en güzeli"
     }
   },
   {
@@ -1356,7 +1506,8 @@
       "es": "Hamburguesa",
       "el": "Χάμπουργκερ",
       "de": "Hamburger",
-      "ro": "Hamburger"
+      "ro": "Hamburger",
+      "tr": "Hamburger"
     },
     "hint": {
       "en": "Falls apart if you're not careful",
@@ -1364,7 +1515,8 @@
       "es": "Comida en un panecillo",
       "el": "Φαγητό σε ψωμάκι",
       "de": "Essen im Brötchen",
-      "ro": "Mâncare în chiflă"
+      "ro": "Mâncare în chiflă",
+      "tr": "Dikkatli olmazsan dağılır"
     }
   },
   {
@@ -1374,7 +1526,8 @@
       "es": "Perrito caliente",
       "el": "Χοτ ντογκ",
       "de": "Hotdog",
-      "ro": "Hot dog"
+      "ro": "Hot dog",
+      "tr": "Sosisli sandviç"
     },
     "hint": {
       "en": "A classic at a ballgame",
@@ -1382,7 +1535,8 @@
       "es": "Salchicha en pan",
       "el": "Λουκάνικο σε ψωμί",
       "de": "Wurst im Brot",
-      "ro": "Cârnat în pâine"
+      "ro": "Cârnat în pâine",
+      "tr": "Maç günlerinin klasiği"
     }
   },
   {
@@ -1392,7 +1546,8 @@
       "es": "Cono de helado",
       "el": "Παγωτό χωνάκι",
       "de": "Eiswaffel",
-      "ro": "Cornet de înghețată"
+      "ro": "Cornet de înghețată",
+      "tr": "Dondurma külahı"
     },
     "hint": {
       "en": "Melts faster than you can eat it",
@@ -1400,7 +1555,8 @@
       "es": "Dulce frío",
       "el": "Κρύο γλυκό",
       "de": "Kalte Süßigkeit",
-      "ro": "Dulce rece"
+      "ro": "Dulce rece",
+      "tr": "Yiyebildiğinden daha hızlı erir"
     }
   },
   {
@@ -1410,7 +1566,8 @@
       "es": "Magdalena",
       "el": "Κεκάκι",
       "de": "Cupcake",
-      "ro": "Brioșă"
+      "ro": "Brioșă",
+      "tr": "Kapkek"
     },
     "hint": {
       "en": "One serving, its own little cake",
@@ -1418,7 +1575,8 @@
       "es": "Pastel pequeño",
       "el": "Μικρό κέικ",
       "de": "Kleiner Kuchen",
-      "ro": "Prăjitură mică"
+      "ro": "Prăjitură mică",
+      "tr": "Tek kişilik, kendi küçük pastası"
     }
   },
   {
@@ -1428,7 +1586,8 @@
       "es": "Rosquilla",
       "el": "Ντόνατ",
       "de": "Donut",
-      "ro": "Gogoașă"
+      "ro": "Gogoașă",
+      "tr": "Donut"
     },
     "hint": {
       "en": "You can spin a finger through the middle",
@@ -1436,7 +1595,8 @@
       "es": "Dulce con agujero",
       "el": "Γλυκό με τρύπα",
       "de": "Süßes mit Loch",
-      "ro": "Dulce cu gaură"
+      "ro": "Dulce cu gaură",
+      "tr": "Parmağını ortasından geçirip döndürebilirsin"
     }
   },
   {
@@ -1446,7 +1606,8 @@
       "es": "Galleta",
       "el": "Μπισκότο",
       "de": "Keks",
-      "ro": "Biscuit"
+      "ro": "Biscuit",
+      "tr": "Kurabiye"
     },
     "hint": {
       "en": "Best dunked in milk",
@@ -1454,7 +1615,8 @@
       "es": "Dulce horneado pequeño",
       "el": "Μικρό ψημένο γλυκό",
       "de": "Kleines gebackenes Süßes",
-      "ro": "Dulce copt mic"
+      "ro": "Dulce copt mic",
+      "tr": "Süte batırınca en güzeli"
     }
   },
   {
@@ -1464,7 +1626,8 @@
       "es": "Piruleta",
       "el": "Γλειφιτζούρι",
       "de": "Lutscher",
-      "ro": "Acadea"
+      "ro": "Acadea",
+      "tr": "Lolipop"
     },
     "hint": {
       "en": "Takes forever to finish",
@@ -1472,7 +1635,8 @@
       "es": "Dulce en un palo",
       "el": "Γλυκό σε ξυλάκι",
       "de": "Süßes am Stiel",
-      "ro": "Dulce pe băț"
+      "ro": "Dulce pe băț",
+      "tr": "Bitirmesi sonsuza kadar sürer"
     }
   },
   {
@@ -1482,7 +1646,8 @@
       "es": "Bastón de caramelo",
       "el": "Ζαχαρωτό μπαστούνι",
       "de": "Zuckerstange",
-      "ro": "Baston de bomboană"
+      "ro": "Baston de bomboană",
+      "tr": "Baston şeker"
     },
     "hint": {
       "en": "Hangs on the tree at Christmas",
@@ -1490,7 +1655,8 @@
       "es": "Dulce a rayas",
       "el": "Ριγέ γλύκισμα",
       "de": "Gestreifte Süßigkeit",
-      "ro": "Dulce cu dungi"
+      "ro": "Dulce cu dungi",
+      "tr": "Noel ağacında asılı durur"
     }
   },
   {
@@ -1500,7 +1666,8 @@
       "es": "Tarta de cumpleaños",
       "el": "Τούρτα γενεθλίων",
       "de": "Geburtstagstorte",
-      "ro": "Tort aniversar"
+      "ro": "Tort aniversar",
+      "tr": "Doğum günü pastası"
     },
     "hint": {
       "en": "Everyone sings before you blow",
@@ -1508,7 +1675,8 @@
       "es": "Tarta con velas",
       "el": "Τούρτα με κεριά",
       "de": "Torte mit Kerzen",
-      "ro": "Tort cu lumânări"
+      "ro": "Tort cu lumânări",
+      "tr": "Sen mumu üflemeden herkes şarkı söyler"
     }
   },
   {
@@ -1518,7 +1686,8 @@
       "es": "Taza de café",
       "el": "Φλιτζάνι καφέ",
       "de": "Kaffeetasse",
-      "ro": "Ceașcă de cafea"
+      "ro": "Ceașcă de cafea",
+      "tr": "Kahve fincanı"
     },
     "hint": {
       "en": "You wrap both hands around it in winter",
@@ -1526,7 +1695,8 @@
       "es": "Taza con asa",
       "el": "Κύπελλο με χερούλι",
       "de": "Tasse mit Henkel",
-      "ro": "Ceașcă cu toartă"
+      "ro": "Ceașcă cu toartă",
+      "tr": "Kışın iki elinle sarılırsın"
     }
   },
   {
@@ -1536,7 +1706,8 @@
       "es": "Tetera",
       "el": "Τσαγιέρα",
       "de": "Teekanne",
-      "ro": "Ceainic"
+      "ro": "Ceainic",
+      "tr": "Çaydanlık"
     },
     "hint": {
       "en": "Whistles when it's ready",
@@ -1544,7 +1715,8 @@
       "es": "Recipiente con pico",
       "el": "Δοχείο με στόμιο",
       "de": "Kanne mit Ausguss",
-      "ro": "Vas cu cioc"
+      "ro": "Vas cu cioc",
+      "tr": "Hazır olunca ıslık çalar"
     }
   },
   {
@@ -1554,7 +1726,8 @@
       "es": "Copa de vino",
       "el": "Ποτήρι κρασιού",
       "de": "Weinglas",
-      "ro": "Pahar de vin"
+      "ro": "Pahar de vin",
+      "tr": "Şarap kadehi"
     },
     "hint": {
       "en": "You swirl it before you taste",
@@ -1562,7 +1735,8 @@
       "es": "Copa con pie",
       "el": "Ποτήρι με πόδι",
       "de": "Glas mit Stiel",
-      "ro": "Pahar cu picior"
+      "ro": "Pahar cu picior",
+      "tr": "Tatmadan önce döndürürsün"
     }
   },
   {
@@ -1572,7 +1746,8 @@
       "es": "Botella de leche",
       "el": "Μπουκάλι γάλα",
       "de": "Milchflasche",
-      "ro": "Sticlă de lapte"
+      "ro": "Sticlă de lapte",
+      "tr": "Süt şişesi"
     },
     "hint": {
       "en": "Left on the doorstep in old films",
@@ -1580,7 +1755,8 @@
       "es": "Botella de bebida blanca",
       "el": "Μπουκάλι με λευκό ρόφημα",
       "de": "Flasche mit weißem Getränk",
-      "ro": "Sticlă cu băutură albă"
+      "ro": "Sticlă cu băutură albă",
+      "tr": "Eski filmlerde kapı eşiğine bırakılır"
     }
   },
   {
@@ -1590,7 +1766,8 @@
       "es": "Huevo frito",
       "el": "Αυγό τηγανητό",
       "de": "Spiegelei",
-      "ro": "Ou ochi"
+      "ro": "Ou ochi",
+      "tr": "Sahanda yumurta"
     },
     "hint": {
       "en": "Sizzles the moment it hits the pan",
@@ -1598,7 +1775,8 @@
       "es": "Desayuno en la sartén",
       "el": "Πρωινό στο τηγάνι",
       "de": "Frühstück in der Pfanne",
-      "ro": "Mic dejun în tigaie"
+      "ro": "Mic dejun în tigaie",
+      "tr": "Tavaya değer değmez cızırdar"
     }
   },
   {
@@ -1608,7 +1786,8 @@
       "es": "Pretzel",
       "el": "Πρέτσελ",
       "de": "Brezel",
-      "ro": "Covrig"
+      "ro": "Covrig",
+      "tr": "Pretzel"
     },
     "hint": {
       "en": "Twisted into a knot before baking",
@@ -1616,7 +1795,8 @@
       "es": "Snack horneado y retorcido",
       "el": "Στριφτό ψημένο σνακ",
       "de": "Gedrehtes Gebäck",
-      "ro": "Gustare coaptă răsucită"
+      "ro": "Gustare coaptă răsucită",
+      "tr": "Pişirilmeden önce düğüm gibi bükülür"
     }
   },
   {
@@ -1626,7 +1806,8 @@
       "es": "Cruasán",
       "el": "Κρουασάν",
       "de": "Croissant",
-      "ro": "Croasant"
+      "ro": "Croasant",
+      "tr": "Kruvasan"
     },
     "hint": {
       "en": "Flaky enough to leave crumbs everywhere",
@@ -1634,7 +1815,8 @@
       "es": "Bollo curvado",
       "el": "Καμπυλωτό αρτοσκεύασμα",
       "de": "Gebogenes Gebäck",
-      "ro": "Produs de patiserie curbat"
+      "ro": "Produs de patiserie curbat",
+      "tr": "Her yere kırıntı saçacak kadar katmanlı"
     }
   },
   {
@@ -1644,7 +1826,8 @@
       "es": "Polo",
       "el": "Ξυλάκι παγωτό",
       "de": "Eis am Stiel",
-      "ro": "Înghețată pe băț"
+      "ro": "Înghețată pe băț",
+      "tr": "Buzlu şeker"
     },
     "hint": {
       "en": "Melts down your hand on a hot day",
@@ -1652,7 +1835,8 @@
       "es": "Helado congelado en un palo",
       "el": "Παγωμένο γλυκό σε ξυλάκι",
       "de": "Gefrorene Leckerei am Stiel",
-      "ro": "Delicatesă înghețată pe băț"
+      "ro": "Delicatesă înghețată pe băț",
+      "tr": "Sıcak bir günde elinden aşağı akar"
     }
   },
   {
@@ -1662,7 +1846,8 @@
       "es": "Chile picante",
       "el": "Καυτερή πιπεριά",
       "de": "Chilischote",
-      "ro": "Ardei iute"
+      "ro": "Ardei iute",
+      "tr": "Acı biber"
     },
     "hint": {
       "en": "Milk helps more than water",
@@ -1670,7 +1855,8 @@
       "es": "Verdura picante",
       "el": "Καυτερό λαχανικό",
       "de": "Scharfes Gemüse",
-      "ro": "Legumă iute"
+      "ro": "Legumă iute",
+      "tr": "Süt sudan daha çok yardımcı olur"
     }
   },
   {
@@ -1680,7 +1866,8 @@
       "es": "Cebolla",
       "el": "Κρεμμύδι",
       "de": "Zwiebel",
-      "ro": "Ceapă"
+      "ro": "Ceapă",
+      "tr": "Soğan"
     },
     "hint": {
       "en": "Makes you cry before it hits the pan",
@@ -1688,7 +1875,8 @@
       "es": "Verdura en capas",
       "el": "Λαχανικό με στρώσεις",
       "de": "Gemüse in Schichten",
-      "ro": "Legumă în straturi"
+      "ro": "Legumă în straturi",
+      "tr": "Tavaya düşmeden önce seni ağlatır"
     }
   },
   {
@@ -1698,7 +1886,8 @@
       "es": "Tomate",
       "el": "Ντομάτα",
       "de": "Tomate",
-      "ro": "Roșie"
+      "ro": "Roșie",
+      "tr": "Domates"
     },
     "hint": {
       "en": "Technically a fruit, argued about at dinner",
@@ -1706,7 +1895,8 @@
       "es": "Verdura roja y redonda",
       "el": "Στρογγυλό κόκκινο λαχανικό",
       "de": "Rundes rotes Gemüse",
-      "ro": "Legumă roșie și rotundă"
+      "ro": "Legumă roșie și rotundă",
+      "tr": "Teknik olarak meyve, yemekte tartışma konusu"
     }
   },
   {
@@ -1716,7 +1906,8 @@
       "es": "Calabaza",
       "el": "Κολοκύθα",
       "de": "Kürbis",
-      "ro": "Dovleac"
+      "ro": "Dovleac",
+      "tr": "Balkabağı"
     },
     "hint": {
       "en": "Carved every October",
@@ -1724,7 +1915,8 @@
       "es": "Verdura naranja grande",
       "el": "Μεγάλο πορτοκαλί λαχανικό",
       "de": "Großes orangefarbenes Gemüse",
-      "ro": "Legumă portocalie mare"
+      "ro": "Legumă portocalie mare",
+      "tr": "Her ekim ayında oyulur"
     }
   },
   {
@@ -1734,7 +1926,8 @@
       "es": "Brócoli",
       "el": "Μπρόκολο",
       "de": "Brokkoli",
-      "ro": "Broccoli"
+      "ro": "Broccoli",
+      "tr": "Brokoli"
     },
     "hint": {
       "en": "The vegetable kids leave for last",
@@ -1742,7 +1935,8 @@
       "es": "Verdura verde con forma de árbol",
       "el": "Πράσινο λαχανικό σαν δεντράκι",
       "de": "Grünes Gemüse wie ein Bäumchen",
-      "ro": "Legumă verde ca un copăcel"
+      "ro": "Legumă verde ca un copăcel",
+      "tr": "Çocukların tabakta en sona bıraktığı sebze"
     }
   },
   {
@@ -1752,7 +1946,8 @@
       "es": "Aguacate",
       "el": "Αβοκάντο",
       "de": "Avocado",
-      "ro": "Avocado"
+      "ro": "Avocado",
+      "tr": "Avokado"
     },
     "hint": {
       "en": "Turns brown fast once you cut it",
@@ -1760,7 +1955,8 @@
       "es": "Fruta con una semilla grande",
       "el": "Φρούτο με μεγάλο κουκούτσι",
       "de": "Frucht mit großem Kern",
-      "ro": "Fruct cu sâmbure mare"
+      "ro": "Fruct cu sâmbure mare",
+      "tr": "Kesince hızla kahverengiye döner"
     }
   },
   {
@@ -1770,7 +1966,8 @@
       "es": "Cacahuete",
       "el": "Φιστίκι",
       "de": "Erdnuss",
-      "ro": "Alună de pământ"
+      "ro": "Alună de pământ",
+      "tr": "Yer fıstığı"
     },
     "hint": {
       "en": "Not actually a nut, botanically",
@@ -1778,7 +1975,8 @@
       "es": "Fruto seco pequeño con cáscara",
       "el": "Μικρός ξηρός καρπός με κέλυφος",
       "de": "Kleine Nuss in der Schale",
-      "ro": "Nucă mică în coajă"
+      "ro": "Nucă mică în coajă",
+      "tr": "Botanik olarak aslında bir kuruyemiş değil"
     }
   },
   {
@@ -1788,7 +1986,8 @@
       "es": "Bellota",
       "el": "Βελανίδι",
       "de": "Eichel",
-      "ro": "Ghindă"
+      "ro": "Ghindă",
+      "tr": "Meşe palamudu"
     },
     "hint": {
       "en": "Squirrels bury these for winter",
@@ -1796,7 +1995,8 @@
       "es": "Semilla de un árbol grande",
       "el": "Σπόρος μεγάλου δέντρου",
       "de": "Samen eines großen Baums",
-      "ro": "Sămânța unui copac mare"
+      "ro": "Sămânța unui copac mare",
+      "tr": "Sincaplar kış için bunları gömer"
     }
   },
   {
@@ -1806,7 +2006,8 @@
       "es": "Cactus",
       "el": "Κάκτος",
       "de": "Kaktus",
-      "ro": "Cactus"
+      "ro": "Cactus",
+      "tr": "Kaktüs"
     },
     "hint": {
       "en": "Survives weeks without watering",
@@ -1814,7 +2015,8 @@
       "es": "Planta con espinas",
       "el": "Φυτό με αγκάθια",
       "de": "Pflanze mit Stacheln",
-      "ro": "Plantă cu spini"
+      "ro": "Plantă cu spini",
+      "tr": "Haftalarca sulanmadan hayatta kalır"
     }
   },
   {
@@ -1824,7 +2026,8 @@
       "es": "Palmera",
       "el": "Φοίνικας",
       "de": "Palme",
-      "ro": "Palmier"
+      "ro": "Palmier",
+      "tr": "Palmiye"
     },
     "hint": {
       "en": "Sways over a hammock",
@@ -1832,7 +2035,8 @@
       "es": "Árbol de lugares cálidos",
       "el": "Δέντρο των ζεστών τόπων",
       "de": "Baum warmer Gegenden",
-      "ro": "Copac din locuri calde"
+      "ro": "Copac din locuri calde",
+      "tr": "Bir hamağın üzerinde sallanır"
     }
   },
   {
@@ -1842,7 +2046,8 @@
       "es": "Árbol de Navidad",
       "el": "Χριστουγεννιάτικο δέντρο",
       "de": "Weihnachtsbaum",
-      "ro": "Brad de Crăciun"
+      "ro": "Brad de Crăciun",
+      "tr": "Noel ağacı"
     },
     "hint": {
       "en": "Loses its needles by January",
@@ -1850,7 +2055,8 @@
       "es": "Árbol con adornos",
       "el": "Δέντρο με στολίδια",
       "de": "Baum mit Schmuck",
-      "ro": "Copac cu podoabe"
+      "ro": "Copac cu podoabe",
+      "tr": "Ocak ayına kadar iğnelerini döker"
     }
   },
   {
@@ -1860,7 +2066,8 @@
       "es": "Rosa",
       "el": "Τριαντάφυλλο",
       "de": "Rose",
-      "ro": "Trandafir"
+      "ro": "Trandafir",
+      "tr": "Gül"
     },
     "hint": {
       "en": "Comes with a warning if you're not careful",
@@ -1868,7 +2075,8 @@
       "es": "Flor con espinas",
       "el": "Λουλούδι με αγκάθια",
       "de": "Blume mit Dornen",
-      "ro": "Floare cu spini"
+      "ro": "Floare cu spini",
+      "tr": "Dikkatsiz davranırsan seni uyarır"
     }
   },
   {
@@ -1878,7 +2086,8 @@
       "es": "Tulipán",
       "el": "Τουλίπα",
       "de": "Tulpe",
-      "ro": "Lalea"
+      "ro": "Lalea",
+      "tr": "Lale"
     },
     "hint": {
       "en": "Once caused a whole economic craze in Holland",
@@ -1886,7 +2095,8 @@
       "es": "Flor en forma de copa",
       "el": "Λουλούδι σε σχήμα κύπελλου",
       "de": "Becherförmige Blume",
-      "ro": "Floare în formă de cupă"
+      "ro": "Floare în formă de cupă",
+      "tr": "Bir zamanlar Hollanda'da koca bir ekonomik çılgınlığa yol açtı"
     }
   },
   {
@@ -1896,7 +2106,8 @@
       "es": "Margarita",
       "el": "Μαργαρίτα",
       "de": "Gänseblümchen",
-      "ro": "Margaretă"
+      "ro": "Margaretă",
+      "tr": "Papatya"
     },
     "hint": {
       "en": "You pull the petals to find out 'he loves me not'",
@@ -1904,7 +2115,8 @@
       "es": "Flor blanca sencilla",
       "el": "Απλό λευκό λουλούδι",
       "de": "Einfache weiße Blume",
-      "ro": "Floare albă simplă"
+      "ro": "Floare albă simplă",
+      "tr": "Yapraklarını koparıp sever sevmez diye bakarsın"
     }
   },
   {
@@ -1914,7 +2126,8 @@
       "es": "Trébol",
       "el": "Τριφύλλι",
       "de": "Klee",
-      "ro": "Trifoi"
+      "ro": "Trifoi",
+      "tr": "Yonca"
     },
     "hint": {
       "en": "Rare with an extra leaf",
@@ -1922,7 +2135,8 @@
       "es": "Planta pequeña de la suerte",
       "el": "Μικρό φυτό της τύχης",
       "de": "Kleine Glückspflanze",
-      "ro": "Plantă mică norocoasă"
+      "ro": "Plantă mică norocoasă",
+      "tr": "Fazladan yapraklısı nadirdir"
     }
   },
   {
@@ -1932,7 +2146,8 @@
       "es": "Hoja de arce",
       "el": "Φύλλο σφενδάμου",
       "de": "Ahornblatt",
-      "ro": "Frunză de arțar"
+      "ro": "Frunză de arțar",
+      "tr": "Akçaağaç yaprağı"
     },
     "hint": {
       "en": "Turns bright red in autumn",
@@ -1940,7 +2155,8 @@
       "es": "Hoja con puntas",
       "el": "Φύλλο με μύτες",
       "de": "Blatt mit Spitzen",
-      "ro": "Frunză cu vârfuri"
+      "ro": "Frunză cu vârfuri",
+      "tr": "Sonbaharda parlak kırmızıya döner"
     }
   },
   {
@@ -1950,7 +2166,8 @@
       "es": "Llave",
       "el": "Κλειδί",
       "de": "Schlüssel",
-      "ro": "Cheie"
+      "ro": "Cheie",
+      "tr": "Anahtar"
     },
     "hint": {
       "en": "Lost right when you're in a hurry",
@@ -1958,7 +2175,8 @@
       "es": "Cosa que abre una cerradura",
       "el": "Κάτι που ανοίγει κλειδαριά",
       "de": "Ding, das ein Schloss öffnet",
-      "ro": "Lucru care deschide o broască"
+      "ro": "Lucru care deschide o broască",
+      "tr": "Tam acelen varken kaybolur"
     }
   },
   {
@@ -1968,7 +2186,8 @@
       "es": "Reloj",
       "el": "Ρολόι",
       "de": "Uhr",
-      "ro": "Ceas"
+      "ro": "Ceas",
+      "tr": "Saat"
     },
     "hint": {
       "en": "You glance at it when you're running late",
@@ -1976,7 +2195,8 @@
       "es": "Cosa que muestra la hora",
       "el": "Κάτι που δείχνει την ώρα",
       "de": "Ding, das die Zeit zeigt",
-      "ro": "Lucru care arată ora"
+      "ro": "Lucru care arată ora",
+      "tr": "Geç kaldığında göz atarsın"
     }
   },
   {
@@ -1986,7 +2206,8 @@
       "es": "Paraguas",
       "el": "Ομπρέλα",
       "de": "Regenschirm",
-      "ro": "Umbrelă"
+      "ro": "Umbrelă",
+      "tr": "Şemsiye"
     },
     "hint": {
       "en": "Useless once the wind turns it inside out",
@@ -1994,7 +2215,8 @@
       "es": "Cosa para la lluvia",
       "el": "Κάτι για τη βροχή",
       "de": "Ding für den Regen",
-      "ro": "Lucru pentru ploaie"
+      "ro": "Lucru pentru ploaie",
+      "tr": "Rüzgar tersine çevirince işe yaramaz"
     }
   },
   {
@@ -2004,7 +2226,8 @@
       "es": "Vela",
       "el": "Κερί",
       "de": "Kerze",
-      "ro": "Lumânare"
+      "ro": "Lumânare",
+      "tr": "Mum"
     },
     "hint": {
       "en": "Makes a wish come true if you blow it out",
@@ -2012,7 +2235,8 @@
       "es": "Cosa que arde despacio",
       "el": "Κάτι που καίει αργά",
       "de": "Ding, das langsam brennt",
-      "ro": "Lucru care arde încet"
+      "ro": "Lucru care arde încet",
+      "tr": "Üflersen dileğini gerçekleştirir"
     }
   },
   {
@@ -2022,7 +2246,8 @@
       "es": "Lámpara",
       "el": "Λάμπα",
       "de": "Lampe",
-      "ro": "Lampă"
+      "ro": "Lampă",
+      "tr": "Lamba"
     },
     "hint": {
       "en": "Switched on when it gets dark",
@@ -2030,7 +2255,8 @@
       "es": "Cosa que da luz",
       "el": "Κάτι που δίνει φως",
       "de": "Ding, das Licht gibt",
-      "ro": "Lucru care dă lumină"
+      "ro": "Lucru care dă lumină",
+      "tr": "Hava kararınca açılır"
     }
   },
   {
@@ -2040,7 +2266,8 @@
       "es": "Silla",
       "el": "Καρέκλα",
       "de": "Stuhl",
-      "ro": "Scaun"
+      "ro": "Scaun",
+      "tr": "Sandalye"
     },
     "hint": {
       "en": "Pulled out before you sit down",
@@ -2048,7 +2275,8 @@
       "es": "Cosa donde te sientas",
       "el": "Κάτι πάνω στο οποίο κάθεσαι",
       "de": "Ding, auf dem man sitzt",
-      "ro": "Lucru pe care stai"
+      "ro": "Lucru pe care stai",
+      "tr": "Oturmadan önce çekilir"
     }
   },
   {
@@ -2058,7 +2286,8 @@
       "es": "Mesa",
       "el": "Τραπέζι",
       "de": "Tisch",
-      "ro": "Masă"
+      "ro": "Masă",
+      "tr": "Masa"
     },
     "hint": {
       "en": "Everyone gathers around it for dinner",
@@ -2066,7 +2295,8 @@
       "es": "Mueble plano con patas",
       "el": "Επίπεδο έπιπλο με πόδια",
       "de": "Flaches Möbel auf Beinen",
-      "ro": "Mobilă plată pe picioare"
+      "ro": "Mobilă plată pe picioare",
+      "tr": "Herkes akşam yemeği için etrafında toplanır"
     }
   },
   {
@@ -2076,7 +2306,8 @@
       "es": "Cama",
       "el": "Κρεβάτι",
       "de": "Bett",
-      "ro": "Pat"
+      "ro": "Pat",
+      "tr": "Yatak"
     },
     "hint": {
       "en": "Hardest place to leave in the morning",
@@ -2084,7 +2315,8 @@
       "es": "Mueble para dormir",
       "el": "Έπιπλο για ύπνο",
       "de": "Möbel zum Schlafen",
-      "ro": "Mobilă pentru dormit"
+      "ro": "Mobilă pentru dormit",
+      "tr": "Sabah terk etmesi en zor yer"
     }
   },
   {
@@ -2094,7 +2326,8 @@
       "es": "Puerta",
       "el": "Πόρτα",
       "de": "Tür",
-      "ro": "Ușă"
+      "ro": "Ușă",
+      "tr": "Kapı"
     },
     "hint": {
       "en": "Knocked on before you enter",
@@ -2102,7 +2335,8 @@
       "es": "Entrada a una habitación",
       "el": "Είσοδος σε δωμάτιο",
       "de": "Zugang zu einem Raum",
-      "ro": "Intrare într-o cameră"
+      "ro": "Intrare într-o cameră",
+      "tr": "Girmeden önce vurulur"
     }
   },
   {
@@ -2112,7 +2346,8 @@
       "es": "Ventana",
       "el": "Παράθυρο",
       "de": "Fenster",
-      "ro": "Fereastră"
+      "ro": "Fereastră",
+      "tr": "Pencere"
     },
     "hint": {
       "en": "Fogs up when it's cold outside",
@@ -2120,7 +2355,8 @@
       "es": "Abertura en una pared",
       "el": "Άνοιγμα σε τοίχο",
       "de": "Öffnung in einer Wand",
-      "ro": "Deschidere într-un perete"
+      "ro": "Deschidere într-un perete",
+      "tr": "Dışarısı soğuyunca buğulanır"
     }
   },
   {
@@ -2130,7 +2366,8 @@
       "es": "Escalera",
       "el": "Σκάλα",
       "de": "Leiter",
-      "ro": "Scară"
+      "ro": "Scară",
+      "tr": "Merdiven"
     },
     "hint": {
       "en": "Best not climbed alone",
@@ -2138,7 +2375,8 @@
       "es": "Cosa con peldaños",
       "el": "Κάτι με σκαλοπάτια",
       "de": "Ding mit Sprossen",
-      "ro": "Lucru cu trepte"
+      "ro": "Lucru cu trepte",
+      "tr": "Yalnız tırmanmamak en iyisi"
     }
   },
   {
@@ -2148,7 +2386,8 @@
       "es": "Martillo",
       "el": "Σφυρί",
       "de": "Hammer",
-      "ro": "Ciocan"
+      "ro": "Ciocan",
+      "tr": "Çekiç"
     },
     "hint": {
       "en": "Missing the nail hurts more than hitting it",
@@ -2156,7 +2395,8 @@
       "es": "Herramienta que golpea",
       "el": "Εργαλείο που χτυπά",
       "de": "Werkzeug, das schlägt",
-      "ro": "Unealtă care lovește"
+      "ro": "Unealtă care lovește",
+      "tr": "Çiviyi ıskalamak, ona vurmaktan daha çok acıtır"
     }
   },
   {
@@ -2166,7 +2406,8 @@
       "es": "Destornillador",
       "el": "Κατσαβίδι",
       "de": "Schraubenzieher",
-      "ro": "Șurubelniță"
+      "ro": "Șurubelniță",
+      "tr": "Tornavida"
     },
     "hint": {
       "en": "Flat or star-shaped tip",
@@ -2174,7 +2415,8 @@
       "es": "Herramienta que gira",
       "el": "Εργαλείο που γυρίζει",
       "de": "Werkzeug, das dreht",
-      "ro": "Unealtă care răsucește"
+      "ro": "Unealtă care răsucește",
+      "tr": "Düz ya da yıldız uçlu"
     }
   },
   {
@@ -2184,7 +2426,8 @@
       "es": "Sierra",
       "el": "Πριόνι",
       "de": "Säge",
-      "ro": "Ferăstrău"
+      "ro": "Ferăstrău",
+      "tr": "Testere"
     },
     "hint": {
       "en": "Back and forth until it's through",
@@ -2192,7 +2435,8 @@
       "es": "Herramienta con dientes",
       "el": "Εργαλείο με δόντια",
       "de": "Werkzeug mit Zähnen",
-      "ro": "Unealtă cu dinți"
+      "ro": "Unealtă cu dinți",
+      "tr": "İş bitene kadar ileri geri"
     }
   },
   {
@@ -2202,7 +2446,8 @@
       "es": "Tijeras",
       "el": "Ψαλίδι",
       "de": "Schere",
-      "ro": "Foarfecă"
+      "ro": "Foarfecă",
+      "tr": "Makas"
     },
     "hint": {
       "en": "Run holding these and someone will yell",
@@ -2210,7 +2455,8 @@
       "es": "Herramienta con dos hojas",
       "el": "Εργαλείο με δύο λεπίδες",
       "de": "Werkzeug mit zwei Klingen",
-      "ro": "Unealtă cu două lame"
+      "ro": "Unealtă cu două lame",
+      "tr": "Bunu tutup koşarsan biri bağırır"
     }
   },
   {
@@ -2220,7 +2466,8 @@
       "es": "Pincel",
       "el": "Πινέλο",
       "de": "Pinsel",
-      "ro": "Pensulă"
+      "ro": "Pensulă",
+      "tr": "Boya fırçası"
     },
     "hint": {
       "en": "Rinsed in a jar of murky water",
@@ -2228,7 +2475,8 @@
       "es": "Herramienta con cerdas",
       "el": "Εργαλείο με τρίχες",
       "de": "Werkzeug mit Borsten",
-      "ro": "Unealtă cu peri"
+      "ro": "Unealtă cu peri",
+      "tr": "Bulanık su dolu bir kavanozda durulanır"
     }
   },
   {
@@ -2238,7 +2486,8 @@
       "es": "Lápiz",
       "el": "Μολύβι",
       "de": "Bleistift",
-      "ro": "Creion"
+      "ro": "Creion",
+      "tr": "Kurşun kalem"
     },
     "hint": {
       "en": "Sharpened when the point wears down",
@@ -2246,7 +2495,8 @@
       "es": "Herramienta para escribir",
       "el": "Εργαλείο για γράψιμο",
       "de": "Werkzeug zum Schreiben",
-      "ro": "Unealtă de scris"
+      "ro": "Unealtă de scris",
+      "tr": "Ucu körelince açılır"
     }
   },
   {
@@ -2256,7 +2506,8 @@
       "es": "Bolígrafo",
       "el": "Στυλό",
       "de": "Kugelschreiber",
-      "ro": "Pix"
+      "ro": "Pix",
+      "tr": "Tükenmez kalem"
     },
     "hint": {
       "en": "Runs dry at the worst moment",
@@ -2264,7 +2515,8 @@
       "es": "Herramienta con tinta",
       "el": "Εργαλείο με μελάνι",
       "de": "Werkzeug mit Tinte",
-      "ro": "Unealtă cu cerneală"
+      "ro": "Unealtă cu cerneală",
+      "tr": "Tam en kötü anda mürekkebi biter"
     }
   },
   {
@@ -2274,7 +2526,8 @@
       "es": "Libro",
       "el": "Βιβλίο",
       "de": "Buch",
-      "ro": "Carte"
+      "ro": "Carte",
+      "tr": "Kitap"
     },
     "hint": {
       "en": "Judged by its cover, unfairly",
@@ -2282,7 +2535,8 @@
       "es": "Cosa con páginas",
       "el": "Κάτι με σελίδες",
       "de": "Ding mit Seiten",
-      "ro": "Lucru cu pagini"
+      "ro": "Lucru cu pagini",
+      "tr": "Haksızca kapağına göre yargılanır"
     }
   },
   {
@@ -2292,7 +2546,8 @@
       "es": "Sobre",
       "el": "Φάκελος",
       "de": "Umschlag",
-      "ro": "Plic"
+      "ro": "Plic",
+      "tr": "Zarf"
     },
     "hint": {
       "en": "Sealed with a lick",
@@ -2300,7 +2555,8 @@
       "es": "Cubierta para una carta",
       "el": "Κάλυμμα για γράμμα",
       "de": "Hülle für einen Brief",
-      "ro": "Învelitoare pentru o scrisoare"
+      "ro": "Învelitoare pentru o scrisoare",
+      "tr": "Dille ıslatılıp kapatılır"
     }
   },
   {
@@ -2310,7 +2566,8 @@
       "es": "Sello",
       "el": "Γραμματόσημο",
       "de": "Briefmarke",
-      "ro": "Timbru"
+      "ro": "Timbru",
+      "tr": "Pul"
     },
     "hint": {
       "en": "Collected by hobbyists for decades",
@@ -2318,7 +2575,8 @@
       "es": "Cuadradito de papel",
       "el": "Μικρό χάρτινο τετράγωνο",
       "de": "Kleines Papierquadrat",
-      "ro": "Pătrățel de hârtie"
+      "ro": "Pătrățel de hârtie",
+      "tr": "Meraklılarca on yıllardır biriktirilir"
     }
   },
   {
@@ -2328,7 +2586,8 @@
       "es": "Mochila",
       "el": "Σακίδιο",
       "de": "Rucksack",
-      "ro": "Rucsac"
+      "ro": "Rucsac",
+      "tr": "Sırt çantası"
     },
     "hint": {
       "en": "Both straps or you look silly",
@@ -2336,7 +2595,8 @@
       "es": "Bolsa para la espalda",
       "el": "Τσάντα για την πλάτη",
       "de": "Tasche für den Rücken",
-      "ro": "Geantă pentru spate"
+      "ro": "Geantă pentru spate",
+      "tr": "İki kayışı da takmazsan komik görünürsün"
     }
   },
   {
@@ -2346,7 +2606,8 @@
       "es": "Maleta",
       "el": "Βαλίτσα",
       "de": "Koffer",
-      "ro": "Valiză"
+      "ro": "Valiză",
+      "tr": "Bavul"
     },
     "hint": {
       "en": "Weighed at the airport counter",
@@ -2354,7 +2615,8 @@
       "es": "Caja para viajar",
       "el": "Κουτί για ταξίδι",
       "de": "Kasten zum Reisen",
-      "ro": "Cutie pentru călătorie"
+      "ro": "Cutie pentru călătorie",
+      "tr": "Havalimanı gişesinde tartılır"
     }
   },
   {
@@ -2364,7 +2626,8 @@
       "es": "Cartera",
       "el": "Πορτοφόλι",
       "de": "Geldbörse",
-      "ro": "Portofel"
+      "ro": "Portofel",
+      "tr": "Cüzdan"
     },
     "hint": {
       "en": "You pat your pocket to check it's there",
@@ -2372,7 +2635,8 @@
       "es": "Funda pequeña que se dobla",
       "el": "Μικρή θήκη που διπλώνει",
       "de": "Kleiner klappbarer Halter",
-      "ro": "Suport mic care se pliază"
+      "ro": "Suport mic care se pliază",
+      "tr": "Cebini yoklayıp kontrol edersin"
     }
   },
   {
@@ -2382,7 +2646,8 @@
       "es": "Gafas",
       "el": "Γυαλιά",
       "de": "Brille",
-      "ro": "Ochelari"
+      "ro": "Ochelari",
+      "tr": "Gözlük"
     },
     "hint": {
       "en": "Fog up when you drink something hot",
@@ -2390,7 +2655,8 @@
       "es": "Cosa que se lleva en la nariz",
       "el": "Κάτι που φοριέται στη μύτη",
       "de": "Ding, das man auf der Nase trägt",
-      "ro": "Lucru purtat pe nas"
+      "ro": "Lucru purtat pe nas",
+      "tr": "Sıcak bir şey içince buğulanır"
     }
   },
   {
@@ -2400,7 +2666,8 @@
       "es": "Reloj de pulsera",
       "el": "Ρολόι χειρός",
       "de": "Armbanduhr",
-      "ro": "Ceas de mână"
+      "ro": "Ceas de mână",
+      "tr": "Kol saati"
     },
     "hint": {
       "en": "Checked constantly during a boring meeting",
@@ -2408,7 +2675,8 @@
       "es": "Cosa que se lleva en la muñeca",
       "el": "Κάτι που φοριέται στον καρπό",
       "de": "Ding, das man am Handgelenk trägt",
-      "ro": "Lucru purtat la încheietură"
+      "ro": "Lucru purtat la încheietură",
+      "tr": "Sıkıcı bir toplantıda sürekli kontrol edilir"
     }
   },
   {
@@ -2418,7 +2686,8 @@
       "es": "Anillo",
       "el": "Δαχτυλίδι",
       "de": "Ring",
-      "ro": "Inel"
+      "ro": "Inel",
+      "tr": "Yüzük"
     },
     "hint": {
       "en": "Slipped on during a proposal",
@@ -2426,7 +2695,8 @@
       "es": "Cosa que se lleva en un dedo",
       "el": "Κάτι που φοριέται στο δάχτυλο",
       "de": "Ding, das man am Finger trägt",
-      "ro": "Lucru purtat pe deget"
+      "ro": "Lucru purtat pe deget",
+      "tr": "Evlilik teklifi sırasında takılır"
     }
   },
   {
@@ -2436,7 +2706,8 @@
       "es": "Corona",
       "el": "Στέμμα",
       "de": "Krone",
-      "ro": "Coroană"
+      "ro": "Coroană",
+      "tr": "Taç"
     },
     "hint": {
       "en": "Heavy is the head that wears it",
@@ -2444,7 +2715,8 @@
       "es": "Cosa que lleva un rey",
       "el": "Κάτι που φορά ένας βασιλιάς",
       "de": "Ding, das ein König trägt",
-      "ro": "Lucru purtat de un rege"
+      "ro": "Lucru purtat de un rege",
+      "tr": "Onu taşıyan başı ağırdır"
     }
   },
   {
@@ -2454,7 +2726,8 @@
       "es": "Sombrero",
       "el": "Καπέλο",
       "de": "Hut",
-      "ro": "Pălărie"
+      "ro": "Pălărie",
+      "tr": "Şapka"
     },
     "hint": {
       "en": "Removed indoors, out of politeness",
@@ -2462,7 +2735,8 @@
       "es": "Cosa que se lleva en la cabeza",
       "el": "Κάτι που φοριέται στο κεφάλι",
       "de": "Ding, das man auf dem Kopf trägt",
-      "ro": "Lucru purtat pe cap"
+      "ro": "Lucru purtat pe cap",
+      "tr": "Nezaketen içeride çıkarılır"
     }
   },
   {
@@ -2472,7 +2746,8 @@
       "es": "Bota",
       "el": "Μπότα",
       "de": "Stiefel",
-      "ro": "Cizmă"
+      "ro": "Cizmă",
+      "tr": "Bot"
     },
     "hint": {
       "en": "Kicked off at the door, covered in mud",
@@ -2480,7 +2755,8 @@
       "es": "Calzado",
       "el": "Υπόδημα",
       "de": "Schuhwerk",
-      "ro": "Încălțăminte"
+      "ro": "Încălțăminte",
+      "tr": "Çamur içinde kapıda çıkarılır"
     }
   },
   {
@@ -2490,7 +2766,8 @@
       "es": "Calcetín",
       "el": "Κάλτσα",
       "de": "Socke",
-      "ro": "Șosetă"
+      "ro": "Șosetă",
+      "tr": "Çorap"
     },
     "hint": {
       "en": "Always loses its pair in the wash",
@@ -2498,7 +2775,8 @@
       "es": "Cosa que se lleva en el pie",
       "el": "Κάτι που φοριέται στο πόδι",
       "de": "Ding, das man am Fuß trägt",
-      "ro": "Lucru purtat pe picior"
+      "ro": "Lucru purtat pe picior",
+      "tr": "Çamaşırda hep tekini kaybeder"
     }
   },
   {
@@ -2508,7 +2786,8 @@
       "es": "Camiseta",
       "el": "Μπλουζάκι",
       "de": "T-Shirt",
-      "ro": "Tricou"
+      "ro": "Tricou",
+      "tr": "Tişört"
     },
     "hint": {
       "en": "Shrinks if you wash it too hot",
@@ -2516,7 +2795,8 @@
       "es": "Prenda sencilla",
       "el": "Απλό ρούχο",
       "de": "Einfaches Kleidungsstück",
-      "ro": "Haină simplă"
+      "ro": "Haină simplă",
+      "tr": "Çok sıcak yıkarsan küçülür"
     }
   },
   {
@@ -2526,7 +2806,8 @@
       "es": "Pantalones",
       "el": "Παντελόνι",
       "de": "Hose",
-      "ro": "Pantaloni"
+      "ro": "Pantaloni",
+      "tr": "Pantolon"
     },
     "hint": {
       "en": "One leg at a time, like everyone else",
@@ -2534,7 +2815,8 @@
       "es": "Ropa para las piernas",
       "el": "Ρούχο για τα πόδια",
       "de": "Kleidung für die Beine",
-      "ro": "Haină pentru picioare"
+      "ro": "Haină pentru picioare",
+      "tr": "Herkes gibi bir bacak sırayla giyilir"
     }
   },
   {
@@ -2544,7 +2826,8 @@
       "es": "Vestido",
       "el": "Φόρεμα",
       "de": "Kleid",
-      "ro": "Rochie"
+      "ro": "Rochie",
+      "tr": "Elbise"
     },
     "hint": {
       "en": "Twirls when you spin",
@@ -2552,7 +2835,8 @@
       "es": "Prenda de una pieza",
       "el": "Ρούχο ενός κομματιού",
       "de": "Einteiliges Kleidungsstück",
-      "ro": "Haină dintr-o bucată"
+      "ro": "Haină dintr-o bucată",
+      "tr": "Döndüğünde savrulur"
     }
   },
   {
@@ -2562,7 +2846,8 @@
       "es": "Guante",
       "el": "Γάντι",
       "de": "Handschuh",
-      "ro": "Mănușă"
+      "ro": "Mănușă",
+      "tr": "Eldiven"
     },
     "hint": {
       "en": "Comes off finger by finger",
@@ -2570,7 +2855,8 @@
       "es": "Ropa para la mano",
       "el": "Ρούχο για το χέρι",
       "de": "Kleidung für die Hand",
-      "ro": "Haină pentru mână"
+      "ro": "Haină pentru mână",
+      "tr": "Parmak parmak çıkarılır"
     }
   },
   {
@@ -2580,7 +2866,8 @@
       "es": "Bufanda",
       "el": "Κασκόλ",
       "de": "Schal",
-      "ro": "Fular"
+      "ro": "Fular",
+      "tr": "Atkı"
     },
     "hint": {
       "en": "Wrapped twice around the neck in winter",
@@ -2588,7 +2875,8 @@
       "es": "Ropa para el cuello",
       "el": "Ρούχο για τον λαιμό",
       "de": "Kleidung für den Hals",
-      "ro": "Haină pentru gât"
+      "ro": "Haină pentru gât",
+      "tr": "Kışın boyuna iki kez dolanır"
     }
   },
   {
@@ -2598,7 +2886,8 @@
       "es": "Corbata",
       "el": "Γραβάτα",
       "de": "Krawatte",
-      "ro": "Cravată"
+      "ro": "Cravată",
+      "tr": "Kravat"
     },
     "hint": {
       "en": "Knotted before a job interview",
@@ -2606,7 +2895,8 @@
       "es": "Accesorio formal para el cuello",
       "el": "Επίσημο αξεσουάρ λαιμού",
       "de": "Formelles Halsstück",
-      "ro": "Accesoriu formal pentru gât"
+      "ro": "Accesoriu formal pentru gât",
+      "tr": "İş görüşmesinden önce bağlanır"
     }
   },
   {
@@ -2616,7 +2906,8 @@
       "es": "Botón",
       "el": "Κουμπί",
       "de": "Knopf",
-      "ro": "Nasture"
+      "ro": "Nasture",
+      "tr": "Düğme"
     },
     "hint": {
       "en": "Pops off at the worst moment",
@@ -2624,7 +2915,8 @@
       "es": "Cierre pequeño y redondo",
       "el": "Μικρό στρογγυλό κούμπωμα",
       "de": "Kleiner runder Verschluss",
-      "ro": "Închizătoare mică și rotundă"
+      "ro": "Închizătoare mică și rotundă",
+      "tr": "Tam en kötü anda kopar"
     }
   },
   {
@@ -2634,7 +2926,8 @@
       "es": "Cremallera",
       "el": "Φερμουάρ",
       "de": "Reißverschluss",
-      "ro": "Fermoar"
+      "ro": "Fermoar",
+      "tr": "Fermuar"
     },
     "hint": {
       "en": "Gets stuck halfway up",
@@ -2642,7 +2935,8 @@
       "es": "Cierre con dientes",
       "el": "Κούμπωμα με δόντια",
       "de": "Verschluss mit Zähnen",
-      "ro": "Închizătoare cu dinți"
+      "ro": "Închizătoare cu dinți",
+      "tr": "Yarı yolda sıkışıp kalır"
     }
   },
   {
@@ -2652,7 +2946,8 @@
       "es": "Espejo",
       "el": "Καθρέφτης",
       "de": "Spiegel",
-      "ro": "Oglindă"
+      "ro": "Oglindă",
+      "tr": "Ayna"
     },
     "hint": {
       "en": "Seven years of bad luck if it breaks",
@@ -2660,7 +2955,8 @@
       "es": "Cosa que te muestra",
       "el": "Κάτι που σε δείχνει",
       "de": "Ding, das dich zeigt",
-      "ro": "Lucru care te arată"
+      "ro": "Lucru care te arată",
+      "tr": "Kırılırsa yedi yıl uğursuzluk getirir"
     }
   },
   {
@@ -2670,7 +2966,8 @@
       "es": "Peine",
       "el": "Χτένα",
       "de": "Kamm",
-      "ro": "Pieptene"
+      "ro": "Pieptene",
+      "tr": "Tarak"
     },
     "hint": {
       "en": "Drags through tangles",
@@ -2678,7 +2975,8 @@
       "es": "Cosa con muchos dientes",
       "el": "Κάτι με πολλά δόντια",
       "de": "Ding mit vielen Zähnen",
-      "ro": "Lucru cu mulți dinți"
+      "ro": "Lucru cu mulți dinți",
+      "tr": "Dolaşıklardan zorla geçer"
     }
   },
   {
@@ -2688,7 +2986,8 @@
       "es": "Cepillo de dientes",
       "el": "Οδοντόβουρτσα",
       "de": "Zahnbürste",
-      "ro": "Periuță de dinți"
+      "ro": "Periuță de dinți",
+      "tr": "Diş fırçası"
     },
     "hint": {
       "en": "Replaced every few months",
@@ -2696,7 +2995,8 @@
       "es": "Cosa para los dientes",
       "el": "Κάτι για τα δόντια",
       "de": "Ding für die Zähne",
-      "ro": "Lucru pentru dinți"
+      "ro": "Lucru pentru dinți",
+      "tr": "Birkaç ayda bir değiştirilir"
     }
   },
   {
@@ -2706,7 +3006,8 @@
       "es": "Jabón",
       "el": "Σαπούνι",
       "de": "Seife",
-      "ro": "Săpun"
+      "ro": "Săpun",
+      "tr": "Sabun"
     },
     "hint": {
       "en": "Slips out of your hand in the shower",
@@ -2714,7 +3015,8 @@
       "es": "Cosa que hace espuma",
       "el": "Κάτι που κάνει αφρό",
       "de": "Ding, das Schaum macht",
-      "ro": "Lucru care face spumă"
+      "ro": "Lucru care face spumă",
+      "tr": "Duşta elinden kayar"
     }
   },
   {
@@ -2724,7 +3026,8 @@
       "es": "Escoba",
       "el": "Σκούπα",
       "de": "Besen",
-      "ro": "Mătură"
+      "ro": "Mătură",
+      "tr": "Süpürge"
     },
     "hint": {
       "en": "Sweeps dust into a pile, never quite all of it",
@@ -2732,7 +3035,8 @@
       "es": "Cosa para barrer",
       "el": "Κάτι για σκούπισμα",
       "de": "Ding zum Kehren",
-      "ro": "Lucru pentru măturat"
+      "ro": "Lucru pentru măturat",
+      "tr": "Tozu bir yığın yapar, hiç tam toplayamaz"
     }
   },
   {
@@ -2742,7 +3046,8 @@
       "es": "Cubo",
       "el": "Κουβάς",
       "de": "Eimer",
-      "ro": "Găleată"
+      "ro": "Găleată",
+      "tr": "Kova"
     },
     "hint": {
       "en": "Kicked, if a phrase is to be believed",
@@ -2750,7 +3055,8 @@
       "es": "Cosa que contiene agua",
       "el": "Κάτι που κρατά νερό",
       "de": "Ding, das Wasser hält",
-      "ro": "Lucru care ține apă"
+      "ro": "Lucru care ține apă",
+      "tr": "Suyla doldurup taşırsın"
     }
   },
   {
@@ -2760,7 +3066,8 @@
       "es": "Cuchara",
       "el": "Κουτάλι",
       "de": "Löffel",
-      "ro": "Lingură"
+      "ro": "Lingură",
+      "tr": "Kaşık"
     },
     "hint": {
       "en": "Best for soup, useless on steak",
@@ -2768,7 +3075,8 @@
       "es": "Cubierto redondo",
       "el": "Στρογγυλό σκεύος φαγητού",
       "de": "Rundes Essbesteck",
-      "ro": "Tacâm rotund"
+      "ro": "Tacâm rotund",
+      "tr": "Çorba için ideal, biftekte işe yaramaz"
     }
   },
   {
@@ -2778,7 +3086,8 @@
       "es": "Tenedor",
       "el": "Πιρούνι",
       "de": "Gabel",
-      "ro": "Furculiță"
+      "ro": "Furculiță",
+      "tr": "Çatal"
     },
     "hint": {
       "en": "Twirls spaghetti",
@@ -2786,7 +3095,8 @@
       "es": "Cubierto con puntas",
       "el": "Σκεύος φαγητού με μύτες",
       "de": "Essbesteck mit Zinken",
-      "ro": "Tacâm cu dinți"
+      "ro": "Tacâm cu dinți",
+      "tr": "Spagettiyi döndürerek sarar"
     }
   },
   {
@@ -2796,7 +3106,8 @@
       "es": "Cuchillo",
       "el": "Μαχαίρι",
       "de": "Messer",
-      "ro": "Cuțit"
+      "ro": "Cuțit",
+      "tr": "Bıçak"
     },
     "hint": {
       "en": "Sharpened before you carve",
@@ -2804,7 +3115,8 @@
       "es": "Cubierto afilado",
       "el": "Κοφτερό σκεύος φαγητού",
       "de": "Scharfes Essbesteck",
-      "ro": "Tacâm ascuțit"
+      "ro": "Tacâm ascuțit",
+      "tr": "Kesmeden önce bilenir"
     }
   },
   {
@@ -2814,7 +3126,8 @@
       "es": "Casa",
       "el": "Σπίτι",
       "de": "Haus",
-      "ro": "Casă"
+      "ro": "Casă",
+      "tr": "Ev"
     },
     "hint": {
       "en": "Where the heart is, they say",
@@ -2822,7 +3135,8 @@
       "es": "Lugar donde vive la gente",
       "el": "Μέρος όπου ζουν άνθρωποι",
       "de": "Ort, wo Menschen wohnen",
-      "ro": "Loc unde locuiesc oameni"
+      "ro": "Loc unde locuiesc oameni",
+      "tr": "Kalbin orada olduğu söylenir"
     }
   },
   {
@@ -2832,7 +3146,8 @@
       "es": "Iglesia",
       "el": "Εκκλησία",
       "de": "Kirche",
-      "ro": "Biserică"
+      "ro": "Biserică",
+      "tr": "Kilise"
     },
     "hint": {
       "en": "Bells ring from its tower on Sunday",
@@ -2840,7 +3155,8 @@
       "es": "Edificio con una cruz",
       "el": "Κτίριο με σταυρό",
       "de": "Gebäude mit einem Kreuz",
-      "ro": "Clădire cu o cruce"
+      "ro": "Clădire cu o cruce",
+      "tr": "Pazar günü kulesinden çanlar çalar"
     }
   },
   {
@@ -2850,7 +3166,8 @@
       "es": "Molino de viento",
       "el": "Ανεμόμυλος",
       "de": "Windmühle",
-      "ro": "Moară de vânt"
+      "ro": "Moară de vânt",
+      "tr": "Yel değirmeni"
     },
     "hint": {
       "en": "Turns grain into flour using the wind",
@@ -2858,7 +3175,8 @@
       "es": "Edificio con aspas",
       "el": "Κτίριο με φτερωτή",
       "de": "Gebäude mit Flügeln",
-      "ro": "Clădire cu palete"
+      "ro": "Clădire cu palete",
+      "tr": "Rüzgarla tahılı una çevirir"
     }
   },
   {
@@ -2868,7 +3186,8 @@
       "es": "Tienda de campaña",
       "el": "Σκηνή",
       "de": "Zelt",
-      "ro": "Cort"
+      "ro": "Cort",
+      "tr": "Çadır"
     },
     "hint": {
       "en": "Zipped shut against the bugs",
@@ -2876,7 +3195,8 @@
       "es": "Refugio temporal",
       "el": "Προσωρινό καταφύγιο",
       "de": "Vorübergehender Unterschlupf",
-      "ro": "Adăpost temporar"
+      "ro": "Adăpost temporar",
+      "tr": "Böceklere karşı fermuarla kapatılır"
     }
   },
   {
@@ -2886,7 +3206,8 @@
       "es": "Puente",
       "el": "Γέφυρα",
       "de": "Brücke",
-      "ro": "Pod"
+      "ro": "Pod",
+      "tr": "Köprü"
     },
     "hint": {
       "en": "Crossed to get to the other side",
@@ -2894,7 +3215,8 @@
       "es": "Cosa que cruza el agua",
       "el": "Κάτι που διασχίζει νερό",
       "de": "Ding, das Wasser überquert",
-      "ro": "Lucru care traversează apa"
+      "ro": "Lucru care traversează apa",
+      "tr": "Karşıya geçmek için üzerinden geçilir"
     }
   },
   {
@@ -2904,7 +3226,8 @@
       "es": "Granero",
       "el": "Αχυρώνας",
       "de": "Scheune",
-      "ro": "Hambar"
+      "ro": "Hambar",
+      "tr": "Ahır"
     },
     "hint": {
       "en": "Where the hay is stored for winter",
@@ -2912,7 +3235,8 @@
       "es": "Edificio de granja",
       "el": "Κτίριο φάρμας",
       "de": "Bauernhofgebäude",
-      "ro": "Clădire de fermă"
+      "ro": "Clădire de fermă",
+      "tr": "Kışlık samanın saklandığı yer"
     }
   },
   {
@@ -2922,7 +3246,8 @@
       "es": "Rascacielos",
       "el": "Ουρανοξύστης",
       "de": "Wolkenkratzer",
-      "ro": "Zgârie-nori"
+      "ro": "Zgârie-nori",
+      "tr": "Gökdelen"
     },
     "hint": {
       "en": "You need an elevator, not stairs",
@@ -2930,7 +3255,8 @@
       "es": "Edificio muy alto",
       "el": "Πολύ ψηλό κτίριο",
       "de": "Sehr hohes Gebäude",
-      "ro": "Clădire foarte înaltă"
+      "ro": "Clădire foarte înaltă",
+      "tr": "Merdiven değil asansör gerekir"
     }
   },
   {
@@ -2940,7 +3266,8 @@
       "es": "Iglú",
       "el": "Ιγκλού",
       "de": "Iglu",
-      "ro": "Iglu"
+      "ro": "Iglu",
+      "tr": "İglo"
     },
     "hint": {
       "en": "Surprisingly warm once you're inside",
@@ -2948,7 +3275,8 @@
       "es": "Casa hecha de hielo",
       "el": "Σπίτι από πάγο",
       "de": "Haus aus Eis",
-      "ro": "Casă din gheață"
+      "ro": "Casă din gheață",
+      "tr": "İçine girince şaşırtıcı derecede sıcak"
     }
   },
   {
@@ -2958,7 +3286,8 @@
       "es": "Pirámide",
       "el": "Πυραμίδα",
       "de": "Pyramide",
-      "ro": "Piramidă"
+      "ro": "Piramidă",
+      "tr": "Piramit"
     },
     "hint": {
       "en": "Took thousands of workers to build",
@@ -2966,7 +3295,8 @@
       "es": "Edificio antiguo de piedra",
       "el": "Αρχαίο πέτρινο κτίσμα",
       "de": "Antikes Steingebäude",
-      "ro": "Construcție antică din piatră"
+      "ro": "Construcție antică din piatră",
+      "tr": "İnşası binlerce işçi gerektirdi"
     }
   },
   {
@@ -2976,7 +3306,8 @@
       "es": "Estatua de la Libertad",
       "el": "Άγαλμα της Ελευθερίας",
       "de": "Freiheitsstatue",
-      "ro": "Statuia Libertății"
+      "ro": "Statuia Libertății",
+      "tr": "Özgürlük Heykeli"
     },
     "hint": {
       "en": "Holds a torch up for arriving ships",
@@ -2984,7 +3315,8 @@
       "es": "Estatua famosa",
       "el": "Διάσημο άγαλμα",
       "de": "Berühmte Statue",
-      "ro": "Statuie faimoasă"
+      "ro": "Statuie faimoasă",
+      "tr": "Gelen gemiler için meşalesini yukarı tutar"
     }
   },
   {
@@ -2994,7 +3326,8 @@
       "es": "Big Ben",
       "el": "Μπιγκ Μπεν",
       "de": "Big Ben",
-      "ro": "Big Ben"
+      "ro": "Big Ben",
+      "tr": "Big Ben"
     },
     "hint": {
       "en": "Chimes on the hour in London",
@@ -3002,7 +3335,8 @@
       "es": "Torre del reloj famosa",
       "el": "Διάσημος πύργος ρολογιού",
       "de": "Berühmter Uhrturm",
-      "ro": "Turn cu ceas faimos"
+      "ro": "Turn cu ceas faimos",
+      "tr": "Londra'da her saat başı çalar"
     }
   },
   {
@@ -3012,7 +3346,8 @@
       "es": "Torre inclinada",
       "el": "Κεκλιμένος πύργος",
       "de": "Schiefer Turm",
-      "ro": "Turnul înclinat"
+      "ro": "Turnul înclinat",
+      "tr": "Eğik Kule"
     },
     "hint": {
       "en": "Tourists pose like they're holding it up",
@@ -3020,7 +3355,8 @@
       "es": "Torre que se inclina",
       "el": "Πύργος που γέρνει",
       "de": "Turm, der sich neigt",
-      "ro": "Turn care se apleacă"
+      "ro": "Turn care se apleacă",
+      "tr": "Turistler onu tutuyormuş gibi poz verir"
     }
   },
   {
@@ -3030,7 +3366,8 @@
       "es": "Gran Muralla",
       "el": "Σινικό Τείχος",
       "de": "Große Mauer",
-      "ro": "Marele Zid"
+      "ro": "Marele Zid",
+      "tr": "Çin Seddi"
     },
     "hint": {
       "en": "Visible from very high up, some say",
@@ -3038,7 +3375,8 @@
       "es": "Muro muy largo",
       "el": "Πολύ μακρύ τείχος",
       "de": "Sehr lange Mauer",
-      "ro": "Zid foarte lung"
+      "ro": "Zid foarte lung",
+      "tr": "Kimilerine göre çok yükseklerden görülebilir"
     }
   },
   {
@@ -3048,7 +3386,8 @@
       "es": "Stonehenge",
       "el": "Στόουνχεντζ",
       "de": "Stonehenge",
-      "ro": "Stonehenge"
+      "ro": "Stonehenge",
+      "tr": "Stonehenge"
     },
     "hint": {
       "en": "Nobody's fully sure how it got there",
@@ -3056,7 +3395,8 @@
       "es": "Círculo de piedras antiguo",
       "el": "Αρχαίος κύκλος από πέτρες",
       "de": "Antiker Steinkreis",
-      "ro": "Cerc antic de pietre"
+      "ro": "Cerc antic de pietre",
+      "tr": "Oraya nasıl geldiği tam olarak bilinmiyor"
     }
   },
   {
@@ -3066,7 +3406,8 @@
       "es": "Noria",
       "el": "Ρόδα λούνα παρκ",
       "de": "Riesenrad",
-      "ro": "Roată panoramică"
+      "ro": "Roată panoramică",
+      "tr": "Dönme dolap"
     },
     "hint": {
       "en": "Best view from the very top",
@@ -3074,7 +3415,8 @@
       "es": "Rueda grande de feria",
       "el": "Μεγάλη ρόδα στο πανηγύρι",
       "de": "Großes Rad auf dem Jahrmarkt",
-      "ro": "Roată mare la bâlci"
+      "ro": "Roată mare la bâlci",
+      "tr": "En iyi manzara tam tepeden"
     }
   },
   {
@@ -3084,7 +3426,8 @@
       "es": "Tobogán",
       "el": "Τσουλήθρα",
       "de": "Rutsche",
-      "ro": "Tobogan"
+      "ro": "Tobogan",
+      "tr": "Kaydırak"
     },
     "hint": {
       "en": "You climb up just to go straight back down",
@@ -3092,7 +3435,8 @@
       "es": "Cosa del parque por la que bajas",
       "el": "Κάτι στην παιδική χαρά που κατεβαίνεις",
       "de": "Spielplatzding, das man hinunterrutscht",
-      "ro": "Lucru din parc pe care cobori"
+      "ro": "Lucru din parc pe care cobori",
+      "tr": "Sadece hemen inmek için çıkarsın"
     }
   },
   {
@@ -3102,7 +3446,8 @@
       "es": "Columpio",
       "el": "Κούνια",
       "de": "Schaukel",
-      "ro": "Leagăn"
+      "ro": "Leagăn",
+      "tr": "Salıncak"
     },
     "hint": {
       "en": "Higher every time you pump your legs",
@@ -3110,7 +3455,8 @@
       "es": "Cosa del parque que se balancea",
       "el": "Κάτι στην παιδική χαρά που αιωρείται",
       "de": "Spielplatzding, das schwingt",
-      "ro": "Lucru din parc care se leagănă"
+      "ro": "Lucru din parc care se leagănă",
+      "tr": "Bacaklarını salladıkça daha yükseğe çıkar"
     }
   },
   {
@@ -3120,7 +3466,8 @@
       "es": "Valla",
       "el": "Φράχτης",
       "de": "Zaun",
-      "ro": "Gard"
+      "ro": "Gard",
+      "tr": "Çit"
     },
     "hint": {
       "en": "Neighbours lean over it to chat",
@@ -3128,7 +3475,8 @@
       "es": "Barrera alrededor de un jardín",
       "el": "Φράγμα γύρω από κήπο",
       "de": "Absperrung um einen Garten",
-      "ro": "Barieră în jurul unei grădini"
+      "ro": "Barieră în jurul unei grădini",
+      "tr": "Komşular sohbet etmek için üzerine eğilir"
     }
   },
   {
@@ -3138,7 +3486,8 @@
       "es": "Buzón",
       "el": "Γραμματοκιβώτιο",
       "de": "Briefkasten",
-      "ro": "Cutie poștală"
+      "ro": "Cutie poștală",
+      "tr": "Posta kutusu"
     },
     "hint": {
       "en": "Checked hopefully, mostly bills inside",
@@ -3146,7 +3495,8 @@
       "es": "Caja para cartas",
       "el": "Κουτί για γράμματα",
       "de": "Kasten für Briefe",
-      "ro": "Cutie pentru scrisori"
+      "ro": "Cutie pentru scrisori",
+      "tr": "Umutla açılır, içinde çoğunlukla fatura"
     }
   },
   {
@@ -3156,7 +3506,8 @@
       "es": "Farola",
       "el": "Φανοστάτης",
       "de": "Straßenlaterne",
-      "ro": "Felinar stradal"
+      "ro": "Felinar stradal",
+      "tr": "Sokak lambası"
     },
     "hint": {
       "en": "Flickers on right at dusk",
@@ -3164,7 +3515,8 @@
       "es": "Luz sobre un poste",
       "el": "Φως πάνω σε στύλο",
       "de": "Licht auf einem Mast",
-      "ro": "Lumină pe un stâlp"
+      "ro": "Lumină pe un stâlp",
+      "tr": "Alacakaranlıkta titreyerek yanar"
     }
   },
   {
@@ -3174,7 +3526,8 @@
       "es": "Semáforo",
       "el": "Φανάρι",
       "de": "Ampel",
-      "ro": "Semafor"
+      "ro": "Semafor",
+      "tr": "Trafik lambası"
     },
     "hint": {
       "en": "You wait even when no one's coming",
@@ -3182,7 +3535,8 @@
       "es": "Cosa con tres luces",
       "el": "Κάτι με τρία φώτα",
       "de": "Ding mit drei Lichtern",
-      "ro": "Lucru cu trei lumini"
+      "ro": "Lucru cu trei lumini",
+      "tr": "Kimse gelmese de beklersin"
     }
   },
   {
@@ -3192,7 +3546,8 @@
       "es": "Señal de tráfico",
       "el": "Πινακίδα δρόμου",
       "de": "Verkehrsschild",
-      "ro": "Indicator rutier"
+      "ro": "Indicator rutier",
+      "tr": "Trafik levhası"
     },
     "hint": {
       "en": "Ignored more than it should be",
@@ -3200,7 +3555,8 @@
       "es": "Señal para conductores",
       "el": "Πινακίδα για οδηγούς",
       "de": "Schild für Fahrer",
-      "ro": "Semn pentru șoferi"
+      "ro": "Semn pentru șoferi",
+      "tr": "Olması gerekenden çok görmezden gelinir"
     }
   },
   {
@@ -3210,7 +3566,8 @@
       "es": "Fuente",
       "el": "Σιντριβάνι",
       "de": "Springbrunnen",
-      "ro": "Fântână arteziană"
+      "ro": "Fântână arteziană",
+      "tr": "Çeşme"
     },
     "hint": {
       "en": "You toss a coin in and make a wish",
@@ -3218,7 +3575,8 @@
       "es": "Estructura con agua",
       "el": "Κατασκευή με νερό",
       "de": "Bauwerk mit Wasser",
-      "ro": "Construcție cu apă"
+      "ro": "Construcție cu apă",
+      "tr": "İçine para atıp dilek tutarsın"
     }
   },
   {
@@ -3228,7 +3586,8 @@
       "es": "Pozo",
       "el": "Πηγάδι",
       "de": "Brunnen",
-      "ro": "Fântână"
+      "ro": "Fântână",
+      "tr": "Kuyu"
     },
     "hint": {
       "en": "You shout down it just to hear the echo",
@@ -3236,7 +3595,8 @@
       "es": "Agujero profundo para el agua",
       "el": "Βαθιά τρύπα για νερό",
       "de": "Tiefes Loch für Wasser",
-      "ro": "Gaură adâncă pentru apă"
+      "ro": "Gaură adâncă pentru apă",
+      "tr": "Yankısını duymak için içine bağırırsın"
     }
   },
   {
@@ -3246,7 +3606,8 @@
       "es": "Coche",
       "el": "Αυτοκίνητο",
       "de": "Auto",
-      "ro": "Mașină"
+      "ro": "Mașină",
+      "tr": "Araba"
     },
     "hint": {
       "en": "Needs fuel or it goes nowhere",
@@ -3254,7 +3615,8 @@
       "es": "Vehículo de cuatro ruedas",
       "el": "Όχημα με τέσσερις τροχούς",
       "de": "Fahrzeug mit vier Rädern",
-      "ro": "Vehicul cu patru roți"
+      "ro": "Vehicul cu patru roți",
+      "tr": "Yakıtı yoksa hiçbir yere gitmez"
     }
   },
   {
@@ -3264,7 +3626,8 @@
       "es": "Autobús",
       "el": "Λεωφορείο",
       "de": "Bus",
-      "ro": "Autobuz"
+      "ro": "Autobuz",
+      "tr": "Otobüs"
     },
     "hint": {
       "en": "Never comes when you're already late",
@@ -3272,7 +3635,8 @@
       "es": "Vehículo público largo",
       "el": "Μακρύ δημόσιο όχημα",
       "de": "Langes öffentliches Fahrzeug",
-      "ro": "Vehicul public lung"
+      "ro": "Vehicul public lung",
+      "tr": "Zaten geç kaldığında bir türlü gelmez"
     }
   },
   {
@@ -3282,7 +3646,8 @@
       "es": "Camión",
       "el": "Φορτηγό",
       "de": "Lastwagen",
-      "ro": "Camion"
+      "ro": "Camion",
+      "tr": "Kamyon"
     },
     "hint": {
       "en": "Backs up with a beeping sound",
@@ -3290,7 +3655,8 @@
       "es": "Vehículo grande para mercancías",
       "el": "Μεγάλο όχημα για εμπορεύματα",
       "de": "Großes Fahrzeug für Waren",
-      "ro": "Vehicul mare pentru mărfuri"
+      "ro": "Vehicul mare pentru mărfuri",
+      "tr": "Geri geri giderken bip bip sesi çıkar"
     }
   },
   {
@@ -3300,7 +3666,8 @@
       "es": "Tren",
       "el": "Τρένο",
       "de": "Zug",
-      "ro": "Tren"
+      "ro": "Tren",
+      "tr": "Tren"
     },
     "hint": {
       "en": "You wave at it from a level crossing",
@@ -3308,7 +3675,8 @@
       "es": "Vehículo sobre raíles",
       "el": "Όχημα πάνω σε ράγες",
       "de": "Fahrzeug auf Schienen",
-      "ro": "Vehicul pe șine"
+      "ro": "Vehicul pe șine",
+      "tr": "Hemzemin geçitten ona el sallarsın"
     }
   },
   {
@@ -3318,7 +3686,8 @@
       "es": "Avión",
       "el": "Αεροπλάνο",
       "de": "Flugzeug",
-      "ro": "Avion"
+      "ro": "Avion",
+      "tr": "Uçak"
     },
     "hint": {
       "en": "Ears pop when it lands",
@@ -3326,7 +3695,8 @@
       "es": "Vehículo con alas",
       "el": "Όχημα με φτερά",
       "de": "Fahrzeug mit Flügeln",
-      "ro": "Vehicul cu aripi"
+      "ro": "Vehicul cu aripi",
+      "tr": "İnişte kulakların çınlar"
     }
   },
   {
@@ -3336,7 +3706,8 @@
       "es": "Helicóptero",
       "el": "Ελικόπτερο",
       "de": "Hubschrauber",
-      "ro": "Elicopter"
+      "ro": "Elicopter",
+      "tr": "Helikopter"
     },
     "hint": {
       "en": "Loud enough to drown out conversation",
@@ -3344,7 +3715,8 @@
       "es": "Vehículo con hélice giratoria",
       "el": "Όχημα με περιστρεφόμενη έλικα",
       "de": "Fahrzeug mit drehendem Rotor",
-      "ro": "Vehicul cu elice rotitoare"
+      "ro": "Vehicul cu elice rotitoare",
+      "tr": "Konuşmayı bastıracak kadar gürültülü"
     }
   },
   {
@@ -3354,7 +3726,8 @@
       "es": "Barca",
       "el": "Βάρκα",
       "de": "Boot",
-      "ro": "Barcă"
+      "ro": "Barcă",
+      "tr": "Tekne"
     },
     "hint": {
       "en": "Rocks with every wave",
@@ -3362,7 +3735,8 @@
       "es": "Embarcación pequeña",
       "el": "Μικρό σκάφος στο νερό",
       "de": "Kleines Wasserfahrzeug",
-      "ro": "Ambarcațiune mică"
+      "ro": "Ambarcațiune mică",
+      "tr": "Her dalgayla sallanır"
     }
   },
   {
@@ -3372,7 +3746,8 @@
       "es": "Velero",
       "el": "Ιστιοφόρο",
       "de": "Segelboot",
-      "ro": "Barcă cu pânze"
+      "ro": "Barcă cu pânze",
+      "tr": "Yelkenli"
     },
     "hint": {
       "en": "No engine, just fabric catching a breeze",
@@ -3380,7 +3755,8 @@
       "es": "Barca con vela",
       "el": "Βάρκα με πανί",
       "de": "Boot mit Segel",
-      "ro": "Barcă cu pânză"
+      "ro": "Barcă cu pânză",
+      "tr": "Motor yok, sadece rüzgarı yakalayan bir bez"
     }
   },
   {
@@ -3390,7 +3766,8 @@
       "es": "Submarino",
       "el": "Υποβρύχιο",
       "de": "U-Boot",
-      "ro": "Submarin"
+      "ro": "Submarin",
+      "tr": "Denizaltı"
     },
     "hint": {
       "en": "Goes where sunlight can't reach",
@@ -3398,7 +3775,8 @@
       "es": "Nave bajo el agua",
       "el": "Σκάφος κάτω από το νερό",
       "de": "Fahrzeug unter Wasser",
-      "ro": "Navă sub apă"
+      "ro": "Navă sub apă",
+      "tr": "Güneş ışığının ulaşamadığı yere gider"
     }
   },
   {
@@ -3408,7 +3786,8 @@
       "es": "Canoa",
       "el": "Κανό",
       "de": "Kanu",
-      "ro": "Canoe"
+      "ro": "Canoe",
+      "tr": "Kano"
     },
     "hint": {
       "en": "Tips over if you lean the wrong way",
@@ -3416,7 +3795,8 @@
       "es": "Barca estrecha",
       "el": "Στενή βάρκα",
       "de": "Schmales Boot",
-      "ro": "Barcă îngustă"
+      "ro": "Barcă îngustă",
+      "tr": "Yanlış yöne eğilirsen devrilir"
     }
   },
   {
@@ -3426,7 +3806,8 @@
       "es": "Motocicleta",
       "el": "Μοτοσικλέτα",
       "de": "Motorrad",
-      "ro": "Motocicletă"
+      "ro": "Motocicletă",
+      "tr": "Motosiklet"
     },
     "hint": {
       "en": "You lean into the turn with it",
@@ -3434,7 +3815,8 @@
       "es": "Vehículo de dos ruedas",
       "el": "Όχημα με δύο τροχούς",
       "de": "Fahrzeug mit zwei Rädern",
-      "ro": "Vehicul cu două roți"
+      "ro": "Vehicul cu două roți",
+      "tr": "Virajda onunla birlikte yatarsın"
     }
   },
   {
@@ -3444,7 +3826,8 @@
       "es": "Patinete",
       "el": "Πατίνι",
       "de": "Roller",
-      "ro": "Trotinetă"
+      "ro": "Trotinetă",
+      "tr": "Scooter"
     },
     "hint": {
       "en": "One foot pushes, the other rides",
@@ -3452,7 +3835,8 @@
       "es": "Cosa pequeña sobre la que vas de pie",
       "el": "Μικρό πράγμα πάνω στο οποίο στέκεσαι",
       "de": "Kleines Ding, auf dem man steht",
-      "ro": "Lucru mic pe care stai în picioare"
+      "ro": "Lucru mic pe care stai în picioare",
+      "tr": "Bir ayak iter, diğeri üzerinde durur"
     }
   },
   {
@@ -3462,7 +3846,8 @@
       "es": "Monopatín",
       "el": "Σκέιτμπορντ",
       "de": "Skateboard",
-      "ro": "Skateboard"
+      "ro": "Skateboard",
+      "tr": "Kaykay"
     },
     "hint": {
       "en": "No seat, just balance",
@@ -3470,7 +3855,8 @@
       "es": "Tabla sobre la que te mueves",
       "el": "Σανίδα πάνω στην οποία κινείσαι",
       "de": "Brett, auf dem man fährt",
-      "ro": "Placă pe care te deplasezi"
+      "ro": "Placă pe care te deplasezi",
+      "tr": "Koltuk yok, sadece denge"
     }
   },
   {
@@ -3480,7 +3866,8 @@
       "es": "Tractor",
       "el": "Τρακτέρ",
       "de": "Traktor",
-      "ro": "Tractor"
+      "ro": "Tractor",
+      "tr": "Traktör"
     },
     "hint": {
       "en": "Slows down traffic behind it on a country road",
@@ -3488,7 +3875,8 @@
       "es": "Vehículo de una granja",
       "el": "Όχημα σε φάρμα",
       "de": "Fahrzeug auf einem Bauernhof",
-      "ro": "Vehicul de la fermă"
+      "ro": "Vehicul de la fermă",
+      "tr": "Kırsal yolda arkasındaki trafiği yavaşlatır"
     }
   },
   {
@@ -3498,7 +3886,8 @@
       "es": "Ambulancia",
       "el": "Ασθενοφόρο",
       "de": "Krankenwagen",
-      "ro": "Ambulanță"
+      "ro": "Ambulanță",
+      "tr": "Ambulans"
     },
     "hint": {
       "en": "Traffic pulls aside when it's coming",
@@ -3506,7 +3895,8 @@
       "es": "Vehículo para enfermos",
       "el": "Όχημα για αρρώστους",
       "de": "Fahrzeug für Kranke",
-      "ro": "Vehicul pentru bolnavi"
+      "ro": "Vehicul pentru bolnavi",
+      "tr": "Geldiğinde trafik kenara çekilir"
     }
   },
   {
@@ -3516,7 +3906,8 @@
       "es": "Camión de bomberos",
       "el": "Πυροσβεστικό όχημα",
       "de": "Feuerwehrauto",
-      "ro": "Mașină de pompieri"
+      "ro": "Mașină de pompieri",
+      "tr": "İtfaiye aracı"
     },
     "hint": {
       "en": "Everyone waves as it passes",
@@ -3524,7 +3915,8 @@
       "es": "Vehículo de emergencia rojo",
       "el": "Κόκκινο όχημα έκτακτης ανάγκης",
       "de": "Rotes Einsatzfahrzeug",
-      "ro": "Vehicul roșu de urgență"
+      "ro": "Vehicul roșu de urgență",
+      "tr": "Geçerken herkes el sallar"
     }
   },
   {
@@ -3534,7 +3926,8 @@
       "es": "Taxi",
       "el": "Ταξί",
       "de": "Taxi",
-      "ro": "Taxi"
+      "ro": "Taxi",
+      "tr": "Taksi"
     },
     "hint": {
       "en": "You flag it down from the curb",
@@ -3542,7 +3935,8 @@
       "es": "Coche por el que pagas",
       "el": "Αυτοκίνητο που πληρώνεις",
       "de": "Auto, für das man bezahlt",
-      "ro": "Mașină pentru care plătești"
+      "ro": "Mașină pentru care plătești",
+      "tr": "Kaldırımdan el kaldırıp çevirirsin"
     }
   },
   {
@@ -3552,7 +3946,8 @@
       "es": "Carretilla",
       "el": "Καρότσι με μία ρόδα",
       "de": "Schubkarre",
-      "ro": "Roabă"
+      "ro": "Roabă",
+      "tr": "El arabası"
     },
     "hint": {
       "en": "Tips over if you load it unevenly",
@@ -3560,7 +3955,8 @@
       "es": "Carro de una rueda",
       "el": "Καρότσι με έναν τροχό",
       "de": "Karren mit einem Rad",
-      "ro": "Cărucior cu o roată"
+      "ro": "Cărucior cu o roată",
+      "tr": "Dengesiz yüklersen devrilir"
     }
   },
   {
@@ -3570,7 +3966,8 @@
       "es": "Carrito de la compra",
       "el": "Καρότσι σούπερ μάρκετ",
       "de": "Einkaufswagen",
-      "ro": "Cărucior de cumpărături"
+      "ro": "Cărucior de cumpărături",
+      "tr": "Alışveriş arabası"
     },
     "hint": {
       "en": "Has one wheel that never cooperates",
@@ -3578,7 +3975,8 @@
       "es": "Carro de una tienda",
       "el": "Καρότσι σε κατάστημα",
       "de": "Wagen im Laden",
-      "ro": "Cărucior din magazin"
+      "ro": "Cărucior din magazin",
+      "tr": "Hep bir tekerleği inat eder"
     }
   },
   {
@@ -3588,7 +3986,8 @@
       "es": "Carro",
       "el": "Κάρο",
       "de": "Wagen",
-      "ro": "Car"
+      "ro": "Car",
+      "tr": "Çeki arabası"
     },
     "hint": {
       "en": "Pulled along by a small handle",
@@ -3596,7 +3995,8 @@
       "es": "Carro que se tira",
       "el": "Κάρο που το τραβούν",
       "de": "Karren, der gezogen wird",
-      "ro": "Car care este tras"
+      "ro": "Car care este tras",
+      "tr": "Küçük bir tutamaçla çekilir"
     }
   },
   {
@@ -3606,7 +4006,8 @@
       "es": "Ancla",
       "el": "Άγκυρα",
       "de": "Anker",
-      "ro": "Ancoră"
+      "ro": "Ancoră",
+      "tr": "Çapa"
     },
     "hint": {
       "en": "Dropped to keep a boat from drifting",
@@ -3614,7 +4015,8 @@
       "es": "Cosa pesada en una cadena",
       "el": "Βαρύ πράγμα σε αλυσίδα",
       "de": "Schweres Ding an einer Kette",
-      "ro": "Lucru greu pe un lanț"
+      "ro": "Lucru greu pe un lanț",
+      "tr": "Teknenin sürüklenmesini önlemek için atılır"
     }
   },
   {
@@ -3624,7 +4026,8 @@
       "es": "Hélice",
       "el": "Έλικας",
       "de": "Propeller",
-      "ro": "Elice"
+      "ro": "Elice",
+      "tr": "Pervane"
     },
     "hint": {
       "en": "Spins fast enough to blur",
@@ -3632,7 +4035,8 @@
       "es": "Cosa con aspas que giran",
       "el": "Κάτι με περιστρεφόμενα πτερύγια",
       "de": "Ding mit drehenden Blättern",
-      "ro": "Lucru cu palete care se rotesc"
+      "ro": "Lucru cu palete care se rotesc",
+      "tr": "Bulanıklaşacak kadar hızlı döner"
     }
   },
   {
@@ -3642,7 +4046,8 @@
       "es": "Rueda",
       "el": "Τροχός",
       "de": "Rad",
-      "ro": "Roată"
+      "ro": "Roată",
+      "tr": "Tekerlek"
     },
     "hint": {
       "en": "Reinvented, as the saying goes, far too often",
@@ -3650,7 +4055,8 @@
       "es": "Cosa redonda que rueda",
       "el": "Στρογγυλό πράγμα που κυλά",
       "de": "Rundes rollendes Ding",
-      "ro": "Lucru rotund care se rostogolește"
+      "ro": "Lucru rotund care se rostogolește",
+      "tr": "Deyime göre gereğinden fazla yeniden icat edilir"
     }
   },
   {
@@ -3660,7 +4066,8 @@
       "es": "Paracaídas",
       "el": "Αλεξίπτωτο",
       "de": "Fallschirm",
-      "ro": "Parașută"
+      "ro": "Parașută",
+      "tr": "Paraşüt"
     },
     "hint": {
       "en": "You trust it completely, or you don't jump",
@@ -3668,7 +4075,8 @@
       "es": "Cosa que frena una caída",
       "el": "Κάτι που επιβραδύνει την πτώση",
       "de": "Ding, das einen Fall bremst",
-      "ro": "Lucru care încetinește o cădere"
+      "ro": "Lucru care încetinește o cădere",
+      "tr": "Ona tamamen güvenirsin, yoksa atlamazsın"
     }
   },
   {
@@ -3678,7 +4086,8 @@
       "es": "Sol",
       "el": "Ήλιος",
       "de": "Sonne",
-      "ro": "Soare"
+      "ro": "Soare",
+      "tr": "Güneş"
     },
     "hint": {
       "en": "Setting it at anything is a bad idea",
@@ -3686,7 +4095,8 @@
       "es": "Cosa que ilumina el día",
       "el": "Κάτι που φωτίζει τη μέρα",
       "de": "Ding, das den Tag erhellt",
-      "ro": "Lucru care luminează ziua"
+      "ro": "Lucru care luminează ziua",
+      "tr": "Ona doğrudan bakmak kötü bir fikir"
     }
   },
   {
@@ -3696,7 +4106,8 @@
       "es": "Luna",
       "el": "Φεγγάρι",
       "de": "Mond",
-      "ro": "Lună"
+      "ro": "Lună",
+      "tr": "Ay"
     },
     "hint": {
       "en": "Changes shape through the month",
@@ -3704,7 +4115,8 @@
       "es": "Cosa en el cielo nocturno",
       "el": "Κάτι στον νυχτερινό ουρανό",
       "de": "Ding am Nachthimmel",
-      "ro": "Lucru de pe cerul nopții"
+      "ro": "Lucru de pe cerul nopții",
+      "tr": "Ay boyunca şekil değiştirir"
     }
   },
   {
@@ -3714,7 +4126,8 @@
       "es": "Estrella",
       "el": "Αστέρι",
       "de": "Stern",
-      "ro": "Stea"
+      "ro": "Stea",
+      "tr": "Yıldız"
     },
     "hint": {
       "en": "Already burned out by the time you see it",
@@ -3722,7 +4135,8 @@
       "es": "Luz pequeña en el cielo",
       "el": "Μικρό φως στον ουρανό",
       "de": "Kleines Licht am Himmel",
-      "ro": "Lumină mică pe cer"
+      "ro": "Lumină mică pe cer",
+      "tr": "Sen görene kadar çoktan sönmüş olabilir"
     }
   },
   {
@@ -3732,7 +4146,8 @@
       "es": "Nube",
       "el": "Σύννεφο",
       "de": "Wolke",
-      "ro": "Nor"
+      "ro": "Nor",
+      "tr": "Bulut"
     },
     "hint": {
       "en": "Shaped like something, if you stare long enough",
@@ -3740,7 +4155,8 @@
       "es": "Forma blanca en el cielo",
       "el": "Λευκό σχήμα στον ουρανό",
       "de": "Weiße Form am Himmel",
-      "ro": "Formă albă pe cer"
+      "ro": "Formă albă pe cer",
+      "tr": "Yeterince bakarsan bir şeye benzer"
     }
   },
   {
@@ -3750,7 +4166,8 @@
       "es": "Arcoíris",
       "el": "Ουράνιο τόξο",
       "de": "Regenbogen",
-      "ro": "Curcubeu"
+      "ro": "Curcubeu",
+      "tr": "Gökkuşağı"
     },
     "hint": {
       "en": "Appears after the rain clears",
@@ -3758,7 +4175,8 @@
       "es": "Arco de colores",
       "el": "Τόξο χρωμάτων",
       "de": "Bogen aus Farben",
-      "ro": "Arc de culori"
+      "ro": "Arc de culori",
+      "tr": "Yağmur dinince belirir"
     }
   },
   {
@@ -3768,7 +4186,8 @@
       "es": "Relámpago",
       "el": "Αστραπή",
       "de": "Blitz",
-      "ro": "Fulger"
+      "ro": "Fulger",
+      "tr": "Şimşek"
     },
     "hint": {
       "en": "Comes right before the thunder",
@@ -3776,7 +4195,8 @@
       "es": "Destello en una tormenta",
       "el": "Λάμψη σε καταιγίδα",
       "de": "Blitz im Sturm",
-      "ro": "Sclipire în furtună"
+      "ro": "Sclipire în furtună",
+      "tr": "Gök gürlemeden hemen önce gelir"
     }
   },
   {
@@ -3786,7 +4206,8 @@
       "es": "Copo de nieve",
       "el": "Νιφάδα χιονιού",
       "de": "Schneeflocke",
-      "ro": "Fulg de nea"
+      "ro": "Fulg de nea",
+      "tr": "Kar tanesi"
     },
     "hint": {
       "en": "No two are exactly alike, they say",
@@ -3794,7 +4215,8 @@
       "es": "Cristal helado que cae del cielo",
       "el": "Παγωμένος κρύσταλλος από τον ουρανό",
       "de": "Gefrorener Kristall vom Himmel",
-      "ro": "Cristal înghețat din cer"
+      "ro": "Cristal înghețat din cer",
+      "tr": "Hiçbir ikisinin aynı olmadığı söylenir"
     }
   },
   {
@@ -3804,7 +4226,8 @@
       "es": "Gota de lluvia",
       "el": "Σταγόνα βροχής",
       "de": "Regentropfen",
-      "ro": "Picătură de ploaie"
+      "ro": "Picătură de ploaie",
+      "tr": "Yağmur damlası"
     },
     "hint": {
       "en": "Races another one down the window",
@@ -3812,7 +4235,8 @@
       "es": "Gotita de agua",
       "el": "Μικρή σταγόνα νερού",
       "de": "Kleiner Wassertropfen",
-      "ro": "Picătură mică de apă"
+      "ro": "Picătură mică de apă",
+      "tr": "Pencerede bir diğeriyle yarışır"
     }
   },
   {
@@ -3822,7 +4246,8 @@
       "es": "Montaña",
       "el": "Βουνό",
       "de": "Berg",
-      "ro": "Munte"
+      "ro": "Munte",
+      "tr": "Dağ"
     },
     "hint": {
       "en": "You need good boots to reach the top",
@@ -3830,7 +4255,8 @@
       "es": "Terreno muy alto",
       "el": "Πολύ ψηλό έδαφος",
       "de": "Sehr hohes Gelände",
-      "ro": "Teren foarte înalt"
+      "ro": "Teren foarte înalt",
+      "tr": "Zirveye ulaşmak için sağlam bot gerekir"
     }
   },
   {
@@ -3840,7 +4266,8 @@
       "es": "Volcán",
       "el": "Ηφαίστειο",
       "de": "Vulkan",
-      "ro": "Vulcan"
+      "ro": "Vulcan",
+      "tr": "Yanardağ"
     },
     "hint": {
       "en": "Best admired from a safe distance",
@@ -3848,7 +4275,8 @@
       "es": "Montaña que hace erupción",
       "el": "Βουνό που εκρήγνυται",
       "de": "Berg, der ausbricht",
-      "ro": "Munte care erupe"
+      "ro": "Munte care erupe",
+      "tr": "Güvenli mesafeden izlemek en iyisi"
     }
   },
   {
@@ -3858,7 +4286,8 @@
       "es": "Isla",
       "el": "Νησί",
       "de": "Insel",
-      "ro": "Insulă"
+      "ro": "Insulă",
+      "tr": "Ada"
     },
     "hint": {
       "en": "You need a boat to leave",
@@ -3866,7 +4295,8 @@
       "es": "Tierra rodeada de agua",
       "el": "Στεριά που περιβάλλεται από νερό",
       "de": "Land, von Wasser umgeben",
-      "ro": "Pământ înconjurat de apă"
+      "ro": "Pământ înconjurat de apă",
+      "tr": "Ayrılmak için tekne gerekir"
     }
   },
   {
@@ -3876,7 +4306,8 @@
       "es": "Cascada",
       "el": "Καταρράκτης",
       "de": "Wasserfall",
-      "ro": "Cascadă"
+      "ro": "Cascadă",
+      "tr": "Şelale"
     },
     "hint": {
       "en": "The sound gets louder as you get closer",
@@ -3884,7 +4315,8 @@
       "es": "Agua que cae desde lo alto",
       "el": "Νερό που πέφτει από ψηλά",
       "de": "Wasser, das aus der Höhe fällt",
-      "ro": "Apă care cade de la înălțime"
+      "ro": "Apă care cade de la înălțime",
+      "tr": "Yaklaştıkça sesi güçlenir"
     }
   },
   {
@@ -3894,7 +4326,8 @@
       "es": "Río",
       "el": "Ποτάμι",
       "de": "Fluss",
-      "ro": "Râu"
+      "ro": "Râu",
+      "tr": "Nehir"
     },
     "hint": {
       "en": "Follows a path down to the sea",
@@ -3902,7 +4335,8 @@
       "es": "Corriente larga de agua",
       "el": "Μακρύ ρεύμα νερού",
       "de": "Langer Wasserlauf",
-      "ro": "Curs lung de apă"
+      "ro": "Curs lung de apă",
+      "tr": "Denize giden bir yol izler"
     }
   },
   {
@@ -3912,7 +4346,8 @@
       "es": "Ola",
       "el": "Κύμα",
       "de": "Welle",
-      "ro": "Val"
+      "ro": "Val",
+      "tr": "Dalga"
     },
     "hint": {
       "en": "Surfers wait ages for the right one",
@@ -3920,7 +4355,8 @@
       "es": "Agua que se mueve en el mar",
       "el": "Νερό που κινείται στη θάλασσα",
       "de": "Bewegtes Wasser im Meer",
-      "ro": "Apă în mișcare în mare"
+      "ro": "Apă în mișcare în mare",
+      "tr": "Sörfçüler doğrusu için sabırla bekler"
     }
   },
   {
@@ -3930,7 +4366,8 @@
       "es": "Árbol",
       "el": "Δέντρο",
       "de": "Baum",
-      "ro": "Copac"
+      "ro": "Copac",
+      "tr": "Ağaç"
     },
     "hint": {
       "en": "Rings inside tell you its age",
@@ -3938,7 +4375,8 @@
       "es": "Planta grande con tronco",
       "el": "Μεγάλο φυτό με κορμό",
       "de": "Große Pflanze mit Stamm",
-      "ro": "Plantă mare cu trunchi"
+      "ro": "Plantă mare cu trunchi",
+      "tr": "İçindeki halkalar yaşını söyler"
     }
   },
   {
@@ -3948,7 +4386,8 @@
       "es": "Hoja",
       "el": "Φύλλο",
       "de": "Blatt",
-      "ro": "Frunză"
+      "ro": "Frunză",
+      "tr": "Yaprak"
     },
     "hint": {
       "en": "Changes colour before it falls",
@@ -3956,7 +4395,8 @@
       "es": "Parte verde de una planta",
       "el": "Πράσινο μέρος φυτού",
       "de": "Grüner Teil einer Pflanze",
-      "ro": "Parte verde a unei plante"
+      "ro": "Parte verde a unei plante",
+      "tr": "Düşmeden önce renk değiştirir"
     }
   },
   {
@@ -3966,7 +4406,8 @@
       "es": "Flor",
       "el": "Λουλούδι",
       "de": "Blume",
-      "ro": "Floare"
+      "ro": "Floare",
+      "tr": "Çiçek"
     },
     "hint": {
       "en": "Wilts a few days after it's cut",
@@ -3974,7 +4415,8 @@
       "es": "Parte colorida de una planta",
       "el": "Πολύχρωμο μέρος φυτού",
       "de": "Bunter Teil einer Pflanze",
-      "ro": "Parte colorată a unei plante"
+      "ro": "Parte colorată a unei plante",
+      "tr": "Kesildikten birkaç gün sonra solar"
     }
   },
   {
@@ -3984,7 +4426,8 @@
       "es": "Hierba",
       "el": "Γρασίδι",
       "de": "Gras",
-      "ro": "Iarbă"
+      "ro": "Iarbă",
+      "tr": "Çimen"
     },
     "hint": {
       "en": "Always seems greener on the other side",
@@ -3992,7 +4435,8 @@
       "es": "Cubierta verde del suelo",
       "el": "Πράσινο κάλυμμα του εδάφους",
       "de": "Grüne Bodendecke",
-      "ro": "Covor verde al pământului"
+      "ro": "Covor verde al pământului",
+      "tr": "Karşı taraftakiler hep daha yeşil görünür"
     }
   },
   {
@@ -4002,7 +4446,8 @@
       "es": "Arbusto",
       "el": "Θάμνος",
       "de": "Busch",
-      "ro": "Tufă"
+      "ro": "Tufă",
+      "tr": "Çalı"
     },
     "hint": {
       "en": "Trimmed into shape once a season",
@@ -4010,7 +4455,8 @@
       "es": "Planta pequeña y espesa",
       "el": "Μικρό πυκνό φυτό",
       "de": "Kleine dichte Pflanze",
-      "ro": "Plantă mică și deasă"
+      "ro": "Plantă mică și deasă",
+      "tr": "Mevsimde bir kez şekil verilerek budanır"
     }
   },
   {
@@ -4020,7 +4466,8 @@
       "es": "Tronco",
       "el": "Κούτσουρο",
       "de": "Baumstamm",
-      "ro": "Buștean"
+      "ro": "Buștean",
+      "tr": "Kütük"
     },
     "hint": {
       "en": "Rolled to cross a stream, if you're brave",
@@ -4028,7 +4475,8 @@
       "es": "Trozo de un árbol caído",
       "el": "Κομμάτι πεσμένου δέντρου",
       "de": "Stück eines gefallenen Baums",
-      "ro": "Bucată dintr-un copac căzut"
+      "ro": "Bucată dintr-un copac căzut",
+      "tr": "Cesursan bir dereyi geçmek için üzerinde yürünür"
     }
   },
   {
@@ -4038,7 +4486,8 @@
       "es": "Roca",
       "el": "Βράχος",
       "de": "Fels",
-      "ro": "Stâncă"
+      "ro": "Stâncă",
+      "tr": "Taş"
     },
     "hint": {
       "en": "Skipped across still water",
@@ -4046,7 +4495,8 @@
       "es": "Trozo duro del suelo",
       "el": "Σκληρό κομμάτι εδάφους",
       "de": "Hartes Stück Boden",
-      "ro": "Bucată tare de pământ"
+      "ro": "Bucată tare de pământ",
+      "tr": "Durgun suda sektirilir"
     }
   },
   {
@@ -4056,7 +4506,8 @@
       "es": "Pluma",
       "el": "Φτερό",
       "de": "Feder",
-      "ro": "Pană"
+      "ro": "Pană",
+      "tr": "Tüy"
     },
     "hint": {
       "en": "Light enough to float down slowly",
@@ -4064,7 +4515,8 @@
       "es": "Cosa ligera de un ave",
       "el": "Ελαφρύ πράγμα από πουλί",
       "de": "Leichtes Ding von einem Vogel",
-      "ro": "Lucru ușor de la o pasăre"
+      "ro": "Lucru ușor de la o pasăre",
+      "tr": "Yavaşça süzülecek kadar hafif"
     }
   },
   {
@@ -4074,7 +4526,8 @@
       "es": "Concha",
       "el": "Κοχύλι",
       "de": "Muschel",
-      "ro": "Scoică"
+      "ro": "Scoică",
+      "tr": "Deniz kabuğu"
     },
     "hint": {
       "en": "You hold it up to hear the ocean",
@@ -4082,7 +4535,8 @@
       "es": "Cubierta dura de la playa",
       "el": "Σκληρό κέλυφος από την παραλία",
       "de": "Harte Hülle vom Strand",
-      "ro": "Înveliș tare de pe plajă"
+      "ro": "Înveliș tare de pe plajă",
+      "tr": "Kulağına tutup okyanusu dinlersin"
     }
   },
   {
@@ -4092,7 +4546,8 @@
       "es": "Coral",
       "el": "Κοράλλι",
       "de": "Koralle",
-      "ro": "Coral"
+      "ro": "Coral",
+      "tr": "Mercan"
     },
     "hint": {
       "en": "Bleaches white when the water gets too warm",
@@ -4100,7 +4555,8 @@
       "es": "Formación del mar",
       "el": "Θαλάσσιος σχηματισμός",
       "de": "Meeresgewächs",
-      "ro": "Formațiune marină"
+      "ro": "Formațiune marină",
+      "tr": "Su çok ısınınca beyaza döner"
     }
   },
   {
@@ -4110,7 +4566,8 @@
       "es": "Planeta",
       "el": "Πλανήτης",
       "de": "Planet",
-      "ro": "Planetă"
+      "ro": "Planetă",
+      "tr": "Gezegen"
     },
     "hint": {
       "en": "Orbits something much bigger",
@@ -4118,7 +4575,8 @@
       "es": "Cuerpo redondo del espacio",
       "el": "Στρογγυλό σώμα στο διάστημα",
       "de": "Runder Körper im Weltall",
-      "ro": "Corp rotund din spațiu"
+      "ro": "Corp rotund din spațiu",
+      "tr": "Kendinden çok daha büyük bir şeyin etrafında döner"
     }
   },
   {
@@ -4128,7 +4586,8 @@
       "es": "Saturno",
       "el": "Κρόνος",
       "de": "Saturn",
-      "ro": "Saturn"
+      "ro": "Saturn",
+      "tr": "Satürn"
     },
     "hint": {
       "en": "The rings are the giveaway",
@@ -4136,7 +4595,8 @@
       "es": "Planeta con anillos",
       "el": "Πλανήτης με δαχτυλίδια",
       "de": "Planet mit Ringen",
-      "ro": "Planetă cu inele"
+      "ro": "Planetă cu inele",
+      "tr": "Halkaları onu ele verir"
     }
   },
   {
@@ -4146,7 +4606,8 @@
       "es": "Cometa",
       "el": "Κομήτης",
       "de": "Komet",
-      "ro": "Cometă"
+      "ro": "Cometă",
+      "tr": "Kuyruklu yıldız"
     },
     "hint": {
       "en": "Only swings by once every so often",
@@ -4154,7 +4615,8 @@
       "es": "Objeto del espacio con cola",
       "el": "Διαστημικό αντικείμενο με ουρά",
       "de": "Weltraumobjekt mit Schweif",
-      "ro": "Obiect spațial cu coadă"
+      "ro": "Obiect spațial cu coadă",
+      "tr": "Sadece uzun aralıklarla uğrar"
     }
   },
   {
@@ -4164,7 +4626,8 @@
       "es": "Galaxia",
       "el": "Γαλαξίας",
       "de": "Galaxie",
-      "ro": "Galaxie"
+      "ro": "Galaxie",
+      "tr": "Galaksi"
     },
     "hint": {
       "en": "Our own has a name too",
@@ -4172,7 +4635,8 @@
       "es": "Grupo enorme de estrellas",
       "el": "Τεράστια ομάδα αστεριών",
       "de": "Riesige Gruppe von Sternen",
-      "ro": "Grup uriaș de stele"
+      "ro": "Grup uriaș de stele",
+      "tr": "Bizimkinin de bir adı var"
     }
   },
   {
@@ -4182,7 +4646,8 @@
       "es": "Telescopio",
       "el": "Τηλεσκόπιο",
       "de": "Teleskop",
-      "ro": "Telescop"
+      "ro": "Telescop",
+      "tr": "Teleskop"
     },
     "hint": {
       "en": "You squint through the eyepiece",
@@ -4190,7 +4655,8 @@
       "es": "Instrumento para ver lejos",
       "el": "Όργανο για να βλέπεις μακριά",
       "de": "Gerät zum Weitsehen",
-      "ro": "Instrument pentru a privi departe"
+      "ro": "Instrument pentru a privi departe",
+      "tr": "Gözlükten gözünü kısarak bakarsın"
     }
   },
   {
@@ -4200,7 +4666,8 @@
       "es": "Satélite",
       "el": "Δορυφόρος",
       "de": "Satellit",
-      "ro": "Satelit"
+      "ro": "Satelit",
+      "tr": "Uydu"
     },
     "hint": {
       "en": "Silently circles far above us",
@@ -4208,7 +4675,8 @@
       "es": "Máquina que orbita",
       "el": "Μηχανή που περιφέρεται",
       "de": "Maschine, die kreist",
-      "ro": "Mașinărie care orbitează"
+      "ro": "Mașinărie care orbitează",
+      "tr": "Sessizce çok yukarımızda döner"
     }
   },
   {
@@ -4218,7 +4686,8 @@
       "es": "Astronauta",
       "el": "Αστροναύτης",
       "de": "Astronaut",
-      "ro": "Astronaut"
+      "ro": "Astronaut",
+      "tr": "Astronot"
     },
     "hint": {
       "en": "Floats at work",
@@ -4226,7 +4695,8 @@
       "es": "Persona en el espacio",
       "el": "Άνθρωπος στο διάστημα",
       "de": "Mensch im Weltall",
-      "ro": "Om în spațiu"
+      "ro": "Om în spațiu",
+      "tr": "İşte havada süzülür"
     }
   },
   {
@@ -4236,7 +4706,8 @@
       "es": "Extraterrestre",
       "el": "Εξωγήινος",
       "de": "Außerirdischer",
-      "ro": "Extraterestru"
+      "ro": "Extraterestru",
+      "tr": "Uzaylı"
     },
     "hint": {
       "en": "Blamed for anything unexplained in the sky",
@@ -4244,7 +4715,8 @@
       "es": "Criatura de otro mundo",
       "el": "Πλάσμα από άλλον κόσμο",
       "de": "Wesen aus einer anderen Welt",
-      "ro": "Creatură din altă lume"
+      "ro": "Creatură din altă lume",
+      "tr": "Gökyüzündeki her açıklanamayan şeyin suçlusu"
     }
   },
   {
@@ -4254,7 +4726,8 @@
       "es": "OVNI",
       "el": "ΑΤΙΑ",
       "de": "UFO",
-      "ro": "OZN"
+      "ro": "OZN",
+      "tr": "UFO"
     },
     "hint": {
       "en": "Blurry in every photo ever taken of one",
@@ -4262,7 +4735,8 @@
       "es": "Platillo volante",
       "el": "Ιπτάμενος δίσκος",
       "de": "Fliegende Untertasse",
-      "ro": "Farfurie zburătoare"
+      "ro": "Farfurie zburătoare",
+      "tr": "Çekilen her fotoğrafta bulanık çıkar"
     }
   },
   {
@@ -4272,7 +4746,8 @@
       "es": "Meteoro",
       "el": "Μετεωρίτης",
       "de": "Meteor",
-      "ro": "Meteor"
+      "ro": "Meteor",
+      "tr": "Meteor"
     },
     "hint": {
       "en": "Make a wish before it disappears",
@@ -4280,7 +4755,8 @@
       "es": "Roca que cae del cielo",
       "el": "Πέτρα που πέφτει από τον ουρανό",
       "de": "Stein, der vom Himmel fällt",
-      "ro": "Rocă ce cade din cer"
+      "ro": "Rocă ce cade din cer",
+      "tr": "Kaybolmadan önce dilek tut"
     }
   },
   {
@@ -4290,7 +4766,8 @@
       "es": "Eclipse",
       "el": "Έκλειψη",
       "de": "Finsternis",
-      "ro": "Eclipsă"
+      "ro": "Eclipsă",
+      "tr": "Tutulma"
     },
     "hint": {
       "en": "You're told never to look straight at it",
@@ -4298,7 +4775,8 @@
       "es": "Cuando una luz tapa a otra",
       "el": "Όταν ένα φως κρύβει ένα άλλο",
       "de": "Wenn ein Licht ein anderes verdeckt",
-      "ro": "Când o lumină o ascunde pe alta"
+      "ro": "Când o lumină o ascunde pe alta",
+      "tr": "Doğrudan bakmaman söylenir"
     }
   },
   {
@@ -4308,7 +4786,8 @@
       "es": "Iceberg",
       "el": "Παγόβουνο",
       "de": "Eisberg",
-      "ro": "Aisberg"
+      "ro": "Aisberg",
+      "tr": "Buzdağı"
     },
     "hint": {
       "en": "Most of it hides beneath the surface",
@@ -4316,7 +4795,8 @@
       "es": "Montaña de hielo que flota",
       "el": "Πλωτό βουνό από πάγο",
       "de": "Schwimmender Eisberg",
-      "ro": "Munte de gheață plutitor"
+      "ro": "Munte de gheață plutitor",
+      "tr": "Büyük kısmı yüzeyin altında saklanır"
     }
   },
   {
@@ -4326,7 +4806,8 @@
       "es": "Duna de arena",
       "el": "Αμμόλοφος",
       "de": "Sanddüne",
-      "ro": "Dună de nisip"
+      "ro": "Dună de nisip",
+      "tr": "Kum tepesi"
     },
     "hint": {
       "en": "Shifts shape a little more each day",
@@ -4334,7 +4815,8 @@
       "es": "Colina de arena",
       "el": "Λόφος από άμμο",
       "de": "Hügel aus Sand",
-      "ro": "Deal de nisip"
+      "ro": "Deal de nisip",
+      "tr": "Her gün biraz daha şekil değiştirir"
     }
   },
   {
@@ -4344,7 +4826,8 @@
       "es": "Fogata",
       "el": "Φωτιά κατασκήνωσης",
       "de": "Lagerfeuer",
-      "ro": "Foc de tabără"
+      "ro": "Foc de tabără",
+      "tr": "Kamp ateşi"
     },
     "hint": {
       "en": "Stories get scarier the longer it burns",
@@ -4352,7 +4835,8 @@
       "es": "Fuego al aire libre",
       "el": "Φωτιά στο ύπαιθρο",
       "de": "Feuer im Freien",
-      "ro": "Foc în aer liber"
+      "ro": "Foc în aer liber",
+      "tr": "Ne kadar uzun yanarsa hikayeler o kadar korkunçlaşır"
     }
   },
   {
@@ -4362,7 +4846,8 @@
       "es": "Colmena",
       "el": "Κυψέλη",
       "de": "Bienenstock",
-      "ro": "Stup"
+      "ro": "Stup",
+      "tr": "Arı kovanı"
     },
     "hint": {
       "en": "Buzzing gets louder the closer you get",
@@ -4370,7 +4855,8 @@
       "es": "Hogar de insectos",
       "el": "Σπίτι εντόμων",
       "de": "Zuhause von Insekten",
-      "ro": "Casa insectelor"
+      "ro": "Casa insectelor",
+      "tr": "Yaklaştıkça vızıltı güçlenir"
     }
   },
   {
@@ -4380,7 +4866,8 @@
       "es": "Nido",
       "el": "Φωλιά",
       "de": "Nest",
-      "ro": "Cuib"
+      "ro": "Cuib",
+      "tr": "Yuva"
     },
     "hint": {
       "en": "Built twig by twig",
@@ -4388,7 +4875,8 @@
       "es": "Hogar de un ave",
       "el": "Σπίτι πουλιού",
       "de": "Zuhause eines Vogels",
-      "ro": "Casa unei păsări"
+      "ro": "Casa unei păsări",
+      "tr": "Dal dal örülerek yapılır"
     }
   },
   {
@@ -4398,7 +4886,8 @@
       "es": "Telaraña",
       "el": "Ιστός αράχνης",
       "de": "Spinnennetz",
-      "ro": "Pânză de păianjen"
+      "ro": "Pânză de păianjen",
+      "tr": "Örümcek ağı"
     },
     "hint": {
       "en": "Sparkles when it's covered in morning dew",
@@ -4406,7 +4895,8 @@
       "es": "Red pegajosa",
       "el": "Κολλώδες δίχτυ",
       "de": "Klebriges Netz",
-      "ro": "Plasă lipicioasă"
+      "ro": "Plasă lipicioasă",
+      "tr": "Sabah çiyiyle kaplanınca parıldar"
     }
   },
   {
@@ -4416,7 +4906,8 @@
       "es": "Huella",
       "el": "Πατημασιά",
       "de": "Fußabdruck",
-      "ro": "Urmă de pas"
+      "ro": "Urmă de pas",
+      "tr": "Ayak izi"
     },
     "hint": {
       "en": "Left behind in wet sand",
@@ -4424,7 +4915,8 @@
       "es": "Marca dejada por un pie",
       "el": "Σημάδι από πόδι",
       "de": "Spur, die ein Fuß hinterlässt",
-      "ro": "Semn lăsat de un picior"
+      "ro": "Semn lăsat de un picior",
+      "tr": "Islak kumda geride kalır"
     }
   },
   {
@@ -4434,7 +4926,8 @@
       "es": "Fósil",
       "el": "Απολίθωμα",
       "de": "Fossil",
-      "ro": "Fosilă"
+      "ro": "Fosilă",
+      "tr": "Fosil"
     },
     "hint": {
       "en": "Took millions of years to form",
@@ -4442,7 +4935,8 @@
       "es": "Huella antigua en la piedra",
       "el": "Αρχαίο αποτύπωμα σε πέτρα",
       "de": "Uralter Abdruck im Stein",
-      "ro": "Amprentă veche în piatră"
+      "ro": "Amprentă veche în piatră",
+      "tr": "Oluşması milyonlarca yıl sürdü"
     }
   },
   {
@@ -4452,7 +4946,8 @@
       "es": "Amanecer",
       "el": "Ανατολή",
       "de": "Sonnenaufgang",
-      "ro": "Răsărit"
+      "ro": "Răsărit",
+      "tr": "Gün doğumu"
     },
     "hint": {
       "en": "Worth waking up early for, once in a while",
@@ -4460,7 +4955,8 @@
       "es": "Comienzo del día",
       "el": "Αρχή της μέρας",
       "de": "Beginn des Tages",
-      "ro": "Începutul zilei"
+      "ro": "Începutul zilei",
+      "tr": "Arada bir erken kalkmaya değer"
     }
   },
   {
@@ -4470,7 +4966,8 @@
       "es": "Tornado",
       "el": "Ανεμοστρόβιλος",
       "de": "Tornado",
-      "ro": "Tornadă"
+      "ro": "Tornadă",
+      "tr": "Kasırga"
     },
     "hint": {
       "en": "Chased by people who really shouldn't",
@@ -4478,7 +4975,8 @@
       "es": "Viento que gira",
       "el": "Άνεμος που στροβιλίζεται",
       "de": "Sich drehender Wind",
-      "ro": "Vânt care se rotește"
+      "ro": "Vânt care se rotește",
+      "tr": "Peşine düşmemesi gerekenlerce kovalanır"
     }
   },
   {
@@ -4488,7 +4986,8 @@
       "es": "Remolino",
       "el": "Δίνη",
       "de": "Strudel",
-      "ro": "Vârtej de apă"
+      "ro": "Vârtej de apă",
+      "tr": "Girdap"
     },
     "hint": {
       "en": "Pulls anything nearby toward its centre",
@@ -4496,7 +4995,8 @@
       "es": "Agua que gira",
       "el": "Νερό που στροβιλίζεται",
       "de": "Sich drehendes Wasser",
-      "ro": "Apă care se învârte"
+      "ro": "Apă care se învârte",
+      "tr": "Yakınındaki her şeyi merkezine çeker"
     }
   },
   {
@@ -4506,7 +5006,8 @@
       "es": "Cristal",
       "el": "Κρύσταλλο",
       "de": "Kristall",
-      "ro": "Cristal"
+      "ro": "Cristal",
+      "tr": "Kristal"
     },
     "hint": {
       "en": "Grows in perfect geometric shapes",
@@ -4514,7 +5015,8 @@
       "es": "Piedra transparente y brillante",
       "el": "Διάφανη γυαλιστερή πέτρα",
       "de": "Klarer glänzender Stein",
-      "ro": "Piatră transparentă și strălucitoare"
+      "ro": "Piatră transparentă și strălucitoare",
+      "tr": "Kusursuz geometrik şekillerde büyür"
     }
   },
   {
@@ -4524,7 +5026,8 @@
       "es": "Charco",
       "el": "Λακκούβα με νερό",
       "de": "Pfütze",
-      "ro": "Baltă"
+      "ro": "Baltă",
+      "tr": "Su birikintisi"
     },
     "hint": {
       "en": "Kids can't resist jumping in it",
@@ -4532,7 +5035,8 @@
       "es": "Pequeña charca de lluvia",
       "el": "Μικρή λιμνούλα από βροχή",
       "de": "Kleine Regenlache",
-      "ro": "Băltoacă mică de ploaie"
+      "ro": "Băltoacă mică de ploaie",
+      "tr": "Çocuklar içine atlamaya dayanamaz"
     }
   },
   {
@@ -4542,7 +5046,8 @@
       "es": "Corazón",
       "el": "Καρδιά",
       "de": "Herz",
-      "ro": "Inimă"
+      "ro": "Inimă",
+      "tr": "Kalp"
     },
     "hint": {
       "en": "Skips a beat, they say, when you're nervous",
@@ -4550,7 +5055,8 @@
       "es": "Símbolo del amor",
       "el": "Σύμβολο της αγάπης",
       "de": "Symbol der Liebe",
-      "ro": "Simbol al iubirii"
+      "ro": "Simbol al iubirii",
+      "tr": "Gerginken bir atışını atladığı söylenir"
     }
   },
   {
@@ -4560,7 +5066,8 @@
       "es": "Cara sonriente",
       "el": "Χαμογελαστό πρόσωπο",
       "de": "Smiley-Gesicht",
-      "ro": "Față zâmbitoare"
+      "ro": "Față zâmbitoare",
+      "tr": "Gülen yüz"
     },
     "hint": {
       "en": "Drawn with two dots and a curve",
@@ -4568,7 +5075,8 @@
       "es": "Símbolo alegre",
       "el": "Χαρούμενο σύμβολο",
       "de": "Fröhliches Symbol",
-      "ro": "Simbol vesel"
+      "ro": "Simbol vesel",
+      "tr": "İki nokta ve bir kavisle çizilir"
     }
   },
   {
@@ -4578,7 +5086,8 @@
       "es": "Calavera",
       "el": "Κρανίο",
       "de": "Totenkopf",
-      "ro": "Craniu"
+      "ro": "Craniu",
+      "tr": "Kurukafa"
     },
     "hint": {
       "en": "Marked on a bottle to mean danger",
@@ -4586,7 +5095,8 @@
       "es": "Símbolo de peligro",
       "el": "Σύμβολο κινδύνου",
       "de": "Symbol der Gefahr",
-      "ro": "Simbol al pericolului"
+      "ro": "Simbol al pericolului",
+      "tr": "Şişe üzerinde tehlike anlamına gelir"
     }
   },
   {
@@ -4596,7 +5106,8 @@
       "es": "Fantasma",
       "el": "Φάντασμα",
       "de": "Gespenst",
-      "ro": "Fantomă"
+      "ro": "Fantomă",
+      "tr": "Hayalet"
     },
     "hint": {
       "en": "Said to rattle chains at midnight",
@@ -4604,7 +5115,8 @@
       "es": "Espíritu que asusta",
       "el": "Τρομακτικό πνεύμα",
       "de": "Gruseliger Geist",
-      "ro": "Spirit înfricoșător"
+      "ro": "Spirit înfricoșător",
+      "tr": "Gece yarısı zincir şıkırdattığı söylenir"
     }
   },
   {
@@ -4614,7 +5126,8 @@
       "es": "Robot",
       "el": "Ρομπότ",
       "de": "Roboter",
-      "ro": "Robot"
+      "ro": "Robot",
+      "tr": "Robot"
     },
     "hint": {
       "en": "Follows instructions exactly, nothing more",
@@ -4622,7 +5135,8 @@
       "es": "Máquina con forma de persona",
       "el": "Μηχανή που μοιάζει με άνθρωπο",
       "de": "Maschine, die wie ein Mensch aussieht",
-      "ro": "Mașinărie care seamănă cu un om"
+      "ro": "Mașinărie care seamănă cu un om",
+      "tr": "Talimatları harfiyen izler, fazlasını yapmaz"
     }
   },
   {
@@ -4632,7 +5146,8 @@
       "es": "Monstruo",
       "el": "Τέρας",
       "de": "Monster",
-      "ro": "Monstru"
+      "ro": "Monstru",
+      "tr": "Canavar"
     },
     "hint": {
       "en": "Checked for under the bed at night",
@@ -4640,7 +5155,8 @@
       "es": "Criatura que da miedo",
       "el": "Τρομακτικό πλάσμα",
       "de": "Furchterregendes Wesen",
-      "ro": "Creatură înfricoșătoare"
+      "ro": "Creatură înfricoșătoare",
+      "tr": "Geceleri yatağın altına bakılıp kontrol edilir"
     }
   },
   {
@@ -4650,7 +5166,8 @@
       "es": "Dragón",
       "el": "Δράκος",
       "de": "Drache",
-      "ro": "Dragon"
+      "ro": "Dragon",
+      "tr": "Ejderha"
     },
     "hint": {
       "en": "Guards a pile of treasure in every story",
@@ -4658,7 +5175,8 @@
       "es": "Criatura que echa fuego",
       "el": "Πλάσμα που βγάζει φωτιά",
       "de": "Wesen, das Feuer speit",
-      "ro": "Creatură care scuipă foc"
+      "ro": "Creatură care scuipă foc",
+      "tr": "Her hikayede bir hazine yığınını korur"
     }
   },
   {
@@ -4668,7 +5186,8 @@
       "es": "Unicornio",
       "el": "Μονόκερος",
       "de": "Einhorn",
-      "ro": "Unicorn"
+      "ro": "Unicorn",
+      "tr": "Tek boynuzlu at"
     },
     "hint": {
       "en": "Only appears in stories, sadly",
@@ -4676,7 +5195,8 @@
       "es": "Caballo con un cuerno",
       "el": "Άλογο με κέρατο",
       "de": "Pferd mit einem Horn",
-      "ro": "Cal cu un corn"
+      "ro": "Cal cu un corn",
+      "tr": "Ne yazık ki sadece hikayelerde görülür"
     }
   },
   {
@@ -4686,7 +5206,8 @@
       "es": "Sirena",
       "el": "Γοργόνα",
       "de": "Meerjungfrau",
-      "ro": "Sirenă"
+      "ro": "Sirenă",
+      "tr": "Deniz kızı"
     },
     "hint": {
       "en": "Sailors used to swear they'd seen one",
@@ -4694,7 +5215,8 @@
       "es": "Mitad persona, mitad pez",
       "el": "Μισή άνθρωπος, μισή ψάρι",
       "de": "Halb Mensch, halb Fisch",
-      "ro": "Jumătate om, jumătate pește"
+      "ro": "Jumătate om, jumătate pește",
+      "tr": "Denizciler eskiden gördüklerine yemin ederdi"
     }
   },
   {
@@ -4704,7 +5226,8 @@
       "es": "Mago",
       "el": "Μάγος",
       "de": "Zauberer",
-      "ro": "Vrăjitor"
+      "ro": "Vrăjitor",
+      "tr": "Büyücü"
     },
     "hint": {
       "en": "Waves a stick and mutters some words",
@@ -4712,7 +5235,8 @@
       "es": "Persona que hace magia",
       "el": "Άνθρωπος που κάνει μαγικά",
       "de": "Mensch, der zaubert",
-      "ro": "Persoană care face magie"
+      "ro": "Persoană care face magie",
+      "tr": "Bir çubuk sallayıp bazı sözler mırıldanır"
     }
   },
   {
@@ -4722,7 +5246,8 @@
       "es": "Sombrero de bruja",
       "el": "Καπέλο μάγισσας",
       "de": "Hexenhut",
-      "ro": "Pălărie de vrăjitoare"
+      "ro": "Pălărie de vrăjitoare",
+      "tr": "Cadı şapkası"
     },
     "hint": {
       "en": "Worn with a broom every October",
@@ -4730,7 +5255,8 @@
       "es": "Sombrero puntiagudo",
       "el": "Μυτερό καπέλο",
       "de": "Spitzer Hut",
-      "ro": "Pălărie ascuțită"
+      "ro": "Pălărie ascuțită",
+      "tr": "Her ekimde süpürgeyle birlikte takılır"
     }
   },
   {
@@ -4740,7 +5266,8 @@
       "es": "Bandera pirata",
       "el": "Πειρατική σημαία",
       "de": "Piratenflagge",
-      "ro": "Steag de pirat"
+      "ro": "Steag de pirat",
+      "tr": "Korsan bayrağı"
     },
     "hint": {
       "en": "Raised to make other ships turn away",
@@ -4748,7 +5275,8 @@
       "es": "Bandera con una calavera",
       "el": "Σημαία με κρανίο",
       "de": "Flagge mit einem Totenkopf",
-      "ro": "Steag cu un craniu"
+      "ro": "Steag cu un craniu",
+      "tr": "Diğer gemileri kaçırtmak için çekilir"
     }
   },
   {
@@ -4758,7 +5286,8 @@
       "es": "Cofre del tesoro",
       "el": "Σεντούκι θησαυρού",
       "de": "Schatztruhe",
-      "ro": "Cufăr cu comori"
+      "ro": "Cufăr cu comori",
+      "tr": "Define sandığı"
     },
     "hint": {
       "en": "Marked with an X on old maps",
@@ -4766,7 +5295,8 @@
       "es": "Caja llena de oro",
       "el": "Κουτί γεμάτο χρυσό",
       "de": "Kiste voller Gold",
-      "ro": "Cutie plină cu aur"
+      "ro": "Cutie plină cu aur",
+      "tr": "Eski haritalarda X ile işaretlenir"
     }
   },
   {
@@ -4776,7 +5306,8 @@
       "es": "Varita mágica",
       "el": "Μαγικό ραβδί",
       "de": "Zauberstab",
-      "ro": "Baghetă magică"
+      "ro": "Baghetă magică",
+      "tr": "Sihirli değnek"
     },
     "hint": {
       "en": "Waved with a flick of the wrist",
@@ -4784,7 +5315,8 @@
       "es": "Palo para hacer hechizos",
       "el": "Ραβδί για ξόρκια",
       "de": "Stab für Zaubersprüche",
-      "ro": "Băț pentru vrăji"
+      "ro": "Băț pentru vrăji",
+      "tr": "Bilek hareketiyle sallanır"
     }
   },
   {
@@ -4794,7 +5326,8 @@
       "es": "Espada",
       "el": "Σπαθί",
       "de": "Schwert",
-      "ro": "Sabie"
+      "ro": "Sabie",
+      "tr": "Kılıç"
     },
     "hint": {
       "en": "Drawn from its sheath before a duel",
@@ -4802,7 +5335,8 @@
       "es": "Arma larga y afilada",
       "el": "Μακρύ κοφτερό όπλο",
       "de": "Lange scharfe Waffe",
-      "ro": "Armă lungă și ascuțită"
+      "ro": "Armă lungă și ascuțită",
+      "tr": "Düellodan önce kınından çekilir"
     }
   },
   {
@@ -4812,7 +5346,8 @@
       "es": "Escudo",
       "el": "Ασπίδα",
       "de": "Schild",
-      "ro": "Scut"
+      "ro": "Scut",
+      "tr": "Kalkan"
     },
     "hint": {
       "en": "Raised just in time to block a blow",
@@ -4820,7 +5355,8 @@
       "es": "Cosa que te protege",
       "el": "Κάτι που σε προστατεύει",
       "de": "Ding, das dich schützt",
-      "ro": "Lucru care te apără"
+      "ro": "Lucru care te apără",
+      "tr": "Bir darbeyi durdurmak için tam zamanında kaldırılır"
     }
   },
   {
@@ -4830,7 +5366,8 @@
       "es": "Arco y flecha",
       "el": "Τόξο και βέλος",
       "de": "Pfeil und Bogen",
-      "ro": "Arc și săgeată"
+      "ro": "Arc și săgeată",
+      "tr": "Ok ve yay"
     },
     "hint": {
       "en": "Pulled back before it's released",
@@ -4838,7 +5375,8 @@
       "es": "Arma que se tensa",
       "el": "Όπλο που το τραβάς",
       "de": "Waffe, die man spannt",
-      "ro": "Armă pe care o întinzi"
+      "ro": "Armă pe care o întinzi",
+      "tr": "Bırakılmadan önce geriye çekilir"
     }
   },
   {
@@ -4848,7 +5386,8 @@
       "es": "Hacha",
       "el": "Τσεκούρι",
       "de": "Axt",
-      "ro": "Topor"
+      "ro": "Topor",
+      "tr": "Balta"
     },
     "hint": {
       "en": "Split the log in one clean swing",
@@ -4856,7 +5395,8 @@
       "es": "Herramienta para cortar leña",
       "el": "Εργαλείο για κόψιμο ξύλων",
       "de": "Werkzeug zum Hacken",
-      "ro": "Unealtă pentru tăiat lemne"
+      "ro": "Unealtă pentru tăiat lemne",
+      "tr": "Kütüğü tek vuruşta ikiye ayırır"
     }
   },
   {
@@ -4866,7 +5406,8 @@
       "es": "Trompeta",
       "el": "Τρομπέτα",
       "de": "Trompete",
-      "ro": "Trompetă"
+      "ro": "Trompetă",
+      "tr": "Trompet"
     },
     "hint": {
       "en": "Blares loud enough to lead a parade",
@@ -4874,7 +5415,8 @@
       "es": "Instrumento que se sopla",
       "el": "Όργανο που φυσάς",
       "de": "Instrument, in das man bläst",
-      "ro": "Instrument în care sufli"
+      "ro": "Instrument în care sufli",
+      "tr": "Bir geçit törenine öncülük edecek kadar yüksek sesle çalar"
     }
   },
   {
@@ -4884,7 +5426,8 @@
       "es": "Tambor",
       "el": "Τύμπανο",
       "de": "Trommel",
-      "ro": "Tobă"
+      "ro": "Tobă",
+      "tr": "Davul"
     },
     "hint": {
       "en": "Keeps the beat for everyone else",
@@ -4892,7 +5435,8 @@
       "es": "Instrumento que se golpea",
       "el": "Όργανο που χτυπάς",
       "de": "Instrument, das man schlägt",
-      "ro": "Instrument pe care îl lovești"
+      "ro": "Instrument pe care îl lovești",
+      "tr": "Diğer herkes için ritmi tutar"
     }
   },
   {
@@ -4902,7 +5446,8 @@
       "es": "Piano",
       "el": "Πιάνο",
       "de": "Klavier",
-      "ro": "Pian"
+      "ro": "Pian",
+      "tr": "Piyano"
     },
     "hint": {
       "en": "88 keys, black and white",
@@ -4910,7 +5455,8 @@
       "es": "Instrumento con teclas",
       "el": "Όργανο με πλήκτρα",
       "de": "Instrument mit Tasten",
-      "ro": "Instrument cu clape"
+      "ro": "Instrument cu clape",
+      "tr": "88 tuş, siyah ve beyaz"
     }
   },
   {
@@ -4920,7 +5466,8 @@
       "es": "Violín",
       "el": "Βιολί",
       "de": "Geige",
-      "ro": "Vioară"
+      "ro": "Vioară",
+      "tr": "Keman"
     },
     "hint": {
       "en": "Tucked under the chin to play",
@@ -4928,7 +5475,8 @@
       "es": "Instrumento con cuerdas",
       "el": "Όργανο με χορδές",
       "de": "Instrument mit Saiten",
-      "ro": "Instrument cu corzi"
+      "ro": "Instrument cu corzi",
+      "tr": "Çalmak için çenenin altına yerleştirilir"
     }
   },
   {
@@ -4938,7 +5486,8 @@
       "es": "Saxofón",
       "el": "Σαξόφωνο",
       "de": "Saxofon",
-      "ro": "Saxofon"
+      "ro": "Saxofon",
+      "tr": "Saksofon"
     },
     "hint": {
       "en": "Sounds moody in a jazz club",
@@ -4946,7 +5495,8 @@
       "es": "Instrumento de metal curvado",
       "el": "Καμπυλωτό χάλκινο όργανο",
       "de": "Gebogenes Blasinstrument",
-      "ro": "Instrument de alamă curbat"
+      "ro": "Instrument de alamă curbat",
+      "tr": "Bir caz kulübünde melankolik çalar"
     }
   },
   {
@@ -4956,7 +5506,8 @@
       "es": "Flauta",
       "el": "Φλάουτο",
       "de": "Flöte",
-      "ro": "Flaut"
+      "ro": "Flaut",
+      "tr": "Flüt"
     },
     "hint": {
       "en": "Held sideways to play",
@@ -4964,7 +5515,8 @@
       "es": "Instrumento fino que se sopla",
       "el": "Λεπτό όργανο που φυσάς",
       "de": "Dünnes Blasinstrument",
-      "ro": "Instrument subțire în care sufli"
+      "ro": "Instrument subțire în care sufli",
+      "tr": "Çalmak için yana tutulur"
     }
   },
   {
@@ -4974,7 +5526,8 @@
       "es": "Arpa",
       "el": "Άρπα",
       "de": "Harfe",
-      "ro": "Harpă"
+      "ro": "Harpă",
+      "tr": "Arp"
     },
     "hint": {
       "en": "Plucked, not strummed",
@@ -4982,7 +5535,8 @@
       "es": "Instrumento grande con muchas cuerdas",
       "el": "Μεγάλο όργανο με πολλές χορδές",
       "de": "Großes Instrument mit vielen Saiten",
-      "ro": "Instrument mare cu multe corzi"
+      "ro": "Instrument mare cu multe corzi",
+      "tr": "Tıngırdatılmaz, tellerinden çekilir"
     }
   },
   {
@@ -4992,7 +5546,8 @@
       "es": "Micrófono",
       "el": "Μικρόφωνο",
       "de": "Mikrofon",
-      "ro": "Microfon"
+      "ro": "Microfon",
+      "tr": "Mikrofon"
     },
     "hint": {
       "en": "Feedback screeches if you get too close to the speaker",
@@ -5000,7 +5555,8 @@
       "es": "Cosa en la que se canta",
       "el": "Κάτι μέσα στο οποίο τραγουδάς",
       "de": "Ding, in das man singt",
-      "ro": "Lucru în care cânți"
+      "ro": "Lucru în care cânți",
+      "tr": "Hoparlöre çok yaklaşırsan cız diye ötmeye başlar"
     }
   },
   {
@@ -5010,7 +5566,8 @@
       "es": "Auriculares",
       "el": "Ακουστικά",
       "de": "Kopfhörer",
-      "ro": "Căști"
+      "ro": "Căști",
+      "tr": "Kulaklık"
     },
     "hint": {
       "en": "Tangled the moment you pull them from a pocket",
@@ -5018,7 +5575,8 @@
       "es": "Cosa que se lleva en las orejas",
       "el": "Κάτι που φοριέται στα αυτιά",
       "de": "Ding, das man auf den Ohren trägt",
-      "ro": "Lucru purtat pe urechi"
+      "ro": "Lucru purtat pe urechi",
+      "tr": "Cepten çıkarır çıkarmaz dolanır"
     }
   },
   {
@@ -5028,7 +5586,8 @@
       "es": "Nota musical",
       "el": "Μουσική νότα",
       "de": "Musiknote",
-      "ro": "Notă muzicală"
+      "ro": "Notă muzicală",
+      "tr": "Nota"
     },
     "hint": {
       "en": "Doodled in the margin of a school notebook",
@@ -5036,7 +5595,8 @@
       "es": "Símbolo de un sonido",
       "el": "Σύμβολο ενός ήχου",
       "de": "Symbol eines Klangs",
-      "ro": "Simbol al unui sunet"
+      "ro": "Simbol al unui sunet",
+      "tr": "Okul defterinin kenarına karalanır"
     }
   },
   {
@@ -5046,7 +5606,8 @@
       "es": "Televisión",
       "el": "Τηλεόραση",
       "de": "Fernseher",
-      "ro": "Televizor"
+      "ro": "Televizor",
+      "tr": "Televizyon"
     },
     "hint": {
       "en": "You fight over the remote for it",
@@ -5054,7 +5615,8 @@
       "es": "Caja con imágenes en movimiento",
       "el": "Κουτί με κινούμενες εικόνες",
       "de": "Kasten mit bewegten Bildern",
-      "ro": "Cutie cu imagini în mișcare"
+      "ro": "Cutie cu imagini în mișcare",
+      "tr": "Kumandası için kavga edilir"
     }
   },
   {
@@ -5064,7 +5626,8 @@
       "es": "Ordenador",
       "el": "Υπολογιστής",
       "de": "Computer",
-      "ro": "Calculator"
+      "ro": "Calculator",
+      "tr": "Bilgisayar"
     },
     "hint": {
       "en": "Restarted first, before anything else is tried",
@@ -5072,7 +5635,8 @@
       "es": "Máquina con pantalla",
       "el": "Μηχάνημα με οθόνη",
       "de": "Maschine mit Bildschirm",
-      "ro": "Mașinărie cu ecran"
+      "ro": "Mașinărie cu ecran",
+      "tr": "Başka bir şey denemeden önce yeniden başlatılır"
     }
   },
   {
@@ -5082,7 +5646,8 @@
       "es": "Teléfono",
       "el": "Τηλέφωνο",
       "de": "Telefon",
-      "ro": "Telefon"
+      "ro": "Telefon",
+      "tr": "Telefon"
     },
     "hint": {
       "en": "Face-down so notifications don't distract you",
@@ -5090,7 +5655,8 @@
       "es": "Cosa con la que llamas",
       "el": "Κάτι με το οποίο τηλεφωνείς",
       "de": "Ding, mit dem man anruft",
-      "ro": "Lucru cu care suni"
+      "ro": "Lucru cu care suni",
+      "tr": "Bildirimler dikkatini dağıtmasın diye ters çevrilir"
     }
   },
   {
@@ -5100,7 +5666,8 @@
       "es": "Cámara",
       "el": "Φωτογραφική μηχανή",
       "de": "Kamera",
-      "ro": "Aparat foto"
+      "ro": "Aparat foto",
+      "tr": "Fotoğraf makinesi"
     },
     "hint": {
       "en": "You smile right before it clicks",
@@ -5108,7 +5675,8 @@
       "es": "Cosa que hace fotos",
       "el": "Κάτι που βγάζει φωτογραφίες",
       "de": "Ding, das Fotos macht",
-      "ro": "Lucru care face poze"
+      "ro": "Lucru care face poze",
+      "tr": "Çekilmeden hemen önce gülümsersin"
     }
   },
   {
@@ -5118,7 +5686,8 @@
       "es": "Bombilla",
       "el": "Λάμπα φωτισμού",
       "de": "Glühbirne",
-      "ro": "Bec"
+      "ro": "Bec",
+      "tr": "Ampul"
     },
     "hint": {
       "en": "Above someone's head means a good idea",
@@ -5126,7 +5695,8 @@
       "es": "Cosa de vidrio que brilla",
       "el": "Γυάλινο πράγμα που φωτίζει",
       "de": "Glasding, das leuchtet",
-      "ro": "Lucru din sticlă care luminează"
+      "ro": "Lucru din sticlă care luminează",
+      "tr": "Birinin başının üstünde iyi bir fikir demektir"
     }
   },
   {
@@ -5136,7 +5706,8 @@
       "es": "Pila",
       "el": "Μπαταρία",
       "de": "Batterie",
-      "ro": "Baterie"
+      "ro": "Baterie",
+      "tr": "Pil"
     },
     "hint": {
       "en": "Dies at the worst possible moment",
@@ -5144,7 +5715,8 @@
       "es": "Cosa que guarda energía",
       "el": "Κάτι που αποθηκεύει ενέργεια",
       "de": "Ding, das Strom speichert",
-      "ro": "Lucru care stochează energie"
+      "ro": "Lucru care stochează energie",
+      "tr": "Tam en kötü anda biter"
     }
   },
   {
@@ -5154,7 +5726,8 @@
       "es": "Imán",
       "el": "Μαγνήτης",
       "de": "Magnet",
-      "ro": "Magnet"
+      "ro": "Magnet",
+      "tr": "Mıknatıs"
     },
     "hint": {
       "en": "Sticks to the fridge with a photo underneath",
@@ -5162,7 +5735,8 @@
       "es": "Cosa que atrae el metal",
       "el": "Κάτι που τραβά το μέταλλο",
       "de": "Ding, das Metall anzieht",
-      "ro": "Lucru care atrage metalul"
+      "ro": "Lucru care atrage metalul",
+      "tr": "Altında bir fotoğrafla buzdolabına yapışır"
     }
   },
   {
@@ -5172,7 +5746,8 @@
       "es": "Brújula",
       "el": "Πυξίδα",
       "de": "Kompass",
-      "ro": "Busolă"
+      "ro": "Busolă",
+      "tr": "Pusula"
     },
     "hint": {
       "en": "Always points the same direction, no matter which way you turn",
@@ -5180,7 +5755,8 @@
       "es": "Cosa que indica la dirección",
       "el": "Κάτι που δείχνει την κατεύθυνση",
       "de": "Ding, das die Richtung zeigt",
-      "ro": "Lucru care arată direcția"
+      "ro": "Lucru care arată direcția",
+      "tr": "Hangi yöne dönersen dön hep aynı yönü gösterir"
     }
   },
   {
@@ -5190,7 +5766,8 @@
       "es": "Reloj de arena",
       "el": "Κλεψύδρα",
       "de": "Sanduhr",
-      "ro": "Clepsidră"
+      "ro": "Clepsidră",
+      "tr": "Kum saati"
     },
     "hint": {
       "en": "Flipped when time runs out",
@@ -5198,7 +5775,8 @@
       "es": "Cosa con arena que cae",
       "el": "Κάτι με άμμο που πέφτει",
       "de": "Ding mit fallendem Sand",
-      "ro": "Lucru cu nisip care curge"
+      "ro": "Lucru cu nisip care curge",
+      "tr": "Süre bitince ters çevrilir"
     }
   },
   {
@@ -5208,7 +5786,8 @@
       "es": "Globo",
       "el": "Μπαλόνι",
       "de": "Luftballon",
-      "ro": "Balon"
+      "ro": "Balon",
+      "tr": "Balon"
     },
     "hint": {
       "en": "Squeaks when you rub it",
@@ -5216,7 +5795,8 @@
       "es": "Cosa llena de aire",
       "el": "Κάτι γεμάτο αέρα",
       "de": "Ding voller Luft",
-      "ro": "Lucru plin cu aer"
+      "ro": "Lucru plin cu aer",
+      "tr": "Ovunca gıcırdar"
     }
   },
   {
@@ -5226,7 +5806,8 @@
       "es": "Cometa de papel",
       "el": "Χαρταετός",
       "de": "Drachen",
-      "ro": "Zmeu"
+      "ro": "Zmeu",
+      "tr": "Uçurtma"
     },
     "hint": {
       "en": "Needs a good gust to stay up",
@@ -5234,7 +5815,8 @@
       "es": "Cosa que vuela atada a un hilo",
       "el": "Κάτι που πετά δεμένο με σπάγκο",
       "de": "Ding, das an einer Schnur fliegt",
-      "ro": "Lucru care zboară legat cu o sfoară"
+      "ro": "Lucru care zboară legat cu o sfoară",
+      "tr": "Havada kalmak için iyi bir rüzgar ister"
     }
   },
   {
@@ -5244,7 +5826,8 @@
       "es": "Caja de regalo",
       "el": "Κουτί δώρου",
       "de": "Geschenkkarton",
-      "ro": "Cutie de cadou"
+      "ro": "Cutie de cadou",
+      "tr": "Hediye kutusu"
     },
     "hint": {
       "en": "Shaken gently to guess what's inside",
@@ -5252,7 +5835,8 @@
       "es": "Caja con un lazo",
       "el": "Κουτί με κορδέλα",
       "de": "Kasten mit einer Schleife",
-      "ro": "Cutie cu o panglică"
+      "ro": "Cutie cu o panglică",
+      "tr": "İçindekini tahmin etmek için hafifçe sallanır"
     }
   },
   {
@@ -5262,7 +5846,8 @@
       "es": "Campana",
       "el": "Καμπάνα",
       "de": "Glocke",
-      "ro": "Clopot"
+      "ro": "Clopot",
+      "tr": "Çan"
     },
     "hint": {
       "en": "Rung to call everyone to dinner",
@@ -5270,7 +5855,8 @@
       "es": "Cosa que suena",
       "el": "Κάτι που χτυπά",
       "de": "Ding, das läutet",
-      "ro": "Lucru care sună"
+      "ro": "Lucru care sună",
+      "tr": "Herkesi yemeğe çağırmak için çalınır"
     }
   },
   {
@@ -5280,7 +5866,8 @@
       "es": "Trofeo",
       "el": "Τρόπαιο",
       "de": "Pokal",
-      "ro": "Trofeu"
+      "ro": "Trofeu",
+      "tr": "Kupa"
     },
     "hint": {
       "en": "Polished and put on a shelf",
@@ -5288,7 +5875,8 @@
       "es": "Premio por ganar",
       "el": "Έπαθλο για τη νίκη",
       "de": "Preis für den Sieg",
-      "ro": "Premiu pentru victorie"
+      "ro": "Premiu pentru victorie",
+      "tr": "Cilalanıp rafa konur"
     }
   },
   {
@@ -5298,7 +5886,8 @@
       "es": "Medalla",
       "el": "Μετάλλιο",
       "de": "Medaille",
-      "ro": "Medalie"
+      "ro": "Medalie",
+      "tr": "Madalya"
     },
     "hint": {
       "en": "Hung around the neck on the podium",
@@ -5306,7 +5895,8 @@
       "es": "Galardón con cinta",
       "el": "Βραβείο σε κορδέλα",
       "de": "Auszeichnung an einem Band",
-      "ro": "Distincție pe o panglică"
+      "ro": "Distincție pe o panglică",
+      "tr": "Kürsüde boyuna asılır"
     }
   },
   {
@@ -5316,7 +5906,8 @@
       "es": "Dado",
       "el": "Ζάρι",
       "de": "Würfel",
-      "ro": "Zar"
+      "ro": "Zar",
+      "tr": "Zar"
     },
     "hint": {
       "en": "Rolled and hoped for a six",
@@ -5324,7 +5915,8 @@
       "es": "Cubo con puntos",
       "el": "Κύβος με τελείες",
       "de": "Würfel mit Punkten",
-      "ro": "Cub cu puncte"
+      "ro": "Cub cu puncte",
+      "tr": "Atılır ve altı gelsin diye umulur"
     }
   },
   {
@@ -5334,7 +5926,8 @@
       "es": "Carta de baraja",
       "el": "Τραπουλόχαρτο",
       "de": "Spielkarte",
-      "ro": "Carte de joc"
+      "ro": "Carte de joc",
+      "tr": "Oyun kartı"
     },
     "hint": {
       "en": "Fanned out and hidden from the others",
@@ -5342,7 +5935,8 @@
       "es": "Carta de una baraja",
       "el": "Χαρτί από τράπουλα",
       "de": "Karte aus einem Deck",
-      "ro": "Carte dintr-un pachet"
+      "ro": "Carte dintr-un pachet",
+      "tr": "Yelpaze gibi açılıp diğerlerinden gizlenir"
     }
   },
   {
@@ -5352,7 +5946,8 @@
       "es": "Pieza de ajedrez",
       "el": "Πιόνι σκακιού",
       "de": "Schachfigur",
-      "ro": "Piesă de șah"
+      "ro": "Piesă de șah",
+      "tr": "Satranç taşı"
     },
     "hint": {
       "en": "Moved in a very specific pattern",
@@ -5360,7 +5955,8 @@
       "es": "Figura sobre un tablero",
       "el": "Φιγούρα πάνω σε ταμπλό",
       "de": "Figur auf einem Brett",
-      "ro": "Figură pe o tablă"
+      "ro": "Figură pe o tablă",
+      "tr": "Çok özel bir düzende hareket eder"
     }
   },
   {
@@ -5370,7 +5966,8 @@
       "es": "Pieza de rompecabezas",
       "el": "Κομμάτι παζλ",
       "de": "Puzzleteil",
-      "ro": "Piesă de puzzle"
+      "ro": "Piesă de puzzle",
+      "tr": "Yapboz parçası"
     },
     "hint": {
       "en": "Turned every which way until it clicks into place",
@@ -5378,7 +5975,8 @@
       "es": "Parte de una imagen",
       "el": "Μέρος μιας εικόνας",
       "de": "Teil eines Bildes",
-      "ro": "Parte dintr-o imagine"
+      "ro": "Parte dintr-o imagine",
+      "tr": "Yerine oturana kadar her yöne çevrilir"
     }
   },
   {
@@ -5388,7 +5986,8 @@
       "es": "Caña de pescar",
       "el": "Καλάμι ψαρέματος",
       "de": "Angelrute",
-      "ro": "Undiță"
+      "ro": "Undiță",
+      "tr": "Olta"
     },
     "hint": {
       "en": "You wait far longer than you catch",
@@ -5396,7 +5995,8 @@
       "es": "Palo con un hilo",
       "el": "Ραβδί με πετονιά",
       "de": "Stock mit einer Schnur",
-      "ro": "Băț cu o ață"
+      "ro": "Băț cu o ață",
+      "tr": "Yakaladığından çok daha uzun süre beklersin"
     }
   }
 ]

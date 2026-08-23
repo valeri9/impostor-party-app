@@ -7,7 +7,8 @@
       "es": "Café",
       "el": "Καφές",
       "de": "Kaffee",
-      "ro": "Cafea"
+      "ro": "Cafea",
+      "tr": "Kahve"
     },
     "hint": {
       "en": "Hot drink",
@@ -15,7 +16,8 @@
       "es": "Bebida caliente",
       "el": "Ζεστό ρόφημα",
       "de": "Heißgetränk",
-      "ro": "Băutură caldă"
+      "ro": "Băutură caldă",
+      "tr": "Sıcak içecek"
     }
   },
   {
@@ -26,7 +28,8 @@
       "es": "Pizza",
       "el": "Πίτσα",
       "de": "Pizza",
-      "ro": "Pizza"
+      "ro": "Pizza",
+      "tr": "Pizza"
     },
     "hint": {
       "en": "Fast food",
@@ -34,7 +37,8 @@
       "es": "Comida rápida",
       "el": "Φαστ φουντ",
       "de": "Fast Food",
-      "ro": "Mâncare rapidă"
+      "ro": "Mâncare rapidă",
+      "tr": "Fast food"
     }
   },
   {
@@ -45,7 +49,8 @@
       "es": "Chocolate",
       "el": "Σοκολάτα",
       "de": "Schokolade",
-      "ro": "Ciocolată"
+      "ro": "Ciocolată",
+      "tr": "Çikolata"
     },
     "hint": {
       "en": "Sweet treat",
@@ -53,7 +58,8 @@
       "es": "Dulce",
       "el": "Γλυκό",
       "de": "Süßigkeit",
-      "ro": "Dulce"
+      "ro": "Dulce",
+      "tr": "Tatlı atıştırmalık"
     }
   },
   {
@@ -64,7 +70,8 @@
       "es": "Playa",
       "el": "Παραλία",
       "de": "Strand",
-      "ro": "Plajă"
+      "ro": "Plajă",
+      "tr": "Plaj"
     },
     "hint": {
       "en": "Holiday spot",
@@ -72,7 +79,8 @@
       "es": "Lugar de vacaciones",
       "el": "Τόπος διακοπών",
       "de": "Urlaubsort",
-      "ro": "Loc de vacanță"
+      "ro": "Loc de vacanță",
+      "tr": "Tatil yeri"
     }
   },
   {
@@ -83,7 +91,8 @@
       "es": "Aeropuerto",
       "el": "Αεροδρόμιο",
       "de": "Flughafen",
-      "ro": "Aeroport"
+      "ro": "Aeroport",
+      "tr": "Havalimanı"
     },
     "hint": {
       "en": "Travel hub",
@@ -91,7 +100,8 @@
       "es": "Punto de viaje",
       "el": "Κόμβος ταξιδιού",
       "de": "Verkehrsknoten",
-      "ro": "Nod de călătorie"
+      "ro": "Nod de călătorie",
+      "tr": "Seyahat merkezi"
     }
   },
   {
@@ -102,7 +112,8 @@
       "es": "Hospital",
       "el": "Νοσοκομείο",
       "de": "Krankenhaus",
-      "ro": "Spital"
+      "ro": "Spital",
+      "tr": "Hastane"
     },
     "hint": {
       "en": "Public building",
@@ -110,7 +121,8 @@
       "es": "Edificio público",
       "el": "Δημόσιο κτίριο",
       "de": "Öffentliches Gebäude",
-      "ro": "Clădire publică"
+      "ro": "Clădire publică",
+      "tr": "Kamu binası"
     }
   },
   {
@@ -121,7 +133,8 @@
       "es": "Elefante",
       "el": "Ελέφαντας",
       "de": "Elefant",
-      "ro": "Elefant"
+      "ro": "Elefant",
+      "tr": "Fil"
     },
     "hint": {
       "en": "Big animal",
@@ -129,7 +142,8 @@
       "es": "Animal grande",
       "el": "Μεγάλο ζώο",
       "de": "Großes Tier",
-      "ro": "Animal mare"
+      "ro": "Animal mare",
+      "tr": "Büyük hayvan"
     }
   },
   {
@@ -140,7 +154,8 @@
       "es": "Pingüino",
       "el": "Πιγκουίνος",
       "de": "Pinguin",
-      "ro": "Pinguin"
+      "ro": "Pinguin",
+      "tr": "Penguen"
     },
     "hint": {
       "en": "Bird from cold places",
@@ -148,7 +163,8 @@
       "es": "Ave de zonas frías",
       "el": "Πουλί από κρύα μέρη",
       "de": "Vogel aus kalten Regionen",
-      "ro": "Pasăre din zone reci"
+      "ro": "Pasăre din zone reci",
+      "tr": "Soğuk yerlerden gelen kuş"
     }
   },
   {
@@ -159,7 +175,8 @@
       "es": "Araña",
       "el": "Αράχνη",
       "de": "Spinne",
-      "ro": "Păianjen"
+      "ro": "Păianjen",
+      "tr": "Örümcek"
     },
     "hint": {
       "en": "Small creature",
@@ -167,7 +184,8 @@
       "es": "Criatura pequeña",
       "el": "Μικρό πλάσμα",
       "de": "Kleines Tier",
-      "ro": "Creatură mică"
+      "ro": "Creatură mică",
+      "tr": "Küçük yaratık"
     }
   },
   {
@@ -178,7 +196,8 @@
       "es": "Paraguas",
       "el": "Ομπρέλα",
       "de": "Regenschirm",
-      "ro": "Umbrelă"
+      "ro": "Umbrelă",
+      "tr": "Şemsiye"
     },
     "hint": {
       "en": "Rainy day item",
@@ -186,7 +205,8 @@
       "es": "Objeto para la lluvia",
       "el": "Αντικείμενο για τη βροχή",
       "de": "Sache für Regentage",
-      "ro": "Obiect pentru zile ploioase"
+      "ro": "Obiect pentru zile ploioase",
+      "tr": "Yağmurlu gün eşyası"
     }
   },
   {
@@ -197,7 +217,8 @@
       "es": "Guitarra",
       "el": "Κιθάρα",
       "de": "Gitarre",
-      "ro": "Chitară"
+      "ro": "Chitară",
+      "tr": "Gitar"
     },
     "hint": {
       "en": "Musical instrument",
@@ -205,7 +226,8 @@
       "es": "Instrumento musical",
       "el": "Μουσικό όργανο",
       "de": "Musikinstrument",
-      "ro": "Instrument muzical"
+      "ro": "Instrument muzical",
+      "tr": "Müzik aleti"
     }
   },
   {
@@ -216,7 +238,8 @@
       "es": "Espejo",
       "el": "Καθρέφτης",
       "de": "Spiegel",
-      "ro": "Oglindă"
+      "ro": "Oglindă",
+      "tr": "Ayna"
     },
     "hint": {
       "en": "Household object",
@@ -224,7 +247,8 @@
       "es": "Objeto del hogar",
       "el": "Οικιακό αντικείμενο",
       "de": "Haushaltsgegenstand",
-      "ro": "Obiect de uz casnic"
+      "ro": "Obiect de uz casnic",
+      "tr": "Ev eşyası"
     }
   },
   {
@@ -235,7 +259,8 @@
       "es": "Boda",
       "el": "Γάμος",
       "de": "Hochzeit",
-      "ro": "Nuntă"
+      "ro": "Nuntă",
+      "tr": "Düğün"
     },
     "hint": {
       "en": "Big celebration",
@@ -243,7 +268,8 @@
       "es": "Gran celebración",
       "el": "Μεγάλη γιορτή",
       "de": "Große Feier",
-      "ro": "Sărbătoare mare"
+      "ro": "Sărbătoare mare",
+      "tr": "Büyük kutlama"
     }
   },
   {
@@ -254,7 +280,8 @@
       "es": "Fútbol",
       "el": "Ποδόσφαιρο",
       "de": "Fußball",
-      "ro": "Fotbal"
+      "ro": "Fotbal",
+      "tr": "Futbol"
     },
     "hint": {
       "en": "Team sport",
@@ -262,7 +289,8 @@
       "es": "Deporte de equipo",
       "el": "Ομαδικό άθλημα",
       "de": "Mannschaftssport",
-      "ro": "Sport de echipă"
+      "ro": "Sport de echipă",
+      "tr": "Takım sporu"
     }
   },
   {
@@ -273,7 +301,8 @@
       "es": "Acampada",
       "el": "Κάμπινγκ",
       "de": "Camping",
-      "ro": "Camping"
+      "ro": "Camping",
+      "tr": "Kamp"
     },
     "hint": {
       "en": "Outdoor trip",
@@ -281,7 +310,8 @@
       "es": "Salida al aire libre",
       "el": "Εκδρομή στη φύση",
       "de": "Ausflug ins Freie",
-      "ro": "Ieșire în natură"
+      "ro": "Ieșire în natură",
+      "tr": "Açık hava gezisi"
     }
   },
   {
@@ -292,7 +322,8 @@
       "es": "Pan",
       "el": "Ψωμί",
       "de": "Brot",
-      "ro": "Pâine"
+      "ro": "Pâine",
+      "tr": "Ekmek"
     },
     "hint": {
       "en": "Bakery item",
@@ -300,7 +331,8 @@
       "es": "Producto de panadería",
       "el": "Είδος αρτοποιίας",
       "de": "Backware",
-      "ro": "Produs de panificație"
+      "ro": "Produs de panificație",
+      "tr": "Fırın ürünü"
     }
   },
   {
@@ -311,7 +343,8 @@
       "es": "Queso",
       "el": "Τυρί",
       "de": "Käse",
-      "ro": "Brânză"
+      "ro": "Brânză",
+      "tr": "Peynir"
     },
     "hint": {
       "en": "Dairy product",
@@ -319,7 +352,8 @@
       "es": "Producto lácteo",
       "el": "Γαλακτοκομικό προϊόν",
       "de": "Milchprodukt",
-      "ro": "Produs lactat"
+      "ro": "Produs lactat",
+      "tr": "Süt ürünü"
     }
   },
   {
@@ -330,7 +364,8 @@
       "es": "Helado",
       "el": "Παγωτό",
       "de": "Eis",
-      "ro": "Înghețată"
+      "ro": "Înghețată",
+      "tr": "Dondurma"
     },
     "hint": {
       "en": "Cold dessert",
@@ -338,7 +373,8 @@
       "es": "Postre frío",
       "el": "Κρύο επιδόρπιο",
       "de": "Kalter Nachtisch",
-      "ro": "Desert rece"
+      "ro": "Desert rece",
+      "tr": "Soğuk tatlı"
     }
   },
   {
@@ -349,7 +385,8 @@
       "es": "Sopa",
       "el": "Σούπα",
       "de": "Suppe",
-      "ro": "Supă"
+      "ro": "Supă",
+      "tr": "Çorba"
     },
     "hint": {
       "en": "Warm dish",
@@ -357,7 +394,8 @@
       "es": "Plato caliente",
       "el": "Ζεστό πιάτο",
       "de": "Warmes Gericht",
-      "ro": "Fel de mâncare cald"
+      "ro": "Fel de mâncare cald",
+      "tr": "Sıcak yemek"
     }
   },
   {
@@ -368,7 +406,8 @@
       "es": "Arroz",
       "el": "Ρύζι",
       "de": "Reis",
-      "ro": "Orez"
+      "ro": "Orez",
+      "tr": "Pirinç"
     },
     "hint": {
       "en": "Grain side dish",
@@ -376,7 +415,8 @@
       "es": "Guarnición de cereal",
       "el": "Συνοδευτικό από δημητριακά",
       "de": "Getreidebeilage",
-      "ro": "Garnitură din cereale"
+      "ro": "Garnitură din cereale",
+      "tr": "Tahıl garnitürü"
     }
   },
   {
@@ -387,7 +427,8 @@
       "es": "Miel",
       "el": "Μέλι",
       "de": "Honig",
-      "ro": "Miere"
+      "ro": "Miere",
+      "tr": "Bal"
     },
     "hint": {
       "en": "Sweet spread",
@@ -395,7 +436,8 @@
       "es": "Untable dulce",
       "el": "Γλυκό άλειμμα",
       "de": "Süßer Aufstrich",
-      "ro": "Cremă dulce de întins"
+      "ro": "Cremă dulce de întins",
+      "tr": "Tatlı sürülen gıda"
     }
   },
   {
@@ -406,7 +448,8 @@
       "es": "Huevo",
       "el": "Αυγό",
       "de": "Ei",
-      "ro": "Ou"
+      "ro": "Ou",
+      "tr": "Yumurta"
     },
     "hint": {
       "en": "Breakfast staple",
@@ -414,7 +457,8 @@
       "es": "Básico del desayuno",
       "el": "Βασικό πρωινού",
       "de": "Frühstücksklassiker",
-      "ro": "Aliment de mic dejun"
+      "ro": "Aliment de mic dejun",
+      "tr": "Kahvaltının vazgeçilmezi"
     }
   },
   {
@@ -425,7 +469,8 @@
       "es": "Mantequilla",
       "el": "Βούτυρο",
       "de": "Butter",
-      "ro": "Unt"
+      "ro": "Unt",
+      "tr": "Tereyağı"
     },
     "hint": {
       "en": "Cooking fat",
@@ -433,7 +478,8 @@
       "es": "Grasa de cocina",
       "el": "Λίπος μαγειρικής",
       "de": "Speisefett",
-      "ro": "Grăsime de gătit"
+      "ro": "Grăsime de gătit",
+      "tr": "Pişirme yağı"
     }
   },
   {
@@ -444,7 +490,8 @@
       "es": "Ensalada",
       "el": "Σαλάτα",
       "de": "Salat",
-      "ro": "Salată"
+      "ro": "Salată",
+      "tr": "Salata"
     },
     "hint": {
       "en": "Fresh dish",
@@ -452,7 +499,8 @@
       "es": "Plato fresco",
       "el": "Φρέσκο πιάτο",
       "de": "Frisches Gericht",
-      "ro": "Fel proaspăt"
+      "ro": "Fel proaspăt",
+      "tr": "Taze yemek"
     }
   },
   {
@@ -463,7 +511,8 @@
       "es": "Pasta",
       "el": "Ζυμαρικά",
       "de": "Nudeln",
-      "ro": "Paste"
+      "ro": "Paste",
+      "tr": "Makarna"
     },
     "hint": {
       "en": "Italian dish",
@@ -471,7 +520,8 @@
       "es": "Plato italiano",
       "el": "Ιταλικό πιάτο",
       "de": "Italienisches Gericht",
-      "ro": "Fel italienesc"
+      "ro": "Fel italienesc",
+      "tr": "İtalyan yemeği"
     }
   },
   {
@@ -482,7 +532,8 @@
       "es": "Hamburguesa",
       "el": "Μπέργκερ",
       "de": "Burger",
-      "ro": "Burger"
+      "ro": "Burger",
+      "tr": "Burger"
     },
     "hint": {
       "en": "Sandwich meal",
@@ -490,7 +541,8 @@
       "es": "Comida en pan",
       "el": "Γεύμα σε ψωμάκι",
       "de": "Mahlzeit im Brötchen",
-      "ro": "Masă în chiflă"
+      "ro": "Masă în chiflă",
+      "tr": "Sandviç yemeği"
     }
   },
   {
@@ -501,7 +553,8 @@
       "es": "Sushi",
       "el": "Σούσι",
       "de": "Sushi",
-      "ro": "Sushi"
+      "ro": "Sushi",
+      "tr": "Suşi"
     },
     "hint": {
       "en": "Japanese dish",
@@ -509,7 +562,8 @@
       "es": "Plato japonés",
       "el": "Ιαπωνικό πιάτο",
       "de": "Japanisches Gericht",
-      "ro": "Fel japonez"
+      "ro": "Fel japonez",
+      "tr": "Japon yemeği"
     }
   },
   {
@@ -520,7 +574,8 @@
       "es": "Tortita",
       "el": "Τηγανίτα",
       "de": "Pfannkuchen",
-      "ro": "Clătită"
+      "ro": "Clătită",
+      "tr": "Pankek"
     },
     "hint": {
       "en": "Breakfast sweet",
@@ -528,7 +583,8 @@
       "es": "Dulce de desayuno",
       "el": "Γλυκό πρωινού",
       "de": "Süßes Frühstück",
-      "ro": "Dulce de mic dejun"
+      "ro": "Dulce de mic dejun",
+      "tr": "Tatlı kahvaltılık"
     }
   },
   {
@@ -539,7 +595,8 @@
       "es": "Palomitas",
       "el": "Ποπκόρν",
       "de": "Popcorn",
-      "ro": "Popcorn"
+      "ro": "Popcorn",
+      "tr": "Patlamış mısır"
     },
     "hint": {
       "en": "Cinema snack",
@@ -547,7 +604,8 @@
       "es": "Aperitivo de cine",
       "el": "Σνακ σινεμά",
       "de": "Kino-Snack",
-      "ro": "Gustare de cinema"
+      "ro": "Gustare de cinema",
+      "tr": "Sinema atıştırmalığı"
     }
   },
   {
@@ -558,7 +616,8 @@
       "es": "Yogur",
       "el": "Γιαούρτι",
       "de": "Joghurt",
-      "ro": "Iaurt"
+      "ro": "Iaurt",
+      "tr": "Yoğurt"
     },
     "hint": {
       "en": "Sour dairy",
@@ -566,7 +625,8 @@
       "es": "Lácteo ácido",
       "el": "Ξινό γαλακτοκομικό",
       "de": "Saures Milchprodukt",
-      "ro": "Lactat acru"
+      "ro": "Lactat acru",
+      "tr": "Ekşi süt ürünü"
     }
   },
   {
@@ -577,7 +637,8 @@
       "es": "Salchicha",
       "el": "Λουκάνικο",
       "de": "Wurst",
-      "ro": "Cârnat"
+      "ro": "Cârnat",
+      "tr": "Sosis"
     },
     "hint": {
       "en": "Meat product",
@@ -585,7 +646,8 @@
       "es": "Producto cárnico",
       "el": "Προϊόν κρέατος",
       "de": "Fleischprodukt",
-      "ro": "Produs din carne"
+      "ro": "Produs din carne",
+      "tr": "Et ürünü"
     }
   },
   {
@@ -596,7 +658,8 @@
       "es": "Pastel",
       "el": "Τούρτα",
       "de": "Torte",
-      "ro": "Tort"
+      "ro": "Tort",
+      "tr": "Pasta"
     },
     "hint": {
       "en": "Party dessert",
@@ -604,7 +667,8 @@
       "es": "Postre de fiesta",
       "el": "Επιδόρπιο πάρτι",
       "de": "Party-Nachtisch",
-      "ro": "Desert de petrecere"
+      "ro": "Desert de petrecere",
+      "tr": "Parti tatlısı"
     }
   },
   {
@@ -615,7 +679,8 @@
       "es": "Té",
       "el": "Τσάι",
       "de": "Tee",
-      "ro": "Ceai"
+      "ro": "Ceai",
+      "tr": "Çay"
     },
     "hint": {
       "en": "Leaf drink",
@@ -623,7 +688,8 @@
       "es": "Bebida de hojas",
       "el": "Ρόφημα από φύλλα",
       "de": "Blättergetränk",
-      "ro": "Băutură din frunze"
+      "ro": "Băutură din frunze",
+      "tr": "Yapraktan içecek"
     }
   },
   {
@@ -634,7 +700,8 @@
       "es": "Limonada",
       "el": "Λεμονάδα",
       "de": "Limonade",
-      "ro": "Limonadă"
+      "ro": "Limonadă",
+      "tr": "Limonata"
     },
     "hint": {
       "en": "Cold drink",
@@ -642,7 +709,8 @@
       "es": "Bebida fría",
       "el": "Κρύο ποτό",
       "de": "Kaltes Getränk",
-      "ro": "Băutură rece"
+      "ro": "Băutură rece",
+      "tr": "Soğuk içecek"
     }
   },
   {
@@ -653,7 +721,8 @@
       "es": "Sandía",
       "el": "Καρπούζι",
       "de": "Wassermelone",
-      "ro": "Pepene verde"
+      "ro": "Pepene verde",
+      "tr": "Karpuz"
     },
     "hint": {
       "en": "Summer fruit",
@@ -661,7 +730,8 @@
       "es": "Fruta de verano",
       "el": "Καλοκαιρινό φρούτο",
       "de": "Sommerfrucht",
-      "ro": "Fruct de vară"
+      "ro": "Fruct de vară",
+      "tr": "Yaz meyvesi"
     }
   },
   {
@@ -672,7 +742,8 @@
       "es": "Fresa",
       "el": "Φράουλα",
       "de": "Erdbeere",
-      "ro": "Căpșună"
+      "ro": "Căpșună",
+      "tr": "Çilek"
     },
     "hint": {
       "en": "Red fruit",
@@ -680,7 +751,8 @@
       "es": "Fruta roja",
       "el": "Κόκκινο φρούτο",
       "de": "Rote Frucht",
-      "ro": "Fruct roșu"
+      "ro": "Fruct roșu",
+      "tr": "Kırmızı meyve"
     }
   },
   {
@@ -691,7 +763,8 @@
       "es": "Plátano",
       "el": "Μπανάνα",
       "de": "Banane",
-      "ro": "Banană"
+      "ro": "Banană",
+      "tr": "Muz"
     },
     "hint": {
       "en": "Yellow fruit",
@@ -699,7 +772,8 @@
       "es": "Fruta amarilla",
       "el": "Κίτρινο φρούτο",
       "de": "Gelbe Frucht",
-      "ro": "Fruct galben"
+      "ro": "Fruct galben",
+      "tr": "Sarı meyve"
     }
   },
   {
@@ -710,7 +784,8 @@
       "es": "Seta",
       "el": "Μανιτάρι",
       "de": "Pilz",
-      "ro": "Ciupercă"
+      "ro": "Ciupercă",
+      "tr": "Mantar"
     },
     "hint": {
       "en": "Forest food",
@@ -718,7 +793,8 @@
       "es": "Alimento del bosque",
       "el": "Τροφή του δάσους",
       "de": "Waldnahrung",
-      "ro": "Hrană din pădure"
+      "ro": "Hrană din pădure",
+      "tr": "Orman besini"
     }
   },
   {
@@ -729,7 +805,8 @@
       "es": "Ajo",
       "el": "Σκόρδο",
       "de": "Knoblauch",
-      "ro": "Usturoi"
+      "ro": "Usturoi",
+      "tr": "Sarımsak"
     },
     "hint": {
       "en": "Strong flavour",
@@ -737,7 +814,8 @@
       "es": "Sabor fuerte",
       "el": "Έντονη γεύση",
       "de": "Starker Geschmack",
-      "ro": "Gust puternic"
+      "ro": "Gust puternic",
+      "tr": "Keskin lezzet"
     }
   },
   {
@@ -748,7 +826,8 @@
       "es": "Chile picante",
       "el": "Καυτερή πιπεριά",
       "de": "Chilischote",
-      "ro": "Ardei iute"
+      "ro": "Ardei iute",
+      "tr": "Acı biber"
     },
     "hint": {
       "en": "Spicy food",
@@ -756,7 +835,8 @@
       "es": "Comida picante",
       "el": "Πικάντικο φαγητό",
       "de": "Scharfes Essen",
-      "ro": "Mâncare iute"
+      "ro": "Mâncare iute",
+      "tr": "Baharatlı yiyecek"
     }
   },
   {
@@ -767,7 +847,8 @@
       "es": "Sal",
       "el": "Αλάτι",
       "de": "Salz",
-      "ro": "Sare"
+      "ro": "Sare",
+      "tr": "Tuz"
     },
     "hint": {
       "en": "Basic seasoning",
@@ -775,7 +856,8 @@
       "es": "Condimento básico",
       "el": "Βασικό καρύκευμα",
       "de": "Grundgewürz",
-      "ro": "Condiment de bază"
+      "ro": "Condiment de bază",
+      "tr": "Temel baharat"
     }
   },
   {
@@ -786,7 +868,8 @@
       "es": "Aceite de oliva",
       "el": "Ελαιόλαδο",
       "de": "Olivenöl",
-      "ro": "Ulei de măsline"
+      "ro": "Ulei de măsline",
+      "tr": "Zeytinyağı"
     },
     "hint": {
       "en": "Cooking liquid",
@@ -794,7 +877,8 @@
       "es": "Líquido de cocina",
       "el": "Υγρό μαγειρικής",
       "de": "Kochflüssigkeit",
-      "ro": "Lichid de gătit"
+      "ro": "Lichid de gătit",
+      "tr": "Pişirme sıvısı"
     }
   },
   {
@@ -805,7 +889,8 @@
       "es": "Biblioteca",
       "el": "Βιβλιοθήκη",
       "de": "Bibliothek",
-      "ro": "Bibliotecă"
+      "ro": "Bibliotecă",
+      "tr": "Kütüphane"
     },
     "hint": {
       "en": "Quiet building",
@@ -813,7 +898,8 @@
       "es": "Edificio silencioso",
       "el": "Ήσυχο κτίριο",
       "de": "Ruhiges Gebäude",
-      "ro": "Clădire liniștită"
+      "ro": "Clădire liniștită",
+      "tr": "Sessiz bina"
     }
   },
   {
@@ -824,7 +910,8 @@
       "es": "Escuela",
       "el": "Σχολείο",
       "de": "Schule",
-      "ro": "Școală"
+      "ro": "Școală",
+      "tr": "Okul"
     },
     "hint": {
       "en": "Place for learning",
@@ -832,7 +919,8 @@
       "es": "Lugar para aprender",
       "el": "Χώρος μάθησης",
       "de": "Ort zum Lernen",
-      "ro": "Loc pentru învățat"
+      "ro": "Loc pentru învățat",
+      "tr": "Öğrenme yeri"
     }
   },
   {
@@ -843,7 +931,8 @@
       "es": "Museo",
       "el": "Μουσείο",
       "de": "Museum",
-      "ro": "Muzeu"
+      "ro": "Muzeu",
+      "tr": "Müze"
     },
     "hint": {
       "en": "Place with exhibits",
@@ -851,7 +940,8 @@
       "es": "Lugar con exposiciones",
       "el": "Χώρος με εκθέματα",
       "de": "Ort mit Ausstellungsstücken",
-      "ro": "Loc cu exponate"
+      "ro": "Loc cu exponate",
+      "tr": "Sergilerin olduğu yer"
     }
   },
   {
@@ -862,7 +952,8 @@
       "es": "Mercado",
       "el": "Αγορά",
       "de": "Markt",
-      "ro": "Piață"
+      "ro": "Piață",
+      "tr": "Pazar"
     },
     "hint": {
       "en": "Place to buy food",
@@ -870,7 +961,8 @@
       "es": "Lugar para comprar comida",
       "el": "Μέρος για ψώνια τροφίμων",
       "de": "Ort zum Lebensmittelkauf",
-      "ro": "Loc de cumpărat mâncare"
+      "ro": "Loc de cumpărat mâncare",
+      "tr": "Yiyecek alınan yer"
     }
   },
   {
@@ -881,7 +973,8 @@
       "es": "Iglesia",
       "el": "Εκκλησία",
       "de": "Kirche",
-      "ro": "Biserică"
+      "ro": "Biserică",
+      "tr": "Kilise"
     },
     "hint": {
       "en": "Religious building",
@@ -889,7 +982,8 @@
       "es": "Edificio religioso",
       "el": "Θρησκευτικό κτίριο",
       "de": "Religiöses Gebäude",
-      "ro": "Clădire religioasă"
+      "ro": "Clădire religioasă",
+      "tr": "Dini bina"
     }
   },
   {
@@ -900,7 +994,8 @@
       "es": "Puente",
       "el": "Γέφυρα",
       "de": "Brücke",
-      "ro": "Pod"
+      "ro": "Pod",
+      "tr": "Köprü"
     },
     "hint": {
       "en": "River crossing",
@@ -908,7 +1003,8 @@
       "es": "Cruce sobre el río",
       "el": "Πέρασμα πάνω από ποτάμι",
       "de": "Flussüberquerung",
-      "ro": "Trecere peste râu"
+      "ro": "Trecere peste râu",
+      "tr": "Nehir geçişi"
     }
   },
   {
@@ -919,7 +1015,8 @@
       "es": "Restaurante",
       "el": "Εστιατόριο",
       "de": "Restaurant",
-      "ro": "Restaurant"
+      "ro": "Restaurant",
+      "tr": "Restoran"
     },
     "hint": {
       "en": "Where you leave a tip",
@@ -927,7 +1024,8 @@
       "es": "Lugar para comer",
       "el": "Μέρος για φαγητό",
       "de": "Ort zum Essen",
-      "ro": "Loc pentru mâncat"
+      "ro": "Loc pentru mâncat",
+      "tr": "Bahşiş bıraktığın yer"
     }
   },
   {
@@ -938,7 +1036,8 @@
       "es": "Cine",
       "el": "Σινεμά",
       "de": "Kino",
-      "ro": "Cinema"
+      "ro": "Cinema",
+      "tr": "Sinema"
     },
     "hint": {
       "en": "Place with screens",
@@ -946,7 +1045,8 @@
       "es": "Lugar con pantallas",
       "el": "Χώρος με οθόνες",
       "de": "Ort mit Leinwänden",
-      "ro": "Loc cu ecrane"
+      "ro": "Loc cu ecrane",
+      "tr": "Perdelerin olduğu yer"
     }
   },
   {
@@ -957,7 +1057,8 @@
       "es": "Zoológico",
       "el": "Ζωολογικός κήπος",
       "de": "Zoo",
-      "ro": "Grădină zoologică"
+      "ro": "Grădină zoologică",
+      "tr": "Hayvanat bahçesi"
     },
     "hint": {
       "en": "Place with animals",
@@ -965,7 +1066,8 @@
       "es": "Lugar con animales",
       "el": "Χώρος με ζώα",
       "de": "Ort mit Tieren",
-      "ro": "Loc cu animale"
+      "ro": "Loc cu animale",
+      "tr": "Hayvanların olduğu yer"
     }
   },
   {
@@ -976,7 +1078,8 @@
       "es": "Banco",
       "el": "Τράπεζα",
       "de": "Bank",
-      "ro": "Bancă"
+      "ro": "Bancă",
+      "tr": "Banka"
     },
     "hint": {
       "en": "Place with money",
@@ -984,7 +1087,8 @@
       "es": "Lugar con dinero",
       "el": "Χώρος με χρήματα",
       "de": "Ort mit Geld",
-      "ro": "Loc cu bani"
+      "ro": "Loc cu bani",
+      "tr": "Paranın olduğu yer"
     }
   },
   {
@@ -995,7 +1099,8 @@
       "es": "Prisión",
       "el": "Φυλακή",
       "de": "Gefängnis",
-      "ro": "Închisoare"
+      "ro": "Închisoare",
+      "tr": "Hapishane"
     },
     "hint": {
       "en": "Locked building",
@@ -1003,7 +1108,8 @@
       "es": "Edificio cerrado",
       "el": "Κλειδωμένο κτίριο",
       "de": "Verschlossenes Gebäude",
-      "ro": "Clădire încuiată"
+      "ro": "Clădire încuiată",
+      "tr": "Kilitli bina"
     }
   },
   {
@@ -1014,7 +1120,8 @@
       "es": "Granja",
       "el": "Φάρμα",
       "de": "Bauernhof",
-      "ro": "Fermă"
+      "ro": "Fermă",
+      "tr": "Çiftlik"
     },
     "hint": {
       "en": "Countryside place",
@@ -1022,7 +1129,8 @@
       "es": "Lugar en el campo",
       "el": "Μέρος στην εξοχή",
       "de": "Ort auf dem Land",
-      "ro": "Loc la țară"
+      "ro": "Loc la țară",
+      "tr": "Kırsal yer"
     }
   },
   {
@@ -1033,7 +1141,8 @@
       "es": "Puerto",
       "el": "Λιμάνι",
       "de": "Hafen",
-      "ro": "Port"
+      "ro": "Port",
+      "tr": "Liman"
     },
     "hint": {
       "en": "Place with ships",
@@ -1041,7 +1150,8 @@
       "es": "Lugar con barcos",
       "el": "Χώρος με πλοία",
       "de": "Ort mit Schiffen",
-      "ro": "Loc cu nave"
+      "ro": "Loc cu nave",
+      "tr": "Gemilerin olduğu yer"
     }
   },
   {
@@ -1052,7 +1162,8 @@
       "es": "Estadio",
       "el": "Στάδιο",
       "de": "Stadion",
-      "ro": "Stadion"
+      "ro": "Stadion",
+      "tr": "Stadyum"
     },
     "hint": {
       "en": "Place with crowds",
@@ -1060,7 +1171,8 @@
       "es": "Lugar con multitudes",
       "el": "Χώρος με πλήθος",
       "de": "Ort mit Menschenmengen",
-      "ro": "Loc cu mulțimi"
+      "ro": "Loc cu mulțimi",
+      "tr": "Kalabalıkların olduğu yer"
     }
   },
   {
@@ -1071,7 +1183,8 @@
       "es": "Hotel",
       "el": "Ξενοδοχείο",
       "de": "Hotel",
-      "ro": "Hotel"
+      "ro": "Hotel",
+      "tr": "Otel"
     },
     "hint": {
       "en": "Somewhere you check in for the night",
@@ -1079,7 +1192,8 @@
       "es": "Lugar para dormir",
       "el": "Μέρος για ύπνο",
       "de": "Ort zum Schlafen",
-      "ro": "Loc pentru dormit"
+      "ro": "Loc pentru dormit",
+      "tr": "Geceyi geçirmek için giriş yaptığın yer"
     }
   },
   {
@@ -1090,7 +1204,8 @@
       "es": "Farmacia",
       "el": "Φαρμακείο",
       "de": "Apotheke",
-      "ro": "Farmacie"
+      "ro": "Farmacie",
+      "tr": "Eczane"
     },
     "hint": {
       "en": "Place with medicine",
@@ -1098,7 +1213,8 @@
       "es": "Lugar con medicinas",
       "el": "Χώρος με φάρμακα",
       "de": "Ort mit Medikamenten",
-      "ro": "Loc cu medicamente"
+      "ro": "Loc cu medicamente",
+      "tr": "İlaçların olduğu yer"
     }
   },
   {
@@ -1109,7 +1225,8 @@
       "es": "Gimnasio",
       "el": "Γυμναστήριο",
       "de": "Fitnessstudio",
-      "ro": "Sală de sport"
+      "ro": "Sală de sport",
+      "tr": "Spor salonu"
     },
     "hint": {
       "en": "Place to train",
@@ -1117,7 +1234,8 @@
       "es": "Lugar para entrenar",
       "el": "Χώρος για προπόνηση",
       "de": "Ort zum Trainieren",
-      "ro": "Loc pentru antrenament"
+      "ro": "Loc pentru antrenament",
+      "tr": "Antrenman yeri"
     }
   },
   {
@@ -1128,7 +1246,8 @@
       "es": "Parque",
       "el": "Πάρκο",
       "de": "Park",
-      "ro": "Parc"
+      "ro": "Parc",
+      "tr": "Park"
     },
     "hint": {
       "en": "Green public place",
@@ -1136,7 +1255,8 @@
       "es": "Lugar público verde",
       "el": "Πράσινος δημόσιος χώρος",
       "de": "Grüner öffentlicher Ort",
-      "ro": "Loc public verde"
+      "ro": "Loc public verde",
+      "tr": "Yeşil kamusal alan"
     }
   },
   {
@@ -1147,7 +1267,8 @@
       "es": "Panadería",
       "el": "Φούρνος",
       "de": "Bäckerei",
-      "ro": "Brutărie"
+      "ro": "Brutărie",
+      "tr": "Fırın"
     },
     "hint": {
       "en": "Smells like fresh dough",
@@ -1155,7 +1276,8 @@
       "es": "Tienda con pan",
       "el": "Κατάστημα με ψωμί",
       "de": "Laden mit Brot",
-      "ro": "Magazin cu pâine"
+      "ro": "Magazin cu pâine",
+      "tr": "Taze hamur kokan yer"
     }
   },
   {
@@ -1166,7 +1288,8 @@
       "es": "Estación de tren",
       "el": "Σιδηροδρομικός σταθμός",
       "de": "Bahnhof",
-      "ro": "Gară"
+      "ro": "Gară",
+      "tr": "Tren istasyonu"
     },
     "hint": {
       "en": "Place with platforms",
@@ -1174,7 +1297,8 @@
       "es": "Lugar con andenes",
       "el": "Χώρος με αποβάθρες",
       "de": "Ort mit Bahnsteigen",
-      "ro": "Loc cu peroane"
+      "ro": "Loc cu peroane",
+      "tr": "Peronların olduğu yer"
     }
   },
   {
@@ -1185,7 +1309,8 @@
       "es": "Barbería",
       "el": "Κουρείο",
       "de": "Friseursalon",
-      "ro": "Frizerie"
+      "ro": "Frizerie",
+      "tr": "Berber"
     },
     "hint": {
       "en": "Where hair ends up on the floor",
@@ -1193,7 +1318,8 @@
       "es": "Lugar para cortarse el pelo",
       "el": "Μέρος για κούρεμα",
       "de": "Ort für Haarschnitte",
-      "ro": "Loc pentru tuns"
+      "ro": "Loc pentru tuns",
+      "tr": "Saçların yerde biriktiği yer"
     }
   },
   {
@@ -1204,7 +1330,8 @@
       "es": "Cementerio",
       "el": "Νεκροταφείο",
       "de": "Friedhof",
-      "ro": "Cimitir"
+      "ro": "Cimitir",
+      "tr": "Mezarlık"
     },
     "hint": {
       "en": "Quiet resting place",
@@ -1212,7 +1339,8 @@
       "es": "Lugar de descanso silencioso",
       "el": "Ήσυχος τόπος ανάπαυσης",
       "de": "Stiller Ruheort",
-      "ro": "Loc liniștit de odihnă"
+      "ro": "Loc liniștit de odihnă",
+      "tr": "Sessiz huzur yeri"
     }
   },
   {
@@ -1223,7 +1351,8 @@
       "es": "Oficina de correos",
       "el": "Ταχυδρομείο",
       "de": "Postamt",
-      "ro": "Poștă"
+      "ro": "Poștă",
+      "tr": "Postane"
     },
     "hint": {
       "en": "Where a parcel starts its journey",
@@ -1231,7 +1360,8 @@
       "es": "Lugar para cartas",
       "el": "Χώρος για γράμματα",
       "de": "Ort für Briefe",
-      "ro": "Loc pentru scrisori"
+      "ro": "Loc pentru scrisori",
+      "tr": "Bir paketin yolculuğunun başladığı yer"
     }
   },
   {
@@ -1242,7 +1372,8 @@
       "es": "Gasolinera",
       "el": "Βενζινάδικο",
       "de": "Tankstelle",
-      "ro": "Benzinărie"
+      "ro": "Benzinărie",
+      "tr": "Benzin istasyonu"
     },
     "hint": {
       "en": "Quick stop before a long drive",
@@ -1250,7 +1381,8 @@
       "es": "Lugar para combustible",
       "el": "Χώρος για καύσιμα",
       "de": "Ort für Kraftstoff",
-      "ro": "Loc pentru combustibil"
+      "ro": "Loc pentru combustibil",
+      "tr": "Uzun yolculuk öncesi kısa mola"
     }
   },
   {
@@ -1261,7 +1393,8 @@
       "es": "Parque de atracciones",
       "el": "Λούνα παρκ",
       "de": "Vergnügungspark",
-      "ro": "Parc de distracții"
+      "ro": "Parc de distracții",
+      "tr": "Lunapark"
     },
     "hint": {
       "en": "Place with rides",
@@ -1269,7 +1402,8 @@
       "es": "Lugar con atracciones",
       "el": "Χώρος με παιχνίδια",
       "de": "Ort mit Fahrgeschäften",
-      "ro": "Loc cu carusele"
+      "ro": "Loc cu carusele",
+      "tr": "Eğlence araçlarının olduğu yer"
     }
   },
   {
@@ -1280,7 +1414,8 @@
       "es": "Oficina",
       "el": "Γραφείο",
       "de": "Büro",
-      "ro": "Birou"
+      "ro": "Birou",
+      "tr": "Ofis"
     },
     "hint": {
       "en": "Place to work",
@@ -1288,7 +1423,8 @@
       "es": "Lugar para trabajar",
       "el": "Χώρος εργασίας",
       "de": "Ort zum Arbeiten",
-      "ro": "Loc de muncă"
+      "ro": "Loc de muncă",
+      "tr": "Çalışma yeri"
     }
   },
   {
@@ -1299,7 +1435,8 @@
       "es": "Palacio",
       "el": "Παλάτι",
       "de": "Palast",
-      "ro": "Palat"
+      "ro": "Palat",
+      "tr": "Saray"
     },
     "hint": {
       "en": "Royal building",
@@ -1307,7 +1444,8 @@
       "es": "Edificio real",
       "el": "Βασιλικό κτίριο",
       "de": "Königliches Gebäude",
-      "ro": "Clădire regală"
+      "ro": "Clădire regală",
+      "tr": "Kraliyet binası"
     }
   },
   {
@@ -1318,7 +1456,8 @@
       "es": "Delfín",
       "el": "Δελφίνι",
       "de": "Delfin",
-      "ro": "Delfin"
+      "ro": "Delfin",
+      "tr": "Yunus"
     },
     "hint": {
       "en": "Sea mammal",
@@ -1326,7 +1465,8 @@
       "es": "Mamífero marino",
       "el": "Θαλάσσιο θηλαστικό",
       "de": "Meeressäuger",
-      "ro": "Mamifer marin"
+      "ro": "Mamifer marin",
+      "tr": "Deniz memelisi"
     }
   },
   {
@@ -1337,7 +1477,8 @@
       "es": "Caballo",
       "el": "Άλογο",
       "de": "Pferd",
-      "ro": "Cal"
+      "ro": "Cal",
+      "tr": "At"
     },
     "hint": {
       "en": "Riding animal",
@@ -1345,7 +1486,8 @@
       "es": "Animal de monta",
       "el": "Ζώο ιππασίας",
       "de": "Reittier",
-      "ro": "Animal de călărie"
+      "ro": "Animal de călărie",
+      "tr": "Binilen hayvan"
     }
   },
   {
@@ -1356,7 +1498,8 @@
       "es": "Búho",
       "el": "Κουκουβάγια",
       "de": "Eule",
-      "ro": "Bufniță"
+      "ro": "Bufniță",
+      "tr": "Baykuş"
     },
     "hint": {
       "en": "Night bird",
@@ -1364,7 +1507,8 @@
       "es": "Ave nocturna",
       "el": "Νυχτερινό πουλί",
       "de": "Nachtvogel",
-      "ro": "Pasăre de noapte"
+      "ro": "Pasăre de noapte",
+      "tr": "Gece kuşu"
     }
   },
   {
@@ -1375,7 +1519,8 @@
       "es": "Serpiente",
       "el": "Φίδι",
       "de": "Schlange",
-      "ro": "Șarpe"
+      "ro": "Șarpe",
+      "tr": "Yılan"
     },
     "hint": {
       "en": "Legless animal",
@@ -1383,7 +1528,8 @@
       "es": "Animal sin patas",
       "el": "Ζώο χωρίς πόδια",
       "de": "Tier ohne Beine",
-      "ro": "Animal fără picioare"
+      "ro": "Animal fără picioare",
+      "tr": "Bacaksız hayvan"
     }
   },
   {
@@ -1394,7 +1540,8 @@
       "es": "Oso",
       "el": "Αρκούδα",
       "de": "Bär",
-      "ro": "Urs"
+      "ro": "Urs",
+      "tr": "Ayı"
     },
     "hint": {
       "en": "Big forest animal",
@@ -1402,7 +1549,8 @@
       "es": "Animal grande del bosque",
       "el": "Μεγάλο ζώο του δάσους",
       "de": "Großes Waldtier",
-      "ro": "Animal mare de pădure"
+      "ro": "Animal mare de pădure",
+      "tr": "Büyük orman hayvanı"
     }
   },
   {
@@ -1413,7 +1561,8 @@
       "es": "Conejo",
       "el": "Κουνέλι",
       "de": "Kaninchen",
-      "ro": "Iepure"
+      "ro": "Iepure",
+      "tr": "Tavşan"
     },
     "hint": {
       "en": "Small hopping animal",
@@ -1421,7 +1570,8 @@
       "es": "Animal pequeño que salta",
       "el": "Μικρό ζώο που πηδά",
       "de": "Kleines hüpfendes Tier",
-      "ro": "Animal mic care sare"
+      "ro": "Animal mic care sare",
+      "tr": "Küçük zıplayan hayvan"
     }
   },
   {
@@ -1432,7 +1582,8 @@
       "es": "Tiburón",
       "el": "Καρχαρίας",
       "de": "Hai",
-      "ro": "Rechin"
+      "ro": "Rechin",
+      "tr": "Köpekbalığı"
     },
     "hint": {
       "en": "Sea predator",
@@ -1440,7 +1591,8 @@
       "es": "Depredador marino",
       "el": "Θαλάσσιος θηρευτής",
       "de": "Meeresräuber",
-      "ro": "Prădător marin"
+      "ro": "Prădător marin",
+      "tr": "Deniz avcısı"
     }
   },
   {
@@ -1451,7 +1603,8 @@
       "es": "Mariposa",
       "el": "Πεταλούδα",
       "de": "Schmetterling",
-      "ro": "Fluture"
+      "ro": "Fluture",
+      "tr": "Kelebek"
     },
     "hint": {
       "en": "Colourful insect",
@@ -1459,7 +1612,8 @@
       "es": "Insecto colorido",
       "el": "Πολύχρωμο έντομο",
       "de": "Buntes Insekt",
-      "ro": "Insectă colorată"
+      "ro": "Insectă colorată",
+      "tr": "Renkli böcek"
     }
   },
   {
@@ -1470,7 +1624,8 @@
       "es": "Rana",
       "el": "Βάτραχος",
       "de": "Frosch",
-      "ro": "Broască"
+      "ro": "Broască",
+      "tr": "Kurbağa"
     },
     "hint": {
       "en": "Jumping amphibian",
@@ -1478,7 +1633,8 @@
       "es": "Anfibio saltarín",
       "el": "Αμφίβιο που πηδά",
       "de": "Springende Amphibie",
-      "ro": "Amfibian săritor"
+      "ro": "Amfibian săritor",
+      "tr": "Zıplayan amfibi"
     }
   },
   {
@@ -1489,7 +1645,8 @@
       "es": "Camello",
       "el": "Καμήλα",
       "de": "Kamel",
-      "ro": "Cămilă"
+      "ro": "Cămilă",
+      "tr": "Deve"
     },
     "hint": {
       "en": "Desert animal",
@@ -1497,7 +1654,8 @@
       "es": "Animal del desierto",
       "el": "Ζώο της ερήμου",
       "de": "Wüstentier",
-      "ro": "Animal de deșert"
+      "ro": "Animal de deșert",
+      "tr": "Çöl hayvanı"
     }
   },
   {
@@ -1508,7 +1666,8 @@
       "es": "Lobo",
       "el": "Λύκος",
       "de": "Wolf",
-      "ro": "Lup"
+      "ro": "Lup",
+      "tr": "Kurt"
     },
     "hint": {
       "en": "Wild pack animal",
@@ -1516,7 +1675,8 @@
       "es": "Animal salvaje de manada",
       "el": "Άγριο ζώο αγέλης",
       "de": "Wildes Rudeltier",
-      "ro": "Animal sălbatic de haită"
+      "ro": "Animal sălbatic de haită",
+      "tr": "Vahşi sürü hayvanı"
     }
   },
   {
@@ -1527,7 +1687,8 @@
       "es": "Abeja",
       "el": "Μέλισσα",
       "de": "Biene",
-      "ro": "Albină"
+      "ro": "Albină",
+      "tr": "Arı"
     },
     "hint": {
       "en": "Buzzing insect",
@@ -1535,7 +1696,8 @@
       "es": "Insecto que zumba",
       "el": "Έντομο που βουίζει",
       "de": "Summendes Insekt",
-      "ro": "Insectă care bâzâie"
+      "ro": "Insectă care bâzâie",
+      "tr": "Vızıldayan böcek"
     }
   },
   {
@@ -1546,7 +1708,8 @@
       "es": "Tortuga",
       "el": "Χελώνα",
       "de": "Schildkröte",
-      "ro": "Broască țestoasă"
+      "ro": "Broască țestoasă",
+      "tr": "Kaplumbağa"
     },
     "hint": {
       "en": "Slow animal with a shell",
@@ -1554,7 +1717,8 @@
       "es": "Animal lento con caparazón",
       "el": "Αργό ζώο με καβούκι",
       "de": "Langsames Tier mit Panzer",
-      "ro": "Animal lent cu carapace"
+      "ro": "Animal lent cu carapace",
+      "tr": "Kabuklu yavaş hayvan"
     }
   },
   {
@@ -1565,7 +1729,8 @@
       "es": "Canguro",
       "el": "Καγκουρό",
       "de": "Känguru",
-      "ro": "Cangur"
+      "ro": "Cangur",
+      "tr": "Kanguru"
     },
     "hint": {
       "en": "Australian animal",
@@ -1573,7 +1738,8 @@
       "es": "Animal australiano",
       "el": "Αυστραλέζικο ζώο",
       "de": "Australisches Tier",
-      "ro": "Animal australian"
+      "ro": "Animal australian",
+      "tr": "Avustralya hayvanı"
     }
   },
   {
@@ -1584,7 +1750,8 @@
       "es": "Águila",
       "el": "Αετός",
       "de": "Adler",
-      "ro": "Vultur"
+      "ro": "Vultur",
+      "tr": "Kartal"
     },
     "hint": {
       "en": "Bird of prey",
@@ -1592,7 +1759,8 @@
       "es": "Ave rapaz",
       "el": "Αρπακτικό πουλί",
       "de": "Raubvogel",
-      "ro": "Pasăre de pradă"
+      "ro": "Pasăre de pradă",
+      "tr": "Yırtıcı kuş"
     }
   },
   {
@@ -1603,7 +1771,8 @@
       "es": "Mono",
       "el": "Μαϊμού",
       "de": "Affe",
-      "ro": "Maimuță"
+      "ro": "Maimuță",
+      "tr": "Maymun"
     },
     "hint": {
       "en": "Climbing animal",
@@ -1611,7 +1780,8 @@
       "es": "Animal trepador",
       "el": "Ζώο που σκαρφαλώνει",
       "de": "Kletterndes Tier",
-      "ro": "Animal cățărător"
+      "ro": "Animal cățărător",
+      "tr": "Tırmanan hayvan"
     }
   },
   {
@@ -1622,7 +1792,8 @@
       "es": "Vaca",
       "el": "Αγελάδα",
       "de": "Kuh",
-      "ro": "Vacă"
+      "ro": "Vacă",
+      "tr": "İnek"
     },
     "hint": {
       "en": "Farm animal",
@@ -1630,7 +1801,8 @@
       "es": "Animal de granja",
       "el": "Ζώο φάρμας",
       "de": "Nutztier",
-      "ro": "Animal de fermă"
+      "ro": "Animal de fermă",
+      "tr": "Çiftlik hayvanı"
     }
   },
   {
@@ -1641,7 +1813,8 @@
       "es": "Cocodrilo",
       "el": "Κροκόδειλος",
       "de": "Krokodil",
-      "ro": "Crocodil"
+      "ro": "Crocodil",
+      "tr": "Timsah"
     },
     "hint": {
       "en": "River predator",
@@ -1649,7 +1822,8 @@
       "es": "Depredador de río",
       "el": "Θηρευτής του ποταμού",
       "de": "Flussräuber",
-      "ro": "Prădător de râu"
+      "ro": "Prădător de râu",
+      "tr": "Nehir avcısı"
     }
   },
   {
@@ -1660,7 +1834,8 @@
       "es": "Loro",
       "el": "Παπαγάλος",
       "de": "Papagei",
-      "ro": "Papagal"
+      "ro": "Papagal",
+      "tr": "Papağan"
     },
     "hint": {
       "en": "Talking bird",
@@ -1668,7 +1843,8 @@
       "es": "Ave que habla",
       "el": "Πουλί που μιλά",
       "de": "Sprechender Vogel",
-      "ro": "Pasăre vorbitoare"
+      "ro": "Pasăre vorbitoare",
+      "tr": "Konuşan kuş"
     }
   },
   {
@@ -1679,7 +1855,8 @@
       "es": "León",
       "el": "Λιοντάρι",
       "de": "Löwe",
-      "ro": "Leu"
+      "ro": "Leu",
+      "tr": "Aslan"
     },
     "hint": {
       "en": "Big cat",
@@ -1687,7 +1864,8 @@
       "es": "Felino grande",
       "el": "Μεγάλη γάτα",
       "de": "Große Katze",
-      "ro": "Felină mare"
+      "ro": "Felină mare",
+      "tr": "Büyük kedi"
     }
   },
   {
@@ -1698,7 +1876,8 @@
       "es": "Ballena",
       "el": "Φάλαινα",
       "de": "Wal",
-      "ro": "Balenă"
+      "ro": "Balenă",
+      "tr": "Balina"
     },
     "hint": {
       "en": "Huge sea animal",
@@ -1706,7 +1885,8 @@
       "es": "Animal marino enorme",
       "el": "Τεράστιο θαλάσσιο ζώο",
       "de": "Riesiges Meerestier",
-      "ro": "Animal marin uriaș"
+      "ro": "Animal marin uriaș",
+      "tr": "Devasa deniz hayvanı"
     }
   },
   {
@@ -1717,7 +1897,8 @@
       "es": "Zorro",
       "el": "Αλεπού",
       "de": "Fuchs",
-      "ro": "Vulpe"
+      "ro": "Vulpe",
+      "tr": "Tilki"
     },
     "hint": {
       "en": "Clever wild animal",
@@ -1725,7 +1906,8 @@
       "es": "Animal salvaje astuto",
       "el": "Πονηρό άγριο ζώο",
       "de": "Schlaues Wildtier",
-      "ro": "Animal sălbatic viclean"
+      "ro": "Animal sălbatic viclean",
+      "tr": "Kurnaz vahşi hayvan"
     }
   },
   {
@@ -1736,7 +1918,8 @@
       "es": "Oveja",
       "el": "Πρόβατο",
       "de": "Schaf",
-      "ro": "Oaie"
+      "ro": "Oaie",
+      "tr": "Koyun"
     },
     "hint": {
       "en": "Wool animal",
@@ -1744,7 +1927,8 @@
       "es": "Animal de lana",
       "el": "Ζώο με μαλλί",
       "de": "Wolltier",
-      "ro": "Animal cu lână"
+      "ro": "Animal cu lână",
+      "tr": "Yünlü hayvan"
     }
   },
   {
@@ -1755,7 +1939,8 @@
       "es": "Hormiga",
       "el": "Μυρμήγκι",
       "de": "Ameise",
-      "ro": "Furnică"
+      "ro": "Furnică",
+      "tr": "Karınca"
     },
     "hint": {
       "en": "Tiny insect",
@@ -1763,7 +1948,8 @@
       "es": "Insecto diminuto",
       "el": "Μικροσκοπικό έντομο",
       "de": "Winziges Insekt",
-      "ro": "Insectă mititică"
+      "ro": "Insectă mititică",
+      "tr": "Minik böcek"
     }
   },
   {
@@ -1774,7 +1960,8 @@
       "es": "Murciélago",
       "el": "Νυχτερίδα",
       "de": "Fledermaus",
-      "ro": "Liliac"
+      "ro": "Liliac",
+      "tr": "Yarasa"
     },
     "hint": {
       "en": "Flying night animal",
@@ -1782,7 +1969,8 @@
       "es": "Animal nocturno volador",
       "el": "Ιπτάμενο νυχτερινό ζώο",
       "de": "Fliegendes Nachttier",
-      "ro": "Animal zburător de noapte"
+      "ro": "Animal zburător de noapte",
+      "tr": "Uçan gece hayvanı"
     }
   },
   {
@@ -1793,7 +1981,8 @@
       "es": "Ardilla",
       "el": "Σκίουρος",
       "de": "Eichhörnchen",
-      "ro": "Veveriță"
+      "ro": "Veveriță",
+      "tr": "Sincap"
     },
     "hint": {
       "en": "Tree animal",
@@ -1801,7 +1990,8 @@
       "es": "Animal de los árboles",
       "el": "Ζώο των δέντρων",
       "de": "Baumtier",
-      "ro": "Animal din copaci"
+      "ro": "Animal din copaci",
+      "tr": "Ağaç hayvanı"
     }
   },
   {
@@ -1812,7 +2002,8 @@
       "es": "Pez dorado",
       "el": "Χρυσόψαρο",
       "de": "Goldfisch",
-      "ro": "Pește auriu"
+      "ro": "Pește auriu",
+      "tr": "Japon balığı"
     },
     "hint": {
       "en": "Pet fish",
@@ -1820,7 +2011,8 @@
       "es": "Pez de acuario",
       "el": "Ψάρι κατοικίδιο",
       "de": "Zierfisch",
-      "ro": "Pește de acvariu"
+      "ro": "Pește de acvariu",
+      "tr": "Evcil balık"
     }
   },
   {
@@ -1831,7 +2023,8 @@
       "es": "Reloj",
       "el": "Ρολόι",
       "de": "Uhr",
-      "ro": "Ceas"
+      "ro": "Ceas",
+      "tr": "Saat"
     },
     "hint": {
       "en": "Something you glance at when running late",
@@ -1839,7 +2032,8 @@
       "es": "Aparato del tiempo",
       "el": "Συσκευή χρόνου",
       "de": "Zeitmesser",
-      "ro": "Aparat de măsurat timpul"
+      "ro": "Aparat de măsurat timpul",
+      "tr": "Geç kaldığında göz attığın şey"
     }
   },
   {
@@ -1850,7 +2044,8 @@
       "es": "Llave",
       "el": "Κλειδί",
       "de": "Schlüssel",
-      "ro": "Cheie"
+      "ro": "Cheie",
+      "tr": "Anahtar"
     },
     "hint": {
       "en": "Small metal tool",
@@ -1858,7 +2053,8 @@
       "es": "Objeto metálico pequeño",
       "el": "Μικρό μεταλλικό αντικείμενο",
       "de": "Kleiner Metallgegenstand",
-      "ro": "Obiect mic de metal"
+      "ro": "Obiect mic de metal",
+      "tr": "Küçük metal alet"
     }
   },
   {
@@ -1869,7 +2065,8 @@
       "es": "Vela",
       "el": "Κερί",
       "de": "Kerze",
-      "ro": "Lumânare"
+      "ro": "Lumânare",
+      "tr": "Mum"
     },
     "hint": {
       "en": "Flickers when the power goes out",
@@ -1877,7 +2074,8 @@
       "es": "Luz de cera",
       "el": "Κέρινο φως",
       "de": "Wachslicht",
-      "ro": "Lumină de ceară"
+      "ro": "Lumină de ceară",
+      "tr": "Elektrik kesilince titreşen ışık"
     }
   },
   {
@@ -1888,7 +2086,8 @@
       "es": "Escalera",
       "el": "Σκάλα",
       "de": "Leiter",
-      "ro": "Scară"
+      "ro": "Scară",
+      "tr": "Merdiven"
     },
     "hint": {
       "en": "Climbing tool",
@@ -1896,7 +2095,8 @@
       "es": "Herramienta para subir",
       "el": "Εργαλείο ανάβασης",
       "de": "Steighilfe",
-      "ro": "Unealtă de urcat"
+      "ro": "Unealtă de urcat",
+      "tr": "Tırmanma aleti"
     }
   },
   {
@@ -1907,7 +2107,8 @@
       "es": "Tijeras",
       "el": "Ψαλίδι",
       "de": "Schere",
-      "ro": "Foarfecă"
+      "ro": "Foarfecă",
+      "tr": "Makas"
     },
     "hint": {
       "en": "Cutting tool",
@@ -1915,7 +2116,8 @@
       "es": "Herramienta de cortar",
       "el": "Εργαλείο κοπής",
       "de": "Schneidewerkzeug",
-      "ro": "Unealtă de tăiat"
+      "ro": "Unealtă de tăiat",
+      "tr": "Kesme aleti"
     }
   },
   {
@@ -1926,7 +2128,8 @@
       "es": "Mochila",
       "el": "Σακίδιο",
       "de": "Rucksack",
-      "ro": "Rucsac"
+      "ro": "Rucsac",
+      "tr": "Sırt çantası"
     },
     "hint": {
       "en": "Carrying bag",
@@ -1934,7 +2137,8 @@
       "es": "Bolsa para llevar",
       "el": "Τσάντα μεταφοράς",
       "de": "Tragetasche",
-      "ro": "Geantă de purtat"
+      "ro": "Geantă de purtat",
+      "tr": "Taşıma çantası"
     }
   },
   {
@@ -1945,7 +2149,8 @@
       "es": "Almohada",
       "el": "Μαξιλάρι",
       "de": "Kissen",
-      "ro": "Pernă"
+      "ro": "Pernă",
+      "tr": "Yastık"
     },
     "hint": {
       "en": "Soft bedding",
@@ -1953,7 +2158,8 @@
       "es": "Ropa de cama blanda",
       "el": "Μαλακό στρωσίδι",
       "de": "Weiche Bettware",
-      "ro": "Așternut moale"
+      "ro": "Așternut moale",
+      "tr": "Yumuşak yatak eşyası"
     }
   },
   {
@@ -1964,7 +2170,8 @@
       "es": "Cepillo de dientes",
       "el": "Οδοντόβουρτσα",
       "de": "Zahnbürste",
-      "ro": "Periuță de dinți"
+      "ro": "Periuță de dinți",
+      "tr": "Diş fırçası"
     },
     "hint": {
       "en": "Bathroom item",
@@ -1972,7 +2179,8 @@
       "es": "Objeto de baño",
       "el": "Αντικείμενο μπάνιου",
       "de": "Badezimmerartikel",
-      "ro": "Obiect de baie"
+      "ro": "Obiect de baie",
+      "tr": "Banyo eşyası"
     }
   },
   {
@@ -1983,7 +2191,8 @@
       "es": "Escoba",
       "el": "Σκούπα",
       "de": "Besen",
-      "ro": "Mătură"
+      "ro": "Mătură",
+      "tr": "Süpürge"
     },
     "hint": {
       "en": "Cleaning tool",
@@ -1991,7 +2200,8 @@
       "es": "Utensilio de limpieza",
       "el": "Εργαλείο καθαρισμού",
       "de": "Reinigungsgerät",
-      "ro": "Unealtă de curățenie"
+      "ro": "Unealtă de curățenie",
+      "tr": "Temizlik aleti"
     }
   },
   {
@@ -2002,7 +2212,8 @@
       "es": "Martillo",
       "el": "Σφυρί",
       "de": "Hammer",
-      "ro": "Ciocan"
+      "ro": "Ciocan",
+      "tr": "Çekiç"
     },
     "hint": {
       "en": "Building tool",
@@ -2010,7 +2221,8 @@
       "es": "Herramienta de construcción",
       "el": "Εργαλείο οικοδομής",
       "de": "Bauwerkzeug",
-      "ro": "Unealtă de construcții"
+      "ro": "Unealtă de construcții",
+      "tr": "İnşaat aleti"
     }
   },
   {
@@ -2021,7 +2233,8 @@
       "es": "Teléfono",
       "el": "Τηλέφωνο",
       "de": "Telefon",
-      "ro": "Telefon"
+      "ro": "Telefon",
+      "tr": "Telefon"
     },
     "hint": {
       "en": "Rings when someone wants to talk",
@@ -2029,7 +2242,8 @@
       "es": "Aparato para hablar",
       "el": "Συσκευή ομιλίας",
       "de": "Sprechgerät",
-      "ro": "Aparat de vorbit"
+      "ro": "Aparat de vorbit",
+      "tr": "Biri konuşmak isteyince çalar"
     }
   },
   {
@@ -2040,7 +2254,8 @@
       "es": "Cámara",
       "el": "Φωτογραφική μηχανή",
       "de": "Kamera",
-      "ro": "Aparat foto"
+      "ro": "Aparat foto",
+      "tr": "Fotoğraf makinesi"
     },
     "hint": {
       "en": "You smile right before it clicks",
@@ -2048,7 +2263,8 @@
       "es": "Aparato de fotos",
       "el": "Συσκευή για φωτογραφίες",
       "de": "Bildgerät",
-      "ro": "Aparat de făcut poze"
+      "ro": "Aparat de făcut poze",
+      "tr": "Çekilmeden hemen önce gülümsersin"
     }
   },
   {
@@ -2059,7 +2275,8 @@
       "es": "Cartera",
       "el": "Πορτοφόλι",
       "de": "Geldbörse",
-      "ro": "Portofel"
+      "ro": "Portofel",
+      "tr": "Cüzdan"
     },
     "hint": {
       "en": "You pat your pocket to check it's there",
@@ -2067,7 +2284,8 @@
       "es": "Guarda dinero",
       "el": "Θήκη για χρήματα",
       "de": "Geldbehälter",
-      "ro": "Suport pentru bani"
+      "ro": "Suport pentru bani",
+      "tr": "Cebini yoklayıp kontrol edersin"
     }
   },
   {
@@ -2078,7 +2296,8 @@
       "es": "Gafas de sol",
       "el": "Γυαλιά ηλίου",
       "de": "Sonnenbrille",
-      "ro": "Ochelari de soare"
+      "ro": "Ochelari de soare",
+      "tr": "Güneş gözlüğü"
     },
     "hint": {
       "en": "Worn on a bright day out",
@@ -2086,7 +2305,8 @@
       "es": "Accesorio para los ojos",
       "el": "Είδος για τα μάτια",
       "de": "Augenzubehör",
-      "ro": "Accesoriu pentru ochi"
+      "ro": "Accesoriu pentru ochi",
+      "tr": "Güneşli bir günde takılır"
     }
   },
   {
@@ -2097,7 +2317,8 @@
       "es": "Reloj de pulsera",
       "el": "Ρολόι χειρός",
       "de": "Armbanduhr",
-      "ro": "Ceas de mână"
+      "ro": "Ceas de mână",
+      "tr": "Kol saati"
     },
     "hint": {
       "en": "Wrist item",
@@ -2105,7 +2326,8 @@
       "es": "Objeto de muñeca",
       "el": "Αντικείμενο καρπού",
       "de": "Handgelenkstück",
-      "ro": "Obiect de încheietură"
+      "ro": "Obiect de încheietură",
+      "tr": "Bilek eşyası"
     }
   },
   {
@@ -2116,7 +2338,8 @@
       "es": "Manta",
       "el": "Κουβέρτα",
       "de": "Decke",
-      "ro": "Pătură"
+      "ro": "Pătură",
+      "tr": "Battaniye"
     },
     "hint": {
       "en": "Warm cover",
@@ -2124,7 +2347,8 @@
       "es": "Cubierta cálida",
       "el": "Ζεστό κάλυμμα",
       "de": "Warme Hülle",
-      "ro": "Învelitoare caldă"
+      "ro": "Învelitoare caldă",
+      "tr": "Sıcak örtü"
     }
   },
   {
@@ -2135,7 +2359,8 @@
       "es": "Silla",
       "el": "Καρέκλα",
       "de": "Stuhl",
-      "ro": "Scaun"
+      "ro": "Scaun",
+      "tr": "Sandalye"
     },
     "hint": {
       "en": "You pull it out before sitting down",
@@ -2143,7 +2368,8 @@
       "es": "Mueble para sentarse",
       "el": "Έπιπλο για κάθισμα",
       "de": "Sitzmöbel",
-      "ro": "Mobilă de stat"
+      "ro": "Mobilă de stat",
+      "tr": "Oturmadan önce çekersin"
     }
   },
   {
@@ -2154,7 +2380,8 @@
       "es": "Nevera",
       "el": "Ψυγείο",
       "de": "Kühlschrank",
-      "ro": "Frigider"
+      "ro": "Frigider",
+      "tr": "Buzdolabı"
     },
     "hint": {
       "en": "Hums quietly in the kitchen corner",
@@ -2162,7 +2389,8 @@
       "es": "Aparato de frío",
       "el": "Ψυκτική συσκευή",
       "de": "Kühlgerät",
-      "ro": "Aparat de răcire"
+      "ro": "Aparat de răcire",
+      "tr": "Mutfağın köşesinde sessizce vızıldar"
     }
   },
   {
@@ -2173,7 +2401,8 @@
       "es": "Lámpara",
       "el": "Λάμπα",
       "de": "Lampe",
-      "ro": "Lampă"
+      "ro": "Lampă",
+      "tr": "Lamba"
     },
     "hint": {
       "en": "Switched on when it gets dark",
@@ -2181,7 +2410,8 @@
       "es": "Fuente de luz",
       "el": "Πηγή φωτός",
       "de": "Lichtquelle",
-      "ro": "Sursă de lumină"
+      "ro": "Sursă de lumină",
+      "tr": "Hava kararınca açılır"
     }
   },
   {
@@ -2192,7 +2422,8 @@
       "es": "Cubo",
       "el": "Κουβάς",
       "de": "Eimer",
-      "ro": "Găleată"
+      "ro": "Găleată",
+      "tr": "Kova"
     },
     "hint": {
       "en": "Water container",
@@ -2200,7 +2431,8 @@
       "es": "Recipiente de agua",
       "el": "Δοχείο νερού",
       "de": "Wasserbehälter",
-      "ro": "Recipient pentru apă"
+      "ro": "Recipient pentru apă",
+      "tr": "Su kabı"
     }
   },
   {
@@ -2211,7 +2443,8 @@
       "es": "Cuerda",
       "el": "Σχοινί",
       "de": "Seil",
-      "ro": "Frânghie"
+      "ro": "Frânghie",
+      "tr": "Halat"
     },
     "hint": {
       "en": "Long flexible thing",
@@ -2219,7 +2452,8 @@
       "es": "Cosa larga y flexible",
       "el": "Μακρύ εύκαμπτο πράγμα",
       "de": "Langes biegsames Ding",
-      "ro": "Lucru lung și flexibil"
+      "ro": "Lucru lung și flexibil",
+      "tr": "Uzun esnek şey"
     }
   },
   {
@@ -2230,7 +2464,8 @@
       "es": "Aguja",
       "el": "Βελόνα",
       "de": "Nadel",
-      "ro": "Ac"
+      "ro": "Ac",
+      "tr": "İğne"
     },
     "hint": {
       "en": "Sewing tool",
@@ -2238,7 +2473,8 @@
       "es": "Utensilio de costura",
       "el": "Εργαλείο ραπτικής",
       "de": "Nähwerkzeug",
-      "ro": "Unealtă de cusut"
+      "ro": "Unealtă de cusut",
+      "tr": "Dikiş aleti"
     }
   },
   {
@@ -2249,7 +2485,8 @@
       "es": "Pila",
       "el": "Μπαταρία",
       "de": "Batterie",
-      "ro": "Baterie"
+      "ro": "Baterie",
+      "tr": "Pil"
     },
     "hint": {
       "en": "Dies at the worst possible moment",
@@ -2257,7 +2494,8 @@
       "es": "Fuente de energía",
       "el": "Πηγή ενέργειας",
       "de": "Stromquelle",
-      "ro": "Sursă de energie"
+      "ro": "Sursă de energie",
+      "tr": "Tam en kötü anda biter"
     }
   },
   {
@@ -2268,7 +2506,8 @@
       "es": "Mapa",
       "el": "Χάρτης",
       "de": "Landkarte",
-      "ro": "Hartă"
+      "ro": "Hartă",
+      "tr": "Harita"
     },
     "hint": {
       "en": "Paper guide",
@@ -2276,7 +2515,8 @@
       "es": "Guía de papel",
       "el": "Χάρτινος οδηγός",
       "de": "Papierführer",
-      "ro": "Ghid de hârtie"
+      "ro": "Ghid de hârtie",
+      "tr": "Kağıt rehber"
     }
   },
   {
@@ -2287,7 +2527,8 @@
       "es": "Maleta",
       "el": "Βαλίτσα",
       "de": "Koffer",
-      "ro": "Valiză"
+      "ro": "Valiză",
+      "tr": "Bavul"
     },
     "hint": {
       "en": "Travel container",
@@ -2295,7 +2536,8 @@
       "es": "Recipiente de viaje",
       "el": "Δοχείο ταξιδιού",
       "de": "Reisebehälter",
-      "ro": "Recipient de călătorie"
+      "ro": "Recipient de călătorie",
+      "tr": "Seyahat kabı"
     }
   },
   {
@@ -2306,7 +2548,8 @@
       "es": "Ventilador",
       "el": "Ανεμιστήρας",
       "de": "Ventilator",
-      "ro": "Ventilator"
+      "ro": "Ventilator",
+      "tr": "Vantilatör"
     },
     "hint": {
       "en": "Spins to cool you down",
@@ -2314,7 +2557,8 @@
       "es": "Aparato de aire",
       "el": "Συσκευή αέρα",
       "de": "Luftgerät",
-      "ro": "Aparat de aer"
+      "ro": "Aparat de aer",
+      "tr": "Seni serinletmek için döner"
     }
   },
   {
@@ -2325,7 +2569,8 @@
       "es": "Jabón",
       "el": "Σαπούνι",
       "de": "Seife",
-      "ro": "Săpun"
+      "ro": "Săpun",
+      "tr": "Sabun"
     },
     "hint": {
       "en": "Washing item",
@@ -2333,7 +2578,8 @@
       "es": "Producto para lavarse",
       "el": "Είδος πλυσίματος",
       "de": "Waschartikel",
-      "ro": "Produs de spălat"
+      "ro": "Produs de spălat",
+      "tr": "Yıkanma eşyası"
     }
   },
   {
@@ -2344,7 +2590,8 @@
       "es": "Fiesta de cumpleaños",
       "el": "Πάρτι γενεθλίων",
       "de": "Geburtstagsfeier",
-      "ro": "Petrecere de zi de naștere"
+      "ro": "Petrecere de zi de naștere",
+      "tr": "Doğum günü partisi"
     },
     "hint": {
       "en": "Yearly celebration",
@@ -2352,7 +2599,8 @@
       "es": "Celebración anual",
       "el": "Ετήσια γιορτή",
       "de": "Jährliche Feier",
-      "ro": "Sărbătoare anuală"
+      "ro": "Sărbătoare anuală",
+      "tr": "Yıllık kutlama"
     }
   },
   {
@@ -2363,7 +2611,8 @@
       "es": "Natación",
       "el": "Κολύμπι",
       "de": "Schwimmen",
-      "ro": "Înot"
+      "ro": "Înot",
+      "tr": "Yüzme"
     },
     "hint": {
       "en": "Water activity",
@@ -2371,7 +2620,8 @@
       "es": "Actividad en el agua",
       "el": "Δραστηριότητα στο νερό",
       "de": "Aktivität im Wasser",
-      "ro": "Activitate în apă"
+      "ro": "Activitate în apă",
+      "tr": "Su aktivitesi"
     }
   },
   {
@@ -2382,7 +2632,8 @@
       "es": "Pesca",
       "el": "Ψάρεμα",
       "de": "Angeln",
-      "ro": "Pescuit"
+      "ro": "Pescuit",
+      "tr": "Balık tutma"
     },
     "hint": {
       "en": "Patient hobby",
@@ -2390,7 +2641,8 @@
       "es": "Afición de paciencia",
       "el": "Χόμπι υπομονής",
       "de": "Geduldiges Hobby",
-      "ro": "Pasiune care cere răbdare"
+      "ro": "Pasiune care cere răbdare",
+      "tr": "Sabır isteyen hobi"
     }
   },
   {
@@ -2401,7 +2653,8 @@
       "es": "Cocinar",
       "el": "Μαγείρεμα",
       "de": "Kochen",
-      "ro": "Gătit"
+      "ro": "Gătit",
+      "tr": "Yemek pişirme"
     },
     "hint": {
       "en": "Kitchen activity",
@@ -2409,7 +2662,8 @@
       "es": "Actividad de cocina",
       "el": "Δραστηριότητα κουζίνας",
       "de": "Küchentätigkeit",
-      "ro": "Activitate în bucătărie"
+      "ro": "Activitate în bucătărie",
+      "tr": "Mutfak aktivitesi"
     }
   },
   {
@@ -2420,7 +2674,8 @@
       "es": "Bailar",
       "el": "Χορός",
       "de": "Tanzen",
-      "ro": "Dans"
+      "ro": "Dans",
+      "tr": "Dans"
     },
     "hint": {
       "en": "Movement to music",
@@ -2428,7 +2683,8 @@
       "es": "Movimiento con música",
       "el": "Κίνηση με μουσική",
       "de": "Bewegung zur Musik",
-      "ro": "Mișcare pe muzică"
+      "ro": "Mișcare pe muzică",
+      "tr": "Müzikle hareket"
     }
   },
   {
@@ -2439,7 +2695,8 @@
       "es": "Leer",
       "el": "Διάβασμα",
       "de": "Lesen",
-      "ro": "Citit"
+      "ro": "Citit",
+      "tr": "Kitap okuma"
     },
     "hint": {
       "en": "Quiet hobby",
@@ -2447,7 +2704,8 @@
       "es": "Afición tranquila",
       "el": "Ήσυχο χόμπι",
       "de": "Ruhiges Hobby",
-      "ro": "Pasiune liniștită"
+      "ro": "Pasiune liniștită",
+      "tr": "Sessiz hobi"
     }
   },
   {
@@ -2458,7 +2716,8 @@
       "es": "Ir de compras",
       "el": "Ψώνια",
       "de": "Einkaufen",
-      "ro": "Cumpărături"
+      "ro": "Cumpărături",
+      "tr": "Alışveriş"
     },
     "hint": {
       "en": "Comes home with too many bags",
@@ -2466,7 +2725,8 @@
       "es": "Salida para comprar",
       "el": "Έξοδος για αγορές",
       "de": "Einkaufstour",
-      "ro": "Ieșire la cumpărat"
+      "ro": "Ieșire la cumpărat",
+      "tr": "Eve fazla poşetle dönersin"
     }
   },
   {
@@ -2477,7 +2737,8 @@
       "es": "Senderismo",
       "el": "Πεζοπορία",
       "de": "Wandern",
-      "ro": "Drumeție"
+      "ro": "Drumeție",
+      "tr": "Doğa yürüyüşü"
     },
     "hint": {
       "en": "Long walk",
@@ -2485,7 +2746,8 @@
       "es": "Caminata larga",
       "el": "Μεγάλος περίπατος",
       "de": "Langer Spaziergang",
-      "ro": "Plimbare lungă"
+      "ro": "Plimbare lungă",
+      "tr": "Uzun yürüyüş"
     }
   },
   {
@@ -2496,7 +2758,8 @@
       "es": "Jardinería",
       "el": "Κηπουρική",
       "de": "Gartenarbeit",
-      "ro": "Grădinărit"
+      "ro": "Grădinărit",
+      "tr": "Bahçıvanlık"
     },
     "hint": {
       "en": "Outdoor hobby",
@@ -2504,7 +2767,8 @@
       "es": "Afición al aire libre",
       "el": "Υπαίθριο χόμπι",
       "de": "Hobby im Freien",
-      "ro": "Pasiune în aer liber"
+      "ro": "Pasiune în aer liber",
+      "tr": "Açık hava hobisi"
     }
   },
   {
@@ -2515,7 +2779,8 @@
       "es": "Pintar",
       "el": "Ζωγραφική",
       "de": "Malen",
-      "ro": "Pictură"
+      "ro": "Pictură",
+      "tr": "Resim yapma"
     },
     "hint": {
       "en": "Art activity",
@@ -2523,7 +2788,8 @@
       "es": "Actividad artística",
       "el": "Καλλιτεχνική δραστηριότητα",
       "de": "Künstlerische Tätigkeit",
-      "ro": "Activitate artistică"
+      "ro": "Activitate artistică",
+      "tr": "Sanat aktivitesi"
     }
   },
   {
@@ -2534,7 +2800,8 @@
       "es": "Cantar",
       "el": "Τραγούδι",
       "de": "Singen",
-      "ro": "Cântat"
+      "ro": "Cântat",
+      "tr": "Şarkı söyleme"
     },
     "hint": {
       "en": "Voice activity",
@@ -2542,7 +2809,8 @@
       "es": "Actividad con la voz",
       "el": "Δραστηριότητα με τη φωνή",
       "de": "Tätigkeit mit der Stimme",
-      "ro": "Activitate cu vocea"
+      "ro": "Activitate cu vocea",
+      "tr": "Ses aktivitesi"
     }
   },
   {
@@ -2553,7 +2821,8 @@
       "es": "Dormir",
       "el": "Ύπνος",
       "de": "Schlafen",
-      "ro": "Somn"
+      "ro": "Somn",
+      "tr": "Uyumak"
     },
     "hint": {
       "en": "What you do least of before a trip",
@@ -2561,7 +2830,8 @@
       "es": "Descanso nocturno",
       "el": "Νυχτερινή ξεκούραση",
       "de": "Nachtruhe",
-      "ro": "Odihnă de noapte"
+      "ro": "Odihnă de noapte",
+      "tr": "Seyahat öncesi en az yaptığın şey"
     }
   },
   {
@@ -2572,7 +2842,8 @@
       "es": "Conducir",
       "el": "Οδήγηση",
       "de": "Autofahren",
-      "ro": "Condus"
+      "ro": "Condus",
+      "tr": "Araba kullanma"
     },
     "hint": {
       "en": "Road activity",
@@ -2580,7 +2851,8 @@
       "es": "Actividad en la carretera",
       "el": "Δραστηριότητα στον δρόμο",
       "de": "Tätigkeit auf der Straße",
-      "ro": "Activitate pe șosea"
+      "ro": "Activitate pe șosea",
+      "tr": "Yol aktivitesi"
     }
   },
   {
@@ -2591,7 +2863,8 @@
       "es": "Estudiar",
       "el": "Μελέτη",
       "de": "Lernen",
-      "ro": "Învățat"
+      "ro": "Învățat",
+      "tr": "Ders çalışma"
     },
     "hint": {
       "en": "Learning activity",
@@ -2599,7 +2872,8 @@
       "es": "Actividad de aprendizaje",
       "el": "Δραστηριότητα μάθησης",
       "de": "Lerntätigkeit",
-      "ro": "Activitate de învățare"
+      "ro": "Activitate de învățare",
+      "tr": "Öğrenme aktivitesi"
     }
   },
   {
@@ -2610,7 +2884,8 @@
       "es": "Fotografía",
       "el": "Φωτογραφία",
       "de": "Fotografie",
-      "ro": "Fotografie"
+      "ro": "Fotografie",
+      "tr": "Fotoğrafçılık"
     },
     "hint": {
       "en": "Picture hobby",
@@ -2618,7 +2893,8 @@
       "es": "Afición de imágenes",
       "el": "Χόμπι με εικόνες",
       "de": "Hobby mit Bildern",
-      "ro": "Pasiune cu imagini"
+      "ro": "Pasiune cu imagini",
+      "tr": "Resim çekme hobisi"
     }
   },
   {
@@ -2629,7 +2905,8 @@
       "es": "Barbacoa",
       "el": "Μπάρμπεκιου",
       "de": "Grillen",
-      "ro": "Grătar"
+      "ro": "Grătar",
+      "tr": "Mangal"
     },
     "hint": {
       "en": "Outdoor meal",
@@ -2637,7 +2914,8 @@
       "es": "Comida al aire libre",
       "el": "Γεύμα στο ύπαιθρο",
       "de": "Essen im Freien",
-      "ro": "Masă în aer liber"
+      "ro": "Masă în aer liber",
+      "tr": "Açık hava yemeği"
     }
   },
   {
@@ -2648,7 +2926,8 @@
       "es": "Concierto",
       "el": "Συναυλία",
       "de": "Konzert",
-      "ro": "Concert"
+      "ro": "Concert",
+      "tr": "Konser"
     },
     "hint": {
       "en": "You lose your voice cheering",
@@ -2656,7 +2935,8 @@
       "es": "Evento de música en vivo",
       "el": "Εκδήλωση ζωντανής μουσικής",
       "de": "Live-Musik-Veranstaltung",
-      "ro": "Eveniment cu muzică live"
+      "ro": "Eveniment cu muzică live",
+      "tr": "Tezahürat ederken sesini kaybedersin"
     }
   },
   {
@@ -2667,7 +2947,8 @@
       "es": "Picnic",
       "el": "Πικνίκ",
       "de": "Picknick",
-      "ro": "Picnic"
+      "ro": "Picnic",
+      "tr": "Piknik"
     },
     "hint": {
       "en": "Meal on the grass",
@@ -2675,7 +2956,8 @@
       "es": "Comida sobre la hierba",
       "el": "Γεύμα στο γρασίδι",
       "de": "Mahlzeit im Gras",
-      "ro": "Masă pe iarbă"
+      "ro": "Masă pe iarbă",
+      "tr": "Çimenlerde yemek"
     }
   },
   {
@@ -2686,7 +2968,8 @@
       "es": "Viaje por carretera",
       "el": "Ταξίδι με αυτοκίνητο",
       "de": "Autoreise",
-      "ro": "Călătorie cu mașina"
+      "ro": "Călătorie cu mașina",
+      "tr": "Yol gezisi"
     },
     "hint": {
       "en": "Long journey",
@@ -2694,7 +2977,8 @@
       "es": "Viaje largo",
       "el": "Μακρύ ταξίδι",
       "de": "Lange Reise",
-      "ro": "Călătorie lungă"
+      "ro": "Călătorie lungă",
+      "tr": "Uzun yolculuk"
     }
   },
   {
@@ -2705,7 +2989,8 @@
       "es": "Meditación",
       "el": "Διαλογισμός",
       "de": "Meditation",
-      "ro": "Meditație"
+      "ro": "Meditație",
+      "tr": "Meditasyon"
     },
     "hint": {
       "en": "Calm practice",
@@ -2713,7 +2998,8 @@
       "es": "Práctica de calma",
       "el": "Ήρεμη πρακτική",
       "de": "Ruhige Übung",
-      "ro": "Practică liniștită"
+      "ro": "Practică liniștită",
+      "tr": "Sakinleştirici pratik"
     }
   },
   {
@@ -2724,7 +3010,8 @@
       "es": "Tejer",
       "el": "Πλέξιμο",
       "de": "Stricken",
-      "ro": "Tricotat"
+      "ro": "Tricotat",
+      "tr": "Örgü örme"
     },
     "hint": {
       "en": "Handcraft",
@@ -2732,7 +3019,8 @@
       "es": "Labor a mano",
       "el": "Χειροτεχνία",
       "de": "Handarbeit",
-      "ro": "Lucru de mână"
+      "ro": "Lucru de mână",
+      "tr": "El sanatı"
     }
   },
   {
@@ -2743,7 +3031,8 @@
       "es": "Karaoke",
       "el": "Καραόκε",
       "de": "Karaoke",
-      "ro": "Karaoke"
+      "ro": "Karaoke",
+      "tr": "Karaoke"
     },
     "hint": {
       "en": "Singing game",
@@ -2751,7 +3040,8 @@
       "es": "Juego de cantar",
       "el": "Παιχνίδι τραγουδιού",
       "de": "Singspiel",
-      "ro": "Joc cu cântat"
+      "ro": "Joc cu cântat",
+      "tr": "Şarkı söyleme oyunu"
     }
   },
   {
@@ -2762,7 +3052,8 @@
       "es": "Funeral",
       "el": "Κηδεία",
       "de": "Beerdigung",
-      "ro": "Înmormântare"
+      "ro": "Înmormântare",
+      "tr": "Cenaze töreni"
     },
     "hint": {
       "en": "Sad ceremony",
@@ -2770,7 +3061,8 @@
       "es": "Ceremonia triste",
       "el": "Θλιβερή τελετή",
       "de": "Traurige Zeremonie",
-      "ro": "Ceremonie tristă"
+      "ro": "Ceremonie tristă",
+      "tr": "Hüzünlü tören"
     }
   },
   {
@@ -2781,7 +3073,8 @@
       "es": "Graduación",
       "el": "Αποφοίτηση",
       "de": "Abschlussfeier",
-      "ro": "Absolvire"
+      "ro": "Absolvire",
+      "tr": "Mezuniyet"
     },
     "hint": {
       "en": "School ceremony",
@@ -2789,7 +3082,8 @@
       "es": "Ceremonia escolar",
       "el": "Σχολική τελετή",
       "de": "Schulfeier",
-      "ro": "Ceremonie școlară"
+      "ro": "Ceremonie școlară",
+      "tr": "Okul töreni"
     }
   },
   {
@@ -2800,7 +3094,8 @@
       "es": "Entrevista de trabajo",
       "el": "Συνέντευξη για δουλειά",
       "de": "Vorstellungsgespräch",
-      "ro": "Interviu de angajare"
+      "ro": "Interviu de angajare",
+      "tr": "İş görüşmesi"
     },
     "hint": {
       "en": "Formal meeting",
@@ -2808,7 +3103,8 @@
       "es": "Reunión formal",
       "el": "Επίσημη συνάντηση",
       "de": "Formelles Treffen",
-      "ro": "Întâlnire oficială"
+      "ro": "Întâlnire oficială",
+      "tr": "Resmi görüşme"
     }
   },
   {
@@ -2819,7 +3115,8 @@
       "es": "Mudanza",
       "el": "Μετακόμιση",
       "de": "Umzug",
-      "ro": "Mutare"
+      "ro": "Mutare",
+      "tr": "Ev taşınması"
     },
     "hint": {
       "en": "Big change",
@@ -2827,7 +3124,8 @@
       "es": "Gran cambio",
       "el": "Μεγάλη αλλαγή",
       "de": "Große Veränderung",
-      "ro": "Schimbare mare"
+      "ro": "Schimbare mare",
+      "tr": "Büyük değişiklik"
     }
   },
   {
@@ -2838,7 +3136,8 @@
       "es": "Corte de pelo",
       "el": "Κούρεμα",
       "de": "Haarschnitt",
-      "ro": "Tuns"
+      "ro": "Tuns",
+      "tr": "Saç kesimi"
     },
     "hint": {
       "en": "Personal grooming",
@@ -2846,7 +3145,8 @@
       "es": "Cuidado personal",
       "el": "Προσωπική περιποίηση",
       "de": "Körperpflege",
-      "ro": "Îngrijire personală"
+      "ro": "Îngrijire personală",
+      "tr": "Kişisel bakım"
     }
   },
   {
@@ -2857,7 +3157,8 @@
       "es": "Montaña",
       "el": "Βουνό",
       "de": "Berg",
-      "ro": "Munte"
+      "ro": "Munte",
+      "tr": "Dağ"
     },
     "hint": {
       "en": "You need good boots to reach the top",
@@ -2865,7 +3166,8 @@
       "es": "Relieve alto",
       "el": "Ψηλό ανάγλυφο",
       "de": "Hohe Landform",
-      "ro": "Formă de relief înaltă"
+      "ro": "Formă de relief înaltă",
+      "tr": "Zirveye ulaşmak için sağlam bot gerekir"
     }
   },
   {
@@ -2876,7 +3178,8 @@
       "es": "Río",
       "el": "Ποτάμι",
       "de": "Fluss",
-      "ro": "Râu"
+      "ro": "Râu",
+      "tr": "Nehir"
     },
     "hint": {
       "en": "Follows a path down to the sea",
@@ -2884,7 +3187,8 @@
       "es": "Agua que corre",
       "el": "Νερό που ρέει",
       "de": "Fließendes Wasser",
-      "ro": "Apă curgătoare"
+      "ro": "Apă curgătoare",
+      "tr": "Denize giden bir yol izler"
     }
   },
   {
@@ -2895,7 +3199,8 @@
       "es": "Arcoíris",
       "el": "Ουράνιο τόξο",
       "de": "Regenbogen",
-      "ro": "Curcubeu"
+      "ro": "Curcubeu",
+      "tr": "Gökkuşağı"
     },
     "hint": {
       "en": "Appears after the rain clears",
@@ -2903,7 +3208,8 @@
       "es": "Colores en el cielo",
       "el": "Χρώματα στον ουρανό",
       "de": "Farben am Himmel",
-      "ro": "Culori pe cer"
+      "ro": "Culori pe cer",
+      "tr": "Yağmur dinince belirir"
     }
   },
   {
@@ -2914,7 +3220,8 @@
       "es": "Volcán",
       "el": "Ηφαίστειο",
       "de": "Vulkan",
-      "ro": "Vulcan"
+      "ro": "Vulcan",
+      "tr": "Yanardağ"
     },
     "hint": {
       "en": "Best admired from a safe distance",
@@ -2922,7 +3229,8 @@
       "es": "Montaña de fuego",
       "el": "Βουνό με φωτιά",
       "de": "Feuerberg",
-      "ro": "Munte de foc"
+      "ro": "Munte de foc",
+      "tr": "Güvenli mesafeden izlemek en iyisi"
     }
   },
   {
@@ -2933,7 +3241,8 @@
       "es": "Desierto",
       "el": "Έρημος",
       "de": "Wüste",
-      "ro": "Deșert"
+      "ro": "Deșert",
+      "tr": "Çöl"
     },
     "hint": {
       "en": "You'd need a lot of water to cross it",
@@ -2941,7 +3250,8 @@
       "es": "Tierra seca",
       "el": "Ξηρή γη",
       "de": "Trockenes Land",
-      "ro": "Pământ uscat"
+      "ro": "Pământ uscat",
+      "tr": "Geçmek için çok su gerekir"
     }
   },
   {
@@ -2952,7 +3262,8 @@
       "es": "Bosque",
       "el": "Δάσος",
       "de": "Wald",
-      "ro": "Pădure"
+      "ro": "Pădure",
+      "tr": "Orman"
     },
     "hint": {
       "en": "Easy to get lost in",
@@ -2960,7 +3271,8 @@
       "es": "Muchos árboles",
       "el": "Πολλά δέντρα",
       "de": "Viele Bäume",
-      "ro": "Mulți copaci"
+      "ro": "Mulți copaci",
+      "tr": "İçinde kolayca kaybolursun"
     }
   },
   {
@@ -2971,7 +3283,8 @@
       "es": "Cascada",
       "el": "Καταρράκτης",
       "de": "Wasserfall",
-      "ro": "Cascadă"
+      "ro": "Cascadă",
+      "tr": "Şelale"
     },
     "hint": {
       "en": "The sound gets louder as you get closer",
@@ -2979,7 +3292,8 @@
       "es": "Agua que cae",
       "el": "Νερό που πέφτει",
       "de": "Fallendes Wasser",
-      "ro": "Apă care cade"
+      "ro": "Apă care cade",
+      "tr": "Yaklaştıkça sesi güçlenir"
     }
   },
   {
@@ -2990,7 +3304,8 @@
       "es": "Nieve",
       "el": "Χιόνι",
       "de": "Schnee",
-      "ro": "Zăpadă"
+      "ro": "Zăpadă",
+      "tr": "Kar"
     },
     "hint": {
       "en": "Cold weather",
@@ -2998,7 +3313,8 @@
       "es": "Tiempo frío",
       "el": "Κρύος καιρός",
       "de": "Kaltes Wetter",
-      "ro": "Vreme rece"
+      "ro": "Vreme rece",
+      "tr": "Soğuk hava"
     }
   },
   {
@@ -3009,7 +3325,8 @@
       "es": "Tormenta",
       "el": "Καταιγίδα",
       "de": "Gewitter",
-      "ro": "Furtună"
+      "ro": "Furtună",
+      "tr": "Gök gürültülü fırtına"
     },
     "hint": {
       "en": "Loud weather",
@@ -3017,7 +3334,8 @@
       "es": "Tiempo ruidoso",
       "el": "Θορυβώδης καιρός",
       "de": "Lautes Wetter",
-      "ro": "Vreme zgomotoasă"
+      "ro": "Vreme zgomotoasă",
+      "tr": "Gürültülü hava"
     }
   },
   {
@@ -3028,7 +3346,8 @@
       "es": "Isla",
       "el": "Νησί",
       "de": "Insel",
-      "ro": "Insulă"
+      "ro": "Insulă",
+      "tr": "Ada"
     },
     "hint": {
       "en": "You need a boat to leave",
@@ -3036,7 +3355,8 @@
       "es": "Tierra en el mar",
       "el": "Στεριά στη θάλασσα",
       "de": "Land im Meer",
-      "ro": "Pământ în mare"
+      "ro": "Pământ în mare",
+      "tr": "Ayrılmak için tekne gerekir"
     }
   },
   {
@@ -3047,7 +3367,8 @@
       "es": "Cueva",
       "el": "Σπηλιά",
       "de": "Höhle",
-      "ro": "Peșteră"
+      "ro": "Peșteră",
+      "tr": "Mağara"
     },
     "hint": {
       "en": "Bats might be watching you",
@@ -3055,7 +3376,8 @@
       "es": "Hueco oscuro en la roca",
       "el": "Σκοτεινή τρύπα στον βράχο",
       "de": "Dunkles Loch im Fels",
-      "ro": "Gaură întunecată în stâncă"
+      "ro": "Gaură întunecată în stâncă",
+      "tr": "Yarasalar seni izliyor olabilir"
     }
   },
   {
@@ -3066,7 +3388,8 @@
       "es": "Océano",
       "el": "Ωκεανός",
       "de": "Ozean",
-      "ro": "Ocean"
+      "ro": "Ocean",
+      "tr": "Okyanus"
     },
     "hint": {
       "en": "Covers most of the map",
@@ -3074,7 +3397,8 @@
       "es": "Agua inmensa",
       "el": "Τεράστιο νερό",
       "de": "Riesiges Gewässer",
-      "ro": "Apă imensă"
+      "ro": "Apă imensă",
+      "tr": "Haritanın çoğunu kaplar"
     }
   },
   {
@@ -3085,7 +3409,8 @@
       "es": "Luna",
       "el": "Φεγγάρι",
       "de": "Mond",
-      "ro": "Lună"
+      "ro": "Lună",
+      "tr": "Ay"
     },
     "hint": {
       "en": "Night sky object",
@@ -3093,7 +3418,8 @@
       "es": "Objeto del cielo nocturno",
       "el": "Αντικείμενο του νυχτερινού ουρανού",
       "de": "Objekt am Nachthimmel",
-      "ro": "Obiect de pe cerul nopții"
+      "ro": "Obiect de pe cerul nopții",
+      "tr": "Gece gökyüzü cismi"
     }
   },
   {
@@ -3104,7 +3430,8 @@
       "es": "Sol",
       "el": "Ήλιος",
       "de": "Sonne",
-      "ro": "Soare"
+      "ro": "Soare",
+      "tr": "Güneş"
     },
     "hint": {
       "en": "Day sky object",
@@ -3112,7 +3439,8 @@
       "es": "Objeto del cielo de día",
       "el": "Αντικείμενο του ουρανού την ημέρα",
       "de": "Objekt am Taghimmel",
-      "ro": "Obiect de pe cerul zilei"
+      "ro": "Obiect de pe cerul zilei",
+      "tr": "Gündüz gökyüzü cismi"
     }
   },
   {
@@ -3123,7 +3451,8 @@
       "es": "Estrella",
       "el": "Αστέρι",
       "de": "Stern",
-      "ro": "Stea"
+      "ro": "Stea",
+      "tr": "Yıldız"
     },
     "hint": {
       "en": "Distant light",
@@ -3131,7 +3460,8 @@
       "es": "Luz lejana",
       "el": "Μακρινό φως",
       "de": "Fernes Licht",
-      "ro": "Lumină îndepărtată"
+      "ro": "Lumină îndepărtată",
+      "tr": "Uzak ışık"
     }
   },
   {
@@ -3142,7 +3472,8 @@
       "es": "Nube",
       "el": "Σύννεφο",
       "de": "Wolke",
-      "ro": "Nor"
+      "ro": "Nor",
+      "tr": "Bulut"
     },
     "hint": {
       "en": "Sky shape",
@@ -3150,7 +3481,8 @@
       "es": "Forma en el cielo",
       "el": "Σχήμα στον ουρανό",
       "de": "Form am Himmel",
-      "ro": "Formă pe cer"
+      "ro": "Formă pe cer",
+      "tr": "Gökyüzü şekli"
     }
   },
   {
@@ -3161,7 +3493,8 @@
       "es": "Viento",
       "el": "Άνεμος",
       "de": "Wind",
-      "ro": "Vânt"
+      "ro": "Vânt",
+      "tr": "Rüzgar"
     },
     "hint": {
       "en": "You can't see it, only feel it",
@@ -3169,7 +3502,8 @@
       "es": "Aire en movimiento",
       "el": "Αέρας που κινείται",
       "de": "Bewegte Luft",
-      "ro": "Aer în mișcare"
+      "ro": "Aer în mișcare",
+      "tr": "Göremezsin, sadece hissedersin"
     }
   },
   {
@@ -3180,7 +3514,8 @@
       "es": "Niebla",
       "el": "Ομίχλη",
       "de": "Nebel",
-      "ro": "Ceață"
+      "ro": "Ceață",
+      "tr": "Sis"
     },
     "hint": {
       "en": "Makes the road disappear ahead of you",
@@ -3188,7 +3523,8 @@
       "es": "Aire espeso",
       "el": "Πυκνός αέρας",
       "de": "Dicke Luft",
-      "ro": "Aer dens"
+      "ro": "Aer dens",
+      "tr": "Önündeki yolu yok eder"
     }
   },
   {
@@ -3199,7 +3535,8 @@
       "es": "Terremoto",
       "el": "Σεισμός",
       "de": "Erdbeben",
-      "ro": "Cutremur"
+      "ro": "Cutremur",
+      "tr": "Deprem"
     },
     "hint": {
       "en": "Furniture rattles for no reason",
@@ -3207,7 +3544,8 @@
       "es": "Temblor del suelo",
       "el": "Τράνταγμα του εδάφους",
       "de": "Beben des Bodens",
-      "ro": "Zguduire a pământului"
+      "ro": "Zguduire a pământului",
+      "tr": "Mobilyalar sebepsizce sallanır"
     }
   },
   {
@@ -3218,7 +3556,8 @@
       "es": "Lago",
       "el": "Λίμνη",
       "de": "See",
-      "ro": "Lac"
+      "ro": "Lac",
+      "tr": "Göl"
     },
     "hint": {
       "en": "Still water",
@@ -3226,7 +3565,8 @@
       "es": "Agua quieta",
       "el": "Ακίνητο νερό",
       "de": "Stilles Wasser",
-      "ro": "Apă stătătoare"
+      "ro": "Apă stătătoare",
+      "tr": "Durgun su"
     }
   },
   {
@@ -3237,7 +3577,8 @@
       "es": "Glaciar",
       "el": "Παγετώνας",
       "de": "Gletscher",
-      "ro": "Ghețar"
+      "ro": "Ghețar",
+      "tr": "Buzul"
     },
     "hint": {
       "en": "Moves so slowly you'd never notice",
@@ -3245,7 +3586,8 @@
       "es": "Hielo lento",
       "el": "Αργός πάγος",
       "de": "Langsames Eis",
-      "ro": "Gheață care se mișcă lent"
+      "ro": "Gheață care se mișcă lent",
+      "tr": "Fark edemeyeceğin kadar yavaş hareket eder"
     }
   },
   {
@@ -3256,7 +3598,8 @@
       "es": "Arena",
       "el": "Άμμος",
       "de": "Sand",
-      "ro": "Nisip"
+      "ro": "Nisip",
+      "tr": "Kum"
     },
     "hint": {
       "en": "Tiny grains",
@@ -3264,7 +3607,8 @@
       "es": "Granos diminutos",
       "el": "Μικροσκοπικοί κόκκοι",
       "de": "Winzige Körner",
-      "ro": "Boabe mărunte"
+      "ro": "Boabe mărunte",
+      "tr": "Minik taneler"
     }
   },
   {
@@ -3275,7 +3619,8 @@
       "es": "Relámpago",
       "el": "Αστραπή",
       "de": "Blitz",
-      "ro": "Fulger"
+      "ro": "Fulger",
+      "tr": "Şimşek"
     },
     "hint": {
       "en": "Comes right before the thunder",
@@ -3283,7 +3628,8 @@
       "es": "Destello en el cielo",
       "el": "Λάμψη στον ουρανό",
       "de": "Blitzlicht am Himmel",
-      "ro": "Sclipire pe cer"
+      "ro": "Sclipire pe cer",
+      "tr": "Gök gürlemeden hemen önce gelir"
     }
   },
   {
@@ -3294,7 +3640,8 @@
       "es": "Árbol",
       "el": "Δέντρο",
       "de": "Baum",
-      "ro": "Copac"
+      "ro": "Copac",
+      "tr": "Ağaç"
     },
     "hint": {
       "en": "Tall plant",
@@ -3302,7 +3649,8 @@
       "es": "Planta alta",
       "el": "Ψηλό φυτό",
       "de": "Hohe Pflanze",
-      "ro": "Plantă înaltă"
+      "ro": "Plantă înaltă",
+      "tr": "Uzun bitki"
     }
   },
   {
@@ -3313,7 +3661,8 @@
       "es": "Rosa",
       "el": "Τριαντάφυλλο",
       "de": "Rose",
-      "ro": "Trandafir"
+      "ro": "Trandafir",
+      "tr": "Gül"
     },
     "hint": {
       "en": "Garden flower",
@@ -3321,7 +3670,8 @@
       "es": "Flor de jardín",
       "el": "Λουλούδι κήπου",
       "de": "Gartenblume",
-      "ro": "Floare de grădină"
+      "ro": "Floare de grădină",
+      "tr": "Bahçe çiçeği"
     }
   },
   {
@@ -3332,7 +3682,8 @@
       "es": "Hoja",
       "el": "Φύλλο",
       "de": "Blatt",
-      "ro": "Frunză"
+      "ro": "Frunză",
+      "tr": "Yaprak"
     },
     "hint": {
       "en": "Part of a plant",
@@ -3340,7 +3691,8 @@
       "es": "Parte de una planta",
       "el": "Μέρος φυτού",
       "de": "Teil einer Pflanze",
-      "ro": "Parte dintr-o plantă"
+      "ro": "Parte dintr-o plantă",
+      "tr": "Bir bitkinin parçası"
     }
   },
   {
@@ -3351,7 +3703,8 @@
       "es": "Lluvia",
       "el": "Βροχή",
       "de": "Regen",
-      "ro": "Ploaie"
+      "ro": "Ploaie",
+      "tr": "Yağmur"
     },
     "hint": {
       "en": "Wet weather",
@@ -3359,7 +3712,8 @@
       "es": "Tiempo húmedo",
       "el": "Υγρός καιρός",
       "de": "Nasses Wetter",
-      "ro": "Vreme umedă"
+      "ro": "Vreme umedă",
+      "tr": "Islak hava"
     }
   },
   {
@@ -3370,7 +3724,8 @@
       "es": "Otoño",
       "el": "Φθινόπωρο",
       "de": "Herbst",
-      "ro": "Toamnă"
+      "ro": "Toamnă",
+      "tr": "Sonbahar"
     },
     "hint": {
       "en": "Time of year",
@@ -3378,7 +3733,8 @@
       "es": "Época del año",
       "el": "Εποχή του χρόνου",
       "de": "Jahreszeit",
-      "ro": "Anotimp"
+      "ro": "Anotimp",
+      "tr": "Yılın bir mevsimi"
     }
   },
   {
@@ -3389,7 +3745,8 @@
       "es": "Arrecife de coral",
       "el": "Κοραλλιογενής ύφαλος",
       "de": "Korallenriff",
-      "ro": "Recif de corali"
+      "ro": "Recif de corali",
+      "tr": "Mercan resifi"
     },
     "hint": {
       "en": "Sea structure",
@@ -3397,7 +3754,8 @@
       "es": "Estructura marina",
       "el": "Θαλάσσιος σχηματισμός",
       "de": "Meeresgebilde",
-      "ro": "Structură marină"
+      "ro": "Structură marină",
+      "tr": "Deniz yapısı"
     }
   },
   {
@@ -3408,7 +3766,8 @@
       "es": "Meteoro",
       "el": "Μετεωρίτης",
       "de": "Meteor",
-      "ro": "Meteor"
+      "ro": "Meteor",
+      "tr": "Meteor"
     },
     "hint": {
       "en": "Make a wish before it disappears",
@@ -3416,7 +3775,8 @@
       "es": "Roca del espacio que cae",
       "el": "Πέτρα του διαστήματος που πέφτει",
       "de": "Fallender Weltraumbrocken",
-      "ro": "Rocă din spațiu care cade"
+      "ro": "Rocă din spațiu care cade",
+      "tr": "Kaybolmadan önce dilek tut"
     }
   },
   {
@@ -3427,7 +3787,8 @@
       "es": "Médico",
       "el": "Γιατρός",
       "de": "Arzt",
-      "ro": "Medic"
+      "ro": "Medic",
+      "tr": "Doktor"
     },
     "hint": {
       "en": "Medical job",
@@ -3435,7 +3796,8 @@
       "es": "Profesión médica",
       "el": "Ιατρικό επάγγελμα",
       "de": "Medizinischer Beruf",
-      "ro": "Profesie medicală"
+      "ro": "Profesie medicală",
+      "tr": "Tıbbi meslek"
     }
   },
   {
@@ -3446,7 +3808,8 @@
       "es": "Profesor",
       "el": "Δάσκαλος",
       "de": "Lehrer",
-      "ro": "Profesor"
+      "ro": "Profesor",
+      "tr": "Öğretmen"
     },
     "hint": {
       "en": "School job",
@@ -3454,7 +3817,8 @@
       "es": "Profesión escolar",
       "el": "Επάγγελμα στο σχολείο",
       "de": "Beruf in der Schule",
-      "ro": "Profesie la școală"
+      "ro": "Profesie la școală",
+      "tr": "Okul mesleği"
     }
   },
   {
@@ -3465,7 +3829,8 @@
       "es": "Bombero",
       "el": "Πυροσβέστης",
       "de": "Feuerwehrmann",
-      "ro": "Pompier"
+      "ro": "Pompier",
+      "tr": "İtfaiyeci"
     },
     "hint": {
       "en": "Emergency job",
@@ -3473,7 +3838,8 @@
       "es": "Profesión de emergencia",
       "el": "Επάγγελμα έκτακτης ανάγκης",
       "de": "Beruf im Notfall",
-      "ro": "Profesie de urgență"
+      "ro": "Profesie de urgență",
+      "tr": "Acil durum mesleği"
     }
   },
   {
@@ -3484,7 +3850,8 @@
       "es": "Cocinero",
       "el": "Σεφ",
       "de": "Koch",
-      "ro": "Bucătar"
+      "ro": "Bucătar",
+      "tr": "Şef"
     },
     "hint": {
       "en": "Kitchen job",
@@ -3492,7 +3859,8 @@
       "es": "Profesión de cocina",
       "el": "Επάγγελμα στην κουζίνα",
       "de": "Beruf in der Küche",
-      "ro": "Profesie în bucătărie"
+      "ro": "Profesie în bucătărie",
+      "tr": "Mutfak mesleği"
     }
   },
   {
@@ -3503,7 +3871,8 @@
       "es": "Piloto",
       "el": "Πιλότος",
       "de": "Pilot",
-      "ro": "Pilot"
+      "ro": "Pilot",
+      "tr": "Pilot"
     },
     "hint": {
       "en": "Flying job",
@@ -3511,7 +3880,8 @@
       "es": "Profesión de vuelo",
       "el": "Επάγγελμα στον αέρα",
       "de": "Beruf in der Luft",
-      "ro": "Profesie în aer"
+      "ro": "Profesie în aer",
+      "tr": "Uçuş mesleği"
     }
   },
   {
@@ -3522,7 +3892,8 @@
       "es": "Agricultor",
       "el": "Αγρότης",
       "de": "Bauer",
-      "ro": "Fermier"
+      "ro": "Fermier",
+      "tr": "Çiftçi"
     },
     "hint": {
       "en": "Countryside job",
@@ -3530,7 +3901,8 @@
       "es": "Profesión del campo",
       "el": "Επάγγελμα της υπαίθρου",
       "de": "Beruf auf dem Land",
-      "ro": "Profesie la țară"
+      "ro": "Profesie la țară",
+      "tr": "Kırsal meslek"
     }
   },
   {
@@ -3541,7 +3913,8 @@
       "es": "Enfermero",
       "el": "Νοσηλευτής",
       "de": "Krankenpfleger",
-      "ro": "Asistent medical"
+      "ro": "Asistent medical",
+      "tr": "Hemşire"
     },
     "hint": {
       "en": "Hospital job",
@@ -3549,7 +3922,8 @@
       "es": "Profesión de hospital",
       "el": "Επάγγελμα στο νοσοκομείο",
       "de": "Beruf im Krankenhaus",
-      "ro": "Profesie în spital"
+      "ro": "Profesie în spital",
+      "tr": "Hastane mesleği"
     }
   },
   {
@@ -3560,7 +3934,8 @@
       "es": "Policía",
       "el": "Αστυνομικός",
       "de": "Polizist",
-      "ro": "Polițist"
+      "ro": "Polițist",
+      "tr": "Polis memuru"
     },
     "hint": {
       "en": "Law job",
@@ -3568,7 +3943,8 @@
       "es": "Profesión de la ley",
       "el": "Επάγγελμα του νόμου",
       "de": "Beruf des Gesetzes",
-      "ro": "Profesie legată de lege"
+      "ro": "Profesie legată de lege",
+      "tr": "Hukuk mesleği"
     }
   },
   {
@@ -3579,7 +3955,8 @@
       "es": "Abogado",
       "el": "Δικηγόρος",
       "de": "Anwalt",
-      "ro": "Avocat"
+      "ro": "Avocat",
+      "tr": "Avukat"
     },
     "hint": {
       "en": "Court job",
@@ -3587,7 +3964,8 @@
       "es": "Profesión del tribunal",
       "el": "Επάγγελμα στο δικαστήριο",
       "de": "Beruf im Gericht",
-      "ro": "Profesie la tribunal"
+      "ro": "Profesie la tribunal",
+      "tr": "Mahkeme mesleği"
     }
   },
   {
@@ -3598,7 +3976,8 @@
       "es": "Periodista",
       "el": "Δημοσιογράφος",
       "de": "Journalist",
-      "ro": "Jurnalist"
+      "ro": "Jurnalist",
+      "tr": "Gazeteci"
     },
     "hint": {
       "en": "News job",
@@ -3606,7 +3985,8 @@
       "es": "Profesión de noticias",
       "el": "Επάγγελμα των ειδήσεων",
       "de": "Beruf mit Nachrichten",
-      "ro": "Profesie cu știri"
+      "ro": "Profesie cu știri",
+      "tr": "Haber mesleği"
     }
   },
   {
@@ -3617,7 +3997,8 @@
       "es": "Electricista",
       "el": "Ηλεκτρολόγος",
       "de": "Elektriker",
-      "ro": "Electrician"
+      "ro": "Electrician",
+      "tr": "Elektrikçi"
     },
     "hint": {
       "en": "Called when the lights won't turn on",
@@ -3625,7 +4006,8 @@
       "es": "Profesión de cables",
       "el": "Επάγγελμα με καλώδια",
       "de": "Beruf mit Kabeln",
-      "ro": "Profesie cu cabluri"
+      "ro": "Profesie cu cabluri",
+      "tr": "Işıklar yanmayınca aranır"
     }
   },
   {
@@ -3636,7 +4018,8 @@
       "es": "Fontanero",
       "el": "Υδραυλικός",
       "de": "Klempner",
-      "ro": "Instalator"
+      "ro": "Instalator",
+      "tr": "Tesisatçı"
     },
     "hint": {
       "en": "Called when the sink won't drain",
@@ -3644,7 +4027,8 @@
       "es": "Profesión de tuberías",
       "el": "Επάγγελμα με σωλήνες",
       "de": "Beruf mit Rohren",
-      "ro": "Profesie cu țevi"
+      "ro": "Profesie cu țevi",
+      "tr": "Lavabo akmayınca aranır"
     }
   },
   {
@@ -3655,7 +4039,8 @@
       "es": "Carpintero",
       "el": "Ξυλουργός",
       "de": "Tischler",
-      "ro": "Tâmplar"
+      "ro": "Tâmplar",
+      "tr": "Marangoz"
     },
     "hint": {
       "en": "Smells like sawdust by the end of the day",
@@ -3663,7 +4048,8 @@
       "es": "Profesión de la madera",
       "el": "Επάγγελμα με ξύλο",
       "de": "Beruf mit Holz",
-      "ro": "Profesie cu lemn"
+      "ro": "Profesie cu lemn",
+      "tr": "Gün sonunda talaş kokar"
     }
   },
   {
@@ -3674,7 +4060,8 @@
       "es": "Dentista",
       "el": "Οδοντίατρος",
       "de": "Zahnarzt",
-      "ro": "Dentist"
+      "ro": "Dentist",
+      "tr": "Diş hekimi"
     },
     "hint": {
       "en": "Makes you nervous just booking the appointment",
@@ -3682,7 +4069,8 @@
       "es": "Profesión de los dientes",
       "el": "Επάγγελμα με τα δόντια",
       "de": "Beruf mit Zähnen",
-      "ro": "Profesie cu dinții"
+      "ro": "Profesie cu dinții",
+      "tr": "Randevu almak bile seni gerer"
     }
   },
   {
@@ -3693,7 +4081,8 @@
       "es": "Camarero",
       "el": "Σερβιτόρος",
       "de": "Kellner",
-      "ro": "Chelner"
+      "ro": "Chelner",
+      "tr": "Garson"
     },
     "hint": {
       "en": "Restaurant job",
@@ -3701,7 +4090,8 @@
       "es": "Profesión de restaurante",
       "el": "Επάγγελμα στο εστιατόριο",
       "de": "Beruf im Restaurant",
-      "ro": "Profesie la restaurant"
+      "ro": "Profesie la restaurant",
+      "tr": "Restoran mesleği"
     }
   },
   {
@@ -3712,7 +4102,8 @@
       "es": "Barbero",
       "el": "Κουρέας",
       "de": "Friseur",
-      "ro": "Frizer"
+      "ro": "Frizer",
+      "tr": "Berber"
     },
     "hint": {
       "en": "Talks to you through a mirror",
@@ -3720,7 +4111,8 @@
       "es": "Profesión del cabello",
       "el": "Επάγγελμα με τα μαλλιά",
       "de": "Beruf mit Haaren",
-      "ro": "Profesie cu părul"
+      "ro": "Profesie cu părul",
+      "tr": "Seninle aynadan konuşur"
     }
   },
   {
@@ -3731,7 +4123,8 @@
       "es": "Fotógrafo",
       "el": "Φωτογράφος",
       "de": "Fotograf",
-      "ro": "Fotograf"
+      "ro": "Fotograf",
+      "tr": "Fotoğrafçı"
     },
     "hint": {
       "en": "Says 'say cheese' for a living",
@@ -3739,7 +4132,8 @@
       "es": "Profesión con cámara",
       "el": "Επάγγελμα με φωτογραφική",
       "de": "Beruf mit Kamera",
-      "ro": "Profesie cu aparatul foto"
+      "ro": "Profesie cu aparatul foto",
+      "tr": "Hayatını 'peynir de' diyerek kazanır"
     }
   },
   {
@@ -3750,7 +4144,8 @@
       "es": "Científico",
       "el": "Επιστήμονας",
       "de": "Wissenschaftler",
-      "ro": "Om de știință"
+      "ro": "Om de știință",
+      "tr": "Bilim insanı"
     },
     "hint": {
       "en": "Research job",
@@ -3758,7 +4153,8 @@
       "es": "Profesión de investigación",
       "el": "Ερευνητικό επάγγελμα",
       "de": "Forschungsberuf",
-      "ro": "Profesie de cercetare"
+      "ro": "Profesie de cercetare",
+      "tr": "Araştırma mesleği"
     }
   },
   {
@@ -3769,7 +4165,8 @@
       "es": "Ingeniero",
       "el": "Μηχανικός",
       "de": "Ingenieur",
-      "ro": "Inginer"
+      "ro": "Inginer",
+      "tr": "Mühendis"
     },
     "hint": {
       "en": "Technical job",
@@ -3777,7 +4174,8 @@
       "es": "Profesión técnica",
       "el": "Τεχνικό επάγγελμα",
       "de": "Technischer Beruf",
-      "ro": "Profesie tehnică"
+      "ro": "Profesie tehnică",
+      "tr": "Teknik meslek"
     }
   },
   {
@@ -3788,7 +4186,8 @@
       "es": "Actor",
       "el": "Ηθοποιός",
       "de": "Schauspieler",
-      "ro": "Actor"
+      "ro": "Actor",
+      "tr": "Oyuncu"
     },
     "hint": {
       "en": "Stage job",
@@ -3796,7 +4195,8 @@
       "es": "Profesión del escenario",
       "el": "Επάγγελμα της σκηνής",
       "de": "Beruf auf der Bühne",
-      "ro": "Profesie pe scenă"
+      "ro": "Profesie pe scenă",
+      "tr": "Sahne mesleği"
     }
   },
   {
@@ -3807,7 +4207,8 @@
       "es": "Músico",
       "el": "Μουσικός",
       "de": "Musiker",
-      "ro": "Muzician"
+      "ro": "Muzician",
+      "tr": "Müzisyen"
     },
     "hint": {
       "en": "Practices the same part over and over",
@@ -3815,7 +4216,8 @@
       "es": "Profesión de música",
       "el": "Επάγγελμα με μουσική",
       "de": "Beruf mit Musik",
-      "ro": "Profesie cu muzică"
+      "ro": "Profesie cu muzică",
+      "tr": "Aynı bölümü defalarca çalışır"
     }
   },
   {
@@ -3826,7 +4228,8 @@
       "es": "Soldado",
       "el": "Στρατιώτης",
       "de": "Soldat",
-      "ro": "Soldat"
+      "ro": "Soldat",
+      "tr": "Asker"
     },
     "hint": {
       "en": "Follows orders in uniform",
@@ -3834,7 +4237,8 @@
       "es": "Profesión del ejército",
       "el": "Επάγγελμα στον στρατό",
       "de": "Beruf beim Militär",
-      "ro": "Profesie în armată"
+      "ro": "Profesie în armată",
+      "tr": "Üniformalı emir alır"
     }
   },
   {
@@ -3845,7 +4249,8 @@
       "es": "Mecánico",
       "el": "Μηχανικός αυτοκινήτων",
       "de": "Mechaniker",
-      "ro": "Mecanic"
+      "ro": "Mecanic",
+      "tr": "Tamirci"
     },
     "hint": {
       "en": "Repair job",
@@ -3853,7 +4258,8 @@
       "es": "Profesión de reparación",
       "el": "Επάγγελμα επισκευών",
       "de": "Reparaturberuf",
-      "ro": "Profesie de reparații"
+      "ro": "Profesie de reparații",
+      "tr": "Onarım mesleği"
     }
   },
   {
@@ -3864,7 +4270,8 @@
       "es": "Pintor de brocha gorda",
       "el": "Ελαιοχρωματιστής",
       "de": "Maler",
-      "ro": "Zugrav"
+      "ro": "Zugrav",
+      "tr": "Boyacı"
     },
     "hint": {
       "en": "Job with a brush",
@@ -3872,7 +4279,8 @@
       "es": "Profesión con brocha",
       "el": "Επάγγελμα με πινέλο",
       "de": "Beruf mit Pinsel",
-      "ro": "Profesie cu pensula"
+      "ro": "Profesie cu pensula",
+      "tr": "Fırçayla yapılan meslek"
     }
   },
   {
@@ -3883,7 +4291,8 @@
       "es": "Limpiador",
       "el": "Καθαριστής",
       "de": "Reinigungskraft",
-      "ro": "Îngrijitor"
+      "ro": "Îngrijitor",
+      "tr": "Temizlikçi"
     },
     "hint": {
       "en": "Leaves a room smelling different than they found it",
@@ -3891,7 +4300,8 @@
       "es": "Profesión de limpieza",
       "el": "Επάγγελμα καθαριότητας",
       "de": "Beruf mit Sauberkeit",
-      "ro": "Profesie de curățenie"
+      "ro": "Profesie de curățenie",
+      "tr": "Odayı bulduğundan farklı kokutarak bırakır"
     }
   },
   {
@@ -3902,7 +4312,8 @@
       "es": "Conductor de autobús",
       "el": "Οδηγός λεωφορείου",
       "de": "Busfahrer",
-      "ro": "Șofer de autobuz"
+      "ro": "Șofer de autobuz",
+      "tr": "Otobüs şoförü"
     },
     "hint": {
       "en": "Job behind the wheel",
@@ -3910,7 +4321,8 @@
       "es": "Profesión al volante",
       "el": "Επάγγελμα στο τιμόνι",
       "de": "Beruf am Steuer",
-      "ro": "Profesie la volan"
+      "ro": "Profesie la volan",
+      "tr": "Direksiyon başında meslek"
     }
   },
   {
@@ -3921,7 +4333,8 @@
       "es": "Bibliotecario",
       "el": "Βιβλιοθηκάριος",
       "de": "Bibliothekar",
-      "ro": "Bibliotecar"
+      "ro": "Bibliotecar",
+      "tr": "Kütüphaneci"
     },
     "hint": {
       "en": "Job among books",
@@ -3929,7 +4342,8 @@
       "es": "Profesión entre libros",
       "el": "Επάγγελμα ανάμεσα σε βιβλία",
       "de": "Beruf zwischen Büchern",
-      "ro": "Profesie printre cărți"
+      "ro": "Profesie printre cărți",
+      "tr": "Kitaplar arasında meslek"
     }
   },
   {
@@ -3940,7 +4354,8 @@
       "es": "Astronauta",
       "el": "Αστροναύτης",
       "de": "Astronaut",
-      "ro": "Astronaut"
+      "ro": "Astronaut",
+      "tr": "Astronot"
     },
     "hint": {
       "en": "Floats at work",
@@ -3948,7 +4363,8 @@
       "es": "Profesión en el espacio",
       "el": "Επάγγελμα στο διάστημα",
       "de": "Beruf im Weltraum",
-      "ro": "Profesie în spațiu"
+      "ro": "Profesie în spațiu",
+      "tr": "İşte havada süzülür"
     }
   },
   {
@@ -3959,7 +4375,8 @@
       "es": "Marinero",
       "el": "Ναύτης",
       "de": "Seemann",
-      "ro": "Marinar"
+      "ro": "Marinar",
+      "tr": "Denizci"
     },
     "hint": {
       "en": "Job at sea",
@@ -3967,7 +4384,8 @@
       "es": "Profesión en el mar",
       "el": "Επάγγελμα στη θάλασσα",
       "de": "Beruf auf See",
-      "ro": "Profesie pe mare"
+      "ro": "Profesie pe mare",
+      "tr": "Denizde meslek"
     }
   },
   {
@@ -3978,7 +4396,8 @@
       "es": "Panadero",
       "el": "Αρτοποιός",
       "de": "Bäcker",
-      "ro": "Brutar"
+      "ro": "Brutar",
+      "tr": "Fırıncı"
     },
     "hint": {
       "en": "Starts work before sunrise",
@@ -3986,7 +4405,8 @@
       "es": "Profesión con masa",
       "el": "Επάγγελμα με ζύμη",
       "de": "Beruf mit Teig",
-      "ro": "Profesie cu aluat"
+      "ro": "Profesie cu aluat",
+      "tr": "Gün doğmadan işe başlar"
     }
   },
   {
@@ -3997,7 +4417,8 @@
       "es": "Coche",
       "el": "Αυτοκίνητο",
       "de": "Auto",
-      "ro": "Mașină"
+      "ro": "Mașină",
+      "tr": "Araba"
     },
     "hint": {
       "en": "Road vehicle",
@@ -4005,7 +4426,8 @@
       "es": "Vehículo de carretera",
       "el": "Οδικό όχημα",
       "de": "Straßenfahrzeug",
-      "ro": "Vehicul rutier"
+      "ro": "Vehicul rutier",
+      "tr": "Kara taşıtı"
     }
   },
   {
@@ -4016,7 +4438,8 @@
       "es": "Tren",
       "el": "Τρένο",
       "de": "Zug",
-      "ro": "Tren"
+      "ro": "Tren",
+      "tr": "Tren"
     },
     "hint": {
       "en": "Rail vehicle",
@@ -4024,7 +4447,8 @@
       "es": "Vehículo de vía férrea",
       "el": "Σιδηροδρομικό όχημα",
       "de": "Schienenfahrzeug",
-      "ro": "Vehicul pe șine"
+      "ro": "Vehicul pe șine",
+      "tr": "Ray taşıtı"
     }
   },
   {
@@ -4035,7 +4459,8 @@
       "es": "Avión",
       "el": "Αεροπλάνο",
       "de": "Flugzeug",
-      "ro": "Avion"
+      "ro": "Avion",
+      "tr": "Uçak"
     },
     "hint": {
       "en": "Flying vehicle",
@@ -4043,7 +4468,8 @@
       "es": "Vehículo volador",
       "el": "Ιπτάμενο όχημα",
       "de": "Fliegendes Fahrzeug",
-      "ro": "Vehicul zburător"
+      "ro": "Vehicul zburător",
+      "tr": "Uçan taşıt"
     }
   },
   {
@@ -4054,7 +4480,8 @@
       "es": "Barco",
       "el": "Πλοίο",
       "de": "Schiff",
-      "ro": "Navă"
+      "ro": "Navă",
+      "tr": "Gemi"
     },
     "hint": {
       "en": "Sea vehicle",
@@ -4062,7 +4489,8 @@
       "es": "Vehículo marino",
       "el": "Θαλάσσιο όχημα",
       "de": "Seefahrzeug",
-      "ro": "Vehicul maritim"
+      "ro": "Vehicul maritim",
+      "tr": "Deniz taşıtı"
     }
   },
   {
@@ -4073,7 +4501,8 @@
       "es": "Motocicleta",
       "el": "Μοτοσικλέτα",
       "de": "Motorrad",
-      "ro": "Motocicletă"
+      "ro": "Motocicletă",
+      "tr": "Motosiklet"
     },
     "hint": {
       "en": "Two-wheeled vehicle",
@@ -4081,7 +4510,8 @@
       "es": "Vehículo de dos ruedas",
       "el": "Δίτροχο όχημα",
       "de": "Zweirad",
-      "ro": "Vehicul cu două roți"
+      "ro": "Vehicul cu două roți",
+      "tr": "İki tekerlekli taşıt"
     }
   },
   {
@@ -4092,7 +4522,8 @@
       "es": "Autobús",
       "el": "Λεωφορείο",
       "de": "Bus",
-      "ro": "Autobuz"
+      "ro": "Autobuz",
+      "tr": "Otobüs"
     },
     "hint": {
       "en": "Public road vehicle",
@@ -4100,7 +4531,8 @@
       "es": "Vehículo público de carretera",
       "el": "Δημόσιο οδικό όχημα",
       "de": "Öffentliches Straßenfahrzeug",
-      "ro": "Vehicul public rutier"
+      "ro": "Vehicul public rutier",
+      "tr": "Toplu taşıma aracı"
     }
   },
   {
@@ -4111,7 +4543,8 @@
       "es": "Helicóptero",
       "el": "Ελικόπτερο",
       "de": "Hubschrauber",
-      "ro": "Elicopter"
+      "ro": "Elicopter",
+      "tr": "Helikopter"
     },
     "hint": {
       "en": "Loud enough to drown out conversation",
@@ -4119,7 +4552,8 @@
       "es": "Vehículo con hélices",
       "el": "Όχημα με έλικες",
       "de": "Fahrzeug mit Rotoren",
-      "ro": "Vehicul cu elice"
+      "ro": "Vehicul cu elice",
+      "tr": "Konuşmayı bastıracak kadar gürültülü"
     }
   },
   {
@@ -4130,7 +4564,8 @@
       "es": "Submarino",
       "el": "Υποβρύχιο",
       "de": "U-Boot",
-      "ro": "Submarin"
+      "ro": "Submarin",
+      "tr": "Denizaltı"
     },
     "hint": {
       "en": "Goes where sunlight can't reach",
@@ -4138,7 +4573,8 @@
       "es": "Vehículo submarino",
       "el": "Υποβρύχιο όχημα",
       "de": "Unterwasserfahrzeug",
-      "ro": "Vehicul subacvatic"
+      "ro": "Vehicul subacvatic",
+      "tr": "Güneş ışığının ulaşamadığı yere gider"
     }
   },
   {
@@ -4149,7 +4585,8 @@
       "es": "Tranvía",
       "el": "Τραμ",
       "de": "Straßenbahn",
-      "ro": "Tramvai"
+      "ro": "Tramvai",
+      "tr": "Tramvay"
     },
     "hint": {
       "en": "City rail vehicle",
@@ -4157,7 +4594,8 @@
       "es": "Vehículo urbano sobre raíles",
       "el": "Αστικό όχημα σε ράγες",
       "de": "Städtisches Schienenfahrzeug",
-      "ro": "Vehicul urban pe șine"
+      "ro": "Vehicul urban pe șine",
+      "tr": "Şehir içi ray taşıtı"
     }
   },
   {
@@ -4168,7 +4606,8 @@
       "es": "Camión",
       "el": "Φορτηγό",
       "de": "Lastwagen",
-      "ro": "Camion"
+      "ro": "Camion",
+      "tr": "Kamyon"
     },
     "hint": {
       "en": "Heavy road vehicle",
@@ -4176,7 +4615,8 @@
       "es": "Vehículo pesado de carretera",
       "el": "Βαρύ οδικό όχημα",
       "de": "Schweres Straßenfahrzeug",
-      "ro": "Vehicul greu de drum"
+      "ro": "Vehicul greu de drum",
+      "tr": "Ağır kara taşıtı"
     }
   },
   {
@@ -4187,7 +4627,8 @@
       "es": "Taxi",
       "el": "Ταξί",
       "de": "Taxi",
-      "ro": "Taxi"
+      "ro": "Taxi",
+      "tr": "Taksi"
     },
     "hint": {
       "en": "Paid ride",
@@ -4195,7 +4636,8 @@
       "es": "Viaje pagado",
       "el": "Πληρωμένη διαδρομή",
       "de": "Bezahlte Fahrt",
-      "ro": "Cursă plătită"
+      "ro": "Cursă plătită",
+      "tr": "Ücretli yolculuk"
     }
   },
   {
@@ -4206,7 +4648,8 @@
       "es": "Ambulancia",
       "el": "Ασθενοφόρο",
       "de": "Krankenwagen",
-      "ro": "Ambulanță"
+      "ro": "Ambulanță",
+      "tr": "Ambulans"
     },
     "hint": {
       "en": "Emergency vehicle",
@@ -4214,7 +4657,8 @@
       "es": "Vehículo de emergencia",
       "el": "Όχημα έκτακτης ανάγκης",
       "de": "Einsatzfahrzeug",
-      "ro": "Vehicul de urgență"
+      "ro": "Vehicul de urgență",
+      "tr": "Acil durum aracı"
     }
   },
   {
@@ -4225,7 +4669,8 @@
       "es": "Patinete",
       "el": "Πατίνι",
       "de": "Roller",
-      "ro": "Trotinetă"
+      "ro": "Trotinetă",
+      "tr": "Skuter"
     },
     "hint": {
       "en": "Small ride",
@@ -4233,7 +4678,8 @@
       "es": "Vehículo pequeño",
       "el": "Μικρό μεταφορικό",
       "de": "Kleines Gefährt",
-      "ro": "Vehicul mic"
+      "ro": "Vehicul mic",
+      "tr": "Küçük araç"
     }
   },
   {
@@ -4244,7 +4690,8 @@
       "es": "Monopatín",
       "el": "Σκέιτμπορντ",
       "de": "Skateboard",
-      "ro": "Skateboard"
+      "ro": "Skateboard",
+      "tr": "Kaykay"
     },
     "hint": {
       "en": "You need good balance, no seat included",
@@ -4252,7 +4699,8 @@
       "es": "Tabla con ruedas",
       "el": "Σανίδα με ρόδες",
       "de": "Brett mit Rollen",
-      "ro": "Placă cu roți"
+      "ro": "Placă cu roți",
+      "tr": "İyi bir denge ister, oturacak yer yok"
     }
   },
   {
@@ -4263,7 +4711,8 @@
       "es": "Canoa",
       "el": "Κανό",
       "de": "Kanu",
-      "ro": "Canoe"
+      "ro": "Canoe",
+      "tr": "Kano"
     },
     "hint": {
       "en": "Small paddled boat",
@@ -4271,7 +4720,8 @@
       "es": "Barca pequeña de remo",
       "el": "Μικρή βάρκα με κουπί",
       "de": "Kleines Paddelboot",
-      "ro": "Barcă mică cu vâslă"
+      "ro": "Barcă mică cu vâslă",
+      "tr": "Küçük kürekli tekne"
     }
   },
   {
@@ -4282,7 +4732,8 @@
       "es": "Ferry",
       "el": "Φέρι",
       "de": "Fähre",
-      "ro": "Feribot"
+      "ro": "Feribot",
+      "tr": "Feribot"
     },
     "hint": {
       "en": "Boat that carries cars",
@@ -4290,7 +4741,8 @@
       "es": "Barco que lleva coches",
       "el": "Πλοίο που μεταφέρει αυτοκίνητα",
       "de": "Schiff, das Autos befördert",
-      "ro": "Navă care duce mașini"
+      "ro": "Navă care duce mașini",
+      "tr": "Araba taşıyan tekne"
     }
   },
   {
@@ -4301,7 +4753,8 @@
       "es": "Tractor",
       "el": "Τρακτέρ",
       "de": "Traktor",
-      "ro": "Tractor"
+      "ro": "Tractor",
+      "tr": "Traktör"
     },
     "hint": {
       "en": "Farm vehicle",
@@ -4309,7 +4762,8 @@
       "es": "Vehículo agrícola",
       "el": "Αγροτικό όχημα",
       "de": "Landwirtschaftliches Fahrzeug",
-      "ro": "Vehicul agricol"
+      "ro": "Vehicul agricol",
+      "tr": "Çiftlik aracı"
     }
   },
   {
@@ -4320,7 +4774,8 @@
       "es": "Trineo",
       "el": "Έλκηθρο",
       "de": "Schlitten",
-      "ro": "Sanie"
+      "ro": "Sanie",
+      "tr": "Kızak"
     },
     "hint": {
       "en": "Snow ride",
@@ -4328,7 +4783,8 @@
       "es": "Vehículo para la nieve",
       "el": "Μεταφορικό για το χιόνι",
       "de": "Gefährt für Schnee",
-      "ro": "Vehicul pentru zăpadă"
+      "ro": "Vehicul pentru zăpadă",
+      "tr": "Kar aracı"
     }
   },
   {
@@ -4339,7 +4795,8 @@
       "es": "Metro",
       "el": "Μετρό",
       "de": "U-Bahn",
-      "ro": "Metrou"
+      "ro": "Metrou",
+      "tr": "Metro"
     },
     "hint": {
       "en": "You go down stairs to catch it",
@@ -4347,7 +4804,8 @@
       "es": "Tren subterráneo",
       "el": "Υπόγειο τρένο",
       "de": "Untergrundzug",
-      "ro": "Tren subteran"
+      "ro": "Tren subteran",
+      "tr": "Binmek için merdivenlerden inersin"
     }
   },
   {
@@ -4358,7 +4816,8 @@
       "es": "Furgoneta",
       "el": "Βαν",
       "de": "Lieferwagen",
-      "ro": "Dubă"
+      "ro": "Dubă",
+      "tr": "Kamyonet"
     },
     "hint": {
       "en": "Delivery vehicle",
@@ -4366,7 +4825,8 @@
       "es": "Vehículo de reparto",
       "el": "Όχημα διανομής",
       "de": "Lieferfahrzeug",
-      "ro": "Vehicul de livrare"
+      "ro": "Vehicul de livrare",
+      "tr": "Teslimat aracı"
     }
   },
   {
@@ -4377,7 +4837,8 @@
       "es": "Bicicleta",
       "el": "Ποδήλατο",
       "de": "Fahrrad",
-      "ro": "Bicicletă"
+      "ro": "Bicicletă",
+      "tr": "Bisiklet"
     },
     "hint": {
       "en": "You need to keep moving or you'll tip over",
@@ -4385,7 +4846,8 @@
       "es": "Vehículo de pedales",
       "el": "Όχημα με πετάλια",
       "de": "Fahrzeug mit Pedalen",
-      "ro": "Vehicul cu pedale"
+      "ro": "Vehicul cu pedale",
+      "tr": "Hareket etmezsen devrilirsin"
     }
   },
   {
@@ -4396,7 +4858,8 @@
       "es": "Yate",
       "el": "Γιοτ",
       "de": "Jacht",
-      "ro": "Iaht"
+      "ro": "Iaht",
+      "tr": "Yat"
     },
     "hint": {
       "en": "Luxury boat",
@@ -4404,7 +4867,8 @@
       "es": "Barco de lujo",
       "el": "Πολυτελές σκάφος",
       "de": "Luxusboot",
-      "ro": "Ambarcațiune de lux"
+      "ro": "Ambarcațiune de lux",
+      "tr": "Lüks tekne"
     }
   },
   {
@@ -4415,7 +4879,8 @@
       "es": "Teleférico",
       "el": "Τελεφερίκ",
       "de": "Seilbahn",
-      "ro": "Telecabină"
+      "ro": "Telecabină",
+      "tr": "Teleferik"
     },
     "hint": {
       "en": "Great view, no wheels underneath",
@@ -4423,7 +4888,8 @@
       "es": "Vehículo colgante",
       "el": "Κρεμαστό όχημα",
       "de": "Hängendes Fahrzeug",
-      "ro": "Vehicul suspendat"
+      "ro": "Vehicul suspendat",
+      "tr": "Harika manzara, altında tekerlek yok"
     }
   },
   {
@@ -4434,7 +4900,8 @@
       "es": "Transbordador espacial",
       "el": "Διαστημικό λεωφορείο",
       "de": "Raumfähre",
-      "ro": "Navetă spațială"
+      "ro": "Navetă spațială",
+      "tr": "Uzay mekiği"
     },
     "hint": {
       "en": "Leaves the ground for good",
@@ -4442,7 +4909,8 @@
       "es": "Vehículo para el espacio",
       "el": "Όχημα για το διάστημα",
       "de": "Fahrzeug für den Weltraum",
-      "ro": "Vehicul pentru spațiu"
+      "ro": "Vehicul pentru spațiu",
+      "tr": "Yeryüzünden temelli ayrılır"
     }
   },
   {
@@ -4453,7 +4921,8 @@
       "es": "Camión de bomberos",
       "el": "Πυροσβεστικό όχημα",
       "de": "Feuerwehrauto",
-      "ro": "Mașină de pompieri"
+      "ro": "Mașină de pompieri",
+      "tr": "İtfaiye aracı"
     },
     "hint": {
       "en": "Vehicle with a ladder",
@@ -4461,7 +4930,8 @@
       "es": "Vehículo con escalera",
       "el": "Όχημα με σκάλα",
       "de": "Fahrzeug mit Leiter",
-      "ro": "Vehicul cu scară"
+      "ro": "Vehicul cu scară",
+      "tr": "Merdivenli araç"
     }
   },
   {
@@ -4472,7 +4942,8 @@
       "es": "Carro de caballos",
       "el": "Κάρο με άλογο",
       "de": "Pferdewagen",
-      "ro": "Căruță"
+      "ro": "Căruță",
+      "tr": "At arabası"
     },
     "hint": {
       "en": "Vehicle pulled by an animal",
@@ -4480,7 +4951,8 @@
       "es": "Vehículo tirado por un animal",
       "el": "Όχημα που το τραβά ζώο",
       "de": "Von einem Tier gezogenes Gefährt",
-      "ro": "Vehicul tras de un animal"
+      "ro": "Vehicul tras de un animal",
+      "tr": "Bir hayvan tarafından çekilen araç"
     }
   },
   {
@@ -4491,7 +4963,8 @@
       "es": "Ascensor",
       "el": "Ασανσέρ",
       "de": "Aufzug",
-      "ro": "Lift"
+      "ro": "Lift",
+      "tr": "Asansör"
     },
     "hint": {
       "en": "You wait for the doors to open",
@@ -4499,7 +4972,8 @@
       "es": "Viaje vertical",
       "el": "Κάθετη διαδρομή",
       "de": "Senkrechte Fahrt",
-      "ro": "Deplasare pe verticală"
+      "ro": "Deplasare pe verticală",
+      "tr": "Kapıların açılmasını beklersin"
     }
   },
   {
@@ -4510,7 +4984,8 @@
       "es": "Escalera mecánica",
       "el": "Κυλιόμενη σκάλα",
       "de": "Rolltreppe",
-      "ro": "Scară rulantă"
+      "ro": "Scară rulantă",
+      "tr": "Yürüyen merdiven"
     },
     "hint": {
       "en": "You can stand still and still get there",
@@ -4518,7 +4993,8 @@
       "es": "Escaleras que se mueven",
       "el": "Σκαλιά που κινούνται",
       "de": "Bewegliche Stufen",
-      "ro": "Trepte care se mișcă"
+      "ro": "Trepte care se mișcă",
+      "tr": "Hiç kıpırdamadan da varırsın"
     }
   },
   {
@@ -4529,7 +5005,8 @@
       "es": "Moto acuática",
       "el": "Θαλάσσιο τζετ",
       "de": "Jetski",
-      "ro": "Jetski"
+      "ro": "Jetski",
+      "tr": "Jet ski"
     },
     "hint": {
       "en": "Fast water ride",
@@ -4537,7 +5014,8 @@
       "es": "Vehículo rápido de agua",
       "el": "Γρήγορο μεταφορικό στο νερό",
       "de": "Schnelles Wassergefährt",
-      "ro": "Vehicul rapid pe apă"
+      "ro": "Vehicul rapid pe apă",
+      "tr": "Hızlı su aracı"
     }
   },
   {
@@ -4548,7 +5026,8 @@
       "es": "Velero",
       "el": "Ιστιοφόρο",
       "de": "Segelboot",
-      "ro": "Barcă cu pânze"
+      "ro": "Barcă cu pânze",
+      "tr": "Yelkenli"
     },
     "hint": {
       "en": "No engine, just fabric catching a breeze",
@@ -4556,7 +5035,8 @@
       "es": "Barco movido por el viento",
       "el": "Σκάφος που κινείται με τον άνεμο",
       "de": "Boot, das der Wind bewegt",
-      "ro": "Barcă mișcată de vânt"
+      "ro": "Barcă mișcată de vânt",
+      "tr": "Motor yok, sadece rüzgarı yakalayan bir bez"
     }
   },
   {
@@ -4567,7 +5047,8 @@
       "es": "Baloncesto",
       "el": "Μπάσκετ",
       "de": "Basketball",
-      "ro": "Baschet"
+      "ro": "Baschet",
+      "tr": "Basketbol"
     },
     "hint": {
       "en": "Ball sport",
@@ -4575,7 +5056,8 @@
       "es": "Deporte de pelota",
       "el": "Άθλημα με μπάλα",
       "de": "Ballsport",
-      "ro": "Sport cu mingea"
+      "ro": "Sport cu mingea",
+      "tr": "Top sporu"
     }
   },
   {
@@ -4586,7 +5068,8 @@
       "es": "Tenis",
       "el": "Τένις",
       "de": "Tennis",
-      "ro": "Tenis"
+      "ro": "Tenis",
+      "tr": "Tenis"
     },
     "hint": {
       "en": "Racket sport",
@@ -4594,7 +5077,8 @@
       "es": "Deporte de raqueta",
       "el": "Άθλημα με ρακέτα",
       "de": "Schlägersport",
-      "ro": "Sport cu racheta"
+      "ro": "Sport cu racheta",
+      "tr": "Raket sporu"
     }
   },
   {
@@ -4605,7 +5089,8 @@
       "es": "Voleibol",
       "el": "Βόλεϊ",
       "de": "Volleyball",
-      "ro": "Volei"
+      "ro": "Volei",
+      "tr": "Voleybol"
     },
     "hint": {
       "en": "Net sport",
@@ -4613,7 +5098,8 @@
       "es": "Deporte con red",
       "el": "Άθλημα με δίχτυ",
       "de": "Sport mit Netz",
-      "ro": "Sport cu fileu"
+      "ro": "Sport cu fileu",
+      "tr": "File sporu"
     }
   },
   {
@@ -4624,7 +5110,8 @@
       "es": "Boxeo",
       "el": "Πυγμαχία",
       "de": "Boxen",
-      "ro": "Box"
+      "ro": "Box",
+      "tr": "Boks"
     },
     "hint": {
       "en": "Fighting sport",
@@ -4632,7 +5119,8 @@
       "es": "Deporte de combate",
       "el": "Άθλημα μάχης",
       "de": "Kampfsport",
-      "ro": "Sport de luptă"
+      "ro": "Sport de luptă",
+      "tr": "Dövüş sporu"
     }
   },
   {
@@ -4643,7 +5131,8 @@
       "es": "Esquí",
       "el": "Σκι",
       "de": "Skifahren",
-      "ro": "Schi"
+      "ro": "Schi",
+      "tr": "Kayak"
     },
     "hint": {
       "en": "Snow sport",
@@ -4651,7 +5140,8 @@
       "es": "Deporte de nieve",
       "el": "Άθλημα στο χιόνι",
       "de": "Schneesport",
-      "ro": "Sport pe zăpadă"
+      "ro": "Sport pe zăpadă",
+      "tr": "Kar sporu"
     }
   },
   {
@@ -4662,7 +5152,8 @@
       "es": "Golf",
       "el": "Γκολφ",
       "de": "Golf",
-      "ro": "Golf"
+      "ro": "Golf",
+      "tr": "Golf"
     },
     "hint": {
       "en": "Club sport",
@@ -4670,7 +5161,8 @@
       "es": "Deporte con palo",
       "el": "Άθλημα με μπαστούνι",
       "de": "Sport mit Schläger",
-      "ro": "Sport cu crosă"
+      "ro": "Sport cu crosă",
+      "tr": "Sopa sporu"
     }
   },
   {
@@ -4681,7 +5173,8 @@
       "es": "Surf",
       "el": "Σέρφινγκ",
       "de": "Surfen",
-      "ro": "Surf"
+      "ro": "Surf",
+      "tr": "Sörf"
     },
     "hint": {
       "en": "Wave sport",
@@ -4689,7 +5182,8 @@
       "es": "Deporte de olas",
       "el": "Άθλημα με κύματα",
       "de": "Wellensport",
-      "ro": "Sport pe valuri"
+      "ro": "Sport pe valuri",
+      "tr": "Dalga sporu"
     }
   },
   {
@@ -4700,7 +5194,8 @@
       "es": "Maratón",
       "el": "Μαραθώνιος",
       "de": "Marathon",
-      "ro": "Maraton"
+      "ro": "Maraton",
+      "tr": "Maraton"
     },
     "hint": {
       "en": "Long race",
@@ -4708,7 +5203,8 @@
       "es": "Carrera larga",
       "el": "Μεγάλος αγώνας δρόμου",
       "de": "Langer Lauf",
-      "ro": "Cursă lungă"
+      "ro": "Cursă lungă",
+      "tr": "Uzun yarış"
     }
   },
   {
@@ -4719,7 +5215,8 @@
       "es": "Ajedrez",
       "el": "Σκάκι",
       "de": "Schach",
-      "ro": "Șah"
+      "ro": "Șah",
+      "tr": "Satranç"
     },
     "hint": {
       "en": "Mind sport",
@@ -4727,7 +5224,8 @@
       "es": "Deporte mental",
       "el": "Πνευματικό άθλημα",
       "de": "Denksport",
-      "ro": "Sport al minții"
+      "ro": "Sport al minții",
+      "tr": "Zihin sporu"
     }
   },
   {
@@ -4738,7 +5236,8 @@
       "es": "Gimnasia",
       "el": "Γυμναστική",
       "de": "Turnen",
-      "ro": "Gimnastică"
+      "ro": "Gimnastică",
+      "tr": "Jimnastik"
     },
     "hint": {
       "en": "Flexibility sport",
@@ -4746,7 +5245,8 @@
       "es": "Deporte de flexibilidad",
       "el": "Άθλημα ευλυγισίας",
       "de": "Sport mit Beweglichkeit",
-      "ro": "Sport de suplețe"
+      "ro": "Sport de suplețe",
+      "tr": "Esneklik sporu"
     }
   },
   {
@@ -4757,7 +5257,8 @@
       "es": "Hockey sobre hielo",
       "el": "Χόκεϊ επί πάγου",
       "de": "Eishockey",
-      "ro": "Hochei pe gheață"
+      "ro": "Hochei pe gheață",
+      "tr": "Buz hokeyi"
     },
     "hint": {
       "en": "Fast sport, cold rink",
@@ -4765,7 +5266,8 @@
       "es": "Deporte sobre hielo",
       "el": "Άθλημα στον πάγο",
       "de": "Sport auf Eis",
-      "ro": "Sport pe gheață"
+      "ro": "Sport pe gheață",
+      "tr": "Hızlı spor, soğuk saha"
     }
   },
   {
@@ -4776,7 +5278,8 @@
       "es": "Rugby",
       "el": "Ράγκμπι",
       "de": "Rugby",
-      "ro": "Rugby"
+      "ro": "Rugby",
+      "tr": "Ragbi"
     },
     "hint": {
       "en": "Rough team sport",
@@ -4784,7 +5287,8 @@
       "es": "Deporte de equipo rudo",
       "el": "Σκληρό ομαδικό άθλημα",
       "de": "Raues Mannschaftsspiel",
-      "ro": "Sport de echipă dur"
+      "ro": "Sport de echipă dur",
+      "tr": "Sert takım sporu"
     }
   },
   {
@@ -4795,7 +5299,8 @@
       "es": "Ciclismo",
       "el": "Ποδηλασία",
       "de": "Radsport",
-      "ro": "Ciclism"
+      "ro": "Ciclism",
+      "tr": "Bisiklete binme"
     },
     "hint": {
       "en": "Legs do all the work here",
@@ -4803,7 +5308,8 @@
       "es": "Carrera de bicicletas",
       "el": "Αγώνας ποδηλάτων",
       "de": "Radrennen",
-      "ro": "Cursă de biciclete"
+      "ro": "Cursă de biciclete",
+      "tr": "Bacaklar burada tüm işi yapar"
     }
   },
   {
@@ -4814,7 +5320,8 @@
       "es": "Judo",
       "el": "Τζούντο",
       "de": "Judo",
-      "ro": "Judo"
+      "ro": "Judo",
+      "tr": "Judo"
     },
     "hint": {
       "en": "Martial art",
@@ -4822,7 +5329,8 @@
       "es": "Arte marcial",
       "el": "Πολεμική τέχνη",
       "de": "Kampfkunst",
-      "ro": "Artă marțială"
+      "ro": "Artă marțială",
+      "tr": "Dövüş sanatı"
     }
   },
   {
@@ -4833,7 +5341,8 @@
       "es": "Tiro con arco",
       "el": "Τοξοβολία",
       "de": "Bogenschießen",
-      "ro": "Tir cu arcul"
+      "ro": "Tir cu arcul",
+      "tr": "Okçuluk"
     },
     "hint": {
       "en": "Aiming sport",
@@ -4841,7 +5350,8 @@
       "es": "Deporte de puntería",
       "el": "Άθλημα σκόπευσης",
       "de": "Zielsport",
-      "ro": "Sport de ochire"
+      "ro": "Sport de ochire",
+      "tr": "Nişan sporu"
     }
   },
   {
@@ -4852,7 +5362,8 @@
       "es": "Remo",
       "el": "Κωπηλασία",
       "de": "Rudern",
-      "ro": "Canotaj"
+      "ro": "Canotaj",
+      "tr": "Kürek"
     },
     "hint": {
       "en": "Boat sport",
@@ -4860,7 +5371,8 @@
       "es": "Deporte en barca",
       "el": "Άθλημα με βάρκα",
       "de": "Bootssport",
-      "ro": "Sport cu barca"
+      "ro": "Sport cu barca",
+      "tr": "Tekne sporu"
     }
   },
   {
@@ -4871,7 +5383,8 @@
       "es": "Halterofilia",
       "el": "Άρση βαρών",
       "de": "Gewichtheben",
-      "ro": "Haltere"
+      "ro": "Haltere",
+      "tr": "Halter"
     },
     "hint": {
       "en": "Strength sport",
@@ -4879,7 +5392,8 @@
       "es": "Deporte de fuerza",
       "el": "Άθλημα δύναμης",
       "de": "Kraftsport",
-      "ro": "Sport de forță"
+      "ro": "Sport de forță",
+      "tr": "Güç sporu"
     }
   },
   {
@@ -4890,7 +5404,8 @@
       "es": "Béisbol",
       "el": "Μπέιζμπολ",
       "de": "Baseball",
-      "ro": "Baseball"
+      "ro": "Baseball",
+      "tr": "Beyzbol"
     },
     "hint": {
       "en": "Bat sport",
@@ -4898,7 +5413,8 @@
       "es": "Deporte de bate",
       "el": "Άθλημα με ρόπαλο",
       "de": "Sport mit Schlagholz",
-      "ro": "Sport cu bâta"
+      "ro": "Sport cu bâta",
+      "tr": "Sopa sporu"
     }
   },
   {
@@ -4909,7 +5425,8 @@
       "es": "Escalada",
       "el": "Αναρρίχηση",
       "de": "Klettern",
-      "ro": "Escaladă"
+      "ro": "Escaladă",
+      "tr": "Tırmanış"
     },
     "hint": {
       "en": "Height sport",
@@ -4917,7 +5434,8 @@
       "es": "Deporte de altura",
       "el": "Άθλημα στα ύψη",
       "de": "Sport in der Höhe",
-      "ro": "Sport la înălțime"
+      "ro": "Sport la înălțime",
+      "tr": "Yükseklik sporu"
     }
   },
   {
@@ -4928,7 +5446,8 @@
       "es": "Patinaje",
       "el": "Πατινάζ",
       "de": "Eislaufen",
-      "ro": "Patinaj"
+      "ro": "Patinaj",
+      "tr": "Paten"
     },
     "hint": {
       "en": "Gliding sport",
@@ -4936,7 +5455,8 @@
       "es": "Deporte de deslizarse",
       "el": "Άθλημα ολίσθησης",
       "de": "Gleitsport",
-      "ro": "Sport de alunecare"
+      "ro": "Sport de alunecare",
+      "tr": "Kayma sporu"
     }
   },
   {
@@ -4947,7 +5467,8 @@
       "es": "Balonmano",
       "el": "Χάντμπολ",
       "de": "Handball",
-      "ro": "Handbal"
+      "ro": "Handbal",
+      "tr": "Hentbol"
     },
     "hint": {
       "en": "Indoor team sport",
@@ -4955,7 +5476,8 @@
       "es": "Deporte de equipo en pista cubierta",
       "el": "Ομαδικό άθλημα σε κλειστό χώρο",
       "de": "Hallenmannschaftssport",
-      "ro": "Sport de echipă în sală"
+      "ro": "Sport de echipă în sală",
+      "tr": "Kapalı salon takım sporu"
     }
   },
   {
@@ -4966,7 +5488,8 @@
       "es": "Lucha libre",
       "el": "Πάλη",
       "de": "Ringen",
-      "ro": "Lupte"
+      "ro": "Lupte",
+      "tr": "Güreş"
     },
     "hint": {
       "en": "Grappling sport",
@@ -4974,7 +5497,8 @@
       "es": "Deporte de agarres",
       "el": "Άθλημα με λαβές",
       "de": "Sport mit Griffen",
-      "ro": "Sport cu prize"
+      "ro": "Sport cu prize",
+      "tr": "Boğuşma sporu"
     }
   },
   {
@@ -4985,7 +5509,8 @@
       "es": "Salto de trampolín",
       "el": "Καταδύσεις",
       "de": "Turmspringen",
-      "ro": "Sărituri în apă"
+      "ro": "Sărituri în apă",
+      "tr": "Dalış"
     },
     "hint": {
       "en": "You hold your breath right before",
@@ -4993,7 +5518,8 @@
       "es": "Deporte desde el trampolín",
       "el": "Άθλημα από σανίδα",
       "de": "Sport vom Brett",
-      "ro": "Sport de pe trambulină"
+      "ro": "Sport de pe trambulină",
+      "tr": "Hemen öncesinde nefesini tutarsın"
     }
   },
   {
@@ -5004,7 +5530,8 @@
       "es": "Bádminton",
       "el": "Μπάντμιντον",
       "de": "Badminton",
-      "ro": "Badminton"
+      "ro": "Badminton",
+      "tr": "Badminton"
     },
     "hint": {
       "en": "Quiet racket sport, no bounce",
@@ -5012,7 +5539,8 @@
       "es": "Deporte de volante",
       "el": "Άθλημα με φτερό",
       "de": "Sport mit Federball",
-      "ro": "Sport cu fluturaș"
+      "ro": "Sport cu fluturaș",
+      "tr": "Sessiz raket sporu, sekme yok"
     }
   },
   {
@@ -5023,7 +5551,8 @@
       "es": "Tenis de mesa",
       "el": "Πινγκ πονγκ",
       "de": "Tischtennis",
-      "ro": "Tenis de masă"
+      "ro": "Tenis de masă",
+      "tr": "Masa tenisi"
     },
     "hint": {
       "en": "Paddle sport with a tiny bouncing ball",
@@ -5031,7 +5560,8 @@
       "es": "Deporte sobre una mesa pequeña",
       "el": "Άθλημα σε μικρό τραπέζι",
       "de": "Sport am kleinen Tisch",
-      "ro": "Sport pe o masă mică"
+      "ro": "Sport pe o masă mică",
+      "tr": "Minik sekiveren toplu raket sporu"
     }
   },
   {
@@ -5042,7 +5572,8 @@
       "es": "Carreras de coches",
       "el": "Αγώνες αυτοκινήτων",
       "de": "Autorennen",
-      "ro": "Curse de mașini"
+      "ro": "Curse de mașini",
+      "tr": "Motor yarışı"
     },
     "hint": {
       "en": "Speed sport, no pedaling involved",
@@ -5050,7 +5581,8 @@
       "es": "Deporte de motor",
       "el": "Μηχανοκίνητο άθλημα",
       "de": "Motorsport",
-      "ro": "Sport cu motor"
+      "ro": "Sport cu motor",
+      "tr": "Hız sporu, pedal çevirme yok"
     }
   },
   {
@@ -5061,7 +5593,8 @@
       "es": "Snowboard",
       "el": "Σνόουμπορντ",
       "de": "Snowboarden",
-      "ro": "Snowboard"
+      "ro": "Snowboard",
+      "tr": "Snowboard"
     },
     "hint": {
       "en": "Sideways stance, one board, lots of powder",
@@ -5069,7 +5602,8 @@
       "es": "Deporte de tabla en la nieve",
       "el": "Άθλημα με σανίδα στο χιόνι",
       "de": "Brettsport im Schnee",
-      "ro": "Sport cu placa pe zăpadă"
+      "ro": "Sport cu placa pe zăpadă",
+      "tr": "Yan duruş, tek tahta, bol pudra kar"
     }
   },
   {
@@ -5080,7 +5614,8 @@
       "es": "Esgrima",
       "el": "Ξιφασκία",
       "de": "Fechten",
-      "ro": "Scrimă"
+      "ro": "Scrimă",
+      "tr": "Eskrim"
     },
     "hint": {
       "en": "Sport in a mask, decided by a touch",
@@ -5088,7 +5623,8 @@
       "es": "Deporte de espada",
       "el": "Άθλημα με σπαθί",
       "de": "Schwertsport",
-      "ro": "Sport cu sabia"
+      "ro": "Sport cu sabia",
+      "tr": "Maskeli spor, bir dokunuşla belirlenir"
     }
   },
   {
@@ -5099,7 +5635,8 @@
       "es": "Triatlón",
       "el": "Τρίαθλο",
       "de": "Triathlon",
-      "ro": "Triatlon"
+      "ro": "Triatlon",
+      "tr": "Triatlon"
     },
     "hint": {
       "en": "One race, three disciplines back to back",
@@ -5107,7 +5644,8 @@
       "es": "Carrera de tres partes",
       "el": "Αγώνας τριών μερών",
       "de": "Wettkampf aus drei Teilen",
-      "ro": "Cursă din trei părți"
+      "ro": "Cursă din trei părți",
+      "tr": "Tek yarış, art arda üç disiplin"
     }
   },
   {
@@ -5118,7 +5656,8 @@
       "es": "Kárate",
       "el": "Καράτε",
       "de": "Karate",
-      "ro": "Karate"
+      "ro": "Karate",
+      "tr": "Karate"
     },
     "hint": {
       "en": "Striking martial art",
@@ -5126,7 +5665,8 @@
       "es": "Arte marcial de golpes",
       "el": "Πολεμική τέχνη με χτυπήματα",
       "de": "Kampfkunst mit Schlägen",
-      "ro": "Artă marțială cu lovituri"
+      "ro": "Artă marțială cu lovituri",
+      "tr": "Vuruşa dayalı dövüş sanatı"
     }
   },
   {
@@ -5137,7 +5677,8 @@
       "es": "Película",
       "el": "Ταινία",
       "de": "Film",
-      "ro": "Film"
+      "ro": "Film",
+      "tr": "Film"
     },
     "hint": {
       "en": "You buy popcorn before it starts",
@@ -5145,7 +5686,8 @@
       "es": "Historia en pantalla",
       "el": "Ιστορία στην οθόνη",
       "de": "Geschichte auf der Leinwand",
-      "ro": "Poveste pe ecran"
+      "ro": "Poveste pe ecran",
+      "tr": "Başlamadan önce patlamış mısır alırsın"
     }
   },
   {
@@ -5156,7 +5698,8 @@
       "es": "Videojuego",
       "el": "Βιντεοπαιχνίδι",
       "de": "Videospiel",
-      "ro": "Joc video"
+      "ro": "Joc video",
+      "tr": "Video oyunu"
     },
     "hint": {
       "en": "You mash buttons trying to win",
@@ -5164,7 +5707,8 @@
       "es": "Juego digital",
       "el": "Ψηφιακό παιχνίδι",
       "de": "Digitales Spiel",
-      "ro": "Joacă digitală"
+      "ro": "Joacă digitală",
+      "tr": "Kazanmak için düğmelere basıp durursun"
     }
   },
   {
@@ -5175,7 +5719,8 @@
       "es": "Cómic",
       "el": "Κόμικ",
       "de": "Comic",
-      "ro": "Bandă desenată"
+      "ro": "Bandă desenată",
+      "tr": "Çizgi roman"
     },
     "hint": {
       "en": "Speech bubbles instead of paragraphs",
@@ -5183,7 +5728,8 @@
       "es": "Historia dibujada",
       "el": "Ζωγραφισμένη ιστορία",
       "de": "Gezeichnete Geschichte",
-      "ro": "Poveste desenată"
+      "ro": "Poveste desenată",
+      "tr": "Paragraf yerine konuşma balonları"
     }
   },
   {
@@ -5194,7 +5740,8 @@
       "es": "Circo",
       "el": "Τσίρκο",
       "de": "Zirkus",
-      "ro": "Circ"
+      "ro": "Circ",
+      "tr": "Sirk"
     },
     "hint": {
       "en": "Show with acts",
@@ -5202,7 +5749,8 @@
       "es": "Espectáculo con números",
       "el": "Θέαμα με νούμερα",
       "de": "Show mit Nummern",
-      "ro": "Spectacol cu numere"
+      "ro": "Spectacol cu numere",
+      "tr": "Gösterilerden oluşan performans"
     }
   },
   {
@@ -5213,7 +5761,8 @@
       "es": "Teatro",
       "el": "Θέατρο",
       "de": "Theater",
-      "ro": "Teatru"
+      "ro": "Teatru",
+      "tr": "Tiyatro"
     },
     "hint": {
       "en": "You clap when the curtain falls",
@@ -5221,7 +5770,8 @@
       "es": "Arte escénico en vivo",
       "el": "Ζωντανή σκηνική τέχνη",
       "de": "Live-Bühnenkunst",
-      "ro": "Artă scenică live"
+      "ro": "Artă scenică live",
+      "tr": "Perde inince alkışlarsın"
     }
   },
   {
@@ -5232,7 +5782,8 @@
       "es": "Truco de magia",
       "el": "Ταχυδακτυλουργικό κόλπο",
       "de": "Zaubertrick",
-      "ro": "Truc de magie"
+      "ro": "Truc de magie",
+      "tr": "Sihir gösterisi"
     },
     "hint": {
       "en": "You're not supposed to know how it's done",
@@ -5240,7 +5791,8 @@
       "es": "Ilusión",
       "el": "Ψευδαίσθηση",
       "de": "Illusion",
-      "ro": "Iluzie"
+      "ro": "Iluzie",
+      "tr": "Nasıl yapıldığını bilmemen gerekir"
     }
   },
   {
@@ -5251,7 +5803,8 @@
       "es": "Pódcast",
       "el": "Πόντκαστ",
       "de": "Podcast",
-      "ro": "Podcast"
+      "ro": "Podcast",
+      "tr": "Podcast"
     },
     "hint": {
       "en": "Something you listen to on a commute",
@@ -5259,7 +5812,8 @@
       "es": "Programa de audio",
       "el": "Ηχητική εκπομπή",
       "de": "Audiosendung",
-      "ro": "Emisiune audio"
+      "ro": "Emisiune audio",
+      "tr": "Yolda dinlediğin bir şey"
     }
   },
   {
@@ -5270,7 +5824,8 @@
       "es": "Juego de mesa",
       "el": "Επιτραπέζιο παιχνίδι",
       "de": "Brettspiel",
-      "ro": "Joc de societate"
+      "ro": "Joc de societate",
+      "tr": "Kutu oyunu"
     },
     "hint": {
       "en": "You roll dice or move a little piece around",
@@ -5278,7 +5833,8 @@
       "es": "Juego sobre la mesa",
       "el": "Παιχνίδι στο τραπέζι",
       "de": "Spiel am Tisch",
-      "ro": "Joc pe masă"
+      "ro": "Joc pe masă",
+      "tr": "Zar atar ya da küçük bir taş oynatırsın"
     }
   },
   {
@@ -5289,7 +5845,8 @@
       "es": "Espectáculo de marionetas",
       "el": "Κουκλοθέατρο",
       "de": "Puppenspiel",
-      "ro": "Teatru de păpuși"
+      "ro": "Teatru de păpuși",
+      "tr": "Kukla gösterisi"
     },
     "hint": {
       "en": "A hand brings a character to life",
@@ -5297,7 +5854,8 @@
       "es": "Espectáculo con muñecos",
       "el": "Θέαμα με κούκλες",
       "de": "Show mit Puppen",
-      "ro": "Spectacol cu păpuși"
+      "ro": "Spectacol cu păpuși",
+      "tr": "Bir el bir karakteri canlandırır"
     }
   },
   {
@@ -5308,7 +5866,8 @@
       "es": "Fuegos artificiales",
       "el": "Πυροτεχνήματα",
       "de": "Feuerwerk",
-      "ro": "Artificii"
+      "ro": "Artificii",
+      "tr": "Havai fişek"
     },
     "hint": {
       "en": "Loud, bright, over in seconds",
@@ -5316,7 +5875,8 @@
       "es": "Espectáculo en el cielo nocturno",
       "el": "Θέαμα στον νυχτερινό ουρανό",
       "de": "Show am Nachthimmel",
-      "ro": "Spectacol pe cerul nopții"
+      "ro": "Spectacol pe cerul nopții",
+      "tr": "Gürültülü, parlak, saniyeler içinde biter"
     }
   },
   {
@@ -5327,7 +5887,8 @@
       "es": "Ópera",
       "el": "Όπερα",
       "de": "Oper",
-      "ro": "Operă"
+      "ro": "Operă",
+      "tr": "Opera"
     },
     "hint": {
       "en": "Nobody just talks, they sing every line",
@@ -5335,7 +5896,8 @@
       "es": "Drama cantado",
       "el": "Τραγουδισμένο δράμα",
       "de": "Gesungenes Drama",
-      "ro": "Dramă cântată"
+      "ro": "Dramă cântată",
+      "tr": "Kimse sadece konuşmaz, her satırı söyler"
     }
   },
   {
@@ -5346,7 +5908,8 @@
       "es": "Monólogo cómico",
       "el": "Σταντ απ κωμωδία",
       "de": "Stand-up-Comedy",
-      "ro": "Stand-up comedy"
+      "ro": "Stand-up comedy",
+      "tr": "Stand-up"
     },
     "hint": {
       "en": "One person, a microphone, and a room hoping to laugh",
@@ -5354,7 +5917,8 @@
       "es": "Espectáculo divertido",
       "el": "Αστείο σόου",
       "de": "Lustige Show",
-      "ro": "Spectacol amuzant"
+      "ro": "Spectacol amuzant",
+      "tr": "Bir kişi, bir mikrofon, gülmeyi uman bir salon"
     }
   },
   {
@@ -5365,7 +5929,8 @@
       "es": "Ballet",
       "el": "Μπαλέτο",
       "de": "Ballett",
-      "ro": "Balet"
+      "ro": "Balet",
+      "tr": "Bale"
     },
     "hint": {
       "en": "Performed on tiptoes",
@@ -5373,7 +5938,8 @@
       "es": "Arte de la danza",
       "el": "Τέχνη του χορού",
       "de": "Tanzkunst",
-      "ro": "Artă a dansului"
+      "ro": "Artă a dansului",
+      "tr": "Parmak ucunda yapılır"
     }
   },
   {
@@ -5384,7 +5950,8 @@
       "es": "Concurso de preguntas",
       "el": "Τηλεπαιχνίδι γνώσεων",
       "de": "Quizshow",
-      "ro": "Emisiune-concurs"
+      "ro": "Emisiune-concurs",
+      "tr": "Yarışma programı"
     },
     "hint": {
       "en": "Buzz in before you say the answer",
@@ -5392,7 +5959,8 @@
       "es": "Juego de preguntas",
       "el": "Παιχνίδι με ερωτήσεις",
       "de": "Spiel mit Fragen",
-      "ro": "Joc cu întrebări"
+      "ro": "Joc cu întrebări",
+      "tr": "Cevabı söylemeden önce zile basarsın"
     }
   },
   {
@@ -5403,7 +5971,8 @@
       "es": "Dibujos animados",
       "el": "Κινούμενα σχέδια",
       "de": "Zeichentrickfilm",
-      "ro": "Desen animat"
+      "ro": "Desen animat",
+      "tr": "Çizgi film"
     },
     "hint": {
       "en": "Drawn characters that never seem to age",
@@ -5411,7 +5980,8 @@
       "es": "Programa animado",
       "el": "Εκπομπή με κινούμενα σχέδια",
       "de": "Animierte Sendung",
-      "ro": "Emisiune animată"
+      "ro": "Emisiune animată",
+      "tr": "Hiç yaşlanmayan çizilmiş karakterler"
     }
   },
   {
@@ -5422,7 +5992,8 @@
       "es": "Montaña rusa",
       "el": "Τρενάκι του τρόμου",
       "de": "Achterbahn",
-      "ro": "Montagne russe"
+      "ro": "Montagne russe",
+      "tr": "Hız treni"
     },
     "hint": {
       "en": "Thrill ride",
@@ -5430,7 +6001,8 @@
       "es": "Atracción de emoción",
       "el": "Διαδρομή με αδρεναλίνη",
       "de": "Nervenkitzel-Fahrt",
-      "ro": "Cursă cu adrenalină"
+      "ro": "Cursă cu adrenalină",
+      "tr": "Heyecan verici sürüş"
     }
   },
   {
@@ -5441,7 +6013,8 @@
       "es": "Rompecabezas",
       "el": "Παζλ",
       "de": "Puzzle",
-      "ro": "Puzzle"
+      "ro": "Puzzle",
+      "tr": "Yapboz"
     },
     "hint": {
       "en": "Pieces spread across the table until it clicks",
@@ -5449,7 +6022,8 @@
       "es": "Juego de piezas",
       "el": "Παιχνίδι με κομμάτια",
       "de": "Spiel mit Teilen",
-      "ro": "Joc cu piese"
+      "ro": "Joc cu piese",
+      "tr": "Parçalar oturana kadar masaya yayılır"
     }
   },
   {
@@ -5460,7 +6034,8 @@
       "es": "Radio",
       "el": "Ραδιόφωνο",
       "de": "Radio",
-      "ro": "Radio"
+      "ro": "Radio",
+      "tr": "Radyo"
     },
     "hint": {
       "en": "Playing in the background of a car ride",
@@ -5468,7 +6043,8 @@
       "es": "Emisión de sonido",
       "el": "Ηχητική μετάδοση",
       "de": "Tonübertragung",
-      "ro": "Transmisiune sonoră"
+      "ro": "Transmisiune sonoră",
+      "tr": "Araba yolculuğunda arka planda çalar"
     }
   },
   {
@@ -5479,7 +6055,8 @@
       "es": "Musical",
       "el": "Μιούζικαλ",
       "de": "Musical",
-      "ro": "Musical"
+      "ro": "Musical",
+      "tr": "Müzikal"
     },
     "hint": {
       "en": "A story told between songs",
@@ -5487,7 +6064,8 @@
       "es": "Espectáculo con canciones",
       "el": "Παράσταση με τραγούδια",
       "de": "Show mit Liedern",
-      "ro": "Spectacol cu cântece"
+      "ro": "Spectacol cu cântece",
+      "tr": "Şarkılar arasında anlatılan bir hikaye"
     }
   },
   {
@@ -5498,7 +6076,8 @@
       "es": "Festival",
       "el": "Φεστιβάλ",
       "de": "Festival",
-      "ro": "Festival"
+      "ro": "Festival",
+      "tr": "Festival"
     },
     "hint": {
       "en": "Big event",
@@ -5506,7 +6085,8 @@
       "es": "Gran evento",
       "el": "Μεγάλη εκδήλωση",
       "de": "Große Veranstaltung",
-      "ro": "Eveniment mare"
+      "ro": "Eveniment mare",
+      "tr": "Büyük etkinlik"
     }
   },
   {
@@ -5517,7 +6097,8 @@
       "es": "Concurso de talentos",
       "el": "Σόου ταλέντων",
       "de": "Talentshow",
-      "ro": "Concurs de talente"
+      "ro": "Concurs de talente",
+      "tr": "Yetenek yarışması"
     },
     "hint": {
       "en": "Judges press a buzzer if they don't like it",
@@ -5525,7 +6106,8 @@
       "es": "Competición de habilidades",
       "el": "Διαγωνισμός δεξιοτήτων",
       "de": "Wettbewerb der Fähigkeiten",
-      "ro": "Concurs de abilități"
+      "ro": "Concurs de abilități",
+      "tr": "Jüri beğenmezse zile basar"
     }
   },
   {
@@ -5536,7 +6118,8 @@
       "es": "Documental",
       "el": "Ντοκιμαντέρ",
       "de": "Dokumentarfilm",
-      "ro": "Documentar"
+      "ro": "Documentar",
+      "tr": "Belgesel"
     },
     "hint": {
       "en": "A narrator explains what's happening on screen",
@@ -5544,7 +6127,8 @@
       "es": "Película de la vida real",
       "el": "Ταινία με πραγματικά γεγονότα",
       "de": "Film über die Wirklichkeit",
-      "ro": "Film despre realitate"
+      "ro": "Film despre realitate",
+      "tr": "Bir anlatıcı ekranda olanları açıklar"
     }
   },
   {
@@ -5555,7 +6139,8 @@
       "es": "Juego de cartas",
       "el": "Παιχνίδι με χαρτιά",
       "de": "Kartenspiel",
-      "ro": "Joc de cărți"
+      "ro": "Joc de cărți",
+      "tr": "Kart oyunu"
     },
     "hint": {
       "en": "You shuffle before you start",
@@ -5563,7 +6148,8 @@
       "es": "Juego con baraja",
       "el": "Παιχνίδι με τράπουλα",
       "de": "Spiel mit einem Kartendeck",
-      "ro": "Joc cu un pachet de cărți"
+      "ro": "Joc cu un pachet de cărți",
+      "tr": "Başlamadan önce karıştırırsın"
     }
   },
   {
@@ -5574,7 +6160,8 @@
       "es": "Película de terror",
       "el": "Ταινία τρόμου",
       "de": "Horrorfilm",
-      "ro": "Film de groază"
+      "ro": "Film de groază",
+      "tr": "Korku filmi"
     },
     "hint": {
       "en": "You watch through your fingers",
@@ -5582,7 +6169,8 @@
       "es": "Película que da miedo",
       "el": "Τρομακτική ταινία",
       "de": "Gruseliger Film",
-      "ro": "Film înfricoșător"
+      "ro": "Film înfricoșător",
+      "tr": "Parmaklarının arasından izlersin"
     }
   },
   {
@@ -5593,7 +6181,8 @@
       "es": "Telenovela",
       "el": "Σαπουνόπερα",
       "de": "Seifenoper",
-      "ro": "Telenovelă"
+      "ro": "Telenovelă",
+      "tr": "Pembe dizi"
     },
     "hint": {
       "en": "Overacted drama that airs every weekday",
@@ -5601,7 +6190,8 @@
       "es": "Serie de televisión larga",
       "el": "Μεγάλη τηλεοπτική σειρά",
       "de": "Lange Fernsehserie",
-      "ro": "Serial TV lung"
+      "ro": "Serial TV lung",
+      "tr": "Her hafta içi yayınlanan abartılı dram"
     }
   },
   {
@@ -5612,7 +6202,8 @@
       "es": "Bingo",
       "el": "Μπίνγκο",
       "de": "Bingo",
-      "ro": "Bingo"
+      "ro": "Bingo",
+      "tr": "Tombala"
     },
     "hint": {
       "en": "You shout out when your card fills up",
@@ -5620,7 +6211,8 @@
       "es": "Juego de números",
       "el": "Παιχνίδι με αριθμούς",
       "de": "Zahlenspiel",
-      "ro": "Joc cu numere"
+      "ro": "Joc cu numere",
+      "tr": "Kartın dolunca bağırırsın"
     }
   },
   {
@@ -5631,7 +6223,8 @@
       "es": "Desfile",
       "el": "Παρέλαση",
       "de": "Parade",
-      "ro": "Paradă"
+      "ro": "Paradă",
+      "tr": "Geçit töreni"
     },
     "hint": {
       "en": "Marching bands and floats down the main street",
@@ -5639,7 +6232,8 @@
       "es": "Procesión por la calle",
       "el": "Πομπή στον δρόμο",
       "de": "Umzug auf der Straße",
-      "ro": "Procesiune pe stradă"
+      "ro": "Procesiune pe stradă",
+      "tr": "Ana caddeden geçen bandolar ve platformlar"
     }
   },
   {
@@ -5650,7 +6244,8 @@
       "es": "Sala de escape",
       "el": "Δωμάτιο απόδρασης",
       "de": "Escape Room",
-      "ro": "Cameră de evadare"
+      "ro": "Cameră de evadare",
+      "tr": "Kaçış odası"
     },
     "hint": {
       "en": "You're locked in until you solve your way out",
@@ -5658,7 +6253,8 @@
       "es": "Habitación de acertijos",
       "el": "Δωμάτιο με γρίφους",
       "de": "Rätselraum",
-      "ro": "Cameră cu ghicitori"
+      "ro": "Cameră cu ghicitori",
+      "tr": "Çözene kadar kilitli kalırsın"
     }
   },
   {
@@ -5669,7 +6265,8 @@
       "es": "Discoteca",
       "el": "Νυχτερινό κέντρο",
       "de": "Nachtclub",
-      "ro": "Club de noapte"
+      "ro": "Club de noapte",
+      "tr": "Gece kulübü"
     },
     "hint": {
       "en": "Place with dancing",
@@ -5677,7 +6274,8 @@
       "es": "Lugar con baile",
       "el": "Χώρος με χορό",
       "de": "Ort mit Tanz",
-      "ro": "Loc cu dans"
+      "ro": "Loc cu dans",
+      "tr": "Dans edilen yer"
     }
   },
   {
@@ -5688,7 +6286,8 @@
       "es": "Malabares",
       "el": "Ζογκλερική",
       "de": "Jonglieren",
-      "ro": "Jonglerie"
+      "ro": "Jonglerie",
+      "tr": "Jonglörlük"
     },
     "hint": {
       "en": "Whatever you do, don't drop one",
@@ -5696,7 +6295,8 @@
       "es": "Habilidad con pelotas",
       "el": "Δεξιότητα με μπάλες",
       "de": "Geschick mit Bällen",
-      "ro": "Îndemânare cu mingi"
+      "ro": "Îndemânare cu mingi",
+      "tr": "Ne yaparsan yap, birini düşürme"
     }
   }
 ]

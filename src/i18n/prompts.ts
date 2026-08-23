@@ -1,7 +1,7 @@
 import words from './words.json';
 import drawings from './drawings.json';
 
-export const LOCALES = ['en', 'bg', 'es', 'el', 'de', 'ro'] as const;
+export const LOCALES = ['en', 'bg', 'es', 'el', 'de', 'ro', 'tr'] as const;
 export type Locale = (typeof LOCALES)[number];
 
 export type LocalizedText = Record<string, string>;

@@ -19,7 +19,7 @@ describe('prompt library', () => {
     ['words', WORD_PROMPTS],
     ['drawings', DRAWING_PROMPTS],
   ])('%s', (_name, prompts: ReadonlyArray<{ exact: Record<string, string>; hint: Record<string, string> }>) => {
-    it('translates every secret and every hint into all six languages', () => {
+    it('translates every secret and every hint into all seven languages', () => {
       const gaps: string[] = [];
       prompts.forEach((prompt, i) => {
         for (const field of ['exact', 'hint'] as const) {

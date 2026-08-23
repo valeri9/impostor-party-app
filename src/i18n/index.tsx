@@ -16,6 +16,7 @@ export const LANGUAGE_NAMES: Record<Locale, string> = {
   el: 'Ελληνικά',
   de: 'Deutsch',
   ro: 'Română',
+  tr: 'Türkçe',
 };
 
 type UiStrings = Record<string, string>;
