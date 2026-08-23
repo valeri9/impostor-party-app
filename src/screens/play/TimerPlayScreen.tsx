@@ -49,7 +49,7 @@ export function TimerPlayScreen({ round }: { round: TimerRound }) {
   const start = () => {
     startPress.onPressIn();
     haptics.heavy();
-    playSound('click');
+    playSound('slam');
     startedAtRef.current = Date.now();
     setStage('running');
   };

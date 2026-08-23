@@ -11,6 +11,7 @@ const SOURCES = {
   click: require('../../assets/audio/click.wav'),
   tick: require('../../assets/audio/tick.wav'),
   pop: require('../../assets/audio/pop.wav'),
+  slam: require('../../assets/audio/slam.wav'),
 } as const;
 
 export type SoundName = keyof typeof SOURCES;
