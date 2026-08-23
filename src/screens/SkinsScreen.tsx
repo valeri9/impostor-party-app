@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import { Animated, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
+import { BeachScene, SandFill } from '../components/BeachScene';
 import { Button } from '../components/Button';
 import { PIXEL_LOCK, PixelArt } from '../components/PixelArt';
 import { usePressScale } from '../components/pressAnim';
-import { Screen } from '../components/Screen';
+import { DotMatrix, Screen } from '../components/Screen';
 import { SectionLabel } from '../components/SectionLabel';
 import { useGame } from '../game/GameContext';
 import { GAME_MODES } from '../game/types';
@@ -115,6 +116,9 @@ function SkinCard({
         <PixelArt rows={PIXEL_LOCK} size={18} color={colors.onSurface} />
         <View style={styles.cardText}>
           <Text style={styles.cardName}>{t(skin.nameKey)}</Text>
+          <Text style={styles.cardTagline} numberOfLines={2}>
+            {t(skin.taglineKey)}
+          </Text>
         </View>
         <Text style={styles.cardBadge}>{badge}</Text>
       </Pressable>
@@ -152,6 +156,9 @@ function SkinCard({
         <Text style={[styles.cardGlyph, { color: fg }]}>{active ? '▸' : ' '}</Text>
         <View style={styles.cardText}>
           <Text style={[styles.cardName, { color: fg }]}>{t(skin.nameKey)}</Text>
+          <Text style={[styles.cardTagline, { color: fg }]} numberOfLines={2}>
+            {t(skin.taglineKey)}
+          </Text>
         </View>
         <Text style={[styles.cardBadge, { color: fg }]}>{badge}</Text>
       </Pressable>
@@ -317,6 +324,9 @@ function SkinPreviewScreen({
     >
       <View style={previewStyles.header}>
         <Text style={[previewStyles.headerName, { color: skin.shell.onShell }]}>{t(skin.nameKey)}</Text>
+        <Text style={[previewStyles.headerTagline, { color: skin.shell.onShell }]} numberOfLines={2}>
+          {t(skin.taglineKey)}
+        </Text>
         <Text style={[previewStyles.headerBadge, { color: skin.shell.onShell }]}>{badge}</Text>
       </View>
 
@@ -335,6 +345,20 @@ function SkinPreviewScreen({
         </View>
 
         <View style={[previewStyles.lcd, { backgroundColor: c.bg, borderColor: skin.shell.bezelEdge }]}>
+          {/* The real texture, not a flat guess — this is what a shopper is
+              actually paying for, so it has to be the genuine article: the
+              same DotMatrix pixel grid or animated BeachScene the live
+              Screen.tsx renders, in the previewed skin's own colours rather
+              than whichever skin is currently active in the app. */}
+          {skin.sceneId === 'shoreline' ? (
+            <View style={StyleSheet.absoluteFill} pointerEvents="none">
+              <SandFill />
+              <BeachScene />
+              <View style={[StyleSheet.absoluteFill, { backgroundColor: c.bg, opacity: 0.55 }]} />
+            </View>
+          ) : (
+            <DotMatrix lcd={skin.lcd} />
+          )}
           <ScrollView contentContainerStyle={previewStyles.lcdContent} showsVerticalScrollIndicator={false}>
             <View style={[previewStyles.titlePlate, { backgroundColor: c.ink }]}>
               <Text style={[previewStyles.titleText, { color: c.onInk }]} numberOfLines={1} adjustsFontSizeToFit>
@@ -454,6 +478,7 @@ const styles = StyleSheet.create({
   cardGlyph: { ...type.heading, width: 16 },
   cardText: { flex: 1 },
   cardName: { ...type.label, textTransform: 'uppercase' },
+  cardTagline: { ...type.caption, marginTop: 2, letterSpacing: 0 },
   cardBadge: { ...type.caption, letterSpacing: 0 },
   preview: {
     width: 46,
@@ -477,6 +502,7 @@ const previewStyles = StyleSheet.create({
   page: { flex: 1 },
   header: { marginBottom: spacing.sm },
   headerName: { ...type.heading, textAlign: 'center', textTransform: 'uppercase' },
+  headerTagline: { ...type.caption, textAlign: 'center', marginTop: 2, letterSpacing: 0 },
   headerBadge: { ...type.caption, textAlign: 'center', marginTop: 2 },
   bezel: {
     flex: 1,

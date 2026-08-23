@@ -43,6 +43,10 @@ export type Skin = {
   id: string;
   /** i18n key for the skin's display name, e.g. "skin.dmgClassic.name". */
   nameKey: string;
+  /** i18n key for a one-line callout of what makes this skin worth having —
+   *  shown on the catalogue card and the full preview, e.g.
+   *  "skin.shoreline.tagline". */
+  taglineKey: string;
   /** Price in euro cents. 0 = free — every player owns it from install. */
   priceCents: number;
   lcd: LcdPalette;
@@ -68,6 +72,7 @@ export const SKINS: Skin[] = [
   {
     id: DEFAULT_SKIN_ID,
     nameKey: 'skin.dmgClassic.name',
+    taglineKey: 'skin.dmgClassic.tagline',
     priceCents: 0,
     // The original hardware value (#9bbc0f) was the actual DMG-01's reflective,
     // non-backlit screen tint — accurate to the console, but a flat 85%-saturated
@@ -109,6 +114,7 @@ export const SKINS: Skin[] = [
   {
     id: 'neon-nebula',
     nameKey: 'skin.neonNebula.name',
+    taglineKey: 'skin.neonNebula.tagline',
     priceCents: 199,
     // Same softening as DMG Classic: the background carried real saturation
     // (84%) at a lightness the eye already reads as bright — cut it roughly
@@ -158,6 +164,7 @@ export const SKINS: Skin[] = [
   {
     id: 'shoreline',
     nameKey: 'skin.shoreline.name',
+    taglineKey: 'skin.shoreline.tagline',
     priceCents: 249,
     sceneId: 'shoreline',
     lcd: {
