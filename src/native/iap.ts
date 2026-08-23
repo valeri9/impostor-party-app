@@ -30,6 +30,12 @@ function purchaseKey(purchase: Purchase): string {
  * within 3 days gets auto-refunded, so both paths below call it unconditionally,
  * including for purchases restored from a connection that started after the
  * app was killed mid-purchase.
+ *
+ * Ownership also syncs the moment billing connects, not just on an explicit
+ * Restore Purchases tap — Google Play ties a purchase to the signed-in
+ * account, not the device, so a skin bought on one phone should just show up
+ * owned on the next one without the player needing to know a restore button
+ * exists.
  */
 export function useSkinPurchases(productIds: string[], onUnlock: (productId: string) => void): SkinPurchases {
   const [purchasingId, setPurchasingId] = useState<string | null>(null);
@@ -55,6 +61,16 @@ export function useSkinPurchases(productIds: string[], onUnlock: (productId: str
     if (!connected || skus.length === 0) return;
     fetchProducts({ skus, type: 'in-app' }).catch(() => {});
   }, [connected, skus, fetchProducts]);
+
+  // Silent background sync — deliberately not routed through `restore()`
+  // below, so it never flips `isRestoring` or looks like the player did
+  // anything. Runs once per connection.
+  const autoRestoredRef = useRef(false);
+  useEffect(() => {
+    if (!connected || autoRestoredRef.current) return;
+    autoRestoredRef.current = true;
+    restorePurchases().catch(() => {});
+  }, [connected, restorePurchases]);
 
   const pricesByProductId = useMemo(() => {
     const map: Record<string, string> = {};
