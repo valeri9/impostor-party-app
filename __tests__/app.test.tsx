@@ -595,33 +595,6 @@ describe('skins', () => {
     expect(screen.queryByTestId('skin-preview-shoreline')).toBeNull();
   });
 
-  it('restoring purchases unlocks a skin already bought elsewhere', async () => {
-    // eslint-disable-next-line @typescript-eslint/no-var-requires
-    const { __iapMock } = require('expo-iap');
-    __iapMock.restorablePurchases = [
-      {
-        id: 'restored-1',
-        productId: 'skin_neon_nebula',
-        purchaseToken: 'restored-token-1',
-        isAutoRenewing: false,
-        purchaseState: 'purchased',
-        quantity: 1,
-        store: 'play',
-        transactionDate: Date.now(),
-      },
-    ];
-
-    await render(<App />);
-    await waitFor(() => expect(screen.getByText(translate('en', 'app.tagline'))).toBeTruthy());
-
-    await fireEvent.press(screen.getByTestId('open-skins'));
-    await waitFor(() => expect(screen.getByTestId('skins-restore')).toBeTruthy());
-    await fireEvent.press(screen.getByTestId('skins-restore'));
-
-    await waitFor(() => expect(screen.getByTestId('skin-neon-nebula')).toBeTruthy());
-    expect(screen.queryByTestId('skin-preview-neon-nebula')).toBeNull();
-  });
-
   it('applies an owned skin on tap and re-colours the shop list itself immediately', async () => {
     await AsyncStorage.setItem(OWNED_SKINS_KEY, JSON.stringify(['neon-nebula']));
 

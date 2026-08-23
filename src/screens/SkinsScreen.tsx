@@ -111,20 +111,6 @@ export function SkinsScreen({ onDismiss }: { onDismiss: () => void }) {
       ))}
 
       <Button label={t('skins.done')} testID="skins-done" variant="success" large onPress={onDismiss} style={styles.doneButton} />
-      {productIds.length > 0 ? (
-        <Pressable
-          testID="skins-restore"
-          accessibilityRole="button"
-          disabled={!iap.ready || iap.isRestoring}
-          onPress={() => {
-            haptics.selection();
-            iap.restore();
-          }}
-          style={({ pressed }) => [styles.restoreLink, pressed && styles.restoreLinkPressed, !iap.ready && styles.restoreLinkDisabled]}
-        >
-          <Text style={styles.restoreLinkText}>{iap.isRestoring ? t('skins.restoring') : t('skins.restore')}</Text>
-        </Pressable>
-      ) : null}
     </Screen>
   );
 }
@@ -569,17 +555,6 @@ function createStyles(colors: ReturnType<typeof useSkinTokens>['colors']) {
     cardTagline: { ...type.caption, marginTop: 2, letterSpacing: 0 },
     cardBadge: { ...type.caption, letterSpacing: 0 },
     doneButton: { marginTop: spacing.lg },
-    restoreLink: {
-      alignSelf: 'center',
-      marginTop: spacing.sm,
-      paddingVertical: spacing.xs,
-      paddingHorizontal: spacing.md,
-      borderWidth: stroke.hair,
-      borderColor: colors.ink,
-    },
-    restoreLinkPressed: { opacity: 0.5 },
-    restoreLinkDisabled: { opacity: 0.35 },
-    restoreLinkText: { ...type.label, color: colors.ink, letterSpacing: 0 },
   });
 }
 
