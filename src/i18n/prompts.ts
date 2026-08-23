@@ -10,9 +10,17 @@ export type DrawingPrompt = { exact: LocalizedText; hint: LocalizedText };
 
 /**
  * The prompt libraries live in their own files rather than inside
- * `dictionary.json`: at 300 entries each they would bury the UI strings, and
- * keeping them apart means a translator can work on one without touching the
- * other. `dictionary.json` is now UI copy only.
+ * `dictionary.json`: they would bury the UI strings, and keeping them apart
+ * means a translator can work on one without touching the other.
+ * `dictionary.json` is UI copy only.
+ *
+ * `words.json` and `drawings.json` are generated, not hand-edited. The source
+ * of truth is a spreadsheet of every prompt in every language, imported with
+ * `npm run import:prompts -- <sheet.csv>`. `prompts-template.csv` in the repo
+ * root has the column layout.
+ *
+ * Both libraries are currently empty, so the word and drawing modes cannot
+ * deal a round until `prompts-src/` is populated and the build is run.
  */
 export const WORD_PROMPTS = words as WordPrompt[];
 export const DRAWING_PROMPTS = drawings as DrawingPrompt[];

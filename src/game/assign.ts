@@ -24,6 +24,9 @@ export function shuffle<T>(items: readonly T[]): T[] {
 }
 
 function pick<T>(items: readonly T[]): T {
+  // An empty prompt library would otherwise hand back `undefined` typed as `T`
+  // and only fail later, deep in a render. Fail here, where the cause is plain.
+  if (items.length === 0) throw new Error('Cannot pick from an empty list — is the prompt library built?');
   return items[Math.floor(Math.random() * items.length)];
 }
 
