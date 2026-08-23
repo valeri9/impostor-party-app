@@ -3,6 +3,7 @@ import { StatusBar } from 'expo-status-bar';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { View, StyleSheet } from 'react-native';
 
+import { ErrorBoundary } from './src/components/ErrorBoundary';
 import { GameProvider } from './src/game/GameContext';
 import { I18nProvider, useI18n } from './src/i18n';
 import { GameRoot } from './src/screens/GameRoot';
@@ -29,7 +30,11 @@ export default function App() {
 function LocaleGate() {
   const { ready } = useI18n();
   if (!ready) return <View style={styles.splash} />;
-  return <GameRoot />;
+  return (
+    <ErrorBoundary>
+      <GameRoot />
+    </ErrorBoundary>
+  );
 }
 
 const styles = StyleSheet.create({

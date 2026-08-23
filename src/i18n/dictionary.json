@@ -3,6 +3,9 @@
     "en": {
       "app.title": "Impostor Party",
       "app.tagline": "Pass the phone. Find the impostor.",
+      "error.title": "Something Went Sideways",
+      "error.body": "The game hit a snag. Restarting keeps your players and settings — just this screen resets.",
+      "error.restart": "Restart",
       "setup.language": "Language",
       "setup.players": "Players",
       "setup.playerPlaceholder": "Player {n}",
@@ -144,6 +147,9 @@
     "bg": {
       "app.title": "Impostor Party",
       "app.tagline": "Подавай телефона. Открий измамника.",
+      "error.title": "Нещо се обърка",
+      "error.body": "Играта засече грешка. Рестартирането запазва играчите и настройките — нулира се само този екран.",
+      "error.restart": "Рестартирай",
       "setup.language": "Език",
       "setup.players": "Играчи",
       "setup.playerPlaceholder": "Играч {n}",
@@ -285,6 +291,9 @@
     "es": {
       "app.title": "Impostor Party",
       "app.tagline": "Pasa el móvil. Encuentra al impostor.",
+      "error.title": "Algo salió mal",
+      "error.body": "El juego tuvo un problema. Reiniciar mantiene tus jugadores y ajustes — solo se reinicia esta pantalla.",
+      "error.restart": "Reiniciar",
       "setup.language": "Idioma",
       "setup.players": "Jugadores",
       "setup.playerPlaceholder": "Jugador {n}",
@@ -426,6 +435,9 @@
     "el": {
       "app.title": "Impostor Party",
       "app.tagline": "Πέρνα το κινητό. Βρες τον απατεώνα.",
+      "error.title": "Κάτι πήγε στραβά",
+      "error.body": "Το παιχνίδι βρήκε πρόβλημα. Η επανεκκίνηση διατηρεί τους παίκτες και τις ρυθμίσεις — μόνο αυτή η οθόνη επαναφέρεται.",
+      "error.restart": "Επανεκκίνηση",
       "setup.language": "Γλώσσα",
       "setup.players": "Παίκτες",
       "setup.playerPlaceholder": "Παίκτης {n}",
@@ -567,6 +579,9 @@
     "de": {
       "app.title": "Impostor Party",
       "app.tagline": "Handy weitergeben. Finde den Betrüger.",
+      "error.title": "Etwas ist schiefgelaufen",
+      "error.body": "Das Spiel hatte einen Aussetzer. Ein Neustart behält deine Spieler und Einstellungen — nur dieser Bildschirm wird zurückgesetzt.",
+      "error.restart": "Neu starten",
       "setup.language": "Sprache",
       "setup.players": "Spieler",
       "setup.playerPlaceholder": "Spieler {n}",
@@ -708,6 +723,9 @@
     "ro": {
       "app.title": "Impostor Party",
       "app.tagline": "Pasează telefonul. Găsește impostorul.",
+      "error.title": "Ceva n-a mers bine",
+      "error.body": "Jocul a avut o problemă. Repornirea păstrează jucătorii și setările — se resetează doar acest ecran.",
+      "error.restart": "Repornește",
       "setup.language": "Limbă",
       "setup.players": "Jucători",
       "setup.playerPlaceholder": "Jucătorul {n}",
