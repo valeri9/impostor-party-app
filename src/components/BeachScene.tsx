@@ -107,8 +107,19 @@ function CloudLayer({
     if (reduceMotion) return;
     // Was 26s — a full drift that slow next to the ~1s tide pulse and the
     // ~2.5s palm sway read as not animating at all in a quick glance.
+    //
+    // A bare `Animated.timing` handed straight to `Animated.loop` plays its
+    // first pass fine, then freezes at the end value instead of restarting
+    // (reproduced on react-native-web 0.21.2 — the drift ran once over
+    // 11s, landed on translateX(-width), and never moved again). The
+    // sibling tide/palm loops below wrap their timing(s) in
+    // `Animated.sequence` and never exhibit this, so a same-shape
+    // single-step sequence sidesteps whatever `Animated.loop` is doing
+    // differently for a lone timing.
     const loop = Animated.loop(
-      Animated.timing(anim, { toValue: 1, duration: 11000, easing: Easing.linear, useNativeDriver: true }),
+      Animated.sequence([
+        Animated.timing(anim, { toValue: 1, duration: 11000, easing: Easing.linear, useNativeDriver: true }),
+      ]),
     );
     loop.start();
     return () => loop.stop();

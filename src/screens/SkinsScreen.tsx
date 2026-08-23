@@ -1,20 +1,21 @@
-import React, { useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import { Animated, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
+import { BeachScene, SandFill } from '../components/BeachScene';
 import { Button } from '../components/Button';
 import { PIXEL_LOCK, PixelArt } from '../components/PixelArt';
 import { usePressScale } from '../components/pressAnim';
-import { Screen } from '../components/Screen';
+import { DotMatrix, Screen } from '../components/Screen';
 import { SectionLabel } from '../components/SectionLabel';
 import { useGame } from '../game/GameContext';
 import { GAME_MODES } from '../game/types';
 import { LOCALES, useI18n } from '../i18n';
 import { haptics } from '../native/haptics';
 import { playSound } from '../native/sound';
-import { useSkin } from '../theme/SkinContext';
+import { useSkin, useSkinTokens } from '../theme/SkinContext';
 import type { Skin } from '../theme/skins';
-import { BEZEL_CAPTION, colors, deriveColors, HIT_SIZE, MODE_GLYPH, spacing, stroke, type } from '../theme/tokens';
+import { BEZEL_CAPTION, deriveColors, HIT_SIZE, MODE_GLYPH, spacing, stroke, type } from '../theme/tokens';
 
 function formatPrice(priceCents: number, freeLabel: string): string {
   if (priceCents === 0) return freeLabel;
@@ -31,11 +32,20 @@ function badgeFor(skin: Skin, active: boolean, owned: boolean, t: (key: string) 
  * The skin catalogue — reachable any time from the setup screen's corner
  * button. Every entry from the registry is listed here, whether or not it's
  * owned, so the shop is one screen even once paid skins exist alongside the
- * free default. Tapping a skin's thumbnail (or a locked skin's whole card)
- * opens a full-size preview, so nobody buys a skin without seeing it.
+ * free default.
+ *
+ * Two different actions, kept deliberately distinct rather than layered on
+ * one ambiguous tap target: an **owned** skin's whole card is one button
+ * that applies it immediately — this screen re-themes itself live (it reads
+ * the real active skin's colours, not a fixed default), so the change is
+ * visible right here without a separate window. A **locked** skin's whole
+ * card instead opens the full-size preview, since there's nothing to apply
+ * yet — you're deciding whether to buy it, not switching to it.
  */
 export function SkinsScreen({ onDismiss }: { onDismiss: () => void }) {
   const { t } = useI18n();
+  const { colors } = useSkinTokens();
+  const styles = useMemo(() => createStyles(colors), [colors]);
   const { skins, activeSkin, isOwned, setActiveSkin } = useSkin();
   const [previewId, setPreviewId] = useState<string | null>(null);
 
@@ -91,9 +101,12 @@ function SkinCard({
   active: boolean;
   owned: boolean;
   onSelect: () => void;
+  /** Only ever called for a locked skin — an owned one applies on tap instead. */
   onPreview: () => void;
 }) {
   const { t } = useI18n();
+  const { colors } = useSkinTokens();
+  const styles = useMemo(() => createStyles(colors), [colors]);
   const { scale, onPressIn, onPressOut } = usePressScale(0.97);
   const fg = active ? colors.onInk : colors.onSurface;
   const badge = badgeFor(skin, active, owned, t);
@@ -115,6 +128,9 @@ function SkinCard({
         <PixelArt rows={PIXEL_LOCK} size={18} color={colors.onSurface} />
         <View style={styles.cardText}>
           <Text style={styles.cardName}>{t(skin.nameKey)}</Text>
+          <Text style={styles.cardTagline} numberOfLines={2}>
+            {t(skin.taglineKey)}
+          </Text>
         </View>
         <Text style={styles.cardBadge}>{badge}</Text>
       </Pressable>
@@ -137,21 +153,13 @@ function SkinCard({
         }}
         style={[styles.card, active && styles.cardActive]}
       >
-        <Pressable
-          testID={`skin-preview-${skin.id}`}
-          accessibilityRole="button"
-          accessibilityLabel={t('skins.preview')}
-          onPress={() => {
-            haptics.selection();
-            playSound('tick');
-            onPreview();
-          }}
-        >
-          <SkinPreview skin={skin} />
-        </Pressable>
+        <SkinPreview skin={skin} />
         <Text style={[styles.cardGlyph, { color: fg }]}>{active ? '▸' : ' '}</Text>
         <View style={styles.cardText}>
           <Text style={[styles.cardName, { color: fg }]}>{t(skin.nameKey)}</Text>
+          <Text style={[styles.cardTagline, { color: fg }]} numberOfLines={2}>
+            {t(skin.taglineKey)}
+          </Text>
         </View>
         <Text style={[styles.cardBadge, { color: fg }]}>{badge}</Text>
       </Pressable>
@@ -167,14 +175,34 @@ function SkinCard({
  */
 function SkinPreview({ skin }: { skin: Skin }) {
   return (
-    <View style={[styles.preview, { backgroundColor: skin.shell.bezel }]}>
-      <View style={[styles.previewScreen, { backgroundColor: skin.lcd.lightest }]}>
-        <View style={[styles.previewInk, { backgroundColor: skin.lcd.darkest }]} />
+    <View style={[thumbStyles.preview, { backgroundColor: skin.shell.bezel }]}>
+      <View style={[thumbStyles.previewScreen, { backgroundColor: skin.lcd.lightest }]}>
+        <View style={[thumbStyles.previewInk, { backgroundColor: skin.lcd.darkest }]} />
       </View>
-      <View style={[styles.previewButton, { backgroundColor: skin.shell.button, borderColor: skin.shell.buttonDeep }]} />
+      <View style={[thumbStyles.previewButton, { backgroundColor: skin.shell.button, borderColor: skin.shell.buttonDeep }]} />
     </View>
   );
 }
+
+/** Layout only — no colour is ever fixed here, so unlike `createStyles` this
+ *  needs no active-skin awareness and can stay a plain module-level sheet. */
+const thumbStyles = StyleSheet.create({
+  preview: {
+    width: 46,
+    height: 38,
+    padding: 4,
+  },
+  previewScreen: { flex: 1, justifyContent: 'center', padding: 3 },
+  previewInk: { height: 7 },
+  previewButton: {
+    position: 'absolute',
+    bottom: 3,
+    right: 3,
+    width: 9,
+    height: 9,
+    borderWidth: 1,
+  },
+});
 
 function MiniSectionLabel({ label, color }: { label: string; color: string }) {
   return (
@@ -317,6 +345,9 @@ function SkinPreviewScreen({
     >
       <View style={previewStyles.header}>
         <Text style={[previewStyles.headerName, { color: skin.shell.onShell }]}>{t(skin.nameKey)}</Text>
+        <Text style={[previewStyles.headerTagline, { color: skin.shell.onShell }]} numberOfLines={2}>
+          {t(skin.taglineKey)}
+        </Text>
         <Text style={[previewStyles.headerBadge, { color: skin.shell.onShell }]}>{badge}</Text>
       </View>
 
@@ -335,6 +366,20 @@ function SkinPreviewScreen({
         </View>
 
         <View style={[previewStyles.lcd, { backgroundColor: c.bg, borderColor: skin.shell.bezelEdge }]}>
+          {/* The real texture, not a flat guess — this is what a shopper is
+              actually paying for, so it has to be the genuine article: the
+              same DotMatrix pixel grid or animated BeachScene the live
+              Screen.tsx renders, in the previewed skin's own colours rather
+              than whichever skin is currently active in the app. */}
+          {skin.sceneId === 'shoreline' ? (
+            <View style={StyleSheet.absoluteFill} pointerEvents="none">
+              <SandFill />
+              <BeachScene />
+              <View style={[StyleSheet.absoluteFill, { backgroundColor: c.bg, opacity: 0.55 }]} />
+            </View>
+          ) : (
+            <DotMatrix lcd={skin.lcd} />
+          )}
           <ScrollView contentContainerStyle={previewStyles.lcdContent} showsVerticalScrollIndicator={false}>
             <View style={[previewStyles.titlePlate, { backgroundColor: c.ink }]}>
               <Text style={[previewStyles.titleText, { color: c.onInk }]} numberOfLines={1} adjustsFontSizeToFit>
@@ -430,53 +475,42 @@ function SkinPreviewScreen({
   );
 }
 
-const styles = StyleSheet.create({
-  title: {
-    ...type.title,
-    color: colors.ink,
-    textAlign: 'center',
-    textTransform: 'uppercase',
-    marginBottom: spacing.sm,
-  },
-  intro: { ...type.body, color: colors.ink, textAlign: 'center' },
-  card: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: spacing.sm,
-    padding: spacing.md,
-    backgroundColor: colors.surface,
-    borderWidth: stroke.hair,
-    borderColor: colors.onSurface,
-    marginBottom: spacing.sm,
-  },
-  cardActive: { backgroundColor: colors.ink, borderWidth: stroke.thin },
-  cardLocked: { opacity: 0.55 },
-  cardGlyph: { ...type.heading, width: 16 },
-  cardText: { flex: 1 },
-  cardName: { ...type.label, textTransform: 'uppercase' },
-  cardBadge: { ...type.caption, letterSpacing: 0 },
-  preview: {
-    width: 46,
-    height: 38,
-    padding: 4,
-  },
-  previewScreen: { flex: 1, justifyContent: 'center', padding: 3 },
-  previewInk: { height: 7 },
-  previewButton: {
-    position: 'absolute',
-    bottom: 3,
-    right: 3,
-    width: 9,
-    height: 9,
-    borderWidth: 1,
-  },
-  doneButton: { marginTop: spacing.lg },
-});
+function createStyles(colors: ReturnType<typeof useSkinTokens>['colors']) {
+  return StyleSheet.create({
+    title: {
+      ...type.title,
+      color: colors.ink,
+      textAlign: 'center',
+      textTransform: 'uppercase',
+      marginBottom: spacing.sm,
+    },
+    intro: { ...type.body, color: colors.ink, textAlign: 'center' },
+    card: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      gap: spacing.sm,
+      padding: spacing.md,
+      backgroundColor: colors.surface,
+      borderWidth: stroke.hair,
+      borderColor: colors.onSurface,
+      marginBottom: spacing.sm,
+    },
+    cardActive: { backgroundColor: colors.ink, borderWidth: stroke.thin },
+    cardLocked: { opacity: 0.55 },
+    cardGlyph: { ...type.heading, width: 16 },
+    cardText: { flex: 1 },
+    cardName: { ...type.label, textTransform: 'uppercase' },
+    cardTagline: { ...type.caption, marginTop: 2, letterSpacing: 0 },
+    cardBadge: { ...type.caption, letterSpacing: 0 },
+    doneButton: { marginTop: spacing.lg },
+  });
+}
 
 const previewStyles = StyleSheet.create({
   page: { flex: 1 },
   header: { marginBottom: spacing.sm },
   headerName: { ...type.heading, textAlign: 'center', textTransform: 'uppercase' },
+  headerTagline: { ...type.caption, textAlign: 'center', marginTop: 2, letterSpacing: 0 },
   headerBadge: { ...type.caption, textAlign: 'center', marginTop: 2 },
   bezel: {
     flex: 1,

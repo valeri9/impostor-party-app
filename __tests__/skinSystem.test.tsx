@@ -13,6 +13,7 @@ import { DEFAULT_SKIN_ID, SKINS, type Skin } from '../src/theme/skins';
 const PAID_SKIN: Skin = {
   id: 'test-paid-skin',
   nameKey: 'skin.testPaid.name',
+  taglineKey: 'skin.testPaid.tagline',
   priceCents: 199,
   lcd: SKINS[0].lcd,
   shell: SKINS[0].shell,

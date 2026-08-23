@@ -5,6 +5,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { BeachScene, SandFill } from './BeachScene';
 import { useSkin, useSkinTokens } from '../theme/SkinContext';
+import type { LcdPalette } from '../theme/skins';
 import { BEZEL_CAPTION, PIXEL_FONT, spacing, stroke, type } from '../theme/tokens';
 
 type Props = {
@@ -67,7 +68,7 @@ export function Screen({ children, scroll = false, center = false, style, backgr
               <View style={[StyleSheet.absoluteFill, { backgroundColor: colors.bg, opacity: 0.55 }]} />
             </View>
           ) : (
-            <DotMatrix />
+            <DotMatrix lcd={activeSkin.lcd} />
           )}
           {scroll ? (
             <ScrollView
@@ -107,16 +108,15 @@ function Pinstripes() {
  * The pixel grid of the LCD. It sits behind the content rather than over it so
  * it can never intercept a touch — the drawing canvas depends on that.
  */
-function DotMatrix() {
-  const { LCD } = useSkinTokens();
+export function DotMatrix({ lcd }: { lcd: LcdPalette }) {
   return (
     <View style={StyleSheet.absoluteFill} pointerEvents="none">
       <Svg width="100%" height="100%">
         <Defs>
           <Pattern id="dots" width={4} height={4} patternUnits="userSpaceOnUse">
             <Rect x={0} y={0} width={4} height={4} fill="none" />
-            <Rect x={3} y={0} width={1} height={4} fill={LCD.light} opacity={0.5} />
-            <Rect x={0} y={3} width={4} height={1} fill={LCD.light} opacity={0.5} />
+            <Rect x={3} y={0} width={1} height={4} fill={lcd.light} opacity={0.5} />
+            <Rect x={0} y={3} width={4} height={1} fill={lcd.light} opacity={0.5} />
           </Pattern>
         </Defs>
         <Rect x={0} y={0} width="100%" height="100%" fill="url(#dots)" />
