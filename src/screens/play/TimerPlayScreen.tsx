@@ -2,6 +2,7 @@ import React, { useMemo, useRef, useState } from 'react';
 import { Animated, Pressable, StyleSheet, Text, View } from 'react-native';
 import { useKeepAwake } from 'expo-keep-awake';
 
+import { AccusationCountdown } from '../../components/AccusationCountdown';
 import { Button } from '../../components/Button';
 import { PixelArt, PIXEL_CHECK, PIXEL_CLOCK } from '../../components/PixelArt';
 import { usePressScale } from '../../components/pressAnim';
@@ -94,13 +95,10 @@ export function TimerPlayScreen({ round }: { round: TimerRound }) {
           <PixelArt rows={PIXEL_CLOCK} size={64} />
         </View>
         <Text style={styles.headline}>{t('timer.play.allDone')}</Text>
-        <Button
-          label={t('results.showImpostorTime')}
+        <AccusationCountdown
+          revealLabel={t('results.showImpostorTime')}
           testID="show-results"
-          variant="danger"
-          large
-          onPress={() => dispatch({ type: 'SHOW_RESULTS' })}
-          style={styles.wideAction}
+          onReveal={() => dispatch({ type: 'SHOW_RESULTS' })}
         />
       </Screen>
     );

@@ -1,6 +1,7 @@
 import React, { useMemo } from 'react';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 
+import { AccusationCountdown } from '../../components/AccusationCountdown';
 import { Button } from '../../components/Button';
 import { PixelArt, PIXEL_STAR } from '../../components/PixelArt';
 import { PlayerChip } from '../../components/PlayerChip';
@@ -73,13 +74,10 @@ export function WordPlayScreen({ round }: { round: WordRound }) {
         />
       ) : null}
 
-      <Button
-        label={t('results.showImpostor')}
+      <AccusationCountdown
+        revealLabel={t('results.showImpostor')}
         testID="show-results"
-        variant="danger"
-        large
-        onPress={() => dispatch({ type: 'SHOW_RESULTS' })}
-        style={styles.action}
+        onReveal={() => dispatch({ type: 'SHOW_RESULTS' })}
       />
     </Screen>
   );
