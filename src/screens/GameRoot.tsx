@@ -6,6 +6,7 @@ import { useGame } from '../game/GameContext';
 import { HOWTO_SEEN_KEY } from '../native/storageKeys';
 import { SHELL } from '../theme/tokens';
 import { HowToPlayScreen } from './HowToPlayScreen';
+import { PrivacyScreen } from './PrivacyScreen';
 import { ResultsScreen } from './ResultsScreen';
 import { RevealScreen } from './RevealScreen';
 import { SetupScreen } from './SetupScreen';
@@ -53,20 +54,25 @@ export function GameRoot() {
   const openSkins = useCallback(() => setShowSkins(true), []);
   const closeSkins = useCallback(() => setShowSkins(false), []);
 
+  const [showPrivacy, setShowPrivacy] = useState(false);
+  const openPrivacy = useCallback(() => setShowPrivacy(true), []);
+  const closePrivacy = useCallback(() => setShowPrivacy(false), []);
+
   if (showHowTo === null) return <View style={styles.splash} />;
   if (showHowTo) return <HowToPlayScreen onDismiss={dismissHowTo} />;
   if (showSkins) return <SkinsScreen onDismiss={closeSkins} />;
+  if (showPrivacy) return <PrivacyScreen onDismiss={closePrivacy} />;
 
   switch (state.phase) {
     case 'setup':
-      return <SetupScreen onHowToPlay={openHowTo} onSkins={openSkins} />;
+      return <SetupScreen onHowToPlay={openHowTo} onSkins={openSkins} onPrivacy={openPrivacy} />;
 
     case 'reveal':
       return <RevealScreen />;
 
     case 'play': {
       const round = state.round;
-      if (!round) return <SetupScreen onHowToPlay={openHowTo} onSkins={openSkins} />;
+      if (!round) return <SetupScreen onHowToPlay={openHowTo} onSkins={openSkins} onPrivacy={openPrivacy} />;
       switch (round.mode) {
         case 'word':
           return <WordPlayScreen round={round} />;
