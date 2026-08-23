@@ -59,6 +59,7 @@ export function TimerPlayScreen({ round }: { round: TimerRound }) {
     stopPress.onPressIn();
     const ms = Date.now() - startedAtRef.current;
     haptics.success();
+    playSound('slam');
     playSound('chime');
     dispatch({ type: 'RECORD_TIME', playerId: currentId, ms });
     setStage('recorded');
@@ -106,7 +107,8 @@ export function TimerPlayScreen({ round }: { round: TimerRound }) {
 
   if (stage === 'running') {
     // Deliberately featureless: no digits, no progress bar, no animation that
-    // could be counted. Only a huge stop target.
+    // could be counted. Same footprint as Start so the button doesn't jump in
+    // size the instant it's pressed.
     return (
       <Screen center testID="timer-running">
         <Text style={styles.runningHint}>{t('timer.play.running')}</Text>
@@ -190,9 +192,9 @@ function createStyles(colors: ReturnType<typeof useSkinTokens>['colors'], SHELL:
       justifyContent: 'center',
     },
     stopButton: {
-      width: CIRCLE + 40,
-      height: CIRCLE + 40,
-      borderRadius: (CIRCLE + 40) / 2,
+      width: CIRCLE,
+      height: CIRCLE,
+      borderRadius: CIRCLE / 2,
       borderWidth: stroke.thick,
       borderColor: SHELL.buttonDeep,
       alignItems: 'center',
