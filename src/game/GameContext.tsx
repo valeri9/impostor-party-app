@@ -12,7 +12,6 @@ type GameValue = {
   /** Same roster, reshuffled roles. */
   newGame: () => void;
   playerById: (id: string) => Player;
-  orderedPlayers: () => Player[];
 };
 
 const GameContext = createContext<GameValue | null>(null);
@@ -38,10 +37,6 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
       newGame: () => deal('NEW_GAME'),
       playerById: (id) =>
         state.players.find((p) => p.id === id) ?? { id, name: '?' },
-      orderedPlayers: () =>
-        (state.round?.order ?? state.players.map((p) => p.id)).map(
-          (id) => state.players.find((p) => p.id === id) ?? { id, name: '?' },
-        ),
     };
   }, [state]);
 
