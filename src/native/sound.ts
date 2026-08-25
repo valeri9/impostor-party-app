@@ -3,10 +3,14 @@ import { createAudioPlayer, setAudioModeAsync, type AudioPlayer } from 'expo-aud
 /**
  * Six one-shot effects, built once at launch and reused.
  *
- * The rule this file exists to keep: a press either sounds *now* or not at
- * all. Nothing here waits, retries, or queues. A late effect is worse than a
- * missing one — it lands on the next screen, under the next press, and reads
- * as the wrong sound playing at random.
+ * Two rules, both learned the hard way:
+ *
+ * 1. A press sounds *now* or not at all. Nothing here waits, retries or
+ *    queues — a late effect lands on the next screen, under the next press,
+ *    and reads as the wrong sound firing at random.
+ * 2. Nothing reacts to playback *ending*. Rewinding a finished clip from a
+ *    status listener restarts it, which finishes, which rewinds… and the
+ *    effect never stops. Every rewind here is driven by a press.
  */
 
 const SOURCES = {
@@ -21,7 +25,6 @@ const SOURCES = {
 export type SoundName = keyof typeof SOURCES;
 
 const players: Partial<Record<SoundName, AudioPlayer>> = {};
-const rewindTimers: Partial<Record<SoundName, ReturnType<typeof setTimeout>>> = {};
 let audioModeReady = false;
 
 function ensureAudioMode() {
@@ -37,34 +40,11 @@ function ensureAudioMode() {
   });
 }
 
-/**
- * expo-audio parks a finished clip at its end instead of rewinding it, so a
- * one-shot would play once and then be silent forever. Rewinding happens the
- * moment the clip ends — off the press path — so the next press finds the
- * player already at zero and can start it with no round-trip at all.
- */
-function rewindWhenFinished(name: SoundName, player: AudioPlayer) {
-  try {
-    player.addListener('playbackStatusUpdate', (status) => {
-      if (status.didJustFinish) rewind(name, player);
-    });
-  } catch {
-    // No listener support: the timer below is the fallback.
-  }
-}
-
-function rewind(name: SoundName, player: AudioPlayer) {
-  clearTimeout(rewindTimers[name]);
-  delete rewindTimers[name];
-  player.seekTo(0).catch(() => {});
-}
-
 function playerFor(name: SoundName): AudioPlayer {
   let player = players[name];
   if (!player) {
     player = createAudioPlayer(SOURCES[name]);
     players[name] = player;
-    rewindWhenFinished(name, player);
   }
   return player;
 }
@@ -94,28 +74,27 @@ export function playSound(name: SoundName) {
     // late, on top of whatever the player pressed next.
     if (!player.isLoaded) return;
 
-    if (player.currentTime > 0 || player.playing) {
-      // Mid-clip, or parked at its end before the finish handler ran. Rewind
-      // and start again — chained, never fired side by side: `seekTo` is async,
-      // and playing without waiting for it resumes from the end, silently.
-      // A press always restarts the effect; dropping repeats is what made
-      // half of them go unheard.
-      player
-        .seekTo(0)
-        .then(() => player.play())
-        .catch(() => {});
+    // A player that has never sounded is already parked at zero, so rewinding
+    // it is pure risk: the first `seekTo` on a freshly prepared player can
+    // reject, and the `play` chained behind it then never runs. That is the
+    // silent first card — and why every card after it was fine.
+    if (!player.playing && player.currentTime === 0) {
+      player.play();
       return;
     }
 
-    player.play();
-
-    // Belt and braces for the finish listener: if it never fires, this still
-    // returns the player to zero so the next press is not silent.
-    clearTimeout(rewindTimers[name]);
-    const duration = player.duration > 0 ? player.duration * 1000 : 600;
-    rewindTimers[name] = setTimeout(() => {
-      if (!player.playing) rewind(name, player);
-    }, duration + 150);
+    // Otherwise stop, rewind, play — in that order, every time. expo-audio
+    // parks a finished clip at its end rather than rewinding it, and `seekTo`
+    // is async, so the play has to be chained to it: firing both side by side
+    // resumes from the end and is silent. Pausing first means a seek can
+    // never hand playback back to a clip that was already running.
+    player.pause();
+    player
+      .seekTo(0)
+      .then(() => player.play())
+      // A refused seek must not swallow the press too — better a clip that
+      // starts late in its own waveform than a button with no sound at all.
+      .catch(() => player.play());
   } catch {
     // Ignore — sound is optional feedback.
   }
@@ -124,8 +103,6 @@ export function playSound(name: SoundName) {
 /** Release native resources when the app tears down its audio-using screens. */
 export function releaseSounds() {
   for (const key of Object.keys(players) as SoundName[]) {
-    clearTimeout(rewindTimers[key]);
-    delete rewindTimers[key];
     try {
       players[key]?.remove();
     } catch {
