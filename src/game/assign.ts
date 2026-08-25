@@ -1,4 +1,4 @@
-import { DRAWING_PROMPTS, WORD_PROMPTS } from '../i18n/prompts';
+import { PROMPTS } from '../i18n/prompts';
 import {
   Card,
   CanvasRound,
@@ -24,6 +24,9 @@ export function shuffle<T>(items: readonly T[]): T[] {
 }
 
 function pick<T>(items: readonly T[]): T {
+  // An empty prompt library would otherwise hand back `undefined` typed as `T`
+  // and only fail later, deep in a render. Fail here, where the cause is plain.
+  if (items.length === 0) throw new Error('Cannot pick from an empty list — is the prompt library built?');
   return items[Math.floor(Math.random() * items.length)];
 }
 
@@ -44,14 +47,14 @@ function baseRound(players: Player[]) {
 
 export function buildWordRound(players: Player[], rounds: number): WordRound {
   const { order, impostorId } = baseRound(players);
-  return { mode: 'word', prompt: pick(WORD_PROMPTS), impostorId, order, speakerIndex: 0, rounds };
+  return { mode: 'word', prompt: pick(PROMPTS), impostorId, order, speakerIndex: 0, rounds };
 }
 
 export function buildCanvasRound(players: Player[], rounds: number): CanvasRound {
   const { order, impostorId } = baseRound(players);
   return {
     mode: 'canvas',
-    prompt: pick(DRAWING_PROMPTS),
+    prompt: pick(PROMPTS),
     impostorId,
     order,
     strokes: [],

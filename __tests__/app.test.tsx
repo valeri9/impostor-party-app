@@ -6,6 +6,22 @@ import App from '../App';
 import { LOCALES, translate } from '../src/i18n';
 import { ACTIVE_SKIN_KEY, HOWTO_SEEN_KEY, OWNED_SKINS_KEY } from '../src/native/storageKeys';
 
+/**
+ * These play through real rounds, so they need a prompt library — but they are
+ * testing the game flow, not the shipped content. A fixture keeps them passing
+ * while `prompts-src/` is being rebuilt, and stops a copy change in the real
+ * library from ever breaking a flow test.
+ */
+jest.mock('../src/i18n/prompts', () => {
+  const actual = jest.requireActual('../src/i18n/prompts');
+  const all = (value: string) =>
+    Object.fromEntries(actual.LOCALES.map((l: string) => [l, value])) as Record<string, string>;
+  return {
+    ...actual,
+    PROMPTS: [{ exact: all('Coffee'), hint: all('Someone\'s first excuse to leave the house') }],
+  };
+});
+
 // The point-at-the-impostor countdown (see pointAtImpostor below) runs on
 // real timers for ~2.2s; give those tests headroom over Jest's 5s default.
 jest.setTimeout(15000);
@@ -137,7 +153,7 @@ async function completeRevealLoop(playerCount: number) {
 }
 
 describe('setup', () => {
-  it('renders and switches between all six languages', async () => {
+  it('renders and switches between all seven languages', async () => {
     await render(<App />);
     await waitFor(() => expect(screen.getByText(translate('en', 'app.tagline'))).toBeTruthy());
 
@@ -148,6 +164,7 @@ describe('setup', () => {
       el: 'Ελληνικά',
       de: 'Deutsch',
       ro: 'Română',
+      tr: 'Türkçe',
     };
 
     for (const locale of LOCALES) {

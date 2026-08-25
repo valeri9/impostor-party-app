@@ -5,8 +5,8 @@ import { getLocales } from 'expo-localization';
 import dictionary from './dictionary.json';
 import { LOCALES, type Locale } from './prompts';
 
-export { LOCALES, localized, WORD_PROMPTS, DRAWING_PROMPTS } from './prompts';
-export type { Locale, LocalizedText, WordPrompt, DrawingPrompt } from './prompts';
+export { LOCALES, localized, PROMPTS } from './prompts';
+export type { Locale, LocalizedText, Prompt } from './prompts';
 
 /** Native language names — deliberately not translated. */
 export const LANGUAGE_NAMES: Record<Locale, string> = {
@@ -16,6 +16,7 @@ export const LANGUAGE_NAMES: Record<Locale, string> = {
   el: 'Ελληνικά',
   de: 'Deutsch',
   ro: 'Română',
+  tr: 'Türkçe',
 };
 
 type UiStrings = Record<string, string>;

@@ -40,7 +40,8 @@
     "typecheck": "tsc --noEmit",
     "gen:audio": "node scripts/gen-audio.js",
     "gen:icons": "node scripts/gen-icons.js",
-    "gen:shoreline": "node scripts/gen-shoreline.js"
+    "gen:shoreline": "node scripts/gen-shoreline.js",
+    "import:prompts": "node scripts/import-sheet.js"
   },
   "private": true,
   "jest": {

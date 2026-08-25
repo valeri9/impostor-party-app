@@ -1,4 +1,4 @@
-import type { DrawingPrompt, WordPrompt } from '../i18n/prompts';
+import type { Prompt } from '../i18n/prompts';
 
 export const MIN_PLAYERS = 3;
 export const MAX_PLAYERS = 15;
@@ -33,7 +33,7 @@ export type Stroke = { playerId: string; color: string; d: string };
 
 export type WordRound = {
   mode: 'word';
-  prompt: WordPrompt;
+  prompt: Prompt;
   impostorId: string;
   order: string[];
   /** Counts up across every lap; the current speaker is order[speakerIndex % order.length]. */
@@ -44,7 +44,7 @@ export type WordRound = {
 
 export type CanvasRound = {
   mode: 'canvas';
-  prompt: DrawingPrompt;
+  prompt: Prompt;
   impostorId: string;
   order: string[];
   strokes: Stroke[];
