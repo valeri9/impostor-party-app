@@ -3,18 +3,25 @@ import { createAudioPlayer, setAudioModeAsync, type AudioPlayer } from 'expo-aud
 /**
  * Six one-shot effects, built once at launch and reused.
  *
- * Two rules, both learned the hard way:
+ * Rules here, all learned the hard way:
  *
  * 1. A press sounds *now* or not at all. Nothing here waits, retries or
  *    queues — a late effect lands on the next screen, under the next press,
  *    and reads as the wrong sound firing at random.
  * 2. Nothing reacts to playback *ending*. Rewinding a finished clip from a
  *    status listener restarts it, which finishes, which rewinds… and the
- *    effect never stops. Every rewind here is driven by a press.
+ *    effect never stops. Every rewind here is driven by a press. The one
+ *    timer in this file (the warm-up below) fires once at launch and never
+ *    reacts to a clip finishing, so it doesn't reopen that loop.
  * 3. `isLoaded` only means "still decoding" *before* the first successful
  *    play. On Android it goes false again the moment a short clip reaches
  *    its end — checking it on every press read "just finished" as "not
  *    ready" and made every effect play exactly once, ever.
+ * 4. Decoded isn't the same as audible. On Android the very first sound to
+ *    reach a freshly opened audio route can be swallowed while the route
+ *    itself opens, and these clips are shorter than that can take. Each
+ *    player is warmed up once at launch — silently — so that cost is spent
+ *    before any real press, not during a player's first one.
  */
 
 const SOURCES = {
@@ -27,6 +34,9 @@ const SOURCES = {
 } as const;
 
 export type SoundName = keyof typeof SOURCES;
+
+/** Generous enough to cover both decode finishing and Android's audio route opening. */
+const WARMUP_MS = 400;
 
 const players: Partial<Record<SoundName, AudioPlayer>> = {};
 /** Effects that have played at least once, and so need rewinding before the next press. */
@@ -56,15 +66,34 @@ function playerFor(name: SoundName): AudioPlayer {
 }
 
 /**
- * Builds every player up front so the first press of a button is as loud as
- * the second. A player created at the moment of the press is still decoding
- * when `play()` is called, and that press is simply dropped.
+ * Builds every player up front and warms each one up with a silent play.
+ *
+ * Building early fixes one kind of silence: a player created at the moment
+ * of a press is still decoding when `play()` is called, and that press is
+ * simply dropped. The silent play fixes another: even once decoded, the
+ * first sound through a cold Android audio route can go unheard while the
+ * route opens. Muting, playing, then rewinding spends that cost here, at
+ * launch, instead of on whichever effect a player happens to press first.
+ * `sounded` is deliberately left untouched — the player's real first press
+ * still takes the plain, unrewound first-play path below.
  */
 export function preloadSounds() {
   ensureAudioMode();
   for (const name of Object.keys(SOURCES) as SoundName[]) {
     try {
-      playerFor(name);
+      const player = playerFor(name);
+      const restoreVolume = player.volume;
+      player.volume = 0;
+      player.play();
+      setTimeout(() => {
+        try {
+          player.pause();
+          player.seekTo(0).catch(() => {});
+          player.volume = restoreVolume;
+        } catch {
+          // Player already torn down; nothing left to warm up.
+        }
+      }, WARMUP_MS);
     } catch {
       // A device that cannot build the player still plays the game.
     }

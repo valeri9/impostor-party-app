@@ -12,6 +12,9 @@
  * `isLoaded` cost every press after the first everywhere: on Android that
  * flag goes false again once a short clip finishes, so it was reread as
  * "still decoding" and dropped — every effect played exactly once, ever.
+ * Decoded still wasn't audible: the first sound through a cold Android
+ * audio route could be swallowed while the route itself opened, silencing
+ * exactly one press — the very first one, on the very first launch.
  */
 const mockPlay = jest.fn();
 const mockPause = jest.fn();
@@ -26,6 +29,7 @@ jest.mock('expo-audio', () => ({
     seekTo: mockSeekTo,
     addListener: mockAddListener,
     remove: jest.fn(),
+    volume: 1,
     get currentTime() {
       return state.currentTime;
     },
@@ -152,11 +156,53 @@ describe('playSound', () => {
     expect(mockPlay).toHaveBeenCalledTimes(2);
   });
 
-  it('never schedules anything on a timer', async () => {
+  it('never schedules anything on a timer once launched', async () => {
+    // Preload's own warm-up timer (below) is the one exception, and it fires
+    // once at launch, never in reaction to a press or to playback ending.
     jest.useFakeTimers();
     const { playSound } = require('../src/native/sound');
     playSound('slam');
     expect(jest.getTimerCount()).toBe(0);
+    jest.useRealTimers();
+  });
+
+  it('warms up every effect at launch with a silent, rewound play', () => {
+    jest.useFakeTimers();
+    const { createAudioPlayer } = require('expo-audio');
+    const { preloadSounds } = require('../src/native/sound');
+    preloadSounds();
+
+    const created = createAudioPlayer.mock.results.map((r: { value: { volume: number } }) => r.value);
+    expect(created).toHaveLength(6);
+    // Muted and playing immediately — nothing here should be audible.
+    expect(mockPlay).toHaveBeenCalledTimes(6);
+    for (const player of created) expect(player.volume).toBe(0);
+
+    jest.advanceTimersByTime(400);
+    // Rewound and unmuted once the warm-up window passes, so the route is
+    // already open by the time a real press comes in.
+    expect(mockPause).toHaveBeenCalledTimes(6);
+    expect(mockSeekTo).toHaveBeenCalledTimes(6);
+    for (const player of created) expect(player.volume).toBe(1);
+    jest.useRealTimers();
+  });
+
+  it('leaves an effect’s real first press unrewound after warming it up', () => {
+    jest.useFakeTimers();
+    const { preloadSounds, playSound } = require('../src/native/sound');
+    preloadSounds();
+    jest.advanceTimersByTime(400);
+    mockPlay.mockClear();
+    mockPause.mockClear();
+    mockSeekTo.mockClear();
+
+    playSound('slam');
+    // The warm-up used the player, not this module's own record of what a
+    // press has actually played — a real first press still takes the plain,
+    // unrewound path, same as if there had been no warm-up at all.
+    expect(mockPause).not.toHaveBeenCalled();
+    expect(mockSeekTo).not.toHaveBeenCalled();
+    expect(mockPlay).toHaveBeenCalledTimes(1);
     jest.useRealTimers();
   });
 
