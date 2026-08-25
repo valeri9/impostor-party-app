@@ -74,16 +74,27 @@ export function playSound(name: SoundName) {
     // late, on top of whatever the player pressed next.
     if (!player.isLoaded) return;
 
-    // Stop, rewind, play — in that order, every time. expo-audio parks a
-    // finished clip at its end rather than rewinding it, and `seekTo` is
-    // async, so the play has to be chained to it: firing both side by side
+    // A player that has never sounded is already parked at zero, so rewinding
+    // it is pure risk: the first `seekTo` on a freshly prepared player can
+    // reject, and the `play` chained behind it then never runs. That is the
+    // silent first card — and why every card after it was fine.
+    if (!player.playing && player.currentTime === 0) {
+      player.play();
+      return;
+    }
+
+    // Otherwise stop, rewind, play — in that order, every time. expo-audio
+    // parks a finished clip at its end rather than rewinding it, and `seekTo`
+    // is async, so the play has to be chained to it: firing both side by side
     // resumes from the end and is silent. Pausing first means a seek can
     // never hand playback back to a clip that was already running.
     player.pause();
     player
       .seekTo(0)
       .then(() => player.play())
-      .catch(() => {});
+      // A refused seek must not swallow the press too — better a clip that
+      // starts late in its own waveform than a button with no sound at all.
+      .catch(() => player.play());
   } catch {
     // Ignore — sound is optional feedback.
   }

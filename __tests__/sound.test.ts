@@ -5,6 +5,8 @@
  * Waiting for a clip to be ready fixed that and made effects arrive seconds
  * late, under the next press. Rewinding from a playback-finished listener
  * restarted the clip it had just rewound, and the sound never stopped.
+ * Rewinding a player that had never sounded — already at zero — cost the
+ * first press of every effect, which is the silent first card of a game.
  */
 const mockPlay = jest.fn();
 const mockPause = jest.fn();
@@ -58,16 +60,42 @@ describe('playSound', () => {
     expect(mockAddListener).not.toHaveBeenCalled();
   });
 
-  it('stops and rewinds before it plays, in that order', async () => {
+  it('plays the first press outright, without rewinding first', () => {
     const { playSound } = require('../src/native/sound');
+    playSound('slam');
+    // A player that has never sounded is already at zero. Seeking it anyway
+    // risks a rejection that swallows the play chained behind it — the
+    // silent first card.
+    expect(mockSeekTo).not.toHaveBeenCalled();
+    expect(mockPause).not.toHaveBeenCalled();
+    expect(mockPlay).toHaveBeenCalledTimes(1);
+  });
+
+  it('stops and rewinds before replaying a clip that has already sounded', async () => {
+    const { playSound } = require('../src/native/sound');
+    playSound('slam');
+
+    state.currentTime = 0.42; // parked at the end, where expo-audio leaves it
     playSound('slam');
     expect(mockPause).toHaveBeenCalledTimes(1);
     expect(mockSeekTo).toHaveBeenCalledWith(0);
     // Chained, not fired alongside: playing before the seek lands resumes
     // from the end of the clip and is silent.
-    expect(mockPlay).not.toHaveBeenCalled();
-    await flush();
     expect(mockPlay).toHaveBeenCalledTimes(1);
+    await flush();
+    expect(mockPlay).toHaveBeenCalledTimes(2);
+  });
+
+  it('still plays when the rewind is refused', async () => {
+    mockSeekTo.mockImplementation(() => Promise.reject(new Error('not seekable')));
+    const { playSound } = require('../src/native/sound');
+    playSound('slam');
+
+    state.currentTime = 0.42;
+    playSound('slam');
+    await flush();
+    // Late in its own waveform beats a button that makes no sound at all.
+    expect(mockPlay).toHaveBeenCalledTimes(2);
   });
 
   it('restarts an effect that is still sounding rather than dropping the press', async () => {
