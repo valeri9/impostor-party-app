@@ -7,6 +7,8 @@
  * restarted the clip it had just rewound, and the sound never stopped.
  * Rewinding a player that had never sounded — already at zero — cost the
  * first press of every effect, which is the silent first card of a game.
+ * Deciding that from `currentTime` then cost every press *after* the first
+ * on Android, where the property never left zero.
  */
 const mockPlay = jest.fn();
 const mockPause = jest.fn();
@@ -75,7 +77,8 @@ describe('playSound', () => {
     const { playSound } = require('../src/native/sound');
     playSound('slam');
 
-    state.currentTime = 0.42; // parked at the end, where expo-audio leaves it
+    // `currentTime` is deliberately left at 0: Android reports that even for
+    // a clip parked at its end, so the rewind may not depend on reading it.
     playSound('slam');
     expect(mockPause).toHaveBeenCalledTimes(1);
     expect(mockSeekTo).toHaveBeenCalledWith(0);
@@ -90,12 +93,23 @@ describe('playSound', () => {
     mockSeekTo.mockImplementation(() => Promise.reject(new Error('not seekable')));
     const { playSound } = require('../src/native/sound');
     playSound('slam');
-
-    state.currentTime = 0.42;
     playSound('slam');
     await flush();
     // Late in its own waveform beats a button that makes no sound at all.
     expect(mockPlay).toHaveBeenCalledTimes(2);
+  });
+
+  it('keeps rewinding on a device whose clock never leaves zero', async () => {
+    const { playSound } = require('../src/native/sound');
+    // Every press after the first must rewind, however the player reports
+    // itself. Trusting `currentTime === 0` here replayed a finished clip
+    // from its end — every button after the first went silent on Android.
+    for (let i = 0; i < 4; i++) {
+      playSound('chime');
+      await flush();
+    }
+    expect(mockSeekTo).toHaveBeenCalledTimes(3);
+    expect(mockPlay).toHaveBeenCalledTimes(4);
   });
 
   it('restarts an effect that is still sounding rather than dropping the press', async () => {
