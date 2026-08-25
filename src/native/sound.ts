@@ -59,11 +59,26 @@ export function preloadSounds() {
   }
 }
 
+/**
+ * A player reports `isLoaded` only once its clip is decoded. Calling `play()`
+ * before that is a no-op that never retries, which is why the very first press
+ * of a freshly launched app used to be silent while the second one worked.
+ */
+async function waitUntilLoaded(player: AudioPlayer, timeoutMs = 2000) {
+  const deadline = Date.now() + timeoutMs;
+  while (!player.isLoaded && Date.now() < deadline) {
+    await new Promise((resolve) => setTimeout(resolve, 25));
+  }
+}
+
 export function playSound(name: SoundName) {
-  void ensureAudioMode();
   void (async () => {
     try {
+      // Awaited, not fired and forgotten: on Android the first clip can reach
+      // `play()` before the audio session exists, and it is dropped.
+      await ensureAudioMode();
       const player = playerFor(name);
+      if (!player.isLoaded) await waitUntilLoaded(player);
       // expo-audio leaves a finished clip parked at its end rather than
       // rewinding it, so a one-shot plays once and is silent every time after
       // unless the position is reset. `seekTo` is async: calling `play()`

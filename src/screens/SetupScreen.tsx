@@ -181,7 +181,8 @@ function DonateLink() {
   const styles = useMemo(() => createStyles(colors), [colors]);
   return (
     <Button
-      label={`☕ ${t('setup.donate')}`}
+      label={t('setup.donate')}
+      icon="☕"
       testID="donate-link"
       variant="primary"
       onPress={openDonateLink}
@@ -197,7 +198,8 @@ function PrivacyLink({ onPress }: { onPress: () => void }) {
   const styles = useMemo(() => createStyles(colors), [colors]);
   return (
     <Button
-      label={`🔒 ${t('privacy.title')}`}
+      label={t('privacy.title')}
+      icon="🔒"
       testID="privacy-link"
       variant="primary"
       onPress={onPress}
