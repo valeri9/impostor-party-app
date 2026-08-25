@@ -80,7 +80,6 @@ function Secret({ round, playerId }: { round: Round; playerId: string }) {
           <Text style={styles.secretValue} adjustsFontSizeToFit numberOfLines={3}>
             {localized(round.prompt.exact, locale)}
           </Text>
-          <Text style={styles.secretMeta}>{t(`category.${round.prompt.category}`)}</Text>
         </View>
       );
     }

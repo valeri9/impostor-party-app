@@ -1,0 +1,6002 @@
+[
+  {
+    "exact": {
+      "en": "Pizza",
+      "bg": "Пица",
+      "es": "Pizza",
+      "el": "Πίτσα",
+      "de": "Pizza",
+      "ro": "Pizza",
+      "tr": "Pizza"
+    },
+    "hint": {
+      "en": "Delivery",
+      "bg": "Доставка",
+      "es": "Entrega",
+      "el": "Παράδοση",
+      "de": "Lieferung",
+      "ro": "Livrare",
+      "tr": "Teslimat"
+    }
+  },
+  {
+    "exact": {
+      "en": "Beach",
+      "bg": "Плаж",
+      "es": "Playa",
+      "el": "Παραλία",
+      "de": "Strand",
+      "ro": "Plajă",
+      "tr": "Plaj"
+    },
+    "hint": {
+      "en": "Vacation",
+      "bg": "Ваканция",
+      "es": "Vacaciones",
+      "el": "Διακοπές",
+      "de": "Urlaub",
+      "ro": "Vacanță",
+      "tr": "Tatil"
+    }
+  },
+  {
+    "exact": {
+      "en": "Doctor",
+      "bg": "Лекар",
+      "es": "Médico",
+      "el": "Γιατρός",
+      "de": "Arzt",
+      "ro": "Doctor",
+      "tr": "Doktor"
+    },
+    "hint": {
+      "en": "Appointment",
+      "bg": "Час",
+      "es": "Cita",
+      "el": "Ραντεβού",
+      "de": "Termin",
+      "ro": "Programare",
+      "tr": "Randevu"
+    }
+  },
+  {
+    "exact": {
+      "en": "Elephant",
+      "bg": "Слон",
+      "es": "Elefante",
+      "el": "Ελέφαντας",
+      "de": "Elefant",
+      "ro": "Elefant",
+      "tr": "Fil"
+    },
+    "hint": {
+      "en": "Memory",
+      "bg": "Памет",
+      "es": "Memoria",
+      "el": "Μνήμη",
+      "de": "Gedächtnis",
+      "ro": "Memorie",
+      "tr": "Hafıza"
+    }
+  },
+  {
+    "exact": {
+      "en": "Guitar",
+      "bg": "Китара",
+      "es": "Guitarra",
+      "el": "Κιθάρα",
+      "de": "Gitarre",
+      "ro": "Chitară",
+      "tr": "Gitar"
+    },
+    "hint": {
+      "en": "Solo",
+      "bg": "Соло",
+      "es": "Solo",
+      "el": "Σόλο",
+      "de": "Solo",
+      "ro": "Solo",
+      "tr": "Solo"
+    }
+  },
+  {
+    "exact": {
+      "en": "Airport",
+      "bg": "Летище",
+      "es": "Aeropuerto",
+      "el": "Αεροδρόμιο",
+      "de": "Flughafen",
+      "ro": "Aeroport",
+      "tr": "Havaalanı"
+    },
+    "hint": {
+      "en": "Goodbye",
+      "bg": "Довиждане",
+      "es": "Despedida",
+      "el": "Αποχαιρετισμός",
+      "de": "Abschied",
+      "ro": "Adio",
+      "tr": "Veda"
+    }
+  },
+  {
+    "exact": {
+      "en": "Wedding",
+      "bg": "Сватба",
+      "es": "Boda",
+      "el": "Γάμος",
+      "de": "Hochzeit",
+      "ro": "Nuntă",
+      "tr": "Düğün"
+    },
+    "hint": {
+      "en": "Tears",
+      "bg": "Сълзи",
+      "es": "Lágrimas",
+      "el": "Δάκρυα",
+      "de": "Tränen",
+      "ro": "Lacrimi",
+      "tr": "Gözyaşları"
+    }
+  },
+  {
+    "exact": {
+      "en": "Vampire",
+      "bg": "Вампир",
+      "es": "Vampiro",
+      "el": "Βρικόλακας",
+      "de": "Vampir",
+      "ro": "Vampir",
+      "tr": "Vampir"
+    },
+    "hint": {
+      "en": "Mirror",
+      "bg": "Огледало",
+      "es": "Espejo",
+      "el": "Καθρέφτης",
+      "de": "Spiegel",
+      "ro": "Oglindă",
+      "tr": "Ayna"
+    }
+  },
+  {
+    "exact": {
+      "en": "Robot",
+      "bg": "Робот",
+      "es": "Robot",
+      "el": "Ρομπότ",
+      "de": "Roboter",
+      "ro": "Robot",
+      "tr": "Robot"
+    },
+    "hint": {
+      "en": "Future",
+      "bg": "Бъдеще",
+      "es": "Futuro",
+      "el": "Μέλλον",
+      "de": "Zukunft",
+      "ro": "Viitor",
+      "tr": "Gelecek"
+    }
+  },
+  {
+    "exact": {
+      "en": "Volcano",
+      "bg": "Вулкан",
+      "es": "Volcán",
+      "el": "Ηφαίστειο",
+      "de": "Vulkan",
+      "ro": "Vulcan",
+      "tr": "Yanardağ"
+    },
+    "hint": {
+      "en": "Sleep",
+      "bg": "Сън",
+      "es": "Sueño",
+      "el": "Ύπνος",
+      "de": "Schlaf",
+      "ro": "Somn",
+      "tr": "Uyku"
+    }
+  },
+  {
+    "exact": {
+      "en": "Umbrella",
+      "bg": "Чадър",
+      "es": "Paraguas",
+      "el": "Ομπρέλα",
+      "de": "Regenschirm",
+      "ro": "Umbrelă",
+      "tr": "Şemsiye"
+    },
+    "hint": {
+      "en": "Protection",
+      "bg": "Защита",
+      "es": "Protección",
+      "el": "Προστασία",
+      "de": "Schutz",
+      "ro": "Protecție",
+      "tr": "Koruma"
+    }
+  },
+  {
+    "exact": {
+      "en": "Snowman",
+      "bg": "Снежен човек",
+      "es": "Muñeco de nieve",
+      "el": "Χιονάνθρωπος",
+      "de": "Schneemann",
+      "ro": "Om de zăpadă",
+      "tr": "Kardan adam"
+    },
+    "hint": {
+      "en": "Melt",
+      "bg": "Топене",
+      "es": "Deshielo",
+      "el": "Λιώσιμο",
+      "de": "Schmelzen",
+      "ro": "Topire",
+      "tr": "Erime"
+    }
+  },
+  {
+    "exact": {
+      "en": "Pirate",
+      "bg": "Пират",
+      "es": "Pirata",
+      "el": "Πειρατής",
+      "de": "Pirat",
+      "ro": "Pirat",
+      "tr": "Korsan"
+    },
+    "hint": {
+      "en": "Treasure",
+      "bg": "Съкровище",
+      "es": "Tesoro",
+      "el": "Θησαυρός",
+      "de": "Schatz",
+      "ro": "Comoară",
+      "tr": "Hazine"
+    }
+  },
+  {
+    "exact": {
+      "en": "Castle",
+      "bg": "Замък",
+      "es": "Castillo",
+      "el": "Κάστρο",
+      "de": "Schloss",
+      "ro": "Castel",
+      "tr": "Kale"
+    },
+    "hint": {
+      "en": "Kingdom",
+      "bg": "Кралство",
+      "es": "Reino",
+      "el": "Βασίλειο",
+      "de": "Königreich",
+      "ro": "Regat",
+      "tr": "Krallık"
+    }
+  },
+  {
+    "exact": {
+      "en": "Rainbow",
+      "bg": "Дъга",
+      "es": "Arcoíris",
+      "el": "Ουράνιο τόξο",
+      "de": "Regenbogen",
+      "ro": "Curcubeu",
+      "tr": "Gökkuşağı"
+    },
+    "hint": {
+      "en": "Luck",
+      "bg": "Късмет",
+      "es": "Suerte",
+      "el": "Τύχη",
+      "de": "Glück",
+      "ro": "Noroc",
+      "tr": "Şans"
+    }
+  },
+  {
+    "exact": {
+      "en": "Astronaut",
+      "bg": "Астронавт",
+      "es": "Astronauta",
+      "el": "Αστροναύτης",
+      "de": "Astronaut",
+      "ro": "Astronaut",
+      "tr": "Astronot"
+    },
+    "hint": {
+      "en": "Gravity",
+      "bg": "Гравитация",
+      "es": "Gravedad",
+      "el": "Βαρύτητα",
+      "de": "Schwerkraft",
+      "ro": "Gravitație",
+      "tr": "Yerçekimi"
+    }
+  },
+  {
+    "exact": {
+      "en": "Waterfall",
+      "bg": "Водопад",
+      "es": "Cascada",
+      "el": "Καταρράκτης",
+      "de": "Wasserfall",
+      "ro": "Cascadă",
+      "tr": "Şelale"
+    },
+    "hint": {
+      "en": "Roar",
+      "bg": "Рев",
+      "es": "Rugido",
+      "el": "Βουή",
+      "de": "Tosen",
+      "ro": "Vuiet",
+      "tr": "Gürleme"
+    }
+  },
+  {
+    "exact": {
+      "en": "Library",
+      "bg": "Библиотека",
+      "es": "Biblioteca",
+      "el": "Βιβλιοθήκη",
+      "de": "Bibliothek",
+      "ro": "Bibliotecă",
+      "tr": "Kütüphane"
+    },
+    "hint": {
+      "en": "Whisper",
+      "bg": "Шепот",
+      "es": "Susurro",
+      "el": "Ψίθυρος",
+      "de": "Flüstern",
+      "ro": "Șoaptă",
+      "tr": "Fısıltı"
+    }
+  },
+  {
+    "exact": {
+      "en": "Circus",
+      "bg": "Цирк",
+      "es": "Circo",
+      "el": "Τσίρκο",
+      "de": "Zirkus",
+      "ro": "Circ",
+      "tr": "Sirk"
+    },
+    "hint": {
+      "en": "Laughter",
+      "bg": "Смях",
+      "es": "Risa",
+      "el": "Γέλιο",
+      "de": "Lachen",
+      "ro": "Râs",
+      "tr": "Kahkaha"
+    }
+  },
+  {
+    "exact": {
+      "en": "Desert",
+      "bg": "Пустиня",
+      "es": "Desierto",
+      "el": "Έρημος",
+      "de": "Wüste",
+      "ro": "Deșert",
+      "tr": "Çöl"
+    },
+    "hint": {
+      "en": "Mirage",
+      "bg": "Мираж",
+      "es": "Espejismo",
+      "el": "Αντικατοπτρισμός",
+      "de": "Fata Morgana",
+      "ro": "Miraj",
+      "tr": "Serap"
+    }
+  },
+  {
+    "exact": {
+      "en": "Igloo",
+      "bg": "Иглу",
+      "es": "Iglú",
+      "el": "Ιγκλού",
+      "de": "Iglu",
+      "ro": "Iglu",
+      "tr": "İglo"
+    },
+    "hint": {
+      "en": "Warmth",
+      "bg": "Топлина",
+      "es": "Calidez",
+      "el": "Ζεστασιά",
+      "de": "Wärme",
+      "ro": "Căldură",
+      "tr": "Sıcaklık"
+    }
+  },
+  {
+    "exact": {
+      "en": "Kangaroo",
+      "bg": "Кенгуру",
+      "es": "Canguro",
+      "el": "Καγκουρό",
+      "de": "Känguru",
+      "ro": "Cangur",
+      "tr": "Kanguru"
+    },
+    "hint": {
+      "en": "Boxing",
+      "bg": "Бокс",
+      "es": "Boxeo",
+      "el": "Μποξ",
+      "de": "Boxen",
+      "ro": "Box",
+      "tr": "Boks"
+    }
+  },
+  {
+    "exact": {
+      "en": "Lighthouse",
+      "bg": "Фар",
+      "es": "Faro",
+      "el": "Φάρος",
+      "de": "Leuchtturm",
+      "ro": "Far",
+      "tr": "Deniz feneri"
+    },
+    "hint": {
+      "en": "Guidance",
+      "bg": "Ориентир",
+      "es": "Guía",
+      "el": "Καθοδήγηση",
+      "de": "Führung",
+      "ro": "Îndrumare",
+      "tr": "Rehberlik"
+    }
+  },
+  {
+    "exact": {
+      "en": "Mermaid",
+      "bg": "Русалка",
+      "es": "Sirena",
+      "el": "Γοργόνα",
+      "de": "Meerjungfrau",
+      "ro": "Sirenă",
+      "tr": "Deniz kızı"
+    },
+    "hint": {
+      "en": "Song",
+      "bg": "Песен",
+      "es": "Canción",
+      "el": "Τραγούδι",
+      "de": "Lied",
+      "ro": "Cântec",
+      "tr": "Şarkı"
+    }
+  },
+  {
+    "exact": {
+      "en": "Ninja",
+      "bg": "Нинджа",
+      "es": "Ninja",
+      "el": "Νίντζα",
+      "de": "Ninja",
+      "ro": "Ninja",
+      "tr": "Ninja"
+    },
+    "hint": {
+      "en": "Invisible",
+      "bg": "Невидим",
+      "es": "Invisible",
+      "el": "Αόρατος",
+      "de": "Unsichtbar",
+      "ro": "Invizibil",
+      "tr": "Görünmez"
+    }
+  },
+  {
+    "exact": {
+      "en": "Oasis",
+      "bg": "Оазис",
+      "es": "Oasis",
+      "el": "Όαση",
+      "de": "Oase",
+      "ro": "Oază",
+      "tr": "Vaha"
+    },
+    "hint": {
+      "en": "Relief",
+      "bg": "Облекчение",
+      "es": "Alivio",
+      "el": "Δροσιά",
+      "de": "Erleichterung",
+      "ro": "Ușurare",
+      "tr": "Rahatlama"
+    }
+  },
+  {
+    "exact": {
+      "en": "Parachute",
+      "bg": "Парашут",
+      "es": "Paracaídas",
+      "el": "Αλεξίπτωτο",
+      "de": "Fallschirm",
+      "ro": "Parașută",
+      "tr": "Paraşüt"
+    },
+    "hint": {
+      "en": "Trust",
+      "bg": "Доверие",
+      "es": "Confianza",
+      "el": "Εμπιστοσύνη",
+      "de": "Vertrauen",
+      "ro": "Încredere",
+      "tr": "Güven"
+    }
+  },
+  {
+    "exact": {
+      "en": "Queen",
+      "bg": "Кралица",
+      "es": "Reina",
+      "el": "Βασίλισσα",
+      "de": "Königin",
+      "ro": "Regină",
+      "tr": "Kraliçe"
+    },
+    "hint": {
+      "en": "Power",
+      "bg": "Власт",
+      "es": "Poder",
+      "el": "Εξουσία",
+      "de": "Macht",
+      "ro": "Putere",
+      "tr": "Güç"
+    }
+  },
+  {
+    "exact": {
+      "en": "Rocket",
+      "bg": "Ракета",
+      "es": "Cohete",
+      "el": "Πύραυλος",
+      "de": "Rakete",
+      "ro": "Rachetă",
+      "tr": "Roket"
+    },
+    "hint": {
+      "en": "Orbit",
+      "bg": "Орбита",
+      "es": "Órbita",
+      "el": "Τροχιά",
+      "de": "Umlaufbahn",
+      "ro": "Orbită",
+      "tr": "Yörünge"
+    }
+  },
+  {
+    "exact": {
+      "en": "Sunflower",
+      "bg": "Слънчоглед",
+      "es": "Girasol",
+      "el": "Ηλίανθος",
+      "de": "Sonnenblume",
+      "ro": "Floarea-soarelui",
+      "tr": "Ayçiçeği"
+    },
+    "hint": {
+      "en": "Golden",
+      "bg": "Златен",
+      "es": "Dorado",
+      "el": "Χρυσός",
+      "de": "Golden",
+      "ro": "Auriu",
+      "tr": "Altın"
+    }
+  },
+  {
+    "exact": {
+      "en": "Tornado",
+      "bg": "Торнадо",
+      "es": "Tornado",
+      "el": "Ανεμοστρόβιλος",
+      "de": "Tornado",
+      "ro": "Tornadă",
+      "tr": "Kasırga"
+    },
+    "hint": {
+      "en": "Chase",
+      "bg": "Преследване",
+      "es": "Persecución",
+      "el": "Καταδίωξη",
+      "de": "Jagd",
+      "ro": "Urmărire",
+      "tr": "Kovalamaca"
+    }
+  },
+  {
+    "exact": {
+      "en": "Unicorn",
+      "bg": "Еднорог",
+      "es": "Unicornio",
+      "el": "Μονόκερος",
+      "de": "Einhorn",
+      "ro": "Inorog",
+      "tr": "Tek boynuzlu at"
+    },
+    "hint": {
+      "en": "Myth",
+      "bg": "Мит",
+      "es": "Mito",
+      "el": "Μύθος",
+      "de": "Mythos",
+      "ro": "Mit",
+      "tr": "Efsane"
+    }
+  },
+  {
+    "exact": {
+      "en": "Violin",
+      "bg": "Цигулка",
+      "es": "Violín",
+      "el": "Βιολί",
+      "de": "Geige",
+      "ro": "Vioară",
+      "tr": "Keman"
+    },
+    "hint": {
+      "en": "Elegant",
+      "bg": "Елегантност",
+      "es": "Elegancia",
+      "el": "Κομψότητα",
+      "de": "Eleganz",
+      "ro": "Eleganță",
+      "tr": "Zarafet"
+    }
+  },
+  {
+    "exact": {
+      "en": "Wizard",
+      "bg": "Магьосник",
+      "es": "Mago",
+      "el": "Μάγος",
+      "de": "Zauberer",
+      "ro": "Vrăjitor",
+      "tr": "Büyücü"
+    },
+    "hint": {
+      "en": "Wisdom",
+      "bg": "Мъдрост",
+      "es": "Sabiduría",
+      "el": "Σοφία",
+      "de": "Weisheit",
+      "ro": "Înțelepciune",
+      "tr": "Bilgelik"
+    }
+  },
+  {
+    "exact": {
+      "en": "Xylophone",
+      "bg": "Ксилофон",
+      "es": "Xilófono",
+      "el": "Ξυλόφωνο",
+      "de": "Xylophon",
+      "ro": "Xilofon",
+      "tr": "Ksilofon"
+    },
+    "hint": {
+      "en": "Melody",
+      "bg": "Мелодия",
+      "es": "Melodía",
+      "el": "Μελωδία",
+      "de": "Melodie",
+      "ro": "Melodie",
+      "tr": "Melodi"
+    }
+  },
+  {
+    "exact": {
+      "en": "Yacht",
+      "bg": "Яхта",
+      "es": "Yate",
+      "el": "Θαλαμηγός",
+      "de": "Jacht",
+      "ro": "Iaht",
+      "tr": "Yat"
+    },
+    "hint": {
+      "en": "Luxury",
+      "bg": "Лукс",
+      "es": "Lujo",
+      "el": "Πολυτέλεια",
+      "de": "Luxus",
+      "ro": "Lux",
+      "tr": "Lüks"
+    }
+  },
+  {
+    "exact": {
+      "en": "Zebra",
+      "bg": "Зебра",
+      "es": "Cebra",
+      "el": "Ζέβρα",
+      "de": "Zebra",
+      "ro": "Zebră",
+      "tr": "Zebra"
+    },
+    "hint": {
+      "en": "Camouflage",
+      "bg": "Камуфлаж",
+      "es": "Camuflaje",
+      "el": "Καμουφλάζ",
+      "de": "Tarnung",
+      "ro": "Camuflaj",
+      "tr": "Kamuflaj"
+    }
+  },
+  {
+    "exact": {
+      "en": "Chef",
+      "bg": "Готвач",
+      "es": "Chef",
+      "el": "Σεφ",
+      "de": "Koch",
+      "ro": "Bucătar-șef",
+      "tr": "Şef"
+    },
+    "hint": {
+      "en": "Taste",
+      "bg": "Вкус",
+      "es": "Sabor",
+      "el": "Γεύση",
+      "de": "Geschmack",
+      "ro": "Gust",
+      "tr": "Tat"
+    }
+  },
+  {
+    "exact": {
+      "en": "Farmer",
+      "bg": "Фермер",
+      "es": "Granjero",
+      "el": "Αγρότης",
+      "de": "Bauer",
+      "ro": "Fermier",
+      "tr": "Çiftçi"
+    },
+    "hint": {
+      "en": "Harvest",
+      "bg": "Реколта",
+      "es": "Cosecha",
+      "el": "Συγκομιδή",
+      "de": "Ernte",
+      "ro": "Recoltă",
+      "tr": "Hasat"
+    }
+  },
+  {
+    "exact": {
+      "en": "Firefighter",
+      "bg": "Пожарникар",
+      "es": "Bombero",
+      "el": "Πυροσβέστης",
+      "de": "Feuerwehrmann",
+      "ro": "Pompier",
+      "tr": "İtfaiyeci"
+    },
+    "hint": {
+      "en": "Hero",
+      "bg": "Герой",
+      "es": "Héroe",
+      "el": "Ήρωας",
+      "de": "Held",
+      "ro": "Erou",
+      "tr": "Kahraman"
+    }
+  },
+  {
+    "exact": {
+      "en": "Photographer",
+      "bg": "Фотограф",
+      "es": "Fotógrafo",
+      "el": "Φωτογράφος",
+      "de": "Fotograf",
+      "ro": "Fotograf",
+      "tr": "Fotoğrafçı"
+    },
+    "hint": {
+      "en": "Moment",
+      "bg": "Момент",
+      "es": "Momento",
+      "el": "Στιγμή",
+      "de": "Auslöser",
+      "ro": "Moment",
+      "tr": "An"
+    }
+  },
+  {
+    "exact": {
+      "en": "Basketball",
+      "bg": "Баскетбол",
+      "es": "Baloncesto",
+      "el": "Μπάσκετ",
+      "de": "Basketball",
+      "ro": "Baschet",
+      "tr": "Basketbol"
+    },
+    "hint": {
+      "en": "Bounce",
+      "bg": "Отскок",
+      "es": "Rebote",
+      "el": "Αναπήδηση",
+      "de": "Abprall",
+      "ro": "Ricoșeu",
+      "tr": "Sekme"
+    }
+  },
+  {
+    "exact": {
+      "en": "Chess",
+      "bg": "Шах",
+      "es": "Ajedrez",
+      "el": "Σκάκι",
+      "de": "Schach",
+      "ro": "Șah",
+      "tr": "Satranç"
+    },
+    "hint": {
+      "en": "Patience",
+      "bg": "Търпение",
+      "es": "Paciencia",
+      "el": "Υπομονή",
+      "de": "Geduld",
+      "ro": "Răbdare",
+      "tr": "Sabır"
+    }
+  },
+  {
+    "exact": {
+      "en": "Yoga",
+      "bg": "Йога",
+      "es": "Yoga",
+      "el": "Γιόγκα",
+      "de": "Yoga",
+      "ro": "Yoga",
+      "tr": "Yoga"
+    },
+    "hint": {
+      "en": "Balance",
+      "bg": "Баланс",
+      "es": "Equilibrio",
+      "el": "Ισορροπία",
+      "de": "Gleichgewicht",
+      "ro": "Echilibru",
+      "tr": "Denge"
+    }
+  },
+  {
+    "exact": {
+      "en": "Karate",
+      "bg": "Карате",
+      "es": "Kárate",
+      "el": "Καράτε",
+      "de": "Karate",
+      "ro": "Karate",
+      "tr": "Karate"
+    },
+    "hint": {
+      "en": "Discipline",
+      "bg": "Дисциплина",
+      "es": "Disciplina",
+      "el": "Πειθαρχία",
+      "de": "Disziplin",
+      "ro": "Disciplină",
+      "tr": "Disiplin"
+    }
+  },
+  {
+    "exact": {
+      "en": "Bicycle",
+      "bg": "Велосипед",
+      "es": "Bicicleta",
+      "el": "Ποδήλατο",
+      "de": "Fahrrad",
+      "ro": "Bicicletă",
+      "tr": "Bisiklet"
+    },
+    "hint": {
+      "en": "Freedom",
+      "bg": "Свобода",
+      "es": "Libertad",
+      "el": "Ελευθερία",
+      "de": "Freiheit",
+      "ro": "Libertate",
+      "tr": "Özgürlük"
+    }
+  },
+  {
+    "exact": {
+      "en": "Motorcycle",
+      "bg": "Мотоциклет",
+      "es": "Motocicleta",
+      "el": "Μοτοσικλέτα",
+      "de": "Motorrad",
+      "ro": "Motocicletă",
+      "tr": "Motosiklet"
+    },
+    "hint": {
+      "en": "Rebel",
+      "bg": "Бунтар",
+      "es": "Rebelde",
+      "el": "Επαναστάτης",
+      "de": "Rebell",
+      "ro": "Rebel",
+      "tr": "Asi"
+    }
+  },
+  {
+    "exact": {
+      "en": "Submarine",
+      "bg": "Подводница",
+      "es": "Submarino",
+      "el": "Υποβρύχιο",
+      "de": "U-Boot",
+      "ro": "Submarin",
+      "tr": "Denizaltı"
+    },
+    "hint": {
+      "en": "Pressure",
+      "bg": "Налягане",
+      "es": "Presión",
+      "el": "Πίεση",
+      "de": "Druck",
+      "ro": "Presiune",
+      "tr": "Basınç"
+    }
+  },
+  {
+    "exact": {
+      "en": "Telescope",
+      "bg": "Телескоп",
+      "es": "Telescopio",
+      "el": "Τηλεσκόπιο",
+      "de": "Teleskop",
+      "ro": "Telescop",
+      "tr": "Teleskop"
+    },
+    "hint": {
+      "en": "Distance",
+      "bg": "Разстояние",
+      "es": "Distancia",
+      "el": "Απόσταση",
+      "de": "Entfernung",
+      "ro": "Distanță",
+      "tr": "Mesafe"
+    }
+  },
+  {
+    "exact": {
+      "en": "Compass",
+      "bg": "Компас",
+      "es": "Brújula",
+      "el": "Πυξίδα",
+      "de": "Kompass",
+      "ro": "Busolă",
+      "tr": "Pusula"
+    },
+    "hint": {
+      "en": "Direction",
+      "bg": "Посока",
+      "es": "Dirección",
+      "el": "Κατεύθυνση",
+      "de": "Richtung",
+      "ro": "Direcție",
+      "tr": "Yön"
+    }
+  },
+  {
+    "exact": {
+      "en": "Lion",
+      "bg": "Лъв",
+      "es": "León",
+      "el": "Λιοντάρι",
+      "de": "Löwe",
+      "ro": "Leu",
+      "tr": "Aslan"
+    },
+    "hint": {
+      "en": "Courage",
+      "bg": "Смелост",
+      "es": "Valentía",
+      "el": "Θάρρος",
+      "de": "Mut",
+      "ro": "Curaj",
+      "tr": "Cesaret"
+    }
+  },
+  {
+    "exact": {
+      "en": "Tiger",
+      "bg": "Тигър",
+      "es": "Tigre",
+      "el": "Τίγρης",
+      "de": "Tiger",
+      "ro": "Tigru",
+      "tr": "Kaplan"
+    },
+    "hint": {
+      "en": "Danger",
+      "bg": "Опасност",
+      "es": "Peligro",
+      "el": "Κίνδυνος",
+      "de": "Gefahr",
+      "ro": "Pericol",
+      "tr": "Tehlike"
+    }
+  },
+  {
+    "exact": {
+      "en": "Bear",
+      "bg": "Мечка",
+      "es": "Oso",
+      "el": "Αρκούδα",
+      "de": "Bär",
+      "ro": "Urs",
+      "tr": "Ayı"
+    },
+    "hint": {
+      "en": "Hibernation",
+      "bg": "Зимен сън",
+      "es": "Hibernación",
+      "el": "Χειμερία νάρκη",
+      "de": "Winterschlaf",
+      "ro": "Hibernare",
+      "tr": "Kış uykusu"
+    }
+  },
+  {
+    "exact": {
+      "en": "Wolf",
+      "bg": "Вълк",
+      "es": "Lobo",
+      "el": "Λύκος",
+      "de": "Wolf",
+      "ro": "Lup",
+      "tr": "Kurt"
+    },
+    "hint": {
+      "en": "Loneliness",
+      "bg": "Самота",
+      "es": "Soledad",
+      "el": "Μοναξιά",
+      "de": "Einsamkeit",
+      "ro": "Singurătate",
+      "tr": "Yalnızlık"
+    }
+  },
+  {
+    "exact": {
+      "en": "Fox",
+      "bg": "Лисица",
+      "es": "Zorro",
+      "el": "Αλεπού",
+      "de": "Fuchs",
+      "ro": "Vulpe",
+      "tr": "Tilki"
+    },
+    "hint": {
+      "en": "Cunning",
+      "bg": "Хитрост",
+      "es": "Astucia",
+      "el": "Πονηριά",
+      "de": "List",
+      "ro": "Viclenie",
+      "tr": "Kurnazlık"
+    }
+  },
+  {
+    "exact": {
+      "en": "Rabbit",
+      "bg": "Заек",
+      "es": "Conejo",
+      "el": "Κουνέλι",
+      "de": "Hase",
+      "ro": "Iepure",
+      "tr": "Tavşan"
+    },
+    "hint": {
+      "en": "Speed",
+      "bg": "Скорост",
+      "es": "Velocidad",
+      "el": "Ταχύτητα",
+      "de": "Geschwindigkeit",
+      "ro": "Viteză",
+      "tr": "Hız"
+    }
+  },
+  {
+    "exact": {
+      "en": "Deer",
+      "bg": "Елен",
+      "es": "Ciervo",
+      "el": "Ελάφι",
+      "de": "Hirsch",
+      "ro": "Cerb",
+      "tr": "Geyik"
+    },
+    "hint": {
+      "en": "Grace",
+      "bg": "Грациозност",
+      "es": "Gracia",
+      "el": "Χάρη",
+      "de": "Anmut",
+      "ro": "Grație",
+      "tr": "Zarafet"
+    }
+  },
+  {
+    "exact": {
+      "en": "Horse",
+      "bg": "Кон",
+      "es": "Caballo",
+      "el": "Άλογο",
+      "de": "Pferd",
+      "ro": "Cal",
+      "tr": "At"
+    },
+    "hint": {
+      "en": "Loyalty",
+      "bg": "Лоялност",
+      "es": "Lealtad",
+      "el": "Αφοσίωση",
+      "de": "Treue",
+      "ro": "Loialitate",
+      "tr": "Sadakat"
+    }
+  },
+  {
+    "exact": {
+      "en": "Cow",
+      "bg": "Крава",
+      "es": "Vaca",
+      "el": "Αγελάδα",
+      "de": "Kuh",
+      "ro": "Vacă",
+      "tr": "İnek"
+    },
+    "hint": {
+      "en": "Calm",
+      "bg": "Спокойствие",
+      "es": "Calma",
+      "el": "Ηρεμία",
+      "de": "Gelassenheit",
+      "ro": "Calm",
+      "tr": "Sakinlik"
+    }
+  },
+  {
+    "exact": {
+      "en": "Pig",
+      "bg": "Прасе",
+      "es": "Cerdo",
+      "el": "Γουρούνι",
+      "de": "Schwein",
+      "ro": "Porc",
+      "tr": "Domuz"
+    },
+    "hint": {
+      "en": "Greed",
+      "bg": "Алчност",
+      "es": "Codicia",
+      "el": "Απληστία",
+      "de": "Gier",
+      "ro": "Lăcomie",
+      "tr": "Açgözlülük"
+    }
+  },
+  {
+    "exact": {
+      "en": "Sheep",
+      "bg": "Овца",
+      "es": "Oveja",
+      "el": "Πρόβατο",
+      "de": "Schaf",
+      "ro": "Oaie",
+      "tr": "Koyun"
+    },
+    "hint": {
+      "en": "Obedience",
+      "bg": "Послушание",
+      "es": "Obediencia",
+      "el": "Υπακοή",
+      "de": "Gehorsam",
+      "ro": "Supunere",
+      "tr": "İtaat"
+    }
+  },
+  {
+    "exact": {
+      "en": "Goat",
+      "bg": "Коза",
+      "es": "Cabra",
+      "el": "Κατσίκα",
+      "de": "Ziege",
+      "ro": "Capră",
+      "tr": "Keçi"
+    },
+    "hint": {
+      "en": "Stubbornness",
+      "bg": "Инат",
+      "es": "Terquedad",
+      "el": "Πείσμα",
+      "de": "Sturheit",
+      "ro": "Încăpățânare",
+      "tr": "İnatçılık"
+    }
+  },
+  {
+    "exact": {
+      "en": "Chicken",
+      "bg": "Пиле",
+      "es": "Pollo",
+      "el": "Κότα",
+      "de": "Huhn",
+      "ro": "Pui",
+      "tr": "Tavuk"
+    },
+    "hint": {
+      "en": "Cowardice",
+      "bg": "Страхливост",
+      "es": "Cobardía",
+      "el": "Δειλία",
+      "de": "Feigheit",
+      "ro": "Lașitate",
+      "tr": "Korkaklık"
+    }
+  },
+  {
+    "exact": {
+      "en": "Duck",
+      "bg": "Патица",
+      "es": "Pato",
+      "el": "Πάπια",
+      "de": "Ente",
+      "ro": "Rață",
+      "tr": "Ördek"
+    },
+    "hint": {
+      "en": "Clumsy",
+      "bg": "Тромавост",
+      "es": "Torpeza",
+      "el": "Αδεξιότητα",
+      "de": "Ungeschicklichkeit",
+      "ro": "Stângăcie",
+      "tr": "Beceriksizlik"
+    }
+  },
+  {
+    "exact": {
+      "en": "Owl",
+      "bg": "Бухал",
+      "es": "Búho",
+      "el": "Κουκουβάγια",
+      "de": "Eule",
+      "ro": "Bufniță",
+      "tr": "Baykuş"
+    },
+    "hint": {
+      "en": "Night",
+      "bg": "Нощ",
+      "es": "Noche",
+      "el": "Νύχτα",
+      "de": "Nacht",
+      "ro": "Noapte",
+      "tr": "Gece"
+    }
+  },
+  {
+    "exact": {
+      "en": "Eagle",
+      "bg": "Орел",
+      "es": "Águila",
+      "el": "Αετός",
+      "de": "Adler",
+      "ro": "Vultur",
+      "tr": "Kartal"
+    },
+    "hint": {
+      "en": "Vision",
+      "bg": "Зрение",
+      "es": "Visión",
+      "el": "Όραση",
+      "de": "Sehkraft",
+      "ro": "Vedere",
+      "tr": "Görüş"
+    }
+  },
+  {
+    "exact": {
+      "en": "Penguin",
+      "bg": "Пингвин",
+      "es": "Pingüino",
+      "el": "Πιγκουίνος",
+      "de": "Pinguin",
+      "ro": "Pinguin",
+      "tr": "Penguen"
+    },
+    "hint": {
+      "en": "Tuxedo",
+      "bg": "Смокинг",
+      "es": "Esmoquin",
+      "el": "Σμόκιν",
+      "de": "Smoking",
+      "ro": "Smoching",
+      "tr": "Smokin"
+    }
+  },
+  {
+    "exact": {
+      "en": "Dolphin",
+      "bg": "Делфин",
+      "es": "Delfín",
+      "el": "Δελφίνι",
+      "de": "Delfin",
+      "ro": "Delfin",
+      "tr": "Yunus"
+    },
+    "hint": {
+      "en": "Intelligence",
+      "bg": "Интелигентност",
+      "es": "Inteligencia",
+      "el": "Ευφυΐα",
+      "de": "Intelligenz",
+      "ro": "Inteligență",
+      "tr": "Zeka"
+    }
+  },
+  {
+    "exact": {
+      "en": "Whale",
+      "bg": "Кит",
+      "es": "Ballena",
+      "el": "Φάλαινα",
+      "de": "Wal",
+      "ro": "Balenă",
+      "tr": "Balina"
+    },
+    "hint": {
+      "en": "Migration",
+      "bg": "Миграция",
+      "es": "Migración",
+      "el": "Μετανάστευση",
+      "de": "Wanderung",
+      "ro": "Migrație",
+      "tr": "Göç"
+    }
+  },
+  {
+    "exact": {
+      "en": "Shark",
+      "bg": "Акула",
+      "es": "Tiburón",
+      "el": "Καρχαρίας",
+      "de": "Hai",
+      "ro": "Rechin",
+      "tr": "Köpekbalığı"
+    },
+    "hint": {
+      "en": "Fear",
+      "bg": "Страх",
+      "es": "Miedo",
+      "el": "Φόβος",
+      "de": "Angst",
+      "ro": "Frică",
+      "tr": "Korku"
+    }
+  },
+  {
+    "exact": {
+      "en": "Octopus",
+      "bg": "Октопод",
+      "es": "Pulpo",
+      "el": "Χταπόδι",
+      "de": "Oktopus",
+      "ro": "Caracatiță",
+      "tr": "Ahtapot"
+    },
+    "hint": {
+      "en": "Escape",
+      "bg": "Бягство",
+      "es": "Escape",
+      "el": "Διαφυγή",
+      "de": "Flucht",
+      "ro": "Evadare",
+      "tr": "Kaçış"
+    }
+  },
+  {
+    "exact": {
+      "en": "Crab",
+      "bg": "Рак",
+      "es": "Cangrejo",
+      "el": "Κάβουρας",
+      "de": "Krabbe",
+      "ro": "Crab",
+      "tr": "Yengeç"
+    },
+    "hint": {
+      "en": "Grumpy",
+      "bg": "Сърдит",
+      "es": "Gruñón",
+      "el": "Γκρινιάρης",
+      "de": "Grantig",
+      "ro": "Ursuz",
+      "tr": "Huysuz"
+    }
+  },
+  {
+    "exact": {
+      "en": "Turtle",
+      "bg": "Костенурка",
+      "es": "Tortuga",
+      "el": "Χελώνα",
+      "de": "Schildkröte",
+      "ro": "Țestoasă",
+      "tr": "Kaplumbağa"
+    },
+    "hint": {
+      "en": "Longevity",
+      "bg": "Дълголетие",
+      "es": "Longevidad",
+      "el": "Μακροζωία",
+      "de": "Langlebigkeit",
+      "ro": "Longevitate",
+      "tr": "Uzun ömür"
+    }
+  },
+  {
+    "exact": {
+      "en": "Snake",
+      "bg": "Змия",
+      "es": "Serpiente",
+      "el": "Φίδι",
+      "de": "Schlange",
+      "ro": "Șarpe",
+      "tr": "Yılan"
+    },
+    "hint": {
+      "en": "Temptation",
+      "bg": "Изкушение",
+      "es": "Tentación",
+      "el": "Πειρασμός",
+      "de": "Versuchung",
+      "ro": "Ispită",
+      "tr": "Baştan çıkarma"
+    }
+  },
+  {
+    "exact": {
+      "en": "Frog",
+      "bg": "Жаба",
+      "es": "Rana",
+      "el": "Βάτραχος",
+      "de": "Frosch",
+      "ro": "Broască",
+      "tr": "Kurbağa"
+    },
+    "hint": {
+      "en": "Transformation",
+      "bg": "Преображение",
+      "es": "Transformación",
+      "el": "Μεταμόρφωση",
+      "de": "Verwandlung",
+      "ro": "Transformare",
+      "tr": "Dönüşüm"
+    }
+  },
+  {
+    "exact": {
+      "en": "Butterfly",
+      "bg": "Пеперуда",
+      "es": "Mariposa",
+      "el": "Πεταλούδα",
+      "de": "Schmetterling",
+      "ro": "Fluture",
+      "tr": "Kelebek"
+    },
+    "hint": {
+      "en": "Fragile",
+      "bg": "Крехкост",
+      "es": "Fragilidad",
+      "el": "Ευθραυστότητα",
+      "de": "Zerbrechlichkeit",
+      "ro": "Fragilitate",
+      "tr": "Kırılganlık"
+    }
+  },
+  {
+    "exact": {
+      "en": "Bee",
+      "bg": "Пчела",
+      "es": "Abeja",
+      "el": "Μέλισσα",
+      "de": "Biene",
+      "ro": "Albină",
+      "tr": "Arı"
+    },
+    "hint": {
+      "en": "Teamwork",
+      "bg": "Труд",
+      "es": "Trabajo en equipo",
+      "el": "Ομαδικότητα",
+      "de": "Teamarbeit",
+      "ro": "Muncă în echipă",
+      "tr": "Takım çalışması"
+    }
+  },
+  {
+    "exact": {
+      "en": "Spider",
+      "bg": "Паяк",
+      "es": "Araña",
+      "el": "Αράχνη",
+      "de": "Spinne",
+      "ro": "Păianjen",
+      "tr": "Örümcek"
+    },
+    "hint": {
+      "en": "Trap",
+      "bg": "Капан",
+      "es": "Trampa",
+      "el": "Παγίδα",
+      "de": "Falle",
+      "ro": "Capcană",
+      "tr": "Tuzak"
+    }
+  },
+  {
+    "exact": {
+      "en": "Ant",
+      "bg": "Мравка",
+      "es": "Hormiga",
+      "el": "Μυρμήγκι",
+      "de": "Ameise",
+      "ro": "Furnică",
+      "tr": "Karınca"
+    },
+    "hint": {
+      "en": "Strength",
+      "bg": "Сила",
+      "es": "Fuerza",
+      "el": "Δύναμη",
+      "de": "Kraft",
+      "ro": "Putere",
+      "tr": "Güç"
+    }
+  },
+  {
+    "exact": {
+      "en": "Snail",
+      "bg": "Охлюв",
+      "es": "Caracol",
+      "el": "Σαλιγκάρι",
+      "de": "Schnecke",
+      "ro": "Melc",
+      "tr": "Salyangoz"
+    },
+    "hint": {
+      "en": "Slowness",
+      "bg": "Бавност",
+      "es": "Lentitud",
+      "el": "Βραδύτητα",
+      "de": "Langsamkeit",
+      "ro": "Încetineală",
+      "tr": "Yavaşlık"
+    }
+  },
+  {
+    "exact": {
+      "en": "Coffee",
+      "bg": "Кафе",
+      "es": "Café",
+      "el": "Καφές",
+      "de": "Kaffee",
+      "ro": "Cafea",
+      "tr": "Kahve"
+    },
+    "hint": {
+      "en": "Energy",
+      "bg": "Енергия",
+      "es": "Energía",
+      "el": "Ενέργεια",
+      "de": "Energie",
+      "ro": "Energie",
+      "tr": "Enerji"
+    }
+  },
+  {
+    "exact": {
+      "en": "Tea",
+      "bg": "Чай",
+      "es": "Té",
+      "el": "Τσάι",
+      "de": "Tee",
+      "ro": "Ceai",
+      "tr": "Çay"
+    },
+    "hint": {
+      "en": "Comfort",
+      "bg": "Уют",
+      "es": "Consuelo",
+      "el": "Άνεση",
+      "de": "Behaglichkeit",
+      "ro": "Confort",
+      "tr": "Rahatlık"
+    }
+  },
+  {
+    "exact": {
+      "en": "Bread",
+      "bg": "Хляб",
+      "es": "Pan",
+      "el": "Ψωμί",
+      "de": "Brot",
+      "ro": "Pâine",
+      "tr": "Ekmek"
+    },
+    "hint": {
+      "en": "Tradition",
+      "bg": "Традиция",
+      "es": "Tradición",
+      "el": "Παράδοση",
+      "de": "Tradition",
+      "ro": "Tradiție",
+      "tr": "Gelenek"
+    }
+  },
+  {
+    "exact": {
+      "en": "Cheese",
+      "bg": "Сирене",
+      "es": "Queso",
+      "el": "Τυρί",
+      "de": "Käse",
+      "ro": "Brânză",
+      "tr": "Peynir"
+    },
+    "hint": {
+      "en": "Smile",
+      "bg": "Усмивка",
+      "es": "Sonrisa",
+      "el": "Χαμόγελο",
+      "de": "Lächeln",
+      "ro": "Zâmbet",
+      "tr": "Gülümseme"
+    }
+  },
+  {
+    "exact": {
+      "en": "Chocolate",
+      "bg": "Шоколад",
+      "es": "Chocolate",
+      "el": "Σοκολάτα",
+      "de": "Schokolade",
+      "ro": "Ciocolată",
+      "tr": "Çikolata"
+    },
+    "hint": {
+      "en": "Guilt",
+      "bg": "Вина",
+      "es": "Culpa",
+      "el": "Ενοχή",
+      "de": "Schuldgefühl",
+      "ro": "Vinovăție",
+      "tr": "Suçluluk"
+    }
+  },
+  {
+    "exact": {
+      "en": "Ice Cream",
+      "bg": "Сладолед",
+      "es": "Helado",
+      "el": "Παγωτό",
+      "de": "Speiseeis",
+      "ro": "Înghețată",
+      "tr": "Dondurma"
+    },
+    "hint": {
+      "en": "Summer",
+      "bg": "Лято",
+      "es": "Verano",
+      "el": "Καλοκαίρι",
+      "de": "Sommer",
+      "ro": "Vară",
+      "tr": "Yaz"
+    }
+  },
+  {
+    "exact": {
+      "en": "Honey",
+      "bg": "Мед",
+      "es": "Miel",
+      "el": "Μέλι",
+      "de": "Honig",
+      "ro": "Miere",
+      "tr": "Bal"
+    },
+    "hint": {
+      "en": "Sweetness",
+      "bg": "Сладост",
+      "es": "Dulzura",
+      "el": "Γλύκα",
+      "de": "Süße",
+      "ro": "Dulceață",
+      "tr": "Tatlılık"
+    }
+  },
+  {
+    "exact": {
+      "en": "Soup",
+      "bg": "Супа",
+      "es": "Sopa",
+      "el": "Σούπα",
+      "de": "Suppe",
+      "ro": "Supă",
+      "tr": "Çorba"
+    },
+    "hint": {
+      "en": "Healing",
+      "bg": "Изцеление",
+      "es": "Sanación",
+      "el": "Θεραπεία",
+      "de": "Heilung",
+      "ro": "Vindecare",
+      "tr": "Şifa"
+    }
+  },
+  {
+    "exact": {
+      "en": "Salad",
+      "bg": "Салата",
+      "es": "Ensalada",
+      "el": "Σαλάτα",
+      "de": "Salat",
+      "ro": "Salată",
+      "tr": "Salata"
+    },
+    "hint": {
+      "en": "Health",
+      "bg": "Здраве",
+      "es": "Salud",
+      "el": "Υγεία",
+      "de": "Gesundheit",
+      "ro": "Sănătate",
+      "tr": "Sağlık"
+    }
+  },
+  {
+    "exact": {
+      "en": "Sandwich",
+      "bg": "Сандвич",
+      "es": "Sándwich",
+      "el": "Σάντουιτς",
+      "de": "Sandwich",
+      "ro": "Sandviș",
+      "tr": "Sandviç"
+    },
+    "hint": {
+      "en": "Convenience",
+      "bg": "Удобство",
+      "es": "Comodidad",
+      "el": "Ευκολία",
+      "de": "Bequemlichkeit",
+      "ro": "Comoditate",
+      "tr": "Kolaylık"
+    }
+  },
+  {
+    "exact": {
+      "en": "Pasta",
+      "bg": "Паста",
+      "es": "Pasta",
+      "el": "Ζυμαρικά",
+      "de": "Pasta",
+      "ro": "Paste",
+      "tr": "Makarna"
+    },
+    "hint": {
+      "en": "Italy",
+      "bg": "Италия",
+      "es": "Italia",
+      "el": "Ιταλία",
+      "de": "Italien",
+      "ro": "Italia",
+      "tr": "İtalya"
+    }
+  },
+  {
+    "exact": {
+      "en": "Rice",
+      "bg": "Ориз",
+      "es": "Arroz",
+      "el": "Ρύζι",
+      "de": "Reis",
+      "ro": "Orez",
+      "tr": "Pirinç"
+    },
+    "hint": {
+      "en": "Abundance",
+      "bg": "Изобилие",
+      "es": "Abundancia",
+      "el": "Αφθονία",
+      "de": "Überfluss",
+      "ro": "Abundență",
+      "tr": "Bolluk"
+    }
+  },
+  {
+    "exact": {
+      "en": "Egg",
+      "bg": "Яйце",
+      "es": "Huevo",
+      "el": "Αυγό",
+      "de": "Ei",
+      "ro": "Ou",
+      "tr": "Yumurta"
+    },
+    "hint": {
+      "en": "Beginning",
+      "bg": "Начало",
+      "es": "Comienzo",
+      "el": "Αρχή",
+      "de": "Anfang",
+      "ro": "Început",
+      "tr": "Başlangıç"
+    }
+  },
+  {
+    "exact": {
+      "en": "Milk",
+      "bg": "Мляко",
+      "es": "Leche",
+      "el": "Γάλα",
+      "de": "Milch",
+      "ro": "Lapte",
+      "tr": "Süt"
+    },
+    "hint": {
+      "en": "Childhood",
+      "bg": "Детство",
+      "es": "Infancia",
+      "el": "Παιδική ηλικία",
+      "de": "Kindheit",
+      "ro": "Copilărie",
+      "tr": "Çocukluk"
+    }
+  },
+  {
+    "exact": {
+      "en": "Wine",
+      "bg": "Вино",
+      "es": "Vino",
+      "el": "Κρασί",
+      "de": "Wein",
+      "ro": "Vin",
+      "tr": "Şarap"
+    },
+    "hint": {
+      "en": "Celebration",
+      "bg": "Празненство",
+      "es": "Celebración",
+      "el": "Γιορτή",
+      "de": "Feier",
+      "ro": "Sărbătoare",
+      "tr": "Kutlama"
+    }
+  },
+  {
+    "exact": {
+      "en": "Beer",
+      "bg": "Бира",
+      "es": "Cerveza",
+      "el": "Μπύρα",
+      "de": "Bier",
+      "ro": "Bere",
+      "tr": "Bira"
+    },
+    "hint": {
+      "en": "Friendship",
+      "bg": "Приятелство",
+      "es": "Amistad",
+      "el": "Φιλία",
+      "de": "Freundschaft",
+      "ro": "Prietenie",
+      "tr": "Arkadaşlık"
+    }
+  },
+  {
+    "exact": {
+      "en": "Juice",
+      "bg": "Сок",
+      "es": "Jugo",
+      "el": "Χυμός",
+      "de": "Saft",
+      "ro": "Suc",
+      "tr": "Meyve suyu"
+    },
+    "hint": {
+      "en": "Freshness",
+      "bg": "Свежест",
+      "es": "Frescura",
+      "el": "Φρεσκάδα",
+      "de": "Frische",
+      "ro": "Prospețime",
+      "tr": "Tazelik"
+    }
+  },
+  {
+    "exact": {
+      "en": "Cake",
+      "bg": "Торта",
+      "es": "Pastel",
+      "el": "Τούρτα",
+      "de": "Kuchen",
+      "ro": "Tort",
+      "tr": "Pasta"
+    },
+    "hint": {
+      "en": "Birthday",
+      "bg": "Рожден ден",
+      "es": "Cumpleaños",
+      "el": "Γενέθλια",
+      "de": "Geburtstag",
+      "ro": "Zi de naștere",
+      "tr": "Doğum günü"
+    }
+  },
+  {
+    "exact": {
+      "en": "Cookie",
+      "bg": "Бисквита",
+      "es": "Galleta",
+      "el": "Μπισκότο",
+      "de": "Keks",
+      "ro": "Fursec",
+      "tr": "Kurabiye"
+    },
+    "hint": {
+      "en": "Reward",
+      "bg": "Награда",
+      "es": "Recompensa",
+      "el": "Ανταμοιβή",
+      "de": "Belohnung",
+      "ro": "Răsplată",
+      "tr": "Ödül"
+    }
+  },
+  {
+    "exact": {
+      "en": "Popcorn",
+      "bg": "Пуканки",
+      "es": "Palomitas",
+      "el": "Ποπ κορν",
+      "de": "Popcorn",
+      "ro": "Popcorn",
+      "tr": "Patlamış mısır"
+    },
+    "hint": {
+      "en": "Crunch",
+      "bg": "Хрупкавост",
+      "es": "Crujido",
+      "el": "Τραγανό",
+      "de": "Knuspern",
+      "ro": "Trosnet",
+      "tr": "Çıtırtı"
+    }
+  },
+  {
+    "exact": {
+      "en": "Sushi",
+      "bg": "Суши",
+      "es": "Sushi",
+      "el": "Σούσι",
+      "de": "Sushi",
+      "ro": "Sushi",
+      "tr": "Suşi"
+    },
+    "hint": {
+      "en": "Precision",
+      "bg": "Прецизност",
+      "es": "Precisión",
+      "el": "Ακρίβεια",
+      "de": "Präzision",
+      "ro": "Precizie",
+      "tr": "Hassasiyet"
+    }
+  },
+  {
+    "exact": {
+      "en": "Burger",
+      "bg": "Бургер",
+      "es": "Hamburguesa",
+      "el": "Μπέργκερ",
+      "de": "Burger",
+      "ro": "Burger",
+      "tr": "Burger"
+    },
+    "hint": {
+      "en": "Indulgence",
+      "bg": "Разглезване",
+      "es": "Indulgencia",
+      "el": "Απόλαυση",
+      "de": "Genuss",
+      "ro": "Răsfăț",
+      "tr": "Keyif"
+    }
+  },
+  {
+    "exact": {
+      "en": "Fries",
+      "bg": "Пържени картофи",
+      "es": "Papas fritas",
+      "el": "Πατάτες τηγανιτές",
+      "de": "Pommes",
+      "ro": "Cartofi prăjiți",
+      "tr": "Patates kızartması"
+    },
+    "hint": {
+      "en": "Crispy",
+      "bg": "Хрупкав",
+      "es": "Crujiente",
+      "el": "Τραγανό",
+      "de": "Knusprigkeit",
+      "ro": "Crocant",
+      "tr": "Çıtır"
+    }
+  },
+  {
+    "exact": {
+      "en": "Pancake",
+      "bg": "Палачинка",
+      "es": "Panqueque",
+      "el": "Τηγανίτα",
+      "de": "Pfannkuchen",
+      "ro": "Clătită",
+      "tr": "Krep"
+    },
+    "hint": {
+      "en": "Morning",
+      "bg": "Сутрин",
+      "es": "Mañana",
+      "el": "Πρωί",
+      "de": "Morgen",
+      "ro": "Dimineață",
+      "tr": "Sabah"
+    }
+  },
+  {
+    "exact": {
+      "en": "Salt",
+      "bg": "Сол",
+      "es": "Sal",
+      "el": "Αλάτι",
+      "de": "Salz",
+      "ro": "Sare",
+      "tr": "Tuz"
+    },
+    "hint": {
+      "en": "Preservation",
+      "bg": "Консервиране",
+      "es": "Conservación",
+      "el": "Συντήρηση",
+      "de": "Konservierung",
+      "ro": "Conservare",
+      "tr": "Koruma"
+    }
+  },
+  {
+    "exact": {
+      "en": "Sugar",
+      "bg": "Захар",
+      "es": "Azúcar",
+      "el": "Ζάχαρη",
+      "de": "Zucker",
+      "ro": "Zahăr",
+      "tr": "Şeker"
+    },
+    "hint": {
+      "en": "Addiction",
+      "bg": "Пристрастяване",
+      "es": "Adicción",
+      "el": "Εθισμός",
+      "de": "Sucht",
+      "ro": "Dependență",
+      "tr": "Bağımlılık"
+    }
+  },
+  {
+    "exact": {
+      "en": "Pepper",
+      "bg": "Пипер",
+      "es": "Pimienta",
+      "el": "Πιπέρι",
+      "de": "Pfeffer",
+      "ro": "Piper",
+      "tr": "Biber"
+    },
+    "hint": {
+      "en": "Sneeze",
+      "bg": "Кихане",
+      "es": "Estornudo",
+      "el": "Φτέρνισμα",
+      "de": "Niesen",
+      "ro": "Strănut",
+      "tr": "Hapşırık"
+    }
+  },
+  {
+    "exact": {
+      "en": "Butter",
+      "bg": "Масло",
+      "es": "Mantequilla",
+      "el": "Βούτυρο",
+      "de": "Butter",
+      "ro": "Unt",
+      "tr": "Tereyağı"
+    },
+    "hint": {
+      "en": "Smoothness",
+      "bg": "Гладкост",
+      "es": "Suavidad",
+      "el": "Απαλότητα",
+      "de": "Geschmeidigkeit",
+      "ro": "Netezime",
+      "tr": "Yumuşaklık"
+    }
+  },
+  {
+    "exact": {
+      "en": "Yogurt",
+      "bg": "Кисело мляко",
+      "es": "Yogur",
+      "el": "Γιαούρτι",
+      "de": "Joghurt",
+      "ro": "Iaurt",
+      "tr": "Yoğurt"
+    },
+    "hint": {
+      "en": "Culture",
+      "bg": "Култура",
+      "es": "Cultura",
+      "el": "Καλλιέργεια",
+      "de": "Kultur",
+      "ro": "Cultură",
+      "tr": "Kültür"
+    }
+  },
+  {
+    "exact": {
+      "en": "Watermelon",
+      "bg": "Диня",
+      "es": "Sandía",
+      "el": "Καρπούζι",
+      "de": "Wassermelone",
+      "ro": "Pepene verde",
+      "tr": "Karpuz"
+    },
+    "hint": {
+      "en": "Refreshment",
+      "bg": "Освежаване",
+      "es": "Frescor",
+      "el": "Δροσιά",
+      "de": "Erfrischung",
+      "ro": "Răcoare",
+      "tr": "Ferahlık"
+    }
+  },
+  {
+    "exact": {
+      "en": "Key",
+      "bg": "Ключ",
+      "es": "Llave",
+      "el": "Κλειδί",
+      "de": "Schlüssel",
+      "ro": "Cheie",
+      "tr": "Anahtar"
+    },
+    "hint": {
+      "en": "Secret",
+      "bg": "Тайна",
+      "es": "Secreto",
+      "el": "Μυστικό",
+      "de": "Geheimnis",
+      "ro": "Secret",
+      "tr": "Sır"
+    }
+  },
+  {
+    "exact": {
+      "en": "Lock",
+      "bg": "Ключалка",
+      "es": "Cerradura",
+      "el": "Κλειδαριά",
+      "de": "Vorhängeschloss",
+      "ro": "Lacăt",
+      "tr": "Kilit"
+    },
+    "hint": {
+      "en": "Security",
+      "bg": "Сигурност",
+      "es": "Seguridad",
+      "el": "Ασφάλεια",
+      "de": "Sicherheit",
+      "ro": "Securitate",
+      "tr": "Güvenlik"
+    }
+  },
+  {
+    "exact": {
+      "en": "Candle",
+      "bg": "Свещ",
+      "es": "Vela",
+      "el": "Κερί",
+      "de": "Kerze",
+      "ro": "Lumânare",
+      "tr": "Mum"
+    },
+    "hint": {
+      "en": "Romance",
+      "bg": "Романтика",
+      "es": "Romance",
+      "el": "Ρομαντισμός",
+      "de": "Romantik",
+      "ro": "Romantism",
+      "tr": "Romantizm"
+    }
+  },
+  {
+    "exact": {
+      "en": "Clock",
+      "bg": "Часовник",
+      "es": "Reloj",
+      "el": "Ρολόι",
+      "de": "Uhr",
+      "ro": "Ceas",
+      "tr": "Saat"
+    },
+    "hint": {
+      "en": "Deadline",
+      "bg": "Краен срок",
+      "es": "Plazo",
+      "el": "Προθεσμία",
+      "de": "Frist",
+      "ro": "Termen limită",
+      "tr": "Son tarih"
+    }
+  },
+  {
+    "exact": {
+      "en": "Lamp",
+      "bg": "Лампа",
+      "es": "Lámpara",
+      "el": "Λάμπα",
+      "de": "Lampe",
+      "ro": "Lampă",
+      "tr": "Lamba"
+    },
+    "hint": {
+      "en": "Cozy",
+      "bg": "Уют",
+      "es": "Hogar",
+      "el": "Άνεση",
+      "de": "Gemütlichkeit",
+      "ro": "Confort",
+      "tr": "Huzur"
+    }
+  },
+  {
+    "exact": {
+      "en": "Pillow",
+      "bg": "Възглавница",
+      "es": "Almohada",
+      "el": "Μαξιλάρι",
+      "de": "Kissen",
+      "ro": "Pernă",
+      "tr": "Yastık"
+    },
+    "hint": {
+      "en": "Dream",
+      "bg": "Мечта",
+      "es": "Sueño",
+      "el": "Όνειρο",
+      "de": "Traum",
+      "ro": "Vis",
+      "tr": "Rüya"
+    }
+  },
+  {
+    "exact": {
+      "en": "Blanket",
+      "bg": "Одеяло",
+      "es": "Manta",
+      "el": "Κουβέρτα",
+      "de": "Decke",
+      "ro": "Pătură",
+      "tr": "Battaniye"
+    },
+    "hint": {
+      "en": "Snuggle",
+      "bg": "Гушкане",
+      "es": "Mimo",
+      "el": "Αγκαλιά",
+      "de": "Kuscheln",
+      "ro": "Îmbrățișare",
+      "tr": "Sarılma"
+    }
+  },
+  {
+    "exact": {
+      "en": "Mattress",
+      "bg": "Матрак",
+      "es": "Colchón",
+      "el": "Στρώμα",
+      "de": "Matratze",
+      "ro": "Saltea",
+      "tr": "Yatak"
+    },
+    "hint": {
+      "en": "Rest",
+      "bg": "Почивка",
+      "es": "Descanso",
+      "el": "Ξεκούραση",
+      "de": "Ruhe",
+      "ro": "Odihnă",
+      "tr": "Dinlenme"
+    }
+  },
+  {
+    "exact": {
+      "en": "Chair",
+      "bg": "Стол",
+      "es": "Silla",
+      "el": "Καρέκλα",
+      "de": "Stuhl",
+      "ro": "Scaun",
+      "tr": "Sandalye"
+    },
+    "hint": {
+      "en": "Support",
+      "bg": "Опора",
+      "es": "Apoyo",
+      "el": "Στήριξη",
+      "de": "Halt",
+      "ro": "Sprijin",
+      "tr": "Destek"
+    }
+  },
+  {
+    "exact": {
+      "en": "Table",
+      "bg": "Маса",
+      "es": "Mesa",
+      "el": "Τραπέζι",
+      "de": "Tisch",
+      "ro": "Masă",
+      "tr": "Masa"
+    },
+    "hint": {
+      "en": "Gathering",
+      "bg": "Събиране",
+      "es": "Reunión",
+      "el": "Συγκέντρωση",
+      "de": "Versammlung",
+      "ro": "Adunare",
+      "tr": "Toplanma"
+    }
+  },
+  {
+    "exact": {
+      "en": "Window",
+      "bg": "Прозорец",
+      "es": "Ventana",
+      "el": "Παράθυρο",
+      "de": "Fenster",
+      "ro": "Fereastră",
+      "tr": "Pencere"
+    },
+    "hint": {
+      "en": "Perspective",
+      "bg": "Перспектива",
+      "es": "Perspectiva",
+      "el": "Οπτική γωνία",
+      "de": "Perspektive",
+      "ro": "Perspectivă",
+      "tr": "Bakış açısı"
+    }
+  },
+  {
+    "exact": {
+      "en": "Door",
+      "bg": "Врата",
+      "es": "Puerta",
+      "el": "Πόρτα",
+      "de": "Tür",
+      "ro": "Ușă",
+      "tr": "Kapı"
+    },
+    "hint": {
+      "en": "Opportunity",
+      "bg": "Възможност",
+      "es": "Oportunidad",
+      "el": "Ευκαιρία",
+      "de": "Gelegenheit",
+      "ro": "Oportunitate",
+      "tr": "Fırsat"
+    }
+  },
+  {
+    "exact": {
+      "en": "Comb",
+      "bg": "Гребен",
+      "es": "Peine",
+      "el": "Χτένα",
+      "de": "Kamm",
+      "ro": "Pieptene",
+      "tr": "Tarak"
+    },
+    "hint": {
+      "en": "Neatness",
+      "bg": "Спретнатост",
+      "es": "Pulcritud",
+      "el": "Τακτοποίηση",
+      "de": "Ordentlichkeit",
+      "ro": "Ordine",
+      "tr": "Düzen"
+    }
+  },
+  {
+    "exact": {
+      "en": "Wallet",
+      "bg": "Портфейл",
+      "es": "Cartera",
+      "el": "Πορτοφόλι",
+      "de": "Geldbörse",
+      "ro": "Portofel",
+      "tr": "Cüzdan"
+    },
+    "hint": {
+      "en": "Wealth",
+      "bg": "Богатство",
+      "es": "Riqueza",
+      "el": "Πλούτος",
+      "de": "Reichtum",
+      "ro": "Bogăție",
+      "tr": "Zenginlik"
+    }
+  },
+  {
+    "exact": {
+      "en": "Passport",
+      "bg": "Паспорт",
+      "es": "Pasaporte",
+      "el": "Διαβατήριο",
+      "de": "Reisepass",
+      "ro": "Pașaport",
+      "tr": "Pasaport"
+    },
+    "hint": {
+      "en": "Adventure",
+      "bg": "Приключение",
+      "es": "Aventura",
+      "el": "Περιπέτεια",
+      "de": "Abenteuer",
+      "ro": "Aventură",
+      "tr": "Macera"
+    }
+  },
+  {
+    "exact": {
+      "en": "Suitcase",
+      "bg": "Куфар",
+      "es": "Maleta",
+      "el": "Βαλίτσα",
+      "de": "Koffer",
+      "ro": "Valiză",
+      "tr": "Bavul"
+    },
+    "hint": {
+      "en": "Journey",
+      "bg": "Пътешествие",
+      "es": "Viaje",
+      "el": "Ταξίδι",
+      "de": "Reise",
+      "ro": "Călătorie",
+      "tr": "Yolculuk"
+    }
+  },
+  {
+    "exact": {
+      "en": "Ladder",
+      "bg": "Стълба",
+      "es": "Escalera",
+      "el": "Σκάλα",
+      "de": "Leiter",
+      "ro": "Scară",
+      "tr": "Merdiven"
+    },
+    "hint": {
+      "en": "Ambition",
+      "bg": "Амбиция",
+      "es": "Ambición",
+      "el": "Φιλοδοξία",
+      "de": "Ehrgeiz",
+      "ro": "Ambiție",
+      "tr": "Hırs"
+    }
+  },
+  {
+    "exact": {
+      "en": "Broom",
+      "bg": "Метла",
+      "es": "Escoba",
+      "el": "Σκούπα",
+      "de": "Besen",
+      "ro": "Mătură",
+      "tr": "Süpürge"
+    },
+    "hint": {
+      "en": "Cleanliness",
+      "bg": "Чистота",
+      "es": "Limpieza",
+      "el": "Καθαριότητα",
+      "de": "Sauberkeit",
+      "ro": "Curățenie",
+      "tr": "Temizlik"
+    }
+  },
+  {
+    "exact": {
+      "en": "Scissors",
+      "bg": "Ножица",
+      "es": "Tijeras",
+      "el": "Ψαλίδι",
+      "de": "Schere",
+      "ro": "Foarfecă",
+      "tr": "Makas"
+    },
+    "hint": {
+      "en": "Sharpness",
+      "bg": "Острота",
+      "es": "Filo",
+      "el": "Κόψη",
+      "de": "Schärfe",
+      "ro": "Ascuțime",
+      "tr": "Keskinlik"
+    }
+  },
+  {
+    "exact": {
+      "en": "Thread",
+      "bg": "Конец",
+      "es": "Hilo",
+      "el": "Κλωστή",
+      "de": "Faden",
+      "ro": "Ață",
+      "tr": "İplik"
+    },
+    "hint": {
+      "en": "Tension",
+      "bg": "Напрежение",
+      "es": "Tensión",
+      "el": "Ένταση",
+      "de": "Spannung",
+      "ro": "Tensiune",
+      "tr": "Gerginlik"
+    }
+  },
+  {
+    "exact": {
+      "en": "Button",
+      "bg": "Бутон",
+      "es": "Botón",
+      "el": "Κουμπί",
+      "de": "Knopf",
+      "ro": "Buton",
+      "tr": "Düğme"
+    },
+    "hint": {
+      "en": "Decision",
+      "bg": "Решение",
+      "es": "Decisión",
+      "el": "Απόφαση",
+      "de": "Entscheidung",
+      "ro": "Decizie",
+      "tr": "Karar"
+    }
+  },
+  {
+    "exact": {
+      "en": "Backpack",
+      "bg": "Раница",
+      "es": "Mochila",
+      "el": "Σακίδιο",
+      "de": "Rucksack",
+      "ro": "Rucsac",
+      "tr": "Sırt çantası"
+    },
+    "hint": {
+      "en": "Burden",
+      "bg": "Бреме",
+      "es": "Carga",
+      "el": "Βάρος",
+      "de": "Last",
+      "ro": "Povară",
+      "tr": "Yük"
+    }
+  },
+  {
+    "exact": {
+      "en": "Bracelet",
+      "bg": "Гривна",
+      "es": "Pulsera",
+      "el": "Βραχιόλι",
+      "de": "Armband",
+      "ro": "Brățară",
+      "tr": "Bileklik"
+    },
+    "hint": {
+      "en": "Bond",
+      "bg": "Връзка",
+      "es": "Vínculo",
+      "el": "Δεσμός",
+      "de": "Verbindung",
+      "ro": "Legătură",
+      "tr": "Bağ"
+    }
+  },
+  {
+    "exact": {
+      "en": "Necklace",
+      "bg": "Колие",
+      "es": "Collar",
+      "el": "Κολιέ",
+      "de": "Halskette",
+      "ro": "Colier",
+      "tr": "Kolye"
+    },
+    "hint": {
+      "en": "Beauty",
+      "bg": "Красота",
+      "es": "Belleza",
+      "el": "Ομορφιά",
+      "de": "Schönheit",
+      "ro": "Frumusețe",
+      "tr": "Güzellik"
+    }
+  },
+  {
+    "exact": {
+      "en": "Glasses",
+      "bg": "Очила",
+      "es": "Gafas",
+      "el": "Γυαλιά",
+      "de": "Brille",
+      "ro": "Ochelari",
+      "tr": "Gözlük"
+    },
+    "hint": {
+      "en": "Clarity",
+      "bg": "Яснота",
+      "es": "Claridad",
+      "el": "Καθαρότητα",
+      "de": "Klarheit",
+      "ro": "Claritate",
+      "tr": "Netlik"
+    }
+  },
+  {
+    "exact": {
+      "en": "Hat",
+      "bg": "Шапка",
+      "es": "Sombrero",
+      "el": "Καπέλο",
+      "de": "Hut",
+      "ro": "Pălărie",
+      "tr": "Şapka"
+    },
+    "hint": {
+      "en": "Style",
+      "bg": "Стил",
+      "es": "Estilo",
+      "el": "Στιλ",
+      "de": "Stil",
+      "ro": "Stil",
+      "tr": "Tarz"
+    }
+  },
+  {
+    "exact": {
+      "en": "Scarf",
+      "bg": "Шал",
+      "es": "Bufanda",
+      "el": "Κασκόλ",
+      "de": "Schal",
+      "ro": "Fular",
+      "tr": "Atkı"
+    },
+    "hint": {
+      "en": "Chill",
+      "bg": "Хлад",
+      "es": "Frío",
+      "el": "Ψύχρα",
+      "de": "Kälte",
+      "ro": "Frig",
+      "tr": "Serinlik"
+    }
+  },
+  {
+    "exact": {
+      "en": "Gloves",
+      "bg": "Ръкавици",
+      "es": "Guantes",
+      "el": "Γάντια",
+      "de": "Handschuhe",
+      "ro": "Mănuși",
+      "tr": "Eldiven"
+    },
+    "hint": {
+      "en": "Touch",
+      "bg": "Допир",
+      "es": "Tacto",
+      "el": "Αφή",
+      "de": "Berührung",
+      "ro": "Atingere",
+      "tr": "Dokunuş"
+    }
+  },
+  {
+    "exact": {
+      "en": "Boots",
+      "bg": "Ботуши",
+      "es": "Botas",
+      "el": "Μπότες",
+      "de": "Stiefel",
+      "ro": "Cizme",
+      "tr": "Botlar"
+    },
+    "hint": {
+      "en": "Mud",
+      "bg": "Кал",
+      "es": "Barro",
+      "el": "Λάσπη",
+      "de": "Schlamm",
+      "ro": "Noroi",
+      "tr": "Çamur"
+    }
+  },
+  {
+    "exact": {
+      "en": "Belt",
+      "bg": "Колан",
+      "es": "Cinturón",
+      "el": "Ζώνη",
+      "de": "Gürtel",
+      "ro": "Curea",
+      "tr": "Kemer"
+    },
+    "hint": {
+      "en": "Restraint",
+      "bg": "Задържане",
+      "es": "Contención",
+      "el": "Συγκράτηση",
+      "de": "Zurückhaltung",
+      "ro": "Reținere",
+      "tr": "Kısıtlama"
+    }
+  },
+  {
+    "exact": {
+      "en": "Teacher",
+      "bg": "Учител",
+      "es": "Profesor",
+      "el": "Δάσκαλος",
+      "de": "Lehrer",
+      "ro": "Profesor",
+      "tr": "Öğretmen"
+    },
+    "hint": {
+      "en": "Inspiration",
+      "bg": "Вдъхновение",
+      "es": "Inspiración",
+      "el": "Έμπνευση",
+      "de": "Inspiration",
+      "ro": "Inspirație",
+      "tr": "İlham"
+    }
+  },
+  {
+    "exact": {
+      "en": "Lawyer",
+      "bg": "Адвокат",
+      "es": "Abogado",
+      "el": "Δικηγόρος",
+      "de": "Anwalt",
+      "ro": "Avocat",
+      "tr": "Avukat"
+    },
+    "hint": {
+      "en": "Justice",
+      "bg": "Правосъдие",
+      "es": "Justicia",
+      "el": "Δικαιοσύνη",
+      "de": "Gerechtigkeit",
+      "ro": "Justiție",
+      "tr": "Adalet"
+    }
+  },
+  {
+    "exact": {
+      "en": "Police Officer",
+      "bg": "Полицай",
+      "es": "Policía",
+      "el": "Αστυνομικός",
+      "de": "Polizist",
+      "ro": "Polițist",
+      "tr": "Polis"
+    },
+    "hint": {
+      "en": "Order",
+      "bg": "Ред",
+      "es": "Orden",
+      "el": "Τάξη",
+      "de": "Ordnung",
+      "ro": "Ordine",
+      "tr": "Düzen"
+    }
+  },
+  {
+    "exact": {
+      "en": "Soldier",
+      "bg": "Войник",
+      "es": "Soldado",
+      "el": "Στρατιώτης",
+      "de": "Soldat",
+      "ro": "Soldat",
+      "tr": "Asker"
+    },
+    "hint": {
+      "en": "Sacrifice",
+      "bg": "Жертва",
+      "es": "Sacrificio",
+      "el": "Θυσία",
+      "de": "Opfer",
+      "ro": "Sacrificiu",
+      "tr": "Fedakarlık"
+    }
+  },
+  {
+    "exact": {
+      "en": "Nurse",
+      "bg": "Медицинска сестра",
+      "es": "Enfermera",
+      "el": "Νοσοκόμα",
+      "de": "Krankenschwester",
+      "ro": "Asistentă medicală",
+      "tr": "Hemşire"
+    },
+    "hint": {
+      "en": "Care",
+      "bg": "Грижа",
+      "es": "Cuidado",
+      "el": "Φροντίδα",
+      "de": "Fürsorge",
+      "ro": "Grijă",
+      "tr": "Bakım"
+    }
+  },
+  {
+    "exact": {
+      "en": "Dentist",
+      "bg": "Зъболекар",
+      "es": "Dentista",
+      "el": "Οδοντίατρος",
+      "de": "Zahnarzt",
+      "ro": "Dentist",
+      "tr": "Diş hekimi"
+    },
+    "hint": {
+      "en": "Anxiety",
+      "bg": "Тревожност",
+      "es": "Ansiedad",
+      "el": "Άγχος",
+      "de": "Nervosität",
+      "ro": "Anxietate",
+      "tr": "Kaygı"
+    }
+  },
+  {
+    "exact": {
+      "en": "Pilot",
+      "bg": "Пилот",
+      "es": "Piloto",
+      "el": "Πιλότος",
+      "de": "Pilot",
+      "ro": "Pilot",
+      "tr": "Pilot"
+    },
+    "hint": {
+      "en": "Confidence",
+      "bg": "Увереност",
+      "es": "Serenidad",
+      "el": "Αυτοπεποίθηση",
+      "de": "Zuversicht",
+      "ro": "Siguranță",
+      "tr": "Özgüven"
+    }
+  },
+  {
+    "exact": {
+      "en": "Engineer",
+      "bg": "Инженер",
+      "es": "Ingeniero",
+      "el": "Μηχανικός",
+      "de": "Ingenieur",
+      "ro": "Inginer",
+      "tr": "Mühendis"
+    },
+    "hint": {
+      "en": "Logic",
+      "bg": "Логика",
+      "es": "Lógica",
+      "el": "Λογική",
+      "de": "Logik",
+      "ro": "Logică",
+      "tr": "Mantık"
+    }
+  },
+  {
+    "exact": {
+      "en": "Architect",
+      "bg": "Архитект",
+      "es": "Arquitecto",
+      "el": "Αρχιτέκτονας",
+      "de": "Architekt",
+      "ro": "Arhitect",
+      "tr": "Mimar"
+    },
+    "hint": {
+      "en": "Design",
+      "bg": "Дизайн",
+      "es": "Diseño",
+      "el": "Σχέδιο",
+      "de": "Design",
+      "ro": "Design",
+      "tr": "Tasarım"
+    }
+  },
+  {
+    "exact": {
+      "en": "Waiter",
+      "bg": "Сервитьор",
+      "es": "Camarero",
+      "el": "Σερβιτόρος",
+      "de": "Kellner",
+      "ro": "Chelner",
+      "tr": "Garson"
+    },
+    "hint": {
+      "en": "Service",
+      "bg": "Обслужване",
+      "es": "Servicio",
+      "el": "Εξυπηρέτηση",
+      "de": "Service",
+      "ro": "Serviciu",
+      "tr": "Hizmet"
+    }
+  },
+  {
+    "exact": {
+      "en": "Barber",
+      "bg": "Бръснар",
+      "es": "Barbero",
+      "el": "Κουρέας",
+      "de": "Friseur",
+      "ro": "Frizer",
+      "tr": "Berber"
+    },
+    "hint": {
+      "en": "Chat",
+      "bg": "Разговор",
+      "es": "Charla",
+      "el": "Κουβέντα",
+      "de": "Plausch",
+      "ro": "Discuție",
+      "tr": "Sohbet"
+    }
+  },
+  {
+    "exact": {
+      "en": "Mechanic",
+      "bg": "Механик",
+      "es": "Mecánico",
+      "el": "Μηχανικός αυτοκινήτων",
+      "de": "Mechaniker",
+      "ro": "Mecanic",
+      "tr": "Tamirci"
+    },
+    "hint": {
+      "en": "Repair",
+      "bg": "Ремонт",
+      "es": "Reparación",
+      "el": "Επισκευή",
+      "de": "Reparatur",
+      "ro": "Reparație",
+      "tr": "Onarım"
+    }
+  },
+  {
+    "exact": {
+      "en": "Plumber",
+      "bg": "Водопроводчик",
+      "es": "Fontanero",
+      "el": "Υδραυλικός",
+      "de": "Klempner",
+      "ro": "Instalator",
+      "tr": "Tesisatçı"
+    },
+    "hint": {
+      "en": "Leak",
+      "bg": "Теч",
+      "es": "Fuga",
+      "el": "Διαρροή",
+      "de": "Leck",
+      "ro": "Scurgere",
+      "tr": "Sızıntı"
+    }
+  },
+  {
+    "exact": {
+      "en": "Electrician",
+      "bg": "Електротехник",
+      "es": "Electricista",
+      "el": "Ηλεκτρολόγος",
+      "de": "Elektriker",
+      "ro": "Electrician",
+      "tr": "Elektrikçi"
+    },
+    "hint": {
+      "en": "Spark",
+      "bg": "Искра",
+      "es": "Chispa",
+      "el": "Σπίθα",
+      "de": "Funke",
+      "ro": "Scânteie",
+      "tr": "Kıvılcım"
+    }
+  },
+  {
+    "exact": {
+      "en": "Journalist",
+      "bg": "Журналист",
+      "es": "Periodista",
+      "el": "Δημοσιογράφος",
+      "de": "Journalist",
+      "ro": "Jurnalist",
+      "tr": "Gazeteci"
+    },
+    "hint": {
+      "en": "Truth",
+      "bg": "Истина",
+      "es": "Verdad",
+      "el": "Αλήθεια",
+      "de": "Wahrheit",
+      "ro": "Adevăr",
+      "tr": "Gerçek"
+    }
+  },
+  {
+    "exact": {
+      "en": "Actor",
+      "bg": "Актьор",
+      "es": "Actor",
+      "el": "Ηθοποιός",
+      "de": "Schauspieler",
+      "ro": "Actor",
+      "tr": "Aktör"
+    },
+    "hint": {
+      "en": "Pretend",
+      "bg": "Преструвка",
+      "es": "Ficción",
+      "el": "Προσποίηση",
+      "de": "Verstellung",
+      "ro": "Prefăcătorie",
+      "tr": "Rol yapma"
+    }
+  },
+  {
+    "exact": {
+      "en": "Singer",
+      "bg": "Певец",
+      "es": "Cantante",
+      "el": "Τραγουδιστής",
+      "de": "Sänger",
+      "ro": "Cântăreț",
+      "tr": "Şarkıcı"
+    },
+    "hint": {
+      "en": "Voice",
+      "bg": "Глас",
+      "es": "Voz",
+      "el": "Φωνή",
+      "de": "Stimme",
+      "ro": "Voce",
+      "tr": "Ses"
+    }
+  },
+  {
+    "exact": {
+      "en": "Dancer",
+      "bg": "Танцьор",
+      "es": "Bailarín",
+      "el": "Χορευτής",
+      "de": "Tänzer",
+      "ro": "Dansator",
+      "tr": "Dansçı"
+    },
+    "hint": {
+      "en": "Rhythm",
+      "bg": "Ритъм",
+      "es": "Ritmo",
+      "el": "Ρυθμός",
+      "de": "Rhythmus",
+      "ro": "Ritm",
+      "tr": "Ritim"
+    }
+  },
+  {
+    "exact": {
+      "en": "Painter",
+      "bg": "Художник",
+      "es": "Pintor",
+      "el": "Ζωγράφος",
+      "de": "Maler",
+      "ro": "Pictor",
+      "tr": "Ressam"
+    },
+    "hint": {
+      "en": "Imagination",
+      "bg": "Въображение",
+      "es": "Imaginación",
+      "el": "Φαντασία",
+      "de": "Fantasie",
+      "ro": "Imaginație",
+      "tr": "Hayal gücü"
+    }
+  },
+  {
+    "exact": {
+      "en": "Sculptor",
+      "bg": "Скулптор",
+      "es": "Escultor",
+      "el": "Γλύπτης",
+      "de": "Bildhauer",
+      "ro": "Sculptor",
+      "tr": "Heykeltıraş"
+    },
+    "hint": {
+      "en": "Shape",
+      "bg": "Форма",
+      "es": "Forma",
+      "el": "Σχήμα",
+      "de": "Form",
+      "ro": "Formă",
+      "tr": "Şekil"
+    }
+  },
+  {
+    "exact": {
+      "en": "Scientist",
+      "bg": "Учен",
+      "es": "Científico",
+      "el": "Επιστήμονας",
+      "de": "Wissenschaftler",
+      "ro": "Om de știință",
+      "tr": "Bilim insanı"
+    },
+    "hint": {
+      "en": "Curiosity",
+      "bg": "Любопитство",
+      "es": "Curiosidad",
+      "el": "Περιέργεια",
+      "de": "Neugier",
+      "ro": "Curiozitate",
+      "tr": "Merak"
+    }
+  },
+  {
+    "exact": {
+      "en": "Librarian",
+      "bg": "Библиотекар",
+      "es": "Bibliotecario",
+      "el": "Βιβλιοθηκάριος",
+      "de": "Bibliothekar",
+      "ro": "Bibliotecar",
+      "tr": "Kütüphaneci"
+    },
+    "hint": {
+      "en": "Knowledge",
+      "bg": "Знание",
+      "es": "Conocimiento",
+      "el": "Γνώση",
+      "de": "Wissen",
+      "ro": "Cunoaștere",
+      "tr": "Bilgi"
+    }
+  },
+  {
+    "exact": {
+      "en": "Judge",
+      "bg": "Съдия",
+      "es": "Juez",
+      "el": "Δικαστής",
+      "de": "Richter",
+      "ro": "Judecător",
+      "tr": "Yargıç"
+    },
+    "hint": {
+      "en": "Verdict",
+      "bg": "Присъда",
+      "es": "Veredicto",
+      "el": "Ετυμηγορία",
+      "de": "Urteil",
+      "ro": "Verdict",
+      "tr": "Hüküm"
+    }
+  },
+  {
+    "exact": {
+      "en": "Priest",
+      "bg": "Свещеник",
+      "es": "Sacerdote",
+      "el": "Ιερέας",
+      "de": "Priester",
+      "ro": "Preot",
+      "tr": "Rahip"
+    },
+    "hint": {
+      "en": "Faith",
+      "bg": "Вяра",
+      "es": "Fe",
+      "el": "Πίστη",
+      "de": "Glaube",
+      "ro": "Credință",
+      "tr": "İnanç"
+    }
+  },
+  {
+    "exact": {
+      "en": "Baker",
+      "bg": "Хлебар",
+      "es": "Panadero",
+      "el": "Φούρναρης",
+      "de": "Bäcker",
+      "ro": "Brutar",
+      "tr": "Fırıncı"
+    },
+    "hint": {
+      "en": "Aroma",
+      "bg": "Аромат",
+      "es": "Aroma",
+      "el": "Άρωμα",
+      "de": "Duft",
+      "ro": "Aromă",
+      "tr": "Koku"
+    }
+  },
+  {
+    "exact": {
+      "en": "Hospital",
+      "bg": "Болница",
+      "es": "Hospital",
+      "el": "Νοσοκομείο",
+      "de": "Krankenhaus",
+      "ro": "Spital",
+      "tr": "Hastane"
+    },
+    "hint": {
+      "en": "Recovery",
+      "bg": "Възстановяване",
+      "es": "Recuperación",
+      "el": "Ανάρρωση",
+      "de": "Genesung",
+      "ro": "Recuperare",
+      "tr": "İyileşme"
+    }
+  },
+  {
+    "exact": {
+      "en": "School",
+      "bg": "Училище",
+      "es": "Escuela",
+      "el": "Σχολείο",
+      "de": "Schule",
+      "ro": "Școală",
+      "tr": "Okul"
+    },
+    "hint": {
+      "en": "Growth",
+      "bg": "Растеж",
+      "es": "Crecimiento",
+      "el": "Ανάπτυξη",
+      "de": "Wachstum",
+      "ro": "Creștere",
+      "tr": "Büyüme"
+    }
+  },
+  {
+    "exact": {
+      "en": "University",
+      "bg": "Университет",
+      "es": "Universidad",
+      "el": "Πανεπιστήμιο",
+      "de": "Universität",
+      "ro": "Universitate",
+      "tr": "Üniversite"
+    },
+    "hint": {
+      "en": "Independence",
+      "bg": "Независимост",
+      "es": "Independencia",
+      "el": "Ανεξαρτησία",
+      "de": "Unabhängigkeit",
+      "ro": "Independență",
+      "tr": "Bağımsızlık"
+    }
+  },
+  {
+    "exact": {
+      "en": "Church",
+      "bg": "Църква",
+      "es": "Iglesia",
+      "el": "Εκκλησία",
+      "de": "Kirche",
+      "ro": "Biserică",
+      "tr": "Kilise"
+    },
+    "hint": {
+      "en": "Devotion",
+      "bg": "Преданост",
+      "es": "Devoción",
+      "el": "Αφοσίωση",
+      "de": "Hingabe",
+      "ro": "Devotament",
+      "tr": "Bağlılık"
+    }
+  },
+  {
+    "exact": {
+      "en": "Mosque",
+      "bg": "Джамия",
+      "es": "Mezquita",
+      "el": "Τζαμί",
+      "de": "Moschee",
+      "ro": "Moschee",
+      "tr": "Cami"
+    },
+    "hint": {
+      "en": "Prayer",
+      "bg": "Молитва",
+      "es": "Oración",
+      "el": "Προσευχή",
+      "de": "Gebet",
+      "ro": "Rugăciune",
+      "tr": "Dua"
+    }
+  },
+  {
+    "exact": {
+      "en": "Temple",
+      "bg": "Храм",
+      "es": "Templo",
+      "el": "Ναός",
+      "de": "Tempel",
+      "ro": "Templu",
+      "tr": "Tapınak"
+    },
+    "hint": {
+      "en": "Serenity",
+      "bg": "Умиротворение",
+      "es": "Paz",
+      "el": "Γαλήνη",
+      "de": "Frieden",
+      "ro": "Pace",
+      "tr": "Dinginlik"
+    }
+  },
+  {
+    "exact": {
+      "en": "Museum",
+      "bg": "Музей",
+      "es": "Museo",
+      "el": "Μουσείο",
+      "de": "Museum",
+      "ro": "Muzeu",
+      "tr": "Müze"
+    },
+    "hint": {
+      "en": "History",
+      "bg": "История",
+      "es": "Historia",
+      "el": "Ιστορία",
+      "de": "Geschichte",
+      "ro": "Istorie",
+      "tr": "Tarih"
+    }
+  },
+  {
+    "exact": {
+      "en": "Cinema",
+      "bg": "Кино",
+      "es": "Cine",
+      "el": "Σινεμά",
+      "de": "Kino",
+      "ro": "Cinema",
+      "tr": "Sinema"
+    },
+    "hint": {
+      "en": "Darkness",
+      "bg": "Тъмнина",
+      "es": "Oscuridad",
+      "el": "Σκοτάδι",
+      "de": "Dunkelheit",
+      "ro": "Întuneric",
+      "tr": "Karanlık"
+    }
+  },
+  {
+    "exact": {
+      "en": "Theater",
+      "bg": "Театър",
+      "es": "Teatro",
+      "el": "Θέατρο",
+      "de": "Theater",
+      "ro": "Teatru",
+      "tr": "Tiyatro"
+    },
+    "hint": {
+      "en": "Drama",
+      "bg": "Драма",
+      "es": "Drama",
+      "el": "Δράμα",
+      "de": "Drama",
+      "ro": "Dramă",
+      "tr": "Drama"
+    }
+  },
+  {
+    "exact": {
+      "en": "Stadium",
+      "bg": "Стадион",
+      "es": "Estadio",
+      "el": "Στάδιο",
+      "de": "Stadion",
+      "ro": "Stadion",
+      "tr": "Stadyum"
+    },
+    "hint": {
+      "en": "Crowd",
+      "bg": "Тълпа",
+      "es": "Multitud",
+      "el": "Πλήθος",
+      "de": "Menge",
+      "ro": "Mulțime",
+      "tr": "Kalabalık"
+    }
+  },
+  {
+    "exact": {
+      "en": "Park",
+      "bg": "Парк",
+      "es": "Parque",
+      "el": "Πάρκο",
+      "de": "Park",
+      "ro": "Parc",
+      "tr": "Park"
+    },
+    "hint": {
+      "en": "Relaxation",
+      "bg": "Отпускане",
+      "es": "Relajación",
+      "el": "Χαλάρωση",
+      "de": "Entspannung",
+      "ro": "Relaxare",
+      "tr": "Rahatlama"
+    }
+  },
+  {
+    "exact": {
+      "en": "Zoo",
+      "bg": "Зоопарк",
+      "es": "Zoológico",
+      "el": "Ζωολογικός κήπος",
+      "de": "Zoo",
+      "ro": "Grădină zoologică",
+      "tr": "Hayvanat bahçesi"
+    },
+    "hint": {
+      "en": "Captivity",
+      "bg": "Плен",
+      "es": "Cautiverio",
+      "el": "Αιχμαλωσία",
+      "de": "Gefangenschaft",
+      "ro": "Captivitate",
+      "tr": "Esaret"
+    }
+  },
+  {
+    "exact": {
+      "en": "Aquarium",
+      "bg": "Аквариум",
+      "es": "Acuario",
+      "el": "Ενυδρείο",
+      "de": "Aquarium",
+      "ro": "Acvariu",
+      "tr": "Akvaryum"
+    },
+    "hint": {
+      "en": "Wonder",
+      "bg": "Удивление",
+      "es": "Asombro",
+      "el": "Θαυμασμός",
+      "de": "Staunen",
+      "ro": "Uimire",
+      "tr": "Hayranlık"
+    }
+  },
+  {
+    "exact": {
+      "en": "Market",
+      "bg": "Пазар",
+      "es": "Mercado",
+      "el": "Αγορά",
+      "de": "Markt",
+      "ro": "Piață",
+      "tr": "Pazar"
+    },
+    "hint": {
+      "en": "Bargain",
+      "bg": "Изгодна сделка",
+      "es": "Ganga",
+      "el": "Παζάρι",
+      "de": "Schnäppchen",
+      "ro": "Chilipir",
+      "tr": "Pazarlık"
+    }
+  },
+  {
+    "exact": {
+      "en": "Supermarket",
+      "bg": "Супермаркет",
+      "es": "Supermercado",
+      "el": "Σούπερ μάρκετ",
+      "de": "Supermarkt",
+      "ro": "Supermarket",
+      "tr": "Süpermarket"
+    },
+    "hint": {
+      "en": "Choice",
+      "bg": "Избор",
+      "es": "Elección",
+      "el": "Επιλογή",
+      "de": "Auswahl",
+      "ro": "Alegere",
+      "tr": "Seçim"
+    }
+  },
+  {
+    "exact": {
+      "en": "Restaurant",
+      "bg": "Ресторант",
+      "es": "Restaurante",
+      "el": "Εστιατόριο",
+      "de": "Restaurant",
+      "ro": "Restaurant",
+      "tr": "Restoran"
+    },
+    "hint": {
+      "en": "Date",
+      "bg": "Среща",
+      "es": "Velada",
+      "el": "Έξοδος",
+      "de": "Verabredung",
+      "ro": "Întâlnire",
+      "tr": "Buluşma"
+    }
+  },
+  {
+    "exact": {
+      "en": "Hotel",
+      "bg": "Хотел",
+      "es": "Hotel",
+      "el": "Ξενοδοχείο",
+      "de": "Hotel",
+      "ro": "Hotel",
+      "tr": "Otel"
+    },
+    "hint": {
+      "en": "Stranger",
+      "bg": "Непознат",
+      "es": "Extraño",
+      "el": "Ξένος",
+      "de": "Fremder",
+      "ro": "Străin",
+      "tr": "Yabancı"
+    }
+  },
+  {
+    "exact": {
+      "en": "Bank",
+      "bg": "Банка",
+      "es": "Banco",
+      "el": "Τράπεζα",
+      "de": "Bank",
+      "ro": "Bancă",
+      "tr": "Banka"
+    },
+    "hint": {
+      "en": "Savings",
+      "bg": "Спестявания",
+      "es": "Ahorros",
+      "el": "Αποταμίευση",
+      "de": "Ersparnisse",
+      "ro": "Economii",
+      "tr": "Tasarruf"
+    }
+  },
+  {
+    "exact": {
+      "en": "Post Office",
+      "bg": "Поща",
+      "es": "Correos",
+      "el": "Ταχυδρομείο",
+      "de": "Postamt",
+      "ro": "Oficiu poștal",
+      "tr": "Postane"
+    },
+    "hint": {
+      "en": "Waiting",
+      "bg": "Чакане",
+      "es": "Espera",
+      "el": "Αναμονή",
+      "de": "Warten",
+      "ro": "Așteptare",
+      "tr": "Bekleme"
+    }
+  },
+  {
+    "exact": {
+      "en": "Train Station",
+      "bg": "Гара",
+      "es": "Estación de tren",
+      "el": "Σταθμός τρένου",
+      "de": "Bahnhof",
+      "ro": "Gară",
+      "tr": "Tren istasyonu"
+    },
+    "hint": {
+      "en": "Punctuality",
+      "bg": "Точност",
+      "es": "Puntualidad",
+      "el": "Συνέπεια",
+      "de": "Pünktlichkeit",
+      "ro": "Punctualitate",
+      "tr": "Dakiklik"
+    }
+  },
+  {
+    "exact": {
+      "en": "Bus Stop",
+      "bg": "Автобусна спирка",
+      "es": "Parada de autobús",
+      "el": "Στάση λεωφορείου",
+      "de": "Bushaltestelle",
+      "ro": "Stație de autobuz",
+      "tr": "Otobüs durağı"
+    },
+    "hint": {
+      "en": "Routine",
+      "bg": "Рутина",
+      "es": "Rutina",
+      "el": "Ρουτίνα",
+      "de": "Routine",
+      "ro": "Rutină",
+      "tr": "Rutin"
+    }
+  },
+  {
+    "exact": {
+      "en": "Bridge",
+      "bg": "Мост",
+      "es": "Puente",
+      "el": "Γέφυρα",
+      "de": "Brücke",
+      "ro": "Pod",
+      "tr": "Köprü"
+    },
+    "hint": {
+      "en": "Connection",
+      "bg": "Връзка",
+      "es": "Conexión",
+      "el": "Σύνδεση",
+      "de": "Verbindung",
+      "ro": "Conexiune",
+      "tr": "Bağlantı"
+    }
+  },
+  {
+    "exact": {
+      "en": "Tunnel",
+      "bg": "Тунел",
+      "es": "Túnel",
+      "el": "Τούνελ",
+      "de": "Tunnel",
+      "ro": "Tunel",
+      "tr": "Tünel"
+    },
+    "hint": {
+      "en": "Shortcut",
+      "bg": "Пряк път",
+      "es": "Atajo",
+      "el": "Συντόμευση",
+      "de": "Abkürzung",
+      "ro": "Scurtătură",
+      "tr": "Kısayol"
+    }
+  },
+  {
+    "exact": {
+      "en": "Cave",
+      "bg": "Пещера",
+      "es": "Cueva",
+      "el": "Σπηλιά",
+      "de": "Höhle",
+      "ro": "Peșteră",
+      "tr": "Mağara"
+    },
+    "hint": {
+      "en": "Mystery",
+      "bg": "Мистерия",
+      "es": "Misterio",
+      "el": "Μυστήριο",
+      "de": "Rätsel",
+      "ro": "Mister",
+      "tr": "Gizem"
+    }
+  },
+  {
+    "exact": {
+      "en": "Island",
+      "bg": "Остров",
+      "es": "Isla",
+      "el": "Νησί",
+      "de": "Insel",
+      "ro": "Insulă",
+      "tr": "Ada"
+    },
+    "hint": {
+      "en": "Isolation",
+      "bg": "Изолация",
+      "es": "Aislamiento",
+      "el": "Απομόνωση",
+      "de": "Isolation",
+      "ro": "Izolare",
+      "tr": "Tecrit"
+    }
+  },
+  {
+    "exact": {
+      "en": "Mountain",
+      "bg": "Планина",
+      "es": "Montaña",
+      "el": "Βουνό",
+      "de": "Berg",
+      "ro": "Munte",
+      "tr": "Dağ"
+    },
+    "hint": {
+      "en": "Challenge",
+      "bg": "Предизвикателство",
+      "es": "Desafío",
+      "el": "Πρόκληση",
+      "de": "Herausforderung",
+      "ro": "Provocare",
+      "tr": "Zorluk"
+    }
+  },
+  {
+    "exact": {
+      "en": "Forest",
+      "bg": "Гора",
+      "es": "Bosque",
+      "el": "Δάσος",
+      "de": "Wald",
+      "ro": "Pădure",
+      "tr": "Orman"
+    },
+    "hint": {
+      "en": "Wilderness",
+      "bg": "Дивота",
+      "es": "Naturaleza",
+      "el": "Αγριότητα",
+      "de": "Wildnis",
+      "ro": "Sălbăticie",
+      "tr": "Yabanilik"
+    }
+  },
+  {
+    "exact": {
+      "en": "River",
+      "bg": "Река",
+      "es": "Río",
+      "el": "Ποτάμι",
+      "de": "Fluss",
+      "ro": "Râu",
+      "tr": "Nehir"
+    },
+    "hint": {
+      "en": "Flow",
+      "bg": "Течение",
+      "es": "Flujo",
+      "el": "Ροή",
+      "de": "Strömung",
+      "ro": "Curgere",
+      "tr": "Akış"
+    }
+  },
+  {
+    "exact": {
+      "en": "Lake",
+      "bg": "Езеро",
+      "es": "Lago",
+      "el": "Λίμνη",
+      "de": "See",
+      "ro": "Lac",
+      "tr": "Göl"
+    },
+    "hint": {
+      "en": "Stillness",
+      "bg": "Гладкост",
+      "es": "Quietud",
+      "el": "Ακινησία",
+      "de": "Windstille",
+      "ro": "Nemișcare",
+      "tr": "Durgunluk"
+    }
+  },
+  {
+    "exact": {
+      "en": "Ocean",
+      "bg": "Океан",
+      "es": "Océano",
+      "el": "Ωκεανός",
+      "de": "Ozean",
+      "ro": "Ocean",
+      "tr": "Okyanus"
+    },
+    "hint": {
+      "en": "Vastness",
+      "bg": "Необятност",
+      "es": "Inmensidad",
+      "el": "Απεραντοσύνη",
+      "de": "Weite",
+      "ro": "Vastitate",
+      "tr": "Enginlik"
+    }
+  },
+  {
+    "exact": {
+      "en": "Sky",
+      "bg": "Небе",
+      "es": "Cielo",
+      "el": "Ουρανός",
+      "de": "Himmel",
+      "ro": "Cer",
+      "tr": "Gökyüzü"
+    },
+    "hint": {
+      "en": "Limitless",
+      "bg": "Безграничност",
+      "es": "Infinito",
+      "el": "Απειρότητα",
+      "de": "Grenzenlosigkeit",
+      "ro": "Nemărginire",
+      "tr": "Sınırsızlık"
+    }
+  },
+  {
+    "exact": {
+      "en": "Cloud",
+      "bg": "Облак",
+      "es": "Nube",
+      "el": "Σύννεφο",
+      "de": "Wolke",
+      "ro": "Nor",
+      "tr": "Bulut"
+    },
+    "hint": {
+      "en": "Daydream",
+      "bg": "Блян",
+      "es": "Ensueño",
+      "el": "Ονειροπόληση",
+      "de": "Tagtraum",
+      "ro": "Reverie",
+      "tr": "Hayal"
+    }
+  },
+  {
+    "exact": {
+      "en": "Storm",
+      "bg": "Буря",
+      "es": "Tormenta",
+      "el": "Καταιγίδα",
+      "de": "Sturm",
+      "ro": "Furtună",
+      "tr": "Fırtına"
+    },
+    "hint": {
+      "en": "Chaos",
+      "bg": "Хаос",
+      "es": "Caos",
+      "el": "Χάος",
+      "de": "Chaos",
+      "ro": "Haos",
+      "tr": "Kaos"
+    }
+  },
+  {
+    "exact": {
+      "en": "Lightning",
+      "bg": "Мълния",
+      "es": "Rayo",
+      "el": "Αστραπή",
+      "de": "Blitz",
+      "ro": "Fulger",
+      "tr": "Şimşek"
+    },
+    "hint": {
+      "en": "Strike",
+      "bg": "Удар",
+      "es": "Golpe",
+      "el": "Χτύπημα",
+      "de": "Schlag",
+      "ro": "Lovitură",
+      "tr": "Çarpma"
+    }
+  },
+  {
+    "exact": {
+      "en": "Thunder",
+      "bg": "Гръм",
+      "es": "Trueno",
+      "el": "Βροντή",
+      "de": "Donner",
+      "ro": "Tunet",
+      "tr": "Gök gürültüsü"
+    },
+    "hint": {
+      "en": "Warning",
+      "bg": "Предупреждение",
+      "es": "Advertencia",
+      "el": "Προειδοποίηση",
+      "de": "Warnung",
+      "ro": "Avertisment",
+      "tr": "Uyarı"
+    }
+  },
+  {
+    "exact": {
+      "en": "Snow",
+      "bg": "Сняг",
+      "es": "Nieve",
+      "el": "Χιόνι",
+      "de": "Schnee",
+      "ro": "Zăpadă",
+      "tr": "Kar"
+    },
+    "hint": {
+      "en": "Purity",
+      "bg": "Непорочност",
+      "es": "Pureza",
+      "el": "Αγνότητα",
+      "de": "Reinheit",
+      "ro": "Puritate",
+      "tr": "Saflık"
+    }
+  },
+  {
+    "exact": {
+      "en": "Ice",
+      "bg": "Лед",
+      "es": "Hielo",
+      "el": "Πάγος",
+      "de": "Eis",
+      "ro": "Gheață",
+      "tr": "Buz"
+    },
+    "hint": {
+      "en": "Slip",
+      "bg": "Подхлъзване",
+      "es": "Resbalón",
+      "el": "Γλίστρημα",
+      "de": "Rutschen",
+      "ro": "Alunecare",
+      "tr": "Kayma"
+    }
+  },
+  {
+    "exact": {
+      "en": "Sun",
+      "bg": "Слънце",
+      "es": "Sol",
+      "el": "Ήλιος",
+      "de": "Sonne",
+      "ro": "Soare",
+      "tr": "Güneş"
+    },
+    "hint": {
+      "en": "Life",
+      "bg": "Живот",
+      "es": "Vida",
+      "el": "Ζωή",
+      "de": "Leben",
+      "ro": "Viață",
+      "tr": "Hayat"
+    }
+  },
+  {
+    "exact": {
+      "en": "Moon",
+      "bg": "Луна",
+      "es": "Luna",
+      "el": "Φεγγάρι",
+      "de": "Mond",
+      "ro": "Lună",
+      "tr": "Ay"
+    },
+    "hint": {
+      "en": "Cycle",
+      "bg": "Цикъл",
+      "es": "Ciclo",
+      "el": "Κύκλος",
+      "de": "Zyklus",
+      "ro": "Ciclu",
+      "tr": "Döngü"
+    }
+  },
+  {
+    "exact": {
+      "en": "Star",
+      "bg": "Звезда",
+      "es": "Estrella",
+      "el": "Αστέρι",
+      "de": "Stern",
+      "ro": "Stea",
+      "tr": "Yıldız"
+    },
+    "hint": {
+      "en": "Wish",
+      "bg": "Желание",
+      "es": "Deseo",
+      "el": "Ευχή",
+      "de": "Wunsch",
+      "ro": "Dorință",
+      "tr": "Dilek"
+    }
+  },
+  {
+    "exact": {
+      "en": "Earthquake",
+      "bg": "Земетресение",
+      "es": "Terremoto",
+      "el": "Σεισμός",
+      "de": "Erdbeben",
+      "ro": "Cutremur",
+      "tr": "Deprem"
+    },
+    "hint": {
+      "en": "Panic",
+      "bg": "Паника",
+      "es": "Pánico",
+      "el": "Πανικός",
+      "de": "Panik",
+      "ro": "Panică",
+      "tr": "Panik"
+    }
+  },
+  {
+    "exact": {
+      "en": "Rain",
+      "bg": "Дъжд",
+      "es": "Lluvia",
+      "el": "Βροχή",
+      "de": "Regen",
+      "ro": "Ploaie",
+      "tr": "Yağmur"
+    },
+    "hint": {
+      "en": "Sadness",
+      "bg": "Тъга",
+      "es": "Tristeza",
+      "el": "Θλίψη",
+      "de": "Traurigkeit",
+      "ro": "Tristețe",
+      "tr": "Hüzün"
+    }
+  },
+  {
+    "exact": {
+      "en": "Wind",
+      "bg": "Вятър",
+      "es": "Viento",
+      "el": "Άνεμος",
+      "de": "Wind",
+      "ro": "Vânt",
+      "tr": "Rüzgar"
+    },
+    "hint": {
+      "en": "Change",
+      "bg": "Промяна",
+      "es": "Cambio",
+      "el": "Αλλαγή",
+      "de": "Veränderung",
+      "ro": "Schimbare",
+      "tr": "Değişim"
+    }
+  },
+  {
+    "exact": {
+      "en": "Frost",
+      "bg": "Скреж",
+      "es": "Escarcha",
+      "el": "Πάχνη",
+      "de": "Reif",
+      "ro": "Chiciură",
+      "tr": "Kırağı"
+    },
+    "hint": {
+      "en": "Delicate",
+      "bg": "Изящност",
+      "es": "Delicadeza",
+      "el": "Λεπτότητα",
+      "de": "Zartheit",
+      "ro": "Delicatețe",
+      "tr": "Naziklik"
+    }
+  },
+  {
+    "exact": {
+      "en": "Sunrise",
+      "bg": "Изгрев",
+      "es": "Amanecer",
+      "el": "Ανατολή",
+      "de": "Sonnenaufgang",
+      "ro": "Răsărit",
+      "tr": "Gün doğumu"
+    },
+    "hint": {
+      "en": "Hope",
+      "bg": "Надежда",
+      "es": "Esperanza",
+      "el": "Ελπίδα",
+      "de": "Hoffnung",
+      "ro": "Speranță",
+      "tr": "Umut"
+    }
+  },
+  {
+    "exact": {
+      "en": "Football",
+      "bg": "Футбол",
+      "es": "Fútbol",
+      "el": "Ποδόσφαιρο",
+      "de": "Fußball",
+      "ro": "Fotbal",
+      "tr": "Futbol"
+    },
+    "hint": {
+      "en": "Rivalry",
+      "bg": "Съперничество",
+      "es": "Rivalidad",
+      "el": "Ανταγωνισμός",
+      "de": "Rivalität",
+      "ro": "Rivalitate",
+      "tr": "Rekabet"
+    }
+  },
+  {
+    "exact": {
+      "en": "Tennis",
+      "bg": "Тенис",
+      "es": "Tenis",
+      "el": "Τένις",
+      "de": "Tennis",
+      "ro": "Tenis",
+      "tr": "Tenis"
+    },
+    "hint": {
+      "en": "Rally",
+      "bg": "Дуел",
+      "es": "Peloteo",
+      "el": "Ανταλλαγή",
+      "de": "Ballwechsel",
+      "ro": "Duel",
+      "tr": "Ralli"
+    }
+  },
+  {
+    "exact": {
+      "en": "Golf",
+      "bg": "Голф",
+      "es": "Golf",
+      "el": "Γκολφ",
+      "de": "Golf",
+      "ro": "Golf",
+      "tr": "Golf"
+    },
+    "hint": {
+      "en": "Etiquette",
+      "bg": "Етикет",
+      "es": "Etiqueta",
+      "el": "Εθιμοτυπία",
+      "de": "Etikette",
+      "ro": "Etichetă",
+      "tr": "Nezaket"
+    }
+  },
+  {
+    "exact": {
+      "en": "Swimming",
+      "bg": "Плуване",
+      "es": "Natación",
+      "el": "Κολύμβηση",
+      "de": "Schwimmen",
+      "ro": "Înot",
+      "tr": "Yüzme"
+    },
+    "hint": {
+      "en": "Breath",
+      "bg": "Дъх",
+      "es": "Respiración",
+      "el": "Ανάσα",
+      "de": "Atem",
+      "ro": "Respirație",
+      "tr": "Nefes"
+    }
+  },
+  {
+    "exact": {
+      "en": "Wrestling",
+      "bg": "Борба",
+      "es": "Lucha",
+      "el": "Πάλη",
+      "de": "Ringen",
+      "ro": "Lupte",
+      "tr": "Güreş"
+    },
+    "hint": {
+      "en": "Endurance",
+      "bg": "Издръжливост",
+      "es": "Resistencia",
+      "el": "Αντοχή",
+      "de": "Ausdauer",
+      "ro": "Rezistență",
+      "tr": "Dayanıklılık"
+    }
+  },
+  {
+    "exact": {
+      "en": "Running",
+      "bg": "Бягане",
+      "es": "Correr",
+      "el": "Τρέξιμο",
+      "de": "Laufen",
+      "ro": "Alergare",
+      "tr": "Koşu"
+    },
+    "hint": {
+      "en": "Fatigue",
+      "bg": "Умора",
+      "es": "Fatiga",
+      "el": "Κόπωση",
+      "de": "Erschöpfung",
+      "ro": "Epuizare",
+      "tr": "Yorgunluk"
+    }
+  },
+  {
+    "exact": {
+      "en": "Skiing",
+      "bg": "Ски",
+      "es": "Esquí",
+      "el": "Σκι",
+      "de": "Skifahren",
+      "ro": "Schi",
+      "tr": "Kayak"
+    },
+    "hint": {
+      "en": "Thrill",
+      "bg": "Тръпка",
+      "es": "Emoción",
+      "el": "Έξαψη",
+      "de": "Nervenkitzel",
+      "ro": "Fior",
+      "tr": "Heyecan"
+    }
+  },
+  {
+    "exact": {
+      "en": "Surfing",
+      "bg": "Сърфинг",
+      "es": "Surf",
+      "el": "Σέρφινγκ",
+      "de": "Surfen",
+      "ro": "Surfing",
+      "tr": "Sörf"
+    },
+    "hint": {
+      "en": "Nerve",
+      "bg": "Кураж",
+      "es": "Valentía",
+      "el": "Τόλμη",
+      "de": "Mut",
+      "ro": "Curaj",
+      "tr": "Cesaret"
+    }
+  },
+  {
+    "exact": {
+      "en": "Fishing",
+      "bg": "Риболов",
+      "es": "Pesca",
+      "el": "Ψάρεμα",
+      "de": "Angeln",
+      "ro": "Pescuit",
+      "tr": "Balıkçılık"
+    },
+    "hint": {
+      "en": "Waiting",
+      "bg": "Чакане",
+      "es": "Espera",
+      "el": "Αναμονή",
+      "de": "Warten",
+      "ro": "Așteptare",
+      "tr": "Bekleyiş"
+    }
+  },
+  {
+    "exact": {
+      "en": "Hunting",
+      "bg": "Лов",
+      "es": "Caza",
+      "el": "Κυνήγι",
+      "de": "Jagd",
+      "ro": "Vânătoare",
+      "tr": "Avcılık"
+    },
+    "hint": {
+      "en": "Instinct",
+      "bg": "Инстинкт",
+      "es": "Instinto",
+      "el": "Ένστικτο",
+      "de": "Instinkt",
+      "ro": "Instinct",
+      "tr": "İçgüdü"
+    }
+  },
+  {
+    "exact": {
+      "en": "Bowling",
+      "bg": "Боулинг",
+      "es": "Bolos",
+      "el": "Μπόουλινγκ",
+      "de": "Bowling",
+      "ro": "Bowling",
+      "tr": "Bowling"
+    },
+    "hint": {
+      "en": "Focus",
+      "bg": "Концентрация",
+      "es": "Concentración",
+      "el": "Συγκέντρωση",
+      "de": "Konzentration",
+      "ro": "Concentrare",
+      "tr": "Odaklanma"
+    }
+  },
+  {
+    "exact": {
+      "en": "Darts",
+      "bg": "Дартс",
+      "es": "Dardos",
+      "el": "Ντάρτς",
+      "de": "Darts",
+      "ro": "Darts",
+      "tr": "Dart"
+    },
+    "hint": {
+      "en": "Pub",
+      "bg": "Кръчма",
+      "es": "Taberna",
+      "el": "Παμπ",
+      "de": "Kneipe",
+      "ro": "Cârciumă",
+      "tr": "Meyhane"
+    }
+  },
+  {
+    "exact": {
+      "en": "Poker",
+      "bg": "Покер",
+      "es": "Póker",
+      "el": "Πόκερ",
+      "de": "Poker",
+      "ro": "Poker",
+      "tr": "Poker"
+    },
+    "hint": {
+      "en": "Deception",
+      "bg": "Измама",
+      "es": "Engaño",
+      "el": "Απάτη",
+      "de": "Täuschung",
+      "ro": "Înșelăciune",
+      "tr": "Hile"
+    }
+  },
+  {
+    "exact": {
+      "en": "Puzzle",
+      "bg": "Пъзел",
+      "es": "Rompecabezas",
+      "el": "Παζλ",
+      "de": "Puzzle",
+      "ro": "Puzzle",
+      "tr": "Bulmaca"
+    },
+    "hint": {
+      "en": "Frustration",
+      "bg": "Раздразнение",
+      "es": "Frustración",
+      "el": "Απογοήτευση",
+      "de": "Frustration",
+      "ro": "Frustrare",
+      "tr": "Hayal kırıklığı"
+    }
+  },
+  {
+    "exact": {
+      "en": "Cards",
+      "bg": "Карти",
+      "es": "Cartas",
+      "el": "Χαρτιά",
+      "de": "Karten",
+      "ro": "Cărți",
+      "tr": "Kartlar"
+    },
+    "hint": {
+      "en": "Trick",
+      "bg": "Трик",
+      "es": "Truco",
+      "el": "Κόλπο",
+      "de": "Trick",
+      "ro": "Truc",
+      "tr": "Numara"
+    }
+  },
+  {
+    "exact": {
+      "en": "Dice",
+      "bg": "Зарове",
+      "es": "Dados",
+      "el": "Ζάρια",
+      "de": "Würfel",
+      "ro": "Zaruri",
+      "tr": "Zar"
+    },
+    "hint": {
+      "en": "Risk",
+      "bg": "Риск",
+      "es": "Riesgo",
+      "el": "Ρίσκο",
+      "de": "Risiko",
+      "ro": "Risc",
+      "tr": "Risk"
+    }
+  },
+  {
+    "exact": {
+      "en": "Marathon",
+      "bg": "Маратон",
+      "es": "Maratón",
+      "el": "Μαραθώνιος",
+      "de": "Marathon",
+      "ro": "Maraton",
+      "tr": "Maraton"
+    },
+    "hint": {
+      "en": "Determination",
+      "bg": "Решителност",
+      "es": "Determinación",
+      "el": "Αποφασιστικότητα",
+      "de": "Entschlossenheit",
+      "ro": "Determinare",
+      "tr": "Kararlılık"
+    }
+  },
+  {
+    "exact": {
+      "en": "Gymnastics",
+      "bg": "Гимнастика",
+      "es": "Gimnasia",
+      "el": "Γυμναστική",
+      "de": "Gymnastik",
+      "ro": "Gimnastică",
+      "tr": "Jimnastik"
+    },
+    "hint": {
+      "en": "Flexibility",
+      "bg": "Гъвкавост",
+      "es": "Flexibilidad",
+      "el": "Ευλυγισία",
+      "de": "Flexibilität",
+      "ro": "Flexibilitate",
+      "tr": "Esneklik"
+    }
+  },
+  {
+    "exact": {
+      "en": "Volleyball",
+      "bg": "Волейбол",
+      "es": "Voleibol",
+      "el": "Βόλεϊ",
+      "de": "Volleyball",
+      "ro": "Volei",
+      "tr": "Voleybol"
+    },
+    "hint": {
+      "en": "Rotation",
+      "bg": "Ротация",
+      "es": "Rotación",
+      "el": "Περιστροφή",
+      "de": "Rotation",
+      "ro": "Rotație",
+      "tr": "Rotasyon"
+    }
+  },
+  {
+    "exact": {
+      "en": "Hockey",
+      "bg": "Хокей",
+      "es": "Hockey",
+      "el": "Χόκεϊ",
+      "de": "Hockey",
+      "ro": "Hochei",
+      "tr": "Hokey"
+    },
+    "hint": {
+      "en": "Aggression",
+      "bg": "Агресия",
+      "es": "Agresividad",
+      "el": "Επιθετικότητα",
+      "de": "Aggressivität",
+      "ro": "Agresivitate",
+      "tr": "Saldırganlık"
+    }
+  },
+  {
+    "exact": {
+      "en": "Car",
+      "bg": "Кола",
+      "es": "Coche",
+      "el": "Αυτοκίνητο",
+      "de": "Auto",
+      "ro": "Mașină",
+      "tr": "Araba"
+    },
+    "hint": {
+      "en": "Traffic",
+      "bg": "Трафик",
+      "es": "Tráfico",
+      "el": "Κίνηση",
+      "de": "Verkehr",
+      "ro": "Trafic",
+      "tr": "Trafik"
+    }
+  },
+  {
+    "exact": {
+      "en": "Train",
+      "bg": "Влак",
+      "es": "Tren",
+      "el": "Τρένο",
+      "de": "Zug",
+      "ro": "Tren",
+      "tr": "Tren"
+    },
+    "hint": {
+      "en": "Departure",
+      "bg": "Заминаване",
+      "es": "Partida",
+      "el": "Αναχώρηση",
+      "de": "Abfahrt",
+      "ro": "Plecare",
+      "tr": "Kalkış"
+    }
+  },
+  {
+    "exact": {
+      "en": "Bus",
+      "bg": "Автобус",
+      "es": "Autobús",
+      "el": "Λεωφορείο",
+      "de": "Bus",
+      "ro": "Autobuz",
+      "tr": "Otobüs"
+    },
+    "hint": {
+      "en": "Commute",
+      "bg": "Пътуване",
+      "es": "Trayecto",
+      "el": "Μετακίνηση",
+      "de": "Pendeln",
+      "ro": "Navetă",
+      "tr": "Mesai"
+    }
+  },
+  {
+    "exact": {
+      "en": "Ship",
+      "bg": "Кораб",
+      "es": "Barco",
+      "el": "Πλοίο",
+      "de": "Schiff",
+      "ro": "Navă",
+      "tr": "Gemi"
+    },
+    "hint": {
+      "en": "Voyage",
+      "bg": "Плаване",
+      "es": "Travesía",
+      "el": "Πλεύση",
+      "de": "Fahrt",
+      "ro": "Voiaj",
+      "tr": "Sefer"
+    }
+  },
+  {
+    "exact": {
+      "en": "Boat",
+      "bg": "Лодка",
+      "es": "Barca",
+      "el": "Βάρκα",
+      "de": "Boot",
+      "ro": "Barcă",
+      "tr": "Tekne"
+    },
+    "hint": {
+      "en": "Drift",
+      "bg": "Дрейф",
+      "es": "Deriva",
+      "el": "Παρασυρμός",
+      "de": "Treiben",
+      "ro": "Derivă",
+      "tr": "Sürüklenme"
+    }
+  },
+  {
+    "exact": {
+      "en": "Helicopter",
+      "bg": "Хеликоптер",
+      "es": "Helicóptero",
+      "el": "Ελικόπτερο",
+      "de": "Hubschrauber",
+      "ro": "Elicopter",
+      "tr": "Helikopter"
+    },
+    "hint": {
+      "en": "Rescue",
+      "bg": "Спасяване",
+      "es": "Rescate",
+      "el": "Διάσωση",
+      "de": "Rettung",
+      "ro": "Salvare",
+      "tr": "Kurtarma"
+    }
+  },
+  {
+    "exact": {
+      "en": "Airplane",
+      "bg": "Самолет",
+      "es": "Avión",
+      "el": "Αεροπλάνο",
+      "de": "Flugzeug",
+      "ro": "Avion",
+      "tr": "Uçak"
+    },
+    "hint": {
+      "en": "Turbulence",
+      "bg": "Турбуленция",
+      "es": "Turbulencia",
+      "el": "Αναταράξεις",
+      "de": "Turbulenzen",
+      "ro": "Turbulențe",
+      "tr": "Türbülans"
+    }
+  },
+  {
+    "exact": {
+      "en": "Taxi",
+      "bg": "Такси",
+      "es": "Taxi",
+      "el": "Ταξί",
+      "de": "Taxi",
+      "ro": "Taxi",
+      "tr": "Taksi"
+    },
+    "hint": {
+      "en": "Hurry",
+      "bg": "Бързане",
+      "es": "Prisa",
+      "el": "Βιασύνη",
+      "de": "Eile",
+      "ro": "Grabă",
+      "tr": "Acele"
+    }
+  },
+  {
+    "exact": {
+      "en": "Truck",
+      "bg": "Камион",
+      "es": "Camión",
+      "el": "Φορτηγό",
+      "de": "Lastwagen",
+      "ro": "Camion",
+      "tr": "Kamyon"
+    },
+    "hint": {
+      "en": "Highway",
+      "bg": "Магистрала",
+      "es": "Autopista",
+      "el": "Αυτοκινητόδρομος",
+      "de": "Autobahn",
+      "ro": "Autostradă",
+      "tr": "Otoyol"
+    }
+  },
+  {
+    "exact": {
+      "en": "Tractor",
+      "bg": "Трактор",
+      "es": "Tractor",
+      "el": "Τρακτέρ",
+      "de": "Traktor",
+      "ro": "Tractor",
+      "tr": "Traktör"
+    },
+    "hint": {
+      "en": "Rural",
+      "bg": "Провинция",
+      "es": "Provincia",
+      "el": "Ύπαιθρος",
+      "de": "Landleben",
+      "ro": "Sat",
+      "tr": "Taşra"
+    }
+  },
+  {
+    "exact": {
+      "en": "Scooter",
+      "bg": "Тротинетка",
+      "es": "Patinete",
+      "el": "Πατίνι",
+      "de": "Roller",
+      "ro": "Trotinetă",
+      "tr": "Scooter"
+    },
+    "hint": {
+      "en": "Zip",
+      "bg": "Устрем",
+      "es": "Rapidez",
+      "el": "Ευκινησία",
+      "de": "Wendigkeit",
+      "ro": "Agilitate",
+      "tr": "Çabukluk"
+    }
+  },
+  {
+    "exact": {
+      "en": "Skateboard",
+      "bg": "Скейтборд",
+      "es": "Patineta",
+      "el": "Σκέιτμπορντ",
+      "de": "Skateboard",
+      "ro": "Skateboard",
+      "tr": "Kaykay"
+    },
+    "hint": {
+      "en": "Fall",
+      "bg": "Падане",
+      "es": "Caída",
+      "el": "Πτώση",
+      "de": "Sturz",
+      "ro": "Cădere",
+      "tr": "Düşüş"
+    }
+  },
+  {
+    "exact": {
+      "en": "Sled",
+      "bg": "Шейна",
+      "es": "Trineo",
+      "el": "Έλκηθρο",
+      "de": "Schlitten",
+      "ro": "Sanie",
+      "tr": "Kızak"
+    },
+    "hint": {
+      "en": "Winter",
+      "bg": "Зима",
+      "es": "Invierno",
+      "el": "Χειμώνας",
+      "de": "Winter",
+      "ro": "Iarnă",
+      "tr": "Kış"
+    }
+  },
+  {
+    "exact": {
+      "en": "Canoe",
+      "bg": "Кану",
+      "es": "Canoa",
+      "el": "Κανό",
+      "de": "Kanu",
+      "ro": "Canoe",
+      "tr": "Kano"
+    },
+    "hint": {
+      "en": "Nature",
+      "bg": "Природа",
+      "es": "Tranquilidad",
+      "el": "Φύση",
+      "de": "Natur",
+      "ro": "Natură",
+      "tr": "Doğa"
+    }
+  },
+  {
+    "exact": {
+      "en": "Ferry",
+      "bg": "Ферибот",
+      "es": "Ferry",
+      "el": "Φέρι μποτ",
+      "de": "Fähre",
+      "ro": "Feribot",
+      "tr": "Feribot"
+    },
+    "hint": {
+      "en": "Crossing",
+      "bg": "Прекосяване",
+      "es": "Cruce",
+      "el": "Διάβαση",
+      "de": "Überquerung",
+      "ro": "Traversare",
+      "tr": "Geçiş"
+    }
+  },
+  {
+    "exact": {
+      "en": "Piano",
+      "bg": "Пиано",
+      "es": "Piano",
+      "el": "Πιάνο",
+      "de": "Klavier",
+      "ro": "Pian",
+      "tr": "Piyano"
+    },
+    "hint": {
+      "en": "Practice",
+      "bg": "Упражнение",
+      "es": "Práctica",
+      "el": "Εξάσκηση",
+      "de": "Übung",
+      "ro": "Exercițiu",
+      "tr": "Alıştırma"
+    }
+  },
+  {
+    "exact": {
+      "en": "Drum",
+      "bg": "Барабан",
+      "es": "Tambor",
+      "el": "Τύμπανο",
+      "de": "Trommel",
+      "ro": "Tobă",
+      "tr": "Davul"
+    },
+    "hint": {
+      "en": "Heartbeat",
+      "bg": "Пулс",
+      "es": "Latido",
+      "el": "Καρδιοχτύπι",
+      "de": "Herzschlag",
+      "ro": "Bătaie de inimă",
+      "tr": "Kalp atışı"
+    }
+  },
+  {
+    "exact": {
+      "en": "Trumpet",
+      "bg": "Тромпет",
+      "es": "Trompeta",
+      "el": "Τρομπέτα",
+      "de": "Trompete",
+      "ro": "Trompetă",
+      "tr": "Trompet"
+    },
+    "hint": {
+      "en": "Announcement",
+      "bg": "Обявление",
+      "es": "Anuncio",
+      "el": "Ανακοίνωση",
+      "de": "Ankündigung",
+      "ro": "Anunț",
+      "tr": "Duyuru"
+    }
+  },
+  {
+    "exact": {
+      "en": "Flute",
+      "bg": "Флейта",
+      "es": "Flauta",
+      "el": "Φλάουτο",
+      "de": "Flöte",
+      "ro": "Flaut",
+      "tr": "Flüt"
+    },
+    "hint": {
+      "en": "Charm",
+      "bg": "Очарование",
+      "es": "Encanto",
+      "el": "Γοητεία",
+      "de": "Charme",
+      "ro": "Farmec",
+      "tr": "Cazibe"
+    }
+  },
+  {
+    "exact": {
+      "en": "Saxophone",
+      "bg": "Саксофон",
+      "es": "Saxofón",
+      "el": "Σαξόφωνο",
+      "de": "Saxophon",
+      "ro": "Saxofon",
+      "tr": "Saksafon"
+    },
+    "hint": {
+      "en": "Mood",
+      "bg": "Настроение",
+      "es": "Ambiente",
+      "el": "Διάθεση",
+      "de": "Stimmung",
+      "ro": "Atmosferă",
+      "tr": "Ruh hali"
+    }
+  },
+  {
+    "exact": {
+      "en": "Harp",
+      "bg": "Арфа",
+      "es": "Arpa",
+      "el": "Άρπα",
+      "de": "Harfe",
+      "ro": "Harpă",
+      "tr": "Arp"
+    },
+    "hint": {
+      "en": "Heaven",
+      "bg": "Рай",
+      "es": "Paraíso",
+      "el": "Παράδεισος",
+      "de": "Paradies",
+      "ro": "Paradis",
+      "tr": "Cennet"
+    }
+  },
+  {
+    "exact": {
+      "en": "Accordion",
+      "bg": "Акордеон",
+      "es": "Acordeón",
+      "el": "Ακορντεόν",
+      "de": "Akkordeon",
+      "ro": "Acordeon",
+      "tr": "Akordeon"
+    },
+    "hint": {
+      "en": "Nostalgia",
+      "bg": "Носталгия",
+      "es": "Nostalgia",
+      "el": "Νοσταλγία",
+      "de": "Nostalgie",
+      "ro": "Nostalgie",
+      "tr": "Nostalji"
+    }
+  },
+  {
+    "exact": {
+      "en": "Microphone",
+      "bg": "Микрофон",
+      "es": "Micrófono",
+      "el": "Μικρόφωνο",
+      "de": "Mikrofon",
+      "ro": "Microfon",
+      "tr": "Mikrofon"
+    },
+    "hint": {
+      "en": "Spotlight",
+      "bg": "Прожектор",
+      "es": "Foco",
+      "el": "Προβολέας",
+      "de": "Rampenlicht",
+      "ro": "Reflector",
+      "tr": "Sahne"
+    }
+  },
+  {
+    "exact": {
+      "en": "Radio",
+      "bg": "Радио",
+      "es": "Radio",
+      "el": "Ραδιόφωνο",
+      "de": "Radio",
+      "ro": "Radio",
+      "tr": "Radyo"
+    },
+    "hint": {
+      "en": "Static",
+      "bg": "Пращене",
+      "es": "Estática",
+      "el": "Παράσιτα",
+      "de": "Rauschen",
+      "ro": "Paraziți",
+      "tr": "Cızırtı"
+    }
+  },
+  {
+    "exact": {
+      "en": "Television",
+      "bg": "Телевизия",
+      "es": "Televisión",
+      "el": "Τηλεόραση",
+      "de": "Fernseher",
+      "ro": "Televizor",
+      "tr": "Televizyon"
+    },
+    "hint": {
+      "en": "Distraction",
+      "bg": "Разсейване",
+      "es": "Distracción",
+      "el": "Απόσπαση",
+      "de": "Ablenkung",
+      "ro": "Distragere",
+      "tr": "Oyalanma"
+    }
+  },
+  {
+    "exact": {
+      "en": "Camera",
+      "bg": "Камера",
+      "es": "Cámara",
+      "el": "Κάμερα",
+      "de": "Kamera",
+      "ro": "Cameră",
+      "tr": "Kamera"
+    },
+    "hint": {
+      "en": "Angle",
+      "bg": "Ъгъл",
+      "es": "Ángulo",
+      "el": "Γωνία",
+      "de": "Blickwinkel",
+      "ro": "Unghi",
+      "tr": "Açı"
+    }
+  },
+  {
+    "exact": {
+      "en": "Movie",
+      "bg": "Филм",
+      "es": "Película",
+      "el": "Ταινία",
+      "de": "Film",
+      "ro": "Film",
+      "tr": "Film"
+    },
+    "hint": {
+      "en": "Plot",
+      "bg": "Сюжет",
+      "es": "Trama",
+      "el": "Πλοκή",
+      "de": "Handlung",
+      "ro": "Intrigă",
+      "tr": "Konu"
+    }
+  },
+  {
+    "exact": {
+      "en": "Concert",
+      "bg": "Концерт",
+      "es": "Concierto",
+      "el": "Συναυλία",
+      "de": "Konzert",
+      "ro": "Concert",
+      "tr": "Konser"
+    },
+    "hint": {
+      "en": "Encore",
+      "bg": "Бис",
+      "es": "Bis",
+      "el": "Μπιζ",
+      "de": "Zugabe",
+      "ro": "Bis",
+      "tr": "Bis"
+    }
+  },
+  {
+    "exact": {
+      "en": "Festival",
+      "bg": "Фестивал",
+      "es": "Festival",
+      "el": "Φεστιβάλ",
+      "de": "Festival",
+      "ro": "Festival",
+      "tr": "Festival"
+    },
+    "hint": {
+      "en": "Community",
+      "bg": "Общност",
+      "es": "Comunidad",
+      "el": "Κοινότητα",
+      "de": "Gemeinschaft",
+      "ro": "Comunitate",
+      "tr": "Topluluk"
+    }
+  },
+  {
+    "exact": {
+      "en": "Carnival",
+      "bg": "Карнавал",
+      "es": "Carnaval",
+      "el": "Καρναβάλι",
+      "de": "Karneval",
+      "ro": "Carnaval",
+      "tr": "Karnaval"
+    },
+    "hint": {
+      "en": "Excess",
+      "bg": "Разгул",
+      "es": "Exceso",
+      "el": "Υπερβολή",
+      "de": "Ausschweifung",
+      "ro": "Exces",
+      "tr": "Aşırılık"
+    }
+  },
+  {
+    "exact": {
+      "en": "Dragon",
+      "bg": "Дракон",
+      "es": "Dragón",
+      "el": "Δράκος",
+      "de": "Drache",
+      "ro": "Dragon",
+      "tr": "Ejderha"
+    },
+    "hint": {
+      "en": "Legend",
+      "bg": "Легенда",
+      "es": "Leyenda",
+      "el": "Θρύλος",
+      "de": "Legende",
+      "ro": "Legendă",
+      "tr": "Söylence"
+    }
+  },
+  {
+    "exact": {
+      "en": "Ghost",
+      "bg": "Призрак",
+      "es": "Fantasma",
+      "el": "Φάντασμα",
+      "de": "Geist",
+      "ro": "Fantomă",
+      "tr": "Hayalet"
+    },
+    "hint": {
+      "en": "Regret",
+      "bg": "Съжаление",
+      "es": "Arrepentimiento",
+      "el": "Τύψεις",
+      "de": "Reue",
+      "ro": "Regret",
+      "tr": "Pişmanlık"
+    }
+  },
+  {
+    "exact": {
+      "en": "Witch",
+      "bg": "Вещица",
+      "es": "Bruja",
+      "el": "Μάγισσα",
+      "de": "Hexe",
+      "ro": "Vrăjitoare",
+      "tr": "Cadı"
+    },
+    "hint": {
+      "en": "Curse",
+      "bg": "Проклятие",
+      "es": "Maldición",
+      "el": "Κατάρα",
+      "de": "Fluch",
+      "ro": "Blestem",
+      "tr": "Lanet"
+    }
+  },
+  {
+    "exact": {
+      "en": "Fairy",
+      "bg": "Фея",
+      "es": "Hada",
+      "el": "Νεράιδα",
+      "de": "Fee",
+      "ro": "Zână",
+      "tr": "Peri"
+    },
+    "hint": {
+      "en": "Tiny",
+      "bg": "Дребен",
+      "es": "Pequeñez",
+      "el": "Μικρότητα",
+      "de": "Winzigkeit",
+      "ro": "Micime",
+      "tr": "Ufaklık"
+    }
+  },
+  {
+    "exact": {
+      "en": "Giant",
+      "bg": "Гигант",
+      "es": "Gigante",
+      "el": "Γίγαντας",
+      "de": "Riese",
+      "ro": "Uriaș",
+      "tr": "Dev"
+    },
+    "hint": {
+      "en": "Underdog",
+      "bg": "Аутсайдер",
+      "es": "Desvalido",
+      "el": "Αουτσάιντερ",
+      "de": "Außenseiter",
+      "ro": "Outsider",
+      "tr": "Küçük"
+    }
+  },
+  {
+    "exact": {
+      "en": "Troll",
+      "bg": "Трол",
+      "es": "Trol",
+      "el": "Τρολ",
+      "de": "Troll",
+      "ro": "Trol",
+      "tr": "Trol"
+    },
+    "hint": {
+      "en": "Internet",
+      "bg": "Интернет",
+      "es": "Internet",
+      "el": "Ίντερνετ",
+      "de": "Internet",
+      "ro": "Internet",
+      "tr": "İnternet"
+    }
+  },
+  {
+    "exact": {
+      "en": "Werewolf",
+      "bg": "Върколак",
+      "es": "Hombre lobo",
+      "el": "Λυκάνθρωπος",
+      "de": "Werwolf",
+      "ro": "Vârcolac",
+      "tr": "Kurt adam"
+    },
+    "hint": {
+      "en": "Wild",
+      "bg": "Дивак",
+      "es": "Salvaje",
+      "el": "Άγριος",
+      "de": "Wild",
+      "ro": "Sălbatic",
+      "tr": "Vahşi"
+    }
+  },
+  {
+    "exact": {
+      "en": "Zombie",
+      "bg": "Зомби",
+      "es": "Zombi",
+      "el": "Ζόμπι",
+      "de": "Zombie",
+      "ro": "Zombi",
+      "tr": "Zombi"
+    },
+    "hint": {
+      "en": "Hunger",
+      "bg": "Глад",
+      "es": "Hambre",
+      "el": "Πείνα",
+      "de": "Hunger",
+      "ro": "Foame",
+      "tr": "Açlık"
+    }
+  },
+  {
+    "exact": {
+      "en": "Angel",
+      "bg": "Ангел",
+      "es": "Ángel",
+      "el": "Άγγελος",
+      "de": "Engel",
+      "ro": "Înger",
+      "tr": "Melek"
+    },
+    "hint": {
+      "en": "Guardian",
+      "bg": "Пазител",
+      "es": "Guardián",
+      "el": "Φύλακας",
+      "de": "Beschützer",
+      "ro": "Protector",
+      "tr": "Koruyucu"
+    }
+  },
+  {
+    "exact": {
+      "en": "Devil",
+      "bg": "Дявол",
+      "es": "Diablo",
+      "el": "Διάβολος",
+      "de": "Teufel",
+      "ro": "Diavol",
+      "tr": "Şeytan"
+    },
+    "hint": {
+      "en": "Sin",
+      "bg": "Грях",
+      "es": "Pecado",
+      "el": "Αμαρτία",
+      "de": "Sünde",
+      "ro": "Păcat",
+      "tr": "Günah"
+    }
+  },
+  {
+    "exact": {
+      "en": "Phoenix",
+      "bg": "Феникс",
+      "es": "Fénix",
+      "el": "Φοίνικας",
+      "de": "Phönix",
+      "ro": "Pasărea Phoenix",
+      "tr": "Anka kuşu"
+    },
+    "hint": {
+      "en": "Rebirth",
+      "bg": "Прераждане",
+      "es": "Renacimiento",
+      "el": "Αναγέννηση",
+      "de": "Wiedergeburt",
+      "ro": "Renaștere",
+      "tr": "Yeniden doğuş"
+    }
+  },
+  {
+    "exact": {
+      "en": "Genie",
+      "bg": "Джин",
+      "es": "Genio",
+      "el": "Τζίνι",
+      "de": "Flaschengeist",
+      "ro": "Duh",
+      "tr": "Cin"
+    },
+    "hint": {
+      "en": "Limit",
+      "bg": "Ограничение",
+      "es": "Límite",
+      "el": "Όριο",
+      "de": "Grenze",
+      "ro": "Limită",
+      "tr": "Sınır"
+    }
+  },
+  {
+    "exact": {
+      "en": "Elf",
+      "bg": "Елф",
+      "es": "Elfo",
+      "el": "Ξωτικό",
+      "de": "Elf",
+      "ro": "Elf",
+      "tr": "Elf"
+    },
+    "hint": {
+      "en": "Craftsmanship",
+      "bg": "Майсторство",
+      "es": "Artesanía",
+      "el": "Μαστοριά",
+      "de": "Handwerkskunst",
+      "ro": "Meșteșug",
+      "tr": "Zanaat"
+    }
+  },
+  {
+    "exact": {
+      "en": "Dwarf",
+      "bg": "Джудже",
+      "es": "Enano",
+      "el": "Νάνος",
+      "de": "Zwerg",
+      "ro": "Pitic",
+      "tr": "Cüce"
+    },
+    "hint": {
+      "en": "Underground",
+      "bg": "Подземие",
+      "es": "Subsuelo",
+      "el": "Υπόγειο",
+      "de": "Untergrund",
+      "ro": "Subteran",
+      "tr": "Yeraltı"
+    }
+  },
+  {
+    "exact": {
+      "en": "Centaur",
+      "bg": "Кентавър",
+      "es": "Centauro",
+      "el": "Κένταυρος",
+      "de": "Zentaur",
+      "ro": "Centaur",
+      "tr": "Kentavros"
+    },
+    "hint": {
+      "en": "Duality",
+      "bg": "Двойственост",
+      "es": "Dualidad",
+      "el": "Δυαδικότητα",
+      "de": "Dualität",
+      "ro": "Dualitate",
+      "tr": "İkilik"
+    }
+  },
+  {
+    "exact": {
+      "en": "Heart",
+      "bg": "Сърце",
+      "es": "Corazón",
+      "el": "Καρδιά",
+      "de": "Herz",
+      "ro": "Inimă",
+      "tr": "Kalp"
+    },
+    "hint": {
+      "en": "Love",
+      "bg": "Любов",
+      "es": "Amor",
+      "el": "Αγάπη",
+      "de": "Liebe",
+      "ro": "Iubire",
+      "tr": "Aşk"
+    }
+  },
+  {
+    "exact": {
+      "en": "Brain",
+      "bg": "Мозък",
+      "es": "Cerebro",
+      "el": "Εγκέφαλος",
+      "de": "Gehirn",
+      "ro": "Creier",
+      "tr": "Beyin"
+    },
+    "hint": {
+      "en": "Genius",
+      "bg": "Гений",
+      "es": "Ingenio",
+      "el": "Ιδιοφυΐα",
+      "de": "Genie",
+      "ro": "Geniu",
+      "tr": "Deha"
+    }
+  },
+  {
+    "exact": {
+      "en": "Bone",
+      "bg": "Кост",
+      "es": "Hueso",
+      "el": "Κόκκαλο",
+      "de": "Knochen",
+      "ro": "Os",
+      "tr": "Kemik"
+    },
+    "hint": {
+      "en": "Structure",
+      "bg": "Структура",
+      "es": "Estructura",
+      "el": "Δομή",
+      "de": "Struktur",
+      "ro": "Structură",
+      "tr": "Yapı"
+    }
+  },
+  {
+    "exact": {
+      "en": "Blood",
+      "bg": "Кръв",
+      "es": "Sangre",
+      "el": "Αίμα",
+      "de": "Blut",
+      "ro": "Sânge",
+      "tr": "Kan"
+    },
+    "hint": {
+      "en": "Family",
+      "bg": "Семейство",
+      "es": "Familia",
+      "el": "Οικογένεια",
+      "de": "Familie",
+      "ro": "Familie",
+      "tr": "Aile"
+    }
+  },
+  {
+    "exact": {
+      "en": "Tooth",
+      "bg": "Зъб",
+      "es": "Diente",
+      "el": "Δόντι",
+      "de": "Zahn",
+      "ro": "Dinte",
+      "tr": "Diş"
+    },
+    "hint": {
+      "en": "Ache",
+      "bg": "Болка",
+      "es": "Dolor",
+      "el": "Πόνος",
+      "de": "Schmerz",
+      "ro": "Durere",
+      "tr": "Ağrı"
+    }
+  },
+  {
+    "exact": {
+      "en": "Eye",
+      "bg": "Око",
+      "es": "Ojo",
+      "el": "Μάτι",
+      "de": "Auge",
+      "ro": "Ochi",
+      "tr": "Göz"
+    },
+    "hint": {
+      "en": "Witness",
+      "bg": "Свидетел",
+      "es": "Testigo",
+      "el": "Μάρτυρας",
+      "de": "Zeuge",
+      "ro": "Martor",
+      "tr": "Tanık"
+    }
+  },
+  {
+    "exact": {
+      "en": "Ear",
+      "bg": "Ухо",
+      "es": "Oreja",
+      "el": "Αυτί",
+      "de": "Ohr",
+      "ro": "Ureche",
+      "tr": "Kulak"
+    },
+    "hint": {
+      "en": "Rumor",
+      "bg": "Слух",
+      "es": "Rumor",
+      "el": "Φήμη",
+      "de": "Gerücht",
+      "ro": "Zvon",
+      "tr": "Söylenti"
+    }
+  },
+  {
+    "exact": {
+      "en": "Hand",
+      "bg": "Ръка",
+      "es": "Mano",
+      "el": "Χέρι",
+      "de": "Hand",
+      "ro": "Mână",
+      "tr": "El"
+    },
+    "hint": {
+      "en": "Help",
+      "bg": "Помощ",
+      "es": "Ayuda",
+      "el": "Βοήθεια",
+      "de": "Hilfe",
+      "ro": "Ajutor",
+      "tr": "Yardım"
+    }
+  },
+  {
+    "exact": {
+      "en": "Foot",
+      "bg": "Крак",
+      "es": "Pie",
+      "el": "Πόδι",
+      "de": "Fuß",
+      "ro": "Picior",
+      "tr": "Ayak"
+    },
+    "hint": {
+      "en": "Path",
+      "bg": "Пътека",
+      "es": "Camino",
+      "el": "Μονοπάτι",
+      "de": "Pfad",
+      "ro": "Cărare",
+      "tr": "Patika"
+    }
+  },
+  {
+    "exact": {
+      "en": "Skin",
+      "bg": "Кожа",
+      "es": "Piel",
+      "el": "Δέρμα",
+      "de": "Haut",
+      "ro": "Piele",
+      "tr": "Deri"
+    },
+    "hint": {
+      "en": "Identity",
+      "bg": "Идентичност",
+      "es": "Identidad",
+      "el": "Ταυτότητα",
+      "de": "Identität",
+      "ro": "Identitate",
+      "tr": "Kimlik"
+    }
+  },
+  {
+    "exact": {
+      "en": "Hair",
+      "bg": "Коса",
+      "es": "Cabello",
+      "el": "Μαλλιά",
+      "de": "Haare",
+      "ro": "Păr",
+      "tr": "Saç"
+    },
+    "hint": {
+      "en": "Vanity",
+      "bg": "Суета",
+      "es": "Vanidad",
+      "el": "Ματαιοδοξία",
+      "de": "Eitelkeit",
+      "ro": "Vanitate",
+      "tr": "Kibir"
+    }
+  },
+  {
+    "exact": {
+      "en": "Muscle",
+      "bg": "Мускул",
+      "es": "Músculo",
+      "el": "Μυς",
+      "de": "Muskel",
+      "ro": "Mușchi",
+      "tr": "Kas"
+    },
+    "hint": {
+      "en": "Effort",
+      "bg": "Усилие",
+      "es": "Esfuerzo",
+      "el": "Προσπάθεια",
+      "de": "Anstrengung",
+      "ro": "Efort",
+      "tr": "Çaba"
+    }
+  },
+  {
+    "exact": {
+      "en": "Skeleton",
+      "bg": "Скелет",
+      "es": "Esqueleto",
+      "el": "Σκελετός",
+      "de": "Skelett",
+      "ro": "Schelet",
+      "tr": "İskelet"
+    },
+    "hint": {
+      "en": "Halloween",
+      "bg": "Хелоуин",
+      "es": "Halloween",
+      "el": "Χάλογουιν",
+      "de": "Halloween",
+      "ro": "Halloween",
+      "tr": "Cadılar Bayramı"
+    }
+  },
+  {
+    "exact": {
+      "en": "Fever",
+      "bg": "Треска",
+      "es": "Fiebre",
+      "el": "Πυρετός",
+      "de": "Fieber",
+      "ro": "Febră",
+      "tr": "Ateş"
+    },
+    "hint": {
+      "en": "Sweat",
+      "bg": "Пот",
+      "es": "Sudor",
+      "el": "Ιδρώτας",
+      "de": "Schweiß",
+      "ro": "Transpirație",
+      "tr": "Ter"
+    }
+  },
+  {
+    "exact": {
+      "en": "Bandage",
+      "bg": "Превръзка",
+      "es": "Vendaje",
+      "el": "Επίδεσμος",
+      "de": "Verband",
+      "ro": "Bandaj",
+      "tr": "Bandaj"
+    },
+    "hint": {
+      "en": "Emergency",
+      "bg": "Спешност",
+      "es": "Emergencia",
+      "el": "Επείγον",
+      "de": "Notfall",
+      "ro": "Urgență",
+      "tr": "Aciliyet"
+    }
+  },
+  {
+    "exact": {
+      "en": "Book",
+      "bg": "Книга",
+      "es": "Libro",
+      "el": "Βιβλίο",
+      "de": "Buch",
+      "ro": "Carte",
+      "tr": "Kitap"
+    },
+    "hint": {
+      "en": "Story",
+      "bg": "История",
+      "es": "Historia",
+      "el": "Ιστορία",
+      "de": "Geschichte",
+      "ro": "Poveste",
+      "tr": "Hikaye"
+    }
+  },
+  {
+    "exact": {
+      "en": "Pen",
+      "bg": "Химикал",
+      "es": "Bolígrafo",
+      "el": "Στυλό",
+      "de": "Kugelschreiber",
+      "ro": "Pix",
+      "tr": "Tükenmez kalem"
+    },
+    "hint": {
+      "en": "Signature",
+      "bg": "Подпис",
+      "es": "Firma",
+      "el": "Υπογραφή",
+      "de": "Unterschrift",
+      "ro": "Semnătură",
+      "tr": "İmza"
+    }
+  },
+  {
+    "exact": {
+      "en": "Pencil",
+      "bg": "Молив",
+      "es": "Lápiz",
+      "el": "Μολύβι",
+      "de": "Bleistift",
+      "ro": "Creion",
+      "tr": "Kurşun kalem"
+    },
+    "hint": {
+      "en": "Mistake",
+      "bg": "Грешка",
+      "es": "Error",
+      "el": "Λάθος",
+      "de": "Fehler",
+      "ro": "Greșeală",
+      "tr": "Hata"
+    }
+  },
+  {
+    "exact": {
+      "en": "Notebook",
+      "bg": "Тетрадка",
+      "es": "Cuaderno",
+      "el": "Τετράδιο",
+      "de": "Notizbuch",
+      "ro": "Caiet",
+      "tr": "Defter"
+    },
+    "hint": {
+      "en": "Ideas",
+      "bg": "Идеи",
+      "es": "Ideas",
+      "el": "Ιδέες",
+      "de": "Ideen",
+      "ro": "Idei",
+      "tr": "Fikirler"
+    }
+  },
+  {
+    "exact": {
+      "en": "Eraser",
+      "bg": "Гума",
+      "es": "Goma de borrar",
+      "el": "Γόμα",
+      "de": "Radiergummi",
+      "ro": "Radieră",
+      "tr": "Silgi"
+    },
+    "hint": {
+      "en": "Forgiveness",
+      "bg": "Прошка",
+      "es": "Perdón",
+      "el": "Συγχώρεση",
+      "de": "Vergebung",
+      "ro": "Iertare",
+      "tr": "Af"
+    }
+  },
+  {
+    "exact": {
+      "en": "Ruler",
+      "bg": "Линийка",
+      "es": "Regla",
+      "el": "Χάρακας",
+      "de": "Lineal",
+      "ro": "Riglă",
+      "tr": "Cetvel"
+    },
+    "hint": {
+      "en": "Fairness",
+      "bg": "Справедливост",
+      "es": "Equidad",
+      "el": "Ισότητα",
+      "de": "Fairness",
+      "ro": "Corectitudine",
+      "tr": "Eşitlik"
+    }
+  },
+  {
+    "exact": {
+      "en": "Calculator",
+      "bg": "Калкулатор",
+      "es": "Calculadora",
+      "el": "Αριθμομηχανή",
+      "de": "Taschenrechner",
+      "ro": "Calculator de buzunar",
+      "tr": "Hesap makinesi"
+    },
+    "hint": {
+      "en": "Exam",
+      "bg": "Изпит",
+      "es": "Examen",
+      "el": "Εξέταση",
+      "de": "Prüfung",
+      "ro": "Examen",
+      "tr": "Sınav"
+    }
+  },
+  {
+    "exact": {
+      "en": "Blackboard",
+      "bg": "Черна дъска",
+      "es": "Pizarra",
+      "el": "Μαυροπίνακας",
+      "de": "Tafel",
+      "ro": "Tablă neagră",
+      "tr": "Kara tahta"
+    },
+    "hint": {
+      "en": "Lesson",
+      "bg": "Урок",
+      "es": "Lección",
+      "el": "Μάθημα",
+      "de": "Lektion",
+      "ro": "Lecție",
+      "tr": "Ders"
+    }
+  },
+  {
+    "exact": {
+      "en": "Homework",
+      "bg": "Домашна работа",
+      "es": "Deberes",
+      "el": "Εργασία για το σπίτι",
+      "de": "Hausaufgaben",
+      "ro": "Temă",
+      "tr": "Ev ödevi"
+    },
+    "hint": {
+      "en": "Procrastination",
+      "bg": "Отлагане",
+      "es": "Procrastinación",
+      "el": "Αναβλητικότητα",
+      "de": "Aufschieberitis",
+      "ro": "Amânare",
+      "tr": "Erteleme"
+    }
+  },
+  {
+    "exact": {
+      "en": "Diploma",
+      "bg": "Диплома",
+      "es": "Diploma",
+      "el": "Δίπλωμα",
+      "de": "Diplom",
+      "ro": "Diplomă",
+      "tr": "Diploma"
+    },
+    "hint": {
+      "en": "Achievement",
+      "bg": "Постижение",
+      "es": "Logro",
+      "el": "Επίτευγμα",
+      "de": "Erfolg",
+      "ro": "Realizare",
+      "tr": "Başarı"
+    }
+  }
+]

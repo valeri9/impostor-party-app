@@ -18,8 +18,7 @@ jest.mock('../src/i18n/prompts', () => {
     Object.fromEntries(actual.LOCALES.map((l: string) => [l, value])) as Record<string, string>;
   return {
     ...actual,
-    WORD_PROMPTS: [{ category: 'food', exact: all('Coffee'), hint: all('Someone\'s first excuse to leave the house') }],
-    DRAWING_PROMPTS: [{ exact: all('Eiffel Tower'), hint: all('A whole day in Paris to see it properly') }],
+    PROMPTS: [{ exact: all('Coffee'), hint: all('Someone\'s first excuse to leave the house') }],
   };
 });
 

@@ -1,4 +1,4 @@
-import { DRAWING_PROMPTS, WORD_PROMPTS } from '../i18n/prompts';
+import { PROMPTS } from '../i18n/prompts';
 import {
   Card,
   CanvasRound,
@@ -47,14 +47,14 @@ function baseRound(players: Player[]) {
 
 export function buildWordRound(players: Player[], rounds: number): WordRound {
   const { order, impostorId } = baseRound(players);
-  return { mode: 'word', prompt: pick(WORD_PROMPTS), impostorId, order, speakerIndex: 0, rounds };
+  return { mode: 'word', prompt: pick(PROMPTS), impostorId, order, speakerIndex: 0, rounds };
 }
 
 export function buildCanvasRound(players: Player[], rounds: number): CanvasRound {
   const { order, impostorId } = baseRound(players);
   return {
     mode: 'canvas',
-    prompt: pick(DRAWING_PROMPTS),
+    prompt: pick(PROMPTS),
     impostorId,
     order,
     strokes: [],
