@@ -11,6 +11,10 @@ import { createAudioPlayer, setAudioModeAsync, type AudioPlayer } from 'expo-aud
  * 2. Nothing reacts to playback *ending*. Rewinding a finished clip from a
  *    status listener restarts it, which finishes, which rewinds… and the
  *    effect never stops. Every rewind here is driven by a press.
+ * 3. `isLoaded` only means "still decoding" *before* the first successful
+ *    play. On Android it goes false again the moment a short clip reaches
+ *    its end — checking it on every press read "just finished" as "not
+ *    ready" and made every effect play exactly once, ever.
  */
 
 const SOURCES = {
@@ -72,20 +76,22 @@ export function playSound(name: SoundName) {
     ensureAudioMode();
     const player = playerFor(name);
 
-    // Still decoding: drop it. Waiting is what made effects arrive seconds
-    // late, on top of whatever the player pressed next.
-    if (!player.isLoaded) return;
-
     // The first press of an effect just plays: the player has never sounded,
     // so it is already at zero, and the first `seekTo` on a freshly prepared
     // native player can be refused — which killed the `play` chained behind
     // it and made the first card of a game silent.
     //
-    // Whether it has sounded is tracked here rather than read back from
-    // `currentTime`. On Android that property stayed at 0 even for a clip
-    // parked at its end, so trusting it sent every press down this branch,
-    // and `play()` on a finished clip is silence.
+    // Whether it has sounded is tracked here, not read back from the player.
+    // `currentTime` stayed at 0 on Android for a clip parked at its end, and
+    // `isLoaded` — checked here on every press, not just the first — turned
+    // out to go false on Android the moment a short clip finishes, which is
+    // indistinguishable from "still decoding" without this flag. Trusting it
+    // past the first press meant every effect played exactly once, ever.
     if (!sounded.has(name)) {
+      // Still decoding: drop it. Waiting is what made effects arrive seconds
+      // late, on top of whatever the player pressed next. This check only
+      // applies here, before anything has proven the source decoded fine.
+      if (!player.isLoaded) return;
       sounded.add(name);
       player.play();
       return;
