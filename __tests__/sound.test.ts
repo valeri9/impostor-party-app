@@ -8,7 +8,10 @@
  * Rewinding a player that had never sounded — already at zero — cost the
  * first press of every effect, which is the silent first card of a game.
  * Deciding that from `currentTime` then cost every press *after* the first
- * on Android, where the property never left zero.
+ * on Android, where the property never left zero. Gating every press on
+ * `isLoaded` cost every press after the first everywhere: on Android that
+ * flag goes false again once a short clip finishes, so it was reread as
+ * "still decoding" and dropped — every effect played exactly once, ever.
  */
 const mockPlay = jest.fn();
 const mockPause = jest.fn();
@@ -132,6 +135,21 @@ describe('playSound', () => {
     state.isLoaded = true;
     await new Promise((resolve) => setTimeout(resolve, 80));
     expect(mockPlay).not.toHaveBeenCalled();
+  });
+
+  it('keeps playing after the player reports isLoaded=false once it has already sounded', async () => {
+    const { playSound } = require('../src/native/sound');
+    playSound('slam');
+    await flush();
+    expect(mockPlay).toHaveBeenCalledTimes(1);
+
+    // Observed on a real device: a short clip flips `isLoaded` back to false
+    // the moment it finishes, indistinguishable from "still decoding" unless
+    // this module already knows the source played fine once before.
+    state.isLoaded = false;
+    playSound('slam');
+    await flush();
+    expect(mockPlay).toHaveBeenCalledTimes(2);
   });
 
   it('never schedules anything on a timer', async () => {
