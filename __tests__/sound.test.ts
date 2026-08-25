@@ -1,12 +1,13 @@
 /**
- * The rule these guard: a press either sounds immediately or not at all.
+ * Every rule here is a bug that shipped.
  *
- * Both directions have been real bugs. Playing without rewinding left every
- * effect silent after its first use, because expo-audio parks a finished clip
- * at its end. Waiting for the clip to be ready fixed that and caused a worse
- * one — effects arriving seconds late, under whatever the player pressed next.
+ * Playing without rewinding left each effect silent after its first use.
+ * Waiting for a clip to be ready fixed that and made effects arrive seconds
+ * late, under the next press. Rewinding from a playback-finished listener
+ * restarted the clip it had just rewound, and the sound never stopped.
  */
 const mockPlay = jest.fn();
+const mockPause = jest.fn();
 const mockSeekTo = jest.fn(() => Promise.resolve());
 const mockAddListener = jest.fn();
 const state = { currentTime: 0, isLoaded: true, playing: false, duration: 0.42 };
@@ -14,6 +15,7 @@ const state = { currentTime: 0, isLoaded: true, playing: false, duration: 0.42 }
 jest.mock('expo-audio', () => ({
   createAudioPlayer: jest.fn(() => ({
     play: mockPlay,
+    pause: mockPause,
     seekTo: mockSeekTo,
     addListener: mockAddListener,
     remove: jest.fn(),
@@ -40,19 +42,44 @@ const flush = async () => {
 describe('playSound', () => {
   beforeEach(() => {
     jest.resetModules();
-    jest.useRealTimers();
     mockPlay.mockReset();
+    mockPause.mockReset();
     mockSeekTo.mockReset().mockImplementation(() => Promise.resolve());
     mockAddListener.mockReset();
     Object.assign(state, { currentTime: 0, isLoaded: true, playing: false, duration: 0.42 });
   });
 
-  it('plays immediately, without waiting on anything', () => {
+  it('never listens for playback ending', () => {
+    const { playSound, preloadSounds } = require('../src/native/sound');
+    preloadSounds();
+    playSound('slam');
+    // A listener that rewinds a finished clip restarts it, and the effect
+    // loops forever. Nothing in this module may react to playback ending.
+    expect(mockAddListener).not.toHaveBeenCalled();
+  });
+
+  it('stops and rewinds before it plays, in that order', async () => {
     const { playSound } = require('../src/native/sound');
     playSound('slam');
-    // Synchronously — not after a promise, a poll, or a timer.
+    expect(mockPause).toHaveBeenCalledTimes(1);
+    expect(mockSeekTo).toHaveBeenCalledWith(0);
+    // Chained, not fired alongside: playing before the seek lands resumes
+    // from the end of the clip and is silent.
+    expect(mockPlay).not.toHaveBeenCalled();
+    await flush();
     expect(mockPlay).toHaveBeenCalledTimes(1);
-    expect(mockSeekTo).not.toHaveBeenCalled();
+  });
+
+  it('restarts an effect that is still sounding rather than dropping the press', async () => {
+    const { playSound } = require('../src/native/sound');
+    playSound('tick');
+    await flush();
+
+    state.playing = true;
+    state.currentTime = 0.02;
+    playSound('tick');
+    await flush();
+    expect(mockPlay).toHaveBeenCalledTimes(2);
   });
 
   it('drops a press while the clip is still decoding instead of firing it late', async () => {
@@ -60,53 +87,17 @@ describe('playSound', () => {
     const { playSound } = require('../src/native/sound');
     playSound('slam');
     await flush();
-    await new Promise((resolve) => setTimeout(resolve, 80));
     state.isLoaded = true;
     await new Promise((resolve) => setTimeout(resolve, 80));
-    // The press is gone, not queued — a late effect lands under the next screen.
     expect(mockPlay).not.toHaveBeenCalled();
   });
 
-  it('restarts an effect that is still sounding rather than dropping the press', async () => {
-    const { playSound } = require('../src/native/sound');
-    playSound('tick');
-    expect(mockPlay).toHaveBeenCalledTimes(1);
-
-    // Pressed again mid-clip: it rewinds and fires again. Skipping repeats is
-    // what left half the presses on a rapidly tapped stepper silent.
-    state.playing = true;
-    state.currentTime = 0.02;
-    playSound('tick');
-    await flush();
-    expect(mockSeekTo).toHaveBeenCalledWith(0);
-    expect(mockPlay).toHaveBeenCalledTimes(2);
-  });
-
-  it('rewinds as soon as the clip ends, so the next press needs no seek', () => {
+  it('never schedules anything on a timer', async () => {
+    jest.useFakeTimers();
     const { playSound } = require('../src/native/sound');
     playSound('slam');
-    expect(mockAddListener).toHaveBeenCalledWith('playbackStatusUpdate', expect.any(Function));
-
-    const onStatus = mockAddListener.mock.calls[0][1];
-    state.currentTime = 0.42;
-    onStatus({ didJustFinish: true });
-    expect(mockSeekTo).toHaveBeenCalledWith(0);
-
-    // Back at zero, the next press starts with no round-trip.
-    state.currentTime = 0;
-    mockPlay.mockClear();
-    playSound('slam');
-    expect(mockPlay).toHaveBeenCalledTimes(1);
-  });
-
-  it('rewinds before replaying a clip left parked at its end', async () => {
-    const { playSound } = require('../src/native/sound');
-    state.currentTime = 0.42;
-    playSound('slam');
-    expect(mockPlay).not.toHaveBeenCalled(); // seek first
-    await flush();
-    expect(mockSeekTo).toHaveBeenCalledWith(0);
-    expect(mockPlay).toHaveBeenCalledTimes(1);
+    expect(jest.getTimerCount()).toBe(0);
+    jest.useRealTimers();
   });
 
   it('reuses one player per effect rather than building a new one each press', () => {
