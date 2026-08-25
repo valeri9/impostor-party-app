@@ -25,6 +25,8 @@ const SOURCES = {
 export type SoundName = keyof typeof SOURCES;
 
 const players: Partial<Record<SoundName, AudioPlayer>> = {};
+/** Effects that have played at least once, and so need rewinding before the next press. */
+const sounded = new Set<SoundName>();
 let audioModeReady = false;
 
 function ensureAudioMode() {
@@ -74,11 +76,17 @@ export function playSound(name: SoundName) {
     // late, on top of whatever the player pressed next.
     if (!player.isLoaded) return;
 
-    // A player that has never sounded is already parked at zero, so rewinding
-    // it is pure risk: the first `seekTo` on a freshly prepared player can
-    // reject, and the `play` chained behind it then never runs. That is the
-    // silent first card — and why every card after it was fine.
-    if (!player.playing && player.currentTime === 0) {
+    // The first press of an effect just plays: the player has never sounded,
+    // so it is already at zero, and the first `seekTo` on a freshly prepared
+    // native player can be refused — which killed the `play` chained behind
+    // it and made the first card of a game silent.
+    //
+    // Whether it has sounded is tracked here rather than read back from
+    // `currentTime`. On Android that property stayed at 0 even for a clip
+    // parked at its end, so trusting it sent every press down this branch,
+    // and `play()` on a finished clip is silence.
+    if (!sounded.has(name)) {
+      sounded.add(name);
       player.play();
       return;
     }
@@ -109,5 +117,6 @@ export function releaseSounds() {
       // Already released.
     }
     delete players[key];
+    sounded.delete(key);
   }
 }
