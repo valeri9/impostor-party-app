@@ -250,6 +250,35 @@ function PinstripePair({ skin }: { skin: Skin }) {
 }
 
 /**
+ * One half of the before/after switch. Styled from the *purchased* skin's
+ * own button colours regardless of which side is active, so the control
+ * itself stays put and legible while the mockup underneath is what changes.
+ */
+function ComparePill({ label, active, skin, onPress }: { label: string; active: boolean; skin: Skin; onPress: () => void }) {
+  return (
+    <Pressable
+      accessibilityRole="button"
+      accessibilityState={{ selected: active }}
+      onPress={onPress}
+      style={[
+        previewStyles.comparePill,
+        {
+          backgroundColor: active ? skin.shell.button : 'transparent',
+          borderColor: skin.shell.buttonDeep,
+        },
+      ]}
+    >
+      <Text
+        style={[previewStyles.comparePillText, { color: active ? skin.shell.onButton : skin.shell.onShell }]}
+        numberOfLines={1}
+      >
+        {label}
+      </Text>
+    </Pressable>
+  );
+}
+
+/**
  * A button styled entirely from a given skin's own colours, for the two real
  * controls (select / back) on the preview screen. The app's real Button
  * component reads static default-skin colours, which would look wrong sitting
@@ -379,8 +408,18 @@ function SkinPreviewScreen({
 }) {
   const { t, locale } = useI18n();
   const { state } = useGame();
+  const { activeSkin } = useSkin();
   const insets = useSafeAreaInsets();
-  const c = deriveColors(skin);
+  // The console mockup below can show either skin on the exact same content
+  // — the actual home screen, not a screenshot — so the difference a
+  // purchase makes is something a shopper sees happen, not something they
+  // have to take on faith from a single static render. The listing text
+  // above it (name, tagline, price, what it unlocks) always describes the
+  // skin being sold, whichever one is currently on screen.
+  const [comparing, setComparing] = useState(false);
+  const shown = comparing ? activeSkin : skin;
+  const c = deriveColors(shown);
+  const canCompare = activeSkin.id !== skin.id;
 
   return (
     <ScrollView
@@ -392,6 +431,11 @@ function SkinPreviewScreen({
       contentContainerStyle={[
         previewStyles.page,
         {
+          // Pinned to `skin`, not `shown`: `onShell` text below is only ever
+          // guaranteed to read against its *own* skin's body. Letting the
+          // page background follow the compare toggle while the header text
+          // stayed on the purchased skin's colour washed the header out
+          // every time the two skins' contrast ran different directions.
           backgroundColor: skin.shell.body,
           paddingTop: insets.top + spacing.sm,
           paddingBottom: insets.bottom + spacing.xs,
@@ -416,34 +460,44 @@ function SkinPreviewScreen({
         </Text>
       </View>
 
-      <View style={[previewStyles.bezel, { backgroundColor: skin.shell.bezel }]}>
+      {canCompare ? (
+        <View style={previewStyles.compareWrap}>
+          <Text style={[previewStyles.compareLabel, { color: skin.shell.onShell }]}>{t('skins.compareLabel')}</Text>
+          <View style={previewStyles.compareRow}>
+            <ComparePill label={t(skin.nameKey)} active={!comparing} skin={skin} onPress={() => setComparing(false)} />
+            <ComparePill label={t(activeSkin.nameKey)} active={comparing} skin={skin} onPress={() => setComparing(true)} />
+          </View>
+        </View>
+      ) : null}
+
+      <View style={[previewStyles.bezel, { backgroundColor: shown.shell.bezel }]}>
         <View style={previewStyles.bezelTop}>
-          <View style={[previewStyles.led, { backgroundColor: skin.shell.led }]} />
-          <PinstripePair skin={skin} />
+          <View style={[previewStyles.led, { backgroundColor: shown.shell.led }]} />
+          <PinstripePair skin={shown} />
           <Text
-            style={[previewStyles.caption, { color: skin.shell.caption }]}
+            style={[previewStyles.caption, { color: shown.shell.caption }]}
             numberOfLines={1}
             adjustsFontSizeToFit
           >
             {BEZEL_CAPTION}
           </Text>
-          <PinstripePair skin={skin} />
+          <PinstripePair skin={shown} />
         </View>
 
-        <View style={[previewStyles.lcd, { backgroundColor: c.bg, borderColor: skin.shell.bezelEdge }]}>
+        <View style={[previewStyles.lcd, { backgroundColor: c.bg, borderColor: shown.shell.bezelEdge }]}>
           {/* The real texture, not a flat guess — this is what a shopper is
               actually paying for, so it has to be the genuine article: the
               same DotMatrix pixel grid or animated BeachScene the live
-              Screen.tsx renders, in the previewed skin's own colours rather
-              than whichever skin is currently active in the app. */}
-          {skin.sceneId === 'shoreline' ? (
+              Screen.tsx renders, in whichever of the two skins the compare
+              toggle currently has selected. */}
+          {shown.sceneId === 'shoreline' ? (
             <View style={StyleSheet.absoluteFill} pointerEvents="none">
               <SandFill />
               <BeachScene />
               <View style={[StyleSheet.absoluteFill, { backgroundColor: c.bg, opacity: 0.55 }]} />
             </View>
           ) : (
-            <DotMatrix lcd={skin.lcd} />
+            <DotMatrix lcd={shown.lcd} />
           )}
           <ScrollView contentContainerStyle={previewStyles.lcdContent} showsVerticalScrollIndicator={false}>
             <View style={[previewStyles.titlePlate, { backgroundColor: c.ink }]}>
@@ -452,14 +506,14 @@ function SkinPreviewScreen({
               </Text>
             </View>
             <View style={previewStyles.buttonRow}>
-              <View style={[previewStyles.chip, { backgroundColor: skin.shell.button, borderColor: skin.shell.buttonDeep }]}>
-                <Text style={[previewStyles.chipGlyph, { color: skin.shell.onButton }]}>◨</Text>
+              <View style={[previewStyles.chip, { backgroundColor: shown.shell.button, borderColor: shown.shell.buttonDeep }]}>
+                <Text style={[previewStyles.chipGlyph, { color: shown.shell.onButton }]}>◨</Text>
               </View>
               <Text style={[previewStyles.tagline, { color: c.inkSoft }]} numberOfLines={2}>
                 {t('app.tagline')}
               </Text>
-              <View style={[previewStyles.chip, { backgroundColor: skin.shell.button, borderColor: skin.shell.buttonDeep }]}>
-                <Text style={[previewStyles.chipGlyph, { color: skin.shell.onButton }]}>?</Text>
+              <View style={[previewStyles.chip, { backgroundColor: shown.shell.button, borderColor: shown.shell.buttonDeep }]}>
+                <Text style={[previewStyles.chipGlyph, { color: shown.shell.onButton }]}>?</Text>
               </View>
             </View>
 
@@ -510,14 +564,16 @@ function SkinPreviewScreen({
               );
             })}
 
-            <View style={[previewStyles.startButton, { backgroundColor: skin.shell.button, borderColor: skin.shell.buttonDeep }]}>
-              <Text style={[previewStyles.startLabel, { color: skin.shell.onButton }]}>{t('setup.start')}</Text>
+            <View style={[previewStyles.startButton, { backgroundColor: shown.shell.button, borderColor: shown.shell.buttonDeep }]}>
+              <Text style={[previewStyles.startLabel, { color: shown.shell.onButton }]}>{t('setup.start')}</Text>
             </View>
           </ScrollView>
         </View>
       </View>
 
       <View style={previewStyles.wordmark}>
+        {/* Same reasoning as the page background above: this sits directly
+            on it, so it has to be paired with the same skin, not `shown`. */}
         <Text style={[previewStyles.wmSmall, { color: skin.shell.onShell }]}>Impostor</Text>
         <Text style={[previewStyles.wmLarge, { color: skin.shell.onShell }]}>PARTY</Text>
       </View>
@@ -581,6 +637,17 @@ const previewStyles = StyleSheet.create({
   headerTagline: { ...type.caption, textAlign: 'center', marginTop: 2, letterSpacing: 0 },
   headerBadge: { ...type.caption, textAlign: 'center', marginTop: 2 },
   headerIncludes: { ...type.caption, textAlign: 'center', marginTop: spacing.xs, letterSpacing: 0, opacity: 0.85 },
+  compareWrap: { alignItems: 'center', marginBottom: spacing.sm },
+  compareLabel: { ...type.caption, textTransform: 'uppercase', marginBottom: spacing.xs, opacity: 0.85 },
+  compareRow: { flexDirection: 'row', gap: spacing.xs },
+  comparePill: {
+    minHeight: 32,
+    paddingHorizontal: spacing.sm,
+    borderWidth: stroke.thin,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  comparePillText: { ...type.caption, fontSize: 11, textTransform: 'uppercase' },
   bezel: {
     // Not `flex: 1` — inside a ScrollView's content there's no bounded
     // parent height for that to resolve against, and a flex child in that

@@ -150,7 +150,8 @@
       "accuse.point": "POINT!",
       "skins.unlocks": "Unlocks:",
       "skins.includesPalette": "a full screen & console colour change",
-      "skins.includesScene": "plus an animated background"
+      "skins.includesScene": "plus an animated background",
+      "skins.compareLabel": "Compare:"
     },
     "bg": {
       "app.title": "Impostor Party",
@@ -302,7 +303,8 @@
       "accuse.point": "ПОСОЧИ!",
       "skins.unlocks": "Отключва:",
       "skins.includesPalette": "изцяло нова цветова гама на екрана и конзолата",
-      "skins.includesScene": "плюс анимиран фон"
+      "skins.includesScene": "плюс анимиран фон",
+      "skins.compareLabel": "Сравни:"
     },
     "es": {
       "app.title": "Impostor Party",
@@ -454,7 +456,8 @@
       "accuse.point": "¡SEÑALA!",
       "skins.unlocks": "Desbloquea:",
       "skins.includesPalette": "un cambio completo de color en pantalla y consola",
-      "skins.includesScene": "además de un fondo animado"
+      "skins.includesScene": "además de un fondo animado",
+      "skins.compareLabel": "Comparar:"
     },
     "el": {
       "app.title": "Impostor Party",
@@ -606,7 +609,8 @@
       "accuse.point": "ΔΕΙΞΕ!",
       "skins.unlocks": "Ξεκλειδώνει:",
       "skins.includesPalette": "πλήρη αλλαγή χρώματος οθόνης και κονσόλας",
-      "skins.includesScene": "συν ένα κινούμενο φόντο"
+      "skins.includesScene": "συν ένα κινούμενο φόντο",
+      "skins.compareLabel": "Σύγκριση:"
     },
     "de": {
       "app.title": "Impostor Party",
@@ -758,7 +762,8 @@
       "accuse.point": "ZEIGEN!",
       "skins.unlocks": "Schaltet frei:",
       "skins.includesPalette": "einen kompletten Farbwechsel von Bildschirm und Konsole",
-      "skins.includesScene": "plus einen animierten Hintergrund"
+      "skins.includesScene": "plus einen animierten Hintergrund",
+      "skins.compareLabel": "Vergleichen:"
     },
     "ro": {
       "app.title": "Impostor Party",
@@ -910,7 +915,8 @@
       "accuse.point": "ARATĂ!",
       "skins.unlocks": "Deblochează:",
       "skins.includesPalette": "o schimbare completă de culoare a ecranului și consolei",
-      "skins.includesScene": "plus un fundal animat"
+      "skins.includesScene": "plus un fundal animat",
+      "skins.compareLabel": "Compară:"
     },
     "tr": {
       "app.title": "Impostor Party",
@@ -1062,7 +1068,8 @@
       "accuse.point": "İŞARET ET!",
       "skins.unlocks": "Kilidini açar:",
       "skins.includesPalette": "ekranın ve konsolun tamamen yeni bir renk düzeni",
-      "skins.includesScene": "artı hareketli bir arka plan"
+      "skins.includesScene": "artı hareketli bir arka plan",
+      "skins.compareLabel": "Karşılaştır:"
     }
   }
 }

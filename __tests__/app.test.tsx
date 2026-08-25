@@ -540,7 +540,9 @@ describe('skins', () => {
     await waitFor(() => expect(screen.getByTestId('skin-preview-neon-nebula')).toBeTruthy());
 
     await fireEvent.press(screen.getByTestId('skin-preview-neon-nebula'));
-    await waitFor(() => expect(screen.getByText(translate('en', 'skin.neonNebula.name'))).toBeTruthy());
+    // Appears twice once the compare toggle ships: once as the screen's own
+    // title, once as that toggle's "this skin" pill label.
+    await waitFor(() => expect(screen.getAllByText(translate('en', 'skin.neonNebula.name')).length).toBeGreaterThan(0));
     // The whole home page mocked up in the new colours, not just the title.
     expect(screen.getAllByText(translate('en', 'app.title')).length).toBeGreaterThan(0);
     expect(screen.getByText(translate('en', 'mode.word.name'))).toBeTruthy();
@@ -549,6 +551,28 @@ describe('skins', () => {
 
     await fireEvent.press(screen.getByTestId('skin-preview-back'));
     await waitFor(() => expect(screen.getByTestId('skins-done')).toBeTruthy());
+  });
+
+  it('lets a shopper flip the preview between the locked skin and their current one', async () => {
+    await render(<App />);
+    await waitFor(() => expect(screen.getByText(translate('en', 'app.tagline'))).toBeTruthy());
+
+    await fireEvent.press(screen.getByTestId('open-skins'));
+    await fireEvent.press(screen.getByTestId('skin-preview-neon-nebula'));
+    await waitFor(() => expect(screen.getByTestId('skin-preview-buy')).toBeTruthy());
+
+    // Both halves of the toggle are on screen: the skin being sold, and
+    // whichever skin is actually active right now (the free default, since
+    // nothing else is owned in this fixture).
+    const dmgLabel = translate('en', 'skin.dmgClassic.name');
+    await waitFor(() => expect(screen.getAllByText(dmgLabel).length).toBeGreaterThan(0));
+
+    // Flipping to "compare" must not disturb the actual purchase controls —
+    // the buy button still buys the locked skin, not whichever one the
+    // mockup happens to be showing.
+    await fireEvent.press(screen.getAllByText(dmgLabel)[0]);
+    expect(screen.getByTestId('skin-preview-buy')).toBeTruthy();
+    expect(screen.getAllByText(translate('en', 'skin.neonNebula.name')).length).toBeGreaterThan(0);
   });
 
   it('buying a locked skin unlocks and persists it', async () => {
