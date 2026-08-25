@@ -34,19 +34,46 @@ async function ensureAudioMode() {
   }
 }
 
+function playerFor(name: SoundName): AudioPlayer {
+  let player = players[name];
+  if (!player) {
+    player = createAudioPlayer(SOURCES[name]);
+    players[name] = player;
+  }
+  return player;
+}
+
+/**
+ * Builds every player up front so the first press of a button is as loud as
+ * the second. A player created at the moment of the press is still fetching
+ * its clip when `play()` is called, and that first effect is simply lost.
+ */
+export function preloadSounds() {
+  void ensureAudioMode();
+  for (const name of Object.keys(SOURCES) as SoundName[]) {
+    try {
+      playerFor(name);
+    } catch {
+      // A device that cannot build the player still plays the game.
+    }
+  }
+}
+
 export function playSound(name: SoundName) {
   void ensureAudioMode();
-  try {
-    let player = players[name];
-    if (!player) {
-      player = createAudioPlayer(SOURCES[name]);
-      players[name] = player;
+  void (async () => {
+    try {
+      const player = playerFor(name);
+      // expo-audio leaves a finished clip parked at its end rather than
+      // rewinding it, so a one-shot plays once and is silent every time after
+      // unless the position is reset. `seekTo` is async: calling `play()`
+      // without waiting for it restarts from the end, which is the silence.
+      if (player.currentTime > 0) await player.seekTo(0);
+      player.play();
+    } catch {
+      // Ignore — sound is optional feedback.
     }
-    player.seekTo(0);
-    player.play();
-  } catch {
-    // Ignore — sound is optional feedback.
-  }
+  })();
 }
 
 /** Release native resources when the app tears down its audio-using screens. */

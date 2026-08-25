@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { View, StyleSheet } from 'react-native';
@@ -7,10 +7,13 @@ import { ErrorBoundary } from './src/components/ErrorBoundary';
 import { GameProvider } from './src/game/GameContext';
 import { I18nProvider, useI18n } from './src/i18n';
 import { GameRoot } from './src/screens/GameRoot';
+import { preloadSounds } from './src/native/sound';
 import { SkinProvider } from './src/theme/SkinContext';
 import { SHELL } from './src/theme/tokens';
 
 export default function App() {
+  useEffect(preloadSounds, []);
+
   return (
     <SafeAreaProvider>
       <StatusBar style="dark" />
