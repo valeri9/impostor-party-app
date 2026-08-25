@@ -147,7 +147,10 @@
       "mode.mafia.rules": "Cards are dealt in secret: a handful of Mafia, and — if you switched them on — a Detective and a Doctor. Everyone else is a Civilian. The Mafia know each other; everyone else only knows their own role.\n\nPlay happens around the table, not on the phone. Alternate Night, when the Mafia quietly pick a target and the Detective and Doctor act if they're in play, and Day, when everyone debates out loud and votes someone out.\n\nUse the round timer to pace each phase and the buzzer to call time.\n\nMafia win by outnumbering the town. The town wins by voting out every Mafia member first.",
       "accuse.instruction": "Everyone ready? Count down together, then point at who you think the Impostor is.",
       "accuse.begin": "3, 2, 1... POINT!",
-      "accuse.point": "POINT!"
+      "accuse.point": "POINT!",
+      "skins.unlocks": "Unlocks:",
+      "skins.includesPalette": "a full screen & console colour change",
+      "skins.includesScene": "plus an animated background"
     },
     "bg": {
       "app.title": "Impostor Party",
@@ -296,7 +299,10 @@
       "mode.mafia.rules": "Картите се раздават тайно: няколко от Мафията и — ако си ги включил — Детектив и Доктор. Останалите са Цивилни. Мафията се познава помежду си; всеки друг знае само своята роля.\n\nИграта се играе на масата, не на телефона. Редувайте Нощ, когато Мафията тайно избира жертва, а Детективът и Докторът действат, ако участват, и Ден, когато всички обсъждат на глас и гласуват някого да отпадне.\n\nИзползвай таймера на рундовете, за да темпираш всяка фаза, и звуковия сигнал, за да обявиш края.\n\nМафията печели, като надделее числено над града. Градът печели, като гласува всеки от Мафията да отпадне пръв.",
       "accuse.instruction": "Всички готови ли са? Отброете заедно, после посочете кой мислите, че е Измамникът.",
       "accuse.begin": "3, 2, 1... ПОСОЧИ!",
-      "accuse.point": "ПОСОЧИ!"
+      "accuse.point": "ПОСОЧИ!",
+      "skins.unlocks": "Отключва:",
+      "skins.includesPalette": "изцяло нова цветова гама на екрана и конзолата",
+      "skins.includesScene": "плюс анимиран фон"
     },
     "es": {
       "app.title": "Impostor Party",
@@ -445,7 +451,10 @@
       "mode.mafia.rules": "Las cartas se reparten en secreto: unos cuantos de la Mafia y, si los activaste, un Detective y un Doctor. El resto son Civiles. La Mafia se conoce entre sí; el resto solo conoce su propio papel.\n\nSe juega en la mesa, no en el teléfono. Alternad Noche, cuando la Mafia elige en secreto un objetivo y el Detective y el Doctor actúan si están en juego, y Día, cuando todos debaten en voz alta y votan para eliminar a alguien.\n\nUsad el cronómetro de ronda para marcar el ritmo de cada fase y la alarma para anunciar el final.\n\nLa Mafia gana si supera en número al pueblo. El pueblo gana si vota fuera a toda la Mafia primero.",
       "accuse.instruction": "¿Todos listos? Contad juntos y luego señalad a quien creáis que es el Impostor.",
       "accuse.begin": "3, 2, 1... ¡SEÑALA!",
-      "accuse.point": "¡SEÑALA!"
+      "accuse.point": "¡SEÑALA!",
+      "skins.unlocks": "Desbloquea:",
+      "skins.includesPalette": "un cambio completo de color en pantalla y consola",
+      "skins.includesScene": "además de un fondo animado"
     },
     "el": {
       "app.title": "Impostor Party",
@@ -594,7 +603,10 @@
       "mode.mafia.rules": "Τα φύλλα μοιράζονται κρυφά: μερικά της Μαφίας και — αν τα ενεργοποίησες — έναν Ντετέκτιβ και έναν Γιατρό. Οι υπόλοιποι είναι Πολίτες. Η Μαφία γνωρίζεται μεταξύ της· οι υπόλοιποι ξέρουν μόνο τον δικό τους ρόλο.\n\nΤο παιχνίδι παίζεται γύρω από το τραπέζι, όχι στο κινητό. Εναλλάξτε Νύχτα, όταν η Μαφία διαλέγει κρυφά έναν στόχο και ο Ντετέκτιβ με τον Γιατρό δρουν αν συμμετέχουν, και Μέρα, όταν όλοι συζητούν φωναχτά και ψηφίζουν κάποιον να αποχωρήσει.\n\nΧρησιμοποίησε το χρονόμετρο γύρου για να ρυθμίσεις κάθε φάση και το κουδούνι για να δηλώσεις τη λήξη.\n\nΗ Μαφία κερδίζει αν ξεπεράσει αριθμητικά την πόλη. Η πόλη κερδίζει αν ψηφίσει έξω όλη τη Μαφία πρώτη.",
       "accuse.instruction": "Είστε όλοι έτοιμοι; Μετρήστε μαζί αντίστροφα και μετά δείξτε ποιον νομίζετε ότι είναι ο Απατεώνας.",
       "accuse.begin": "3, 2, 1... ΔΕΙΞΕ!",
-      "accuse.point": "ΔΕΙΞΕ!"
+      "accuse.point": "ΔΕΙΞΕ!",
+      "skins.unlocks": "Ξεκλειδώνει:",
+      "skins.includesPalette": "πλήρη αλλαγή χρώματος οθόνης και κονσόλας",
+      "skins.includesScene": "συν ένα κινούμενο φόντο"
     },
     "de": {
       "app.title": "Impostor Party",
@@ -743,7 +755,10 @@
       "mode.mafia.rules": "Die Karten werden heimlich verteilt: ein paar von der Mafia und — falls aktiviert — ein Detektiv und ein Arzt. Alle anderen sind Zivilisten. Die Mafia kennt sich untereinander; alle anderen kennen nur ihre eigene Rolle.\n\nGespielt wird am Tisch, nicht auf dem Handy. Wechselt zwischen Nacht, wenn die Mafia heimlich ein Ziel wählt und Detektiv sowie Arzt handeln, falls im Spiel, und Tag, wenn alle laut diskutieren und jemanden abstimmen.\n\nNutzt den Rundentimer, um jede Phase zu takten, und den Summer, um das Ende anzuzeigen.\n\nDie Mafia gewinnt, wenn sie die Stadt zahlenmäßig überflügelt. Die Stadt gewinnt, wenn sie zuerst die gesamte Mafia abgestimmt hat.",
       "accuse.instruction": "Alle bereit? Zählt gemeinsam runter und zeigt dann auf den, den ihr für den Betrüger haltet.",
       "accuse.begin": "3, 2, 1... ZEIGEN!",
-      "accuse.point": "ZEIGEN!"
+      "accuse.point": "ZEIGEN!",
+      "skins.unlocks": "Schaltet frei:",
+      "skins.includesPalette": "einen kompletten Farbwechsel von Bildschirm und Konsole",
+      "skins.includesScene": "plus einen animierten Hintergrund"
     },
     "ro": {
       "app.title": "Impostor Party",
@@ -892,7 +907,10 @@
       "mode.mafia.rules": "Cărțile sunt împărțite pe ascuns: câțiva din Mafia și — dacă i-ai activat — un Detectiv și un Doctor. Restul sunt Civili. Membrii Mafiei se cunosc între ei; toți ceilalți își știu doar propriul rol.\n\nJocul se desfășoară la masă, nu pe telefon. Alternați Noaptea, când Mafia alege pe ascuns o țintă, iar Detectivul și Doctorul acționează dacă sunt în joc, și Ziua, când toți dezbat cu voce tare și votează pe cineva să iasă din joc.\n\nFolosiți cronometrul rundei pentru a ritma fiecare fază și soneria pentru a anunța finalul.\n\nMafia câștigă dacă depășește numeric orașul. Orașul câștigă dacă votează afară toată Mafia mai întâi.",
       "accuse.instruction": "Sunteți gata? Numărați împreună, apoi arătați spre cel pe care îl credeți Impostor.",
       "accuse.begin": "3, 2, 1... ARATĂ!",
-      "accuse.point": "ARATĂ!"
+      "accuse.point": "ARATĂ!",
+      "skins.unlocks": "Deblochează:",
+      "skins.includesPalette": "o schimbare completă de culoare a ecranului și consolei",
+      "skins.includesScene": "plus un fundal animat"
     },
     "tr": {
       "app.title": "Impostor Party",
@@ -1041,7 +1059,10 @@
       "mode.mafia.rules": "Kartlar gizlice dağıtılır: birkaç Mafya üyesi ve — eğer açtıysan — bir Dedektif ile bir Doktor. Geri kalan herkes Sivil'dir. Mafya birbirini tanır; diğer herkes sadece kendi rolünü bilir.\n\nOyun telefonda değil, masada oynanır. Mafya'nın sessizce bir hedef seçtiği ve oyundaysa Dedektif ile Doktor'un harekete geçtiği Gece ile herkesin yüksek sesle tartışıp birini oylamayla elediği Gündüz arasında geçiş yapın.\n\nHer aşamanın temposunu ayarlamak için tur kronometresini, süreyi bildirmek için de zili kullanın.\n\nMafya, kasabayı sayıca geçerek kazanır. Kasaba ise önce tüm Mafya üyelerini oylayarak eleyerek kazanır.",
       "accuse.instruction": "Herkes hazır mı? Birlikte geri sayın, sonra sahtekâr olduğunu düşündüğünüz kişiyi işaret edin.",
       "accuse.begin": "3, 2, 1... İŞARET ET!",
-      "accuse.point": "İŞARET ET!"
+      "accuse.point": "İŞARET ET!",
+      "skins.unlocks": "Kilidini açar:",
+      "skins.includesPalette": "ekranın ve konsolun tamamen yeni bir renk düzeni",
+      "skins.includesScene": "artı hareketli bir arka plan"
     }
   }
 }

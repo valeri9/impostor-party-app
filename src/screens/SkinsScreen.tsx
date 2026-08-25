@@ -383,8 +383,13 @@ function SkinPreviewScreen({
   const c = deriveColors(skin);
 
   return (
-    <View
-      style={[
+    <ScrollView
+      // A plain View here — the original shape of this screen — had no
+      // scroll of its own anywhere: only the mock content inside the LCD
+      // could scroll. On a shorter phone, or with a longer localized name
+      // or tagline, the header pushed the real buy/back buttons at the
+      // bottom past the edge of the screen with no way to reach them.
+      contentContainerStyle={[
         previewStyles.page,
         {
           backgroundColor: skin.shell.body,
@@ -394,6 +399,7 @@ function SkinPreviewScreen({
           paddingRight: insets.right + spacing.sm,
         },
       ]}
+      showsVerticalScrollIndicator={false}
     >
       <View style={previewStyles.header}>
         <Text style={[previewStyles.headerName, { color: skin.shell.onShell }]}>{t(skin.nameKey)}</Text>
@@ -401,6 +407,13 @@ function SkinPreviewScreen({
           {t(skin.taglineKey)}
         </Text>
         <Text style={[previewStyles.headerBadge, { color: skin.shell.onShell }]}>{badge}</Text>
+        {/* Spells out in plain words what the price actually buys — the
+            mockup below shows it, but a shopper deciding whether to pay
+            shouldn't have to infer that from a re-coloured screenshot alone. */}
+        <Text style={[previewStyles.headerIncludes, { color: skin.shell.onShell }]}>
+          {t('skins.unlocks')} {t('skins.includesPalette')}
+          {skin.sceneId ? ` ${t('skins.includesScene')}` : ''}
+        </Text>
       </View>
 
       <View style={[previewStyles.bezel, { backgroundColor: skin.shell.bezel }]}>
@@ -523,7 +536,7 @@ function SkinPreviewScreen({
         )}
         <PreviewActionButton testID="skin-preview-back" label={t('skins.back')} skin={skin} ghost onPress={onBack} />
       </View>
-    </View>
+    </ScrollView>
   );
 }
 
@@ -559,13 +572,23 @@ function createStyles(colors: ReturnType<typeof useSkinTokens>['colors']) {
 }
 
 const previewStyles = StyleSheet.create({
-  page: { flex: 1 },
+  // A ScrollView's content container, not a fixed-height screen — flexGrow
+  // (not flex) is what lets it still fill short content up to the viewport
+  // while growing taller, and scrolling, once it doesn't fit.
+  page: { flexGrow: 1 },
   header: { marginBottom: spacing.sm },
   headerName: { ...type.heading, textAlign: 'center', textTransform: 'uppercase' },
   headerTagline: { ...type.caption, textAlign: 'center', marginTop: 2, letterSpacing: 0 },
   headerBadge: { ...type.caption, textAlign: 'center', marginTop: 2 },
+  headerIncludes: { ...type.caption, textAlign: 'center', marginTop: spacing.xs, letterSpacing: 0, opacity: 0.85 },
   bezel: {
-    flex: 1,
+    // Not `flex: 1` — inside a ScrollView's content there's no bounded
+    // parent height for that to resolve against, and a flex child in that
+    // position can collapse instead of sizing sensibly. A width-driven
+    // aspect ratio gives it a concrete height Yoga can always resolve, and
+    // keeps the same "console fills most of the screen" proportions a
+    // normal phone had under the old flex:1.
+    aspectRatio: 0.62,
     padding: spacing.sm,
     borderBottomRightRadius: 28,
   },
