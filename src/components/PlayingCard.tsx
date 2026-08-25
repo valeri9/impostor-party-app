@@ -1,6 +1,7 @@
-import React, { useMemo } from 'react';
-import { StyleSheet, View } from 'react-native';
+import React, { useId, useMemo } from 'react';
+import { StyleSheet, Text, View } from 'react-native';
 import Svg, {
+  ClipPath,
   Defs,
   G,
   Line,
@@ -75,25 +76,48 @@ export function PlayingCard({ rank, suit, width, faceUp, roleLabel, backColor = 
   const { colors } = useSkinTokens();
   const styles = useMemo(() => createStyles(colors), [colors]);
   const height = width / ASPECT;
+  // Every card on screen draws its own clip path, so the ids have to differ —
+  // the results grid renders five at once into one SVG namespace.
+  const uid = useId().replace(/[^a-zA-Z0-9]/g, '');
+
   return (
-    <View style={[styles.shadow, { width, height }]}>
-      <Svg width={width} height={height} viewBox={`0 0 ${VB_W} ${VB_H}`}>
-        {faceUp ? (
-          <CardFace rank={rank} suit={suit} roleLabel={roleLabel} />
-        ) : (
-          <CardBack color={colors.cardBack} />
-        )}
-      </Svg>
+    <View style={styles.stack}>
+      <View style={[styles.shadow, { width, height }]}>
+        <Svg width={width} height={height} viewBox={`0 0 ${VB_W} ${VB_H}`}>
+          {faceUp ? <CardFace rank={rank} suit={suit} uid={uid} /> : <CardBack color={colors.cardBack} uid={uid} />}
+        </Svg>
+      </View>
+      {faceUp && roleLabel ? (
+        // Printed under the card rather than across its face: on the small
+        // results cards the banner used to sit on top of the bottom-right
+        // index, and neither could be read.
+        <View style={[styles.roleBanner, { width, backgroundColor: suitColor(suit, colors) }]}>
+          <Text
+            style={[styles.roleText, { color: colors.cardFace, fontSize: roleFontSize(width) }]}
+            numberOfLines={1}
+            adjustsFontSizeToFit
+            minimumFontScale={0.6}
+            allowFontScaling={false}
+          >
+            {roleLabel.toUpperCase()}
+          </Text>
+        </View>
+      ) : null}
     </View>
   );
 }
 
-function CardBack({ color }: { color: string }) {
+/** The banner has to read on a 110pt results card and a 230pt reveal card alike. */
+function roleFontSize(width: number): number {
+  return Math.round(Math.min(16, Math.max(9, width * 0.1)));
+}
+
+function CardBack({ color, uid }: { color: string; uid: string }) {
   const { colors, LCD } = useSkinTokens();
   return (
     <G>
       <Defs>
-        <Pattern id="lattice" width={26} height={26} patternUnits="userSpaceOnUse">
+        <Pattern id={`lattice-${uid}`} width={26} height={26} patternUnits="userSpaceOnUse">
           <Rect width={26} height={26} fill={color} />
           <Path d="M13 2 L24 13 L13 24 L2 13 Z" fill="none" stroke={colors.cardFace} strokeWidth={2} />
           <Path d="M13 8 L18 13 L13 18 L8 13 Z" fill={LCD.light} />
@@ -110,7 +134,7 @@ function CardBack({ color }: { color: string }) {
         strokeWidth={6}
       />
       <Rect x={12} y={12} width={VB_W - 24} height={VB_H - 24} fill={color} />
-      <Rect x={18} y={18} width={VB_W - 36} height={VB_H - 36} fill="url(#lattice)" />
+      <Rect x={18} y={18} width={VB_W - 36} height={VB_H - 36} fill={`url(#lattice-${uid})`} />
       <Rect
         x={18}
         y={18}
@@ -124,18 +148,27 @@ function CardBack({ color }: { color: string }) {
   );
 }
 
-function CardFace({ rank, suit, roleLabel }: { rank: string; suit: Suit; roleLabel?: string }) {
+function CardFace({ rank, suit, uid }: { rank: string; suit: Suit; uid: string }) {
   const { colors } = useSkinTokens();
   const color = suitColor(suit, colors);
   const glyph = SUIT_GLYPH[suit];
   const isCourt = rank === 'J' || rank === 'Q' || rank === 'K';
   const isAce = rank === 'A';
-  // Reserve the bottom strip for the role name when there is one.
-  const faceBottom = roleLabel ? VB_H * 0.78 : VB_H * 0.88;
+  const faceBottom = VB_H * 0.88;
   const faceTop = VB_H * 0.13;
 
   return (
     <G>
+      <Defs>
+        {/* Text metrics differ per platform and per font fallback, so the
+            rotated bottom index can reach further than its measured box
+            suggests. Clipping to the face guarantees nothing is ever painted
+            over the border or outside the card, whatever the metrics say. */}
+        <ClipPath id={`face-${uid}`}>
+          <Rect x={6} y={6} width={VB_W - 12} height={VB_H - 12} />
+        </ClipPath>
+      </Defs>
+
       <Rect x={0} y={0} width={VB_W} height={VB_H} fill={colors.cardFace} />
       <Rect
         x={3}
@@ -147,6 +180,7 @@ function CardFace({ rank, suit, roleLabel }: { rank: string; suit: Suit; roleLab
         strokeWidth={6}
       />
 
+      <G clipPath={`url(#face-${uid})`}>
       <CornerIndex rank={rank} glyph={glyph} color={color} />
       <G transform={`rotate(180 ${VB_W / 2} ${VB_H / 2})`}>
         <CornerIndex rank={rank} glyph={glyph} color={color} />
@@ -168,30 +202,7 @@ function CardFace({ rank, suit, roleLabel }: { rank: string; suit: Suit; roleLab
       ) : (
         <Pips rank={rank} glyph={glyph} color={color} top={faceTop} bottom={faceBottom} />
       )}
-
-      {roleLabel ? (
-        <G>
-          <Rect
-            x={16}
-            y={VB_H * 0.82}
-            width={VB_W - 32}
-            height={VB_H * 0.11}
-            fill={color}
-          />
-          <SvgText
-            x={VB_W / 2}
-            y={VB_H * 0.876}
-            fontSize={22}
-            fontFamily={PIXEL_FONT}
-            fontWeight="bold"
-            fill={colors.cardFace}
-            textAnchor="middle"
-            alignmentBaseline="central"
-          >
-            {roleLabel.toUpperCase()}
-          </SvgText>
-        </G>
-      ) : null}
+      </G>
     </G>
   );
 }
@@ -201,8 +212,8 @@ function CornerIndex({ rank, glyph, color }: { rank: string; glyph: string; colo
   return (
     <G>
       <SvgText
-        x={22}
-        y={40}
+        x={30}
+        y={44}
         fontSize={rank === '10' ? 32 : 38}
         fontWeight="bold"
         fontFamily={PIXEL_FONT}
@@ -211,7 +222,7 @@ function CornerIndex({ rank, glyph, color }: { rank: string; glyph: string; colo
       >
         {rank}
       </SvgText>
-      <SvgText x={22} y={72} fontSize={30} fill={color} textAnchor="middle">
+      <SvgText x={30} y={78} fontSize={30} fill={color} textAnchor="middle">
         {glyph}
       </SvgText>
     </G>
@@ -341,8 +352,22 @@ function CourtPanel({
 
 function createStyles(colors: ReturnType<typeof useSkinTokens>['colors']) {
   return StyleSheet.create({
+    stack: { alignItems: 'center' },
     // No blur: a dot-matrix screen can only draw an outline, and it is drawn
     // inside the SVG so it never eats into the card's measured box.
     shadow: { backgroundColor: colors.cardFace },
+    roleBanner: {
+      marginTop: 4,
+      paddingVertical: 3,
+      paddingHorizontal: 4,
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    roleText: {
+      fontFamily: PIXEL_FONT,
+      fontWeight: '700',
+      letterSpacing: 0.5,
+      textAlign: 'center',
+    },
   });
 }

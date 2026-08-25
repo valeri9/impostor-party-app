@@ -11,6 +11,13 @@ export type ButtonVariant = 'primary' | 'success' | 'danger' | 'ghost';
 
 type Props = {
   label: string;
+  /**
+   * Rendered beside the label in the system font. An emoji inside the pixel
+   * font's own text run forces Android to substitute a fallback face for the
+   * whole line, and it measures that line with the fallback's metrics — which
+   * is how a one-line button grew into a tall block with no visible text.
+   */
+  icon?: string;
   onPress: () => void;
   variant?: ButtonVariant;
   disabled?: boolean;
@@ -84,7 +91,7 @@ function getVariants(SHELL: ReturnType<typeof useSkinTokens>['SHELL']): Record<B
   };
 }
 
-export function Button({ label, onPress, variant = 'primary', disabled, large, style, testID }: Props) {
+export function Button({ label, icon, onPress, variant = 'primary', disabled, large, style, testID }: Props) {
   const { SHELL } = useSkinTokens();
   const variants = useMemo(() => getVariants(SHELL), [SHELL]);
   const spec = variants[variant];
@@ -130,7 +137,21 @@ export function Button({ label, onPress, variant = 'primary', disabled, large, s
                 spec.doubleFrame && { borderWidth: stroke.hair, borderColor: fg },
               ]}
             >
-              <Text style={[styles.label, large && styles.labelLarge, { color: fg }]} numberOfLines={2}>
+              {icon ? (
+                <Text style={[styles.icon, { color: fg }]} allowFontScaling={false}>
+                  {icon}
+                </Text>
+              ) : null}
+              <Text
+                style={[styles.label, large && styles.labelLarge, { color: fg }]}
+                numberOfLines={2}
+                adjustsFontSizeToFit
+                minimumFontScale={0.7}
+                // The console's type is pixel art at a fixed size. Left to the
+                // OS font-scale setting, a label two or three steps up turns a
+                // 52pt button into a block half the screen tall.
+                maxFontSizeMultiplier={1.2}
+              >
                 {label}
               </Text>
             </View>
@@ -150,15 +171,23 @@ const styles = StyleSheet.create({
   large: { minHeight: 68 },
   disabled: { opacity: 0.35 },
   inner: {
-    flex: 1,
+    // Deliberately not `flex: 1`. Growing to fill the Pressable made the
+    // button's height whatever its parent happened to offer, which is how a
+    // secondary action ended up as tall as the screen.
+    alignSelf: 'stretch',
     minHeight: HIT_SIZE - stroke.thick * 2,
     paddingHorizontal: spacing.md,
     paddingVertical: spacing.sm,
     margin: stroke.hair,
+    flexDirection: 'row',
+    gap: spacing.xs,
     alignItems: 'center',
     justifyContent: 'center',
   },
   innerLarge: { minHeight: 68 - stroke.thick * 2 },
-  label: { ...type.label, textAlign: 'center', textTransform: 'uppercase' },
+  // No fontFamily: the emoji is left to the system face on purpose, and the
+  // line box is pinned so a tall fallback glyph cannot stretch the row.
+  icon: { fontSize: 16, lineHeight: 20 },
+  label: { ...type.label, textAlign: 'center', textTransform: 'uppercase', flexShrink: 1 },
   labelLarge: { ...type.heading, textAlign: 'center', textTransform: 'uppercase' },
 });
