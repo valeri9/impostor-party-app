@@ -22,7 +22,7 @@
     },
     "android": {
       "package": "impostorparty.app",
-      "versionCode": 2,
+      "versionCode": 3,
       "adaptiveIcon": {
         "backgroundColor": "#c9cbc4",
         "foregroundImage": "./assets/android-icon-foreground.png",
