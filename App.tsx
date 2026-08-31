@@ -11,6 +11,7 @@ import { preloadSounds } from './src/native/sound';
 import { SkinProvider } from './src/theme/SkinContext';
 import { SHELL } from './src/theme/tokens';
 
+// git commit test
 export default function App() {
   useEffect(preloadSounds, []);
 

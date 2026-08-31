@@ -21,15 +21,16 @@
       }
     },
     "android": {
-      "package": "com.impostorparty.app",
-      "versionCode": 1,
+      "package": "impostorparty.app",
+      "versionCode": 4,
       "adaptiveIcon": {
         "backgroundColor": "#c9cbc4",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
       "permissions": [
-        "android.permission.VIBRATE"
+        "android.permission.VIBRATE",
+        "android.permission.MODIFY_AUDIO_SETTINGS"
       ],
       "predictiveBackGestureEnabled": false,
       "edgeToEdgeEnabled": true
@@ -39,7 +40,13 @@
     },
     "plugins": [
       "expo-localization",
-      "expo-audio",
+      [
+        "expo-audio",
+        {
+          "microphonePermission": false,
+          "recordAudioAndroid": false
+        }
+      ],
       [
         "expo-splash-screen",
         {
@@ -51,6 +58,12 @@
       ],
       "expo-asset",
       "expo-iap"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "a6c14c82-36ff-4cd9-8703-129bc682f3c2"
+      }
+    },
+    "owner": "valeri19"
   }
 }
