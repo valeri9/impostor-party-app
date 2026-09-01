@@ -26,10 +26,13 @@ const SkinContext = createContext<SkinValue | null>(null);
  *  without a purchase flow. Gated on __DEV__ (never ships — a production
  *  build falls back to just the free default) *and* excludes NODE_ENV ===
  *  'test': __DEV__ is also true under Jest, and the ownership-gating tests
- *  need paid skins to actually start locked. */
+ *  need paid skins to actually start locked. Also unlocked when built via
+ *  eas.json's "allskins" profile (EXPO_PUBLIC_UNLOCK_ALL_SKINS=1), a separate
+ *  sideload APK for personal use — never the Play Store build. */
 function baseOwnedIds(): string[] {
   const devUnlockAll = __DEV__ && process.env.NODE_ENV !== 'test';
-  return devUnlockAll ? SKINS.map((s) => s.id) : [DEFAULT_SKIN_ID];
+  const forceUnlockAll = process.env.EXPO_PUBLIC_UNLOCK_ALL_SKINS === '1';
+  return devUnlockAll || forceUnlockAll ? SKINS.map((s) => s.id) : [DEFAULT_SKIN_ID];
 }
 
 export function SkinProvider({ children }: { children: React.ReactNode }) {
