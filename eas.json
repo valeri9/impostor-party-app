@@ -14,6 +14,16 @@
         "buildType": "apk"
       }
     },
+    "allskins": {
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      },
+      "env": {
+        "APP_VARIANT": "allskins",
+        "EXPO_PUBLIC_UNLOCK_ALL_SKINS": "1"
+      }
+    },
     "production": {
       "autoIncrement": true,
       "android": {
